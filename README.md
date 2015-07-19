@@ -1,4 +1,4 @@
-# Soledades de Luis de Góngora. 
+# *Soledades* de Luis de Góngora 
 
 Una edición crítica
 
