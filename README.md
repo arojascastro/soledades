@@ -1,26 +1,8 @@
-# *Soledades* de Luis de Góngora 
-
-Una edición crítica digital. 
-
-Documentación de Antonio Rojas Castro
-
-## Contacto
-
-Twitter: @RojasCastro
-
-E-mail: rojas.castro.antonio at gmail dot com
-
-Web: www.antoniorojascastro.com
-
-## Derechos
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Este obra se publica bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
-
-## Intro
+##Intro##
 
 Toda representación TEI de un texto debe tener un propósito; en otras palabras, se codifican ciertos fenómenos textuales (no todos) para que el ordenador pueda procesarlos y el usuario interactúe con ellos en la interfaz web. Esta codificación de las *Soledades* ha sido concebida para que el usuario acceda al texto paleográfico y modernizado de Chacón, filtre las variantes de autor por testimonio y clase (error, variante de autor e intervención editorial) y navegue el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
 
-## Contenidos
+##Contenidos##
 - [encabezado] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#encabezado) 
 - [título, partes y subtítulos] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#t%C3%ADtulo-partes-y-subt%C3%ADtulos)
 - [grupos de versos y versos] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#grupos-de-versos-y-versos)
@@ -32,6 +14,19 @@ Toda representación TEI de un texto debe tener un propósito; en otras palabras
 - [fiabilidad y palabras suplidas] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#fiabilidad-y-palabras-suplidas)
 - [anotación] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#anotaci%C3%B3n) 
 - [nombres propios] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#nombres-propios)
+
+##Contacto##
+
+Twitter: @RojasCastro
+
+E-mail: rojas.castro.antonio at gmail dot com
+
+Web: www.antoniorojascastro.com
+
+##Derechos##
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Este obra se publica bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
+
 
 
 
