@@ -3,7 +3,7 @@
 Una edición crítica digital. Documentación
 Antonio Rojas Castro
 
-#Contacto
+## Contacto
 
 Twitter: @RojasCastro
 
