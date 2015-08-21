@@ -1,7 +1,8 @@
 # *Soledades* de Luis de Góngora 
 
-Una edición crítica digital. Documentación
-Antonio Rojas Castro
+Una edición crítica digital. 
+
+Documentación de Antonio Rojas Castro
 
 ## Contacto
 
