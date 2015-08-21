@@ -12,6 +12,8 @@ E-mail: rojas.castro.antonio at gmail dot com
 
 Web: www.antoniorojascastro.com
 
+## Derechos
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Este obra se publica bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
 
 ## Intro
@@ -31,11 +33,11 @@ Toda representación TEI de un texto debe tener un propósito; en otras palabras
 - anotación
 - nombres propios
 
-# Encabezado
+## Encabezado
 
 El encabezado TEI es el lugar del archivo XML en el que se recogen los metadatos, es decir, toda aquella información que permite identificar al documento y declarar cuál es la fuente de la que deriva el texto. En esta parte del archivo, además, se pueden registrar otro tipo de información suplementaria como los criterios editoriales, el tipo de texto u otros datos relativos a la creación de la obra desde un punto de vista intelectual. 
 
-## Descripción del archivo
+### Descripción del archivo
 
 El elemento `<fileDesc>` contiene una serie de elementos con información bibliográfica sobre el archivo electrónico necesaria para su citación y catalogación. En primer lugar, se halla el elemento `<titleStmt>` en donde se sitúa el título de la obra electrónica, el autor del texto codificado y quién es el responsable de la edición, entre otros datos. En mi caso he decidido utilizar el nombre del poema en el título principal y, a continuación, añadir un subtítulo que especifica, distingue del resto de ediciones y aclara cuál es su objetivo y finalidad. 
 
@@ -280,7 +282,7 @@ El elemento TEI que agrupa etiquetas relacionadas con la producción, distribuci
 
 Para recapitular lo que se ha dicho sobre la primera parte del `<teiHeader>`, el elemento `<fileDesc>` contiene información bibliográfica sobre el archivo electrónico en el `<titleStmt>`, sobre el número de la edición en el `<editionStmt>`, sobre la publicación, distribución y disponibilidad del archivo electrónico en el `<publicationStmt>` y, por último, sobre las fuentes de las que deriva el texto en el `<sourceDesc>`. Este último elemento resulta de importancia capital en esta propuesta de codificación de las *Soledades* porque en él se describen los 22 testimonios cotejados —manuscritos e impresos— para crear el texto crítico. 
 
-## Descripción de la codificación
+### Descripción de la codificación
 
 En el elemento `<encodingDesc>` se detallan los principios editoriales y el modo de codificar el texto electrónico. Aunque no se trata de un elemento obligatorio, la TEI lo recomienda porque con él se establece la relación entre las fuentes manuscritas e impresas y el texto electrónico. La información contenida en este elemento puede presentarse por medio de párrafos en prosa o bien utilizando otros elementos más específicos. En mi propuesta de codificación de las *Soledades* he preferido documentar de manera precisa la finalidad de la codificación con `<projectDesc>`, las prácticas editoriales (corrección, normalización y citación) en el elemento `<editorialDecl>`, y qué elementos, atributos y valores se han utilizado por medio de `<refsDecl>`. Puesto que los dos últimos aspectos de la codificación se analizarán y comentarán en profundidad en apartados posteriores, aquí me limitaré a mostrar el elemento `<projectDesc>`: 
 
@@ -294,7 +296,7 @@ Además de los elementos mencionados, el `<encodingDesc>` de esta propuesta de c
 
 Por último, no hay que olvidar que en el elemento `<encodingDesc>` también debe figurar el modo en que se codifican los glifos y caracteres especiales; para ello se utiliza la etiqueta `<charDecl>`. Daré más detalles sobre los caracteres no representados por UNICODE en el apartado dedicado a las abreviaturas.
 
-## Perfil del texto
+### Perfil del texto
 
 El elemento <profileDesc> agrupa varios elementos con los que se puede codificar información no bibliográfica. Se trata de un elemento opcional que en mi propuesta de codificación de las *Soledades* contiene un elemento importante para representar las fases de la cronología establecida en la tesis; me refiero al elemento `<creation>`. En el caso de las *Soledades* es posible identificar hasta nueve fases. Cada una de estas fases ha sido codificada usando el elemento `<change>` con tres atributos: por un lado, `@notAfter` y `@notBefore` sirven para identificar los términos *a quo* y *ad quem*; por el otro, `@xml:id` identifica con un valor único cada uno de estos elementos de tal modo que se puedan referenciar en el texto de las *Soledades*. Asimismo, en este elemento `<creation>` se puede documentar el lugar en el que tuvo lugar el proceso creativo mediante `<placeName>`:
 
@@ -327,7 +329,7 @@ En el `<profileDesc>` también se puede identificar la lengua en que está escri
 
 Finalmente, hay que tener en cuenta que el elemento `<profileDesc>` puede contener otros elementos que no aparecen en esta propuesta de codificación. Así, por ejemplo, si el texto fuera un artículo científico, se podría codificar un resumen del contenido en un elemento `<abstract>`, clasificar el texto siguiendo algún tipo de tesauro de amplia difusión gracias al elemento `<textclass>` o añadir palabras clave mediante el elemento `<keywords>` a fin de facilitar su recuperación por un gestor de contenidos. 
 
-## Historial de revisión
+### Historial de revisión
 
 La cuarta y última parte del encabezado TEI corresponde al `<revisionDesc>`. Se trata de un elemento opcional en el que se registran todos los cambios realizados en el texto. Cuando el proyecto es administrado mediante un control de versiones y en él intervienen varios investigadores, puede ser muy útil para gestionar de manera eficiente las modificaciones y deshacerlas en caso de necesidad. Los cambios se pueden anidar en un elemento `<listChange>` o bien, como en mi propuesta, directamente en elementos `<change>`; el atributo `@when` puede utilizarse para especificar el día exacto en que se produjo el cambio:
 
@@ -365,7 +367,7 @@ La cuarta y última parte del encabezado TEI corresponde al `<revisionDesc>`. Se
 
 En cuanto a la responsabilidad de los cambios, esta se puede describir mediante un atributo `@who` contenido en `<change>`. El valor de este atributo remite al atributo `@xml:id` contenido en el elemento `<respStmt>` del `<titleStmt>`. Tal y como se aprecia en el código insertado es posible referirse a un determinado elemento o atributo mediante las etiquetas `<gi>` y `<att>`.   
 
-# Título, partes y subtítulos 
+## Título, partes y subtítulos 
 
 Tras detallar cómo se ha codificado la información contenida en el `<teiHeader>`, hay que pasar a comentar la segunda parte que todo documento TEI debe tener: el elemento `<text>` en donde, como es lógico, debe situarse un texto. Este elemento `<text>` contiene un atributo `@xml:lang` con valor *spa* que sirve para definir la lengua en que está escrito el texto. El texto de las *Soledades* puede ponerse directamente en un elemento `<body>` porque en esta edición no se pretende dar acceso ni procesar preliminares ni apéndices; así, pues, no es necesario utilizar las etiquetas `<front>` y `<back>`.
 
@@ -417,7 +419,7 @@ La codificación del título de la Dedicatoria merece una aclaración. El manusc
                         </choice>
                     </head>
 
-#Grupos de versos y versos
+## Grupos de versos y versos
 
 Las *Soledades* es una larga silva en el que se combinan con cierta libertad endecasílabos y heptasílabos. Algunos editores modernos como Dámaso Alonso introdujeron cortes en el poema con el objetivo de facilitar la comprensión de la obra; pero John Beverley, Robert Jammes y Antonio Carreira prefirieron eliminar estos cortes, editar el texto como un todo y sugerir algunas pausas mediante el sangrado del primer verso. La fuente que utilizaron todos estos editores —el manuscrito Chacón— no introduce líneas en blanco para separar las estrofas pero esto no quiere decir que no haya grupos de versos de extensión variada. El inicio de estos grupos se visualiza en el manuscrito mediante el sangrado del primer verso hacia la izquierda, es decir, a la francesa. En otras palabras, estos grupos de versos no se distinguen por razones métricas sino por su disposición sobre la página.
 
@@ -455,7 +457,7 @@ A continuación, inserto un fragmento de XML que contiene los tres atributos men
 
 Además de estos elementos creados para codificar textos poéticos, la TEI ha establecido algunos procedimientos para codificar el patrón rítmico y métrico de cada verso gracias a los atributos `@rhyme` y `@met` y un elemento `<rhyme>` con el que es posible codificar las palabras que riman. Dado que mi objetivo es estudiar la transmisión del texto y ofrecer variantes significativas, en esta propuesta de codificación de las *Soledades* no se han representado estos fenómenos acerca de la musicalidad del poema.  
 
-# Saltos de página
+## Saltos de página
 
 Además del sistema de referencias basado en las partes del texto —Dedicatoria, *Soledad primera* y *Soledad segunda*— y en la estructuración por grupos de versos que acabamos de ver, esta propuesta incluye la paginación del manuscrito Chacón; para ello se ha utilizado el elemento `<pb/>`. Esta etiqueta es un *empty element* porque no tiene contenido textual y sirve para codificar estructuras no jerárquicas que dividen el texto en trozos. Al marcar los saltos de página es posible captar la estructura del documento y permitir al usuario navegar el texto de manera fragmentaria. 
 
@@ -477,7 +479,7 @@ Como se puede apreciar, el elemento `<pb/>` se sitúa siempre al inicio de cada 
 
 Para recapitular, gracias a la codificación de las partes lógicas del texto, los grupos de versos y la paginación del manuscrito Chacón es posible explorar y navegar el texto poético de distintas maneras. En consecuencia, la edición académica digital adquiere interactividad en la medida en que combina múltiples vistas: por un lado, la imagen facsimilar, que pone de manifiesto la materialidad del documento; por el otro, el texto (en doble presentación: transcripción paleográfica y modernización). El usuario, pues, es capaz de seleccionar una u otra vista, o bien, dividiendo la pantalla en dos partes, acceder simultáneamente a las dos y, así, poder apreciar la relación dialéctica entre el manuscrito Chacón y el texto establecido tras cotejar el resto de testimonios. 
 
-# Fases de la cronología
+## Fases de la cronología
 
 Las fases de la cronología establecida en la tesis se documentan en el encabezado TEI mediante el elemento `<creation>`. Ahora bien, también se puede representar el inicio de cada una de estas fases en el mismo texto. Para ello he utilizado otro elemento vacío con el fin de respetar la sintaxis arbórea del XML. El elemento vacío en cuestión es `<milestone/>`. Según la TEI, este elemento «marca un punto de frontera que separa cada tipo de sección de un texto, indicado por cambios en el sistema de referencia estándar, donde la sección no es representada por un elemento estructural». A diferencia de `<pb/>`, que se restringe para la representación de saltos de página, este elemento no tiene una carga semántica pues se puede utilizar para representar cualquier tipo de fenómeno. En el texto de las *Soledades*, pues, he marcado el inicio de cada fase justo antes de los elementos `<lg>` o `<l>`: 
 
@@ -503,7 +505,7 @@ En este caso el elemento `<milestone/>` aparece antes del elemento `<lg>` para i
  
 En la interfaz web se podría explotar la codificación de las fases de distintas maneras: por un lado, se puede crear otro menú de navegación en el que cuando el usuario clicase accediera a la parte del texto en el que se inicia una nueva fase; por el otro, sería posible señalar las fases de manera visual, por ejemplo, con un destacado (una barra horizontal de color distinto con el número de la fase y las fechas de la cronología) activado por el usuario interesado en conocer el proceso creativo y cómo se desarrolló la redacción del poema. 
     
-#Discursos y diálogos
+## Discursos y diálogos
 
 Las *Soledades* es una larga silva dividida en tres partes; en ella, además, pueden distinguirse con claridad varios discursos en los que la voz poética cede la palabra a alguno de los personajes. La TEI recomienda identificar estos discursos con un elemento llamado `<sp>` que forma parte del módulo *core* y que puede utilizarse tanto en texto teatrales como en textos poéticos o en prosa.
 
@@ -534,7 +536,7 @@ Como se puede ver, el elemento <milestone/> contiene dos atributos: `@type` y `@
 
 Por supuesto, estos discursos no son los únicos pasajes en los que la voz poética cede la palabra a los personajes. Aunque son pocos y breves, también se pueden encontrar algunos diálogos. Al iniciar la codificación XML/TEI de las *Soledades* quise representar estos intercambios mediante el elemento <said> pero, nuevamente, me encontré ante un tipo de fenómeno textual que se yuxtapone a la representación de los grupos de versos y de los versos porque la mayoría de diálogos ocupan más de un verso de tal modo que se produce un conflicto entre el cierre del elemento `<l>` y la continuidad del elemento `<said>`. La única solución que he encontrado consiste en anidar un elemento `<said>` dentro de `<l>` en cada uno de los versos. Ahora bien, esta estrategia supone falsear la verdadera naturaleza del diálogo; y, en consecuencia, me ha parecido más acertado renunciar a representar este fenómeno textual que, por lo demás, no resulta imprescindible para el usuario teniendo en cuenta que ya se codifican muchos aspectos del poema.
 
-#Transcripción paleográfica y texto modernizado
+## Transcripción paleográfica y texto modernizado
 
 Con la excepción de once lecciones procedentes de otros testimonios, el texto de las *Soledades* que he codificado es el que transmite el manuscrito Chacón. La particularidad de mi propuesta consiste en la doble presentación del texto: por un lado, la transcripción paleográfica, que conserva la mayoría de rasgos característicos de la ortotipografía del documento original; por el otro, una modernización de la ortografía, los signos de puntuación y otros aspectos tipográficos del texto contenido en Chacón. La primera dimensión, pues, es historicista y conservadora: transporta al lector al siglo XVII. La segunda, en cambio, es actualizadora en la medida en que adapta los aspectos accidentales del texto a la norma vigente de la lengua española y a las convenciones tipográficas contemporáneas. 
 
@@ -628,7 +630,7 @@ Para codificar la separación de las palabras tal y como aparecen en Chacón he 
 
 Desde un punto de vista conceptual y para recapitular lo dicho al respecto, podría afirmarse que las codificaciones alternativas que agrupa el elemento `<choice>` constituyen dos capas de un mismo texto que se deberían procesar como vistas en la interfaz web. El beneficio de este tipo de codificación es evidente: el lector puede acceder al texto original y a la modernización propuesta por el editor y, en consecuencia, compararlas eligiendo una u otra vista. Este tipo de codificación, pues, deviene una especie de instrumento que el editor otorga al lector para que pueda examinar su hipótesis de trabajo y valorar la calidad del resultado final. La mayor dificultad reside en el número de etiquetas necesario para llevarla a cabo: como mínimo tres etiquetas por —casi— cada palabra en textos anteriores al siglo XVIII. Por eso, antes de empezar conviene tener en cuenta que la tarea requiere muchísima paciencia y sobre todo tiempo.
 
-###Destacados
+#### Destacados
 
 Aunque en el modelo de codificación TEI prima la estructura lógica por encima de la apariencia, ya se ha visto que también es posible marcar la paginación de los códices con el elemento `<pb/>` o qué versos se distinguen del resto por la sangría gracias al atributo `@rend`. También existe un elemento `<hi>` creado para codificar el aspecto de palabras que se distinguen gráficamente del resto. En esta propuesta de codificación el elemento `<hi>` se utiliza para identificar las letras iniciales con que se abren las tres partes del poema que Chacón presenta en tamaño mayor.
  
@@ -659,7 +661,7 @@ En el manuscrito Chacón hay otros casos en los que se podría haber utilizado e
 
 En síntesis, en esta propuesta de codificación de las *Soledades* solo se utiliza el elemento `<hi>` de manera restringida: por un lado, para identificar aquellas letras que tienen un tamaño mayor al inicio de cada una de las tres partes del poema; por el otro, como se verá en el siguiente apartado, para representar las grafías en posición volada. Por el contrario, las palabras que en el cuerpo del texto van en mayúscula no han sido representadas con lenguaje de marcado.
 
-### Abreviaturas y expansiones
+#### Abreviaturas y expansiones
 
 La misma combinación de elementos también puede utilizarse para codificar la forma abreviada y la forma expandida de una palabra. El manuscrito Chacón contiene pocas abreviaturas pero, precisamente por eso, creo que vale la pena conservarlas en la transcripción paleográfica y desarrollarlas en el texto modernizado. Para llevar a cabo esto he añadido dentro de los elementos `<orig>` y `<reg>` las etiquetas `<abbr>` y `<expan>` respectivamente. Así, por ejemplo, en el verso 159 de la *Soledad segunda* (*o filos pongan de homicida hierro*) Chacón abrevia la *n* final de la forma verbal *pongan* mediante una virgulilla situada encima de la *a*. La combinación de elementos que propongo para este tipo de fenómenos textuales es la siguiente: 
 
@@ -727,7 +729,7 @@ Además de estos glifos, la nota contiene una abreviatura que merece ser explica
 
 Por último, conviene tener en cuenta que la TEI define otros dos elementos que se podrían utilizar para marcar la secuencia de letras añadidas en la expansión o bien las grafías presentes en la abreviatura que han sido suprimidas en la forma desarrollada. Son respectivamente los elementos `<ex>` y `<am>`. En esta propuesta de codificación, sin embargo, no se ha considerado necesario el uso de estas etiquetas porque el lector puede comparar ambas formas y distinguir con claridad cuál es la intervención del editor sin añadir un nuevo elemento; sin embargo, no se descarta que en el futuro se incorporen siguiendo el consejo de la red CHARTA (Isasi *et al*., 2014). 
 
-### Errores y correcciones
+#### Errores y correcciones
 
 El texto que contiene el manuscrito Chacón y que sirve de base para esta codificación contiene algunos errores evidentes. Las etiquetas definidas por la TEI para marcar los errores y las formas correctas propuestas por el editor son dos: `<sic>` y `<corr>`. En esta propuesta de codificación, ambos elementos se anidan en `<orig>` y `<reg>` de la misma manera que lo hacen las abreviaturas y expansiones. 
 
@@ -755,7 +757,7 @@ Por el otro lado, pueden apreciarse con claridad pasajes que omiten alguna graf�
 
 Esta metodología, ideada para generar dos vistas alternativas en el navegador del usuario —los errores y las correcciones—, únicamente ha sido empleada para establecer el texto base transmitido por el manuscrito Chacón. Como se verá en el apartado siguiente,  los errores contenidos en el aparato de variantes se codifican con otros elementos y atributos. 
  
-#Aparato de variantes
+## Aparato de variantes
 
 A diferencia de los fenómenos textuales ya vistos, la representación del aparato de variantes plantea algunos problemas debido a dos razones principales: por un lado, aunque la TEI dedica el capítulo doceavo de las *Guidelines* a este tema, las explicaciones y ejemplos son escasos y, además, muchos de ellos se centran en cómo codificar aparatos ya existentes, impresos; por el otro, en la actualidad el modelo conceptual de la TEI presupone que la variación textual solo afecta porciones reducidas del texto, como palabras o frases, en lugar de párrafos, estrofas, títulos, secciones o incluso partes del texto. El debate sobre esta cuestión existe en el seno de la comunidad TEI pero en el momento en que escribo estas líneas el elemento `<app>` no puede contener los elementos `<l>`, `<p>`, `<head>` o `<div>` sino siempre a la inversa. Como se verá, esto condiciona el modo en que la codificación del aparato de variantes debe llevarse a cabo y plantea dificultades a la hora de codificar distintas versiones de una misma obra o la extensión de los testimonios cotejados. 
 
@@ -793,7 +795,7 @@ Por tanto, esta codificación de las *Soledades* está ideada para que el usuari
 
 Dicho esto, a continuación conviene ver una serie de casos concretos y comentar las principales dificultades que he tenido que afrontar. En adelante, el apartado se centrará en la codificación de la tipología de variantes y de la distinta extensión que presentan los testimonios cotejados.
 
-## Errores
+### Errores
 Según la crítitca textual, se pueden distinguir errores por adición, omisión, sustitución o inversión; por lo general, estos son fáciles de distinguir porque no tienen sentido, se transmiten en un solo o en unos pocos testimonios y no respetan la métrica del poema. Los errores, sin embargo, pueden tener una dimensión variable: desde una simple palabra, pasando por una expresión más larga, hasta un verso entero.
 
 Así, el caso más fácil de codificar se da cuando el error atañe únicamente una palabra: 
@@ -897,7 +899,7 @@ En resumen, para codificar un error por omisión como el cometido por el copista
 
 Para acabar, conviene saber que la TEI define un atributo `@cause` para clasificar los errores desde un punto de vista causal; hasta el momento, en esta codificación XML/TEI de las *Soledades* no he utilizado este atributo porque creo que el usuario tiene suficiente con poder separar los errores de las variantes de autor. Sin embargo, en el futuro podría clasificar los errores según otra tipología como adición, omisión, sustitución o inversión.  
 
-## Variantes de autor
+### Variantes de autor
 
 Las variantes de autor han sido codificadas utilizando un atributo `@type` con tres valores posibles: *prim*, *interm* y *intervention*. De esta manera, además de los errores de copia, es posible representar, por un lado, el proceso genético del autor, y, por el otro, cómo los copistas realizan intervenciones editoriales en el manuscrito.  
 
@@ -1019,7 +1021,7 @@ Por último, la distinción entre la versión primitiva y las variantes de autor
 
 En este verso se pueden distinguir tres estadios en la parte final: en primer lugar, *y no rudo*; en segundo lugar, *si bien rudo*; por último, *aunque rudo*. El procedimiento es idéntico al que ya ha sido explicado: la versión definitiva se codifica en el elemento `<lem>` mientras que las otras dos aparecen en el elemento `<rdg>`; lo que diferencia a la versión primitiva de la intermedia es únicamente el valor del atributo `@type. 
 
-##Extensión
+###Extensión
 
 Los testimonios cotejados tienen una extensión variable que nos permite conocer las fases de la escritura de las *Soledades*. Para representar la variación estructural con el método de segmentación paralela es necesario dejar vacíos algunos elementos `<rdg>`; esto ocurre en la codificación de todos los versos que componen la Dedicatoria: 
 
@@ -1067,7 +1069,7 @@ Los testimonios Pr y Rm no transmiten la Dedicatoria. Ahora bien, no se trata de
 
 Por supuesto, el incremento de siglas identificadas en el atributo `@wit` es progresivo pero no por ello deja de ser un proceso complejo: el editor debe representar una ausencia mediante una elemento presente que se repite verso tras verso.  
 
-#Fiabilidad y palabras suplidas
+##Fiabilidad y palabras suplidas
 
 Aunque el estado de los documentos cotejados es en general bueno, en ocasiones la grafía es poco clara y cuesta reconocer qué transcribió el copista, especialmente cuando hay una intervención editorial con tachón. Además, en tres ocasiones me he permitido conjeturar una lección de la versión primitiva.
 
@@ -1124,7 +1126,7 @@ Un ejemplo de cómo he representado palabras suplidas ya se vio más arriba al h
 
 Además de ejemplificar el uso del elemento <gap/>, en este verso es perceptible la codificación de las palabras suplidas. Como ya se explicó en el apartado 4.2., las palabras razón, negar y cielo de los versos 78, 266 y 451 son tres hipótesis o conjeturas que propongo. He utilizado el elemento <supplied> y no el atributo @cert porque el primero se puede utilizar para marcar una sola palabra mientras que el atributo @cert atañe a todo el contenido del elemento. Es decir, el nivel de detalle del elemento <supplied> es mayor. Como en la tradición impresa, las palabras codificadas con este elemento se podrían presentar en la web entre corchetes cuadrados para indicar que la lección ha sido suplida.  
 
-#Anotación 
+##Anotación 
 
 Aunque el objetivo principal de esta edición de las *Soledades* ha sido establecer el texto de las dos versiones y representarlos con lenguaje de marco descriptivo, el resultado contiene algunas notas de carácter ecdótico. En primer lugar, como se sabe, el texto base contiene una nota en el verso 937 de la *Soledad segunda* en los que el escriba manifiesta, por un lado, que el poema está inacabado; y, por el otro, que los versos que siguen hasta el final de la página fueron escritos a petición de Chacón.
  
@@ -1149,7 +1151,7 @@ Aunque he intentado representar de manera estructurada todas las variantes que h
 
 En este caso, tras el verso 17, la primera mano del testimonio Pr copió delfín no fue pequeño que es parte del verso 18; esta misma mano tachó y copió debajo el verso 18 íntegro. Codificar este error supondría incluir un nuevo elemento <l> que contendría un elemento <app> con un <lem> vacío y un <rdg> con la variante; por razones de economía, la alternativa que propongo es explicar el fenómeno con una nota en lugar de estructurar la información con elementos. 
 
-#Nombres propios
+##Nombres propios
 
 De la poesía de Góngora se ha destacado tradicionalmente como un rasgo característico la alusión y el uso de la perífrasis para evitar designar a los referentes por su nombre. Ahora bien, a lo largo de las *Soledades* se mencionan numerosas divinidades, héroes, astros y personajes mitológicos, históricos, ficticios y alegóricos. Los nombres de lugares también son frecuentes de tal modo que la designación de numerosos países, ciudades, regiones, continentes, ríos, montañas, fuentes y valles conforman la geografía de la obra. Todos estos nombres, por tanto, se pueden codificar con elementos TEI.
 
