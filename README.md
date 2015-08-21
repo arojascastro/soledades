@@ -17,7 +17,7 @@ Toda representación TEI de un texto debe tener un propósito; en otras palabras
 
 ##Contacto##
 
-Twitter: @RojasCastro
+Twitter: [@RojasCastroA] (https://twitter.com/RojasCastroA)
 
 E-mail: rojas.castro.antonio at gmail dot com
 
