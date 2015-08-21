@@ -1,3 +1,21 @@
+#Intro
+
+Toda representación TEI de un texto debe tener un propósito; en otras palabras, se codifican ciertos fenómenos textuales (no todos) para que el ordenador pueda procesarlos y el usuario interactúe con ellos en la interfaz web. Mi codificación de las Soledades ha sido concebida para que el usuario pueda acceder al texto paleográfico y modernizado de Chacón, pueda filtrar las variantes de autor por testimonio y clase (error, variante de autor e intervención editorial) y pueda navegar el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
+
+# Contenidos 
+
+- Encabezado
+- títulos, partes y subtítulos
+- grupos de versos y versos
+- saltos de página
+- fases de la cronología
+- discursos y diálogos
+- transcripción paleográfica y texto modernizado
+- aparato de variantes
+- grado de fiabilidad y palabras suplidas
+- anotación
+- nombres propios
+
 # Encabezado
 
 El encabezado TEI es el lugar del archivo XML en el que se recogen los metadatos, es decir, toda aquella información que permite identificar al documento y declarar cuál es la fuente de la que deriva el texto. En esta parte del archivo, además, se pueden registrar otro tipo de información suplementaria como los criterios editoriales, el tipo de texto u otros datos relativos a la creación de la obra desde un punto de vista intelectual. 
