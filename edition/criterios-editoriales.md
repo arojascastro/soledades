@@ -4,17 +4,17 @@ Toda representación TEI de un texto debe tener un propósito; en otras palabras
 
 # Contenidos 
 
-- Encabezado
-- títulos, partes y subtítulos
-- grupos de versos y versos
-- saltos de página
-- fases de la cronología
-- discursos y diálogos
-- transcripción paleográfica y texto modernizado
-- aparato de variantes
-- grado de fiabilidad y palabras suplidas
-- anotación
-- nombres propios
+- [encabezado] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#encabezado)
+- [títulos, partes y subtítulos] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#t%C3%ADtulo-partes-y-subt%C3%ADtulos)
+- [grupos de versos y versos] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#grupos-de-versos-y-versos)
+- [saltos de página] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#saltos-de-p%C3%A1gina)
+- [fases de la cronología] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#fases-de-la-cronolog%C3%ADa)
+- [discursos y diálogos] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#discursos-y-di%C3%A1logos)
+- [transcripción paleográfica y texto modernizado] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#transcripci%C3%B3n-paleogr%C3%A1fica-y-texto-modernizado)
+- [aparato de variantes] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#aparato-de-variantes) 
+- [fiabilidad y palabras suplidas] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#fiabilidad-y-palabras-suplidas) 
+- [anotación] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#anotación)
+- [nombres propios] (https://github.com/arojascastro/soledades/blob/master/edition/criterios-editoriales.md#nombres-propios)
 
 # Encabezado
 
