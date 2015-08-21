@@ -1,6 +1,6 @@
 #Intro
 
-Toda representación TEI de un texto debe tener un propósito; en otras palabras, se codifican ciertos fenómenos textuales (no todos) para que el ordenador pueda procesarlos y el usuario interactúe con ellos en la interfaz web. Mi codificación de las Soledades ha sido concebida para que el usuario pueda acceder al texto paleográfico y modernizado de Chacón, pueda filtrar las variantes de autor por testimonio y clase (error, variante de autor e intervención editorial) y pueda navegar el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
+Toda representación TEI de un texto debe tener un propósito; en otras palabras, se codifican ciertos fenómenos textuales (no todos) para que el ordenador pueda procesarlos y el usuario interactúe con ellos en la interfaz web. Mi codificación de las *Soledades* ha sido concebida para que el usuario pueda acceder al texto paleográfico y modernizado de Chacón, pueda filtrar las variantes de autor por testimonio y clase (error, variante de autor e intervención editorial) y pueda navegar el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
 
 # Contenidos 
 
