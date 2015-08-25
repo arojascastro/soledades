@@ -3,7 +3,7 @@ Esta carpeta contiene cinco archivos en formato xlsx:
 - bio-gongora.xslx: contiene eventos biográficos de Góngora que forman parte de esta [cronología] (http://www.antoniorojascastro.com/tesis/cronologia/)  
 - encuesta-gongora.xslx: contiene las preguntas y respuestas de la siguiente [encuesta] (http://www.antoniorojascastro.com/tesis/encuesta/) 
 - lista-manuscritos-gongorinos.xslx: contiene la localización de los repositorios con manuscritos del siglo XVII con poesía de Góngora utilizados en este [mapa] (http://www.antoniorojascastro.com/tesis/mapa/) 
-- nombres-personales-soledades-lema.xslx: contiene los nombres propios codificados con <persName> y <placeName>
+- nombres-personales-soledades-lema.xslx: contiene los nombres propios codificados con las etiquetas TEI `<persName>` y `<placeName>`
 - testimonios-soledades.xslx: contiene la lista de [testimonios cotejados] (http://www.antoniorojascastro.com/tesis/testimonios/) para establecer el texto de las *Soledades*  
 
 
