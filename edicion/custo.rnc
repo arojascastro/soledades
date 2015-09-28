@@ -1,0 +1,3619 @@
+default namespace = "http://www.tei-c.org/ns/Examples"
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace ns1 = "http://www.tei-c.org/ns/1.0"
+namespace rng = "http://relaxng.org/ns/structure/1.0"
+namespace s = "http://www.ascc.net/xml/schematron"
+namespace sch = "http://purl.oclc.org/dsdl/schematron"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+# Schema generated from ODD source 2015-09-28T18:32:27Z. .
+# TEI Edition: Version 2.8.0. Last updated on
+#	6th April 2015, revision 13197
+# TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
+#
+
+#
+tei_macro.paraContent =
+  (text
+   | tei_model.gLike
+   | tei_model.phrase
+   | tei_model.inter
+   | tei_model.global
+   | tei_lg
+   | tei_l)*
+tei_macro.limitedContent =
+  (text | tei_model.limitedPhrase | tei_model.inter)*
+tei_macro.phraseSeq =
+  (text | tei_model.gLike | tei_model.phrase | tei_model.global)*
+tei_macro.phraseSeq.limited =
+  (text | tei_model.limitedPhrase | tei_model.global)*
+tei_macro.specialPara =
+  (text
+   | tei_model.gLike
+   | tei_model.phrase
+   | tei_model.inter
+   | tei_model.divPart
+   | tei_model.global)*
+tei_macro.xtext = (text | tei_model.gLike)*
+tei_data.certainty = "high" | "medium" | "low" | "unknown"
+tei_data.probability =
+  xsd:double { minInclusive = "0" maxInclusive = "1" }
+tei_data.numeric =
+  xsd:double
+  | xsd:token { pattern = "(\-?[\d]+/\-?[\d]+)" }
+  | xsd:decimal
+tei_data.count = xsd:nonNegativeInteger
+tei_data.temporal.w3c =
+  xsd:date
+  | xsd:gYear
+  | xsd:gMonth
+  | xsd:gDay
+  | xsd:gYearMonth
+  | xsd:gMonthDay
+  | xsd:time
+  | xsd:dateTime
+tei_data.truthValue = xsd:boolean
+tei_data.xTruthValue = xsd:boolean | "unknown" | "inapplicable"
+tei_data.language = xsd:language | ""
+tei_data.pointer = xsd:anyURI
+tei_data.version = xsd:token { pattern = "[\d]+(\.[\d]+){0,2}" }
+tei_data.word = xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+tei_data.sex = tei_data.word
+tei_data.text = xsd:string
+tei_data.name = xsd:Name
+tei_data.enumerated = tei_data.word
+tei_data.temporal.iso =
+  xsd:date
+  | xsd:gYear
+  | xsd:gMonth
+  | xsd:gDay
+  | xsd:gYearMonth
+  | xsd:gMonthDay
+  | xsd:time
+  | xsd:dateTime
+  | xsd:token { pattern = "[0-9.,DHMPRSTWYZ/:+\-]+" }
+tei_macro.anyXML =
+  element * - (ns1:* | egXML) {
+    attribute * { text }*,
+    (text | tei_macro.anyXML)*
+  }
+tei_att.ascribed.attributes = tei_att.ascribed.attribute.who
+tei_att.ascribed.attribute.who =
+  
+  ## indica la persona o grupo de personas a las que se refiere el contenido del elemento.
+  attribute who {
+    list { tei_data.pointer+ }
+  }?
+tei_att.canonical.attributes =
+  tei_att.canonical.attribute.key, tei_att.canonical.attribute.ref
+tei_att.canonical.attribute.key =
+  
+  ## provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind.
+  attribute key { tei_data.text }?
+tei_att.canonical.attribute.ref =
+  
+  ## (reference) provides an explicit means of locating a full definition for the entity being named by means of one or more URIs.
+  attribute ref {
+    list { tei_data.pointer+ }
+  }?
+tei_att.ranging.attributes =
+  tei_att.ranging.attribute.atLeast,
+  tei_att.ranging.attribute.atMost,
+  tei_att.ranging.attribute.min,
+  tei_att.ranging.attribute.max,
+  tei_att.ranging.attribute.confidence
+tei_att.ranging.attribute.atLeast =
+  
+  ## gives a minimum estimated value for the approximate measurement.
+  attribute atLeast { tei_data.numeric }?
+tei_att.ranging.attribute.atMost =
+  
+  ## gives a maximum estimated value for the approximate measurement.
+  attribute atMost { tei_data.numeric }?
+tei_att.ranging.attribute.min =
+  
+  ## where the measurement summarizes more than one observation or a range, supplies the minimum value observed.
+  attribute min { tei_data.numeric }?
+tei_att.ranging.attribute.max =
+  
+  ## where the measurement summarizes more than one observation or a range, supplies the maximum value observed.
+  attribute max { tei_data.numeric }?
+tei_att.ranging.attribute.confidence =
+  
+  ## specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.
+  attribute confidence { tei_data.probability }?
+tei_att.dimensions.attributes =
+  tei_att.ranging.attributes,
+  tei_att.dimensions.attribute.unit,
+  tei_att.dimensions.attribute.quantity,
+  tei_att.dimensions.attribute.extent,
+  tei_att.dimensions.attribute.precision,
+  tei_att.dimensions.attribute.scope
+tei_att.dimensions.attribute.unit =
+  
+  ## especifica las unidades usadas para la medición.
+  ## Los valores sugeridos incluyen: 1] cm(centimetres) ; 2] mm(millimetres) ; 3] in(inches) ; 4] lines; 5] chars(characters) 
+  attribute unit {
+    
+    ## (centímetros) 
+    "cm"
+    | 
+      ## (milímetros) 
+      "mm"
+    | 
+      ## (pulgadas) 
+      "in"
+    | 
+      ## líneas de texto
+      "lines"
+    | 
+      ## (caracteres) caracteres del texto
+      "chars"
+    | xsd:Name
+  }?
+tei_att.dimensions.attribute.quantity =
+  
+  ## especifica la longitud en las unidades especificadas
+  attribute quantity { tei_data.numeric }?
+tei_att.dimensions.attribute.extent =
+  
+  ## indicates the size of the object concerned using a project-specific vocabulary combining quantity and units in a single string of words.
+  attribute extent { tei_data.text }?
+tei_att.dimensions.attribute.precision =
+  
+  ## characterizes the precision of the values specified by the other attributes.
+  attribute precision { tei_data.certainty }?
+tei_att.dimensions.attribute.scope =
+  
+  ## especifica la aplicabilidad de esta medición, en los casos en que se mida más de un objeto.
+  ## Posibles valores: 1] all; 2] most; 3] range
+  attribute scope { tei_data.enumerated }?
+tei_att.datable.w3c.attributes =
+  tei_att.datable.w3c.attribute.when,
+  tei_att.datable.w3c.attribute.notBefore,
+  tei_att.datable.w3c.attribute.notAfter,
+  tei_att.datable.w3c.attribute.from,
+  tei_att.datable.w3c.attribute.to
+tei_att.datable.w3c.attribute.when =
+  
+  ## proporciona el valor de una fecha o una hora en un formato estandard.
+  attribute when { tei_data.temporal.w3c }?
+tei_att.datable.w3c.attribute.notBefore =
+  
+  ## especifica la fecha más temprana posible para un evento en un formato estándard, p.ej. aaaa-mm-dd.
+  attribute notBefore { tei_data.temporal.w3c }?
+tei_att.datable.w3c.attribute.notAfter =
+  
+  ## especifica la fecha más tardana posible para un evento en un formato estándard, p.ej. aaaa-mm-dd.
+  attribute notAfter { tei_data.temporal.w3c }?
+tei_att.datable.w3c.attribute.from =
+  
+  ## indica el punto de inicio del período en el formato estándard.
+  attribute from { tei_data.temporal.w3c }?
+tei_att.datable.w3c.attribute.to =
+  
+  ## indica el punto final de un periodo en formato estándard.
+  attribute to { tei_data.temporal.w3c }?
+tei_att.datable.attributes =
+  tei_att.datable.w3c.attributes,
+  tei_att.datable.iso.attributes,
+  tei_att.datable.custom.attributes,
+  tei_att.datable.attribute.calendar,
+  tei_att.datable.attribute.period
+tei_att.datable.attribute.calendar =
+  
+  ## indica el sistema o calendario en que se muestra una fecha.
+  attribute calendar { tei_data.pointer }?
+sch:pattern [
+  id = "custo-att.datable-calendar-calendar-constraint-1"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[@calendar]"
+    "\x{a}" ~
+    "            "
+    sch:assert [
+      test = "string-length(.) gt 0"
+      "\x{a}" ~
+      "@calendar indicates the system or calendar to which the date represented by the content of this element\x{a}" ~
+      "belongs, but this "
+      sch:name [ ]
+      " element has no textual content."
+    ]
+    "\x{a}" ~
+    "          "
+  ]
+  "\x{a}" ~
+  "   "
+]
+tei_att.datable.attribute.period =
+  
+  ## suministra un indicador a una localización concreta que define un periodo de tiempo conocido dentro del cual el item datable se ha producido.
+  attribute period { tei_data.pointer }?
+tei_att.declarable.attributes = tei_att.declarable.attribute.default
+tei_att.declarable.attribute.default =
+  
+  ## indica si el elemento es seleccionado automáticamente o no cuando es seleccionado el padre
+  [ a:defaultValue = "false" ]
+  attribute default {
+    
+    ## Este elemento se selecciona si sus padres son seleccionados
+    "true"
+    | 
+      ## Este elemento sólo se puede seleccionar explícitamente, a menos que sea el único de su clase, en este caso se selecciona si su padre es seleccionado.
+      "false"
+  }?
+tei_att.declaring.attributes = tei_att.declaring.attribute.decls
+tei_att.declaring.attribute.decls =
+  
+  ## identifica uno o más elementos declarables al interno del encabezado, los cuales son válidos para el elemento al cual es adscrito el atributo en cuestión y su contenido.
+  attribute decls {
+    list { tei_data.pointer+ }
+  }?
+tei_att.fragmentable.attributes = tei_att.fragmentable.attribute.part
+tei_att.fragmentable.attribute.part =
+  
+  ## specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.
+  [ a:defaultValue = "N" ]
+  attribute part {
+    
+    ## (yes) the element is fragmented in some (unspecified) respect
+    "Y"
+    | 
+      ## (no) either the element is not fragmented, or no claim is made as to its completeness.
+      "N"
+    | 
+      ## (initial) this is the initial part of a fragmented element
+      "I"
+    | 
+      ## (medial) this is a medial part of a fragmented element
+      "M"
+    | 
+      ## (final) this is the final part of a fragmented element
+      "F"
+  }?
+tei_att.docStatus.attributes = tei_att.docStatus.attribute.status
+tei_att.docStatus.attribute.status =
+  
+  ## describes the status of a document either currently or, when associated with a dated element, at the time indicated.
+  ## Posibles valores: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] draft; 6] embargoed; 7] expired; 8] frozen; 9] galley; 10] proposed; 11] published; 12] recommendation; 13] submitted; 14] unfinished; 15] withdrawn
+  [ a:defaultValue = "draft" ] attribute status { tei_data.enumerated }?
+tei_att.global.responsibility.attributes =
+  tei_att.global.responsibility.attribute.cert,
+  tei_att.global.responsibility.attribute.resp
+tei_att.global.responsibility.attribute.cert =
+  
+  ## (certeza) significa el grado de certeza asociado con la intervención o la interpretación.
+  attribute cert { tei_data.certainty }?
+tei_att.global.responsibility.attribute.resp =
+  
+  ## (parte responsable) indica el agente responsable de la intervención o la interpretación, p.ej. un editor o un transcriptor.
+  attribute resp {
+    list { tei_data.pointer+ }
+  }?
+tei_att.editLike.attributes =
+  tei_att.dimensions.attributes,
+  tei_att.source.attributes,
+  tei_att.editLike.attribute.evidence,
+  tei_att.editLike.attribute.instant
+tei_att.editLike.attribute.evidence =
+  
+  ## indica la naturaleza de las pruebas que sostienen la fiabilidad o precisión de la intervención o interpretación.
+  ## Los valores sugeridos incluyen: 1] internal; 2] external; 3] conjecture
+  attribute evidence {
+    list {
+      (
+       ## existen pruebas internas que sostienen la intervención.
+       "internal"
+       | 
+         ## existen pruebas externas que sostienen la intervención.
+         "external"
+       | 
+         ## la intervención o interpretación ha sido hecho por el editor, catalogador o crítico en base a su experiencia.
+         "conjecture"
+       | xsd:Name)+
+    }
+  }?
+tei_att.editLike.attribute.instant =
+  
+  ## indicates whether this is an instant revision or not.
+  [ a:defaultValue = "false" ]
+  attribute instant { tei_data.xTruthValue }?
+tei_att.global.rendition.attributes =
+  tei_att.global.rendition.attribute.rend,
+  tei_att.global.rendition.attribute.style,
+  tei_att.global.rendition.attribute.rendition
+tei_att.global.rendition.attribute.rend =
+  
+  ## (interpretación) indica cómo el elemento en cuestión ha sido dado o proporcionado en el texto fuente.
+  attribute rend {
+    list { tei_data.word+ }
+  }?
+tei_att.global.rendition.attribute.style =
+  
+  ## contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text
+  attribute style { tei_data.text }?
+tei_att.global.rendition.attribute.rendition =
+  
+  ## indica una descripción de la representación o de la presentación empleada para este elemento en el texto original.
+  attribute rendition {
+    list { tei_data.pointer+ }
+  }?
+tei_att.global.attributes =
+  tei_att.global.rendition.attributes,
+  tei_att.global.facs.attributes,
+  tei_att.global.change.attributes,
+  tei_att.global.responsibility.attributes,
+  tei_att.global.attribute.xmlid,
+  tei_att.global.attribute.n,
+  tei_att.global.attribute.xmllang,
+  tei_att.global.attribute.xmlbase,
+  tei_att.global.attribute.xmlspace
+tei_att.global.attribute.xmlid =
+  
+  ## (identificador) proporciona un identificador único para el elemento al cual se asocia el atributo.
+  attribute xml:id { xsd:ID }?
+tei_att.global.attribute.n =
+  
+  ## (número) proporciona un número (u otra etiqueta) a un elemento que no es necesariamente único en el documento.
+  attribute n { tei_data.text }?
+tei_att.global.attribute.xmllang =
+  
+  ## (lengua) indica la lengua del contenido del elemento utilizando los códigos extraídos de RFC 3066
+  attribute xml:lang { tei_data.language }?
+tei_att.global.attribute.xmlbase =
+  
+  ## proporciona una referencia URI de base gracias a la aplicación eventual de la cual pueden analizarse tanto referencias URI relativas como referencias URI absolutas.
+  attribute xml:base { tei_data.pointer }?
+tei_att.global.attribute.xmlspace =
+  
+  ## señala la voluntad de hacer que el espaciado sea preservado por cualquier aplicación.
+  attribute xml:space {
+    
+    ## signals that the application's default white-space processing modes are acceptable
+    "default"
+    | 
+      ## indicates the intent that applications preserve all white space
+      "preserve"
+  }?
+tei_att.handFeatures.attributes =
+  tei_att.handFeatures.attribute.scribe,
+  tei_att.handFeatures.attribute.scribeRef,
+  tei_att.handFeatures.attribute.script,
+  tei_att.handFeatures.attribute.scriptRef,
+  tei_att.handFeatures.attribute.medium,
+  tei_att.handFeatures.attribute.scope
+tei_att.handFeatures.attribute.scribe =
+  
+  ## asigna un nombre u otro identificador estándard para el transcriptor que se identifica con la mano en cuestión.
+  attribute scribe { tei_data.name }?
+tei_att.handFeatures.attribute.scribeRef =
+  
+  ## points to a full description of the scribe concerned, typically supplied by a person element elsewhere in the description.
+  attribute scribeRef {
+    list { tei_data.pointer+ }
+  }?
+tei_att.handFeatures.attribute.script =
+  
+  ## caracteriza un determinado estilo de escritura utilizado por la mano en cuestión, p.ej. secretario, grabado sobre cobre, cancelleresco, italiano, etc.
+  attribute script {
+    list { tei_data.name+ }
+  }?
+tei_att.handFeatures.attribute.scriptRef =
+  
+  ## points to a full description of the script or writing style used by this hand, typically supplied by a scriptNote element elsewhere in the description.
+  attribute scriptRef {
+    list { tei_data.pointer+ }
+  }?
+tei_att.handFeatures.attribute.medium =
+  
+  ## describe la tinta o el tipo de tinta, p.ej. marrón, u otros instrumentos de escritura, p.ej. lápiz.
+  attribute medium {
+    list { tei_data.enumerated+ }
+  }?
+tei_att.handFeatures.attribute.scope =
+  
+  ## especifica en qué medida es utilizada la mano en el manuscrito.
+  attribute scope {
+    
+    ## al interno del manuscrito se utiliza sólo esta mano.
+    "sole"
+    | 
+      ## esta es la mano que se utiliza en la mayor parte del manuscrito.
+      "major"
+    | 
+      ## esta mano se usa sólo ocasionalmente en el manuscrito.
+      "minor"
+  }?
+tei_att.naming.attributes =
+  tei_att.canonical.attributes,
+  tei_att.naming.attribute.role,
+  tei_att.naming.attribute.nymRef
+tei_att.naming.attribute.role =
+  
+  ## may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place.
+  attribute role {
+    list { tei_data.enumerated+ }
+  }?
+tei_att.naming.attribute.nymRef =
+  
+  ## (referencia al nombre canónico) proporciona los medios para localizar la forma canónica (nym) de los nombres asociados al objeto nombrado por el elemento que lo contiene.
+  attribute nymRef {
+    list { tei_data.pointer+ }
+  }?
+tei_att.placement.attributes = tei_att.placement.attribute.place
+tei_att.placement.attribute.place =
+  
+  ## specifies where this item is placed
+  ## Los valores sugeridos incluyen: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6] overleaf; 7] above; 8] end; 9] inline; 10] inspace
+  attribute place {
+    list {
+      (
+       ## debajo de la línea
+       "below"
+       | 
+         ## en el margen inferior
+         "bottom"
+       | 
+         ## in the margin (left, right, or both)
+         "margin"
+       | 
+         ## en el margen superior
+         "top"
+       | 
+         ## en el opuesto,es decir en el anverso, reverso, etc.
+         "opposite"
+       | 
+         ## en la otra cara de la página
+         "overleaf"
+       | 
+         ## sobre la línea
+         "above"
+       | 
+         ## al final del capítulo o del volumen.
+         "end"
+       | 
+         ## within the body of the text.
+         "inline"
+       | 
+         ## in a predefined space, for example left by an earlier scribe.
+         "inspace"
+       | xsd:Name)+
+    }
+  }?
+tei_att.typed.attributes =
+  tei_att.typed.attribute.type, tei_att.typed.attribute.subtype
+tei_att.typed.attribute.type =
+  
+  ## caracteriza el elemento utilizando una clasificación o tipología funcional.
+  attribute type { tei_data.enumerated }?
+tei_att.typed.attribute.subtype =
+  
+  ## proporciona, si es necesario, una subcategorización del elemento.
+  attribute subtype { tei_data.enumerated }?
+sch:pattern [
+  id = "custo-att.typed-subtypeTyped-constraint-2"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "*[@subtype]"
+    "\x{a}" ~
+    "        "
+    sch:assert [
+      test = "@type"
+      "The "
+      sch:name [ ]
+      " element should not be categorized in detail with @subtype\x{a}" ~
+      " unless also categorized in general with @type"
+    ]
+    "\x{a}" ~
+    "      "
+  ]
+  "\x{a}" ~
+  "   "
+]
+tei_att.pointing.attributes =
+  tei_att.pointing.attribute.targetLang,
+  tei_att.pointing.attribute.target,
+  tei_att.pointing.attribute.evaluate
+tei_att.pointing.attribute.targetLang =
+  
+  ## specifies the language of the content to be found at the destination referenced by target, using a language tag generated according to BCP 47.
+  attribute targetLang { tei_data.language }?
+sch:pattern [
+  id = "custo-att.pointing-targetLang-targetLang-constraint-3"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[not(self::tei:schemaSpec)][@targetLang]"
+    "\x{a}" ~
+    "            "
+    sch:assert [
+      test = "count(@target)"
+      "@targetLang can only be used if @target is specified."
+    ]
+    "\x{a}" ~
+    "          "
+  ]
+  "\x{a}" ~
+  "   "
+]
+tei_att.pointing.attribute.target =
+  
+  ## especifica la destinación de una referencia proporcionando una o más referencias URI.
+  attribute target {
+    list { tei_data.pointer+ }
+  }?
+tei_att.pointing.attribute.evaluate =
+  
+  ## indica el significado previsto cuando la meta de un indicador es también un indicador.
+  attribute evaluate {
+    
+    ## si el elemento que señala a sí mismo es un indicador, entonces el target de ese indicador será tomado, y así sucesivamente, hasta que se encuentre un elemento que no sea un indicador.
+    "all"
+    | 
+      ## si el elemento que señala a sí mismo es un puntero, entonces el target (puntero o no) se toma como el target de este puntero.
+      "one"
+    | 
+      ## no se realiza ninguna otra evaluación de los targets más allá de la necesaria para encontrar el elemento especificado en el target del puntero.
+      "none"
+  }?
+tei_att.sortable.attributes = tei_att.sortable.attribute.sortKey
+tei_att.sortable.attribute.sortKey =
+  
+  ## supplies the sort key for this element in an index, list or group which contains it.
+  attribute sortKey { tei_data.word }?
+sch:pattern [
+  id = "custo-att.spanning-spanTo-spanTo-2-constraint-4"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[@spanTo]"
+    "\x{a}" ~
+    "            "
+    sch:assert [
+      test =
+        "id(substring(@spanTo,2)) and following::*[@xml:id=substring(current()/@spanTo,2)]"
+      "\x{a}" ~
+      "The element indicated by @spanTo ("
+      sch:value-of [ select = "@spanTo" ]
+      ") must follow the current element "
+      sch:name [ ]
+      "\x{a}" ~
+      "                  "
+    ]
+    "\x{a}" ~
+    "          "
+  ]
+  "\x{a}" ~
+  "   "
+]
+tei_att.transcriptional.attribute.hand =
+  
+  ## indica el responsable de la adición o de la omisión.
+  attribute hand { tei_data.pointer }?
+tei_att.citing.attribute.unit =
+  
+  ## identifies the unit of information conveyed by the element, e.g. columns, pages, volume.
+  ## Los valores sugeridos incluyen: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] part; 7] column
+  attribute unit {
+    
+    ## (el elemento contiene el número de un volumen.) el elemento contiene el número de volumen.
+    "volume"
+    | 
+      ## el elemento contiene el número de la edición, o los números del volumen y de la edición.
+      "issue"
+    | 
+      ## (el elemento contiene un número de página o el intervalo de páginas.) el elemento contiene una página o un intervalo de páginas.
+      "page"
+    | 
+      ## the element contains a line number or line range.
+      "line"
+    | 
+      ## (capítulo) el elemento contiene la indicación del capítulo (número y/o el título)
+      "chapter"
+    | 
+      ## el elemento identifica una parte de un libro o de una colección.
+      "part"
+    | 
+      ## the element identifies a column.
+      "column"
+    | xsd:Name
+  }?
+tei_att.citing.attribute.to =
+  
+  ## specifies the end-point of the range of units indicated by the unit attribute.
+  attribute to { tei_data.word }?
+tei_model.nameLike.agent = tei_name | tei_orgName | tei_persName
+tei_model.nameLike.agent_alternation =
+  tei_name | tei_orgName | tei_persName
+tei_model.nameLike.agent_sequence = tei_name, tei_orgName, tei_persName
+tei_model.nameLike.agent_sequenceOptional =
+  tei_name?, tei_orgName?, tei_persName?
+tei_model.nameLike.agent_sequenceOptionalRepeatable =
+  tei_name*, tei_orgName*, tei_persName*
+tei_model.nameLike.agent_sequenceRepeatable =
+  tei_name+, tei_orgName+, tei_persName+
+tei_model.segLike = notAllowed
+tei_model.hiLike = tei_hi
+tei_model.hiLike_alternation = tei_hi
+tei_model.hiLike_sequence = tei_hi
+tei_model.hiLike_sequenceOptional = tei_hi?
+tei_model.hiLike_sequenceOptionalRepeatable = tei_hi*
+tei_model.hiLike_sequenceRepeatable = tei_hi+
+tei_model.emphLike = tei_mentioned | tei_title
+tei_model.emphLike_alternation = tei_mentioned | tei_title
+tei_model.emphLike_sequence = tei_mentioned, tei_title
+tei_model.emphLike_sequenceOptional = tei_mentioned?, tei_title?
+tei_model.emphLike_sequenceOptionalRepeatable =
+  tei_mentioned*, tei_title*
+tei_model.emphLike_sequenceRepeatable = tei_mentioned+, tei_title+
+tei_model.highlighted = tei_model.hiLike | tei_model.emphLike
+tei_model.dateLike = tei_date
+tei_model.dateLike_alternation = tei_date
+tei_model.dateLike_sequence = tei_date
+tei_model.dateLike_sequenceOptional = tei_date?
+tei_model.dateLike_sequenceOptionalRepeatable = tei_date*
+tei_model.dateLike_sequenceRepeatable = tei_date+
+tei_model.dimLike = tei_height | tei_width
+tei_model.measureLike = tei_dim | tei_height | tei_width
+tei_model.measureLike_alternation = tei_dim | tei_height | tei_width
+tei_model.measureLike_sequence = tei_dim, tei_height, tei_width
+tei_model.measureLike_sequenceOptional =
+  tei_dim?, tei_height?, tei_width?
+tei_model.measureLike_sequenceOptionalRepeatable =
+  tei_dim*, tei_height*, tei_width*
+tei_model.measureLike_sequenceRepeatable =
+  tei_dim+, tei_height+, tei_width+
+tei_model.egLike = notAllowed
+tei_model.egLike_alternation = notAllowed
+tei_model.egLike_sequence = empty
+tei_model.egLike_sequenceOptional = empty
+tei_model.egLike_sequenceOptionalRepeatable = empty
+tei_model.egLike_sequenceRepeatable = notAllowed
+tei_model.graphicLike = notAllowed
+tei_model.offsetLike = notAllowed
+tei_model.offsetLike_alternation = notAllowed
+tei_model.offsetLike_sequence = empty
+tei_model.offsetLike_sequenceOptional = empty
+tei_model.offsetLike_sequenceOptionalRepeatable = empty
+tei_model.offsetLike_sequenceRepeatable = notAllowed
+tei_model.pPart.msdesc =
+  tei_dimensions
+  | tei_locus
+  | tei_material
+  | tei_origDate
+  | tei_origPlace
+tei_model.pPart.editorial =
+  tei_choice | tei_abbr | tei_expan | tei_subst
+tei_model.pPart.editorial_alternation =
+  tei_choice | tei_abbr | tei_expan | tei_subst
+tei_model.pPart.editorial_sequence =
+  tei_choice, tei_abbr, tei_expan, tei_subst
+tei_model.pPart.editorial_sequenceOptional =
+  tei_choice?, tei_abbr?, tei_expan?, tei_subst?
+tei_model.pPart.editorial_sequenceOptionalRepeatable =
+  tei_choice*, tei_abbr*, tei_expan*, tei_subst*
+tei_model.pPart.editorial_sequenceRepeatable =
+  tei_choice+, tei_abbr+, tei_expan+, tei_subst+
+tei_model.pPart.transcriptional =
+  tei_sic
+  | tei_corr
+  | tei_reg
+  | tei_orig
+  | tei_add
+  | tei_del
+  | tei_app
+  | tei_restore
+  | tei_supplied
+tei_model.pPart.transcriptional_alternation =
+  tei_sic
+  | tei_corr
+  | tei_reg
+  | tei_orig
+  | tei_add
+  | tei_del
+  | tei_app
+  | tei_restore
+  | tei_supplied
+tei_model.pPart.transcriptional_sequence =
+  tei_sic,
+  tei_corr,
+  tei_reg,
+  tei_orig,
+  tei_add,
+  tei_del,
+  tei_app,
+  tei_restore,
+  tei_supplied
+tei_model.pPart.transcriptional_sequenceOptional =
+  tei_sic?,
+  tei_corr?,
+  tei_reg?,
+  tei_orig?,
+  tei_add?,
+  tei_del?,
+  tei_app?,
+  tei_restore?,
+  tei_supplied?
+tei_model.pPart.transcriptional_sequenceOptionalRepeatable =
+  tei_sic*,
+  tei_corr*,
+  tei_reg*,
+  tei_orig*,
+  tei_add*,
+  tei_del*,
+  tei_app*,
+  tei_restore*,
+  tei_supplied*
+tei_model.pPart.transcriptional_sequenceRepeatable =
+  tei_sic+,
+  tei_corr+,
+  tei_reg+,
+  tei_orig+,
+  tei_add+,
+  tei_del+,
+  tei_app+,
+  tei_restore+,
+  tei_supplied+
+tei_model.pPart.edit =
+  tei_model.pPart.editorial | tei_model.pPart.transcriptional
+tei_model.ptrLike = tei_ref
+tei_model.lPart = notAllowed
+tei_model.global.meta = notAllowed
+tei_model.milestoneLike = tei_milestone | tei_pb
+tei_model.gLike = tei_g
+tei_model.oddDecl = notAllowed
+tei_model.oddDecl_alternation = notAllowed
+tei_model.oddDecl_sequence = empty
+tei_model.oddDecl_sequenceOptional = empty
+tei_model.oddDecl_sequenceOptionalRepeatable = empty
+tei_model.oddDecl_sequenceRepeatable = notAllowed
+tei_model.phrase.xml = tei_att | tei_gi | tei_val
+tei_model.specDescLike = notAllowed
+tei_model.biblLike =
+  tei_bibl | tei_biblStruct | tei_listBibl | tei_msDesc
+tei_model.biblLike_alternation =
+  tei_bibl | tei_biblStruct | tei_listBibl | tei_msDesc
+tei_model.biblLike_sequence =
+  tei_bibl, tei_biblStruct, tei_listBibl, tei_msDesc
+tei_model.biblLike_sequenceOptional =
+  tei_bibl?, tei_biblStruct?, tei_listBibl?, tei_msDesc?
+tei_model.biblLike_sequenceOptionalRepeatable =
+  tei_bibl*, tei_biblStruct*, tei_listBibl*, tei_msDesc*
+tei_model.biblLike_sequenceRepeatable =
+  tei_bibl+, tei_biblStruct+, tei_listBibl+, tei_msDesc+
+tei_model.headLike = tei_head
+tei_model.headLike_alternation = tei_head
+tei_model.headLike_sequence = tei_head
+tei_model.headLike_sequenceOptional = tei_head?
+tei_model.headLike_sequenceOptionalRepeatable = tei_head*
+tei_model.headLike_sequenceRepeatable = tei_head+
+tei_model.labelLike = tei_label
+tei_model.labelLike_alternation = tei_label
+tei_model.labelLike_sequence = tei_label
+tei_model.labelLike_sequenceOptional = tei_label?
+tei_model.labelLike_sequenceOptionalRepeatable = tei_label*
+tei_model.labelLike_sequenceRepeatable = tei_label+
+tei_model.listLike =
+  tei_list | tei_listPerson | tei_listPlace | tei_listWit
+tei_model.listLike_alternation =
+  tei_list | tei_listPerson | tei_listPlace | tei_listWit
+tei_model.listLike_sequence =
+  tei_list, tei_listPerson, tei_listPlace, tei_listWit
+tei_model.listLike_sequenceOptional =
+  tei_list?, tei_listPerson?, tei_listPlace?, tei_listWit?
+tei_model.listLike_sequenceOptionalRepeatable =
+  tei_list*, tei_listPerson*, tei_listPlace*, tei_listWit*
+tei_model.listLike_sequenceRepeatable =
+  tei_list+, tei_listPerson+, tei_listPlace+, tei_listWit+
+tei_model.noteLike = tei_note | tei_witDetail
+tei_model.lLike = tei_l
+tei_model.lLike_alternation = tei_l
+tei_model.lLike_sequence = tei_l
+tei_model.lLike_sequenceOptional = tei_l?
+tei_model.lLike_sequenceOptionalRepeatable = tei_l*
+tei_model.lLike_sequenceRepeatable = tei_l+
+tei_model.pLike = tei_p
+tei_model.pLike_alternation = tei_p
+tei_model.pLike_sequence = tei_p
+tei_model.pLike_sequenceOptional = tei_p?
+tei_model.pLike_sequenceOptionalRepeatable = tei_p*
+tei_model.pLike_sequenceRepeatable = tei_p+
+tei_model.stageLike = notAllowed
+tei_model.stageLike_alternation = notAllowed
+tei_model.stageLike_sequence = empty
+tei_model.stageLike_sequenceOptional = empty
+tei_model.stageLike_sequenceOptionalRepeatable = empty
+tei_model.stageLike_sequenceRepeatable = notAllowed
+tei_model.global.edit = tei_gap | tei_space
+tei_model.divPart = tei_model.lLike | tei_model.pLike | tei_lg
+tei_model.persStateLike = tei_persName
+tei_model.persEventLike = notAllowed
+tei_model.personLike = tei_person
+tei_model.personPart =
+  tei_model.biblLike
+  | tei_model.persStateLike
+  | tei_model.persEventLike
+  | tei_idno
+tei_model.placeNamePart =
+  tei_placeName | tei_country | tei_settlement | tei_geogName
+tei_model.placeNamePart_alternation =
+  tei_placeName | tei_country | tei_settlement | tei_geogName
+tei_model.placeNamePart_sequence =
+  tei_placeName, tei_country, tei_settlement, tei_geogName
+tei_model.placeNamePart_sequenceOptional =
+  tei_placeName?, tei_country?, tei_settlement?, tei_geogName?
+tei_model.placeNamePart_sequenceOptionalRepeatable =
+  tei_placeName*, tei_country*, tei_settlement*, tei_geogName*
+tei_model.placeNamePart_sequenceRepeatable =
+  tei_placeName+, tei_country+, tei_settlement+, tei_geogName+
+tei_model.placeStateLike = tei_model.placeNamePart
+tei_model.placeStateLike_alternation =
+  tei_model.placeNamePart_alternation
+tei_model.placeStateLike_sequence = tei_model.placeNamePart_sequence
+tei_model.placeStateLike_sequenceOptional =
+  tei_model.placeNamePart_sequenceOptional?
+tei_model.placeStateLike_sequenceOptionalRepeatable =
+  tei_model.placeNamePart_sequenceOptionalRepeatable*
+tei_model.placeStateLike_sequenceRepeatable =
+  tei_model.placeNamePart_sequenceRepeatable+
+tei_model.placeEventLike = notAllowed
+tei_model.publicationStmtPart.agency = tei_publisher | tei_distributor
+tei_model.publicationStmtPart.detail =
+  tei_address | tei_date | tei_pubPlace | tei_idno | tei_availability
+tei_model.availabilityPart = tei_licence
+tei_model.certLike = notAllowed
+tei_model.descLike = notAllowed
+tei_model.quoteLike = tei_quote
+tei_model.quoteLike_alternation = tei_quote
+tei_model.quoteLike_sequence = tei_quote
+tei_model.quoteLike_sequenceOptional = tei_quote?
+tei_model.quoteLike_sequenceOptionalRepeatable = tei_quote*
+tei_model.quoteLike_sequenceRepeatable = tei_quote+
+tei_model.qLike = tei_model.quoteLike
+tei_model.qLike_alternation = tei_model.quoteLike_alternation
+tei_model.qLike_sequence = tei_model.quoteLike_sequence
+tei_model.qLike_sequenceOptional = tei_model.quoteLike_sequenceOptional?
+tei_model.qLike_sequenceOptionalRepeatable =
+  tei_model.quoteLike_sequenceOptionalRepeatable*
+tei_model.qLike_sequenceRepeatable =
+  tei_model.quoteLike_sequenceRepeatable+
+tei_model.respLike =
+  tei_author | tei_editor | tei_respStmt | tei_sponsor | tei_funder
+tei_model.divWrapper = notAllowed
+tei_model.divTopPart = tei_model.headLike
+tei_model.divTop = tei_model.divWrapper | tei_model.divTopPart
+tei_model.divBottomPart = notAllowed
+tei_model.divBottom = tei_model.divWrapper | tei_model.divBottomPart
+tei_model.titlepagePart = notAllowed
+tei_model.msQuoteLike = tei_title
+tei_model.msItemPart =
+  tei_model.biblLike
+  | tei_model.quoteLike
+  | tei_model.respLike
+  | tei_model.msQuoteLike
+  | tei_textLang
+  | tei_idno
+  | tei_msItem
+tei_model.choicePart =
+  tei_sic | tei_corr | tei_reg | tei_orig | tei_abbr | tei_expan
+tei_model.imprintPart =
+  tei_publisher | tei_biblScope | tei_pubPlace | tei_distributor
+tei_model.physDescPart_sequenceOptional =
+  tei_objectDesc?,
+  tei_handDesc?,
+  tei_typeDesc?,
+  tei_scriptDesc?,
+  tei_decoDesc?,
+  tei_additions?,
+  tei_bindingDesc?,
+  tei_accMat?
+tei_model.addressLike = tei_address
+tei_model.addressLike_alternation = tei_address
+tei_model.addressLike_sequence = tei_address
+tei_model.addressLike_sequenceOptional = tei_address?
+tei_model.addressLike_sequenceOptionalRepeatable = tei_address*
+tei_model.addressLike_sequenceRepeatable = tei_address+
+tei_model.nameLike =
+  tei_model.nameLike.agent
+  | tei_model.offsetLike
+  | tei_model.placeStateLike
+  | tei_idno
+  | tei_model.persNamePart
+tei_model.nameLike_alternation =
+  tei_model.nameLike.agent_alternation
+  | tei_model.offsetLike_alternation
+  | tei_model.placeStateLike_alternation
+  | tei_idno
+  | tei_model.persNamePart_alternation
+tei_model.nameLike_sequence =
+  tei_model.nameLike.agent_sequence,
+  tei_model.offsetLike_sequence,
+  tei_model.placeStateLike_sequence,
+  tei_idno,
+  tei_model.persNamePart_sequence
+tei_model.nameLike_sequenceOptional =
+  tei_model.nameLike.agent_sequenceOptional?,
+  tei_model.offsetLike_sequenceOptional?,
+  tei_model.placeStateLike_sequenceOptional?,
+  tei_idno?,
+  tei_model.persNamePart_sequenceOptional?
+tei_model.nameLike_sequenceOptionalRepeatable =
+  tei_model.nameLike.agent_sequenceOptionalRepeatable*,
+  tei_model.offsetLike_sequenceOptionalRepeatable*,
+  tei_model.placeStateLike_sequenceOptionalRepeatable*,
+  tei_idno*,
+  tei_model.persNamePart_sequenceOptionalRepeatable*
+tei_model.nameLike_sequenceRepeatable =
+  tei_model.nameLike.agent_sequenceRepeatable+,
+  tei_model.offsetLike_sequenceRepeatable+,
+  tei_model.placeStateLike_sequenceRepeatable+,
+  tei_idno+,
+  tei_model.persNamePart_sequenceRepeatable+
+tei_model.global =
+  tei_model.global.meta
+  | tei_model.milestoneLike
+  | tei_model.noteLike
+  | tei_model.global.edit
+tei_model.biblPart =
+  tei_model.respLike
+  | tei_model.imprintPart
+  | tei_bibl
+  | tei_relatedItem
+  | tei_textLang
+  | tei_edition
+  | tei_extent
+  | tei_availability
+  | tei_msIdentifier
+tei_model.addrPart = tei_model.nameLike | tei_street | tei_postCode
+tei_model.pPart.data =
+  tei_model.dateLike
+  | tei_model.measureLike
+  | tei_model.addressLike
+  | tei_model.nameLike
+tei_model.inter =
+  tei_model.egLike
+  | tei_model.oddDecl
+  | tei_model.biblLike
+  | tei_model.labelLike
+  | tei_model.listLike
+  | tei_model.stageLike
+  | tei_model.qLike
+tei_model.common = tei_model.divPart | tei_model.inter
+tei_model.phrase =
+  tei_model.segLike
+  | tei_model.highlighted
+  | tei_model.graphicLike
+  | tei_model.pPart.msdesc
+  | tei_model.pPart.edit
+  | tei_model.ptrLike
+  | tei_model.lPart
+  | tei_model.phrase.xml
+  | tei_model.specDescLike
+  | tei_model.pPart.data
+tei_model.limitedPhrase =
+  tei_model.hiLike
+  | tei_model.emphLike
+  | tei_model.pPart.msdesc
+  | tei_model.pPart.editorial
+  | tei_model.ptrLike
+  | tei_model.phrase.xml
+  | tei_model.pPart.data
+tei_model.divLike = tei_div
+tei_model.divGenLike = notAllowed
+tei_model.div1Like = notAllowed
+tei_model.teiHeaderPart = tei_encodingDesc | tei_profileDesc
+tei_model.sourceDescPart = notAllowed
+tei_model.encodingDescPart =
+  tei_projectDesc
+  | tei_editorialDecl
+  | tei_refsDecl
+  | tei_charDecl
+  | tei_variantEncoding
+tei_model.editorialDeclPart =
+  tei_correction | tei_normalization | tei_quotation
+tei_model.profileDescPart =
+  tei_creation | tei_langUsage | tei_particDesc | tei_settingDesc
+tei_att.source.attributes = tei_att.source.attribute.source
+tei_att.source.attribute.source =
+  
+  ## provides a pointer to the bibliographical source from which a quotation or citation is drawn.
+  attribute source {
+    list { tei_data.pointer+ }
+  }?
+tei_model.resourceLike = notAllowed
+tei_model.placeLike = tei_place
+tei_p =
+  
+  ## (párrafo) marca párrafos en prosa. [3.1. Paragraphs 7.2.5. Speech Contents]
+  element ns1:p {
+    tei_macro.paraContent,
+    tei_att.global.attributes,
+    tei_att.declaring.attributes,
+    tei_att.fragmentable.attributes,
+    empty
+  }
+tei_hi =
+  
+  ## (subrayado) marca una palabra o frase gráficamente diferente del resto del texto que la circunda, por causas sobre las que no se hace ninguna declaracion. [3.3.2.2. Emphatic Words and Phrases 3.3.2. Emphasis, Foreign Words, and Unusual Language]
+  element ns1:hi {
+    tei_macro.paraContent,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## (interpretación) indica cómo el elemento en cuestión ha sido dado o proporcionado en el texto fuente.
+    attribute rend {
+      list {
+        (
+         ##
+         "superscript"
+         | 
+           ##
+           " initial")+
+      }
+    },
+    empty
+  }
+tei_quote =
+  
+  ## (cita) contiene una frase o pasaje atribuido por el narrador o autor a un agente externo al texto. [3.3.3. Quotation 4.3.1. Grouped Texts]
+  element ns1:quote {
+    tei_macro.specialPara,
+    tei_att.global.attributes,
+    tei_att.typed.attributes,
+    tei_att.msExcerpt.attributes,
+    tei_att.source.attributes,
+    empty
+  }
+tei_mentioned =
+  
+  ## marca palabras o locuciones mencionadas, no usadas. [3.3.3. Quotation]
+  element ns1:mentioned {
+    tei_macro.phraseSeq, tei_att.global.attributes, empty
+  }
+tei_sic =
+  
+  ## (Latin for thus or so
+  ##    ) contiene texto reproducido aparentemente icorrecto o inexacto. [3.4.1. Apparent Errors]
+  element ns1:sic {
+    tei_macro.paraContent,
+    tei_att.global.attributes,
+    tei_att.source.attributes,
+    empty
+  }
+tei_corr =
+  
+  ## (corrección) contiene la forma correcta de un pasaje aparentemente erróneo en el texto de copia. [3.4.1. Apparent Errors]
+  element ns1:corr { tei_macro.paraContent }
+tei_choice =
+  
+  ## agrupa un número de codificaciones alternativas para el mismo punto en un texto. [3.4. Simple Editorial Changes]
+  element ns1:choice {
+    (tei_model.choicePart | tei_choice)*,
+    tei_att.global.rendition.attribute.rend,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_reg =
+  
+  ## (regularización) contiene una lectura que ha sido regularizada o normalizada en algún sentido. [3.4.2. Regularization and
+  ## Normalization 12. Critical Apparatus]
+  element ns1:reg {
+    tei_macro.paraContent,
+    tei_att.global.attributes,
+    tei_att.editLike.attributes,
+    tei_att.typed.attributes,
+    empty
+  }
+tei_orig =
+  
+  ## (forma original) contiene una lectura que se marca como fiel al original. [3.4.2. Regularization and
+  ## Normalization 12. Critical Apparatus]
+  element ns1:orig {
+    tei_macro.paraContent,
+    tei_att.global.attributes,
+    tei_att.source.attributes,
+    empty
+  }
+tei_gap =
+  
+  ## indicada un punto donde algún material ha sido omitido en una transcripción, bien por criterios de edición descritos en el cabezado TEI, bien como parte de una práctica habitual, o bien porqué el material es ilegible o incomprensible. [3.4.3. Additions, Deletions, and Omissions]
+  element ns1:gap {
+    (tei_model.descLike | tei_model.certLike)*,
+    
+    ## declara la causa de la omisión. Los valores de muestra incluyen sampling (ejemplificación), inaudible (inaudible), irrelevant (irrelevante), cancelled (cancelado), cancelled and illegible (cancelado e ilegible).
+    attribute reason {
+      list {
+        (
+         ##
+         "cancellation"
+         | 
+           ##
+           " illegible")+
+      }
+    },
+    empty
+  }
+tei_add =
+  
+  ## (adición) contiene letras, palabras o frases introducidas en el texto por el autor, transcriptor, glosador o corrector. [3.4.3. Additions, Deletions, and Omissions]
+  element ns1:add {
+    tei_macro.paraContent,
+    tei_att.transcriptional.attribute.hand,
+    
+    ## Indica el lugar en que se añaden las palabras
+    attribute place {
+      list {
+        (
+         ##
+         "above"
+         | 
+           ##
+           " margin"
+         | 
+           ##
+           " inline"
+         | 
+           ##
+           " above-and-margin"
+         | 
+           ##
+           " below")+
+      }
+    },
+    empty
+  }
+tei_del =
+  
+  ## (cancelación) contiene una letra, palabra o pasaje cancelado, marcado como omitido o bien como supérfluo o espurio en el texto por el autor, transcriptor, glosador o corrector. [3.4.3. Additions, Deletions, and Omissions]
+  element ns1:del {
+    tei_macro.paraContent,
+    tei_att.transcriptional.attribute.hand,
+    
+    ## (interpretación) indica cómo el elemento en cuestión ha sido dado o proporcionado en el texto fuente.
+    attribute rend {
+      list {
+        (
+         ##
+         "strikethrough"
+         | 
+           ##
+           " overwritten"
+         | 
+           ##
+           " annotation"
+         | 
+           ##
+           " underlined"
+         | 
+           ##
+           " wrapped"
+         | 
+           ##
+           " unmarked")+
+      }
+    },
+    empty
+  }
+tei_name =
+  
+  ## (nombre, nombre propio) contiene un nombre propio o un sintagma nominal [3.5.1. Referring Strings]
+  element ns1:name {
+    tei_macro.phraseSeq,
+    
+    ## caracteriza el elemento utilizando una clasificación o tipología funcional.
+    attribute type {
+      
+      ##
+      "star"
+      | 
+        ##
+        " animal"
+    }?,
+    empty
+  }
+tei_address =
+  
+  ## contiene una dirección postal, por ejemplo de un editor, una institución, etc. [3.5.2. Addresses 2.2.4. Publication, Distribution,
+  ## Licensing, etc. 3.11.2.4. Imprint, Size of a Document, and Reprint Information]
+  element ns1:address {
+    (tei_model.global*, (tei_model.addrPart, tei_model.global*)+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_street =
+  
+  ## una dirección postal completa, incluyendo cualquier nombre o número identificativo para identificar el edifio, como el nombre de la calle o carretera. [3.5.2. Addresses]
+  element ns1:street {
+    tei_macro.phraseSeq, tei_att.global.attributes, empty
+  }
+tei_postCode =
+  
+  ## (Código postal) Contiene un código numérico o alfabético usado como parte de la dirección postal para simplificar la clasificación o entrega de correo. [3.5.2. Addresses]
+  element ns1:postCode { text, tei_att.global.attributes, empty }
+tei_date =
+  
+  ## contiene una fecha en cualquier formato. [3.5.4. Dates and Times 2.2.4. Publication, Distribution,
+  ## Licensing, etc. 2.5. The Revision Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.3.6. Dates and Times]
+  element ns1:date {
+    (text | tei_model.gLike | tei_model.phrase | tei_model.global)*,
+    tei_att.datable.w3c.attribute.when,
+    tei_att.datable.w3c.attribute.from,
+    tei_att.datable.w3c.attribute.to,
+    empty
+  }
+tei_abbr =
+  
+  ## (abreviatura) contiene una abreviatura de cualquier clase. [3.5.5. Abbreviations and Their Expansions]
+  element ns1:abbr {
+    tei_macro.phraseSeq, tei_att.source.attributes, empty
+  }
+tei_expan =
+  
+  ## (expansión) contiene la expansión de una abreviatura. [3.5.5. Abbreviations and Their Expansions]
+  element ns1:expan {
+    tei_macro.phraseSeq,
+    tei_att.global.attributes,
+    tei_att.editLike.attributes,
+    empty
+  }
+tei_ref =
+  
+  ## (referencia) define una referencia a otra localización, posiblemente modificada por un texto o comentario adicional. [3.6. Simple Links and Cross-References 16.1. Links]
+  element ns1:ref {
+    tei_macro.paraContent
+    >> sch:pattern [
+         id = "custo-ref-refAtts-constraint-1"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:ref"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and @cRef"
+             "Only one of the\x{a}" ~
+             "	attributes @target' and @cRef' may be supplied on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.pointing.attribute.target,
+    tei_att.typed.attribute.type,
+    empty
+  }
+tei_list =
+  
+  ## contiene cualquier secuencia de ítems o elementos organizados en una lista. [3.7. Lists]
+  element ns1:list {
+    ((tei_model.divTop | tei_model.global)*,
+     (tei_model.global*
+      | (tei_label, tei_model.global*, tei_model.global*)+),
+     (tei_model.divBottom, tei_model.global*)*)
+    >> sch:pattern [
+         id = "custo-list-gloss-list-must-have-labels-constraint-5"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:list[@type='gloss']"
+           "\x{a}" ~
+           "	              "
+           sch:assert [
+             test = "tei:label"
+             'The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element'
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.attributes,
+    tei_att.sortable.attributes,
+    tei_att.typed.attribute.subtype,
+    
+    ## describes the nature of the items in the list.
+    ## Los valores sugeridos incluyen: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syllogism
+    attribute type {
+      
+      ## cada item de la lista glosa algun término o concepto de los que han sido dados por un elemento de la lista de la etiqueta que precede.
+      "gloss"
+      | 
+        ## each list item is an entry in an index such as the alphabetical topical index at the back of a print volume.
+        "index"
+      | 
+        ## each list item is a step in a sequence of instructions, as in a recipe.
+        "instructions"
+      | 
+        ## each list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual.
+        "litany"
+      | 
+        ## each list item is part of an argument consisting of two or more propositions and a final conclusion derived from them.
+        "syllogism"
+      | xsd:Name
+    }?,
+    empty
+  }
+tei_label =
+  
+  ## contiene un concepto o enunciado asociado con un ítem en una lista; en un glosario marca el término que se define. [3.7. Lists]
+  element ns1:label {
+    tei_macro.phraseSeq,
+    tei_att.global.attributes,
+    tei_att.typed.attributes,
+    tei_att.placement.attributes,
+    empty
+  }
+tei_head =
+  
+  ## (encabezamiento) contiene cualquier tipo de encabezamiento, por ejemplo el título de una sección o el encabezado de una lista, glosario, descripción de un manuscrito, etc. [4.2.1. Headings and Trailers]
+  element ns1:head {
+    (text
+     | tei_lg
+     | tei_model.gLike
+     | tei_model.phrase
+     | tei_model.inter
+     | tei_model.lLike
+     | tei_model.global)*,
+    tei_att.global.rendition.attribute.rend,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.typed.attribute.type,
+    empty
+  }
+tei_note =
+  
+  ## contiene una nota o aclaración [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]
+  element ns1:note {
+    tei_macro.specialPara,
+    tei_att.global.attributes,
+    tei_att.placement.attributes,
+    tei_att.pointing.attributes,
+    tei_att.source.attributes,
+    tei_att.typed.attributes,
+    
+    ## indica si el texto de copia muestra el lugar exacto de referencia para una nota.
+    [ a:defaultValue = "true" ]
+    attribute anchored { tei_data.truthValue }?,
+    
+    ## indica el final de un periodo al cual una nota está enlazada, si la nota no está insertada en ese punto del texto.
+    attribute targetEnd {
+      list { tei_data.pointer+ }
+    }?,
+    empty
+  }
+tei_milestone =
+  
+  ## marca un punto de frontera que separa cada tipo de sección de un texto, indicado por cambios en el sistema de referencia estándard, donde la sección no es representada por un elemento estructural. [3.10.3. Milestone
+  ## Elements]
+  element ns1:milestone {
+    empty,
+    tei_att.global.attribute.xmlid,
+    tei_att.global.attribute.n,
+    tei_att.typed.attribute.type,
+    
+    ## Indica fases de escritura
+    attribute change {
+      list { tei_data.pointer+ }
+    }?,
+    empty
+  }
+tei_pb =
+  
+  ## (cambio de página) marca la frontera entre una página de un texto y la siguiente en un sistema de referencia estándard. [3.10.3. Milestone
+  ## Elements]
+  element ns1:pb {
+    empty,
+    tei_att.global.attribute.n,
+    tei_att.global.facs.attribute.facs,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## (edition) Editionsidentifica una ediciónBase text edition
+    attribute ed {
+      list {
+        (
+         ##
+         "#Ch")+
+      }
+    },
+    empty
+  }
+tei_monogr =
+  
+  ## (nivel monográfico.) contiene los elementos bibliográficos que describen un ítem (p.ej. un libro o revista) publicado independientemente (es decir, como un objeto físico separado). [3.11.2.1. Analytic, Monographic, and Series Levels]
+  element ns1:monogr {
+    ((((tei_author | tei_editor | tei_respStmt),
+       (tei_author | tei_editor | tei_respStmt)*,
+       tei_title+,
+       (tei_model.ptrLike
+        | tei_idno
+        | tei_textLang
+        | tei_editor
+        | tei_respStmt)*)
+      | ((tei_title | tei_model.ptrLike | tei_idno)+,
+         (tei_textLang | tei_author | tei_editor | tei_respStmt)*)
+      | tei_idno)?,
+     tei_availability*,
+     tei_model.noteLike*,
+     (tei_edition,
+      (tei_idno
+       | tei_model.ptrLike
+       | tei_editor
+       | tei_sponsor
+       | tei_funder
+       | tei_respStmt)*)*,
+     tei_imprint,
+     (tei_imprint | tei_extent | tei_biblScope)*),
+    tei_att.global.attributes,
+    empty
+  }
+tei_author =
+  
+  ## en una referencia bibliográfica, contiene el nombre del autor/es, personal o empresa de una obra; la declaración esencial de responsabilidad para cualquier ítem bibliográfico. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement]
+  element ns1:author {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_editor =
+  
+  ## declaración secundaria de responsabilidad para un ítem bibliográfico, por ejemplo un nombre particular, o institucional (o cualquier otro) que ha actuado como editor, compilador, traductor, etc. [3.11.2.2. Titles, Authors, and Editors]
+  element ns1:editor {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_respStmt =
+  
+  ## (declaración de responsabilidad) proporciona la declaración de la responsabilidad para el contenido intelectual de un texto, edición, grabación o serie, donde no basten o no se apliquen los elementos especializados para autores, editores, etc. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.2. The Edition Statement 2.2.5. The Series Statement]
+  element ns1:respStmt {
+    ((tei_resp+, tei_model.nameLike.agent+)
+     | (tei_model.nameLike.agent+, tei_resp+)),
+    tei_att.global.attributes,
+    tei_att.canonical.attributes,
+    empty
+  }
+tei_resp =
+  
+  ## (responsabilidad) contiene un sintagma que describe la naturaleza de la responsabilidad intelectual de una persona. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.2. The Edition Statement 2.2.5. The Series Statement]
+  element ns1:resp {
+    tei_macro.phraseSeq.limited,
+    tei_att.global.attributes,
+    tei_att.canonical.attributes,
+    tei_att.datable.attributes,
+    empty
+  }
+tei_title =
+  
+  ## contiene el título completo de una obra de cualquier tipo. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]
+  element ns1:title {
+    tei_macro.paraContent,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## clasifica el título de acuerdo con alguna tipología funcional.
+    ## Posibles valores: 1] short; 2]  long
+    attribute type { tei_data.enumerated }?,
+    
+    ## indica el tipo bibliográfico para un título, si este se identifica como un artículo, libro, revista, colección o material inédito.
+    attribute level {
+      
+      ##
+      "a"
+      | 
+        ##
+        "m"
+      | 
+        ##
+        "j"
+      | 
+        ##
+        "s"
+      | 
+        ##
+        "u"
+    }?,
+    empty
+  }
+tei_imprint =
+  
+  ## información de grupos acerca de la publicación o distribución de un elemento bibliográfico. [3.11.2.4. Imprint, Size of a Document, and Reprint Information]
+  element ns1:imprint {
+    (empty*,
+     ((tei_model.imprintPart | tei_model.dateLike),
+      tei_respStmt*,
+      tei_model.global*)+),
+    tei_att.global.attributes,
+    empty
+  }
+tei_publisher =
+  
+  ## proporciona el nombre de la organización responsable de la publicación o la distribución de un elemento bibliográfico. [3.11.2.4. Imprint, Size of a Document, and Reprint Information 2.2.4. Publication, Distribution,
+  ## Licensing, etc.]
+  element ns1:publisher {
+    tei_macro.phraseSeq, tei_att.global.attributes, empty
+  }
+tei_biblScope =
+  
+  ## (extensión de una cita) define la extensión de una referencia bibliográfica, como por ejemplo los números de página u otra subdivisión numerada en la obra mayor. [3.11.2.5. Scopes and Ranges in Bibliographic Citations]
+  element ns1:biblScope {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.citing.attribute.unit,
+    tei_att.citing.attribute.to,
+    
+    ## Desde
+    attribute from { tei_data.word }?,
+    empty
+  }
+tei_pubPlace =
+  
+  ## (lugar de la publicación) contiene el nombre del lugar de publicación de un elemento bibliográfico. [3.11.2.4. Imprint, Size of a Document, and Reprint Information]
+  element ns1:pubPlace {
+    tei_macro.phraseSeq,
+    tei_att.global.attributes,
+    tei_att.naming.attributes,
+    empty
+  }
+tei_bibl =
+  
+  ## (cita bibliográfica.) contiene una cita bibliográfica estructurada libremente, los componentes de la cual pueden nohaber sido etiquetados explícitamente. [3.11.1. Methods of Encoding Bibliographic References and Lists of References 2.2.7. The Source Description 15.3.2. Declarable Elements]
+  element ns1:bibl {
+    (text
+     | tei_model.gLike
+     | tei_model.highlighted
+     | tei_model.pPart.data
+     | tei_model.pPart.edit
+     | tei_model.segLike
+     | tei_model.ptrLike
+     | tei_model.biblPart
+     | tei_model.global)*,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## caracteriza el elemento utilizando una clasificación o tipología funcional.
+    ## Posibles valores: 1] article; 2]  monogr
+    attribute type { tei_data.enumerated }?,
+    empty
+  }
+tei_biblStruct =
+  
+  ## (cita bibliográfica estructurada.) contiene una cita bibliográfica estructurada, en la cual sólo aparecen los subelementos bibliográficos y en un orden especificado. [3.11.1. Methods of Encoding Bibliographic References and Lists of References 2.2.7. The Source Description 15.3.2. Declarable Elements]
+  element ns1:biblStruct {
+    (tei_monogr+,
+     (tei_model.noteLike
+      | tei_idno
+      | tei_model.ptrLike
+      | tei_relatedItem)*)
+    >> sch:pattern [
+         id =
+           "custo-biblStruct-deprecate-altIdentifier-child-constraint-2"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:biblStruct"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             role = "nonfatal"
+             test = "child::tei:idno"
+             "WARNING: use of deprecated method — the use of the idno element as a direct child of the biblStruct element will be removed from the TEI on 2016-09-18"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_listBibl =
+  
+  ## (lista de cita) contiene una lista de citas bibliográficas de cualquier tipo. [3.11.1. Methods of Encoding Bibliographic References and Lists of References 2.2.7. The Source Description 15.3.2. Declarable Elements]
+  element ns1:listBibl {
+    (tei_model.headLike*,
+     (tei_model.biblLike | tei_model.milestoneLike)+,
+     empty*),
+    tei_att.global.attributes,
+    tei_att.sortable.attributes,
+    tei_att.declarable.attributes,
+    tei_att.typed.attributes,
+    empty
+  }
+tei_relatedItem =
+  
+  ## contiene o refiere algún otro elemento bibliográfico que se relaciona con el actual de alguna manera, por ejemplo como un versión complementaria o alternativa de este. [3.11.2.7. Related Items]
+  element ns1:relatedItem {
+    ((tei_model.biblLike | tei_model.ptrLike)?)
+    >> sch:pattern [
+         id = "custo-relatedItem-targetorcontent1-constraint-3"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relatedItem"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and count( child::* ) > 0"
+             "\x{a}" ~
+             "If the @target attribute on "
+             sch:name [ ]
+             " is used, the\x{a}" ~
+             "relatedItem element must be empty"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "custo-relatedItem-targetorcontent1-constraint-6"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relatedItem"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@target or child::*"
+             "A relatedItem element should have either a 'target' attribute\x{a}" ~
+             "        or a child element to indicate the related bibliographic item"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.attributes,
+    tei_att.typed.attributes,
+    
+    ## points to the related bibliographic element by means of an absolute or relative URI reference
+    attribute target { tei_data.pointer }?,
+    empty
+  }
+tei_l =
+  
+  ## (verso) contiene un único verso, posiblemente incompleto. [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]
+  element ns1:l {
+    tei_macro.paraContent,
+    tei_att.global.attribute.xmlid,
+    tei_att.global.attribute.n,
+    tei_att.global.rendition.attribute.rend,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_lg =
+  
+  ## (grupo de versos) contiene un grupo de versos que funcionan como una unidad formal, p.ej. una estrofa, un refrán, un estribillo, etc. [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]
+  element ns1:lg {
+    ((tei_model.divTop | tei_model.global)*,
+     (tei_model.lLike
+      | tei_model.stageLike
+      | tei_model.labelLike
+      | tei_lg),
+     (tei_model.lLike
+      | tei_model.stageLike
+      | tei_model.labelLike
+      | tei_model.global
+      | tei_lg)*,
+     (tei_model.divBottom, tei_model.global*)*)
+    >> sch:pattern [
+         id = "custo-lg-atleast1oflggapl-constraint-7"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:lg"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test =
+               "count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) > 0"
+             "An lg element\x{a}" ~
+             "        must contain at least one child l, lg or gap element."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.attribute.xmlid,
+    tei_att.global.attribute.n,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## caracteriza el elemento utilizando una clasificación o tipología funcional.
+    attribute type {
+      
+      ##
+      "estrofa"
+    }?,
+    empty
+  }
+tei_textLang =
+  
+  ## (lengua del texto) describe las lenguas y los sistemas de escritura usados en un manuscrito (no se ha de confundir con la descripción contenida en el elemento langUsage. **** [3.11.2.4. Imprint, Size of a Document, and Reprint Information 10.6.6. Languages and Writing Systems]
+  element ns1:textLang {
+    tei_macro.phraseSeq,
+    tei_att.global.attributes,
+    
+    ## (lengua principal) proporciona un código que identifica la lengua principal utilizada en el manuscrito.
+    attribute mainLang { tei_data.language }?,
+    
+    ## (otras lenguas) uno o más códigos que identifican otras eventuales lenguas utilizadas en el manuscrito.
+    attribute otherLangs {
+      list { tei_data.language* }
+    }?,
+    empty
+  }
+tei_teiHeader =
+  
+  ## (Encabezado TEI) proporciona información descriptiva y declarativa de una página de título electrónico prefijada como un texto conforme a TEI. [2.1.1. The TEI Header and Its Components 15.1. Varieties of Composite Text]
+  element ns1:teiHeader {
+    (tei_fileDesc, tei_model.teiHeaderPart*, tei_revisionDesc?),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_fileDesc =
+  
+  ## (Descripción del archivo.) contiene una descripción bibliográfica completa del archivo electrónico. [2.2. The File Description 2.1.1. The TEI Header and Its Components]
+  element ns1:fileDesc {
+    ((tei_titleStmt,
+      tei_editionStmt?,
+      tei_extent?,
+      tei_publicationStmt),
+     tei_sourceDesc+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_titleStmt =
+  
+  ## (declaración del título) agrupa la información referente al título de una obra y a los responsables de su contenido intelectual. [2.2.1. The Title Statement 2.2. The File Description]
+  element ns1:titleStmt {
+    (tei_title+, tei_model.respLike*),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_sponsor =
+  
+  ## especifica el nombre de la organización o institución responsable. [2.2.1. The Title Statement]
+  element ns1:sponsor {
+    tei_macro.phraseSeq.limited,
+    tei_att.global.attributes,
+    tei_att.canonical.attributes,
+    empty
+  }
+tei_funder =
+  
+  ## (responsable de la financiación) proporciona el nombre del individuo, la institución o la organización responsable de la financiación de un proyecto o de un texto. [2.2.1. The Title Statement]
+  element ns1:funder {
+    tei_macro.phraseSeq.limited,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.canonical.attributes,
+    empty
+  }
+tei_editionStmt =
+  
+  ## (declaración de la edición) agrupa la información relativa a la edición de un texto. [2.2.2. The Edition Statement 2.2. The File Description]
+  element ns1:editionStmt {
+    (tei_model.pLike+ | (tei_edition, tei_model.respLike*)),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_edition =
+  
+  ## (edición) describe las particularidades de la edición de un texto. [2.2.2. The Edition Statement]
+  element ns1:edition {
+    tei_macro.phraseSeq,
+    tei_att.global.attribute.n,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_extent =
+  
+  ## describe el tamaño aproximado de un texto almacenado en algún medio, digital o no, especificándolo en alguna unidad funcional. [2.2.3. Type and Extent of File 2.2. The File Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 10.7.1. Object Description]
+  element ns1:extent {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_publicationStmt =
+  
+  ## (declaración de la publicación) agrupa la información concerniente a la publicación o distribución de un texto electrónico u otro texto. [2.2.4. Publication, Distribution,
+  ## Licensing, etc. 2.2. The File Description]
+  element ns1:publicationStmt {
+    ((tei_model.publicationStmtPart.agency,
+      tei_model.publicationStmtPart.detail*)+
+     | tei_model.pLike+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_distributor =
+  
+  ## proporciona el nombre de la persona o agente responsable de la distribución de un texto. [2.2.4. Publication, Distribution,
+  ## Licensing, etc.]
+  element ns1:distributor {
+    tei_macro.phraseSeq, tei_att.global.attributes, empty
+  }
+tei_idno =
+  
+  ## (número identificativo) proporciona un número, estándard o no, usado para la identificación de un elemento bibliográfico. [2.2.4. Publication, Distribution,
+  ## Licensing, etc. 2.2.5. The Series Statement 3.11.2.4. Imprint, Size of a Document, and Reprint Information]
+  element ns1:idno {
+    (text | tei_model.gLike | tei_idno)*,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## clasifica el número, por ejemplo como un ISBN o cualquier otro número estándard.
+    attribute type { tei_data.enumerated }?,
+    empty
+  }
+tei_availability =
+  
+  ## proporciona información sobre la disponibilidad de un texto, por ejemplo cualquier restricción en cuanto a su uso o distribución, su copyright, etc. [2.2.4. Publication, Distribution,
+  ## Licensing, etc.]
+  element ns1:availability {
+    (tei_model.availabilityPart | tei_model.pLike)+,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## proporciona un código identificativo de la disponibilidad actual del texto.
+    [ a:defaultValue = "unknown" ]
+    attribute status {
+      
+      ##
+      "free"
+      | 
+        ##
+        "unknown"
+      | 
+        ##
+        "restricted"
+    },
+    empty
+  }
+tei_licence =
+  
+  ## contains information about a licence or other legal agreement applicable to the text. [2.2.4. Publication, Distribution,
+  ## Licensing, etc.]
+  element ns1:licence {
+    tei_macro.specialPara,
+    tei_att.global.attributes,
+    tei_att.pointing.attributes,
+    tei_att.datable.attributes,
+    empty
+  }
+tei_sourceDesc =
+  
+  ## (descripción de la fuente) proporciona una descripción del texto (o textos) fuente del que un texto electrónico deriva o ha sido generado. [2.2.7. The Source Description]
+  element ns1:sourceDesc {
+    (tei_model.pLike+
+     | (tei_model.biblLike
+        | tei_model.sourceDescPart
+        | tei_model.listLike)+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_encodingDesc =
+  
+  ## (Descripción de la codificación) documenta la relación entre un texto electrónico y la fuente o fuentes de las que este deriva. [2.3. The Encoding Description 2.1.1. The TEI Header and Its Components]
+  element ns1:encodingDesc {
+    (tei_model.encodingDescPart | tei_model.pLike)+,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_projectDesc =
+  
+  ## (descripción del proyecto) describe con detalle el objetivo o propósito para el que un archivo electrónico ha sido codificado, junto a cualquier otra información relevante sobre el proceso de codificación. [2.3.1. The Project Description 2.3. The Encoding Description 15.3.2. Declarable Elements]
+  element ns1:projectDesc {
+    tei_model.pLike+,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_editorialDecl =
+  
+  ## (declaración de la edición) proporciona detalles de principios editoriales y prácticas aplicadas en la codificación de un texto. [2.3.3. The Editorial Practices Declaration 2.3. The Encoding Description 15.3.2. Declarable Elements]
+  element ns1:editorialDecl {
+    (tei_model.pLike | tei_model.editorialDeclPart)+,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_correction =
+  
+  ## (principios de corrección) describe cómo y en qué casos se han hecho correcciones en el texto. [2.3.3. The Editorial Practices Declaration 15.3.2. Declarable Elements]
+  element ns1:correction {
+    tei_model.pLike+,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## indica el método seguido para indicar las correcciones al interno del texto.
+    [ a:defaultValue = "silent" ]
+    attribute method {
+      
+      ##
+      "silent"
+      | 
+        ##
+        "markup"
+    },
+    empty
+  }
+tei_normalization =
+  
+  ## indica el grado de normalización o de regularización aplicado a la fuente original en el proceso de conversión a formato electrónico. [2.3.3. The Editorial Practices Declaration 15.3.2. Declarable Elements]
+  element ns1:normalization {
+    tei_model.pLike+,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## indica el método adoptado para indicar normalizaciones al interno del texto.
+    [ a:defaultValue = "silent" ]
+    attribute method {
+      
+      ##
+      "silent"
+      | 
+        ##
+        "markup"
+    },
+    empty
+  }
+tei_quotation =
+  
+  ## indica las prácticas editoriales adoptadas respecto al entrecomillado en el original. [2.3.3. The Editorial Practices Declaration 15.3.2. Declarable Elements]
+  element ns1:quotation {
+    (tei_model.pLike*)
+    >> sch:pattern [
+         id = "custo-quotation-quotationContents-constraint-4"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:quotation"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "not(@marks) and not (tei:p)"
+             "\x{a}" ~
+             "On "
+             sch:name [ ]
+             ", either the @marks attribute should be used, or a paragraph of description provided"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## (comillas) indica si se ha mantenido o no el entrecomillado en el texto.
+    attribute marks {
+      
+      ##
+      "none"
+      | 
+        ##
+        "some"
+      | 
+        ##
+        "all"
+      | 
+        ##
+        "added"
+    },
+    empty
+  }
+tei_refsDecl =
+  
+  ## (declaración de referencias) indica cómo se han formado las referencias canónicas para este texto. [2.3.6.3. Milestone Method 2.3. The Encoding Description 2.3.6. The Reference System Declaration]
+  element ns1:refsDecl {
+    (tei_model.pLike+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_profileDesc =
+  
+  ## (descripción del perfil del texto.) proporciona una descripción detallada de los aspectos no bibliográficos de un texto, especialmente las lenguas y jergas usadas, la situación en que se aparecen, los participantes que intervienen, etc. [2.4. The Profile Description 2.1.1. The TEI Header and Its Components]
+  element ns1:profileDesc {
+    tei_model.profileDescPart*,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_handNote =
+  
+  ## (notas sobre la mano) describe un determinado estilo o una determinada mano al interno de un manuscrito. [10.7.2. Writing, Decoration, and Other Notations]
+  element ns1:handNote {
+    tei_macro.specialPara,
+    tei_att.global.attributes,
+    tei_att.handFeatures.attributes,
+    empty
+  }
+tei_creation =
+  
+  ## contiene información sobre la creación del texto. [2.4.1. Creation 2.4. The Profile Description]
+  element ns1:creation {
+    (text | tei_model.limitedPhrase | tei_listChange)*,
+    tei_att.global.attribute.xmlid,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_langUsage =
+  
+  ## (lengua empleada) describe las lenguas, jergas, registros, dialectos, etc. presentes en el texto. [2.4.2. Language Usage 2.4. The Profile Description 15.3.2. Declarable Elements]
+  element ns1:langUsage {
+    tei_language+,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_language =
+  
+  ## caracteriza una lengua o jerga empleada en un texto. [2.4.2. Language Usage]
+  element ns1:language {
+    tei_macro.phraseSeq.limited,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## (identificador) proporciona un código de lengua construido según se define en RFC 3066 (o en su sucesor) que se utiliza para identificar la lengua documentada por este elemento, y a la cual se hace referencia mediante el atributo globlal xml:lang.
+    attribute ident { tei_data.language },
+    empty
+  }
+tei_revisionDesc =
+  
+  ## (descripción de la revisión) resume el historial de la revisión de un archivo. [2.5. The Revision Description 2.1.1. The TEI Header and Its Components]
+  element ns1:revisionDesc {
+    (tei_list | tei_listChange | tei_change+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.docStatus.attributes,
+    empty
+  }
+tei_change =
+  
+  ## resume un cambio o corrección determinada llevada a cabo en una versión dada de un texto electrónico en el que trabajan diversos investigadores. [2.5. The Revision Description 2.4.1. Creation 11.7. Changes]
+  element ns1:change {
+    tei_macro.specialPara,
+    tei_att.ascribed.attributes,
+    tei_att.datable.w3c.attribute.when,
+    tei_att.datable.w3c.attribute.notBefore,
+    tei_att.datable.w3c.attribute.notAfter,
+    tei_att.global.attribute.xmlid,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_scriptNote =
+  
+  ## describes a particular script distinguished within the description of a manuscript or similar resource. [10.7.2. Writing, Decoration, and Other Notations]
+  element ns1:scriptNote {
+    tei_macro.specialPara,
+    tei_att.global.attributes,
+    tei_att.handFeatures.attributes,
+    empty
+  }
+tei_listChange =
+  
+  ## groups a number of change descriptions associated with either the creation of a source text or the revision of an encoded text. [2.5. The Revision Description 11.7. Changes]
+  element ns1:listChange {
+    (tei_listChange | tei_change)+,
+    tei_att.global.attributes,
+    tei_att.sortable.attributes,
+    
+    ## indicates whether the ordering of its child change elements is to be considered significant or not
+    [ a:defaultValue = "true" ]
+    attribute ordered { tei_data.truthValue }?,
+    empty
+  }
+tei_TEI =
+  
+  ## (documento TEI) contiene un único documento TEI-conforme, que comprende un encabezado y un texto, sea este aislado o parte de un elemento teiCorpus [4. Default Text Structure 15.1. Varieties of Composite Text]
+  element ns1:TEI {
+    (tei_teiHeader,
+     ((tei_model.resourceLike+, tei_text?) | tei_text))
+    >> sch:ns [ prefix = "tei" uri = "http://www.tei-c.org/ns/1.0" ]
+    >> sch:ns [ prefix = "xs" uri = "http://www.w3.org/2001/XMLSchema" ]
+    >> sch:ns [
+         prefix = "rng"
+         uri = "http://relaxng.org/ns/structure/1.0"
+       ],
+    tei_att.global.attributes,
+    
+    ## Versión del esquema TEI
+    attribute version { tei_data.version }?,
+    empty
+  }
+tei_text =
+  
+  ## contiene un único texto de cualquier tipo, sea este unitario o combinado, p.ej. un texto en verso o teatral, una recopilación de ensayos, una novela, un diccionario, o una fragmento de corpus. [4. Default Text Structure 15.1. Varieties of Composite Text]
+  element ns1:text {
+    (tei_model.global*, (tei_body), tei_model.global*),
+    tei_att.global.attribute.xmllang,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_body =
+  
+  ## (cuerpo del texto) contiene el cuerpo completo de un texto unitario, excluyendo los eventuales añadidos paratextuales (prólogos, dedicatorias, apéndices, etc.) al inicio o fin de un texto. [4. Default Text Structure]
+  element ns1:body {
+    (tei_model.global*,
+     (tei_model.divTop, (tei_model.global | tei_model.divTop)*)?,
+     (tei_model.divGenLike,
+      (tei_model.global | tei_model.divGenLike)*)?,
+     ((tei_model.divLike, (tei_model.global | tei_model.divGenLike)*)+
+      | (tei_model.div1Like,
+         (tei_model.global | tei_model.divGenLike)*)+
+      | ((tei_model.common, tei_model.global*)+,
+         ((tei_model.divLike,
+           (tei_model.global | tei_model.divGenLike)*)+
+          | (tei_model.div1Like,
+             (tei_model.global | tei_model.divGenLike)*)+)?)),
+     (tei_model.divBottom, tei_model.global*)*),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_div =
+  
+  ## (división de texto) contiene una subdivisión del paratexto inicial, del cuerpo del texto o del paratexto final. [4.1. Divisions of the Body]
+  element ns1:div {
+    ((tei_model.divTop | tei_model.global)*,
+     ((((tei_model.divLike | tei_model.divGenLike), tei_model.global*)+
+       | ((tei_model.common, tei_model.global*)+,
+          ((tei_model.divLike | tei_model.divGenLike),
+           tei_model.global*)*)),
+      (tei_model.divBottom, tei_model.global*)*)?),
+    tei_att.global.attribute.xmlid,
+    tei_att.global.attribute.n,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.typed.attribute.type,
+    empty
+  }
+tei_g =
+  
+  ## (carácter o pictograma) representa un carácter no estándard o un pictograma. [5. Characters, Glyphs, and Writing Modes]
+  element ns1:g {
+    text,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## indica la descripción del carácter o pictograma dado.
+    attribute ref { tei_data.pointer }?,
+    empty
+  }
+tei_charProp =
+  
+  ## (propiedad de carácter) proporciona un nombre y un valor para alguna propiedad del carácter o pictograma del padre. [5.2. Markup Constructs for Representation of Characters and Glyphs]
+  element ns1:charProp {
+    ((tei_localName), tei_value),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_charDecl =
+  
+  ## (descripción del carácter) proporciona información descriptiva sobre los carácteres o pictogramas. [5.2. Markup Constructs for Representation of Characters and Glyphs]
+  element ns1:charDecl {
+    (tei_glyph)+,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_glyph =
+  
+  ## (pictograma) proporciona información descriptiva sobre un pictograma. [5.2. Markup Constructs for Representation of Characters and Glyphs]
+  element ns1:glyph {
+    (tei_glyphName?,
+     tei_model.descLike*,
+     tei_charProp*,
+     tei_mapping*,
+     tei_model.graphicLike*,
+     tei_model.noteLike*),
+    tei_att.global.attribute.xmlid,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_glyphName =
+  
+  ## (nombre del pictograma) contiene el nombre de un pictograma, expresado según las convenciones Unicode para los nombres de carácteres. [5.2. Markup Constructs for Representation of Characters and Glyphs]
+  element ns1:glyphName {
+    text,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_localName =
+  
+  ## (Nombre de propiedad definido localmente) contiene un nombre definido localmente para alguna propiedad. [5.2.1. Character Properties]
+  element ns1:localName {
+    text,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_mapping =
+  
+  ## (representación del carácter) contiene uno o más caracteres que se relacionan en algún sentido con el carácter o pictograma del padre, como se especifica por el atributo de type. [5.2. Markup Constructs for Representation of Characters and Glyphs]
+  element ns1:mapping {
+    tei_macro.xtext,
+    tei_att.global.attributes,
+    tei_att.typed.attributes,
+    empty
+  }
+tei_value =
+  
+  ## (valor) contiene un valor único para alguna propiedad, un atributo u otro análisis. [5.2.1. Character Properties]
+  element ns1:value {
+    tei_macro.xtext,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_att.msExcerpt.attributes = tei_att.msExcerpt.attribute.defective
+tei_att.msExcerpt.attribute.defective =
+  
+  ## indica si el pasaje que se describe es completo o no, p.ej. si ha sufrido pérdidas o daños.
+  [ a:defaultValue = "false" ]
+  attribute defective { tei_data.xTruthValue }?
+tei_msDesc =
+  
+  ## (descripción del manuscrito) contiene la definición de un único manuscrito. [10.1. Overview]
+  element ns1:msDesc {
+    (tei_msIdentifier,
+     tei_model.headLike*,
+     (tei_model.pLike+
+      | (tei_msContents?,
+         tei_physDesc?,
+         tei_history?,
+         tei_additional?))),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.typed.attribute.subtype,
+    tei_att.declaring.attributes,
+    
+    ## caracteriza el elemento utilizando una clasificación o tipología funcional.
+    attribute type {
+      
+      ##
+      "manuscript"
+      | 
+        ##
+        " print"
+    },
+    empty
+  }
+tei_dimensions =
+  
+  ## contiene cualquier tipo de especificación referente a las dimensiones. [10.3.4. Dimensions]
+  element ns1:dimensions {
+    ((tei_dim | tei_model.dimLike)*)
+    >> sch:pattern [
+         id = "custo-dimensions-duplicateDim-constraint-5"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:dimensions"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "count(tei:width)> 1"
+             "\x{a}" ~
+             "The element "
+             sch:name [ ]
+             " may appear once only\x{a}" ~
+             "      "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "custo-dimensions-duplicateDim-constraint-6"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:dimensions"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "count(tei:height)> 1"
+             "\x{a}" ~
+             "The element "
+             sch:name [ ]
+             " may appear once only\x{a}" ~
+             "      "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "custo-dimensions-duplicateDim-constraint-7"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:dimensions"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "count(tei:depth)> 1"
+             "\x{a}" ~
+             "The element "
+             sch:name [ ]
+             " may appear once only\x{a}" ~
+             "      "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.dimensions.attribute.unit,
+    tei_att.dimensions.attribute.scope,
+    
+    ## indica que aspecto del objeto se mide.
+    ## Posibles valores: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniatures; 6] binding; 7] box
+    attribute type { tei_data.enumerated }?,
+    empty
+  }
+tei_dim =
+  
+  ## contains any single measurement forming part of a dimensional specification of some sort. [10.3.4. Dimensions]
+  element ns1:dim {
+    tei_macro.xtext,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## caracteriza el elemento utilizando una clasificación o tipología funcional.
+    attribute type {
+      
+      ##
+      "format"
+    },
+    empty
+  }
+tei_height =
+  
+  ## refiere la medida tomada del largo del eje paralelo del dorso.*** [10.3.4. Dimensions]
+  element ns1:height {
+    tei_macro.xtext,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_width =
+  
+  ## contiene la medida tomada al largo del eje perpendicular del dorso.*** [10.3.4. Dimensions]
+  element ns1:width {
+    tei_macro.xtext,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_locus =
+  
+  ## define una posición al interno de un manuscrito o de una de sus partes, generalmente como secuencia (no necesariamete contínua) de referencias de folios. [10.3.5. References to Locations within a Manuscript]
+  element ns1:locus {
+    tei_macro.xtext,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## indica el punto de inicio de una localización en una forma estándard.
+    attribute from { tei_data.word }?,
+    
+    ## indica el punto final de una localización en una forma estándard.
+    attribute to { tei_data.word }?,
+    empty
+  }
+tei_material =
+  
+  ## contiene una palabra o sintagma que describe el material del que se compone un manuscrito (o parte del manuscrito). [10.3.2. Material and Object Type]
+  element ns1:material {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_origDate =
+  
+  ## (fecha origen) contiene cualquier tipo de fecha utilizada para indicar la fecha de origen de un manuscrito o de una de sus partes. [10.3.1. Origination]
+  element ns1:origDate {
+    (text | tei_model.gLike | tei_model.phrase | tei_model.global)*,
+    tei_att.datable.w3c.attribute.when,
+    tei_att.datable.w3c.attribute.notBefore,
+    tei_att.datable.w3c.attribute.notAfter,
+    empty
+  }
+tei_origPlace =
+  
+  ## (lugar de origen) contiene cualquier tipo de nombre de lugar utilizado para indicar el lugar de origen de un manuscrito o de una de sus partes. [10.3.1. Origination]
+  element ns1:origPlace { tei_macro.phraseSeq }
+tei_msIdentifier =
+  
+  ## (identificador del manuscrito) contiene la información necesaria para identificar el manuscrito que se examina. [10.4. The Manuscript Identifier]
+  element ns1:msIdentifier {
+    ((tei_model.placeNamePart_sequenceOptional,
+      tei_repository?,
+      tei_collection*,
+      tei_idno?),
+     (tei_msName | tei_altIdentifier)*)
+    >> sch:pattern [
+         id = "custo-msIdentifier-msId_minimal-constraint-8"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:msIdentifier"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test =
+               "not(parent::tei:msPart) and       (local-name(*[1])='idno' or       local-name(*[1])='altIdentifier' or       normalize-space(.)='')"
+             "An msIdentifier must contain either a repository or location of some type, or a manuscript name"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_repository =
+  
+  ## contiene el nombre de un depósito, parte o no de una institución, en el que se conservan los manuscritos. [10.4. The Manuscript Identifier]
+  element ns1:repository {
+    tei_macro.xtext,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_collection =
+  
+  ## contiene el nombre de una colección de manuscritos, no necesariamente colocados en un único depósito. [10.4. The Manuscript Identifier]
+  element ns1:collection {
+    tei_macro.xtext,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_altIdentifier =
+  
+  ## (identificador alternativo) contiene un identificador estructurado, alternativo o precedente, utilizado para un manuscrito, p.ej. un número antiguo de catalogación. [10.4. The Manuscript Identifier]
+  element ns1:altIdentifier {
+    (tei_model.placeNamePart_sequenceOptional,
+     tei_repository?,
+     tei_collection?,
+     tei_idno,
+     tei_note?),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_msName =
+  
+  ## (nombre alternativo.) contiene cualquier forma de nombre alternativo no estructurado usado para un manuscrito, como por ejemplo ocellus nominum, o sobranombre. [10.4. The Manuscript Identifier]
+  element ns1:msName {
+    tei_macro.xtext,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    tei_att.typed.attribute.type,
+    empty
+  }
+tei_msContents =
+  
+  ## (contenido del manuscrito) describe el contenido intelectual de un manuscrito o parte de un manuscrito, a través de párrafos o fragemtos del manuscrito. [10.6. Intellectual Content]
+  element ns1:msContents {
+    (tei_model.pLike+
+     | (tei_textLang?, (tei_msItem)*)),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_msItem =
+  
+  ## (elemento del manuscrito) describe una obra individual o un elemento al interno del contenido intelectual de un manuscrito o de una de sus partes. [10.6.1. The msItem and msItemStruct Elements]
+  element ns1:msItem {
+    ((tei_locus)*,
+     (tei_model.pLike+
+      | (tei_model.titlepagePart
+         | tei_model.msItemPart
+         | tei_model.global)+)),
+    tei_att.global.attributes,
+    tei_att.msExcerpt.attributes,
+    
+    ## identifica la tipología textual u otras clasificaciones aplicables al objeto en cuestión.
+    attribute class {
+      list { tei_data.pointer+ }
+    }?,
+    empty
+  }
+tei_physDesc =
+  
+  ## (descripción física) contiene una descripción física completa de un manuscrito o de una de sus partes que puede ser ulteriormente subdividida utilizando elementos específicos de la clase model.physDescPart. [10.7. Physical Description]
+  element ns1:physDesc {
+    (tei_model.pLike*, tei_model.physDescPart_sequenceOptional),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_objectDesc =
+  
+  ## contiene una descripción de los componentes físicos que constituyen el objeto descrito. [10.7.1. Object Description]
+  element ns1:objectDesc {
+    (tei_model.pLike+ | (tei_supportDesc?, tei_layoutDesc?)),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_supportDesc =
+  
+  ## (descripción de ayuda) agrupa los elementos que describen el soporte físico de la parte escrita de un manuscrito. [10.7.1. Object Description]
+  element ns1:supportDesc {
+    (tei_model.pLike+
+     | (tei_support?, tei_extent?, tei_foliation*, tei_condition?)),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## un nombre breve definido en el ámbito de un proyecto y referente al material que costituye la mayor parte del suporte.
+    ## Los valores sugeridos incluyen: 1] paper; 2] parch(parchment) ; 3] mixed
+    attribute material {
+      
+      ##
+      "paper"
+      | 
+        ## (pergamino) 
+        "parch"
+      | 
+        ##
+        "mixed"
+      | xsd:Name
+    }?,
+    empty
+  }
+tei_support =
+  
+  ## contiene una descripción de los materiales, etc. que constituyen el soporte físico de la parte escrita de un manuscrito. [10.7.1. Object Description]
+  element ns1:support {
+    tei_macro.specialPara,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_foliation =
+  
+  ## describe el sistema o sistemas de numeración usados para contar los fólios o las páginas de un códex. [10.7.1.4. Foliation]
+  element ns1:foliation {
+    tei_macro.specialPara,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_condition =
+  
+  ## contiene una descripción de la condición física de un manuscrito. [10.7.1.5. Condition]
+  element ns1:condition {
+    tei_macro.specialPara,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_layoutDesc =
+  
+  ## (descripción de la disposición) agrupa el conjunto de las descripciones de la distribución aplicable a un manuscrito. [10.7.2. Writing, Decoration, and Other Notations]
+  element ns1:layoutDesc {
+    (tei_model.pLike+ | tei_layout+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_layout =
+  
+  ## describe la disposición del texto en la página, comprendiendo eventuales informaciones sobre la lineación***, indicaciones de agujereado***, u otras señales de técnicas de preparación de la página utilizadas. [10.7.2. Writing, Decoration, and Other Notations]
+  element ns1:layout {
+    tei_macro.specialPara,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## indica el número de columnas por página.
+    attribute columns {
+      list {
+        (
+         ##
+         "1"
+         | 
+           ##
+           " 2"),
+        (
+         ##
+         "1"
+         | 
+           ##
+           " 2")?
+      }
+    },
+    empty
+  }
+tei_handDesc =
+  
+  ## (descripción de las manos) contiene una descripción de todos los diferentes tipos de escritura usados en un manuscrito. [10.7.2. Writing, Decoration, and Other Notations]
+  element ns1:handDesc {
+    (tei_model.pLike+ | tei_handNote+),
+    tei_att.global.attributes,
+    
+    ## especifica el número de manos distintas identificadas al interno de un manuscrito.
+    attribute hands { tei_data.count }?,
+    empty
+  }
+tei_typeDesc =
+  
+  ## contains a description of the typefaces or other aspects of the printing of an incunable or other printed source. [10.7.2.1. Writing]
+  element ns1:typeDesc {
+    (tei_model.pLike+ | empty), tei_att.global.attributes, empty
+  }
+tei_scriptDesc =
+  
+  ## contains a description of the scripts used in a manuscript or similar source. [10.7.2.1. Writing]
+  element ns1:scriptDesc {
+    (tei_model.pLike+ | tei_scriptNote+),
+    tei_att.global.attributes,
+    empty
+  }
+tei_decoDesc =
+  
+  ## (descripción de la decoración) contiene una descripción de la decoración de un manuscrito en forma de secuencia de párrafos o de secuencia de elementos decoNote organizados por el argumento. [10.7.3. Bindings, Seals, and Additional Material]
+  element ns1:decoDesc {
+    (tei_model.pLike+ | empty),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_additions =
+  
+  ## contiene una descripción de cualquier adición significativa encontrada al interno de un manuscrito como notas al márgen u otras anotaciones. [10.7.2. Writing, Decoration, and Other Notations]
+  element ns1:additions {
+    tei_macro.specialPara,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_bindingDesc =
+  
+  ## (descripción obligatoria) describe la encuadernación actual y precedente de un manuscrito en forma de una serie de párrafos o de una serie de diversos elementos binding (encuadernación), uno para cada encuadernación del manuscrito. [10.7.3.1. Binding Descriptions]
+  element ns1:bindingDesc {
+    ((tei_model.pLike | tei_condition)+ | tei_binding+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_binding =
+  
+  ## contiene la descripción de una encuadernación, p.ej. tipo de cubiertas, tablas, etc. presentes en un manuscrito. [10.7.3.1. Binding Descriptions]
+  element ns1:binding {
+    (tei_model.pLike | tei_condition)+,
+    tei_att.global.attributes,
+    tei_att.datable.attributes,
+    
+    ## especifica si la encuardenación es coetánea o no a la mayoría del contenido del manuscrito.
+    attribute contemporary { tei_data.xTruthValue }?,
+    empty
+  }
+tei_accMat =
+  
+  ## (material adicional) contiene eventuales detalles que conciernen a materiales añadidos estrechamente relacionados con el manuscrito examinado, p.ej. documentos no actuales o fragmentos cosidos junto al manuscrito en un período histórico precedente al actual. [10.7.3.3. Accompanying Material]
+  element ns1:accMat {
+    tei_macro.specialPara,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_history =
+  
+  ## agrupa elementos que describen la historia completa de un manuscrito o de una de sus partes. [10.8. History]
+  element ns1:history {
+    (tei_model.pLike+
+     | (tei_origin?, tei_provenance*, tei_acquisition?)),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_origin =
+  
+  ## contiene informaciones relativas al orígen de un manuscrito o de una de sus partes. [10.8. History]
+  element ns1:origin { tei_macro.specialPara }
+tei_provenance =
+  
+  ## contiene descripciones o informaciones relativas a un único episodio identificable en la historia de un manuscrito o de una de sus partes que sea posterior al momento de su creación pero anterior al momento de su adquisición. [10.8. History]
+  element ns1:provenance {
+    tei_macro.specialPara, tei_att.source.attributes, empty
+  }
+tei_acquisition =
+  
+  ## contiene cualquier descripción u otra información concerniente al proceso de adquisición del manuscrito o de una de sus partes. [10.8. History]
+  element ns1:acquisition {
+    tei_macro.specialPara,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_additional =
+  
+  ## agrupa información adicional, combinando informaciones bibliográficas relativas al manuscrito o a copias adicionales del mismo con informaciones de carácter conservacional o administrativo. [10.9. Additional Information]
+  element ns1:additional {
+    (tei_surrogates?, tei_listBibl?),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_surrogates =
+  
+  ## contiene informaciones relativas a eventuales representaciones digitales o gráficas del manuscrito en exámen eventualmente existentes en la institución depositaria o en cualquier otro lugar. [10.9. Additional Information]
+  element ns1:surrogates {
+    tei_macro.specialPara,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_att.datable.custom.attributes =
+  tei_att.datable.custom.attribute.when-custom,
+  tei_att.datable.custom.attribute.notBefore-custom,
+  tei_att.datable.custom.attribute.notAfter-custom,
+  tei_att.datable.custom.attribute.from-custom,
+  tei_att.datable.custom.attribute.to-custom,
+  tei_att.datable.custom.attribute.datingPoint,
+  tei_att.datable.custom.attribute.datingMethod
+tei_att.datable.custom.attribute.when-custom =
+  
+  ## supplies the value of a date or time in some custom standard form.
+  attribute when-custom {
+    list { tei_data.word+ }
+  }?
+tei_att.datable.custom.attribute.notBefore-custom =
+  
+  ## specifies the earliest possible date for the event in some custom standard form.
+  attribute notBefore-custom {
+    list { tei_data.word+ }
+  }?
+tei_att.datable.custom.attribute.notAfter-custom =
+  
+  ## specifies the latest possible date for the event in some custom standard form.
+  attribute notAfter-custom {
+    list { tei_data.word+ }
+  }?
+tei_att.datable.custom.attribute.from-custom =
+  
+  ## indicates the starting point of the period in some custom standard form.
+  attribute from-custom {
+    list { tei_data.word+ }
+  }?
+tei_att.datable.custom.attribute.to-custom =
+  
+  ## indicates the ending point of the period in some custom standard form.
+  attribute to-custom {
+    list { tei_data.word+ }
+  }?
+tei_att.datable.custom.attribute.datingPoint =
+  
+  ## supplies a pointer to some location defining a named point in time with reference to which the datable item is understood to have occurred
+  attribute datingPoint { tei_data.pointer }?
+tei_att.datable.custom.attribute.datingMethod =
+  
+  ## supplies a pointer to a calendar element or other means of interpreting the values of the custom dating attributes.
+  attribute datingMethod { tei_data.pointer }?
+tei_model.persNamePart = tei_surname | tei_forename | tei_nameLink
+tei_model.persNamePart_alternation =
+  tei_surname | tei_forename | tei_nameLink
+tei_model.persNamePart_sequence =
+  tei_surname, tei_forename, tei_nameLink
+tei_model.persNamePart_sequenceOptional =
+  tei_surname?, tei_forename?, tei_nameLink?
+tei_model.persNamePart_sequenceOptionalRepeatable =
+  tei_surname*, tei_forename*, tei_nameLink*
+tei_model.persNamePart_sequenceRepeatable =
+  tei_surname+, tei_forename+, tei_nameLink+
+tei_att.datable.iso.attributes =
+  tei_att.datable.iso.attribute.when-iso,
+  tei_att.datable.iso.attribute.notBefore-iso,
+  tei_att.datable.iso.attribute.notAfter-iso,
+  tei_att.datable.iso.attribute.from-iso,
+  tei_att.datable.iso.attribute.to-iso
+tei_att.datable.iso.attribute.when-iso =
+  
+  ## proporciona el valor de fecha o de tiempo en una forma estándar.
+  attribute when-iso { tei_data.temporal.iso }?
+tei_att.datable.iso.attribute.notBefore-iso =
+  
+  ## indica la fecha más temprana posible para un evento en un formato estándard, p.ej. aaaa-mm-dd.
+  attribute notBefore-iso { tei_data.temporal.iso }?
+tei_att.datable.iso.attribute.notAfter-iso =
+  
+  ## indica la fecha más tardana posible para un evento en un formato estándard, p.ej. aaaa-mm-dd.
+  attribute notAfter-iso { tei_data.temporal.iso }?
+tei_att.datable.iso.attribute.from-iso =
+  
+  ## indica el punto de inicio de un periodo de tiempo en formato estándard.
+  attribute from-iso { tei_data.temporal.iso }?
+tei_att.datable.iso.attribute.to-iso =
+  
+  ## indica en forma estándard el punto de conclusión de un período.
+  attribute to-iso { tei_data.temporal.iso }?
+tei_orgName =
+  
+  ## (nombre de una organización) contiene el nombre de una organización. [13.2.2. Organizational Names]
+  element ns1:orgName {
+    tei_macro.phraseSeq,
+    tei_att.canonical.attribute.ref,
+    
+    ## may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place.
+    ## Posibles valores: 1] impresor; 2]  librero
+    attribute role {
+      list { tei_data.enumerated+ }
+    }?,
+    empty
+  }
+tei_persName =
+  
+  ## (nombre propio de persona) contiene un nombre propio o un sintagma identificable como un nombre propio, que se refiere a una persona y puede incluir cualquier o todos los nombres de pila, apellidos, títulos honoríficos, o nombres añadidos de la persona en cuestión. [13.2.1. Personal Names]
+  element ns1:persName {
+    tei_macro.phraseSeq,
+    tei_att.canonical.attribute.key,
+    tei_att.canonical.attribute.ref,
+    
+    ## may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place.
+    ## Posibles valores: 1] impresor; 2]  librero
+    attribute role {
+      list { tei_data.enumerated+ }
+    }?,
+    empty
+  }
+tei_surname =
+  
+  ## contiene el apellido o nombre de família (heredado), en oposicion a un nombre asignado, un nombre de bautismo o un sobranombre. [13.2.1. Personal Names]
+  element ns1:surname {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_forename =
+  
+  ## contiene el nombre de pila asignado en el bautismo.  [13.2.1. Personal Names]
+  element ns1:forename {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_nameLink =
+  
+  ## (name link) contiene un afijo de conexión al interno del nombre no considerado parte del nombre, como p.ej. Van Der, o De Las. [13.2.1. Personal Names]
+  element ns1:nameLink {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_placeName =
+  
+  ## contiene la indicación absoluta o relativa de un nombre de lugar. [13.2.3. Place Names]
+  element ns1:placeName {
+    tei_macro.phraseSeq,
+    tei_att.canonical.attribute.key,
+    tei_att.canonical.attribute.ref,
+    empty
+  }
+tei_country =
+  
+  ## contiene el nombre de una unidad geopolítica, como una nación, país, colonia, etc. más grande o administrativamente superior que una región y más pequeño que un bloque. [13.2.3. Place Names]
+  element ns1:country {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_settlement =
+  
+  ## contiene el nombre de un asentamiento, del tipo ciudad, pueblo, villa etc. identificado como una unidad geopolítica o administrativa. [13.2.3. Place Names]
+  element ns1:settlement {
+    tei_macro.phraseSeq,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_geogName =
+  
+  ## (nombre geográfico) un nombre asociado a un un elemento geográfico, como valle Windrush o Monte Sinaí. [13.2.3. Place Names]
+  element ns1:geogName {
+    tei_macro.phraseSeq,
+    tei_att.canonical.attribute.key,
+    tei_att.canonical.attribute.ref,
+    empty
+  }
+tei_listPerson =
+  
+  ## (lista de personas) contiene una lista de descripciones, y cada una de las cuales proporciona información relativa a una persona específica o a un grupo de personas, p.ej, los participantes de una interacción verbal o las personas referidas en una fuente histórica. [13.3.2. The Person Element 15.2. Contextual Information 2.4. The Profile Description 15.3.2. Declarable Elements]
+  element ns1:listPerson {
+    (tei_model.headLike*,
+     (tei_model.personLike | tei_listPerson)+,
+     empty*),
+    tei_att.global.attributes,
+    tei_att.typed.attributes,
+    tei_att.declarable.attributes,
+    tei_att.sortable.attributes,
+    empty
+  }
+tei_listPlace =
+  
+  ## (lista de lugares) contiene una lista de lugares, seguida opcionalmente por una lista de interelaciones (a excepción de la inclusión) definidas entre ellos. [2.2.7. The Source Description 13.3.4. Places]
+  element ns1:listPlace {
+    (tei_model.headLike*,
+     (tei_model.placeLike | tei_listPlace)+,
+     empty*),
+    tei_att.global.attributes,
+    tei_att.typed.attributes,
+    tei_att.declarable.attributes,
+    tei_att.sortable.attributes,
+    empty
+  }
+tei_person =
+  
+  ## proporciona información relativa a un individuo específico, p.ej. un participante de una interacción verbal o una persona identificada por una fuente histórica. [13.3.2. The Person Element 15.2.2. The Participant Description]
+  element ns1:person {
+    (tei_model.pLike+ | (tei_model.personPart | tei_model.global)*),
+    tei_att.global.attributes,
+    tei_att.editLike.attributes,
+    tei_att.sortable.attributes,
+    
+    ## establece el rol o la clasificación primaria de una persona.
+    attribute role {
+      list { tei_data.enumerated+ }
+    }?,
+    
+    ## especifica el sexo de una persona.
+    attribute sex {
+      list { tei_data.sex+ }
+    }?,
+    
+    ## especifica un intervalo de edad para una persona.
+    attribute age { tei_data.enumerated }?,
+    empty
+  }
+tei_place =
+  
+  ## contiene los datos sobre una localización geográfica [13.3.4. Places]
+  element ns1:place {
+    (tei_model.headLike*,
+     (tei_model.pLike*
+      | (tei_model.labelLike
+         | tei_model.placeStateLike
+         | tei_model.placeEventLike)*),
+     (tei_model.noteLike | tei_model.biblLike | tei_idno)*,
+     (tei_model.placeLike | tei_listPlace)*),
+    tei_att.global.attributes,
+    tei_att.typed.attributes,
+    tei_att.editLike.attributes,
+    tei_att.sortable.attributes,
+    empty
+  }
+tei_att.repeatable.attributes =
+  tei_att.repeatable.attribute.context,
+  tei_att.repeatable.attribute.minOccurs,
+  tei_att.repeatable.attribute.maxOccurs
+tei_att.repeatable.attribute.context =
+  
+  ## supplies an XPath identifying a context within which this component of a content model must be found
+  attribute context { text }?
+tei_att.repeatable.attribute.minOccurs =
+  
+  ## (número mínimo de apariciones) indicates the smallest number of times this component may occur.
+  [ a:defaultValue = "1" ] attribute minOccurs { tei_data.count }?
+tei_att.repeatable.attribute.maxOccurs =
+  
+  ## (número máximo de apariciones.) indicates the largest number of times this component may occur.
+  [ a:defaultValue = "1" ]
+  attribute maxOccurs { tei_data.count | "unbounded" }?
+tei_model.contentPart = tei_sequence | tei_alternate | tei_textNode
+tei_att =
+  
+  ## (atributo) contiene el nombre de un atributo que aparece en el interior de un texto. [22. Documentation Elements]
+  element ns1:att {
+    tei_data.name,
+    tei_att.global.attributes,
+    
+    ## proporciona un identificador al esquema en el cual se define tal nombre.
+    ## Posibles valores: 1] TEI(text encoding initiative) ; 2] DBK(docbook) ; 3] XX(unknown) ; 4] imaginary; 5] XHTML; 6] XML; 7] XI
+    [ a:defaultValue = "TEI" ]
+    attribute scheme { tei_data.enumerated }?,
+    empty
+  }
+tei_gi =
+  
+  ## (identificador genérico) contiene el nombre (identificador genérico) de un elemento. [22. Documentation Elements 22.4.4. Element Specifications]
+  element ns1:gi {
+    tei_data.name,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_val =
+  
+  ## (valor) contiene el valor de un atributo. [22. Documentation Elements 22.4.5. Attribute List Specification]
+  element ns1:val {
+    text,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_sequence =
+  
+  ## sequence of references
+  element ns1:sequence {
+    (tei_model.contentPart+)
+    >> sch:pattern [
+         id = "custo-sequence-sequencechilden-constraint-8"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:sequence"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "count(*)>1"
+             "The sequence element must have at least two child elements"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.attributes,
+    tei_att.repeatable.attributes,
+    
+    ## if true, indicates that the order in which component elements of a sequence appear in a document must correspond to the order in which they are given in the content model.
+    attribute preserveOrder { tei_data.truthValue }?,
+    empty
+  }
+tei_alternate =
+  
+  ## an alternation of references
+  element ns1:alternate {
+    (tei_model.contentPart+)
+    >> sch:pattern [
+         id = "custo-alternate-alternatechilden-constraint-9"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:alternate"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "count(*)>1"
+             "The alternate element must have at least two child elements"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.attributes,
+    tei_att.repeatable.attributes,
+    empty
+  }
+tei_textNode =
+  
+  ## indicates the presence of a text node in a content model [22. Documentation Elements]
+  element ns1:textNode { tei_att.global.attributes, empty }
+tei_model.rdgLike = tei_rdg
+tei_model.rdgPart = notAllowed
+tei_app =
+  
+  ## (entrada de aparato crítico) contiene una entrada en el aparato crítico, con un lema opcional y, al menos, una lectura. [12.1.1. The Apparatus Entry]
+  element ns1:app {
+    (tei_model.global*,
+     (tei_lem, tei_model.global*)?,
+     ((tei_model.rdgLike, tei_model.global*) | tei_model.global*)*),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_lem =
+  
+  ## (lema) contiene el lema, o texto base, de una variante textuale [12.1. The Apparatus Entry, Readings, and Witnesses]
+  element ns1:lem {
+    (text
+     | tei_model.gLike
+     | tei_model.phrase
+     | tei_model.inter
+     | tei_model.global
+     | tei_model.rdgPart)*,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.source.attribute.source,
+    
+    ## (testimonio o testimonios) contiene una lista de uno o más indicadores que muestran los testimonios que presentan una determinada lectura.
+    attribute wit {
+      list {
+        (
+         ##
+         "#A"
+         | 
+           ##
+           " #Br"
+         | 
+           ##
+           " #C"
+         | 
+           ##
+           " #Ch"
+         | 
+           ##
+           " #D"
+         | 
+           ##
+           " #E"
+         | 
+           ##
+           " #H"
+         | 
+           ##
+           " #I"
+         | 
+           ##
+           " #J"
+         | 
+           ##
+           " #Ml"
+         | 
+           ##
+           " #N"
+         | 
+           ##
+           " #Rm"
+         | 
+           ##
+           " #S"
+         | 
+           ##
+           " #vi"
+         | 
+           ##
+           " #pe"
+         | 
+           ##
+           " #ho33"
+         | 
+           ##
+           " #sa"
+         | 
+           ##
+           " #ho54")+
+      }
+    }?,
+    empty
+  }
+tei_rdg =
+  
+  ## (lectura) contiene una única lectura dentro de una variante textual. [12.1. The Apparatus Entry, Readings, and Witnesses]
+  element ns1:rdg {
+    (text
+     | tei_model.gLike
+     | tei_model.phrase
+     | tei_model.inter
+     | tei_model.global
+     | tei_model.rdgPart)*,
+    tei_att.global.responsibility.attribute.cert,
+    
+    ## clasifica la lectura según alguna tipología funcional.
+    attribute type {
+      
+      ##
+      "error"
+      | 
+        ##
+        " intervention"
+      | 
+        ##
+        " prim"
+      | 
+        ##
+        " interm"
+    }?,
+    
+    ## (testimonio o testimonios) contiene una lista de uno o más indicadores que muestran los testimonios que presentan una determinada lectura.
+    attribute wit {
+      list {
+        (
+         ##
+         "#A"
+         | 
+           ##
+           " #Br"
+         | 
+           ##
+           " #C"
+         | 
+           ##
+           " #Ch"
+         | 
+           ##
+           " #D"
+         | 
+           ##
+           " #E"
+         | 
+           ##
+           " #H"
+         | 
+           ##
+           " #I"
+         | 
+           ##
+           " #J"
+         | 
+           ##
+           " #Ml"
+         | 
+           ##
+           " #N"
+         | 
+           ##
+           " #Rm"
+         | 
+           ##
+           " #S"
+         | 
+           ##
+           " #vi"
+         | 
+           ##
+           " #pe"
+         | 
+           ##
+           " #ho33"
+         | 
+           ##
+           " #sa"
+         | 
+           ##
+           " #ho54"
+         | 
+           ##
+           " #Pr"
+         | 
+           ##
+           " #Q"
+         | 
+           ##
+           " #Rl"
+         | 
+           ##
+           " #O")+
+      }
+    },
+    empty
+  }
+tei_witDetail =
+  
+  ## (detalle del testimonio) proporciona ulteriores detalles sobre uno o más testimonios relativos a una lectura dada. [12.1. The Apparatus Entry, Readings, and Witnesses]
+  element ns1:witDetail {
+    tei_macro.phraseSeq,
+    tei_att.global.attributes,
+    tei_att.placement.attributes,
+    tei_att.source.attributes,
+    tei_att.pointing.attributes,
+    
+    ## (testimonios) indica la sigla o siglas relativas a los testimonios a los cuales se refieren los detalles
+    attribute wit {
+      list { tei_data.pointer+ }
+    },
+    
+    ## describe el tipo de información dada sobre los testimonios.
+    attribute type { tei_data.enumerated }?,
+    empty
+  }
+tei_listWit =
+  
+  ## (lista de testimonios) contiene la lista con todos los testimonios a los cuales se hace referencia en los elementos y atributos relativos a los testimonios en el aparato crítico [12.1. The Apparatus Entry, Readings, and Witnesses]
+  element ns1:listWit {
+    (tei_model.headLike?, (tei_witness | tei_listWit)+),
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    empty
+  }
+tei_witness =
+  
+  ## puede contener bien la descripción de un único testimonio indicado en el aparato crítico, o una lista de testimonios indicada por una única sigla. [12.1. The Apparatus Entry, Readings, and Witnesses]
+  element ns1:witness {
+    tei_macro.limitedContent,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## (identificador) proporciona un identificador único para el elemento al cual se asocia el atributo.
+    attribute xml:id {
+      
+      ##
+      "A"
+      | 
+        ##
+        " Br"
+      | 
+        ##
+        " C"
+      | 
+        ##
+        " Ch"
+      | 
+        ##
+        " D"
+      | 
+        ##
+        " E"
+      | 
+        ##
+        " H"
+      | 
+        ##
+        " I"
+      | 
+        ##
+        " J"
+      | 
+        ##
+        " Ml"
+      | 
+        ##
+        " N"
+      | 
+        ##
+        " Rm"
+      | 
+        ##
+        " S"
+      | 
+        ##
+        " vi"
+      | 
+        ##
+        " pe"
+      | 
+        ##
+        " ho33"
+      | 
+        ##
+        " sa"
+      | 
+        ##
+        " ho54"
+      | 
+        ##
+        " Rl"
+      | 
+        ##
+        " Q"
+      | 
+        ##
+        " Pr"
+      | 
+        ##
+        " B"
+      | 
+        ##
+        " O"
+    },
+    empty
+  }
+tei_variantEncoding =
+  
+  ## declara el método empleado para codificar las variantes del aparato crítico. [12.1.1. The Apparatus Entry]
+  element ns1:variantEncoding {
+    empty,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.global.responsibility.attribute.resp,
+    
+    ## indica el método seguido para codificar el aparato crítico de las variantes.
+    attribute method {
+      
+      ## el aparato emplea números de línea u otro esquema canónico de referencia referidos en el texto base.
+      "location-referenced"
+      | 
+        ## el aparato indica las localizaciones exactas del principio y de la conclusión de cada lema concerniente a un texto base.
+        "double-end-point"
+      | 
+        ## las lecturas alternativs de un pasaje se dan paralelamente en el texto; no es necesaria ninguna noción sobre un texto base necesaria.
+        "parallel-segmentation"
+    },
+    
+    ## indica si el aparato aparece al interno o al externo del texto.
+    attribute location {
+      
+      ## el aparato aparece dentro del texto.
+      "internal"
+      | 
+        ## el aparato aparece fuera del texto base.
+        "external"
+    }
+    >> sch:pattern [
+         id =
+           "custo-variantEncoding-location-variantEncodingLocation-constraint-6"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:variantEncoding"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test =
+               "(@location != 'external') or (@method != 'parallel-segmentation')"
+             "\x{a}" ~
+             '              The @location value "external" is inconsistent with the\x{a}' ~
+             "              parallel-segmentation method of apparatus markup."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    empty
+  }
+tei_att.global.facs.attributes = tei_att.global.facs.attribute.facs
+tei_att.global.facs.attribute.facs =
+  
+  ## (facsímil) indica directamente a la imagen, o a la parte de un facsímil que se corresponde con este elemento.
+  attribute facs {
+    list { tei_data.pointer+ }
+  }?
+tei_att.global.change.attributes =
+  tei_att.global.change.attribute.change
+tei_att.global.change.attribute.change =
+  
+  ## points to one or more change elements documenting a state or revision campaign to which the element bearing this attribute and its children have been assigned by the encoder.
+  attribute change {
+    list { tei_data.pointer+ }
+  }?
+tei_restore =
+  
+  ## indica la reconstrucción del texto a un estado precedente por la cancelación de una anotación o instrucción del autor o el editor. [11.3.1.6. Cancellation of Deletions and Other Markings]
+  element ns1:restore {
+    tei_macro.paraContent,
+    
+    ## caracteriza el elemento utilizando una clasificación o tipología funcional.
+    attribute type {
+      
+      ##
+      "addition"
+      | 
+        ##
+        " deletion"
+      | 
+        ##
+        " addition-below"
+    },
+    empty
+  }
+tei_space =
+  
+  ## indica la localización de un espacio significativo en el texto de copia. [11.5.1. Space]
+  element ns1:space {
+    (tei_model.descLike | tei_model.certLike)*,
+    tei_att.global.responsibility.attribute.cert,
+    tei_att.typed.attributes,
+    tei_att.dimensions.attribute.unit,
+    tei_att.dimensions.attribute.quantity,
+    tei_att.source.attributes,
+    empty
+  }
+tei_subst =
+  
+  ## (substitución) agrupa una o más cancelaciones con una o más adiciones cuando la combinación riguarda a una sola intervención en el texto. [11.3.1.5. Substitutions]
+  element ns1:subst {
+    ((tei_add | tei_del | tei_model.milestoneLike)+)
+    >> sch:pattern [
+         id = "custo-subst-substContents1-constraint-11"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:subst"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "child::tei:add and child::tei:del"
+             "\x{a}" ~
+             "                  "
+             sch:name [ ]
+             " must have at least one child add and at least one child del"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.transcriptional.attribute.hand,
+    empty
+  }
+tei_supplied =
+  
+  ## indica fragmentos de texto añadidos por el transcriptor o por el revisor en el lugar donde el original es ilegible, porqué presenta daños físicos, lagunas o por otros motivos. [11.3.3.1. Damage, Illegibility, and Supplied Text]
+  element ns1:supplied {
+    tei_macro.paraContent,
+    
+    ## explica los motivos de dicha inserción.
+    attribute reason {
+      list {
+        (
+         ##
+         "illegible"
+         | 
+           ##
+           " omitted-in-original")+
+      }
+    },
+    empty
+  }
+tei_particDesc =
+  
+  ## (descripción de participación) describe los hablantes identificables, voces u otros participantes de una interacción lingüística. [15.2. Contextual Information]
+  element ns1:particDesc {
+    (tei_model.pLike+ | (tei_model.personLike | tei_listPerson)+),
+    tei_att.global.attributes,
+    tei_att.declarable.attributes,
+    empty
+  }
+tei_settingDesc =
+  
+  ## (descripción de realización) describe en prosa, o mediante una serie de elementos de realización, la realización o realizaciones dentro de las cuales una interacción lingüística tiene lugar. [15.2. Contextual Information 2.4. The Profile Description]
+  element ns1:settingDesc {
+    (tei_model.pLike+ | (tei_model.placeLike | tei_listPlace)+),
+    tei_att.global.attributes,
+    tei_att.declarable.attributes,
+    empty
+  }
+start = tei_TEI
