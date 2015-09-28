@@ -1,4 +1,4 @@
-##Data##
+##Datos##
 Esta carpeta contiene cinco archivos en formato xlsx:
 - bio-gongora.xslx: contiene eventos biográficos de Góngora que forman parte de esta [cronología] (http://www.antoniorojascastro.com/tesis/cronologia/)  
 - encuesta-gongora.xslx: contiene las preguntas y respuestas de la siguiente [encuesta] (http://www.antoniorojascastro.com/tesis/encuesta/) 
@@ -7,7 +7,7 @@ Esta carpeta contiene cinco archivos en formato xlsx:
 - testimonios-soledades.xslx: contiene la lista de [testimonios cotejados] (http://www.antoniorojascastro.com/tesis/testimonios/) para establecer el texto de las *Soledades*  
 
 
-##Edition##
+##Edición##
 Esta carpeta contiene una explicación de los criterios de codificación seguidos para realizar una edición crítica digital de las *Soledades* de Góngora. 
 
 La codificación XML/TEI de las *Soledades* ha sido concebida para que el usuario acceda a la transcripción paleográfica y al texto modernizado de Chacón, filtre las variantes por testimonio y clase (error, variante de autor e intervención editorial) y navegue el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
