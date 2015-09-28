@@ -8,9 +8,13 @@ Esta carpeta contiene cinco archivos en formato xlsx:
 
 
 ##Edición##
-Esta carpeta contiene una explicación de los criterios de codificación seguidos para realizar una edición crítica digital de las *Soledades* de Góngora. 
-
 La codificación XML/TEI de las *Soledades* ha sido concebida para que el usuario acceda a la transcripción paleográfica y al texto modernizado de Chacón, filtre las variantes por testimonio y clase (error, variante de autor e intervención editorial) y navegue el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
+
+Esta carpeta contiene: 
+- una explicación de los criterios de codificación seguidos para realizar una edición crítica digital de las *Soledades* de Góngora. 
+- documentación en PDF y HTML generada con la herramienta ROMA
+- esquema RELAX NG generado con la herramienta ROMA
+- configuración personal del esquema generado con ROMA
 
 ###Contenidos###
 
