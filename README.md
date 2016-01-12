@@ -1,4 +1,4 @@
-##Datos##
+##Data##
 Esta carpeta contiene cinco archivos en formato xlsx:
 - bio-gongora.xslx: contiene eventos biográficos de Góngora que forman parte de esta [cronología] (http://www.antoniorojascastro.com/tesis/cronologia/)  
 - encuesta-gongora.xslx: contiene las preguntas y respuestas de la siguiente [encuesta] (http://www.antoniorojascastro.com/tesis/encuesta/) 
