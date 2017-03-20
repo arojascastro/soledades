@@ -1,4 +1,5 @@
-##Datos##
+##Datos
+
 Esta carpeta contiene cinco archivos en formato xlsx:
 - bio-gongora.xslx: contiene eventos biográficos de Góngora que forman parte de esta [cronología] (http://www.antoniorojascastro.com/tesis/cronologia/)  
 - encuesta-gongora.xslx: contiene las preguntas y respuestas de la siguiente [encuesta] (http://www.antoniorojascastro.com/tesis/encuesta/) 
@@ -7,7 +8,8 @@ Esta carpeta contiene cinco archivos en formato xlsx:
 - testimonios-soledades.xslx: contiene la lista de [testimonios cotejados] (http://www.antoniorojascastro.com/tesis/testimonios/) para establecer el texto de las *Soledades*  
 
 
-##Edición##
+##Edición
+
 La codificación XML/TEI de las *Soledades* ha sido concebida para que el usuario acceda a la transcripción paleográfica y al texto modernizado de Chacón, filtre las variantes por testimonio y clase (error, variante de autor e intervención editorial) y navegue el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
 
 Esta carpeta contiene: 
@@ -16,10 +18,10 @@ Esta carpeta contiene:
 - esquema RELAX NG generado con la herramienta ROMA
 - configuración personal del esquema generado con ROMA
 
-###Contenidos###
+###Contenidos
 
-- [encabezado] (https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#encabezado)
- - [descripción del archivo] (https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#descripci%C3%B3n-del-archivo)
+- [encabezado](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#encabezado)
+- [descripción del archivo] (https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#descripci%C3%B3n-del-archivo)
  - [descripción de la codificación] (https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#descripci%C3%B3n-de-la-codificaci%C3%B3n)
  - [perfil del texto] (https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#perfil-del-texto)
  - [historial de revisión] (https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#historial-de-revisi%C3%B3n) 
@@ -40,17 +42,17 @@ Esta carpeta contiene:
 - [anotación] (https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#anotación)
 - [nombres propios] (https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#nombres-propios)
 
-##Contacto##
+##Contacto
 
 - Twitter: [@RojasCastroA] (https://twitter.com/RojasCastroA)
 - Web: www.antoniorojascastro.com
 - E-mail: rojas.castro.antonio at gmail dot com
 
-##Derechos##
+##Derechos
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Este obra se publica bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
 
-##DOI##
+##DOI
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.29422.svg)](http://dx.doi.org/10.5281/zenodo.29422)
 
 
