@@ -5313,10 +5313,11 @@
                             <rdg type="error" wit="#Br">el</rdg>
                             <rdg type="error" wit="#Rl"/>
                         </app> regocijo,</l>
+                    <!-- seguir desde aquí -->
                     <l xml:id="v-0715">mas <app>
                             <lem>el cansancio</lem>
                             <rdg type="error" wit="#Br #pe #ho54 #Rl #O">al cansancio</rdg>
-                        </app> no, que elmovimiento </l>
+                        </app> no, que el movimiento</l>
                     <l xml:id="v-0716">verdugo de las <app>
                             <lem>fuerzas</lem>
                             <rdg type="error" wit="#C">fuerza</rdg>
