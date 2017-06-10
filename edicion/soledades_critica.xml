@@ -3944,10 +3944,8 @@
                     <l xml:id="v-0504">aglorïoso pino,</l>
                     <l xml:id="v-0505">
                         <app>
-                            <lem>émulo <app>
-                                    <lem>vago</lem>
-                                    <rdg cert="low" type="error" wit="#Ml">bajo</rdg>
-                                </app>del ardiente coche </lem>
+                            <lem>émulo vago del ardiente coche</lem>
+                            <rdg type="error" wit="Ml" cert="low">émulo bajo del ardiente coche</rdg>
                             <rdg type="variant" wit="#Rm #O">(émulo vago si del sol no, de su coche)</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -5807,20 +5805,15 @@
                             <lem>intonso</lem>
                             <rdg type="error" wit="#Ml #Rm #S">intenso</rdg>
                         </app> dulcemente </l>
-                    <l n="770" xml:id="v-0807">
-                        <app>
-                            <lem>niega el vello que el <app>
-                                    <lem>vulto</lem>
-                                    <rdg type="error" wit="#Br #Rl">culto</rdg>
-                                    <rdg type="error" wit="#O">
-                                        <subst>
-                                            <del rend="overwritten">c</del>
-                                            <add place="inline">v</add>
-                                        </subst>ulto </rdg>
-                                </app> ha colorido: </lem>
-                            <rdg type="error" wit="#Rm"/>
-                        </app>
-                    </l>
+                    <l n="770" xml:id="v-0807" exclude="#Rm">niega el vello que el <app>
+                            <lem>vulto</lem>
+                            <rdg type="error" wit="#Br #Rl">culto</rdg>
+                            <rdg type="error" wit="#O">
+                                <subst>
+                                    <del rend="overwritten">c</del>
+                                    <add place="inline">v</add>
+                                </subst>ulto</rdg>
+                        </app> ha colorido:</l>
                     <l xml:id="v-0808">elvello, flores de su primavera,</l>
                     <l xml:id="v-0809">
                         <app>
