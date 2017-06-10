@@ -5514,46 +5514,41 @@
                 </lg>
                 <lg xml:id="g-25">
                     <l n="705" rend="indent" xml:id="v-0742">Recordó al <app>
-                            <lem>sol</lem>
-                            <rdg type="error" wit="#Br #Rl #O">son</rdg>
-                        </app>, no, de su espuma cana, </l>
+                            <lem>sol,</lem>
+                            <rdg type="error" wit="#Br #Rl #O">son,</rdg>
+                        </app> no, de su espuma cana,</l>
                     <l xml:id="v-0743">
                         <app>
                             <lem>la</lem>
-                            <rdg type="error" wit="#O">la <del rend="strikethrough">
-                                    <supplied reason="illegible">s</supplied>
-                                </del>
-                            </rdg>
-                        </app> dulce de las avesarmonía, </l>
+                            <rdg type="error" wit="#O">la<del rend="strikethrough">[s]</del></rdg>
+                        </app> dulce de las aves armonía,</l>
                     <l xml:id="v-0744">sino los dos topacios que batía,</l>
-                    <l xml:id="v-0745">orientalesaldabas, Himeneo. </l>
+                    <l xml:id="v-0745">orientales aldabas, Himeneo.</l>
                     <l xml:id="v-0746">Del carro <app>
                             <lem>pues</lem>
                             <rdg type="variant" wit="#Br #Rm #Pr #Rl #O">ya</rdg>
-                        </app>febeo </l>
+                        </app> febeo</l>
                     <l n="710" xml:id="v-0747">el luminoso tiro,</l>
                     <l xml:id="v-0748">
                         <app>
-                            <lem>mordiendo oro, el eclípticozafiro</lem>
+                            <lem>mordiendo oro, el eclíptico zafiro</lem>
                             <rdg type="variant" wit="#Br #Ml #Rm #Pr #Rl #O">oro mordiendo, campos de zafiro</rdg>
                         </app>
                     </l>
                     <l xml:id="v-0749">pisar <app>
                             <lem>quería</lem>
                             <rdg type="error" wit="#Rm">querría</rdg>
-                        </app>,cuando el populoso </l>
+                        </app>, cuando el populoso</l>
                     <l xml:id="v-0750">
                         <app>
                             <lem>lugarillo</lem>
                             <rdg type="variant" wit="#Br #D #Rm #Pr #Rl #O">lugarcillo</rdg>
-                        </app> el serrano </l>
+                        </app> el serrano</l>
                     <l xml:id="v-0751">con su huésped, que admira cortesano,</l>
-                    <l n="715" xml:id="v-0752">a pesar del estambrey de <app>
-                            <lem>la</lem>
-                            <rdg type="error" wit="#S">
-                                <add place="above">la</add>
-                            </rdg>
-                        </app> seda, </l>
+                    <l n="715" xml:id="v-0752">a pesar del estambre y de <app>
+                            <lem>la seda,</lem>
+                            <rdg type="error" wit="#S"><add place="above">la</add> seda,</rdg>
+                        </app></l>
                     <l xml:id="v-0753">
                         <app>
                             <lem>el que tapiz frondoso</lem>
@@ -5562,17 +5557,15 @@
                     </l>
                     <l xml:id="v-0754">
                         <app>
-                            <lem>tejió de verdes hojas <app>
-                                    <lem>la arboleda</lem>
-                                    <rdg type="error" wit="#A">de arboleda</rdg>
-                                </app>, </lem>
-                            <rdg wit="#Br #Rm #Pr #Rl #O">tejió, sino la rústica arboleda</rdg>
+                            <lem>tejió de verdes hojas la arboleda,</lem>
+                            <rdg type="error" wit="#A">tejió de verdes hojas de arboleda,</rdg>
+                            <rdg wit="#Br #Rm #Pr #Rl #O">tejió, sino la rústica arboleda,</rdg>
                         </app>
                     </l>
                     <l xml:id="v-0755">y <app>
                             <lem>los</lem>
                             <rdg type="error" wit="#Ml #Pr">las</rdg>
-                        </app> que por las calles espaciosas </l>
+                        </app> que por las calles espaciosas</l>
                     <l xml:id="v-0756">fabrican arcos, rosas,</l>
                     <l n="720" xml:id="v-0757">oblicuos, <app>
                             <lem>nuevos</lem>
@@ -5583,11 +5576,11 @@
                                     <add place="above">nuevos</add>
                                 </subst>
                             </rdg>
-                        </app>, pénsiles jardines, </l>
+                        </app>, pénsiles jardines,</l>
                     <l xml:id="v-0758">de <app>
                             <lem>tantos</lem>
                             <rdg type="variant" wit="#Br #Ml #Pr #O #Rm">tantas</rdg>
-                        </app> como víolas jazmines. </l>
+                        </app> como víolas jazmines.</l>
                 </lg>
                 <lg xml:id="g-26">
                     <l rend="indent" xml:id="v-0759">Al galán novio el montañés presenta</l>
