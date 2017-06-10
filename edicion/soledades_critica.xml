@@ -5312,17 +5312,17 @@
                             <lem>al</lem>
                             <rdg type="error" wit="#Br">el</rdg>
                             <rdg type="error" wit="#Rl"/>
-                        </app>regocijo, </l>
+                        </app> regocijo,</l>
                     <l xml:id="v-0715">mas <app>
-                            <lem>el</lem>
-                            <rdg type="error" wit="#Br #pe #ho54 #Rl #O">al</rdg>
-                        </app> cansancio no, que elmovimiento </l>
+                            <lem>el cansancio</lem>
+                            <rdg type="error" wit="#Br #pe #ho54 #Rl #O">al cansancio</rdg>
+                        </app> no, que elmovimiento </l>
                     <l xml:id="v-0716">verdugo de las <app>
                             <lem>fuerzas</lem>
                             <rdg type="error" wit="#C">fuerza</rdg>
-                        </app> es prolijo. </l>
-                    <l n="680" xml:id="v-0717">Los fuegos ( <app>
-                            <lem>cuyas lenguas, ciento a ciento,</lem>
+                        </app> es prolijo.</l>
+                    <l n="680" xml:id="v-0717"><app>
+                            <lem>Los fuegos (cuyas lenguas, ciento a ciento,</lem>
                             <rdg type="variant" wit="#Br #Rm #Rl">Los fuegos ciento a ciento</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -5348,7 +5348,7 @@
                     </l>
                     <l xml:id="v-0719">
                         <app>
-                            <lem>cuyasluces,delsol competidoras,</lem>
+                            <lem>cuyas luces, del sol competidoras,</lem>
                             <rdg type="variant" wit="#Br #Rm #Rl">amenazaban aun los aires vanos)</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -5360,7 +5360,7 @@
                     </l>
                     <l xml:id="v-0720">
                         <app>
-                            <lem>fingierondía en la tiniebla oscura)</lem>
+                            <lem>fingieron día en la tiniebla oscura)</lem>
                             <rdg type="variant" wit="#Rm #Rl">condenándolos van a muerte oscura</rdg>
                             <rdg type="variant" wit="#Br">condenándolos muerte oscura</rdg>
                             <rdg type="variant" wit="#Pr">
@@ -5373,14 +5373,9 @@
                     </l>
                     <l xml:id="v-0721">
                         <app>
-                            <lem>
-                                <app>
-                                    <lem>murieron</lem>
-                                    <rdg type="error" wit="#Ml">metieron</rdg>
-                                </app>, yen sí <app>
-                                    <lem>mismos</lem>
-                                    <rdg type="error" wit="#pe">misinos</rdg>
-                                </app> sepultados </lem>
+                            <lem>murieron, y en sí mismos sepultados</lem>
+                            <rdg type="error" wit="#Ml">metieron, y en sí mismos sepultados</rdg>
+                            <rdg type="error" wit="#pe">murieron, y en sí misinos sepultados</rdg>
                             <rdg type="variant" wit="#Rm">las remisiones de su calentura.</rdg>
                             <rdg type="variant" wit="#Br #Rl">la remisión es de su calentura.</rdg>
                             <rdg type="variant" wit="#Pr">
@@ -5391,19 +5386,18 @@
                             </rdg>
                         </app>
                     </l>
-                    <l n="685" xml:id="v-0722">
+                    <!-- o utilizar @exclude en Br, Rl y Rm -->
+                    <l n="685" xml:id="v-0722" exclude="#sa #ho54">
                         <app>
-                            <lem>sus miembros, en cenizas <app>
-                                    <lem>desatados</lem>
-                                    <rdg type="error" wit="#A">desatadas</rdg>
-                                </app>, </lem>
+                            <lem>sus miembros, en cenizas desatadas,</lem>
+                            <rdg type="error" wit="#A">sus miembros, en cenizas desatadas,</rdg>
                             <rdg type="variant" wit="#Br #Rl #Rm"/>
                             <rdg type="variant" wit="#Pr">
                                 <add place="margin">sus miembros, en cenizas desatados,</add>
                             </rdg>
-                            <rdg type="error" wit="#sa #ho54"/>
                         </app>
                     </l>
+                    <!-- o utilizar @exclude -->
                     <l xml:id="v-0723">
                         <app>
                             <lem>piedras son de su misma sepultura.</lem>
@@ -5411,74 +5405,56 @@
                             <rdg type="variant" wit="#Pr">
                                 <add place="margin">piedras son de su misma sepultura.</add>
                             </rdg>
-                        </app>
-                        <witDetail wit="#O">El testimonio O transmite a continuación los versos 680-684 de la versión primitiva; es decir, refunde las dos versiones. </witDetail>
+                        </app><witDetail wit="#O">El testimonio O transmite a continuación los versos 680-684 de la versión primitiva; es decir, refunde las dos versiones.</witDetail>
                     </l>
                     <l xml:id="v-0724">Vence la noche <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#O">en</rdg>
-                        </app> fin, y <app>
-                            <lem>triunfa mudo</lem>
-                            <rdg type="error" wit="#Rl">triunfando</rdg>
-                        </app>
-                    </l>
-                    <l xml:id="v-0725">el silencio, aunque breve, delrüido.</l>
+                            <lem>al fin, y triunfa mudo</lem>
+                            <rdg type="error" wit="#O">en fin, y triunfa mudo</rdg>
+                            <rdg type="error" wit="#Rl">al fin, y triunfando</rdg>
+                        </app></l>
+                    <l xml:id="v-0725">el silencio, aunque breve, del rüido.</l>
                     <l xml:id="v-0726">Solo gime <app>
                             <lem>ofendido</lem>
                             <rdg type="error" wit="#ho54">ofeudido</rdg>
                         </app>
                     </l>
-                    <l n="690" xml:id="v-0727">el sagrado laureldel hierro <app>
-                            <lem>agudo</lem>
-                            <rdg type="error" wit="#Rm #Rl">duro</rdg>
-                        </app>. </l>
-                    <l xml:id="v-0728">deja de su esplendor, deja desnudo</l>
+                    <l n="690" xml:id="v-0727">el sagrado laurel del hierro <app>
+                            <lem>agudo.</lem>
+                            <rdg type="error" wit="#Rm #Rl">duro.</rdg>
+                        </app></l>
+                    <l xml:id="v-0728">Deja de su esplendor, deja desnudo</l>
                     <l xml:id="v-0729">de su frondosa pompa <app>
                             <lem>al</lem>
                             <rdg type="error" wit="#Ml #Rm #O">el</rdg>
-                        </app> verde aliso </l>
+                        </app> verde aliso</l>
                     <l xml:id="v-0730">el golpe no remiso</l>
                     <l xml:id="v-0731">
                         <app>
                             <lem>del</lem>
                             <rdg type="error" wit="#Pr">el</rdg>
-                        </app> villano membrudo. </l>
+                        </app> villano membrudo.</l>
                     <l n="695" xml:id="v-0732">El que resistir pudo</l>
                     <l xml:id="v-0733">
                         <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#S">el</rdg>
-                        </app>
-                        <app>
-                            <lem>animoso</lem>
-                            <rdg type="error" wit="#Rm">enemigo</rdg>
-                        </app> Austro, <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#Br">el</rdg>
-                            <rdg type="error" wit="#O">
-                                <subst>
+                            <lem>al animoso Austro, al Euro ronco,</lem>
+                            <rdg type="error" wit="#S">el animoso Austro, al Euro ronco,</rdg>
+                            <rdg type="error" wit="#Rm">al enemigo Austro, al Euro ronco,</rdg>
+                            <rdg type="error" wit="#Br">al animoso Austro, el Euro ronco,</rdg>
+                            <rdg type="error" wit="#O">al animoso Austro, <subst>
                                     <del rend="overwritten">e</del>
                                     <add place="inline">a</add>
-                                </subst>l </rdg>
-                        </app> Euro <app>
-                            <lem>ronco</lem>
-                            <rdg type="error" wit="#N">
-                                <subst>
-                                    <del rend="strikethrough">
-                                        <gap reason="cancellation"/>
-                                    </del>
+                                </subst>l Euro, ronco,</rdg>
+                            <rdg type="error" wit="#N">al animoso Austro, al Euro <subst>
+                                    <del rend="strikethrough"><gap reason="cancellation"/></del>
                                     <add place="above">r</add>
-                                </subst>onco </rdg>
-                        </app>, </l>
+                                </subst>onco</rdg>
+                        </app></l>
                     <l xml:id="v-0734">
-                        <app>
-                            <lem/>
-                            <rdg type="error" wit="#Rm">al</rdg>
-                        </app>
                         <app>
                             <lem>chopo</lem>
                             <rdg type="error" wit="#S">copo</rdg>
-                        </app> gallardo, cuyo liso tronco </l>
+                            <rdg type="error" wit="#Rm">al chopo</rdg>
+                        </app> gallardo, cuyo liso tronco</l>
                     <l xml:id="v-0735">papel fue de pastores, <app>
                             <lem>aunque rudo,</lem>
                             <rdg type="variant" wit="#Rm #O">y no rudo,</rdg>
@@ -5491,26 +5467,26 @@
                             </rdg>
                         </app>
                     </l>
-                    <l xml:id="v-0736">arevelar secretos va a la aldea,</l>
-                    <l n="700" xml:id="v-0737">que impide Amor que aun otro chopo lea. </l>
+                    <l xml:id="v-0736">a revelar secretos va a la aldea,</l>
+                    <l n="700" xml:id="v-0737">que impide Amor que aun otro chopo lea.</l>
                     <l xml:id="v-0738">Estos árboles pues ve la <app>
                             <lem>mañana</lem>
                             <rdg type="error" wit="#Rm">mantaña</rdg>
                             <rdg cert="low" type="error" wit="#O #Rl">montaña</rdg>
                         </app>
                     </l>
-                    <l xml:id="v-0739">mentir florestasy emular <app>
+                    <l xml:id="v-0739">mentir florestas y emular <app>
                             <lem>viales,</lem>
-                            <rdg type="error" wit="#Rl">vriales</rdg>
+                            <rdg type="error" wit="#Rl">vriales,</rdg>
                         </app>
                     </l>
                     <l xml:id="v-0740">
                         <app>
-                            <lem>cuantosmuró</lem>
+                            <lem>cuantos muró</lem>
                             <rdg type="error" wit="#Rm">cuanto murró</rdg>
                             <rdg type="error" wit="#O">cuantos muros</rdg>
                         </app> de líquidos cristales </l>
-                    <l xml:id="v-0741">agriculturaurbana.</l>
+                    <l xml:id="v-0741">agricultura urbana.</l>
                 </lg>
                 <lg xml:id="g-25">
                     <l n="705" rend="indent" xml:id="v-0742">Recordó al <app>
