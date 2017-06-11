@@ -3,24 +3,21 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
+
 			<titleStmt>
-				<title>Soledades</title>
-				<title>Edición digital con doble presentación y notas</title>
-				<author>
-					<persName>Luis de Góngora</persName>
-				</author>
-				<respStmt xml:id="ARC">
-					<resp>Edición y codificación de</resp>
-					<persName>Antonio Rojas Castro</persName>
-				</respStmt>
+				<title>Soledades. Edición digital con doble presentación y notas</title>
+				<author>Luis de Góngora</author>
+				<editor xml:id="ARC">Antonio Rojas Castro</editor>
 				<funder>Ministerio de Economía y Competitividad</funder>
 			</titleStmt>
+
 			<publicationStmt>
-				<distributor>Todo Góngora II [I+D+I FFI2010-17349]</distributor>
+				<distributor>Antonio Rojas Castro</distributor>
 				<availability status="free">
 					<licence target="http://creativecommons.org/licenses/by/4.0/">Esta obra se publica con una licencia de Creative Commons Reconocimiento 4.0 Internacional</licence>
 				</availability>
 			</publicationStmt>
+
 			<sourceDesc xml:id="testimonios">
 				<listWit>
 					<witness xml:id="A">
@@ -570,8 +567,10 @@
 					</witness>
 				</listWit>
 			</sourceDesc>
+
 		</fileDesc>
 		<profileDesc>
+
 			<particDesc>
 				<listPerson xml:id="onomastico">
 					<head type="sub">Onomástico</head>
@@ -1023,6 +1022,7 @@
 					</person>
 				</listPerson>
 			</particDesc>
+
 			<settingDesc>
 				<listPlace>
 					<head type="sub">Topónimos</head>
@@ -1121,9 +1121,12 @@
 					</place>
 				</listPlace>
 			</settingDesc>
+
 		</profileDesc>
 	</teiHeader>
+
 	<text xml:lang="spa">
+
 		<front>
 			<div xml:id="inicio">
 				<p>Las <hi rend="italic">Soledades</hi> de Luis de Góngora es una silva dividida en tres partes (Dedicatoria, <hi rend="italic">Soledad primera</hi> y <hi rend="italic">Soledad segunda</hi>)
@@ -1592,10 +1595,13 @@
 			</div>
 
 		</front>
+
 		<body>
+
 			<head type="main">
 				<hi rend="italic">Soledades</hi>
 			</head>
+
 			<div xml:id="dedicatoria">
 				<head type="sub">
 					<choice>
@@ -9078,8 +9084,8 @@
 						<orig>En</orig>
 						<reg>en</reg>
 					</choice> cercado <choice>
-						<orig>vecino</orig>
-						<reg>vezino</reg>
+						<orig>vezino</orig>
+						<reg>vecino</reg>
 					</choice>,<note type="editorial"><p>En el manuscrito Rm se omiten, por error, los versos 635-660. Sin embargo, Jammes <ref target="#gon1994">(Góngora, 1994: 324)</ref> afirmó en la nota al
 							verso 638 que la omisión empezaba en 630.</p></note></l>
 				<l xml:id="v-0673">
@@ -24813,7 +24819,9 @@
 					</choice> con bella esposa.</l>
 			</div>
 		</body>
+
 		<back>
+
 			<div xml:id="bibliografia">
 				<head type="main">Bibliografía</head>
 				<listBibl>
@@ -24870,5 +24878,6 @@
 				</listBibl>
 			</div>
 		</back>
+
 	</text>
 </TEI>
