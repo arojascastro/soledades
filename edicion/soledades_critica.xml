@@ -4795,11 +4795,11 @@
                         </app> la fuente </l>
                     <l xml:id="v-0636">sierpes de aljófar, aun mayor veneno</l>
                     <l n="600" xml:id="v-0637">que a las <app>
-                            <lem>del Ponto</lem>
-                            <rdg type="error" wit="#Br #Rl">de Panto</rdg>
+                            <lem>del Ponto,</lem>
+                            <rdg type="error" wit="#Br #Rl">de Panto,</rdg>
                             <rdg type="error" wit="#Rm">de Ponto</rdg>
-                            <rdg cert="low" type="error" wit="#O">de<del rend="strikethrough">[l]</del> Ponto</rdg>
-                        </app>, tímido, atribuye,</l>
+                            <rdg cert="low" type="error" wit="#O">de<del rend="strikethrough">[l]</del> Ponto,</rdg>
+                        </app> tímido, atribuye,</l>
                     <l xml:id="v-0638"><app>
                             <lem>según el pie, según los labios huye.</lem>
                             <rdg type="error" wit="#pe #ho54">según los pies, según los labios huye.</rdg>
@@ -8510,7 +8510,7 @@
                     <l xml:id="v-1579" exclude="#Rm #O #Rl">
                         <app>
                             <lem>celoso alcaide de sus trenzas de oro,</lem>
-                            <rdg type="variant" wit="#Pr">alcaide el <supplied reason="illegible">cielo</supplied> de sus trenzas de oro,</rdg>
+                            <rdg type="variant" wit="#Pr">alcaide el [cielo] de sus trenzas de oro,</rdg>
                         </app>
                     </l>
                     <l xml:id="v-1580" exclude="#Rm #O #Rl">en segundo bajel se <app>
