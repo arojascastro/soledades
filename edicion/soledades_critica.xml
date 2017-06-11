@@ -4776,7 +4776,7 @@
                             <lem>arena</lem>
                             <rdg type="error" wit="#Ml">hierba</rdg>
                         </app> ardiente </l>
-                    <l xml:id="v-0635">de la LybiaLibia, <app>
+                    <l xml:id="v-0635">de la Libia, <app>
                             <lem>ya</lem>
                             <rdg type="error" wit="#Br #O">ya</rdg>
                         </app>
@@ -4794,21 +4794,17 @@
                             <rdg type="error" wit="#Br #D #O">de</rdg>
                         </app> la fuente </l>
                     <l xml:id="v-0636">sierpes de aljófar, aun mayor veneno</l>
-                    <l n="600" xml:id="v-0637">quea las <app>
-                            <lem>delPonto</lem>
+                    <l n="600" xml:id="v-0637">que a las <app>
+                            <lem>del Ponto</lem>
                             <rdg type="error" wit="#Br #Rl">de Panto</rdg>
                             <rdg type="error" wit="#Rm">de Ponto</rdg>
-                            <rdg cert="low" type="error" wit="#O">de <supplied reason="illegible">
-                                    <del rend="strikethrough">l</del>
-                                </supplied> Ponto </rdg>
-                        </app>,tímido,atribuye, </l>
-                    <l xml:id="v-0638">según <app>
-                            <lem>el pie</lem>
-                            <rdg type="error" wit="#pe #ho54">los pies</rdg>
-                        </app>, según <app>
-                            <lem>los labios</lem>
-                            <rdg type="error" wit="#Rl">el labio</rdg>
-                        </app>huye. </l>
+                            <rdg cert="low" type="error" wit="#O">de<del rend="strikethrough">[l]</del> Ponto</rdg>
+                        </app>, tímido, atribuye,</l>
+                    <l xml:id="v-0638"><app>
+                            <lem>según el pie, según los labios huye.</lem>
+                            <rdg type="error" wit="#pe #ho54">según los pies, según los labios huye.</rdg>
+                            <rdg type="error" wit="#Rl">según el pie, según el labio huye.</rdg>
+                        </app></l>
                 </lg>
                 <lg xml:id="g-20">
                     <l rend="indent" xml:id="v-0639">Pasaron todos pues, y regulados</l>
