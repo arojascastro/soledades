@@ -4813,19 +4813,14 @@
                 <lg xml:id="g-20">
                     <l rend="indent" xml:id="v-0639">Pasaron todos pues, y regulados</l>
                     <l xml:id="v-0640">cual en los equinoccios surcar vemos</l>
-                    <l xml:id="v-0641">lospiélagosdel aire libre algunas</l>
+                    <l xml:id="v-0641">los piélagos del aire libre algunas</l>
                     <l n="605" xml:id="v-0642">volantes no galeras,</l>
                     <l xml:id="v-0643">sino grullas veleras,</l>
                     <l xml:id="v-0644">
                         <app>
-                            <lem>tal vez creciendo <app>
-                                    <lem>,</lem>
-                                    <rdg type="error" wit="#Rl"> y</rdg>
-                                </app> tal menguando <app>
-                                    <lem>lunas</lem>
-                                    <rdg type="error" wit="#S">algunas</rdg>
-                                </app>
-                            </lem>
+                            <lem>tal vez creciendo, tal menguando lunas</lem>
+                            <rdg type="error" wit="#Rl">tal vez creciendo y tal vez menguando lunas</rdg>
+                            <rdg type="error" wit="#S">tal vez creciendo, tal menguando algunas</rdg>
                             <rdg type="variant" wit="#Rm #O">medias formando lunas</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -4838,10 +4833,8 @@
                     <l xml:id="v-0645">sus distantes extremos,</l>
                     <l xml:id="v-0646">
                         <app>
-                            <lem>caracteres tal vez <app>
-                                    <lem>formando</lem>
-                                    <rdg type="error" wit="#D">forman</rdg>
-                                </app> alados </lem>
+                            <lem>caracteres tal vez formando alados</lem>
+                            <rdg type="error" wit="#D">caracteres tal vez forman alados</rdg>
                             <rdg type="variant" wit="#Rm">cuando no ya caracteres alados,</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -4852,28 +4845,20 @@
                         </app>
                     </l>
                     <l n="610" xml:id="v-0647">en el papel dïáfano del cielo</l>
-                    <l xml:id="v-0648">
-                        <app>
-                            <lem>las plumas de su vuelo.</lem>
-                            <rdg type="error" wit="#pe"/>
-                        </app>
-                    </l>
+                    <l xml:id="v-0648" exclude="#Pr">las plumas de su vuelo.</l>
                 </lg>
                 <lg xml:id="g-21">
                     <l rend="indent" xml:id="v-0649">Ellas en tanto en bóvedas de sombras</l>
                     <l xml:id="v-0650">(pintadas siempre al fresco)</l>
                     <l xml:id="v-0651">
                         <app>
-                            <lem>cubren</lem>
-                            <rdg type="error" wit="#Br">cubre</rdg>
-                        </app> las que <app>
-                            <lem>sidón</lem>
-                            <rdg type="error" wit="#Br">hidón</rdg>
-                        </app>, telar turquesco, </l>
+                            <lem>cubren las que sidón,</lem>
+                            <rdg type="error" wit="#Br">cubre las que hidón,</rdg>
+                        </app> telar turquesco,</l>
                     <l n="615" xml:id="v-0652">no ha sabido imitar verdes <app>
-                            <lem>alfombras</lem>
-                            <rdg type="error" wit="#pe">alfobras</rdg>
-                        </app>. </l>
+                            <lem>alfombras.</lem>
+                            <rdg type="error" wit="#pe">alfobras.</rdg>
+                        </app></l>
                     <l xml:id="v-0653">
                         <app>
                             <lem>Apenas reclinaron la cabeza</lem>
@@ -4886,66 +4871,53 @@
                             </rdg>
                         </app>
                     </l>
-                    <l xml:id="v-0654">cuando en número iguales,y en belleza,</l>
-                    <l xml:id="v-0655">losmárgenesmatiza de <app>
-                            <lem>las</lem>
-                            <rdg type="error" wit="#Rl">la</rdg>
-                        </app> fuentes </l>
-                    <l xml:id="v-0656">segundaprimavera de villanas,</l>
-                    <l n="620" xml:id="v-0657">que, parientas delnovio aun más cercanas</l>
-                    <l xml:id="v-0658">quevecinos sus pueblos, de presentes</l>
+                    <l xml:id="v-0654">cuando en número iguales, y en belleza,</l>
+                    <l xml:id="v-0655">los márgenes matiza de <app>
+                            <lem>las fuentes</lem>
+                            <rdg type="error" wit="#Rl">la fuentes</rdg>
+                        </app></l>
+                    <l xml:id="v-0656">segunda primavera de villanas,</l>
+                    <l n="620" xml:id="v-0657">que, parientas del novio aun más cercanas</l>
+                    <l xml:id="v-0658">que vecinos sus pueblos, de presentes</l>
                     <l xml:id="v-0659">prevenidas, concurren a <app>
-                            <lem>las</lem>
-                            <rdg cert="low" type="error" wit="#O">sus</rdg>
-                        </app> bodas. </l>
+                            <lem>las bodas.</lem>
+                            <rdg cert="low" type="error" wit="#O">sus bodas.</rdg>
+                        </app></l>
                     <l xml:id="v-0660">Mezcladas hacen todas</l>
                     <l xml:id="v-0661">teatro dulce, no de <app>
-                            <lem>escena</lem>
+                            <lem>escena muda, </lem>
                             <rdg type="error" wit="#N">
                                 <subst>
-                                    <del rend="strikethrough">
-                                        <gap reason="cancellation"/>
-                                    </del>
+                                    <del rend="strikethrough">[...]</del>
                                     <add place="margin">escena</add>
-                                </subst>
-                            </rdg>
-                            <rdg type="error" wit="#S">hiena</rdg>
-                        </app> muda, </l>
-                    <l n="625" xml:id="v-0662">elapacible sitio: espaciobreve</l>
-                    <l xml:id="v-0663">en que,a, pesar delsol, <app>
-                            <lem>cuajada</lem>
-                            <rdg type="error" wit="#Br #Rl #O">cuajara</rdg>
-                            <rdg type="error" wit="#N">
-                                <subst>
-                                    <del rend="strikethrough">
-                                        <gap reason="cancellation"/>
-                                    </del>
+                                </subst> muda,</rdg>
+                            <rdg type="error" wit="#S">hiena muda,</rdg>
+                        </app></l>
+                    <l n="625" xml:id="v-0662">el apacible sitio: espacio breve</l>
+                    <l xml:id="v-0663">en que, a pesar del sol, <app>
+                            <lem>cuajada nieve,</lem>
+                            <rdg type="error" wit="#Br #Rl #O">cuajara nieve,</rdg>
+                            <rdg type="error" wit="#N"><subst>
+                                    <del rend="strikethrough">[...]</del>
                                     <add place="above">cuajada</add>
-                                </subst>
-                            </rdg>
-                        </app>nieve, </l>
+                                </subst> nieve,</rdg>
+                        </app></l>
                     <l xml:id="v-0664">
                         <app>
-                            <lem>y</lem>
-                            <rdg cert="low" type="error" wit="#Br #Rl #O">hoy</rdg>
-                        </app>nieve de <app>
-                            <lem>colores</lem>
-                            <rdg type="error" wit="#Br">flores</rdg>
-                        </app>mil vestida, </l>
+                            <lem>y nieve de colores mil vestida,</lem>
+                            <rdg cert="low" type="error" wit="#Rl #O">hoy nieve de colores mil vestida,</rdg>
+                            <rdg type="error" wit="#Br">hoy nieve de flores mil vestida,</rdg>
+                        </app></l>
                     <l xml:id="v-0665">la sombra vio florida</l>
                     <l xml:id="v-0666">en la <app>
-                            <lem>hierba</lem>
+                            <lem>hierba menuda.</lem>
                             <rdg type="error" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">sombra</del>
                                     <add place="above">hierba</add>
-                                </subst>
-                            </rdg>
-                        </app>
-                        <app>
-                            <lem>menuda</lem>
-                            <rdg type="error" wit="#S">muda</rdg>
-                        </app>. </l>
+                                </subst> menuda. </rdg>
+                            <rdg type="error" wit="#S">hierba muda.</rdg>
+                        </app></l>
                 </lg>
                 <lg xml:id="g-22">
                     <l n="630" rend="indent" xml:id="v-0667">Viendo pues que igualmente les <app>
@@ -4971,8 +4943,8 @@
                     <l n="635" xml:id="v-0672" exclude="#Rm">en cercado vecino,</l>
                     <l xml:id="v-0673" exclude="#Rm">cuando a nuestros antípodas la aurora</l>
                     <l xml:id="v-0674" exclude="#Rm">las rosas gozar deja de su frente,</l>
-                    <l xml:id="v-0675" exclude="#Rm">tal sale <app>
-                            <lem>aquella que sin alas vuela</lem>
+                    <l xml:id="v-0675" exclude="#Rm"><app>
+                            <lem>tal sale aquella que sin alas vuela</lem>
                             <rdg type="variant" wit="#Pr #Rl #O">tal sale ya la que sin alas vuela</rdg>
                             <rdg type="variant" wit="#Br">tal sale ya la que sin más vuela</rdg>
                         </app></l>
