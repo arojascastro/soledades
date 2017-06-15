@@ -4288,109 +4288,92 @@
                         <app>
                             <lem>Consolarlo</lem>
                             <rdg type="error" wit="#Ch #pe #sa #ho54">Consolarle</rdg>
-                            <rdg type="error" wit="#N">Consolarl <subst>
+                            <rdg type="error" wit="#N">Consolarl<subst>
                                     <del rend="overwritten">o</del>
                                     <add place="above">e</add>
                                 </subst>
                             </rdg>
-                        </app> pudiera el peregrino </l>
+                        </app> pudiera el peregrino</l>
                     <l xml:id="v-0545">con las de su edad corta historias largas,</l>
                     <l xml:id="v-0546">
                         <app>
                             <lem>si</lem>
                             <rdg type="error" wit="#Ml">su</rdg>
-                        </app> (vinculados todos a sus cargas, </l>
-                    <l n="510" xml:id="v-0547">cualpróvidas hormigas <app>
-                            <lem>a</lem>
-                            <rdg type="error" wit="#Br">que</rdg>
-                        </app> sus <app>
-                            <lem>mieses</lem>
-                            <rdg type="error" wit="#Ml">mioses</rdg>
-                        </app>) </l>
+                        </app> (vinculados todos a sus cargas,</l>
+                    <l n="510" xml:id="v-0547">cual próvidas hormigas <app>
+                            <lem>a sus mieses)</lem>
+                            <rdg type="error" wit="#Br">que sus mieses)</rdg>
+                            <rdg type="error" wit="#Ml">a sus mioses)</rdg>
+                        </app></l>
                     <l xml:id="v-0548">
                         <app>
-                            <lem>no</lem>
-                            <rdg type="error" wit="#ho54">do</rdg>
-                        </app>
-                        <app>
-                            <lem>comenzaranya</lem>
-                            <rdg type="error" wit="#Br">comenzaron ya</rdg>
-                            <rdg type="error" wit="#N">comenzara <subst>
+                            <lem>no comenzaran ya los montañeses</lem>
+                            <rdg type="error" wit="#ho54">do comenzaran ya los montañeses</rdg>
+                            <rdg type="error" wit="#Br">no comenzaron ya los montañeses</rdg>
+                            <rdg type="error" wit="#N">no comenzara <subst>
                                     <del rend="strikethrough">ni a</del>
                                     <add place="above">ya</add>
-                                </subst>
-                            </rdg>
-                        </app> los montañeses </l>
+                                </subst> los montañeses</rdg>
+                        </app></l>
                     <l xml:id="v-0549">a esconder <app>
                             <lem>con</lem>
                             <rdg type="error" wit="#sa">en</rdg>
-                        </app> el número el camino, </l>
+                        </app> el número el camino,</l>
                     <l xml:id="v-0550">
                         <app>
-                            <lem>y</lem>
-                            <rdg type="error" wit="#Rm">que</rdg>
-                        </app> el cielo con el <app>
-                            <lem>polvo</lem>
-                            <rdg type="error" wit="#ho54">fiolvo</rdg>
-                        </app>. <app>
-                            <lem>Enjugó</lem>
-                            <rdg type="error" wit="#Rm">En fuego</rdg>
-                        </app> el viejo </l>
+                            <lem>y el cielo con el polvo. Enjugó el viejo</lem>
+                            <rdg type="error" wit="#Rm">que el cielo con el polvo. En fuego el viejo</rdg>
+                            <rdg type="error" wit="#ho54">y el cielo con el fiolvo. Enjugó el viejo</rdg>
+                        </app></l>
                     <l xml:id="v-0551">del tierno humor las venerables canas,</l>
                     <l n="515" xml:id="v-0552">y <app>
                             <lem>levantando</lem>
                             <rdg type="error" wit="#Br #Rl">levantado</rdg>
-                        </app> al forastero, dijo: </l>
-                    <l xml:id="v-0553">«Cabo me han hecho, hijo, </l>
-                    <l xml:id="v-0554">de este hermoso tercio de serranas: </l>
+                        </app> al forastero, dijo:</l>
+                    <l xml:id="v-0553">«Cabo me han hecho, hijo,</l>
+                    <l xml:id="v-0554">de este hermoso tercio de serranas:</l>
                     <l xml:id="v-0555">si <app>
-                            <lem>tu</lem>
-                            <rdg type="error" wit="#Rm"/>
-                        </app> neutralidad sufre consejo, </l>
+                            <lem>tu neutralidad</lem>
+                            <rdg type="error" wit="#Rm">neutralidad</rdg>
+                        </app> sufre consejo,</l>
                     <l xml:id="v-0556">y <app>
                             <lem>no</lem>
                             <rdg type="error" wit="#Rm"/>
-                        </app> te fuerzaobligación precisa, </l>
-                    <l n="520" xml:id="v-0557">la piedad que en mi alma ya te hospeda </l>
+                        </app> te fuerza obligación precisa,</l>
+                    <l n="520" xml:id="v-0557">la piedad que en mi alma ya te hospeda</l>
                     <l xml:id="v-0558">
                         <app>
-                            <lem>hoy</lem>
-                            <rdg type="error" wit="#ho33 #ho54">o</rdg>
-                        </app> te convida <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#O">
-                                <subst>
+                            <lem>hoy te convida al que nos guarda sueño</lem>
+                            <rdg type="error" wit="#ho33 #ho54">o te convida al que nos guarda sueño</rdg>
+                            <rdg type="error" wit="#O">hoy te convida <subst>
                                     <del rend="overwritten">e</del>
                                     <add place="inline">a</add>
-                                </subst>l </rdg>
-                        </app> que nos guarda <app>
-                            <lem/>
-                            <rdg type="error" wit="#ho33 #ho54">el</rdg>
-                        </app> sueño </l>
+                                </subst>l que nos guarda sueño</rdg>
+                        </app></l>
                     <l xml:id="v-0559">
                         <app>
                             <lem>política</lem>
                             <rdg type="error" wit="#Rm">y olítica</rdg>
-                        </app> alameda, </l>
+                        </app> alameda,</l>
                     <l xml:id="v-0560">verde muro de aquel lugar pequeño</l>
-                    <l xml:id="v-0561">que,a pesar de <app>
-                            <lem>esos</lem>
-                            <rdg cert="low" type="error" wit="#Rl">sol</rdg>
-                        </app>fresnos, se divisa. </l>
+                    <l xml:id="v-0561">que, a pesar de <app>
+                            <lem>esos fresnos,</lem>
+                            <rdg cert="low" type="error" wit="#Rl">sol fresnos,</rdg>
+                        </app> se divisa.</l>
                     <l n="525" xml:id="v-0562">Sigue la <app>
                             <lem>femenil tropa</lem>
                             <rdg type="error" wit="#O">feminal tropa</rdg>
                             <rdg cert="low" type="error" wit="#Rm">femenil turba</rdg>
-                        </app>conmigo: </l>
-                    <l xml:id="v-0563">verás curiosoyhonrarás testigo </l>
-                    <l xml:id="v-0564">eltálamo de nuestros labradores,</l>
+                        </app> conmigo:</l>
+                    <l xml:id="v-0563">verás curioso y honrarás testigo</l>
+                    <l xml:id="v-0564">el tálamo de nuestros labradores,</l>
                     <l xml:id="v-0565">que de tu calidad señas <app>
                             <lem>mayores</lem>
                             <rdg type="error" wit="#O">mejores</rdg>
                         </app>
                     </l>
-                    <l xml:id="v-0566">me dan que delocéano tus paños, </l>
-                    <l n="530" xml:id="v-0567">orazón falta donde sobran años».</l>
+                    <l xml:id="v-0566">me dan que del océano tus paños,</l>
+                    <l n="530" xml:id="v-0567">o razón falta donde sobran años».</l>
                 </lg>
                 <lg xml:id="g-18">
                     <l rend="indent" xml:id="v-0568">
