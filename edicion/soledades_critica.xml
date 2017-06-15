@@ -4434,19 +4434,19 @@
                                     <add place="inline">ruido</add>
                                 </subst>
                             </rdg>
-                        </app>, </l>
-                    <l xml:id="v-0574">el denso de los árbolescelaje,</l>
-                    <l xml:id="v-0575">en duda ponen cuálmayorhacía</l>
+                        </app>,</l>
+                    <l xml:id="v-0574">el denso de los árboles celaje,</l>
+                    <l xml:id="v-0575">en duda ponen cuál mayor hacía</l>
                     <l xml:id="v-0576">
                         <app>
                             <lem>guerra</lem>
                             <rdg type="error" wit="#Br">gerra</rdg>
-                        </app> al caloro resistencia al día. </l>
+                        </app> al calor o resistencia al día.</l>
                     <l n="540" xml:id="v-0577">Corostejiendo, voces alternando,</l>
                     <l xml:id="v-0578">sigue la <app>
-                            <lem>dulce</lem>
-                            <rdg cert="low" type="error" wit="#Pr">alegre</rdg>
-                        </app>escuadra montañesa </l>
+                            <lem>dulce escuadra</lem>
+                            <rdg cert="low" type="error" wit="#Pr">la alegre escuadra</rdg>
+                        </app> montañesa</l>
                     <l xml:id="v-0579">
                         <app>
                             <lem>del perezoso arroyo el paso lento,</lem>
@@ -4461,11 +4461,8 @@
                     </l>
                     <l xml:id="v-0580">
                         <app>
-                            <lem>encuantoél hurta <app>
-                                    <lem>blando</lem>
-                                    <rdg type="error" wit="#N #S">hablando</rdg>
-                                </app>
-                            </lem>
+                            <lem>en cuanto él hurta blando</lem>
+                            <rdg type="error" wit="#N #S">en cuanto él hurta hablando</rdg>
                             <rdg type="variant" wit="#Br #Rl #O">no sigue perezoso y hurta blando</rdg>
                             <rdg type="variant" wit="#Rm">no sigue perezo hurta blando</rdg>
                             <rdg type="variant" wit="#Pr">
@@ -4477,27 +4474,18 @@
                         </app>
                     </l>
                     <l xml:id="v-0581">(entre los olmos <app>
-                            <lem>que robustos besa</lem>
-                            <rdg type="error" wit="#N">
-                                <add place="margin">que robustos pesa</add>
-                            </rdg>
-                            <rdg type="error" wit="#S">besa</rdg>
-                        </app>) </l>
-                    <l n="545" xml:id="v-0582">pedaços de cristal, que el movimiento</l>
+                            <lem>que robustos besa)</lem>
+                            <rdg type="error" wit="#N"><add place="margin">que robustos pesa)</add></rdg>
+                            <rdg type="error" wit="#S">besa)</rdg>
+                        </app></l>
+                    <l n="545" xml:id="v-0582">pedazos de cristal, que el movimiento</l>
                     <l xml:id="v-0583">
                         <app>
-                            <lem>libra</lem>
-                            <rdg type="error" wit="#S">libre</rdg>
-                        </app> en la <app>
-                            <lem>falda</lem>
-                            <rdg type="error" wit="#Rm">falta</rdg>
-                        </app>, en <app>
-                            <lem>el</lem>
-                            <rdg type="error" wit="#Br">lo</rdg>
-                        </app>coturno <app>
-                            <lem>ella</lem>
-                            <rdg type="error" wit="#S">sella</rdg>
-                        </app>, </l>
+                            <lem>libra en la falda, en el coturno ella,</lem>
+                            <rdg type="error" wit="#S">libre en la falda, en el coturno sella,</rdg>
+                            <rdg type="error" wit="#Rm">libre en la falta, en el coturno ella,</rdg>
+                            <rdg type="error" wit="#Br">libre en la falda, en lo coturno ella,</rdg>
+                        </app></l>
                     <l xml:id="v-0584">de la columna bella,</l>
                     <l xml:id="v-0585">
                         <app>
