@@ -4395,46 +4395,38 @@
                 <lg xml:id="g-18">
                     <l rend="indent" xml:id="v-0568">
                         <app>
-                            <lem>Mal pudo</lem>
-                            <rdg type="variant" wit="#Br #Rm #Rl #O">No pudo</rdg>
+                            <lem>Mal pudo el extranjero, agradecido,</lem>
+                            <rdg wit="#A" type="error">Mal pudo el extranjero, agradecida,</rdg>
+                            <rdg type="variant" wit="#Br #Rm #Rl #O">No pudo el extranjero, agradecido,</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">No pudo</del>
                                     <add place="above">Mal pudo</add>
-                                </subst>
-                            </rdg>
-                        </app> el extranjero, <app>
-                            <lem>agradecido</lem>
-                            <rdg type="error" wit="#A">agradecida</rdg>
-                        </app>, </l>
+                                </subst> el extranjero, agradecido,</rdg>
+                        </app></l>
                     <l xml:id="v-0569">en tercio tal negar tal compañía</l>
                     <l xml:id="v-0570">
                         <app>
                             <lem>y</lem>
                             <rdg type="variant" wit="#Br #Rm #Rl #O #Pr">ni</rdg>
-                        </app> en tan noble ocasión tal hospedaje. </l>
+                        </app> en tan noble ocasión tal hospedaje.</l>
                     <l xml:id="v-0571">Alegres pisan <app>
-                            <lem>la</lem>
-                            <rdg type="variant" wit="#Rm">lo</rdg>
-                        </app> que, si no era </l>
-                    <l n="535" xml:id="v-0572">de chopos calley de álamos carrera,</l>
-                    <l xml:id="v-0573">el <app>
-                            <lem>fresco</lem>
-                            <rdg type="error" wit="#Rm">
-                                <subst>
+                            <lem>la que,</lem>
+                            <rdg type="variant" wit="#Rm">lo que,</rdg>
+                        </app> si no era </l>
+                    <l n="535" xml:id="v-0572">de chopos calle y de álamos carrera,</l>
+                    <l xml:id="v-0573"><app>
+                            <lem>el fresco de los céfiros rüido,</lem>
+                            <rdg type="error" wit="#Rm">el <subst>
                                     <del rend="strikethrough">céfiro</del>
                                     <add place="above">fresco</add>
+                                </subst> de los céfiros rüido,</rdg>
+                            <rdg type="error" wit="#Rl">el fresco de los céfiros <subst>
+                                    <del rend="strikethrough">crecido,</del>
+                                    <add place="inline">ruido,</add>
                                 </subst>
                             </rdg>
-                        </app> de los céfiros <app>
-                            <lem>rüido</lem>
-                            <rdg type="error" wit="#Rl">
-                                <subst>
-                                    <del rend="strikethrough">crecido</del>
-                                    <add place="inline">ruido</add>
-                                </subst>
-                            </rdg>
-                        </app>,</l>
+                        </app></l>
                     <l xml:id="v-0574">el denso de los árboles celaje,</l>
                     <l xml:id="v-0575">en duda ponen cuál mayor hacía</l>
                     <l xml:id="v-0576">
