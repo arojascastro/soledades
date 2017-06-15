@@ -626,26 +626,17 @@
 
                 <lg xml:id="g-01">
                     <l rend="indent" xml:id="v-0001" exclude="#Rm #Pr"><app>
-                            <lem>Pasos</lem>
-                            <rdg type="error" wit="#S">Pasos <del rend="strikethrough">son</del></rdg>
-                        </app> de un peregrino <app>
-                            <lem>son</lem>
-                            <rdg type="error" wit="#S"><add place="above">son</add></rdg>
-                        </app>
-                        <app>
-                            <lem>errante</lem>
-                            <rdg type="error" wit="#A #D">errante<del rend="strikethrough">s</del></rdg>
-                            <rdg type="error" wit="#Ml">errantes</rdg>
-                        </app>
-                    </l>
+                            <lem>Pasos de un peregrino son errante</lem>
+                            <rdg type="error" wit="#A #D">Pasos de un peregrino son errante<del rend="strikethrough">s</del></rdg>
+                            <rdg type="error" wit="#Ml">Pasos de un peregrino son errantes</rdg>
+                            <rdg type="error" wit="#S">Pasos <del rend="strikethrough">son</del> de un peregrino <add place="above">son</add> errante</rdg>
+                        </app></l>
                     <l xml:id="v-0002" exclude="#Rm #Pr">cuantos me dictó versos dulce musa,</l>
                     <l xml:id="v-0003" exclude="#Rm #Pr">en soledad confusa,</l>
                     <l xml:id="v-0004" exclude="#Rm #Pr">perdidos unos, <app>
                             <lem/>
                             <rdg type="error" wit="#Br #S #ho33">y</rdg>
-                            <rdg type="error" wit="#O">
-                                <del rend="strikethrough">y</del>
-                            </rdg>
+                            <rdg type="error" wit="#O"><del rend="strikethrough">y</del></rdg>
                         </app> otros inspirados.</l>
                     <l n="5" xml:id="v-0005" exclude="#Rm #Pr">¡Oh tú que, de venablos impedido,</l>
                     <l xml:id="v-0006" exclude="#Rm #Pr">muros de <app>
@@ -653,7 +644,7 @@
                             <rdg type="error" wit="#A">albeto</rdg>
                             <rdg type="error" wit="#Br">
                                 <subst>
-                                    <del rend="overwritten">ab<gap reason="cancellation"/></del>
+                                    <del rend="overwritten">ab[...]</del>
                                     <add place="margin">abeto</add>
                                 </subst>
                             </rdg>
