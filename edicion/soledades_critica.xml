@@ -3331,92 +3331,76 @@
                             </rdg>
                         </app>, </l>
                     <l xml:id="v-0398">reconociendo el mar en el vestido</l>
-                    <l xml:id="v-0399">(quebeberse no <app>
+                    <l xml:id="v-0399">(que beberse no <app>
                             <lem>pudo</lem>
                             <rdg type="error" wit="#D">puede</rdg>
-                        </app> el sol ardiente </l>
+                        </app> el sol ardiente</l>
                     <l xml:id="v-0400">las que siempre <app>
                             <lem>dará</lem>
-                            <rdg type="error" wit="#O">dará <del rend="strikethrough">n</del>
-                            </rdg>
-                        </app>cerúleas señas), </l>
-                    <l xml:id="v-0401">político serrano, <app>
-                            <lem/>
-                            <rdg type="error" wit="#N">
-                                <del rend="strikethrough">de canas graves</del>
-                            </rdg>
-                        </app>
-                    </l>
+                            <rdg type="error" wit="#O">dará<del rend="strikethrough">n</del></rdg>
+                        </app> cerúleas señas),</l>
+                    <l xml:id="v-0401">político serrano,<witDetail wit="#N">El testimonio N copia seguido el inicio del verso siguiente:<mentioned rend="italic">de canas
+                            graves</mentioned>.</witDetail></l>
                     <l n="365" xml:id="v-0402">
                         <app>
                             <lem>de</lem>
                             <rdg type="error" wit="#ho54">en</rdg>
-                        </app> canas grave, hablóde esta manera: </l>
+                        </app> canas grave, habló de esta manera:</l>
                 </lg>
                 <lg xml:id="g-15">
                     <l rend="indent" xml:id="v-0403">«¿Cuál tigre, la más fiera</l>
-                    <l xml:id="v-0404">que <app>
-                            <lem>clima</lem>
-                            <rdg type="error" wit="#ho33">el Libia</rdg>
-                        </app>
-                        <app>
-                            <lem>infamó</lem>
-                            <rdg type="error" wit="#Rl">infame</rdg>
-                        </app>hircano, </l>
+                    <l xml:id="v-0404"><app>
+                            <lem>que clima infamó hircano,</lem>
+                            <rdg type="error" wit="#ho33">el Libia infamó hircano,</rdg>
+                            <rdg type="error" wit="#Rl">que clima infame hircano,</rdg>
+                        </app></l>
                     <l xml:id="v-0405">dio el primer alimento</l>
-                    <l xml:id="v-0406">al que, <app>
-                            <lem/>
-                            <rdg type="error" wit="#Rl">de aquel</rdg>
-                        </app>yade este <app>
-                            <lem>o de aquel</lem>
-                            <rdg type="error" wit="#Rm">y de aquel</rdg>
-                            <rdg type="error" wit="#Rl"/>
-                        </app> mar, primero </l>
+                    <l xml:id="v-0406"><app>
+                            <lem>al que, ya de este o de aquel mar, primero</lem>
+                            <rdg type="error" wit="#Rl">al que de aquel, ya de este mar primero</rdg>
+                            <rdg type="error" wit="#Rm">al que ya de este y de aquel mar primero</rdg>
+                        </app></l>
                     <l n="370" xml:id="v-0407">surcó, labrador fiero,</l>
                     <l xml:id="v-0408">el campo undoso <app>
                             <lem>en</lem>
                             <rdg type="error" wit="#S">el</rdg>
-                            <rdg type="error" wit="#O">e <subst>
+                            <rdg type="error" wit="#O">e<subst>
                                     <del rend="overwritten">l</del>
                                     <add place="inline">n</add>
                                 </subst>
                             </rdg>
-                        </app> mal nacido pino, <witDetail wit="#N">El testimonio N repetía, por error, el final de este verso abajo, como si fuera uno independiente; el copista, sin embargo, tachó la
-                            lección <mentioned rend="italic">mal nacido pino</mentioned>. </witDetail>
+                        </app> mal nacido pino,<witDetail wit="#N">El testimonio N repetía, por error, el final de este verso abajo, como si fuera uno independiente; el copista, sin embargo, tachó la
+                            lección <mentioned rend="italic">mal nacido pino</mentioned>.</witDetail>
                     </l>
-                    <l xml:id="v-0409">vaga Cliciedel viento </l>
-                    <l xml:id="v-0410">en <app>
-                            <lem>telas</lem>
-                            <rdg type="error" wit="#O">velas</rdg>
-                        </app> hecho, <app>
-                            <lem>antes que</lem>
-                            <rdg type="variant" wit="#Br #Rm #Rl">si no</rdg>
+                    <l xml:id="v-0409">vaga Clicie del viento</l>
+                    <l xml:id="v-0410"><app>
+                            <lem>en telas hecho, antes que en flor, el lino?</lem>
+                            <rdg type="error" wit="#O">en velas hecho, antes que en flor, el lino?</rdg>
+                            <rdg type="variant" wit="#Br #Rm">en telas hecho, si no en flor, el lino?</rdg>
+                            <rdg type="variant" wit="#Rl">en telas hecho, si no en flor de lino?</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
-                                    <del rend="strikethrough">si no</del>
-                                    <add place="margin">antes que</add>
+                                    <del rend="strikethrough">en telas hecho, si no en flor, el lino?</del>
+                                    <add place="margin">en telas hecho, antes que en flor, el lino?</add>
                                 </subst>
                             </rdg>
-                        </app> en flor, <app>
-                            <lem>el</lem>
-                            <rdg type="error" wit="#Rl">de</rdg>
-                        </app> lino? </l>
+                        </app></l>
                     <l xml:id="v-0411">Más armas introdujo este <app>
                             <lem>marino</lem>
                             <rdg type="error" wit="#ho54">merino</rdg>
                         </app>
                     </l>
                     <l n="375" xml:id="v-0412">monstruo, escamado de <app>
-                            <lem>robustas</lem>
-                            <rdg type="variant" wit="#Br #Rm #Rl #O">inconstantes</rdg>
-                        </app>hayas, </l>
+                            <lem>robustas hayas,</lem>
+                            <rdg type="variant" wit="#Br #Rm #Rl #O">inconstantes hayas,</rdg>
+                        </app></l>
                     <l xml:id="v-0413">a las que tanto mar <app>
                             <lem>dividió</lem>
                             <rdg type="error" wit="#Ch">divide</rdg>
-                        </app>playas, </l>
+                        </app> playas,</l>
                     <l xml:id="v-0414">
                         <app>
-                            <lem>queconfusióny fuego</lem>
+                            <lem>que confusión y fuego</lem>
                             <rdg type="variant" wit="#Br #O #Rl #Rm">que ya introdujo fuego</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -3430,69 +3414,54 @@
                             <lem>frigio</lem>
                             <rdg type="error" wit="#N">
                                 <subst>
-                                    <del rend="overwritten">
-                                        <gap reason="cancellation"/>
-                                    </del>
+                                    <del rend="overwritten">[...]</del>
                                     <add place="margin">frigio</add>
                                 </subst>
                             </rdg>
-                        </app> muro el otro leño griego. </l>
+                        </app> muro el otro leño griego.</l>
                     <l xml:id="v-0416">Náutica industria investigó <app>
                             <lem>tal</lem>
                             <rdg type="variant" wit="#Br #Rm #Pr #Rl">ya</rdg>
-                        </app> piedra, </l>
-                    <l n="380" xml:id="v-0417">que,cualabrazahiedra</l>
-                    <l xml:id="v-0418">escollo, <app>
-                            <lem>el</lem>
-                            <rdg type="error" wit="#Br">
-                                <add place="above">el</add>
-                            </rdg>
-                            <rdg type="error" wit="#Ml"/>
-                        </app> metal ella <app>
-                            <lem>fulminante</lem>
-                            <rdg type="error" wit="#S">ful <subst>
+                        </app> piedra,</l>
+                    <l n="380" xml:id="v-0417">que, cual abraza hiedra</l>
+                    <l xml:id="v-0418"><app>
+                            <lem>escollo, el metal ella fulminante</lem>
+                            <rdg type="error" wit="#Br">escollo, <add place="above">el</add> metal ella fulminante</rdg>
+                            <rdg type="error" wit="#Ml">escollo, metal ella fulminante</rdg>
+                            <rdg type="error" wit="#S">escollo, el meta ella ful<subst>
                                     <del rend="strikethrough">gente</del>
                                     <add place="above">minante</add>
                                 </subst>
                             </rdg>
-                        </app>
-                    </l>
-                    <l xml:id="v-0419">de que Marte se viste, y,lisonjera, </l>
+                        </app></l>
+                    <l xml:id="v-0419">de que Marte se viste, y, lisonjera,</l>
                     <l xml:id="v-0420">solicita el que más brilla diamante</l>
                     <l xml:id="v-0421">
                         <app>
                             <lem>en</lem>
                             <rdg type="error" wit="#C">de</rdg>
-                        </app> la nocturna capa de la esfera, </l>
+                        </app> la nocturna capa de la esfera,</l>
                     <l n="385" xml:id="v-0422">estrella <app>
                             <lem>a</lem>
                             <rdg type="error" wit="#ho54"/>
-                        </app> nuestro polo másvecina, </l>
+                        </app> nuestro polo más vecina,</l>
                     <l xml:id="v-0423">y, con <app>
                             <lem>virtud</lem>
                             <rdg type="error" wit="#H">arte</rdg>
-                        </app> no poca, </l>
+                        </app> no poca,</l>
                     <l xml:id="v-0424">distante la revoca,</l>
                     <l xml:id="v-0425">elevada la inclina</l>
                     <l xml:id="v-0426">ya de la aurora bella</l>
                     <l n="390" xml:id="v-0427">
                         <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#S">el</rdg>
-                        </app> rosado balcón, ya <app>
-                            <lem>a</lem>
-                            <rdg type="error" wit="#pe #ho54 #Rl"/>
-                        </app>
-                        <app>
-                            <lem>la</lem>
-                            <rdg type="error" wit="#Br #Rl">los</rdg>
-                        </app> que <app>
-                            <lem>sella</lem>
-                            <rdg type="error" wit="#Ml">es ella</rdg>
-                        </app>
-                    </l>
+                            <lem>al rosado balcón, ya a la que sella</lem>
+                            <rdg type="error" wit="#S">el rosado balcón, ya a la que sella</rdg>
+                            <rdg type="error" wit="#pe #ho54 #Rl">al rosado balcón, ya la que sella</rdg>
+                            <rdg type="error" wit="#Br #Rl">al rosado balcón, ya a los que sella</rdg>
+                            <rdg type="error" wit="#Ml">al rosado balcón, ya a la que es ella</rdg>
+                        </app></l>
                     <l xml:id="v-0428">cerúlea tumba fría</l>
-                    <l xml:id="v-0429">las cenizas deldía.</l>
+                    <l xml:id="v-0429">las cenizas del día.</l>
                     <l xml:id="v-0430">En esta pues fiándose <app>
                             <lem>atractiva</lem>
                             <rdg type="error" wit="#ho54">tractiva</rdg>
@@ -3502,45 +3471,35 @@
                         <app>
                             <lem>del Norte amante dura, alado roble,</lem>
                             <rdg type="error" wit="#C">del monte amante dura, alado roble,</rdg>
+                            <rdg type="error" wit="#Rl">del Norte amante dura, al<del rend="strikethrough">[...]ado</del> roble,</rdg>
                             <rdg type="error" wit="#S">
                                 <subst>
                                     <del rend="strikethrough">del monte alado duro</del>
                                     <add place="above">del Norte amante dura, alado roble,</add>
                                 </subst>
                             </rdg>
-                            <rdg type="error" wit="#Rl">del Norte amante dura, al <del rend="strikethrough">
-                                    <gap reason="cancellation"/>ado </del> roble, </rdg>
                         </app>
                         <witDetail wit="#N">El testimonio N repite, como si fuera un verso indepediente, la lección <mentioned rend="italic">alado roble</mentioned>; el copista, sin embargo, corrigió
-                            la lección mediante un tachón. </witDetail>
+                            la lección mediante un tachón.</witDetail>
                     </l>
                     <l n="395" xml:id="v-0432">
                         <app>
-                            <lem>nohay <app>
-                                    <lem>tormentoso</lem>
-                                    <rdg type="error" wit="#N">tormento <del rend="strikethrough">so</del>
-                                    </rdg>
-                                </app> cabo que no doble, </lem>
+                            <lem>no hay tormentoso cabo que no doble,</lem>
+                            <rdg type="error" wit="#N">no hay tormento<add rend="above">so</add> cabo que no doble,</rdg>
                             <rdg type="error" wit="#O">que no hay tormenta o cabo que no doble,</rdg>
                         </app>
                     </l>
                     <l xml:id="v-0433">
                         <app>
-                            <lem>ni</lem>
-                            <rdg type="error" wit="#Rm">no</rdg>
-                        </app> isla <app>
-                            <lem>hoy</lem>
-                            <rdg type="variant" wit="#Br #Rm #Rl">hay</rdg>
-                            <rdg cert="low" type="error" wit="#O">
-                                <subst>
+                            <lem>ni isla hoy a su vuelo fugitiva.</lem>
+                            <rdg type="error" wit="#S">ni isla hoy a su vuelo fugi<del rend="strikethrough">gi</del>tiva.</rdg>
+                            <rdg type="variant" wit="#Rm">no isla hay a su vuelo fugitiva</rdg>
+                            <rdg type="variant" wit="#Br #Rl">ni isla hay a su vuelo fugitiva.</rdg>
+                            <rdg cert="low" type="error" wit="#O">ni isla <subst>
                                     <del rend="overwritten">hoy</del>
                                     <add place="inline">hay</add>
-                                </subst>
-                            </rdg>
-                        </app>a su vuelo <app>
-                            <lem>fugitiva</lem>
-                            <rdg type="error" wit="#S">fugi <del rend="strikethrough">gi</del>tiva </rdg>
-                        </app>. </l>
+                                </subst> a su vuelo fugitiva.</rdg>
+                        </app></l>
                     <l xml:id="v-0434">Tifis el primer <app>
                             <lem>leño</lem>
                             <rdg type="error" wit="#Ml">lino</rdg>
