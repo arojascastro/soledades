@@ -3541,7 +3541,7 @@
                             <lem>fugitiva</lem>
                             <rdg type="error" wit="#S">fugi <del rend="strikethrough">gi</del>tiva </rdg>
                         </app>. </l>
-                    <l xml:id="v-0434"> Tifis el primer <app>
+                    <l xml:id="v-0434">Tifis el primer <app>
                             <lem>leño</lem>
                             <rdg type="error" wit="#Ml">lino</rdg>
                         </app> mal seguro</l>
@@ -5722,10 +5722,10 @@
                 <lg xml:id="g-34">
                     <l rend="indent" xml:id="v-0889" exclude="#Rm">Llegaron todos pues, y, con gallarda</l>
                     <l xml:id="v-0890" exclude="#Rm">civil <app>
-                            <lem>magnificencia</lem>
-                            <rdg type="error" wit="#A">magnificiencia</rdg>
-                            <rdg type="error" wit="#O">magnific<del rend="strikethrough">i</del>encia</rdg>
-                        </app>, el suegro anciano</l>
+                            <lem>magnificencia,</lem>
+                            <rdg type="error" wit="#A">magnificiencia,</rdg>
+                            <rdg type="error" wit="#O">magnific<del rend="strikethrough">i</del>encia,</rdg>
+                        </app> el suegro anciano</l>
                     <l xml:id="v-0891" exclude="#Rm">cuantos la sierra dio, cuantos <app>
                             <lem>dio el llano</lem>
                             <rdg type="error" wit="#Br #Rl">el llano</rdg>
