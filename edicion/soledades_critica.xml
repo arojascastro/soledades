@@ -4264,24 +4264,21 @@
                     <l xml:id="v-0541">y en <app>
                             <lem>más</lem>
                             <rdg type="error" wit="#Br #Rl">mar</rdg>
-                        </app>anególágrimas el resto </l>
+                        </app> anegó lágrimas el resto</l>
                     <l n="505" xml:id="v-0542">
                         <app>
-                            <lem>de su</lem>
-                            <rdg type="error" wit="#pe #sa #ho54">del</rdg>
-                        </app> discurso el montañésprolijo, </l>
+                            <lem>de su discurso</lem>
+                            <rdg type="error" wit="#pe #sa #ho54">del discurso</rdg>
+                        </app> el montañés prolijo,</l>
                     <l xml:id="v-0543">que el viento su caudal, <app>
-                            <lem/>
-                            <rdg type="error" wit="#ho54 #Rl">y</rdg>
-                        </app> el mar <app>
-                            <lem>su hijo</lem>
-                            <rdg type="error" wit="#Rl">
-                                <subst>
-                                    <del rend="strikethrough">prolijo</del>
-                                    <add place="above">su hijo</add>
+                            <lem>el mar su hijo.</lem>
+                            <rdg type="error" wit="#ho54">y el mar su hijo.</rdg>
+                            <rdg type="error" wit="#Rl">y el mar <subst>
+                                    <del rend="strikethrough">prolijo.</del>
+                                    <add place="above">su hijo.</add>
                                 </subst>
                             </rdg>
-                        </app>. </l>
+                        </app></l>
                 </lg>
                 <lg xml:id="g-17">
                     <l rend="indent" xml:id="v-0544">
