@@ -2067,60 +2067,57 @@
                         </app>del agradable risco. </l>
                     <l xml:id="v-0231">Si <app>
                             <lem>mucho</lem>
-                            <rdg type="error" wit="#O">mu <del rend="strikethrough">n</del>cho </rdg>
+                            <rdg type="error" wit="#O">mu<del rend="strikethrough">n</del>cho</rdg>
                         </app> poco mapa <app>
                             <lem>les</lem>
                             <rdg type="error" wit="#Br #S #ho33 #sa #ho54 #Rl #O">le</rdg>
                             <rdg type="error" wit="#N">le <del rend="strikethrough">s</del>
                             </rdg>
-                        </app> despliega, </l>
+                        </app> despliega,</l>
                     <l n="195" xml:id="v-0232">
                         <app>
-                            <lem>mucho es</lem>
-                            <rdg type="error" wit="#O">mu <del rend="strikethrough">n</del>cho <add place="above">es</add>
-                            </rdg>
-                        </app>más lo que ( <app>
-                            <lem>nieblas</lem>
-                            <rdg type="error" wit="#C">nubes</rdg>
-                        </app> desatando) </l>
+                            <lem>mucho es más lo que (nieblas desatando)</lem>
+                            <rdg type="error" wit="#O">mu<del rend="strikethrough">n</del>cho <add place="above">es</add> más lo que (nieblas desatando)</rdg>
+                            <rdg type="error" wit="#C">mucho es más lo que (nubes desatando)</rdg>
+                        </app></l>
                     <l xml:id="v-0233">confunde <app>
-                            <lem>el</lem>
-                            <rdg type="error" wit="#S">al</rdg>
-                        </app>soly la distancia niega. </l>
+                            <lem>el sol</lem>
+                            <rdg type="error" wit="#S">al sol</rdg>
+                        </app> y la distancia niega.</l>
                     <l xml:id="v-0234">Muda la admiración habla callando,</l>
-                    <l xml:id="v-0235">y ciega unrío sigue, que, <app>
+                    <l xml:id="v-0235">y ciega un río sigue, que, <app>
                             <lem>luciente</lem>
                             <rdg type="error" wit="#pe">corriente</rdg>
                         </app>
                     </l>
                     <l xml:id="v-0236">de aquellos montes hijo,</l>
                     <l n="200" xml:id="v-0237">con torcido discurso, <app>
-                            <lem>aunque prolijo</lem>
-                            <rdg type="variant" wit="#Rm #O">si prolijo</rdg>
+                            <lem>aunque prolijo,</lem>
+                            <rdg type="variant" wit="#Rm #O">si prolijo,</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
-                                    <del rend="strikethrough">si prolijo</del>
-                                    <add place="margin">aunque prolijo</add>
+                                    <del rend="strikethrough">si prolijo,</del>
+                                    <add place="margin">aunque prolijo,</add>
                                 </subst>
                             </rdg>
-                        </app>, </l>
+                        </app></l>
                     <l xml:id="v-0238">tiraniza los campos útilmente: <witDetail wit="#O">El testimonio O transmite a continuación los versos 203-205: <mentioned rend="italic">quiere la Copia que su
                                 cuerno sea / si al animal armaron de Amaltea / diáfanos cristales </mentioned>. La palabra <mentioned rend="italic">armaron</mentioned> aparece añadida en el margen en
                             sustitución de <mentioned rend="italic">armado</mentioned> aunque no fue tachado sino anotado con una cruz; el verso <mentioned rend="italic">diáfanos cristales</mentioned>
-                            fue añadido en el margen y aparece tachado. </witDetail>
+                            fue añadido en el margen y aparece tachado.</witDetail>
                     </l>
                     <l xml:id="v-0239">
                         <app>
                             <lem>orladas</lem>
                             <rdg type="error" wit="#N">orlados</rdg>
-                        </app> sus orillas de frutales, </l>
+                        </app> sus orillas de frutales,</l>
                     <l xml:id="v-0240">
                         <app>
                             <lem>quiere la Copia que su cuerno sea,</lem>
                             <rdg type="variant" wit="#O">si de flores tomadas no a la broca</rdg>
-                            <rdg type="error" wit="#Rl">si de flores tomadas no a la ,</rdg>
-                            <rdg type="error" wit="#Rm">si de flores tomadas no a la <del rend="strikethrough">b</del>, </rdg>
-                            <rdg type="error" wit="#pe">si de flores tomadas no a la ,</rdg>
+                            <rdg type="error" wit="#Rl">si de flores tomadas no a la boca,</rdg>
+                            <rdg type="error" wit="#Rm">si de flores tomadas no a la <del rend="strikethrough">b</del>roca,</rdg>
+                            <rdg type="error" wit="#pe">si de flores tomadas no a la Aurora,</rdg>
                             <rdg type="variant" wit="#Br">
                                 <subst>
                                     <del rend="wrapped">si de flores tomadas no a la broca</del>
@@ -2137,12 +2134,10 @@
                     </l>
                     <l xml:id="v-0241">
                         <app>
-                            <lem>si al animal <app>
-                                    <lem>armaron</lem>
-                                    <rdg type="error" wit="#H">orlaron</rdg>
-                                </app> de Amaltea </lem>
+                            <lem>si al animal armaron de Amaltea</lem>
+                            <rdg type="error" wit="#H">si al animal orlaron de Amaltea</rdg>
                             <rdg type="variant" wit="#Rm #Rl #O">derecho corre mientras no revoca</rdg>
-                            <rdg type="variant" wit="#pe">derecho corre mientras no </rdg>
+                            <rdg type="variant" wit="#pe">derecho corre mientras no provoca</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">derecho corre mientras no revoca</del>
@@ -2161,7 +2156,7 @@
                         <app>
                             <lem>diáfanos cristales;</lem>
                             <rdg type="variant" wit="#Rm #pe #Rl #O">los mismos autos el de sus cristales;</rdg>
-                            <rdg type="variant" wit="#pe">los mismos el de sus cristales;</rdg>
+                            <rdg type="variant" wit="#pe">los mismos altos el de sus cristales;</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">los mismos autos el de sus cristales;</del>
@@ -2178,13 +2173,10 @@
                     </l>
                     <l xml:id="v-0243">
                         <app>
-                            <lem>
-                                <app>
-                                    <lem>engazando</lem>
-                                    <rdg type="error" wit="#Ml">engosando</rdg>
-                                </app> edificios en su plata, </lem>
+                            <lem>engazando edificios en su plata,</lem>
+                            <rdg type="error" wit="#Ml">engosando</rdg>
                             <rdg type="variant" wit="#Rm #Rl #O">huye un trecho de sí, alcánzase luego,</rdg>
-                            <rdg type="variant" wit="#pe">huye un trecho de sí, alcanza luego,</rdg>
+                            <rdg type="variant" wit="#pe">huye un trecho de sí, se alcanza luego,</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">huye un trecho de sí, alcánzase luego,</del>
@@ -2203,7 +2195,7 @@
                         <app>
                             <lem>de muros se corona,</lem>
                             <rdg type="variant" wit="#Rm #pe #Rl">desvíase y, buscando sus desvíos,</rdg>
-                            <rdg type="variant" wit="#O">desvíase y <del rend="strikethrough">a</del>, buscando sus desvíos, </rdg>
+                            <rdg type="variant" wit="#O">desvíase y<del rend="strikethrough">a</del>, buscando sus desvíos,</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">desvíase y, buscando sus desvíos,</del>
@@ -2220,13 +2212,13 @@
                     </l>
                     <l xml:id="v-0245">
                         <app>
-                            <lem>rocasabraza, islas aprisiona,</lem>
+                            <lem>rocas abraza, islas aprisiona,</lem>
                             <rdg type="variant" wit="#Rm #pe #Rl">errores dulces, dulces desvaríos</rdg>
                             <rdg type="variant" wit="#O">
                                 <subst>
                                     <del rend="strikethrough">horrores</del>
                                     <add place="margin">errores</add>
-                                </subst> dulces, dulces desvaríos </rdg>
+                                </subst> dulces, dulces desvaríos</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">errores dulces, dulces desvaríos</del>
@@ -2243,14 +2235,11 @@
                     </l>
                     <l xml:id="v-0246">
                         <app>
-                            <lem>
-                                <app>
-                                    <lem>de la alta gruta</lem>
-                                    <rdg type="error" wit="#D">del alta gruta</rdg>
-                                    <rdg type="error" wit="#ho54">de la grata</rdg>
-                                </app> donde se desata </lem>
+                            <lem>de la alta gruta donde se desata</lem>
+                            <rdg type="error" wit="#D">del alta gruta donde se desata</rdg>
+                            <rdg type="error" wit="#ho54">de la grata donde se desata</rdg>
                             <rdg type="variant" wit="#Rm #Rl #O">hacen sus aguas con lascivo juego;</rdg>
-                            <rdg type="variant" wit="#pe">hacen sus aguas con lascivo ;</rdg>
+                            <rdg type="variant" wit="#pe">hacen sus aguas con lascivo fuego;</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">hacen sus aguas con lascivo juego;</del>
@@ -2259,19 +2248,19 @@
                             </rdg>
                             <rdg type="variant" wit="#Br">
                                 <subst>
-                                    <del rend="wrapped">hacen sus aguas con lascivo ;</del>
+                                    <del rend="wrapped">hacen sus aguas con lascivo fuego;</del>
                                     <add place="margin">de la alta gruta donde se desata</add>
                                 </subst>
                             </rdg>
                         </app>
-                        <witDetail wit="#O">El testimonio O transmite a continuación los versos <mentioned rend="italic">diáfanos cristales; / de muros se corona, / rocas abraza, islas aprisiona,
-                            </mentioned>; estos tres versos aparecen tachados. </witDetail>
+                        <witDetail wit="#O">El testimonio O transmite a continuación los versos <mentioned rend="italic">diáfanos cristales; / de muros se corona, / rocas abraza, islas
+                                aprisiona,</mentioned>; estos tres versos aparecen tachados.</witDetail>
                     </l>
                     <l n="210" xml:id="v-0247">
                         <app>
                             <lem>hasta los jaspes líquidos, adonde</lem>
                             <rdg type="variant" wit="#Rm #pe #O">engazando edificios en su plata,</rdg>
-                            <rdg type="variant" wit="#Rl">engazando edificios en su ,</rdg>
+                            <rdg type="variant" wit="#Rl">engazando edificios en su planta,</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
                                     <del rend="strikethrough">engazando edificios en su plata,</del>
@@ -2308,12 +2297,8 @@
                         <app>
                             <lem/>
                             <rdg type="variant" wit="#Rm #pe #Rl #O">majestüosamente</rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <del rend="strikethrough">majestüosamente</del>
-                            </rdg>
-                            <rdg type="variant" wit="#Br">
-                                <del rend="wrapped">majestüosamente</del>
-                            </rdg>
+                            <rdg type="variant" wit="#Pr"><del rend="strikethrough">majestüosamente</del></rdg>
+                            <rdg type="variant" wit="#Br"><del rend="wrapped">majestüosamente</del></rdg>
                         </app>
                     </l>
                     <l xml:id="v-0250-p">
@@ -2321,39 +2306,28 @@
                             <lem/>
                             <rdg type="variant" wit="#pe #Rl #O">en brazos dividido caudalosos</rdg>
                             <rdg type="variant" wit="#Rm">en brazos caudalosos</rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <del rend="strikethrough">en brazos dividido caudalosos</del>
-                            </rdg>
-                            <rdg type="variant" wit="#Br">
-                                <del rend="wrapped">en brazos dividido caudalosos</del>
-                            </rdg>
+                            <rdg type="variant" wit="#Pr"><del rend="strikethrough">en brazos dividido caudalosos</del></rdg>
+                            <rdg type="variant" wit="#Br"><del rend="wrapped">en brazos dividido caudalosos</del></rdg>
                         </app>
                     </l>
                     <l xml:id="v-0251-p">
                         <app>
                             <lem/>
                             <rdg type="variant" wit="#Rm #pe #Rl #O">de islas, que paréntesis frondosos</rdg>
-                            <rdg type="variant" wit="#Br">
-                                <del rend="wrapped">de islas, que paréntesis </del>
-                            </rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <del rend="strikethrough">de islas, que paréntesis frondosos</del>
-                            </rdg>
+                            <rdg type="variant" wit="#Pr"><del rend="strikethrough">de islas, que paréntesis frondosos</del></rdg>
+                            <rdg type="variant" wit="#Br"><del rend="wrapped">de islas, que paréntesis</del></rdg>
                         </app>
                     </l>
+                    <!-- o usar @exclude -->
                     <l xml:id="v-0252-p">
                         <app>
                             <lem/>
                             <rdg type="variant" wit="#Rm #pe #Rl #O">al período son de su corriente.</rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <del rend="strikethrough">al período son de su corriente.</del>
-                            </rdg>
-                            <rdg type="variant" wit="#Br">
-                                <del rend="wrapped">al período son de su corriente.</del>
-                            </rdg>
+                            <rdg type="variant" wit="#Pr"><del rend="strikethrough">al período son de su corriente.</del></rdg>
+                            <rdg type="variant" wit="#Br"><del rend="wrapped">al período son de su corriente.</del></rdg>
                         </app>
                         <witDetail wit="#O">El testimonio O transmite a continuación dos versos de la versión definitiva: <mentioned rend="italic">hasta los jaspes líquidos, adonde / su orgullo
-                                pierde, su memoria esconde </mentioned>; es decir, el copista refundió la versión primitiva y la definitiva. </witDetail>
+                                pierde, su memoria esconde </mentioned>; es decir, el copista refundió la versión primitiva y la definitiva.</witDetail>
                     </l>
                 </lg>
                 <lg xml:id="g-09">
