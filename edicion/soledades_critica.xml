@@ -2407,50 +2407,37 @@
                         </app> halagos».</l>
                 </lg>
                 <lg xml:id="g-10">
-                    <l rend="indent" xml:id="v-0259">Con gusto el jovenyatención <app>
+                    <l rend="indent" xml:id="v-0259">Con gusto el joven y atención <app>
                             <lem>lo</lem>
                             <rdg type="error" wit="#Ch #pe #sa #ho54 #Rl #O">le</rdg>
-                            <rdg type="error" wit="#N">l <subst>
+                            <rdg type="error" wit="#N">l<subst>
                                     <del rend="overwritten">o</del>
                                     <add place="inline">e</add>
                                 </subst>
                             </rdg>
-                        </app>oía, </l>
+                        </app> oía,</l>
                     <l xml:id="v-0260">cuando <app>
-                            <lem/>
-                            <rdg type="error" wit="#Pr">
-                                <del rend="strikethrough">un</del>
-                            </rdg>
-                        </app> torrente de armasy de perros, </l>
+                            <lem>torrente</lem>
+                            <rdg type="error" wit="#Pr"><del rend="strikethrough">un</del> torrente</rdg>
+                        </app> de armas y de perros,</l>
                     <l xml:id="v-0261">(que si precipitados no los cerros,</l>
-                    <l n="225" xml:id="v-0262">las personas tras <app>
-                            <lem>de</lem>
-                            <rdg type="error" wit="#S #O"/>
-                        </app>un lobo <app>
-                            <lem>traía</lem>
-                            <rdg type="error" wit="#A">traí</rdg>
-                        </app>) </l>
-                    <l xml:id="v-0263">
-                        <app>
-                            <lem>tierno discursoy dulce compañía</lem>
-                            <rdg type="error" wit="#N"/>
-                        </app>
-                    </l>
+                    <l n="225" xml:id="v-0262">las personas <app>
+                            <lem>tras de un lobo traía)</lem>
+                            <rdg type="error" wit="#S #O">tras un lobo traía)</rdg>
+                            <rdg type="error" wit="#A">tras de un lobo traí)</rdg>
+                        </app></l>
+                    <l xml:id="v-0263" exclude="#N">tierno discurso y dulce compañía<witDetail wit="#N">El testimonio N omite, por error, este verso.</witDetail></l>
                     <l xml:id="v-0264">dejar hizo al serrano,</l>
-                    <l xml:id="v-0265">que, del sublime <app>
-                            <lem/>
-                            <rdg type="variant" wit="#Br #Rm #Rl">y</rdg>
-                            <rdg type="variant" wit="#O">
-                                <del rend="strikethrough">
-                                    <supplied reason="illegible">y</supplied>
-                                </del>
-                            </rdg>
-                        </app>espacïoso llano </l>
-                    <l xml:id="v-0266">alhuésped al camino <app>
-                            <lem>reduciendo</lem>
-                            <rdg type="error" wit="#Br">reducido</rdg>
-                            <rdg type="error" wit="#Pr">reducía</rdg>
-                        </app>, </l>
+                    <l xml:id="v-0265"><app>
+                            <lem>que, del sublime espacïoso llano</lem>
+                            <rdg type="variant" wit="#Br #Rm #Rl">que, del sublime y espacïoso llano</rdg>
+                            <rdg type="variant" wit="#O">que, del sublime <del rend="strikethrough">[y]</del> espacïoso llano</rdg>
+                        </app></l>
+                    <l xml:id="v-0266">al huésped al camino <app>
+                            <lem>reduciendo,</lem>
+                            <rdg type="error" wit="#Br">reducido,</rdg>
+                            <rdg type="error" wit="#Pr">reducía,</rdg>
+                        </app></l>
                     <l n="230" xml:id="v-0267">al venatorio estruendo</l>
                     <l xml:id="v-0268">
                         <app>
@@ -2466,16 +2453,11 @@
                     </l>
                     <l xml:id="v-0269">
                         <app>
-                            <lem>número</lem>
-                            <rdg type="error" wit="#C">númoro</rdg>
-                        </app> crece <app>
-                            <lem>y</lem>
-                            <rdg type="error" wit="#Rm #ho54"/>
-                        </app>
-                        <app>
-                            <lem>multiplica</lem>
-                            <rdg type="error" wit="#D">multiplican</rdg>
-                        </app>voces. </l>
+                            <lem>número crece y multiplica voces.</lem>
+                            <rdg type="error" wit="#C">númoro crece y multiplica voces.</rdg>
+                            <rdg type="error" wit="#Rm #ho54">número crece multiplica voces.</rdg>
+                            <rdg type="error" wit="#D">número crece y multiplican voces.</rdg>
+                        </app></l>
                 </lg>
                 <lg xml:id="g-11">
                     <l rend="indent" xml:id="v-0270">Bajaba (entre sí) el joven <app>
