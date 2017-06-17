@@ -2357,54 +2357,44 @@
                     </l>
                 </lg>
                 <lg xml:id="g-09">
-                    <l rend="indent" xml:id="v-0249">«Aquellas que los árboles apenas </l>
+                    <l rend="indent" xml:id="v-0249">«Aquellas que los árboles apenas</l>
                     <l xml:id="v-0250">dejan ser torres hoy— <app>
-                            <lem>dijo</lem>
-                            <rdg type="error" wit="#S">deja</rdg>
-                        </app>
-                        <app>
-                            <lem>el</lem>
-                            <rdg type="error" wit="#D">al</rdg>
-                        </app> cabrero </l>
+                            <lem>dijo el cabrero</lem>
+                            <rdg type="error" wit="#S">deja el cabrero</rdg>
+                            <rdg type="error" wit="#D">dijo al cabrero</rdg>
+                        </app></l>
                     <l xml:id="v-0251">con muestras de dolor extraordinarias—,</l>
-                    <l n="215" xml:id="v-0252">las estrellas nocturnas luminarias </l>
+                    <l n="215" xml:id="v-0252">las estrellas nocturnas luminarias</l>
                     <l xml:id="v-0253">
                         <app>
                             <lem>eran</lem>
                             <rdg type="error" wit="#sa">fueron</rdg>
-                        </app> de sus almenas, </l>
+                        </app> de sus almenas,</l>
                     <l xml:id="v-0254">cuando el que ves sayal fue limpio acero.</l>
-                    <l xml:id="v-0255">Yacen ahora, <app>
-                            <lem>y</lem>
-                            <rdg type="error" wit="#ho54"/>
-                            <rdg type="error" wit="#Rl">a</rdg>
-                        </app> sus <app>
-                            <lem>desnudas</lem>
-                            <rdg type="error" wit="#D">menudas</rdg>
-                        </app> piedras </l>
+                    <l xml:id="v-0255"><app>
+                            <lem>Yacen ahora, y sus desnudas piedras</lem>
+                            <rdg type="error" wit="#ho54">Yacen ahora, sus desnudas piedras</rdg>
+                            <rdg type="error" wit="#Rl">Yacen ahora a sus desnudas piedras</rdg>
+                            <rdg type="error" wit="#D">Yacen ahora, y sus menudas piedras</rdg>
+                        </app></l>
                     <l xml:id="v-0256">visten piadosas hiedras,</l>
-                    <l n="220" xml:id="v-0257">que <app>
-                            <lem>a</lem>
-                            <rdg type="error" wit="#S"/>
-                        </app>rüinas <app>
-                            <lem>y a</lem>
-                            <rdg type="error" wit="#ho54"/>
-                            <rdg type="error" wit="#S #sa #O">y</rdg>
-                        </app> estragos </l>
+                    <l n="220" xml:id="v-0257"><app>
+                            <lem>que a rüinas y a estragos</lem>
+                            <rdg type="error" wit="#S">que rüinas y estragos</rdg>
+                            <rdg type="error" wit="#ho54">que a rüinas a estragos</rdg>
+                            <rdg type="error" wit="#S #sa #O">que a rüinas y estragos</rdg>
+                        </app></l>
                     <l xml:id="v-0258">
                         <app>
-                            <lem>sabe</lem>
-                            <rdg type="error" wit="#D">suele</rdg>
+                            <lem>sabe el tiempo hacer verdes halagos».</lem>
+                            <rdg type="error" wit="#D">suele el tiempo hacer verdes halagos».</rdg>
+                            <rdg type="error" wit="#Rl">sabel el tiempo hacer piadosos halagos».</rdg>
                             <rdg cert="low" type="error" wit="#O">
                                 <subst>
                                     <del rend="overwritten">suele</del>
                                     <add place="margin">sabe</add>
-                                </subst>
-                            </rdg>
-                        </app> el tiempo hacer <app>
-                            <lem>verdes</lem>
-                            <rdg type="error" wit="#Rl">piadosos</rdg>
-                        </app> halagos».</l>
+                                </subst> el tiempo hacer verdes halagos».</rdg>
+                        </app></l>
                 </lg>
                 <lg xml:id="g-10">
                     <l rend="indent" xml:id="v-0259">Con gusto el joven y atención <app>
