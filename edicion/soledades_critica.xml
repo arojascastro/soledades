@@ -2483,41 +2483,36 @@
                             <rdg type="error" wit="#C #D #S #ho54 #Rl">admirado</rdg>
                         </app>
                     </l>
-                    <l xml:id="v-0271">armadoa Pan o <app>
+                    <l xml:id="v-0271">armado a Pan o <app>
                             <lem>semicapro</lem>
                             <rdg cert="low" type="error" wit="#Ml">simicapro</rdg>
-                            <rdg type="error" wit="#N">semic <del rend="strikethrough">r</del>apo </rdg>
-                        </app>a Marte </l>
+                            <rdg type="error" wit="#N">semic<del rend="strikethrough">r</del>apo</rdg>
+                        </app> a Marte</l>
                     <l n="235" xml:id="v-0272">en el pastor <app>
-                            <lem>mentidos</lem>
-                            <rdg type="error" wit="#O">me <add place="above">n</add>tidos </rdg>
-                        </app>, que con arte </l>
-                    <l xml:id="v-0273">culto principio dio al discurso,cuando</l>
+                            <lem>mentidos,</lem>
+                            <rdg type="error" wit="#O">me<add place="above">n</add>tidos,</rdg>
+                        </app> que con arte</l>
+                    <l xml:id="v-0273">culto principio dio al discurso, cuando</l>
                     <l xml:id="v-0274">rémora de sus pasos fue su oído,</l>
                     <l xml:id="v-0275">dulcemente impedido</l>
-                    <l xml:id="v-0276">de canoro instrumento, que pulsado <witDetail wit="#D">El testimonio D repite <mentioned rend="italic">que pulsado</mentioned> en el verso siguiente.
-                        </witDetail>
+                    <l xml:id="v-0276">de canoro instrumento, que pulsado <witDetail wit="#D">El testimonio D repite <mentioned rend="italic">que pulsado</mentioned> en el verso siguiente.</witDetail>
                     </l>
                     <l n="240" xml:id="v-0277">era de una serrana junto aun tronco,</l>
-                    <l xml:id="v-0278">sobre <app>
-                            <lem/>
-                            <rdg type="error" wit="#Rm">de</rdg>
-                        </app>un arroyo de quejarse ronco, </l>
+                    <l xml:id="v-0278"><app>
+                            <lem>sobre</lem>
+                            <rdg type="error" wit="#Rm">sobre de</rdg>
+                        </app> un arroyo de quejarse ronco,</l>
                     <l xml:id="v-0279">
                         <app>
-                            <lem>mudo</lem>
-                            <rdg type="error" wit="#D">mudó</rdg>
-                        </app>
-                        <app>
-                            <lem>sus ondas</lem>
-                            <rdg type="variant" wit="#Br #Rm #Rl #O">ya entonces</rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <subst>
-                                    <del rend="strikethrough">ya entonces</del>
-                                    <add place="above">sus ondas</add>
+                            <lem>mudo sus ondas,</lem>
+                            <rdg type="error" wit="#D">mudó sus ondas,</rdg>
+                            <rdg type="variant" wit="#Br #Rm #Rl #O">mudo ya entonces,</rdg>
+                            <rdg type="variant" wit="#Pr">mudo <subst>
+                                    <del rend="strikethrough">ya entonces,</del>
+                                    <add place="above">sus ondas,</add>
                                 </subst>
                             </rdg>
-                        </app>, cuando no enfrenado. </l>
+                        </app> cuando no enfrenado.</l>
                     <l xml:id="v-0280">Otra <app>
                             <lem>con ella</lem>
                             <rdg type="variant" wit="#Br #Rm #Rl #O">no lejos</rdg>
@@ -2527,78 +2522,62 @@
                                     <add place="above">con ella</add>
                                 </subst>
                             </rdg>
-                        </app> montaraz zagala </l>
+                        </app> montaraz zagala</l>
                     <l xml:id="v-0281">juntaba el cristal líquido <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#Br #Rl">a lo</rdg>
-                        </app> humano </l>
+                            <lem>al humano</lem>
+                            <rdg type="error" wit="#Br #Rl">a lo humano</rdg>
+                        </app></l>
                     <l n="245" xml:id="v-0282">por el arcaduz bello de una mano</l>
-                    <l xml:id="v-0283">que <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#Pr">
-                                <subst>
+                    <l xml:id="v-0283"><app>
+                            <lem>que al uno menosprecia, al otro iguala.</lem>
+                            <rdg type="error" wit="#O">que al uno menosprecia, a<add place="above">l</add> otro iguala.</rdg>
+                            <rdg type="error" wit="#Pr">que <subst>
                                     <del rend="strikethrough">el</del>
                                     <add place="inline">al</add>
-                                </subst>
-                            </rdg>
-                        </app>uno menosprecia, <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#O">a <add place="above">l</add>
-                            </rdg>
-                        </app> otro iguala. </l>
+                                </subst> uno menosprecia, al otro iguala.</rdg>
+                        </app></l>
                     <l xml:id="v-0284">Del verde margen otra las mejores</l>
-                    <l xml:id="v-0285">rosas trasladaylirios al cabello,</l>
+                    <l xml:id="v-0285">rosas traslada y lirios al cabello,</l>
                     <l xml:id="v-0286">o por lo matizado o por lo bello,</l>
                     <l n="250" xml:id="v-0287">
                         <app>
                             <lem>si</lem>
                             <rdg type="error" wit="#Rm">su</rdg>
-                        </app> Aurora no con rayos, Sol con flores. </l>
+                        </app> Aurora no con rayos, Sol con flores.</l>
                     <l xml:id="v-0288">Negras pizarras entre blancos dedos</l>
                     <l xml:id="v-0289">
                         <app>
-                            <lem>ingenïosa</lem>
-                            <rdg type="variant" wit="#Br #Rm #O">tan dulcemente</rdg>
-                            <rdg type="variant" wit="#Rl">t <supplied reason="illegible">a</supplied>n dulcemente </rdg>
-                            <rdg type="error" wit="#Pr">
-                                <subst>
+                            <lem>ingenïosa hiere otra, que dudo</lem>
+                            <rdg type="variant" wit="#Br #Rm #O">tan dulcemente hiere otra, que dudo</rdg>
+                            <rdg type="variant" wit="#Rl">t[a]n dulcemente hiere otra, que dudo</rdg>
+                            <rdg type="variant" wit="#Pr"><subst>
                                     <del rend="strikethrough">dulcemente</del>
                                     <add place="margin">ingenïosa</add>
-                                </subst>
-                            </rdg>
-                        </app> hiere otra, que dudo </l>
-                    <l xml:id="v-0290">que <app>
-                            <lem>aun</lem>
-                            <rdg type="error" wit="#Pr"/>
-                        </app> los peñascos <app>
-                            <lem>la</lem>
-                            <rdg type="error" wit="#S">lo</rdg>
-                            <rdg type="error" wit="#N">l <subst>
-                                    <del rend="overwritten">o</del>
-                                    <add place="inline">a</add>
-                                </subst>
-                            </rdg>
-                            <rdg type="error" wit="#vi">le</rdg>
+                                </subst> hiere otra, que dudo</rdg>
                         </app>
-                        <app>
-                            <lem>escucharan</lem>
-                            <rdg type="error" wit="#Pr">escucharon</rdg>
-                            <rdg cert="low" type="error" wit="#O">escuchar <subst>
+                    </l>
+                    <l xml:id="v-0290"><app>
+                            <lem>que aun los peñascos la escucharan quedos.</lem>
+                            <rdg type="error" wit="#Pr">que los peñascos la escucharon quedos.</rdg>
+                            <rdg type="error" wit="#S">que aun los peñascos lo escucharon quedos.</rdg>
+                            <rdg type="error" wit="#N">que aun los peñascos l<subst>
                                     <del rend="overwritten">o</del>
                                     <add place="inline">a</add>
-                                </subst>n </rdg>
-                        </app> quedos. </l>
+                                </subst> escucharon quedos.</rdg>
+                            <rdg type="error" wit="#vi">que aun los peñascos le escucharon quedos.</rdg>
+                            <rdg cert="low" type="error" wit="#O">que aun los peñascos la escuchar<subst>
+                                    <del rend="overwritten">o</del>
+                                    <add place="inline">a</add>
+                                </subst>n quedos.</rdg>
+                        </app></l>
                     <l xml:id="v-0291">
                         <app>
-                            <lem>Al son</lem>
-                            <rdg type="error" wit="#Rm">Algo</rdg>
-                        </app> pues de este <app>
-                            <lem>rudo</lem>
-                            <rdg type="error" wit="#pe">mudo</rdg>
-                            <rdg type="error" wit="#Rl">ruido</rdg>
-                        </app>
-                        <witDetail wit="#S">El testimonio S transmitía en este mismo verso el inicio del segundo; el copista, sin embargo, tachó <mentioned rend="italic">sonoros instrumento
-                            </mentioned> para corregir la lección. </witDetail>
+                            <lem>Al son pues de este rudo</lem>
+                            <rdg type="error" wit="#Rm">Algo pues de este rudo</rdg>
+                            <rdg type="error" wit="#pe">Al son pues de este mudo</rdg>
+                            <rdg type="error" wit="#Rl">Al son pues de este ruido</rdg>
+                        </app><witDetail wit="#S">El testimonio S transmitía en este mismo verso el inicio del segundo; el copista, sin embargo, tachó <mentioned rend="italic">sonoros
+                                instrumento</mentioned> para corregir la lección.</witDetail>
                     </l>
                     <l n="255" xml:id="v-0292">
                         <app>
