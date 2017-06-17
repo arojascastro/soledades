@@ -2617,22 +2617,20 @@
                             <lem>el</lem>
                             <rdg cert="low" type="error" wit="#D">
                                 <subst>
-                                    <del rend="strikethrough">
-                                        <gap reason="cancellation"/>
-                                    </del>
+                                    <del rend="strikethrough">[...]</del>
                                     <add place="above">eal</add>
                                 </subst>
                             </rdg>
-                        </app>movimiento </l>
+                        </app> movimiento</l>
                     <l xml:id="v-0294">mas los ojos honesta,</l>
                     <l xml:id="v-0295">altera <app>
                             <lem>otra bailando</lem>
                             <rdg type="error" wit="#Rl">bailando otra</rdg>
-                        </app> la floresta. </l>
+                        </app> la floresta.</l>
                     <l xml:id="v-0296">Tantas al fin <app>
                             <lem>el</lem>
                             <rdg type="error" wit="#Br #Rl">del</rdg>
-                        </app>arroyuelo, y tantas </l>
+                        </app> arroyuelo, y tantas</l>
                     <l n="260" xml:id="v-0297">montañesas da <app>
                             <lem>el</lem>
                             <rdg type="error" wit="#Br">al</rdg>
@@ -2640,8 +2638,8 @@
                                 <subst>
                                     <del rend="overwritten">a</del>
                                     <add place="inline">e</add>
-                                </subst>l </rdg>
-                        </app> prado, que dirías </l>
+                                </subst>l</rdg>
+                        </app> prado, que dirías</l>
                     <l xml:id="v-0298">ser menos las que verdes hamadrías</l>
                     <l xml:id="v-0299">abortaron las plantas:</l>
                     <l xml:id="v-0300">inundación hermosa</l>
@@ -2649,28 +2647,23 @@
                     <l n="265" xml:id="v-0302">de sus <app>
                             <lem>aldeas</lem>
                             <rdg type="error" wit="#Br">aldeyas</rdg>
-                        </app> todas </l>
+                        </app> todas</l>
                     <l xml:id="v-0303">a pastorales bodas.</l>
                     <l xml:id="v-0304">De una encina embebido</l>
                     <l xml:id="v-0305">
                         <app>
-                            <lem>en lo</lem>
-                            <rdg type="error" wit="#O">
-                                <add place="margin">en</add> el </rdg>
-                        </app>cóncavo, <app>
-                            <lem>el</lem>
-                            <rdg type="error" wit="#S">al</rdg>
-                        </app>jovenmantenía </l>
+                            <lem>en lo cóncavo, el joven mantenía</lem>
+                            <rdg type="error" wit="#O"><add place="margin">en</add> el cóncavo, el joven mantenía</rdg>
+                            <rdg type="error" wit="#S">en lo cóncavo, al joven mantenía</rdg>
+                        </app></l>
                     <l xml:id="v-0306">la vista de hermosura, y el oído</l>
-                    <l n="270" xml:id="v-0307">demétricaarmonía.</l>
-                    <l xml:id="v-0308">El Silenobuscaba </l>
+                    <l n="270" xml:id="v-0307">de métrica armonía.</l>
+                    <l xml:id="v-0308">El Sileno buscaba</l>
                     <l xml:id="v-0309">de aquellas que la sierra dio bacantes,</l>
                     <l xml:id="v-0310">
                         <app>
-                            <lem>ya que ninfas <app>
-                                    <lem>las</lem>
-                                    <rdg type="error" wit="#Ml">les</rdg>
-                                </app> niega ser errantes </lem>
+                            <lem>ya que ninfas las niega ser errantes</lem>
+                            <rdg type="error" wit="#Ml">ya que ninfas les niega ser errantes</rdg>
                             <rdg type="variant" wit="#Br #Rm #Rl #O">si ninfas ya no errantes</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -2692,7 +2685,7 @@
                             </rdg>
                         </app>
                     </l>
-                    <l n="275" xml:id="v-0312">o si,del <app>
+                    <l n="275" xml:id="v-0312">o si, del <app>
                             <lem>Termodonte</lem>
                             <rdg type="error" wit="#N">
                                 <subst>
@@ -2705,15 +2698,14 @@
                     <l xml:id="v-0313">émulo <app>
                             <lem>el arroyuelo</lem>
                             <rdg type="variant" wit="#Br #Rm #Pr #Rl #O">ya el arroyo</rdg>
-                        </app> desatado </l>
+                        </app> desatado</l>
                     <l xml:id="v-0314">de aquel fragoso monte,</l>
                     <l xml:id="v-0315">escuadrón de <app>
                             <lem>amazonas desarmado</lem>
                             <rdg type="error" wit="#S">amazonas desatado</rdg>
                             <rdg type="error" wit="#N">
                                 <subst>
-                                    <del rend="strikethrough">
-                                        <gap reason="cancellation"/> desatado </del>
+                                    <del rend="strikethrough">[...] desatado</del>
                                     <add place="above">amazonas desarmado</add>
                                 </subst>
                             </rdg>
@@ -2722,70 +2714,63 @@
                     </l>
                     <l xml:id="v-0316">tremola en sus riberas</l>
                     <l n="280" xml:id="v-0317">pacíficas banderas.</l>
+                    <!-- o usar @exclude -->
                     <l xml:id="v-0317-p">
                         <app>
                             <lem/>
                             <rdg type="variant" wit="#Rm #O">Seña brillante no de monarquía</rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <del rend="strikethrough">Seña brillante no de monarquía</del>
-                            </rdg>
+                            <rdg type="variant" wit="#Pr"><del rend="strikethrough">Seña brillante no de monarquía</del></rdg>
                         </app>
                     </l>
+                    <!-- o usar @exclude -->
                     <l xml:id="v-0318-p">
                         <app>
                             <lem/>
                             <rdg type="variant" wit="#Rm #O">el femenil enjambre onstentar deja</rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <del rend="strikethrough">el femenil enjambre ostentar deja</del>
-                            </rdg>
+                            <rdg type="variant" wit="#Pr"><del rend="strikethrough">el femenil enjambre ostentar deja</del></rdg>
                         </app>
                     </l>
+                    <!-- o usar @exclude -->
                     <l xml:id="v-0319-p">
                         <app>
                             <lem/>
                             <rdg type="variant" wit="#Rm #O">a la que en sus dos alas, rubia abeja,</rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <del rend="strikethrough">a la que en sus dos alas, rubia abeja,</del>
-                            </rdg>
+                            <rdg type="variant" wit="#Pr"><del rend="strikethrough">a la que en sus dos alas, rubia abeja,</del></rdg>
                         </app>
                     </l>
+                    <!-- o usar @exclude -->
                     <l xml:id="v-0340-p">
                         <app>
                             <lem/>
                             <rdg type="variant" wit="#Rm #O">más oro ofrece al día.</rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <del rend="strikethrough">más oro ofrece al día.</del>
-                            </rdg>
+                            <rdg type="variant" wit="#Pr"><del rend="strikethrough">más oro ofrece al día.</del></rdg>
                         </app>
                     </l>
                 </lg>
                 <lg xml:id="g-12">
                     <l rend="indent" xml:id="v-0318">
                         <app>
-                            <lem>Vulgo</lem>
-                            <rdg type="error" wit="#vi">Vulga</rdg>
-                        </app>lascivo <app>
-                            <lem>erraba</lem>
-                            <rdg type="error" wit="#Rl">errante</rdg>
-                        </app>
-                    </l>
+                            <lem>Vulgo lascivo erraba</lem>
+                            <rdg type="error" wit="#vi">Vulga lascivo erraba</rdg>
+                            <rdg type="error" wit="#Rl">Vulgo lascivo errante</rdg>
+                        </app></l>
                     <l xml:id="v-0319">al voto del mancebo</l>
                     <l xml:id="v-0320">(el <app>
                             <lem>yugo</lem>
                             <rdg type="error" wit="#A">uygo</rdg>
-                        </app> de ambos sexos sacudido), </l>
+                        </app> de ambos sexos sacudido),</l>
                     <l xml:id="v-0321">al tiempo que, <app>
                             <lem>de flores impedido</lem>
                             <rdg type="error" wit="#Br">da flores impidido</rdg>
                         </app>
                     </l>
                     <l n="285" xml:id="v-0322">el que ya serenaba</l>
-                    <l xml:id="v-0323">laregión de su frente rayonuevo,</l>
+                    <l xml:id="v-0323">la región de su frente rayo nuevo,</l>
                     <l xml:id="v-0324">purpúrea terneruela, conducida</l>
                     <l xml:id="v-0325">de <app>
                             <lem>su madre</lem>
                             <rdg type="error" wit="#Br">sus madres</rdg>
-                        </app> no menos enramada, </l>
+                        </app> no menos enramada,</l>
                     <l xml:id="v-0326">entre <app>
                             <lem>albogues</lem>
                             <rdg type="error" wit="#N">
@@ -2795,14 +2780,12 @@
                                 </subst>
                             </rdg>
                             <rdg type="error" wit="#S">alboxes</rdg>
-                        </app> se ofrece, acompañada </l>
-                    <l n="290" xml:id="v-0327">dejuventud florida.</l>
+                        </app> se ofrece, acompañada</l>
+                    <l n="290" xml:id="v-0327">de juventud florida.</l>
                     <l xml:id="v-0328">
                         <app>
-                            <lem>Cuálde ellos las pendientes <app>
-                                    <lem>sumas</lem>
-                                    <rdg type="error" wit="#D">simas</rdg>
-                                </app>graves </lem>
+                            <lem>Cuál de ellos las pendientes sumas graves,</lem>
+                            <rdg type="error" wit="#D">Cuál de ellos las pendientes simas graves,</rdg>
                             <rdg type="variant" wit="#Br #O #Rl">treinta robustos montaraces, dueños</rdg>
                             <rdg type="variant" wit="#Rm">treinta robustos montañeses, dueños</rdg>
                             <rdg type="variant" wit="#Pr">
@@ -2815,19 +2798,16 @@
                     </l>
                     <l xml:id="v-0329">
                         <app>
-                            <lem>de negras, de <app>
-                                    <lem>crestadas</lem>
-                                    <rdg type="error" wit="#A #E #J #Ml #N #Q #vi">cristadas</rdg>
-                                    <rdg type="error" wit="#I">cr <subst>
-                                            <del rend="unmarked">i</del>
-                                            <add place="above">e</add>
-                                        </subst>stadas </rdg>
-                                    <rdg type="error" wit="#S">cr <subst>
-                                            <del rend="strikethrough">istales</del>
-                                            <add place="above">estadas</add>
-                                        </subst>
-                                    </rdg>
-                                </app>aves, </lem>
+                            <lem>de negras, de crestadas aves,</lem>
+                            <rdg type="error" wit="#A #E #J #Ml #N #Q #vi">de negras, de cristadas aves,</rdg>
+                            <rdg type="error" wit="#I">de negras, de cr<subst>
+                                    <del rend="unmarked">i</del>
+                                    <add place="above">e</add>
+                                </subst>stadas aves,</rdg>
+                            <rdg type="error" wit="#S">de negras, de cr<subst>
+                                    <del rend="strikethrough">istales</del>
+                                    <add place="above">estadas</add>
+                                </subst> aves,</rdg>
                             <rdg type="variant" wit="#Br #Rm #Rl #O">de las que aun los pitones dos pequeños</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
