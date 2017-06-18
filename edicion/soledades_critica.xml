@@ -2898,34 +2898,32 @@
                             <rdg type="error" wit="#S">su bella armada, deponiente amante</rdg>
                         </app></l>
                     <l n="355" xml:id="v-0392">en las vestidas rosas su cuidado.</l>
-                    <l xml:id="v-0393">saludólosa <app>
+                    <l xml:id="v-0393">saludólos a <app>
                             <lem>todos</lem>
                             <rdg type="error" wit="#sa">todo</rdg>
-                        </app>cortésmente, </l>
+                        </app> cortésmente,</l>
                     <l xml:id="v-0394">y, admirado no menos</l>
                     <l xml:id="v-0395">de <app>
                             <lem>los serranos</lem>
                             <rdg type="error" wit="#Rl">las serranas</rdg>
                         </app> que <app>
-                            <lem>correspondido</lem>
-                            <rdg type="error" wit="#A">correspondi <del rend="strikethrough">en</del>do </rdg>
-                        </app>, </l>
+                            <lem>correspondido,</lem>
+                            <rdg type="error" wit="#A">correspondi<del rend="strikethrough">en</del>do,</rdg>
+                        </app></l>
                     <l xml:id="v-0396">
                         <app>
                             <lem>las sombras</lem>
                             <rdg type="variant" wit="#Br #Pr #Rm">la sombra</rdg>
-                        </app> solicita de unas peñas. </l>
+                        </app> solicita de unas peñas.</l>
                     <l n="360" xml:id="v-0397">De lágrimas los tiernos ojos <app>
-                            <lem>llenos</lem>
+                            <lem>llenos,</lem>
                             <rdg type="error" wit="#O">
                                 <subst>
-                                    <del rend="strikethrough">
-                                        <gap reason="cancellation"/>
-                                    </del>
-                                    <add place="inline">llenos</add>
+                                    <del rend="strikethrough">[...]</del>
+                                    <add place="inline">llenos,</add>
                                 </subst>
                             </rdg>
-                        </app>, </l>
+                        </app></l>
                     <l xml:id="v-0398">reconociendo el mar en el vestido</l>
                     <l xml:id="v-0399">(que beberse no <app>
                             <lem>pudo</lem>
