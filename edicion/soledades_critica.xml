@@ -1432,42 +1432,31 @@
                                 </subst>
                             </rdg>
                         </app> fue de cabras, </l>
-                    <l xml:id="v-0130">quea Vulcanotenían coronado. </l>
+                    <l xml:id="v-0130">que a Vulcano tenían coronado.</l>
                 </lg>
                 <lg xml:id="g-06">
-                    <l rend="indent" xml:id="v-0131">«¡Ohbienaventurado</l>
-                    <l n="95" xml:id="v-0132">albergue,acualquier hora,</l>
-                    <l xml:id="v-0133">templo de <app>
-                            <lem> Pales </lem>
-                            <rdg type="error" wit="#Br #Ml #Rl">Palas</rdg>
-                            <rdg cert="low" type="error" wit="#Pr">Palas</rdg>
-                            <rdg type="error" wit="#O">Pal <subst>
+                    <l rend="indent" xml:id="v-0131">«¡Oh bienaventurado</l>
+                    <l n="95" xml:id="v-0132">albergue, a cualquier hora,</l>
+                    <l xml:id="v-0133"><app>
+                            <lem>templo de Pales, alquería de Flora!</lem>
+                            <rdg type="error" wit="#Br #Ml #Rl #Pr">templo de Palas, alquería de Flora!</rdg>
+                            <rdg type="error" wit="#A #S">templo de Pales, alquería de Flora<del rend="strikethrough">ra</del>!</rdg>
+                            <rdg type="error" wit="#N">templo de Pales, alquería de <add place="above">F</add>lora</rdg>
+                            <rdg type="error" wit="#O">templo de Pal<subst>
                                     <del rend="overwritten">a</del>
                                     <add place="inline">e</add>
-                                </subst>s </rdg>
-                        </app>, alquería de <app>
-                            <lem> Flora </lem>
-                            <rdg type="error" wit="#A #S">Flora <del rend="strikethrough">ra</del>
-                            </rdg>
-                            <rdg type="error" wit="#N">
-                                <add place="above">F</add>lora </rdg>
-                        </app>! </l>
+                                </subst>s, alquería de Flora!</rdg>
+                        </app></l>
                     <l xml:id="v-0134">No moderno artificio</l>
                     <l xml:id="v-0135">borró <app>
-                            <lem>designios</lem>
-                            <rdg type="error" wit="#sa #ho54">diseños</rdg>
-                        </app>, bosquejó modelos, </l>
+                            <lem>designios,</lem>
+                            <rdg type="error" wit="#sa #ho54">diseños,</rdg>
+                        </app> bosquejó modelos,</l>
                     <l xml:id="v-0136">
                         <app>
-                            <lem>al <app>
-                                    <lem>cóncavo</lem>
-                                    <rdg type="error" wit="#ho54">convacavo</rdg>
-                                </app>
-                                <app>
-                                    <lem>ajustando</lem>
-                                    <rdg type="error" wit="#Br #Rl">ajustado</rdg>
-                                    <rdg type="error" wit="#Ml">adjuntando</rdg>
-                                </app> de los cielos </lem>
+                            <lem>al cóncavo ajustando de los cielos</lem>
+                            <rdg wit="#ho54" type="error">al cónvacavo ajustando de los cielos</rdg>
+                            <rdg wit="#Br #Rl" type="error">al cóncavo ajustado de los cielos</rdg>
                             <rdg type="variant" wit="#Rm #O">al pespuntar los cielos</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -1479,89 +1468,68 @@
                     </l>
                     <l n="100" xml:id="v-0137">
                         <app>
-                            <lem>el sublime</lem>
-                            <rdg type="variant" wit="#Rm #O">las agujas que ilustran</rdg>
+                            <lem>el sublime edificio:</lem>
+                            <rdg type="variant" wit="#Rm #O">las agujas que ilustran tu edificio:</rdg>
+                            <rdg type="variant" wit="#O">las agujas que ilustran su edificio:</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
-                                    <del rend="strikethrough">las agujas que ilustran</del>
+                                    <del rend="strikethrough">las agujas que ilustran tu</del>
                                     <add place="above">el sublime</add>
-                                </subst>
-                            </rdg>
-                        </app>
-                        <app>
-                            <lem>tu</lem>
-                            <rdg type="error" wit="#O">su</rdg>
-                        </app> edificio: </l>
+                                </subst> edificio:</rdg>
+                        </app></l>
                     <l xml:id="v-0138">
                         <app>
                             <lem>retamas</lem>
                             <rdg type="error" wit="#Rl">retama</rdg>
-                        </app> sobre robre </l>
-                    <l xml:id="v-0139">
-                        <app>
-                            <lem>tufábrica <app>
-                                    <lem>son</lem>
-                                    <rdg type="error" wit="#Rl">si</rdg>
-                                </app> pobre, </lem>
-                            <rdg type="error" wit="#Ml"/>
-                        </app>
-                    </l>
+                        </app> sobre robre</l>
+                    <l xml:id="v-0139" exclude="#Ml">tu fábrica <app>
+                            <lem>son</lem>
+                            <rdg type="error" wit="#Rl">si</rdg>
+                        </app> pobre,</l>
                     <l xml:id="v-0140">do guarda en vez de acero</l>
-                    <l xml:id="v-0141">la <app>
-                            <lem>inocencia</lem>
-                            <rdg type="error" wit="#D #ho54 #Rl">ignorancia</rdg>
-                        </app>
-                        <app>
-                            <lem>al</lem>
-                            <rdg type="error" wit="#D #Rm #S #Rl">el</rdg>
-                        </app> cabrero, </l>
+                    <l xml:id="v-0141"><app>
+                            <lem>la inocencia al cabrero,</lem>
+                            <rdg type="error" wit="#ho54">la ignorancia al cabrero,</rdg>
+                            <rdg type="error" wit="#Rm #S">la inocencia el cabrero,</rdg>
+                            <rdg type="error" wit="#D #Rl">la ignorancia el cabrero,</rdg>
+                        </app></l>
                     <l n="105" xml:id="v-0142">
                         <app>
-                            <lem>más que</lem>
-                            <rdg type="variant" wit="#Rm #Rl #O">si</rdg>
+                            <lem>más que el silbo al ganado.</lem>
+                            <rdg type="variant" wit="#Rm #Rl #O">si el silbo no al ganado.</rdg>
                             <rdg type="variant" wit="#Br #Pr">
                                 <subst>
                                     <del rend="strikethrough">si</del>
                                     <add place="margin">más que</add>
-                                </subst>
-                            </rdg>
-                        </app> el silbo <app>
-                            <lem/>
-                            <rdg type="variant" wit="#Rm #Rl #O">no</rdg>
-                            <rdg type="variant" wit="#Pr #Br">
-                                <del rend="strikethrough">no</del>
-                            </rdg>
-                        </app> al ganado. </l>
-                    <l xml:id="v-0143">¡Ohbienaventurado</l>
-                    <l xml:id="v-0144">albergue,acualquier hora!</l>
-                    <l xml:id="v-0145">No en ti la Ambición mora, </l>
+                                </subst> el silbo <del rend="strikethrough">no</del> al ganado.</rdg>
+                        </app></l>
+                    <l xml:id="v-0143">¡Oh bienaventurado</l>
+                    <l xml:id="v-0144">albergue, a cualquier hora!</l>
+                    <l xml:id="v-0145">No en ti la Ambición mora,</l>
                     <l xml:id="v-0146">hidrópica <app>
-                            <lem>de</lem>
-                            <rdg type="error" wit="#sa">del</rdg>
-                        </app> viento, </l>
-                    <l n="110" xml:id="v-0147">ni la que <app>
-                            <lem/>
-                            <rdg cert="low" type="error" wit="#Rm">es</rdg>
+                            <lem>de viento,</lem>
+                            <rdg type="error" wit="#sa">del viento,</rdg>
                         </app>
-                        <app>
-                            <lem>su</lem>
-                            <rdg type="error" wit="#D">tu</rdg>
-                        </app> alimento </l>
-                    <l xml:id="v-0148">eláspid <app>
-                            <lem>es</lem>
-                            <rdg cert="low" type="variant" wit="#Rm"/>
-                        </app> gitano; <witDetail wit="#Rm">El testimonio Rm transmite la forma antigua de <mentioned rend="italic">áspid</mentioned>, es decir, <mentioned rend="italic">el áspide
-                                gitano </mentioned>. </witDetail>
+                    </l>
+                    <l n="110" xml:id="v-0147"><app>
+                            <lem>ni la que su alimento</lem>
+                            <rdg cert="low" type="error" wit="#Rm">ni la que es su alimento</rdg>
+                            <rdg type="error" wit="#D">ni la que tu alimento</rdg>
+                        </app></l>
+                    <l xml:id="v-0148"><app>
+                            <lem>el áspid es gitano;</lem>
+                            <rdg cert="low" type="variant" wit="#Rm">el áspide gitano;</rdg>
+                        </app>
                     </l>
                     <l xml:id="v-0149">no la que, <app>
                             <lem>en vulto</lem>
                             <rdg type="error" wit="#ho54">envuelto</rdg>
-                            <rdg cert="low" type="error" wit="#O">en <subst>
+                            <rdg cert="low" type="error" wit="#O">en<subst>
                                     <del rend="strikethrough">traje</del>
                                     <add place="above">vulto</add>
                                 </subst>
                             </rdg>
-                        </app>comenzando humano, </l>
+                        </app> comenzando humano,</l>
                     <l xml:id="v-0150">acaba <app>
                             <lem>en mortal fiera,</lem>
                             <rdg type="variant" wit="#Rm #Rl #O">siempre en fiera,</rdg>
@@ -1573,96 +1541,77 @@
                             </rdg>
                             <rdg type="variant" wit="#Br">
                                 <subst>
-                                    <del rend="strikethrough">
-                                        <supplied reason="illegible">siempre en</supplied>
-                                    </del>
+                                    <del rend="strikethrough">[siempre en]</del>
                                     <add place="above">en mortal</add>
-                                </subst> fiera, </rdg>
+                                </subst> fiera,</rdg>
                         </app>
                     </l>
                     <l xml:id="v-0151">
                         <app>
                             <lem>esfinge</lem>
-                            <rdg type="error" wit="#A">esfig <del rend="strikethrough">i</del>e </rdg>
-                        </app> bachillera <witDetail wit="#A">El copista de A corrigió la lección <mentioned rend="italic">esfigie</mentioned> tachando la <mentioned rend="italic">i</mentioned> pero
-                            no añadió la <mentioned rend="italic">n</mentioned> que hacía falta para dar la lección auténtica. </witDetail>
-                    </l>
-                    <l n="115" xml:id="v-0152">que <app>
-                            <lem/>
-                            <rdg type="variant" wit="#Rm #O #Rl">ya</rdg>
-                            <rdg type="variant" wit="#Br #Pr">
-                                <del rend="strikethrough">ya</del>
-                            </rdg>
-                        </app>hace <app>
-                            <lem>hoy</lem>
-                            <rdg type="variant" wit="#Rm #Rl #O"/>
-                            <rdg type="variant" wit="#Br">
-                                <add place="inline">hoy</add>
-                            </rdg>
-                            <rdg type="variant" wit="#Pr">
-                                <add place="above">hoy</add>
-                            </rdg>
-                        </app>a Narciso </l>
+                            <rdg type="error" wit="#A">esfig<del rend="strikethrough">i</del>e</rdg>
+                        </app> bachillera</l>
+                    <l n="115" xml:id="v-0152"><app>
+                            <lem>que hace hoy a Narciso</lem>
+                            <rdg type="variant" wit="#Rm #O #Rl">que ya hace a Narciso</rdg>
+                            <rdg type="variant" wit="#Br #Pr">que <del rend="strikethrough">ya</del> hace <add place="above">hoy</add> a Narciso</rdg>
+                        </app></l>
                     <l xml:id="v-0153">ecos solicitar, <app>
                             <lem>desdeñar</lem>
                             <rdg type="error" wit="#Br">desdañar</rdg>
-                        </app> fuentes; </l>
+                        </app> fuentes;</l>
                     <l xml:id="v-0154">ni la que en <app>
                             <lem>salvas</lem>
-                            <rdg type="error" wit="#N #O">s <subst>
+                            <rdg type="error" wit="#N #O">s<subst>
                                     <del rend="overwritten">e</del>
                                     <add place="inline">a</add>
-                                </subst>lvas </rdg>
+                                </subst>lvas</rdg>
                             <rdg type="error" wit="#S">selvas</rdg>
-                        </app> gasta impertinentes </l>
-                    <l xml:id="v-0155">la <app>
-                            <lem>pólvora</lem>
-                            <rdg type="error" wit="#C">polvoia</rdg>
-                        </app>del tiempo más <app>
-                            <lem>preciso</lem>
-                            <rdg type="error" wit="#A">preci <del rend="strikethrough">o</del>so </rdg>
-                            <rdg type="error" wit="#D #Rl">precioso</rdg>
-                            <rdg type="error" wit="#O">
-                                <subst>
-                                    <del rend="unmarked">preci <del rend="strikethrough">o</del>so </del>
-                                    <add place="margin">preciso</add>
+                        </app> gasta impertinentes</l>
+                    <l xml:id="v-0155"><app>
+                            <lem>la pólvora del tiempo más preciso:</lem>
+                            <rdg type="error" wit="#C">la polvoia del tiempo más preciso:</rdg>
+                            <rdg type="error" wit="#A">la pólvora del tiempo más preci<del rend="strikethrough">o</del>so:</rdg>
+                            <rdg type="error" wit="#D #Rl">la pólvora del tiempo más precioso:</rdg>
+                            <rdg type="error" wit="#O">la pólvora del tiempo más <subst>
+                                    <del rend="unmarked">preci<del rend="strikethrough">o</del>so:</del>
+                                    <add place="margin">preciso:</add>
                                 </subst>
                             </rdg>
-                        </app>: </l>
+                        </app></l>
                     <l xml:id="v-0156">ceremonia profana</l>
                     <l n="120" xml:id="v-0157">que la <app>
-                            <lem> Sinceridad </lem>
+                            <lem>Sinceridad</lem>
                             <rdg type="error" wit="#Ml">conceridad</rdg>
-                        </app> burla villana </l>
+                        </app> burla villana</l>
                     <l xml:id="v-0158">sobre el corvo cayado.</l>
                     <l xml:id="v-0159">¡Oh bienaventurado</l>
                     <l xml:id="v-0160">albergue, a cualquier hora!</l>
                     <l xml:id="v-0161">Tus <app>
                             <lem>umbrales</lem>
                             <rdg type="error" wit="#ho54">umbraies</rdg>
-                        </app> ignora </l>
+                        </app> ignora</l>
                     <l n="125" xml:id="v-0162">la Adulación, sirena </l>
                     <l xml:id="v-0163">de reales palacios, <app>
                             <lem>cuya</lem>
                             <rdg type="error" wit="#Rl">cuyo</rdg>
-                        </app> arena </l>
+                        </app> arena</l>
                     <l xml:id="v-0164">besó ya <app>
                             <lem>tanto</lem>
-                            <rdg type="error" wit="#Br">tan <add place="above">to</add>
-                            </rdg>
-                        </app> leño, </l>
+                            <rdg type="error" wit="#Br">tan<add place="above">to</add></rdg>
+                        </app> leño,</l>
                     <l xml:id="v-0165">trofeos dulces de un canoro sueño.</l>
-                    <l xml:id="v-0166">No a la Soberbiaestáaquí la Mentira </l>
+                    <l xml:id="v-0166">No a la Soberbia está aquí la Mentira</l>
                     <l n="130" xml:id="v-0167">
                         <app>
                             <lem>dorándole</lem>
                             <rdg type="error" wit="#O">dorándola</rdg>
-                        </app> los pies, en cuantogira </l>
-                    <l xml:id="v-0168">laesfera de sus plumas,</l>
+                        </app> los pies, en cuanto gira</l>
+                    <l xml:id="v-0168">la esfera de sus plumas,</l>
                     <l xml:id="v-0169">ni de los rayos baja a las espumas</l>
                     <l xml:id="v-0170">favor de cera alado.</l>
-                    <l xml:id="v-0171">«¡Ohbienaventurado</l>
-                    <l n="135" xml:id="v-0172">albergue,acualquier hora!»</l>
+                    <l xml:id="v-0171">«¡Oh bienaventurado</l>
+                    <l n="135" xml:id="v-0172">albergue, a cualquier hora!»</l>
                 </lg>
                 <lg xml:id="g-07">
                     <l rend="indent" xml:id="v-0173">No pues de aquella sierra, engendradora</l>
