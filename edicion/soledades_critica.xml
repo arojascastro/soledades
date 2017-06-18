@@ -2893,13 +2893,10 @@
                             <rdg type="error" wit="#Br #O">inclinarse</rdg>
                         </app> el menos fatigado </l>
                     <l xml:id="v-0390">sobre la grana que se viste fina,</l>
-                    <l xml:id="v-0391">su bella <app>
-                            <lem>amada</lem>
-                            <rdg type="error" wit="#S">armada</rdg>
-                        </app>, <app>
-                            <lem>deponiendo</lem>
-                            <rdg type="error" wit="#S">deponiente</rdg>
-                        </app> amante </l>
+                    <l xml:id="v-0391"><app>
+                            <lem>su bella amada, deponiendo amante</lem>
+                            <rdg type="error" wit="#S">su bella armada, deponiente amante</rdg>
+                        </app></l>
                     <l n="355" xml:id="v-0392">en las vestidas rosas su cuidado.</l>
                     <l xml:id="v-0393">saludólosa <app>
                             <lem>todos</lem>
