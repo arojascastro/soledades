@@ -1,0 +1,84 @@
+/* ************************* */
+/* EVT 2.0 CUSTOM STYLESHEET */
+/* ***************************************************************** */
+/*                                                                   */
+/* Add here your CSS to customize the style of the elements          */
+/* If you'll not see any changes, try adding !important to the rule  */
+/*                                                                   */
+/* For generic TEI elements, use the tagName as class                */
+/* e.g. <del/> => .del{ # your style goes here # }                   */  
+/*                                                                   */
+/* ***************************************************************** */
+
+
+.label{
+  font-style:italic;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.title{
+  font-style:italic;
+}
+
+/*  this is not working
+ 
+.lg:first-child{
+    text-indent: 50px;
+}
+
+
+.lg{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+ */
+
+.head{
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+.country, .settlement, .repository, .collection, .idno, .msName, .locus, .title, .author, .editor, .placeName, .resp, .date{
+  display:block;
+}
+
+/*                  <!--<msDesc type="manuscript">
+                            <msIdentifier>
+                                <country>España</country>
+                                <settlement>Madrid</settlement>
+                                <repository>Biblioteca Nacional de España</repository>
+                                <collection>Fondo antiguo</collection>
+                                <idno type="cataloguenumber">Mss/4075</idno>
+                                <msName>Manuscrito Alba</msName>
+                            </msIdentifier>
+                            <head>Varias poesías de Luis de Góngora</head>
+                            <msContents>
+                                <msItem>
+                                    <locus from="235r" to="275v">235r-275v</locus>
+                                    <title level="m">Soledades</title>
+                                </msItem>
+                            </msContents>
+                        </msDesc>
+                         --> */
+
+/* <monogr>
+                                <author> Luis de Góngora </author>
+                                <editor> Gonzalo de Hoces </editor>
+                                <title type="short" level="m">Todas las obras de don Luis de Góngora en varios poemas</title>
+                                <imprint>
+                                    <pubPlace>
+                                        <placeName>Madrid</placeName>
+                                    </pubPlace>
+                                    <respStmt>
+                                        <resp>Impreso por</resp>
+                                        <orgName role="impresor">Imprenta Real</orgName>
+                                    </respStmt>
+                                    <respStmt>
+                                        <resp>A costa de</resp>
+                                        <orgName role="librero">Hermandad de los Mercaderes de libros de Madrid</orgName>
+                                    </respStmt>
+                                    <date when="1654">1654</date>
+                                </imprint>
+                            </monogr> */
