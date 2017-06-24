@@ -2914,16 +2914,14 @@
                             <rdg type="variant" wit="#Br #Pr #Rm">la sombra</rdg>
                         </app> solicita de unas peñas. </l>
                     <l n="360" xml:id="v-0397">De lágrimas los tiernos ojos <app>
-                            <lem>llenos</lem>
+                            <lem>llenos,</lem>
                             <rdg type="error" wit="#O">
                                 <subst>
-                                    <del rend="strikethrough">
-                                        <gap reason="cancellation"/>
-                                    </del>
-                                    <add place="inline">llenos</add>
+                                    <del rend="strikethrough">[...]</del>
+                                    <add place="inline">llenos,</add>
                                 </subst>
                             </rdg>
-                        </app>, </l>
+                        </app></l>
                     <l xml:id="v-0398">reconociendo el mar en el vestido</l>
                     <l xml:id="v-0399">(que beberse no <app>
                             <lem>pudo</lem>
@@ -3990,9 +3988,9 @@
                                 </subst>
                             </rdg>
                             <rdg type="error" wit="#S">prim<subst>
-                                    <del rend="strikethrough">era</del>
-                                    <add place="above">avera</add>
-                                </subst>,</rdg>
+                                    <del rend="strikethrough">era,</del>
+                                    <add place="above">avera,</add>
+                                </subst></rdg>
                         </app></l>
                     <l xml:id="v-0614">calzada abriles y vestida mayos,</l>
                     <l xml:id="v-0615">centellas saca de cristal undoso</l>
@@ -4389,9 +4387,9 @@
                             <rdg type="error" wit="#Rm">fanal es del arroyo a cada onda,</rdg>
                         </app></l>
                     <l xml:id="v-0713">luz el <app>
-                            <lem>reflejo</lem>
-                            <rdg type="error" wit="#Rl #O">fresno</rdg>
-                        </app>, la agua vidrïera.</l>
+                            <lem>reflejo,</lem>
+                            <rdg type="error" wit="#Rl #O">fresno,</rdg>
+                        </app> la agua vidrïera.</l>
                     <l xml:id="v-0714">
                         <app>
                             <lem>Términos le da el sueño al regocijo,</lem>
@@ -4598,9 +4596,9 @@
                         </app>
                     </l>
                     <l xml:id="v-0749">pisar <app>
-                            <lem>quería</lem>
-                            <rdg type="error" wit="#Rm">querría</rdg>
-                        </app>, cuando el populoso</l>
+                            <lem>quería,</lem>
+                            <rdg type="error" wit="#Rm">querría,</rdg>
+                        </app> cuando el populoso</l>
                     <l xml:id="v-0750">
                         <app>
                             <lem>lugarillo</lem>
@@ -4837,9 +4835,9 @@
                             <rdg type="error" wit="#O">Niño amó la que adora adoleciente,</rdg>
                         </app></l>
                     <l xml:id="v-0811">villana <app>
-                            <lem>Psique</lem>
-                            <rdg type="error" wit="#S">que persigues</rdg>
-                        </app>, ninfa labradora </l>
+                            <lem>Psique,</lem>
+                            <rdg type="error" wit="#S">que persigues,</rdg>
+                        </app> ninfa labradora </l>
                     <l n="775" xml:id="v-0812">de la tostada Ceres. <app>
                             <lem>Esta ahora,</lem>
                             <rdg type="error" wit="#pe">Está ahora,</rdg>
@@ -4934,9 +4932,9 @@
                     <l xml:id="v-0831">al aire los hijuelos den alados</l>
                     <l n="795" xml:id="v-0832">de las que el bosque bellas ninfas cela;</l>
                     <l xml:id="v-0833">de sus <app>
-                            <lem>carcajes</lem>
-                            <rdg type="error" wit="#ho54">cargajes</rdg>
-                        </app>, estos, argentados, </l>
+                            <lem>carcajes,</lem>
+                            <rdg type="error" wit="#ho54">cargajes,</rdg>
+                        </app> estos, argentados, </l>
                     <l xml:id="v-0834">
                         <app>
                             <lem>flechen mosquetas,</lem>
@@ -5580,15 +5578,15 @@
                             <rdg type="error" wit="#S">dejo</rdg>
                         </app> que vuestras cabras, siempre errantes,</l>
                     <l xml:id="v-0949" exclude="#Rm">que vuestras <app>
-                            <lem>vacas</lem>
+                            <lem>vacas,</lem>
                             <rdg type="error" wit="#N">
                                 <subst>
-                                    <del rend="strikethrough">cabras</del>
-                                    <add place="above">vacas</add>
+                                    <del rend="strikethrough">cabras,</del>
+                                    <add place="above">vacas,</add>
                                 </subst>
                             </rdg>
                             <rdg type="error" wit="#S">cabras</rdg>
-                        </app>, tarde o nunca herradas.</l>
+                        </app> tarde o nunca herradas.</l>
                     <l xml:id="v-0950" exclude="#Rm">
                         <app>
                             <lem>Corderillos os brote la ribera,</lem>
@@ -5782,10 +5780,10 @@
                         </app> el aire acompañada</l>
                     <l xml:id="v-0988" exclude="#Rm">monarquía canora,</l>
                     <l xml:id="v-0989" exclude="#Rm">y, <app>
-                            <lem>vadeando nubes</lem>
-                            <rdg type="error" wit="#Ml">vabeando nubes</rdg>
-                            <rdg type="error" wit="#ho54">vadeando nunes</rdg>
-                        </app>, las espumas</l>
+                            <lem>vadeando nubes,</lem>
+                            <rdg type="error" wit="#Ml">vabeando nubes,</rdg>
+                            <rdg type="error" wit="#ho54">vadeando nunes,</rdg>
+                        </app> las espumas</l>
                     <l xml:id="v-0990" exclude="#Rm">del rey <app>
                             <lem>corona de los otros ríos,</lem>
                             <rdg type="error" wit="#Br">canora de los astros ríos,</rdg>
@@ -5932,11 +5930,11 @@
                                 </subst>zada</rdg>
                         </app> un duro hielo,</l>
                     <l xml:id="v-1039" exclude="#Rm #Rl">torpe se <app>
-                            <lem>arraiga</lem>
-                            <rdg type="error" wit="#A">arraigó</rdg>
-                            <rdg cert="low" type="error" wit="#Pr">arroja</rdg>
-                            <rdg type="error" wit="#O">arroja</rdg>
-                        </app>, bien que impulso noble</l>
+                            <lem>arraiga,</lem>
+                            <rdg type="error" wit="#A">arraigó,</rdg>
+                            <rdg cert="low" type="error" wit="#Pr">arroja,</rdg>
+                            <rdg type="error" wit="#O">arroja,</rdg>
+                        </app> bien que impulso noble</l>
                     <l xml:id="v-1040" exclude="#Rm #Rl">de gloria, aunque villano, solicita</l>
                     <l xml:id="v-1041" exclude="#Rm #Rl"><app>
                             <lem>aun vaquero</lem>
@@ -6052,9 +6050,9 @@
                     <l xml:id="v-1075" exclude="#Rm #Rl">salen cual de torcidos</l>
                     <l xml:id="v-1076" exclude="#Rm #Rl">arcos, o nervïosos o acerados,</l>
                     <l n="1040" xml:id="v-1077" exclude="#Rm #Rl">con silbo <app>
-                            <lem>igual</lem>
-                            <rdg type="error" wit="#O">ágil</rdg>
-                        </app>, dos veces diez saetas.</l>
+                            <lem>igual,</lem>
+                            <rdg type="error" wit="#O">ágil,</rdg>
+                        </app> dos veces diez saetas.</l>
                     <l xml:id="v-1078" exclude="#Rm #Rl">No el polvo desparece</l>
                     <l xml:id="v-1079" exclude="#Rm #Rl">el campo, que no pisan <app>
                             <lem>alas hierba;</lem>
@@ -6134,7 +6132,7 @@
                         </app> anticipa de la estrella,</l>
                     <l xml:id="v-1108" exclude="#Rm #Rl"><app>
                             <lem>cerúlea ahora, ya purpúrea guía</lem>
-                            <rdg type="error" wit="#Br">cerúlea <add place="above">ahora,</add>, ya purpúrea guía</rdg>
+                            <rdg type="error" wit="#Br">cerúlea <add place="above">ahora,</add> ya purpúrea guía</rdg>
                             <rdg type="error" wit="#D">cerúlea ahora, ya purpérea guía</rdg>
                         </app></l>
                     <l xml:id="v-1109" exclude="#Rm #Rl">de los dudosos términos del día.</l>
@@ -6374,9 +6372,9 @@
                             <rdg type="error" wit="#Ml">ondas escorchando,</rdg>
                             <rdg type="error" wit="#J">olas escarchando,</rdg>
                             <rdg cert="low" type="error" wit="#N">ondas escar<subst>
-                                    <del rend="strikethrough">vando</del>
-                                    <add place="above">chando</add>
-                                </subst>,</rdg>
+                                    <del rend="strikethrough">vando,</del>
+                                    <add place="above">chando,</add>
+                                </subst></rdg>
                             <rdg cert="low" type="error" wit="#S">ondas escar<subst>
                                     <del rend="strikethrough">nian</del>
                                     <add place="above">ch</add>
@@ -6794,9 +6792,9 @@
                     </l>
                     <l xml:id="v-1314" exclude="#Rm #Rl">solicitó curiosa y guardó avara</l>
                     <l xml:id="v-1315" exclude="#Rm #Rl">la más <app>
-                            <lem>dulce</lem>
-                            <rdg cert="low" type="error" wit="#Pr">breve</rdg>
-                        </app>, si no la menos clara</l>
+                            <lem>dulce,</lem>
+                            <rdg cert="low" type="error" wit="#Pr">breve,</rdg>
+                        </app> si no la menos clara</l>
                     <l xml:id="v-1316" exclude="#Rm #Rl">sílaba, siendo en tanto</l>
                     <l xml:id="v-1317" exclude="#Rm #Rl">la vista de las chozas fin del canto.</l>
                 </lg>
@@ -7336,8 +7334,8 @@
                             <rdg wit="#Ml" type="error">Sentados pues sin ceremonia, ellas</rdg>
                             <rdg wit="#Pr">Sentados pues <subst>
                                     <del rend="strikethrough">los cuatros en corchos</del>
-                                    <add place="above">sin ceremonias</add>
-                                </subst>, ellas</rdg>
+                                    <add place="above">sin ceremonias,</add>
+                                </subst> ellas</rdg>
                         </app>
                     </l>
                     <l xml:id="v-1475" exclude="#Rm #O #Rl"><app>
@@ -8105,9 +8103,9 @@
                             <rdg type="error" wit="#sa">tantos Palemo a su Licori bella</rdg>
                         </app></l>
                     <l xml:id="v-1716" exclude="#Rm #Pr #O #Rl"><app>
-                            <lem>suspende</lem>
-                            <rdg type="error" wit="#S">suspenda</rdg>
-                        </app>, y tantos ella</l>
+                            <lem>suspende,</lem>
+                            <rdg type="error" wit="#S">suspenda,</rdg>
+                        </app> y tantos ella</l>
                     <l xml:id="v-1717" exclude="#Rm #Pr #O #Rl">al flaco da, que me <app>
                             <lem>construyen</lem>
                             <rdg cert="low" type="error" wit="#S">constriñen</rdg>
@@ -8341,9 +8339,9 @@
                             <rdg type="error" wit="#J"/>
                         </app> esplendor overo</l>
                     <l xml:id="v-1807" exclude="#Rm #Pr #O #Rl">del luminoso <app>
-                            <lem>tiro</lem>
-                            <rdg type="error" wit="#C">liro</rdg>
-                        </app>, las pendientes</l>
+                            <lem>tiro,</lem>
+                            <rdg type="error" wit="#C">liro,</rdg>
+                        </app> las pendientes</l>
                     <l n="680" xml:id="v-1808" exclude="#Rm #Pr #O #Rl">ponían de <app>
                             <lem>crisólitos</lem>
                             <rdg type="error" wit="#ho54">crisolíticos</rdg>
@@ -8923,9 +8921,9 @@
                                 </subst><add place="inline">s</add>forme</rdg>
                         </app> fiscal de Proserpina,</l>
                     <l xml:id="v-2021" exclude="#Rm #Pr #vi #O #Rl">que en <app>
-                            <lem>desatarse</lem>
-                            <rdg type="error" wit="#S">desatarso</rdg>
-                        </app>, al polo ya vecina,</l>
+                            <lem>desatarse,</lem>
+                            <rdg type="error" wit="#S">desatarso,</rdg>
+                        </app> al polo ya vecina,</l>
                     <l xml:id="v-2022" exclude="#Rm #Pr #vi #O #Rl">la disonante niebla de las aves:</l>
                     <l n="895" xml:id="v-2023" exclude="#Rm #Pr #vi #O #Rl">diez a diez se calaron, ciento a ciento,</l>
                     <l xml:id="v-2024" exclude="#Rm #Pr #vi #O #Rl">al oro intüitivo, envidïado</l>
