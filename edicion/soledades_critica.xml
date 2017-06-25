@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
@@ -2025,7 +2025,7 @@
                     </l>
                     <l xml:id="v-0248">
                         <app>
-                            <lem>su orgullo pierdey su memoria esconde.</lem>
+                            <lem>su orgullo pierde y su memoria esconde.</lem>
                             <rdg type="variant" wit="#Rm #pe #Rl #O">de quintas coronado, se dilata</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -2080,10 +2080,10 @@
                 </lg>
                 <lg xml:id="g-09">
                     <l rend="indent" xml:id="v-0249">«Aquellas que los árboles apenas</l>
-                    <l xml:id="v-0250">dejan ser torres hoy— <app>
-                            <lem>dijo el cabrero</lem>
-                            <rdg type="error" wit="#S">deja el cabrero</rdg>
-                            <rdg type="error" wit="#D">dijo al cabrero</rdg>
+                    <l xml:id="v-0250">dejan ser torres hoy <app>
+                            <lem>—dijo el cabrero</lem>
+                            <rdg type="error" wit="#S">—deja el cabrero</rdg>
+                            <rdg type="error" wit="#D">—dijo al cabrero</rdg>
                         </app></l>
                     <l xml:id="v-0251">con muestras de dolor extraordinarias—,</l>
                     <l n="215" xml:id="v-0252">las estrellas nocturnas luminarias</l>
@@ -2898,10 +2898,10 @@
                             <rdg type="error" wit="#S">su bella armada, deponiente amante</rdg>
                         </app></l>
                     <l n="355" xml:id="v-0392">en las vestidas rosas su cuidado.</l>
-                    <l xml:id="v-0393">saludólosa <app>
+                    <l xml:id="v-0393">saludólos a <app>
                             <lem>todos</lem>
                             <rdg type="error" wit="#sa">todo</rdg>
-                        </app>cortésmente, </l>
+                        </app> cortésmente,</l>
                     <l xml:id="v-0394">y, admirado no menos</l>
                     <l xml:id="v-0395"><app>
                             <lem>de los serranos que correspondido,</lem>
@@ -3173,12 +3173,12 @@
                             <rdg type="error" wit="#Br #Rl">le corre, en leche azul de aguas marinas,</rdg>
                         </app></l>
                     <l xml:id="v-0455">turquesadas cortinas.</l>
-                    <l xml:id="v-0456">a pesar luego de áspides <app>
+                    <l xml:id="v-0456">A pesar luego de áspides <app>
                             <lem>volantes,</lem>
                             <rdg type="error" wit="#pe">blanees,</rdg>
                         </app></l>
                     <l n="420" xml:id="v-0457">(sombra del sol y tósigo del viento)</l>
-                    <l xml:id="v-0458">de <app>
+                    <l xml:id="v-0458"><app>
                             <lem>de caribes flechados, sus banderas</lem>
                             <rdg type="error" wit="#Ml">de cabrides flechados, sus banderas</rdg>
                             <rdg type="error" wit="#N">de <subst>
@@ -3583,7 +3583,7 @@
                             <rdg type="error" wit="#O">y ellas más tarde<del rend="strikethrough">[s]</del> a la gulosa Grecia,</rdg>
                             <rdg type="error" wit="#Rm">y ellas más tarde a la guloso Grecia,</rdg>
                         </app></l>
-                    <l xml:id="v-0533">clavo no, espuela sídel apetito,</l>
+                    <l xml:id="v-0533">clavo no, espuela sí del apetito,</l>
                     <l xml:id="v-0534">
                         <app>
                             <lem>que cuanto en conocerlo tardó Roma</lem>
@@ -4659,7 +4659,7 @@
                             <rdg type="error" wit="#Rl">purpera</rdg>
                         </app> que cela</l>
                     <l xml:id="v-0768">por brújula concede vergonzosa.</l>
-                    <l xml:id="v-0769">digna la <app>
+                    <l xml:id="v-0769">Digna la <app>
                             <lem>juzga</lem>
                             <rdg type="error" wit="#S">juzgue</rdg>
                         </app> esposa</l>
@@ -5835,15 +5835,15 @@
                     <l n="970" xml:id="v-1007" exclude="#Rm">de recíprocos nudos impedidos,</l>
                     <l xml:id="v-1008" exclude="#Rm">cual duros olmos de implicantes vides,</l>
                     <l xml:id="v-1009" exclude="#Rm">hiedra el uno <app>
-                            <lem>es tenaz del otro, muro</lem>
+                            <lem>es tenaz del otro, muro:</lem>
                             <rdg type="error" wit="#Rl">
                                 <subst>
                                     <del rend="unmarked">el</del>
                                     <add place="above">es</add>
-                                </subst> tenaz del otro, muro</rdg>
+                                </subst> tenaz del otro, muro:</rdg>
                             <rdg type="error" wit="#S">es tenaz</rdg>
-                            <rdg type="error" wit="#O">es tenaz el otro, muro</rdg>
-                        </app>:<witDetail wit="#S">El testimonio S omite aquí <mentioned rend="italic">del otro, muro</mentioned> porque el copista lo transcribió debajo, como si fuera un verso
+                            <rdg type="error" wit="#O">es tenaz el otro, muro:</rdg>
+                        </app><witDetail wit="#S">El testimonio S omite aquí <mentioned rend="italic">del otro, muro</mentioned> porque el copista lo transcribió debajo, como si fuera un verso
                             independiente.</witDetail></l>
                     <l xml:id="v-1010" exclude="#Rm">mañosos, al fin, hijos de la tierra,</l>
                     <l xml:id="v-1011">cuando fuertes no Alcides,</l>
@@ -6150,7 +6150,7 @@
                         </app> quiso.</l>
                     <l xml:id="v-1114" exclude="#Rm #Rl">Solícita Junón, Amor no omiso,</l>
                     <l xml:id="v-1115" exclude="#Rm #Rl">al son de otra zampoña que conduce</l>
-                    <l xml:id="v-1116" exclude="#Rm #Rl">ninfas bellas,y sátiros lascivos,</l>
+                    <l xml:id="v-1116" exclude="#Rm #Rl">ninfas bellas, y sátiros lascivos,</l>
                     <l n="1080" xml:id="v-1117" exclude="#Rm #Rl">los desposados a su casa vuelven,</l>
                     <l xml:id="v-1118" exclude="#Rm #Rl">que coronada luce</l>
                     <l xml:id="v-1119" exclude="#Rm #Rl">de estrellas fijas, de astros fugitivos</l>
@@ -6173,7 +6173,7 @@
                             <rdg type="error" wit="#O">entra<del rend="strikethrough">n</del>
                             </rdg>
                         </app> en dura no estacada:</l>
-                    <l xml:id="v-1126" exclude="#Rm #Rl">que, siendo Amoruna deidad alada,</l>
+                    <l xml:id="v-1126" exclude="#Rm #Rl">que, siendo Amor una deidad alada,</l>
                     <l n="1090" xml:id="v-01127" exclude="#Rm #Rl">bien previno la hija de la espuma</l>
                     <l xml:id="v-01128" exclude="#Rm #Rl"><app>
                             <lem>a batallas de amor campo de pluma.</lem>
