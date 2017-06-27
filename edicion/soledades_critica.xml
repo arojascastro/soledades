@@ -2784,12 +2784,12 @@
                     <l n="330" xml:id="v-0367">el <app>
                             <lem>pululante</lem>
                             <rdg type="error" wit="#Ml">populante</rdg>
-                        </app> ramo <witDetail wit="Rm">El testimonio Rm añade este verso en el margen.</witDetail></l>
+                        </app> ramo <witDetail wit="#Rm">El testimonio Rm añade este verso en el margen.</witDetail></l>
                     <l xml:id="v-0368">del <app>
                             <lem>ternezuelo</lem>
                             <rdg cert="low" type="error" wit="#Br #Rl #Rm #O">terneruelo</rdg>
                             <rdg type="error" wit="#Q">ternecuelo</rdg>
-                        </app> gamo, <witDetail wit="Rm">El testimonio Rm añade este verso en el margen.</witDetail></l>
+                        </app> gamo, <witDetail wit="#Rm">El testimonio Rm añade este verso en el margen.</witDetail></l>
                     <l xml:id="v-0369">que mal <app>
                             <lem>llevar</lem>
                             <rdg type="error" wit="#S">librar</rdg>
@@ -3303,8 +3303,7 @@
                                     <add place="above">tú, pues,</add>
                                 </subst>
                             </rdg>
-                            <witDetail wit="#Pr">El testimonio Pr es el único que transmite la lección correcta.</witDetail>
-                        </app> de las profundas</l>
+                    </app> de las profundas<witDetail wit="#Pr">El testimonio Pr es el único que transmite la lección correcta.</witDetail></l>
                     <l xml:id="v-0481">estigias aguas torpe marinero,</l>
                     <l n="445" xml:id="v-0482">cuantos abre <app>
                             <lem>sepulcros</lem>
@@ -3968,7 +3967,7 @@
                             <lem>hacía, bien de pobos, bien de alisos,</lem>
                             <rdg type="variant" wit="#Br #Rm">hacía, ya de pobos, ya de alisos,</rdg>
                             <rdg type="variant" wit="#Rl">ya hacía de pobos, ya de alisos,</rdg>
-                            <rdg type="variant" wit="O">hacía ya de chopos, y de alisos,</rdg>
+                            <rdg type="variant" wit="#O">hacía ya de chopos, y de alisos,</rdg>
                             <rdg type="variant" wit="#Pr">hacía, <subst>
                                     <del rend="strikethrough">ya</del>
                                     <add place="above">bien</add>
@@ -5273,8 +5272,7 @@
                     <l xml:id="v-0894" exclude="#Rm">
                         <app>
                             <lem>que sin rumor previno en mesas grandes.</lem>
-                            <rdg>que sin rumor previno en <witDetail wit="#S">El testimonio S omite <mentioned rend="italic">mesas grandes</mentioned> porque el copista lo transcribió debajo como si
-                                    fuera un verso independiente.</witDetail></rdg>
+                            <rdg>que sin rumor previno en</rdg>
                             <rdg type="variant" wit="#Br #Rl">que en mesas prevenido les ha grandes.</rdg>
                             <rdg cert="low" type="variant" wit="#O">que sin primor previno en mesas grandes.</rdg>
                             <rdg type="variant" wit="#Pr">
@@ -5283,7 +5281,8 @@
                                     <add place="margin">que sin rumor previno en mesas grandes.</add>
                                 </subst>
                             </rdg>
-                        </app>
+                        </app><witDetail wit="#S">El testimonio S omite <mentioned rend="italic">mesas grandes</mentioned> porque el copista lo transcribió debajo como si
+                            fuera un verso independiente.</witDetail>
                     </l>
                     <l xml:id="v-0895" exclude="#Rm">
                         <app>
@@ -5424,9 +5423,9 @@
                                     <del rend="strikethrough">oro no, Baco, ni en bruñida plata,</del>
                                     <add place="above">confuso Baco, ni en bruñida plata,</add>
                                 </subst>
-                                <witDetail wit="#Pr">En el testimonio Pr la adición de la versión definitiva se sitúa tras el verso 867 y al final del folio, mientras que el verso 868 de la versión
-                                    primitiva aparece tachado en el folio siguiente.</witDetail></rdg>
-                        </app></l>
+                                </rdg>
+                        </app><witDetail wit="#Pr">En el testimonio Pr la adición de la versión definitiva se sitúa tras el verso 867 y al final del folio, mientras que el verso 868 de la versión
+                            primitiva aparece tachado en el folio siguiente.</witDetail></l>
                     <l xml:id="v-0906" exclude="#Rm">
                         <app>
                             <lem>su néctar les desata,</lem>
@@ -5438,9 +5437,9 @@
                                     <del rend="strikethrough">confuso sus licores les desata,</del>
                                     <add place="above">su néctar les desata;</add>
                                 </subst>
-                                <witDetail wit="#Pr">Como en el verso anterior, el verso de la versión primitiva aparece tachado en el folio siguiente mientras que la adición se sitúa al final del
-                                    folio anterior.</witDetail></rdg>
-                        </app></l>
+                                </rdg>
+                        </app><witDetail wit="#Pr">Como en el verso anterior, el verso de la versión primitiva aparece tachado en el folio siguiente mientras que la adición se sitúa al final del
+                            folio anterior.</witDetail></l>
                     <l n="870" xml:id="v-0907" exclude="#Rm">sino en <app>
                             <lem>vidrio</lem>
                             <rdg type="error" wit="#S">vidros</rdg>
@@ -6681,7 +6680,7 @@
                     <l xml:id="v-1280" exclude="#Rm #Rl">muera <app>
                             <lem>mi culpa,</lem>
                             <rdg type="error" wit="#vi">mi desdén,</rdg>
-                        </app> y tu desdén le guarde,<witDetail wit="Pr">La primera mano del testimonio Pr transcribió este verso partido en dos: <mentioned rend="italic">muera mi culpa, / y tu desdén
+                        </app> y tu desdén le guarde,<witDetail wit="#Pr">La primera mano del testimonio Pr transcribió este verso partido en dos: <mentioned rend="italic">muera mi culpa, / y tu desdén
                                 le guarde</mentioned>; a continuación, tachó y añadió el verso entero en el margen.</witDetail></l>
                     <l xml:id="v-1281" exclude="#Rm #Rl">arrepentido tarde,</l>
                     <l xml:id="v-1282" exclude="#Rm #Rl">suspiro que mi muerte haga leda,</l>
@@ -6861,7 +6860,7 @@
                             <lem>sagrado Nereo</lem>
                             <rdg type="error" wit="#ho54">sagtado Nereo</rdg>
                             <rdg type="error" wit="#S">sagrado Ner<add place="above">e</add>o</rdg>
-                        </app><witDetail wit="O">En el testimonio O la primera mano solo copió <mentioned rend="italics">del</mentioned> y dejó un espacio en blanco que la segunda mano completó, es
+                        </app><witDetail wit="#O">En el testimonio O la primera mano solo copió <mentioned rend="italics">del</mentioned> y dejó un espacio en blanco que la segunda mano completó, es
                             decir, <mentioned rend="italics">sagrado Nereo, no ya tanto</mentioned> aparece añadido en otra tinta.</witDetail></l>
                     <l xml:id="v-1339" exclude="#Rm #Rl">porque a la par de los escollos vive,</l>
                     <l xml:id="v-1340" exclude="#Rm #Rl">porque en el mar preside <app>
