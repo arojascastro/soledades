@@ -6586,13 +6586,13 @@
                             <rdg type="error" wit="#ho54">la</rdg>
                         </app> ha fïado</l>
                     <l xml:id="v-1250" exclude="#Rm #Rl">de tu fortuna aun más que de <app>
-                            <lem>su hado</lem>
-                            <rdg type="error" wit="#A">tu hado</rdg>
+                            <lem>su hado.</lem>
+                            <rdg type="error" wit="#A">tu hado.</rdg>
                             <rdg type="error" wit="#O">
                                 <subst>
                                     <del rend="strikethrough">tu</del>
                                     <add place="margin">su</add>
-                                </subst> hado</rdg>
+                                </subst> hado.</rdg>
                         </app></l>
                 </lg>
                 <lg xml:id="g-50">
@@ -6899,7 +6899,7 @@
                             <lem>ofrecen,</lem>
                             <rdg type="error" wit="#Br">ofrece,</rdg>
                         </app></l>
-                    <l xml:id="v-1347" exclude="#Rm #Rl">que engaños construyendo estánde hilo.</l>
+                    <l xml:id="v-1347" exclude="#Rm #Rl">que engaños construyendo están de hilo.</l>
                     <l n="220" xml:id="v-1348" exclude="#Rm #Rl">El huerto le da esotras, a quien debe,</l>
                     <l xml:id="v-1349" exclude="#Rm #Rl"><app>
                             <lem>si</lem>
@@ -7030,7 +7030,7 @@
                             <rdg type="error" wit="#A">dulce</rdg>
                         </app> su muerte anuncia</l>
                     <l xml:id="v-1386" exclude="#Rm #Rl">entre la verde juncia,</l>
-                    <l xml:id="v-1387" exclude="#Rm #Rl">sus pollos este al mar conduc enuevos,</l>
+                    <l xml:id="v-1387" exclude="#Rm #Rl">sus pollos este al mar conduce nuevos,</l>
                     <l n="260" xml:id="v-1388" exclude="#Rm #Rl">
                         <app>
                             <lem>de Espío y de Nesea</lem>
@@ -7108,7 +7108,7 @@
                             <lem>ronca</lem>
                             <rdg type="error" wit="#O">ronco</rdg>
                         </app> gime</l>
-                    <l xml:id="v-1399" exclude="#Rm #Rl">la avelasciva de la cipria diosa.</l>
+                    <l xml:id="v-1399" exclude="#Rm #Rl">la ave lasciva de la cipria diosa.</l>
                     <l xml:id="v-1400" exclude="#Rm #Rl">Mástiles coronó menos <app>
                             <lem>crecidos</lem>
                             <rdg type="error" wit="#H #Pr">tejidos</rdg>
@@ -7486,7 +7486,7 @@
                     <l xml:id="v-1515" exclude="#Rm #O #Rl">que ejemplos de dolor a estas orillas».</l>
                 </lg>
                 <lg xml:id="g-64">
-                    <l rend="indent" xml:id="v-1516" exclude="#Rm #O #Rl">«Días ha muchos,oh mancebo —dijo</l>
+                    <l rend="indent" xml:id="v-1516" exclude="#Rm #O #Rl">«Días ha muchos, oh mancebo —dijo</l>
                     <l xml:id="v-1517" exclude="#Rm #O #Rl">el pescador anciano—,</l>
                     <l n="390" xml:id="v-1518" exclude="#Rm #O #Rl">que en el uno cedí y el otro hermano</l>
                     <l xml:id="v-1519" exclude="#Rm #O #Rl">el duro remo, el cáñamo prolijo:</l>
@@ -8070,7 +8070,7 @@
                             <lem>luciente</lem>
                             <rdg type="error" wit="#A">luciente<del rend="strikethrough">s</del></rdg>
                         </app></l>
-                    <l xml:id="v-1706" exclude="#Rm #Pr #O #Rl">Cristal (agua al fin dulcemente dura),</l>
+                    <l xml:id="v-1706" exclude="#Rm #Pr #O #Rl">cristal (agua al fin dulcemente dura),</l>
                     <l xml:id="v-1707" exclude="#Rm #Pr #O #Rl">envidia califique mi figura</l>
                     <l n="580" xml:id="v-1708" exclude="#Rm #Pr #O #Rl">de musculosos jóvenes desnudos.</l>
                     <l xml:id="v-1709" exclude="#Rm #Pr #O #Rl">Menos dio al bosque nudos</l>
@@ -8459,7 +8459,7 @@
                             <rdg type="error" wit="#J">el</rdg>
                         </app> genitivo</l>
                     <l xml:id="v-1855" exclude="#Rm #Pr #O #Rl">soplo vistiendo miembros, Guadalete</l>
-                    <l xml:id="v-1856" exclude="#Rm #Pr #O #Rl">florida ambrosia al viento diojinete,</l>
+                    <l xml:id="v-1856" exclude="#Rm #Pr #O #Rl">florida ambrosia al viento dio jinete,</l>
                     <l xml:id="v-1857" exclude="#Rm #Pr #O #Rl">que a mucho humo <app>
                             <lem>abriendo</lem>
                             <rdg cert="low" type="error" wit="#Ml">abiendo</rdg>
@@ -8787,7 +8787,7 @@
                     <l xml:id="v-1972" exclude="#Rm #Pr #vi #O #Rl">el doral. Despedida no saeta</l>
                     <l n="845" xml:id="v-1973" exclude="#Rm #Pr #vi #O #Rl">de nervios partos igualar presuma</l>
                     <l xml:id="v-1974" exclude="#Rm #Pr #vi #O #Rl">sus puntas desiguales,</l>
-                    <l xml:id="v-1975" exclude="#Rm #Pr #vi #O #Rl">Que en vano podrá pluma</l>
+                    <l xml:id="v-1975" exclude="#Rm #Pr #vi #O #Rl">que en vano podrá pluma</l>
                     <l xml:id="v-1976" exclude="#Rm #Pr #vi #O #Rl">vestir un leño como viste un ala.</l>
                     <l xml:id="v-1977" exclude="#Rm #Pr #vi #O #Rl">Puesto en tiempo, corona, si no escala,</l>
                     <l n="850" xml:id="v-1978" exclude="#Rm #Pr #vi #O #Rl">las nubes (desmintiendo</l>
@@ -9097,7 +9097,7 @@
                             <lem>en</lem>
                             <rdg type="error" wit="#ho54"/>
                         </app> prolija</l>
-                    <l xml:id="v-2105" exclude="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl">desconfïanzaa la sicana diosa</l>
+                    <l xml:id="v-2105" exclude="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl">desconfïanza a la sicana diosa</l>
                     <l xml:id="v-2106" exclude="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl">dejó sin dulce hija,</l>
                     <l xml:id="v-2107" exclude="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl">y a la estigia deidad con bella esposa.</l>
                 </lg>
