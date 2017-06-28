@@ -11,18 +11,30 @@
   </xsl:template>
 
   <!-- When matching witDetail do nothing -->
-  <xsl:template match="tei:witDetail" mode="#all"/>
+  <!--<xsl:template match="tei:witDetail">
+    <note target="{parent::tei:l/@xml:id}">
+      <xsl:value-of select="upper-case(parent::tei:l/@xml:id)"/>
+      <xsl:text>: </xsl:text>
+      <xsl:apply-templates/>
+    </note>
+  </xsl:template>-->
 
-  <xsl:template match="tei:l[tei:witDetail]">
-    <xsl:copy-of select="."/>
-    <xsl:for-each select="tei:witDetail">
-      <note>
-        <xsl:value-of select="upper-case(ancestor::tei:l/@xml:id)"/>
-        <xsl:text>: </xsl:text>
-        <xsl:value-of select="ancestor::tei:l/tei:witDetail"/>
-      </note>
-    </xsl:for-each>
+  <xsl:template match="mentioned">
+    <xsl:apply-templates/>
   </xsl:template>
+
+
+  <xsl:template match="tei:l[tei:witDetail]" mode="#default">
+<xsl:copy-of select="."></xsl:copy-of>
+    <xsl:for-each select="tei:witDetail">
+      <note target="{parent::tei:l/@xml:id}"><xsl:value-of select="upper-case(parent::tei:l/@xml:id)"/>
+        <xsl:text>: </xsl:text>
+        <xsl:apply-templates/>
+      </note></xsl:for-each>
+  </xsl:template>
+
+  
+
 
 
   <!-- Match this division, copy it and then add a new division, then copy all the elements witDetail there -->
