@@ -666,7 +666,8 @@
                     cinco versos se añade un atributo <att>n</att> con el número de verso; la numeración no se reinicia al empezar una nueva parte del texto.</p>
                 <p>Algunos versos codificados en el <gi>app</gi> pueden contener la desinencia (<val>-p</val>) para indicar que se trata de un verso de la versión primitiva que desaparece en la
                     versión definitiva.</p>
-                <p>Los testimonios que no transmiten determinado verso se han identificado con el atributo <att>exclude</att>.</p>
+                <p>Los testimonios que no transmiten determinado verso (por omisión o bien porque transmiten un texto <hi rend="italics">in fieri</hi>) se han identificado con el atributo
+                    <att>exclude</att>; este atributo aparece en el elemento <gi>l</gi>.</p>
             </refsDecl>
 
             <variantEncoding location="internal" method="parallel-segmentation"/>
