@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
@@ -59,6 +59,12 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-1756: En el testimonio Br este verso aparece añadido en el margen.</item>
+                            <item>V-1757: En el testimonio Br este verso aparece añadido en el margen.</item>
+                            <item>V-1758: En el testimonio Br este verso aparece añadido en el margen.</item>
+                        </list>
                     </witness>
                     <witness xml:id="C">
                         <msDesc type="manuscript">
@@ -78,6 +84,10 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-1960: En el testimonio C el copista unió este verso con el siguiente.</item>
+                        </list>
                     </witness>
                     <witness xml:id="Ch">
                         <msDesc subtype="basetext" type="manuscript">
@@ -116,6 +126,10 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-0276: El testimonio D repite «que pulsado» en el verso siguiente.</item>
+                        </list>
                     </witness>
                     <witness xml:id="E">
                         <msDesc type="manuscript">
@@ -218,6 +232,11 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-0210: El testimonio Ml transmite aquí el verso siguiente («contra la seca hoja») como si fuera uno solo y, por tanto, lo omite a continuación.</item>
+                            <item>V-1770: El copista de Ml repitió debajo «los que el trato hijos»; debió de darse cuenta del error porque a continuación tachó.</item>
+                        </list>
                     </witness>
                     <witness xml:id="N">
                         <msDesc type="manuscript">
@@ -236,6 +255,15 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-0263: El testimonio N omite, por error, este verso.</item>
+                            <item>V-0401: El testimonio N copia seguido el inicio del verso siguiente:«de canas graves».</item>
+                            <item>V-0408: El testimonio N repetía, por error, el final de este verso abajo, como si fuera uno independiente; el copista, sin embargo, tachó la lección «mal nacido
+                                pino».</item>
+                            <item>V-0431: El testimonio N repite, como si fuera un verso indepediente, la lección «alado roble»; el copista, sin embargo, corrigió la lección mediante un tachón.</item>
+                            <item>V-0443: El testimonio N transmite seguido «el sol que cada día»; el copista se debió de dar cuenta del error y tachó.</item>
+                        </list>
                     </witness>
                     <witness xml:id="O">
                         <msDesc type="manuscript">
@@ -254,6 +282,28 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-0112: La segunda mano del testimonio O añadió en el margen este verso aunque la primera mano lo había copiado en el cuerpo del texto.</item>
+                            <item>V-0238: El testimonio O transmite a continuación los versos 203-205: «quiere la Copia que su cuerno sea / si al animal armaron de Amaltea / diáfanos cristales ». La
+                                palabra «armaron» aparece añadida en el margen en sustitución de «armado» aunque no fue tachado sino anotado con una cruz; el verso «diáfanos cristales» fue añadido en
+                                el margen y aparece tachado.</item>
+                            <item>V-0246: El testimonio O transmite a continuación los versos «diáfanos cristales; / de muros se corona, / rocas abraza, islas aprisiona,»; estos tres versos aparecen
+                                tachados.</item>
+                            <item>V-0252-P: El testimonio O transmite a continuación dos versos de la versión definitiva: «hasta los jaspes líquidos, adonde / su orgullo pierde, su memoria esconde »;
+                                es decir, el copista refundió la versión primitiva y la definitiva.</item>
+                            <item>V-0339: El testimonio O añade a continuación los versos 290-295 de la versión definitiva; es decir, refunde las dos versiones del poema.</item>
+                            <item>V-0478: El testimonio O transmite el verso añadido en el margen.</item>
+                            <item>V-0723: El testimonio O transmite a continuación los versos 680-684 de la versión primitiva; es decir, refunde las dos versiones.</item>
+                            <item>V-0840: La primera mano del testimonio O transcribió «breno abeja el virginal acanto»; la segunda mano añadió, primero, el morfema «li» delante de «breno» y, luego,
+                                una «a» antes del artículo «el». La primera lección resultante, por tanto, es «libreno abeja al virginal acanto». Sin embargo, el resultado no debió de satisfacerle
+                                porque añadió dos veces «bre no abeja». Es posible que originalmente la lección fuera «libre no abeja» y que hoy falte parte de la palabra «libre» porque el margen ha
+                                sido cortado. </item>
+                            <item>V-1307: En el testimonio O la primera mano solo copió «Es» (de «Espongïoso») y luego dejó en blanco el resto del verso; la segunda mano añadió seguido lo que faltaba.
+                                Se trata, pues, de una corrección de una laguna.</item>
+                            <item>V-1338: En el testimonio O la primera mano solo copió «del» y dejó un espacio en blanco que la segunda mano completó, es decir, «sagrado Nereo, no ya tanto» aparece
+                                añadido en otra tinta.</item>
+                        </list>
                     </witness>
                     <witness xml:id="Pr">
                         <msDesc type="manuscript">
@@ -274,6 +324,24 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-0054: El testimonio Pr transmite debajo «delfín no fue pequeño»; la primera mano debió de tacharlo al darse cuenta del error.</item>
+                            <item>V-0331: El único testimonio que transmite la versión primitiva de este verso sin ninguna corrupción es Pr.</item>
+                            <item>V-0377: Tras este verso en el testimonio Pr se puede apreciar un verso tachado que resulta completamente ilegible debido a la intervención de la primera mano.</item>
+                            <item>: El testimonio Pr es el único que transmite la lección correcta.</item>
+                            <item>V-0514: En el testimonio Pr este verso aparece tachado y añadido en el margen; sin duda, es un error de la segunda mano que actualiza la versión del poema pues este
+                                verso no fue revisado por el autor.</item>
+                            <item>V-0700: El testimonio Pr unió este verso con el siguiente; el copista se dio cuenta del error y tachó lo que sobraba.</item>
+                            <item>V-0905: En el testimonio Pr la adición de la versión definitiva se sitúa tras el verso 867 y al final del folio, mientras que el verso 868 de la versión primitiva
+                                aparece tachado en el folio siguiente.</item>
+                            <item>V-0906: Como en el verso anterior, el verso de la versión primitiva aparece tachado en el folio siguiente mientras que la adición se sitúa al final del folio
+                                anterior.</item>
+                            <item>V-1053: En el testimonio Pr se omite aquí «al muflón sardo» porque el copista lo transcribió debajo, como si fuera un verso independiente.</item>
+                            <item>V-1280: La primera mano del testimonio Pr transcribió este verso partido en dos: «muera mi culpa, / y tu desdén le guarde»; a continuación, tachó y añadió el verso
+                                entero en el margen.</item>
+                            <item>V-1476: La segunda mano del testimonio Pr actualiza la versión del poema tachando «mas» y «mucho»; pero, por error, no tachó el pronombre personal «les».</item>
+                        </list>
                     </witness>
                     <witness xml:id="Q">
                         <msDesc type="manuscript">
@@ -294,6 +362,10 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-1572: El copista del testimonio Q repitió a continuación los versos 441-444.</item>
+                        </list>
                     </witness>
                     <witness xml:id="Rl">
                         <msDesc type="manuscript">
@@ -312,6 +384,10 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-0114: El testimonio Rl transmite en este mismo verso «el joven apresura» y, por tanto, lo omite a continuación.</item>
+                        </list>
                     </witness>
                     <witness xml:id="Rm">
                         <msDesc type="manuscript">
@@ -333,6 +409,13 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-0367: El testimonio Rm añade este verso en el margen.</item>
+                            <item>V-0368: El testimonio Rm añade este verso en el margen.</item>
+                            <item>V-0494: El copista de Rm transcribió debajo el verso 461: «La aromática selva penestrate»; aparece tachado por lo que se puede deducir que se dio cuenta del error y
+                                corrigió la lección.</item>
+                        </list>
                     </witness>
                     <witness xml:id="S">
                         <msDesc type="manuscript">
@@ -351,6 +434,15 @@
                                 </msItem>
                             </msContents>
                         </msDesc>
+                        <list>
+                            <head>Notas</head>
+                            <item>V-0071: El testimonio S transmite debajo «cuanto ya el vestido», como si fuera un verso indepediente.</item>
+                            <item>V-0291: El testimonio S transmitía en este mismo verso el inicio del segundo; el copista, sin embargo, tachó «sonoros instrumento» para corregir la lección.</item>
+                            <item>V-0894: El testimonio S omite «mesas grandes» porque el copista lo transcribió debajo como si fuera un verso independiente.</item>
+                            <item>V-1009: El testimonio S omite aquí «del otro, muro» porque el copista lo transcribió debajo, como si fuera un verso independiente.</item>
+                            <item>V-1137: El testimonio S transmite debajo, como si fuera un verso independiente, «pues de arena».</item>
+                            <item>V-1176: El testimonio S transmite «instable puente» debajo, como si fuera un verso independiente.</item>
+                        </list>
                     </witness>
                     <witness xml:id="vi">
                         <msDesc type="print">
@@ -915,7 +1007,6 @@
                             <rdg type="error" wit="#Br">y piadoso miembro roto,</rdg>
                         </app>
                     </l>
-                    <note>El testimonio Pr transmite debajo «delfín no fue pequeño»; la primera mano debió de tacharlo al darse cuenta del error.</note>
                     <l xml:id="v-0055">breve tabla, delfín <app>
                             <lem>no fue pequeño</lem>
                             <rdg type="error" wit="#sa #ho54">fue no pequeño</rdg>
@@ -975,7 +1066,6 @@
                             <lem>el</lem>
                             <rdg type="error" wit="#Rl"/>
                         </app> vestido</l>
-                    <note>El testimonio S transmite debajo «cuanto ya el vestido», como si fuera un verso indepediente.</note>
                     <l n="35" xml:id="v-0072">océano ha bebido,</l>
                     <l xml:id="v-0073">restituir <app>
                             <lem>le</lem>
@@ -1228,7 +1318,6 @@
                             <rdg type="error" wit="#Rl"/>
                         </app>
                     </l>
-                    <note>La segunda mano del testimonio O añadió en el margen este verso aunque la primera mano lo había copiado en el cuerpo del texto.</note>
                     <l xml:id="v-0113">
                         <app>
                             <lem>carro es brillante de nocturno día:</lem>
@@ -1271,8 +1360,8 @@
                                     <add place="inline">l,</add>
                                 </subst>
                             </rdg>
-                        </app> diligente, el paso</l>
-                    <note>El testimonio Rl transmite en este mismo verso «el joven apresura» y, por tanto, lo omite a continuación.</note>
+                        </app> diligente, el paso
+                    </l>
                     <l xml:id="v-0115" exclude="#Rl">el joven <app>
                             <lem>apresura,</lem>
                             <rdg type="error" wit="#A">
@@ -1807,9 +1896,7 @@
                             <lem>fue</lem>
                             <rdg type="error" wit="#Rm">que</rdg>
                         </app> el sueño interrumpido,</l>
-                    <l xml:id="v-0210">de can sí, embravecido</l>
-                    <note>El testimonio Ml transmite aquí el verso siguiente («contra la seca hoja») como si fuera uno solo y, por tanto, lo omite a
-                        continuación.</note>
+                    <l xml:id="v-0210">de can sí, embravecido </l>
                     <l xml:id="v-0211" exclude="#Ml">contra la seca hoja</l>
                     <l n="175" xml:id="v-0212">que el viento repeló a <app>
                             <lem>alguna coscoja.</lem>
@@ -1945,10 +2032,8 @@
                             </rdg>
                         </app>
                </l>
-                    <l xml:id="v-0238">tiraniza los campos útilmente:</l>
-                    <note>El testimonio O transmite a continuación los versos 203-205: «quiere la Copia que su cuerno sea / si al animal armaron de Amaltea / diáfanos cristales
-                        ». La palabra «armaron» aparece añadida en el margen en sustitución de «armado» aunque no fue
-                        tachado sino anotado con una cruz; el verso «diáfanos cristales» fue añadido en el margen y aparece tachado.</note>
+                    <l xml:id="v-0238">tiraniza los campos útilmente: 
+                    </l>
                     <l xml:id="v-0239">
                         <app>
                             <lem>orladas</lem>
@@ -2096,9 +2181,8 @@
                                 </subst>
                             </rdg>
                         </app>
+                        
                     </l>
-                    <note>El testimonio O transmite a continuación los versos «diáfanos cristales; / de muros se corona, / rocas abraza, islas aprisiona,»; estos
-                        tres versos aparecen tachados.</note>
                     <l n="210" xml:id="v-0247">
                         <app>
                             <lem>hasta los jaspes líquidos, adonde</lem>
@@ -2120,7 +2204,7 @@
                     </l>
                     <l xml:id="v-0248">
                         <app>
-                            <lem>su orgullo pierde y su memoria esconde.</lem>
+                            <lem>su orgullo pierdey su memoria esconde.</lem>
                             <rdg type="variant" wit="#Rm #pe #Rl #O">de quintas coronado, se dilata</rdg>
                             <rdg type="variant" wit="#Pr">
                                 <subst>
@@ -2185,16 +2269,15 @@
                         <del rend="wrapped">al período son de su corriente.</del>
                      </rdg>
                         </app>
-               </l>
-                    <note>El testimonio O transmite a continuación dos versos de la versión definitiva: «hasta los jaspes líquidos, adonde / su orgullo pierde, su memoria
-                            esconde »; es decir, el copista refundió la versión primitiva y la definitiva.</note>
+                        
+                    </l>
                 </lg>
                 <lg xml:id="g-09">
                     <l rend="indent" xml:id="v-0249">«Aquellas que los árboles apenas</l>
-                    <l xml:id="v-0250">dejan ser torres hoy <app>
-                            <lem>—dijo el cabrero</lem>
-                            <rdg type="error" wit="#S">—deja el cabrero</rdg>
-                            <rdg type="error" wit="#D">—dijo al cabrero</rdg>
+                    <l xml:id="v-0250">dejan ser torres hoy— <app>
+                            <lem>dijo el cabrero</lem>
+                            <rdg type="error" wit="#S">deja el cabrero</rdg>
+                            <rdg type="error" wit="#D">dijo al cabrero</rdg>
                         </app>
                </l>
                     <l xml:id="v-0251">con muestras de dolor extraordinarias—,</l>
@@ -2258,7 +2341,6 @@
                         </app>
                </l>
                     <l xml:id="v-0263" exclude="#N">tierno discurso y dulce compañía</l>
-                    <note>El testimonio N omite, por error, este verso.</note>
                     <l xml:id="v-0264">dejar hizo al serrano,</l>
                     <l xml:id="v-0265">
                   <app>
@@ -2313,8 +2395,8 @@
                     <l xml:id="v-0273">culto principio dio al discurso, cuando</l>
                     <l xml:id="v-0274">rémora de sus pasos fue su oído,</l>
                     <l xml:id="v-0275">dulcemente impedido</l>
-                    <l xml:id="v-0276">de canoro instrumento, que pulsado</l>
-                    <note>El testimonio D repite «que pulsado» en el verso siguiente.</note>
+                    <l xml:id="v-0276">de canoro instrumento, que pulsado 
+                    </l>
                     <l n="240" xml:id="v-0277">era de una serrana junto aun tronco,</l>
                     <l xml:id="v-0278">
                   <app>
@@ -2403,8 +2485,6 @@
                             <rdg type="error" wit="#Rl">Al son pues de este ruido</rdg>
                         </app>
                     </l>
-                    <note>El testimonio S transmitía en este mismo verso el inicio del segundo; el copista, sin embargo, tachó «sonoros instrumento» para corregir la
-                        lección.</note>
                     <l n="255" xml:id="v-0292">
                         <app>
                             <lem>sonoroso instrumento,</lem>
@@ -2661,7 +2741,6 @@
                             </rdg>
                         </app>
                     </l>
-                    <note>El único testimonio que transmite la versión primitiva de este verso sin ninguna corrupción es Pr.</note>
                     <l n="295" xml:id="v-0332">
                         <app>
                             <lem>y, de coral barbado, no de oro</lem>
@@ -2705,7 +2784,6 @@
                             <rdg type="error" wit="#O">prop<del rend="strikethrough">[...]</del>ia. </rdg>
                         </app>
                     </l>
-                    <note>El testimonio O añade a continuación los versos 290-295 de la versión definitiva; es decir, refunde las dos versiones del poema.</note>
                     <!-- o usar @exclude -->
                     <l xml:id="v-03340-p">
                         <app>
@@ -2951,14 +3029,12 @@
                     <l n="330" xml:id="v-0367">el <app>
                             <lem>pululante</lem>
                             <rdg type="error" wit="#Ml">populante</rdg>
-                        </app> ramo</l>
-                    <note>El testimonio Rm añade este verso en el margen.</note>
+                        </app> ramo </l>
                     <l xml:id="v-0368">del <app>
                             <lem>ternezuelo</lem>
                             <rdg cert="low" type="error" wit="#Br #Rl #Rm #O">terneruelo</rdg>
                             <rdg type="error" wit="#Q">ternecuelo</rdg>
-                        </app> gamo,</l>
-                    <note>El testimonio Rm añade este verso en el margen.</note>
+                        </app> gamo, </l>
                     <l xml:id="v-0369">que mal <app>
                             <lem>llevar</lem>
                             <rdg type="error" wit="#S">librar</rdg>
@@ -3020,8 +3096,8 @@
                             </rdg>
                             <rdg type="error" wit="#S">gallarda</rdg>
                         </app> juventud vencido</l>
-                    <l n="340" xml:id="v-0377">(los fuertes hombros con las cargas graves</l>
-                    <note>Tras este verso en el testimonio Pr se puede apreciar un verso tachado que resulta completamente ilegible debido a la intervención de la primera mano.</note>
+                    <l n="340" xml:id="v-0377">(los fuertes hombros con las cargas graves 
+                    </l>
                     <l xml:id="v-0378">treguas <app>
                             <lem>hechas</lem>
                             <rdg type="error" wit="#Ml">hecha</rdg>
@@ -3074,10 +3150,10 @@
                         </app>
                </l>
                     <l n="355" xml:id="v-0392">en las vestidas rosas su cuidado.</l>
-                    <l xml:id="v-0393">saludólos a <app>
+                    <l xml:id="v-0393">saludólosa <app>
                             <lem>todos</lem>
                             <rdg type="error" wit="#sa">todo</rdg>
-                        </app> cortésmente,</l>
+                        </app>cortésmente, </l>
                     <l xml:id="v-0394">y, admirado no menos</l>
                     <l xml:id="v-0395">
                   <app>
@@ -3092,15 +3168,16 @@
                             <rdg type="variant" wit="#Br #Pr #Rm">la sombra</rdg>
                         </app> solicita de unas peñas. </l>
                     <l n="360" xml:id="v-0397">De lágrimas los tiernos ojos <app>
-                            <lem>llenos,</lem>
+                            <lem>llenos</lem>
                             <rdg type="error" wit="#O">
                                 <subst>
-                                    <del rend="strikethrough">[...]</del>
-                                    <add place="inline">llenos,</add>
+                                    <del rend="strikethrough">
+                                        <gap reason="cancellation"/>
+                                    </del>
+                                    <add place="inline">llenos</add>
                                 </subst>
                             </rdg>
-                        </app>
-               </l>
+                        </app>, </l>
                     <l xml:id="v-0398">reconociendo el mar en el vestido</l>
                     <l xml:id="v-0399">(que beberse no <app>
                             <lem>pudo</lem>
@@ -3112,7 +3189,6 @@
                      </rdg>
                         </app> cerúleas señas),</l>
                     <l xml:id="v-0401">político serrano,</l>
-                    <note>El testimonio N copia seguido el inicio del verso siguiente:«de canas graves».</note>
                     <l n="365" xml:id="v-0402">
                         <app>
                             <lem>de</lem>
@@ -3145,9 +3221,8 @@
                                     <add place="inline">n</add>
                                 </subst>
                             </rdg>
-                        </app> mal nacido pino,</l>
-                    <note>El testimonio N repetía, por error, el final de este verso abajo, como si fuera uno independiente; el copista, sin embargo, tachó la lección «mal
-                            nacido pino».</note>
+                        </app> mal nacido pino,
+                    </l>
                     <l xml:id="v-0409">vaga Clicie del viento</l>
                     <l xml:id="v-0410">
                   <app>
@@ -3261,9 +3336,8 @@
                                 </subst>
                             </rdg>
                         </app>
+                        
                     </l>
-                    <note>El testimonio N repite, como si fuera un verso indepediente, la lección «alado roble»; el copista, sin embargo, corrigió la lección
-                        mediante un tachón.</note>
                     <l n="395" xml:id="v-0432">
                         <app>
                             <lem>no hay tormentoso cabo que no doble,</lem>
@@ -3325,7 +3399,6 @@
                </l>
                     <l n="405" xml:id="v-0442">al padre de las aguas Oceano </l>
                     <l xml:id="v-0443">(de cuya monarquía</l>
-                    <note>El testimonio N transmite seguido «el sol que cada día»; el copista se debió de dar cuenta del error y tachó.</note>
                     <l xml:id="v-0444">el sol, que cada día</l>
                     <l xml:id="v-0445">
                   <app>
@@ -3375,14 +3448,13 @@
                         </app>
                </l>
                     <l xml:id="v-0455">turquesadas cortinas.</l>
-                    <l xml:id="v-0456">A pesar luego de áspides <app>
+                    <l xml:id="v-0456">a pesar luego de áspides <app>
                             <lem>volantes,</lem>
                             <rdg type="error" wit="#pe">blanees,</rdg>
                         </app>
                </l>
                     <l n="420" xml:id="v-0457">(sombra del sol y tósigo del viento)</l>
-                    <l xml:id="v-0458">
-                  <app>
+                    <l xml:id="v-0458">de <app>
                             <lem>de caribes flechados, sus banderas</lem>
                             <rdg type="error" wit="#Ml">de cabrides flechados, sus banderas</rdg>
                             <rdg type="error" wit="#N">de <subst>
@@ -3502,8 +3574,8 @@
                     <l xml:id="v-0478">para con estas <app>
                             <lem>lastimosas</lem>
                             <rdg cert="low" type="error" wit="#Br #Rl">espantosas</rdg>
-                        </app> señas</l>
-                    <note>El testimonio O transmite el verso añadido en el margen.</note>
+                        </app> señas
+                    </l>
                     <l xml:id="v-0479">temeridades enfrenar segundas.</l>
                     <l xml:id="v-0480">Tú, Codicia, <app>
                             <lem>tú, pues,</lem>
@@ -3518,8 +3590,8 @@
                                     <add place="above">tú, pues,</add>
                                 </subst>
                             </rdg>
+                            
                         </app> de las profundas</l>
-                    <note>El testimonio Pr es el único que transmite la lección correcta.</note>
                     <l xml:id="v-0481">estigias aguas torpe marinero,</l>
                     <l n="445" xml:id="v-0482">cuantos abre <app>
                             <lem>sepulcros</lem>
@@ -3567,9 +3639,8 @@
                         </app>
                     </l>
                     <l xml:id="v-0493">al sol, calmas vencidas y naufragios,</l>
-                    <l xml:id="v-0494">los reinos de la aurora al fin besaste,</l>
-                    <note>El copista de Rm transcribió debajo el verso 461: «La aromática selva penestrate»; aparece tachado por lo que se puede deducir que se dio
-                        cuenta del error y corrigió la lección.</note>
+                    <l xml:id="v-0494">los reinos de la aurora al fin besaste,
+                    </l>
                     <l xml:id="v-0495">cuyos purpúreos senos <app>
                             <lem>perlas netas,</lem>
                             <rdg type="error" wit="#N">
@@ -3668,9 +3739,7 @@
                             <lem>ahora</lem>
                             <rdg type="error" wit="#ho54">abra</rdg>
                         </app>
-               </l>
-                    <note>En el testimonio Pr este verso aparece tachado y añadido en el margen; sin duda, es un error de la segunda mano que actualiza la versión del poema pues este verso no fue
-                        revisado por el autor.</note>
+                    </l>
                     <l xml:id="v-0515">
                         <app>
                             <lem>en el húmedo templo de Neptuno</lem>
@@ -3817,7 +3886,7 @@
                             <rdg type="error" wit="#Rm">y ellas más tarde a la guloso Grecia,</rdg>
                         </app>
                </l>
-                    <l xml:id="v-0533">clavo no, espuela sí del apetito,</l>
+                    <l xml:id="v-0533">clavo no, espuela sídel apetito,</l>
                     <l xml:id="v-0534">
                         <app>
                             <lem>que cuanto en conocerlo tardó Roma</lem>
@@ -4227,7 +4296,7 @@
                             <lem>hacía, bien de pobos, bien de alisos,</lem>
                             <rdg type="variant" wit="#Br #Rm">hacía, ya de pobos, ya de alisos,</rdg>
                             <rdg type="variant" wit="#Rl">ya hacía de pobos, ya de alisos,</rdg>
-                            <rdg type="variant" wit="#O">hacía ya de chopos, y de alisos,</rdg>
+                            <rdg type="variant" wit="O">hacía ya de chopos, y de alisos,</rdg>
                             <rdg type="variant" wit="#Pr">hacía, <subst>
                                     <del rend="strikethrough">ya</del>
                                     <add place="above">bien</add>
@@ -4248,10 +4317,9 @@
                                 </subst>
                             </rdg>
                             <rdg type="error" wit="#S">prim<subst>
-                                    <del rend="strikethrough">era,</del>
-                                    <add place="above">avera,</add>
-                                </subst>
-                     </rdg>
+                                    <del rend="strikethrough">era</del>
+                                    <add place="above">avera</add>
+                                </subst>,</rdg>
                         </app>
                </l>
                     <l xml:id="v-0614">calzada abriles y vestida mayos,</l>
@@ -4627,8 +4695,8 @@
                     <l n="660" xml:id="v-0697" exclude="#Rm">que estaban, no muy lejos,</l>
                     <l xml:id="v-0698">trenzándose el cabello verde a cuantas</l>
                     <l xml:id="v-0699">da el fuego luces y el arroyo espejos.</l>
-                    <l xml:id="v-0700">Tanto garzón robusto,</l>
-                    <note>El testimonio Pr unió este verso con el siguiente; el copista se dio cuenta del error y tachó lo que sobraba.</note>
+                    <l xml:id="v-0700">Tanto garzón robusto, 
+                    </l>
                     <l xml:id="v-0701">
                   <app>
                             <lem>tanta ofrecen los álamos zagala,</lem>
@@ -4690,9 +4758,9 @@
                         </app>
                </l>
                     <l xml:id="v-0713">luz el <app>
-                            <lem>reflejo,</lem>
-                            <rdg type="error" wit="#Rl #O">fresno,</rdg>
-                        </app> la agua vidrïera.</l>
+                            <lem>reflejo</lem>
+                            <rdg type="error" wit="#Rl #O">fresno</rdg>
+                        </app>, la agua vidrïera.</l>
                     <l xml:id="v-0714">
                         <app>
                             <lem>Términos le da el sueño al regocijo,</lem>
@@ -4796,7 +4864,6 @@
                             </rdg>
                         </app>
                     </l>
-                    <note>El testimonio O transmite a continuación los versos 680-684 de la versión primitiva; es decir, refunde las dos versiones.</note>
                     <l xml:id="v-0724">Vence la noche <app>
                             <lem>al fin, y triunfa mudo</lem>
                             <rdg type="error" wit="#O">en fin, y triunfa mudo</rdg>
@@ -4908,9 +4975,9 @@
                         </app>
                     </l>
                     <l xml:id="v-0749">pisar <app>
-                            <lem>quería,</lem>
-                            <rdg type="error" wit="#Rm">querría,</rdg>
-                        </app> cuando el populoso</l>
+                            <lem>quería</lem>
+                            <rdg type="error" wit="#Rm">querría</rdg>
+                        </app>, cuando el populoso</l>
                     <l xml:id="v-0750">
                         <app>
                             <lem>lugarillo</lem>
@@ -4974,7 +5041,7 @@
                             <rdg type="error" wit="#Rl">purpera</rdg>
                         </app> que cela</l>
                     <l xml:id="v-0768">por brújula concede vergonzosa.</l>
-                    <l xml:id="v-0769">Digna la <app>
+                    <l xml:id="v-0769">digna la <app>
                             <lem>juzga</lem>
                             <rdg type="error" wit="#S">juzgue</rdg>
                         </app> esposa</l>
@@ -5160,9 +5227,9 @@
                         </app>
                </l>
                     <l xml:id="v-0811">villana <app>
-                            <lem>Psique,</lem>
-                            <rdg type="error" wit="#S">que persigues,</rdg>
-                        </app> ninfa labradora </l>
+                            <lem>Psique</lem>
+                            <rdg type="error" wit="#S">que persigues</rdg>
+                        </app>, ninfa labradora </l>
                     <l n="775" xml:id="v-0812">de la tostada Ceres. <app>
                             <lem>Esta ahora,</lem>
                             <rdg type="error" wit="#pe">Está ahora,</rdg>
@@ -5264,9 +5331,9 @@
                     <l xml:id="v-0831">al aire los hijuelos den alados</l>
                     <l n="795" xml:id="v-0832">de las que el bosque bellas ninfas cela;</l>
                     <l xml:id="v-0833">de sus <app>
-                            <lem>carcajes,</lem>
-                            <rdg type="error" wit="#ho54">cargajes,</rdg>
-                        </app> estos, argentados, </l>
+                            <lem>carcajes</lem>
+                            <rdg type="error" wit="#ho54">cargajes</rdg>
+                        </app>, estos, argentados, </l>
                     <l xml:id="v-0834">
                         <app>
                             <lem>flechen mosquetas,</lem>
@@ -5309,10 +5376,8 @@
                                     <add place="inline">a</add>
                                 </subst>l virginal acanto </rdg>
                         </app>
-               </l>
-                    <note>La primera mano del testimonio O transcribió «breno abeja el virginal acanto»; la segunda mano añadió, primero, el morfema «li» delante de «breno» y, luego, una «a» antes del artículo «el». La primera lección resultante, por tanto, es «libreno abeja al virginal acanto». Sin embargo, el resultado
-                        no debió de satisfacerle porque añadió dos veces «bre no abeja». Es posible que originalmente la lección fuera «libre
-                            no abeja» y que hoy falte parte de la palabra «libre» porque el margen ha sido cortado. </note>
+                        
+                    </l>
                     <l xml:id="v-0841">néctar le chupa hibleo.</l>
                     <l n="805" xml:id="v-0842">Ven, Himeneo, ven; ven, Himeneo».</l>
                 </lg>
@@ -5627,7 +5692,6 @@
                     <l xml:id="v-0894" exclude="#Rm">
                         <app>
                             <lem>que sin rumor previno en mesas grandes.</lem>
-                            <rdg>que sin rumor previno en</rdg>
                             <rdg type="variant" wit="#Br #Rl">que en mesas prevenido les ha grandes.</rdg>
                             <rdg cert="low" type="variant" wit="#O">que sin primor previno en mesas grandes.</rdg>
                             <rdg type="variant" wit="#Pr">
@@ -5638,7 +5702,6 @@
                             </rdg>
                         </app>
                     </l>
-                    <note>El testimonio S omite «mesas grandes» porque el copista lo transcribió debajo como si fuera un verso independiente.</note>
                     <l xml:id="v-0895" exclude="#Rm">
                         <app>
                             <lem>Ostente crespas blancas esculturas</lem>
@@ -5782,11 +5845,9 @@
                                     <del rend="strikethrough">oro no, Baco, ni en bruñida plata,</del>
                                     <add place="above">confuso Baco, ni en bruñida plata,</add>
                                 </subst>
-                            </rdg>
+                     </rdg>
                         </app>
                </l>
-                    <note>En el testimonio Pr la adición de la versión definitiva se sitúa tras el verso 867 y al final del folio, mientras que el verso 868 de la versión primitiva aparece tachado en
-                        el folio siguiente.</note>
                     <l xml:id="v-0906" exclude="#Rm">
                         <app>
                             <lem>su néctar les desata,</lem>
@@ -5798,10 +5859,9 @@
                                     <del rend="strikethrough">confuso sus licores les desata,</del>
                                     <add place="above">su néctar les desata;</add>
                                 </subst>
-                            </rdg>
+                     </rdg>
                         </app>
                </l>
-                    <note>Como en el verso anterior, el verso de la versión primitiva aparece tachado en el folio siguiente mientras que la adición se sitúa al final del folio anterior.</note>
                     <l n="870" xml:id="v-0907" exclude="#Rm">sino en <app>
                             <lem>vidrio</lem>
                             <rdg type="error" wit="#S">vidros</rdg>
@@ -5964,15 +6024,15 @@
                             <rdg type="error" wit="#S">dejo</rdg>
                         </app> que vuestras cabras, siempre errantes,</l>
                     <l xml:id="v-0949" exclude="#Rm">que vuestras <app>
-                            <lem>vacas,</lem>
+                            <lem>vacas</lem>
                             <rdg type="error" wit="#N">
                                 <subst>
-                                    <del rend="strikethrough">cabras,</del>
-                                    <add place="above">vacas,</add>
+                                    <del rend="strikethrough">cabras</del>
+                                    <add place="above">vacas</add>
                                 </subst>
                             </rdg>
                             <rdg type="error" wit="#S">cabras</rdg>
-                        </app> tarde o nunca herradas.</l>
+                        </app>, tarde o nunca herradas.</l>
                     <l xml:id="v-0950" exclude="#Rm">
                         <app>
                             <lem>Corderillos os brote la ribera,</lem>
@@ -6187,10 +6247,10 @@
                         </app> el aire acompañada</l>
                     <l xml:id="v-0988" exclude="#Rm">monarquía canora,</l>
                     <l xml:id="v-0989" exclude="#Rm">y, <app>
-                            <lem>vadeando nubes,</lem>
-                            <rdg type="error" wit="#Ml">vabeando nubes,</rdg>
-                            <rdg type="error" wit="#ho54">vadeando nunes,</rdg>
-                        </app> las espumas</l>
+                            <lem>vadeando nubes</lem>
+                            <rdg type="error" wit="#Ml">vabeando nubes</rdg>
+                            <rdg type="error" wit="#ho54">vadeando nunes</rdg>
+                        </app>, las espumas</l>
                     <l xml:id="v-0990" exclude="#Rm">del rey <app>
                             <lem>corona de los otros ríos,</lem>
                             <rdg type="error" wit="#Br">canora de los astros ríos,</rdg>
@@ -6246,17 +6306,15 @@
                     <l n="970" xml:id="v-1007" exclude="#Rm">de recíprocos nudos impedidos,</l>
                     <l xml:id="v-1008" exclude="#Rm">cual duros olmos de implicantes vides,</l>
                     <l xml:id="v-1009" exclude="#Rm">hiedra el uno <app>
-                            <lem>es tenaz del otro, muro:</lem>
+                            <lem>es tenaz del otro, muro</lem>
                             <rdg type="error" wit="#Rl">
                                 <subst>
                                     <del rend="unmarked">el</del>
                                     <add place="above">es</add>
-                                </subst> tenaz del otro, muro:</rdg>
+                                </subst> tenaz del otro, muro</rdg>
                             <rdg type="error" wit="#S">es tenaz</rdg>
-                            <rdg type="error" wit="#O">es tenaz el otro, muro:</rdg>
-                        </app>
-               </l>
-                    <note>El testimonio S omite aquí «del otro, muro» porque el copista lo transcribió debajo, como si fuera un verso independiente.</note>
+                            <rdg type="error" wit="#O">es tenaz el otro, muro</rdg>
+                        </app>:</l>
                     <l xml:id="v-1010" exclude="#Rm">mañosos, al fin, hijos de la tierra,</l>
                     <l xml:id="v-1011">cuando fuertes no Alcides,</l>
                     <l n="975" xml:id="v-1012">procuran derribarse, y, derribados,</l>
@@ -6347,11 +6405,11 @@
                                 </subst>zada</rdg>
                         </app> un duro hielo,</l>
                     <l xml:id="v-1039" exclude="#Rm #Rl">torpe se <app>
-                            <lem>arraiga,</lem>
-                            <rdg type="error" wit="#A">arraigó,</rdg>
-                            <rdg cert="low" type="error" wit="#Pr">arroja,</rdg>
-                            <rdg type="error" wit="#O">arroja,</rdg>
-                        </app> bien que impulso noble</l>
+                            <lem>arraiga</lem>
+                            <rdg type="error" wit="#A">arraigó</rdg>
+                            <rdg cert="low" type="error" wit="#Pr">arroja</rdg>
+                            <rdg type="error" wit="#O">arroja</rdg>
+                        </app>, bien que impulso noble</l>
                     <l xml:id="v-1040" exclude="#Rm #Rl">de gloria, aunque villano, solicita</l>
                     <l xml:id="v-1041" exclude="#Rm #Rl">
                   <app>
@@ -6411,7 +6469,6 @@
                             <rdg type="error" wit="#Pr"/>
                         </app>
                     </l>
-                    <note>En el testimonio Pr se omite aquí «al muflón sardo» porque el copista lo transcribió debajo, como si fuera un verso independiente.</note>
                     <l xml:id="v-1054" exclude="#Rm #Rl">
                   <app>
                             <lem>que de las rocas trepa a la marina,</lem>
@@ -6478,9 +6535,9 @@
                     <l xml:id="v-1075" exclude="#Rm #Rl">salen cual de torcidos</l>
                     <l xml:id="v-1076" exclude="#Rm #Rl">arcos, o nervïosos o acerados,</l>
                     <l n="1040" xml:id="v-1077" exclude="#Rm #Rl">con silbo <app>
-                            <lem>igual,</lem>
-                            <rdg type="error" wit="#O">ágil,</rdg>
-                        </app> dos veces diez saetas.</l>
+                            <lem>igual</lem>
+                            <rdg type="error" wit="#O">ágil</rdg>
+                        </app>, dos veces diez saetas.</l>
                     <l xml:id="v-1078" exclude="#Rm #Rl">No el polvo desparece</l>
                     <l xml:id="v-1079" exclude="#Rm #Rl">el campo, que no pisan <app>
                             <lem>alas hierba;</lem>
@@ -6574,7 +6631,7 @@
                     <l xml:id="v-1108" exclude="#Rm #Rl">
                   <app>
                             <lem>cerúlea ahora, ya purpúrea guía</lem>
-                            <rdg type="error" wit="#Br">cerúlea <add place="above">ahora,</add> ya purpúrea guía</rdg>
+                            <rdg type="error" wit="#Br">cerúlea <add place="above">ahora,</add>, ya purpúrea guía</rdg>
                             <rdg type="error" wit="#D">cerúlea ahora, ya purpérea guía</rdg>
                         </app>
                </l>
@@ -6593,7 +6650,7 @@
                         </app> quiso.</l>
                     <l xml:id="v-1114" exclude="#Rm #Rl">Solícita Junón, Amor no omiso,</l>
                     <l xml:id="v-1115" exclude="#Rm #Rl">al son de otra zampoña que conduce</l>
-                    <l xml:id="v-1116" exclude="#Rm #Rl">ninfas bellas, y sátiros lascivos,</l>
+                    <l xml:id="v-1116" exclude="#Rm #Rl">ninfas bellas,y sátiros lascivos,</l>
                     <l n="1080" xml:id="v-1117" exclude="#Rm #Rl">los desposados a su casa vuelven,</l>
                     <l xml:id="v-1118" exclude="#Rm #Rl">que coronada luce</l>
                     <l xml:id="v-1119" exclude="#Rm #Rl">de estrellas fijas, de astros fugitivos</l>
@@ -6617,7 +6674,7 @@
                             <rdg type="error" wit="#O">entra<del rend="strikethrough">n</del>
                             </rdg>
                         </app> en dura no estacada:</l>
-                    <l xml:id="v-1126" exclude="#Rm #Rl">que, siendo Amor una deidad alada,</l>
+                    <l xml:id="v-1126" exclude="#Rm #Rl">que, siendo Amoruna deidad alada,</l>
                     <l n="1090" xml:id="v-01127" exclude="#Rm #Rl">bien previno la hija de la espuma</l>
                     <l xml:id="v-01128" exclude="#Rm #Rl">
                   <app>
@@ -6656,7 +6713,6 @@
                     <l xml:id="v-1135" exclude="#Rm #Rl">no alada, sino undosa)</l>
                     <l xml:id="v-1136" exclude="#Rm #Rl">en el farol de Tetis solicita.</l>
                     <l xml:id="v-1137" exclude="#Rm #Rl">Muros desmantelando pues de arena,</l>
-                    <note>El testimonio S transmite debajo, como si fuera un verso independiente, «pues de arena».</note>
                     <l n="10" xml:id="v-1138" exclude="#Rm #Rl">
                   <app>
                             <lem>centauro</lem>
@@ -6787,7 +6843,6 @@
                                 </subst> instable puente.</rdg>
                         </app>
                     </l>
-                    <note>El testimonio S transmite «instable puente» debajo, como si fuera un verso independiente.</note>
                     <l xml:id="v-1177" exclude="#Rm #Rl">La proa diligente</l>
                     <l n="50" xml:id="v-1178" exclude="#Rm #Rl">no solo <app>
                             <lem>dirigió</lem>
@@ -6839,10 +6894,9 @@
                             <rdg type="error" wit="#Ml">ondas escorchando,</rdg>
                             <rdg type="error" wit="#J">olas escarchando,</rdg>
                             <rdg cert="low" type="error" wit="#N">ondas escar<subst>
-                                    <del rend="strikethrough">vando,</del>
-                                    <add place="above">chando,</add>
-                                </subst>
-                     </rdg>
+                                    <del rend="strikethrough">vando</del>
+                                    <add place="above">chando</add>
+                                </subst>,</rdg>
                             <rdg cert="low" type="error" wit="#S">ondas escar<subst>
                                     <del rend="strikethrough">nian</del>
                                     <add place="above">ch</add>
@@ -7073,13 +7127,13 @@
                             <rdg type="error" wit="#ho54">la</rdg>
                         </app> ha fïado</l>
                     <l xml:id="v-1250" exclude="#Rm #Rl">de tu fortuna aun más que de <app>
-                            <lem>su hado.</lem>
-                            <rdg type="error" wit="#A">tu hado.</rdg>
+                            <lem>su hado</lem>
+                            <rdg type="error" wit="#A">tu hado</rdg>
                             <rdg type="error" wit="#O">
                                 <subst>
                                     <del rend="strikethrough">tu</del>
                                     <add place="margin">su</add>
-                                </subst> hado.</rdg>
+                                </subst> hado</rdg>
                         </app>
                </l>
                 </lg>
@@ -7174,8 +7228,6 @@
                             <lem>mi culpa,</lem>
                             <rdg type="error" wit="#vi">mi desdén,</rdg>
                         </app> y tu desdén le guarde,</l>
-                    <note>La primera mano del testimonio Pr transcribió este verso partido en dos: «muera mi culpa, / y tu desdén le guarde»; a continuación, tachó y
-                        añadió el verso entero en el margen.</note>
                     <l xml:id="v-1281" exclude="#Rm #Rl">arrepentido tarde,</l>
                     <l xml:id="v-1282" exclude="#Rm #Rl">suspiro que mi muerte haga leda,</l>
                     <l n="155" xml:id="v-1283" exclude="#Rm #Rl">cuando no le suceda,</l>
@@ -7262,8 +7314,6 @@
                         <del rend="strikethrough">n</del>mudo</rdg>
                         </app>
                </l>
-                    <note>En el testimonio O la primera mano solo copió «Es» (de «Espongïoso») y luego dejó en blanco el resto
-                        del verso; la segunda mano añadió seguido lo que faltaba. Se trata, pues, de una corrección de una laguna.</note>
                     <l n="180" xml:id="v-1308" exclude="#Rm #Rl">el lagrimoso reconocimiento,</l>
                     <l xml:id="v-1309" exclude="#Rm #Rl">de cuyos dulces números no poca</l>
                     <l xml:id="v-1310" exclude="#Rm #Rl">concentüosa suma,</l>
@@ -7296,9 +7346,9 @@
                     </l>
                     <l xml:id="v-1314" exclude="#Rm #Rl">solicitó curiosa y guardó avara</l>
                     <l xml:id="v-1315" exclude="#Rm #Rl">la más <app>
-                            <lem>dulce,</lem>
-                            <rdg cert="low" type="error" wit="#Pr">breve,</rdg>
-                        </app> si no la menos clara</l>
+                            <lem>dulce</lem>
+                            <rdg cert="low" type="error" wit="#Pr">breve</rdg>
+                        </app>, si no la menos clara</l>
                     <l xml:id="v-1316" exclude="#Rm #Rl">sílaba, siendo en tanto</l>
                     <l xml:id="v-1317" exclude="#Rm #Rl">la vista de las chozas fin del canto.</l>
                 </lg>
@@ -7376,7 +7426,6 @@
                             <rdg type="error" wit="#S">sagrado Ner<add place="above">e</add>o</rdg>
                         </app>
                </l>
-                    <note>En el testimonio O la primera mano solo copió «del» y dejó un espacio en blanco que la segunda mano completó, es decir, «sagrado Nereo, no ya tanto» aparece añadido en otra tinta.</note>
                     <l xml:id="v-1339" exclude="#Rm #Rl">porque a la par de los escollos vive,</l>
                     <l xml:id="v-1340" exclude="#Rm #Rl">porque en el mar preside <app>
                             <lem>comarcano</lem>
@@ -7418,7 +7467,7 @@
                             <rdg type="error" wit="#Br">ofrece,</rdg>
                         </app>
                </l>
-                    <l xml:id="v-1347" exclude="#Rm #Rl">que engaños construyendo están de hilo.</l>
+                    <l xml:id="v-1347" exclude="#Rm #Rl">que engaños construyendo estánde hilo.</l>
                     <l n="220" xml:id="v-1348" exclude="#Rm #Rl">El huerto le da esotras, a quien debe,</l>
                     <l xml:id="v-1349" exclude="#Rm #Rl">
                   <app>
@@ -7570,7 +7619,7 @@
                             <rdg type="error" wit="#A">dulce</rdg>
                         </app> su muerte anuncia</l>
                     <l xml:id="v-1386" exclude="#Rm #Rl">entre la verde juncia,</l>
-                    <l xml:id="v-1387" exclude="#Rm #Rl">sus pollos este al mar conduce nuevos,</l>
+                    <l xml:id="v-1387" exclude="#Rm #Rl">sus pollos este al mar conduc enuevos,</l>
                     <l n="260" xml:id="v-1388" exclude="#Rm #Rl">
                         <app>
                             <lem>de Espío y de Nesea</lem>
@@ -7651,7 +7700,7 @@
                             <lem>ronca</lem>
                             <rdg type="error" wit="#O">ronco</rdg>
                         </app> gime</l>
-                    <l xml:id="v-1399" exclude="#Rm #Rl">la ave lasciva de la cipria diosa.</l>
+                    <l xml:id="v-1399" exclude="#Rm #Rl">la avelasciva de la cipria diosa.</l>
                     <l xml:id="v-1400" exclude="#Rm #Rl">Mástiles coronó menos <app>
                             <lem>crecidos</lem>
                             <rdg type="error" wit="#H #Pr">tejidos</rdg>
@@ -7726,24 +7775,31 @@
                     <l xml:id="v-1421" exclude="#Rm #O #Rl">de cortezas: en esta pues Cartago</l>
                     <l xml:id="v-1422" exclude="#Rm #O #Rl">
                   <app>
-                            <lem>reina la abeja, oro brillando vago,</lem>
-                            <rdg type="error" wit="#ho54">reina de la abeja, oro brillando vago,</rdg>
-                            <rdg type="error" wit="#D">reina la oveja, oro brillando vago,</rdg>
-                            <rdg type="error" wit="#Br">reina la abeja, ora brillando vago,</rdg>
-                            <rdg type="error" wit="#S">reina la abeja, brillando vago,</rdg>
+                            <lem>reina</lem>
+                            <rdg type="error" wit="#ho54">reina de</rdg>
+                        </app> la <app>
+                            <lem>abeja,</lem>
+                            <rdg type="error" wit="#D">oveja,</rdg>
+                        </app>
+                        <app>
+                            <lem>oro brillando vago,</lem>
+                            <rdg type="error" wit="#Br">ora brillando vago,</rdg>
+                            <rdg type="error" wit="#S">brillando vago,</rdg>
                         </app>
                </l>
                     <l n="295" xml:id="v-1423" exclude="#Rm #O #Rl">o el jugo beba de los aires puros,</l>
-                    <l xml:id="v-1424" exclude="#Rm #O #Rl">
-                  <app>
-                            <lem>o el sudor de los cielos, cuando liba</lem>
-                            <rdg type="error" wit="#S">o el <subst>
+                    <l xml:id="v-1424" exclude="#Rm #O #Rl">o el <app>
+                            <lem>sudor</lem>
+                            <rdg type="error" wit="#S">
+                                <subst>
                                     <del rend="strikethrough">sol</del>
                                     <add place="above">sudor</add>
-                                </subst> de los cielos, cuando liba</rdg>
-                            <rdg type="error" wit="#A">o el sudor de los cielos cielos, cuando liba</rdg>
-                        </app>
-               </l>
+                                </subst>
+                            </rdg>
+                        </app> de los <app>
+                            <lem>cielos</lem>
+                            <rdg type="error" wit="#A">cielos cielos</rdg>
+                        </app>, cuando liba</l>
                     <l xml:id="v-1425" exclude="#Rm #O #Rl">de las mudas estrellas la saliva;</l>
                     <l xml:id="v-1426" exclude="#Rm #O #Rl">burgo eran suyo el tronco informe, el breve</l>
                     <l xml:id="v-1427" exclude="#Rm #O #Rl">corcho, y moradas <app>
@@ -7823,9 +7879,12 @@
                     <l xml:id="v-1455" exclude="#Rm #O #Rl">de las escamas que vistió de plata.</l>
                     <l xml:id="v-1456" exclude="#Rm #O #Rl">
                   <app>
-                            <lem>Seis chopos, de seis hiedras abrazados,</lem>
-                            <rdg type="error" wit="#S">Seis chopos abrazados de seis hiedras,</rdg>
-                            <rdg type="error" wit="#Ml">Seis chopos, de seis hiedras abrazadas,</rdg>
+                            <lem>Seis chopos,</lem>
+                            <rdg type="error" wit="#S">Seis chopos, abrazados</rdg>
+                        </app> de seis <app>
+                            <lem>hiedras abrazados,</lem>
+                            <rdg type="error" wit="#Ml">hiedras abrazadas,</rdg>
+                            <rdg type="error" wit="#S">hiedras,</rdg>
                         </app>
                </l>
                     <l xml:id="v-1457" exclude="#Rm #O #Rl">tirsos eran del griego dios nacido</l>
@@ -7836,16 +7895,18 @@
                         </app> desmiente</l>
                     <l xml:id="v-1459" exclude="#Rm #O #Rl">los cuernos de su frente;</l>
                     <l xml:id="v-1460" exclude="#Rm #O #Rl">y cual mancebos tejen anudados</l>
-                    <l xml:id="v-1461" exclude="#Rm #O #Rl">
-                  <app>
-                            <lem>festivos corros en alegre ejido,</lem>
-                            <rdg type="error" wit="#ho33 #sa #ho54">festivos coros en alegre ejido,</rdg>
-                            <rdg cert="low" type="error" wit="#N">festivos corros en alegre <subst>
+                    <l xml:id="v-1461" exclude="#Rm #O #Rl">festivos <app>
+                            <lem>corros</lem>
+                            <rdg type="error" wit="#ho33 #sa #ho54">coros</rdg>
+                        </app> en alegre <app>
+                            <lem>ejido,</lem>
+                            <rdg cert="low" type="error" wit="#N">
+                                <subst>
                                     <del rend="strikethrough">gido,</del>
                                     <add place="inline">egido,</add>
                                 </subst>
                             </rdg>
-                            <rdg type="error" wit="#S">festivos corros en alegre guido,</rdg>
+                            <rdg type="error" wit="#S">guido,</rdg>
                         </app>
                </l>
                     <l xml:id="v-1462" exclude="#Rm #O #Rl">
@@ -7896,8 +7957,8 @@
                             <rdg wit="#Ml" type="error">Sentados pues sin ceremonia, ellas</rdg>
                             <rdg wit="#Pr">Sentados pues <subst>
                                     <del rend="strikethrough">los cuatros en corchos</del>
-                                    <add place="above">sin ceremonias,</add>
-                                </subst> ellas</rdg>
+                                    <add place="above">sin ceremonias</add>
+                                </subst>, ellas</rdg>
                         </app>
                     </l>
                     <l xml:id="v-1475" exclude="#Rm #O #Rl">
@@ -7918,8 +7979,6 @@
                                 <del rend="strikethrough">mas</del> con silencio <del rend="strikethrough">mucho</del> les sirvieron.</rdg>
                         </app>
                </l>
-                    <note>La segunda mano del testimonio Pr actualiza la versión del poema tachando «mas» y «mucho»; pero, por
-                        error, no tachó el pronombre personal «les».</note>
                     <l xml:id="v-1477" exclude="#Rm #O #Rl">Rompida el agua en las menudas piedras,</l>
                     <l n="350" xml:id="v-1478" exclude="#Rm #O #Rl">cristalina sonante era tïorba,</l>
                     <l xml:id="v-1479" exclude="#Rm #O #Rl">y las confusamente acordes aves,</l>
@@ -7958,18 +8017,22 @@
                         </app> pescador a la divina</l>
                     <l xml:id="v-1491" exclude="#Rm #O #Rl">próvida mano, «¡Oh bien vividos años,</l>
                     <l xml:id="v-1492" exclude="#Rm #O #Rl">oh canas —dijo el huésped— no peinadas</l>
-                    <l n="365" xml:id="v-1493" exclude="#Rm #O #Rl">
-                  <app>
-                            <lem>con boj dentado o con rayada espina,</lem>
-                            <rdg type="error" wit="#N">con boj dentado o con rayada <subst>
+                    <l n="365" xml:id="v-1493" exclude="#Rm #O #Rl">con <app>
+                            <lem>boj</lem>
+                            <rdg cert="low" type="error" wit="#S">
+                                <subst>
+                                    <del rend="unmarked">b</del>
+                                    <add place="above">h</add>
+                                </subst>oj </rdg>
+                        </app> dentado o con rayada <app>
+                            <lem>espina,</lem>
+                            <rdg type="error" wit="#N">
+                                <subst>
                                     <del rend="strikethrough">espada,</del>
                                     <add place="inline">espina,</add>
                                 </subst>
                             </rdg>
-                            <rdg cert="low" type="error" wit="#S">con <subst>
-                                    <del rend="unmarked">b</del>
-                                    <add place="above">h</add>
-                                </subst>oj dentado o con rayada espada,</rdg>
+                            <rdg type="error" wit="#S">espada,</rdg>
                         </app>
                </l>
                     <l xml:id="v-1494" exclude="#Rm #O #Rl">sino con verdaderos desengaños!</l>
@@ -7979,27 +8042,32 @@
                         </app> esta esmeralda bruta</l>
                     <l xml:id="v-1496" exclude="#Rm #O #Rl">
                   <app>
-                            <lem>en mármol engastada siempre undoso,</lem>
+                            <lem>en</lem>
                             <rdg type="error" wit="#A">e<subst>
                                     <del rend="strikethrough">l</del>
                                     <add place="margin">n</add>
-                                </subst> mármol engastada siempre undoso,</rdg>
-                            <rdg type="error" wit="#N #S">en mármol engastada siempre undosa,</rdg>
+                                </subst>
+                            </rdg>
+                        </app> mármol engastada siempre <app>
+                            <lem>undoso,</lem>
+                            <rdg type="error" wit="#N #S">undosa,</rdg>
                         </app>
                </l>
-                    <l xml:id="v-1497" exclude="#Rm #O #Rl">
-                  <app>
-                            <lem>jubilando la red en los que os restan</lem>
-                            <rdg type="error" wit="#A">jubilando la red en las que os restan</rdg>
-                            <rdg type="error" wit="#S">jubilando la re<subst>
+                    <l xml:id="v-1497" exclude="#Rm #O #Rl">jubilando la <app>
+                            <lem>red</lem>
+                            <rdg type="error" wit="#S">re<subst>
                                     <del rend="strikethrough">al</del>
                                     <add place="above">d</add>
-                                </subst> en l<subst>
+                                </subst>
+                            </rdg>
+                        </app> en <app>
+                            <lem>los</lem>
+                            <rdg type="error" wit="#A">las</rdg>
+                            <rdg type="error" wit="#S">l<subst>
                                     <del rend="strikethrough">a</del>
                                     <add place="above">o</add>
-                                </subst>s que os restan</rdg>
-                        </app>
-               </l>
+                                </subst>s</rdg>
+                        </app> que os restan</l>
                     <l n="370" xml:id="v-1498" exclude="#Rm #O #Rl">felices años, y la humedecida,</l>
                     <l xml:id="v-1499" exclude="#Rm #O #Rl">o poco rato enjuta,</l>
                     <l xml:id="v-1500" exclude="#Rm #O #Rl">próxima arena de esa <app>
@@ -8063,7 +8131,7 @@
                     <l xml:id="v-1515" exclude="#Rm #O #Rl">que ejemplos de dolor a estas orillas».</l>
                 </lg>
                 <lg xml:id="g-64">
-                    <l rend="indent" xml:id="v-1516" exclude="#Rm #O #Rl">«Días ha muchos, oh mancebo —dijo</l>
+                    <l rend="indent" xml:id="v-1516" exclude="#Rm #O #Rl">«Días ha muchos,oh mancebo —dijo</l>
                     <l xml:id="v-1517" exclude="#Rm #O #Rl">el pescador anciano—,</l>
                     <l n="390" xml:id="v-1518" exclude="#Rm #O #Rl">que en el uno cedí y el otro hermano</l>
                     <l xml:id="v-1519" exclude="#Rm #O #Rl">el duro remo, el cáñamo prolijo:</l>
@@ -8104,10 +8172,13 @@
                         </app> teatro de Fortuna</l>
                     <l xml:id="v-1530" exclude="#Rm #O #Rl">
                   <app>
-                            <lem>descubro, ese voraz, ese profundo</lem>
-                            <rdg type="error" wit="#ho33">descubrió, ese voraz, ese profundo</rdg>
-                            <rdg type="error" wit="#I">descubro, este voraz, ese profundo</rdg>
-                            <rdg type="variant" wit="#Pr">descubro, ese voraz, <subst>
+                            <lem>descubro</lem>
+                            <rdg type="error" wit="#ho33">descubrió</rdg>
+                        </app>, ese voraz, <app>
+                            <lem>ese profundo</lem>
+                            <rdg type="error" wit="#I">este profundo</rdg>
+                            <rdg type="variant" wit="#Pr">
+                                <subst>
                                     <del rend="strikethrough">si no sediento</del>
                                     <add place="above">ese profundo</add>
                                 </subst>
@@ -8198,14 +8269,14 @@
                     <l xml:id="v-1547" exclude="#Rm #O #Rl">cazar a Tetis veo,</l>
                     <l n="420" xml:id="v-1548" exclude="#Rm #O #Rl">y pescar a Dïana en dos barquillas:</l>
                     <l xml:id="v-1549" exclude="#Rm #O #Rl">náuticas venatorias maravillas</l>
-                    <l xml:id="v-1550" exclude="#Rm #O #Rl">
-                  <app>
-                            <lem>de mis hijas oirás, ambiguo coro</lem>
-                            <rdg type="error" wit="#ho33">de mis hijos oirás, ambiguo coro</rdg>
-                            <rdg type="error" wit="#Ml">de mis hijas oirás, ambigo coro</rdg>
-                            <rdg type="error" wit="#S">de mis hijas oirás, amigo coro</rdg>
-                        </app>
-               </l>
+                    <l xml:id="v-1550" exclude="#Rm #O #Rl">de mis <app>
+                            <lem>hijas</lem>
+                            <rdg type="error" wit="#ho33">hijos</rdg>
+                        </app> oirás, <app>
+                            <lem>ambiguo</lem>
+                            <rdg type="error" wit="#Ml">ambigo</rdg>
+                            <rdg type="error" wit="#S">amigo</rdg>
+                        </app>coro</l>
                     <l xml:id="v-1551" exclude="#Rm #O #Rl">menos de aljaba que de red armado,</l>
                     <l xml:id="v-1552" exclude="#Rm #O #Rl">de cuyo, si no alado,</l>
                     <l n="425" xml:id="v-1553" exclude="#Rm #O #Rl">arpón <app>
@@ -8267,15 +8338,15 @@
                </l>
                     <l xml:id="v-1569" exclude="#Rm #O #Rl">Rindióse al fin la bestia, y las almenas</l>
                     <l xml:id="v-1570" exclude="#Rm #O #Rl">de las sublimes rocas salpicando,</l>
-                    <l xml:id="v-1571" exclude="#Rm #O #Rl">
-                  <app>
-                            <lem>las peñas embistió, peña escamada,</lem>
-                            <rdg type="error" wit="#S">las peñas embestió, peña escamada,</rdg>
-                            <rdg type="error" wit="#N">las peñas embistió, peina escamada,</rdg>
+                    <l xml:id="v-1571" exclude="#Rm #O #Rl">las peñas <app>
+                            <lem>embistió,</lem>
+                            <rdg type="error" wit="#S">embestió,</rdg>
                         </app>
-               </l>
+                        <app>
+                            <lem>peña</lem>
+                            <rdg type="error" wit="#N">peina</rdg>
+                        </app> escamada,</l>
                     <l xml:id="v-1572" exclude="#Rm #O #Rl">en ríos de agua y sangre desatada.</l>
-                    <note>El copista del testimonio Q repitió a continuación los versos 441-444.</note>
                     <l n="445" xml:id="v-1573" exclude="#Rm #O #Rl">Éfire luego, la que en el torcido</l>
                     <l xml:id="v-1574" exclude="#Rm #O #Rl">luciente nácar <app>
                             <lem>te</lem>
@@ -8310,14 +8381,16 @@
                             <rdg type="error" wit="#ho54">lagras,</rdg>
                         </app> temiendo</l>
                     <l n="455" xml:id="v-1583" exclude="#Rm #O #Rl #Ml">no al fiero tiburón, verdugo horrendo</l>
-                    <l xml:id="v-1584" exclude="#Rm #O #Rl #Ml">
-                  <app>
-                            <lem>del náufrago ambicioso mercadante,</lem>
-                            <rdg type="error" wit="#ho54">del náufrago ambicioso mereadante,</rdg>
-                            <rdg type="error" wit="#S">del naufrag<subst>
+                    <l xml:id="v-1584" exclude="#Rm #O #Rl #Ml">del <app>
+                            <lem>náufrago</lem>
+                            <rdg type="error" wit="#S">naufrag<subst>
                                     <del rend="strikethrough">io</del>
                                     <add place="above">o</add>
-                                </subst> ambicioso mercadante,</rdg>
+                                </subst>
+                            </rdg>
+                        </app> ambicioso <app>
+                            <lem>mercadante,</lem>
+                            <rdg type="error" wit="#ho54">mereadante,</rdg>
                         </app>
                </l>
                     <l xml:id="v-1585" exclude="#Rm #O #Rl #Ml">ni al otro cuyo nombre</l>
@@ -8348,18 +8421,19 @@
                             <rdg type="error" wit="#vi">cuando</rdg>
                         </app>
                </l>
-                    <l xml:id="v-1597" exclude="#Rm #O #Rl">
-                        <app>
-                            <lem>(penda o nade) la vista no lo pierda,</lem>
-                            <rdg type="error" wit="#A">(penda o nada) la vista no le pierda,</rdg>
-                            <rdg type="error" wit="#Ch #pe">(penda o nade) la vista no le pierda,</rdg>
-                            <rdg cert="low" type="error" wit="#C">(penda o nade) la vista no la pierda,</rdg>
-                            <rdg type="error" wit="#N">(penda o nade) la vista no l<subst>
+                    <l xml:id="v-1597" exclude="#Rm #O #Rl">(penda o <app>
+                            <lem>nade)</lem>
+                            <rdg type="error" wit="#A">nada)</rdg>
+                        </app> la vista no <app>
+                            <lem>lo</lem>
+                            <rdg type="error" wit="#A #Ch #pe">le</rdg>
+                            <rdg cert="low" type="error" wit="#C">la</rdg>
+                            <rdg type="error" wit="#N">l<subst>
                                     <del rend="overwritten">o</del>
                                     <add place="inline">e</add>
-                                </subst> pierda,</rdg>
-                        </app>
-               </l>
+                                </subst>
+                            </rdg>
+                        </app> pierda,</l>
                     <l n="470" xml:id="v-1598" exclude="#Rm #O #Rl">el golpe solicita, el bulto mueve</l>
                     <l xml:id="v-1599" exclude="#Rm #O #Rl">prodigïosos moradores ciento</l>
                     <l xml:id="v-1600" exclude="#Rm #O #Rl">del líquido elemento.</l>
@@ -8409,12 +8483,13 @@
                     <l n="490" xml:id="v-1618" exclude="#Rm #O #Rl">la fiera (horror del agua) cometiendo</l>
                     <l xml:id="v-1619" exclude="#Rm #O #Rl">
                   <app>
-                            <lem>ya a la violencia, ya a la fuga el modo</lem>
-                            <rdg type="error" wit="#Br">a la violencia, ya la fuga el modo</rdg>
-                            <rdg type="error" wit="#Ml">a la violencia y a la fuga el modo</rdg>
-                            <rdg type="error" wit="#ho33">ya la violencia, ya a la fuga el modo</rdg>
-                        </app>
-               </l>
+                            <lem>ya a</lem>
+                            <rdg type="error" wit="#Br #Ml">a</rdg>
+                            <rdg type="error" wit="#ho33">ya</rdg>
+                        </app> la violencia, <app>
+                            <lem>ya a</lem>
+                            <rdg type="error" wit="#Ml">y a</rdg>
+                        </app> la fuga el modo</l>
                     <l xml:id="v-1620" exclude="#Rm #O #Rl">de sacudir el asta,</l>
                     <l xml:id="v-1621" exclude="#Rm #O #Rl">que (alterando el abismo <app>
                             <lem>o</lem>
@@ -8426,13 +8501,13 @@
                             </rdg>
                         </app> discurriendo</l>
                     <l xml:id="v-1622" exclude="#Rm #O #Rl">el océano todo)</l>
-                    <l n="495" xml:id="v-1623" exclude="#Rm #O #Rl">
-                  <app>
-                            <lem>no perdona al acero que la engasta.</lem>
-                            <rdg type="error" wit="#Ml">no perdona el acero que la engasta.</rdg>
-                            <rdg type="error" wit="#Br">no perdona al acero que le engasta.</rdg>
-                        </app>
-               </l>
+                    <l n="495" xml:id="v-1623" exclude="#Rm #O #Rl">no perdona <app>
+                            <lem>al</lem>
+                            <rdg type="error" wit="#Ml">el</rdg>
+                        </app>acero que <app>
+                            <lem>la</lem>
+                            <rdg type="error" wit="#Br">le</rdg>
+                        </app> engasta.</l>
                     <l xml:id="v-1624" exclude="#Rm #O #Rl">Éfire en tanto al cáñamo <app>
                             <lem>torcido</lem>
                             <rdg type="error" wit="#Br">trocido</rdg>
@@ -8456,12 +8531,13 @@
                     <l n="500" xml:id="v-1628" exclude="#Rm #O #Rl">cuando cerca de aquel peinado escollo</l>
                     <l xml:id="v-1629" exclude="#Rm #O #Rl">
                   <app>
-                            <lem>hervir las olas vio templadamente,</lem>
-                            <rdg type="error" wit="#S">hervri las olas vio templadamente,</rdg>
-                            <rdg type="error" wit="#Br">hervir las ondas vio templadamente,</rdg>
-                            <rdg type="error" wit="#Pr">hervir las aguas vio templadamente,</rdg>
-                        </app>
-               </l>
+                            <lem>hervir</lem>
+                            <rdg type="error" wit="#S">hervri</rdg>
+                        </app> las <app>
+                            <lem>olas</lem>
+                            <rdg type="error" wit="#Br">ondas</rdg>
+                            <rdg type="error" wit="#Pr">aguas</rdg>
+                        </app> vio templadamente,</l>
                     <l xml:id="v-1630" exclude="#Rm #O #Rl">bien que haciendo círculos perfetos;</l>
                     <l xml:id="v-1631" exclude="#Rm #O #Rl">escogió pues, de cuatro o cinco abetos,</l>
                     <l xml:id="v-1632" exclude="#Rm #O #Rl">el de cuchilla más resplandeciente,</l>
@@ -8479,16 +8555,18 @@
                                 </subst>
                             </rdg>
                         </app> triunfando,</l>
-                    <l xml:id="v-1635" exclude="#Rm #O #Rl">
-                  <app>
-                            <lem>y aun el siguiente sol no vimos, cuando</lem>
-                            <rdg type="error" wit="#S">y an el siguiente sol no vemos, cuando</rdg>
-                            <rdg type="error" wit="#N">y aun el <subst>
+                    <l xml:id="v-1635" exclude="#Rm #O #Rl">y aun el <app>
+                            <lem>siguiente</lem>
+                            <rdg type="error" wit="#N">
+                                <subst>
                                     <del rend="underlined">segundo</del>
                                     <add place="margin">siguiente</add>
-                                </subst> sol no vimos, cuando</rdg>
-                        </app>
-               </l>
+                                </subst>
+                            </rdg>
+                        </app> sol no <app>
+                            <lem>vimos,</lem>
+                            <rdg type="error" wit="#S">vemos,</rdg>
+                        </app> cuando</l>
                     <l xml:id="v-1636" exclude="#Rm #O #Rl">en la ribera vimos convecina</l>
                     <l xml:id="v-1637" exclude="#Rm #O #Rl">
                   <app>
@@ -8665,15 +8743,17 @@
                                 </subst>
                             </rdg>
                         </app> leño de la mayor urca</l>
-                    <l n="565" xml:id="v-1693" exclude="#Rm #Pr #O #Rl">
-                  <app>
-                            <lem>que velera un Neptuno y otro surca,</lem>
-                            <rdg type="error" wit="#Br">que velora un Neptuno y otr<subst>
+                    <l n="565" xml:id="v-1693" exclude="#Rm #Pr #O #Rl">que <app>
+                            <lem>velera</lem>
+                            <rdg type="error" wit="#Br">velora</rdg>
+                        </app> un Neptuno y <app>
+                            <lem>otro</lem>
+                            <rdg type="error" wit="#Br">otr<subst>
                                     <del rend="strikethrough">a</del>
                                     <add place="above">o</add>
-                                </subst> surca,</rdg>
-                        </app>
-               </l>
+                                </subst>
+                            </rdg>
+                        </app> surca,</l>
                     <l xml:id="v-1694" exclude="#Rm #Pr #O #Rl">y tus prisiones ya arrastraba graves;</l>
                     <l xml:id="v-1695" exclude="#Rm #Pr #O #Rl">si dudas lo que sabes,</l>
                     <l xml:id="v-1696" exclude="#Rm #Pr #O #Rl">lee cuanto han <app>
@@ -8706,21 +8786,23 @@
                      </rdg>
                         </app>
                </l>
-                    <l xml:id="v-1706" exclude="#Rm #Pr #O #Rl">cristal (agua al fin dulcemente dura),</l>
+                    <l xml:id="v-1706" exclude="#Rm #Pr #O #Rl">Cristal (agua al fin dulcemente dura),</l>
                     <l xml:id="v-1707" exclude="#Rm #Pr #O #Rl">envidia califique mi figura</l>
                     <l n="580" xml:id="v-1708" exclude="#Rm #Pr #O #Rl">de musculosos jóvenes desnudos.</l>
                     <l xml:id="v-1709" exclude="#Rm #Pr #O #Rl">Menos dio al bosque nudos</l>
-                    <l xml:id="v-1710" exclude="#Rm #Pr #O #Rl">
-                  <app>
-                            <lem>que yo al mar, el que a un dios hizo valiente</lem>
-                            <rdg type="error" wit="#S">que yo al mar, el que a un dios hace valiente</rdg>
-                            <rdg type="error" wit="#C">que yo al mar, el que aun dios hizo valiente</rdg>
-                            <rdg type="error" wit="#N">que yo al mar, el que a un dios <subst>
+                    <l xml:id="v-1710" exclude="#Rm #Pr #O #Rl">que yo al mar, el que <app>
+                            <lem>a un</lem>
+                            <rdg type="error" wit="#C">aun</rdg>
+                        </app> dios <app>
+                            <lem>hizo</lem>
+                            <rdg type="error" wit="#N">
+                                <subst>
                                     <del rend="strikethrough">hace</del>
                                     <add place="above">hizo</add>
-                                </subst> valiente</rdg>
-                        </app>
-               </l>
+                                </subst>
+                            </rdg>
+                            <rdg type="error" wit="#S">hace</rdg>
+                        </app> valiente</l>
                     <l xml:id="v-1711" exclude="#Rm #Pr #O #Rl">mentir cerdas, celoso espumar diente».</l>
                 </lg>
                 <lg xml:id="g-72">
@@ -8728,27 +8810,30 @@
                     <l rend="indent" xml:id="v-1712" exclude="#Rm #Pr #O #Rl">«Cuantos pedernal duro</l>
                     <l n="585" xml:id="v-1713" exclude="#Rm #Pr #O #Rl">
                   <app>
-                            <lem>bruñe nácares boto, agudo raya</lem>
-                            <rdg type="error" wit="#A">b<add place="above">r</add>uñe nácares boto, agudo raya</rdg>
-                            <rdg type="error" wit="#S">bruña nácares boto, agudo raya</rdg>
-                            <rdg type="error" wit="#ho54">bruñe nácares boto, aguyo raya</rdg>
-                        </app>
-               </l>
+                            <lem>bruñe</lem>
+                            <rdg type="error" wit="#A">b<add place="above">r</add>uñe</rdg>
+                            <rdg type="error" wit="#S">bruña</rdg>
+                        </app> nácares boto, <app>
+                            <lem>agudo</lem>
+                            <rdg type="error" wit="#ho54">aguyo</rdg>
+                        </app> raya</l>
                     <l xml:id="v-1714" exclude="#Rm #Pr #O #Rl">en la oficina undosa de esta playa,</l>
                     <l xml:id="v-1715" exclude="#Rm #Pr #O #Rl">
                   <app>
-                            <lem>tantos Palemo a su Leucote bella</lem>
-                            <rdg type="error" wit="#S">tantas Palemo a su Licote bella</rdg>
-                            <rdg type="error" wit="#J">tantos Polemo a su Licote bella</rdg>
-                            <rdg type="error" wit="#A #C #Ch #D #E #H #I #Ml #N #Q #vi #ho33 #pe #ho54">tantos Palemo a su Licote bella</rdg>
-                            <rdg type="error" wit="#sa">tantos Palemo a su Licori bella</rdg>
-                        </app>
-               </l>
+                            <lem>tantos Palemo</lem>
+                            <rdg type="error" wit="#S">tantas Palemo</rdg>
+                            <rdg type="error" wit="#J">tantos Polemo</rdg>
+                        </app> a su <app>
+                            <lem> Leucote </lem>
+                            <rdg type="error"
+                          wit="#A #C #Ch #D #E #H #I #J #Ml #N #Q #S #vi #ho33 #pe #ho54">Licote</rdg>
+                            <rdg type="error" wit="#sa">Licori</rdg>
+                        </app> bella</l>
                     <l xml:id="v-1716" exclude="#Rm #Pr #O #Rl">
                   <app>
-                            <lem>suspende,</lem>
-                            <rdg type="error" wit="#S">suspenda,</rdg>
-                        </app> y tantos ella</l>
+                            <lem>suspende</lem>
+                            <rdg type="error" wit="#S">suspenda</rdg>
+                        </app>, y tantos ella</l>
                     <l xml:id="v-1717" exclude="#Rm #Pr #O #Rl">al flaco da, que me <app>
                             <lem>construyen</lem>
                             <rdg cert="low" type="error" wit="#S">constriñen</rdg>
@@ -8864,11 +8949,8 @@
                </l>
                     <l xml:id="v-1755" exclude="#Rm #Pr #O #Rl">alterno canto dulce fue lisonja!</l>
                     <l xml:id="v-1756" exclude="#Rm #Pr #O #Rl">¿Qué mucho, si avarienta ha sido esponja</l>
-                    <note>En el testimonio Br este verso aparece añadido en el margen.</note>
                     <l xml:id="v-1757" exclude="#Rm #Pr #O #Rl">del néctar numeroso</l>
-                    <note>En el testimonio Br este verso aparece añadido en el margen.</note>
                     <l n="630" xml:id="v-1758" exclude="#Rm #Pr #O #Rl">el escollo más duro?</l>
-                    <note>En el testimonio Br este verso aparece añadido en el margen.</note>
                     <l xml:id="v-1759" exclude="#Rm #Pr #O #Rl">¿Qué mucho, si el candor bebió ya puro</l>
                     <l xml:id="v-1760" exclude="#Rm #Pr #O #Rl">de la virginal copia, en la armonía,</l>
                     <l xml:id="v-1761" exclude="#Rm #Pr #O #Rl">el veneno del ciego <app>
@@ -8880,21 +8962,21 @@
                     <l n="635" xml:id="v-1763" exclude="#Rm #Pr #O #Rl">Generosos afectos de una pía</l>
                     <l xml:id="v-1764" exclude="#Rm #Pr #O #Rl">doliente afinidad, bien que amorosa</l>
                     <l xml:id="v-1765" exclude="#Rm #Pr #O #Rl">por bella más, por más divina parte,</l>
-                    <l xml:id="v-1766" exclude="#Rm #Pr #O #Rl">
-                  <app>
-                            <lem>solicitan su pecho a que (sin arte</lem>
-                            <rdg type="error" wit="#C">solicitan su pechos a que (sin arte</rdg>
-                            <rdg type="error" wit="#S">solicitan su pecho a que (sni arte</rdg>
-                        </app>
-               </l>
+                    <l xml:id="v-1766" exclude="#Rm #Pr #O #Rl">solicitan su <app>
+                            <lem>pecho</lem>
+                            <rdg type="error" wit="#C">pechos</rdg>
+                        </app> a que <app>
+                            <lem>(sin</lem>
+                            <rdg type="error" wit="#S">(sni</rdg>
+                        </app> arte</l>
                     <l xml:id="v-1767" exclude="#Rm #Pr #O #Rl #S">de colores prolijos)</l>
                     <l n="640" xml:id="v-1768" exclude="#Rm #Pr #O #Rl">en oración impetre oficïosa</l>
                     <l xml:id="v-1769" exclude="#Rm #Pr #O #Rl">del venerable isleño</l>
                     <l xml:id="v-1770" exclude="#Rm #Pr #O #Rl">que <app>
                             <lem>admita</lem>
                             <rdg type="error" wit="#D">admira</rdg>
-                        </app> yernos los que el trato hijos</l>
-                    <note>El copista de Ml repitió debajo «los que el trato hijos»; debió de darse cuenta del error porque a continuación tachó.</note>
+                        </app> yernos los que el trato hijos
+                    </l>
                     <l xml:id="v-1771" exclude="#Rm #Pr #O #Rl">litoral hizo, aun antes</l>
                     <l xml:id="v-1772" exclude="#Rm #Pr #O #Rl">que el convecino ardor dulces amantes.</l>
                     <l n="645" xml:id="v-1773" exclude="#Rm #Pr #O #Rl">Concediólo risueño,</l>
@@ -8947,13 +9029,13 @@
                     <l xml:id="v-1789" exclude="#Rm #Pr #O #Rl">sino a dos entre cáñamo garzones!</l>
                     <l xml:id="v-1790" exclude="#Rm #Pr #O #Rl">¿Por qué? Por escultores quizá vanos</l>
                     <l xml:id="v-1791" exclude="#Rm #Pr #O #Rl">de tantos de tu madre bultos canos</l>
-                    <l xml:id="v-1792" exclude="#Rm #Pr #O #Rl">
-                  <app>
-                            <lem>cuantas al mar espumas dan sus remos.</lem>
-                            <rdg type="error" wit="#C">cuantas el mar espumas dan sus remos.</rdg>
-                            <rdg type="error" wit="#vi">cuantas al mar espumas dan tus remos.</rdg>
-                        </app>
-               </l>
+                    <l xml:id="v-1792" exclude="#Rm #Pr #O #Rl">cuantas <app>
+                            <lem>al</lem>
+                            <rdg type="error" wit="#C">el</rdg>
+                        </app> mar espumas dan <app>
+                            <lem>sus</lem>
+                            <rdg type="error" wit="#vi">tus</rdg>
+                        </app> remos.</l>
                     <l n="665" xml:id="v-1793" exclude="#Rm #Pr #O #Rl">Al peregrino por tu <app>
                             <lem>causa</lem>
                             <rdg type="error" wit="#J #N #S">casa</rdg>
@@ -9000,9 +9082,9 @@
                             <rdg type="error" wit="#J"/>
                         </app> esplendor overo</l>
                     <l xml:id="v-1807" exclude="#Rm #Pr #O #Rl">del luminoso <app>
-                            <lem>tiro,</lem>
-                            <rdg type="error" wit="#C">liro,</rdg>
-                        </app> las pendientes</l>
+                            <lem>tiro</lem>
+                            <rdg type="error" wit="#C">liro</rdg>
+                        </app>, las pendientes</l>
                     <l n="680" xml:id="v-1808" exclude="#Rm #Pr #O #Rl">ponían de <app>
                             <lem>crisólitos</lem>
                             <rdg type="error" wit="#ho54">crisolíticos</rdg>
@@ -9024,13 +9106,13 @@
                             <lem>livor</lem>
                             <rdg type="error" wit="#D">licor</rdg>
                         </app> aun purpúreo de las focas,</l>
-                    <l xml:id="v-1817" exclude="#Rm #Pr #O #Rl">
-                  <app>
-                            <lem>y de la firme tierra el heno blando</lem>
-                            <rdg type="error" wit="#vi">y de la firme hierba el heno blando</rdg>
-                            <rdg type="error" wit="#D">y de la firme tierra el leño blando</rdg>
-                        </app>
-               </l>
+                    <l xml:id="v-1817" exclude="#Rm #Pr #O #Rl">y de la firme <app>
+                            <lem>tierra</lem>
+                            <rdg type="error" wit="#vi">hierba</rdg>
+                        </app> el <app>
+                            <lem>heno</lem>
+                            <rdg type="error" wit="#D">leño</rdg>
+                        </app> blando</l>
                     <l n="690" xml:id="v-1818">con las palas segando,</l>
                     <l xml:id="v-1819">en la cumbre modesta</l>
                     <l xml:id="v-1820" exclude="#Rm #Pr #O #Rl">de una desigualdad <app>
@@ -9101,21 +9183,24 @@
                     <l xml:id="v-1850" exclude="#Rm #Pr #O #Rl">cuyo número indigna la ribera.</l>
                 </lg>
                 <lg xml:id="g-81">
-                    <l rend="indent" xml:id="v-1851" exclude="#Rm #Pr #O #Rl">
-                  <app>
-                            <lem>Al sol levantó apenas la ancha frente</lem>
-                            <rdg type="error" wit="#Ch #sa">Al son levantó apenas la ancha frente</rdg>
-                            <rdg type="error" wit="#A">Al sol levantó apenas la <subst>
+                    <l rend="indent" xml:id="v-1851" exclude="#Rm #Pr #O #Rl">Al <app>
+                            <lem>sol</lem>
+                            <rdg type="error" wit="#Ch #sa">son</rdg>
+                        </app> levantó apenas la <app>
+                            <lem>ancha frente</lem>
+                            <rdg type="error" wit="#A">
+                                <subst>
                                     <del rend="annotation">anca fuente</del>
                                     <add place="margin">ancha frente</add>
                                 </subst>
                             </rdg>
-                            <rdg type="error" wit="#D">Al sol levantó apenas la <subst>
+                            <rdg type="error" wit="#D">
+                                <subst>
                                     <del rend="annotation">alta</del>
                                     <add place="margin">ancha</add>
-                                </subst> frente</rdg>
+                                </subst> frente </rdg>
                         </app>
-               </l>
+                    </l>
                     <l xml:id="v-1852" exclude="#Rm #Pr #O #Rl">el veloz hijo ardiente</l>
                     <l n="725" xml:id="v-1853" exclude="#Rm #Pr #O #Rl">del <app>
                             <lem> Céfiro </lem>
@@ -9126,7 +9211,7 @@
                             <rdg type="error" wit="#J">el</rdg>
                         </app> genitivo</l>
                     <l xml:id="v-1855" exclude="#Rm #Pr #O #Rl">soplo vistiendo miembros, Guadalete</l>
-                    <l xml:id="v-1856" exclude="#Rm #Pr #O #Rl">florida ambrosia al viento dio jinete,</l>
+                    <l xml:id="v-1856" exclude="#Rm #Pr #O #Rl">florida ambrosia al viento diojinete,</l>
                     <l xml:id="v-1857" exclude="#Rm #Pr #O #Rl">que a mucho humo <app>
                             <lem>abriendo</lem>
                             <rdg cert="low" type="error" wit="#Ml">abiendo</rdg>
@@ -9141,11 +9226,12 @@
                         </app> día,</l>
                     <l xml:id="v-1862" exclude="#Rm #Pr #O #Rl">
                   <app>
-                            <lem>les responden, la eclíptica ascendiendo.</lem>
-                            <rdg type="error" wit="#pe">le responde, la eclíptica ascendiendo.</rdg>
-                            <rdg type="error" wit="#Ml">les responden, el eclíptica ascendiendo.</rdg>
-                        </app>
-               </l>
+                            <lem>les</lem>
+                            <rdg type="error" wit="#pe">le</rdg>
+                        </app> responden, <app>
+                            <lem>la</lem>
+                            <rdg type="error" wit="#Ml">el</rdg>
+                        </app> eclíptica ascendiendo.</l>
                     <l n="735" xml:id="v-1863" exclude="#Rm #Pr #O #Rl">Entre <app>
                             <lem>el</lem>
                             <rdg type="error" wit="#ho54"/>
@@ -9153,9 +9239,11 @@
                     <l xml:id="v-1864" exclude="#Rm #Pr #O #Rl">de los caballos, ruda hace armonía</l>
                     <l xml:id="v-1865" exclude="#Rm #Pr #O #Rl">
                   <app>
-                            <lem>cuanta la generosa cetrería</lem>
-                            <rdg type="error" wit="#ho33 #ho54">cuanto la generosa cetrería</rdg>
-                            <rdg type="error" wit="#A">cuanta la generosa cerrería</rdg>
+                            <lem>cuanta</lem>
+                            <rdg type="error" wit="#ho33 #ho54">cuanto</rdg>
+                        </app> la generosa <app>
+                            <lem>cetrería</lem>
+                            <rdg type="error" wit="#A">cerrería</rdg>
                         </app>
                </l>
                     <l xml:id="v-1866" exclude="#Rm #Pr #O #Rl">(desde la Mauritania a la Noruega)</l>
@@ -9166,13 +9254,14 @@
                             <rdg type="error" wit="#ho54">uo</rdg>
                         </app> siempre aprisionada,</l>
                     <l xml:id="v-1870" exclude="#Rm #Pr #O #Rl #S">que a ver el día vuelve</l>
-                    <l xml:id="v-1871" exclude="#Rm #Pr #O #Rl #S">
-                  <app>
-                            <lem>las veces que, en fïado al viento dada,</lem>
-                            <rdg type="error" wit="#ho54">las veces que, en fïada al viento dada,</rdg>
-                            <rdg type="error" wit="#D">las veces que, en fïado el viento dada,</rdg>
+                    <l xml:id="v-1871" exclude="#Rm #Pr #O #Rl #S">las veces que, <app>
+                            <lem>en fïado</lem>
+                            <rdg type="error" wit="#ho54">fïada</rdg>
                         </app>
-               </l>
+                        <app>
+                            <lem>al</lem>
+                            <rdg type="error" wit="#D">el</rdg>
+                        </app> viento dada,</l>
                     <l xml:id="v-1872" exclude="#Rm #Pr #O #Rl #S">repite su prisión y al viento absuelve:</l>
                     <l n="745" xml:id="v-1873" exclude="#Rm #Pr #O #Rl #S">el neblí que, relámpago su pluma,</l>
                     <l xml:id="v-1874" exclude="#Rm #Pr #O #Rl #S">rayo su garra, su ignorado nido</l>
@@ -9323,12 +9412,15 @@
                                 </subst>
                             </rdg>
                         </app> condenó incierta la ira</l>
-                    <l xml:id="v-1921" exclude="#Rm #Pr #O #Rl">
-                  <app>
-                            <lem>del bello de la estigia deidad robo,</lem>
-                            <rdg type="error" wit="#N">del <del rend="strikethrough">ca</del>bello de la estigia deidad robo,</rdg>
-                            <rdg type="error" wit="#S">del cabello de la estigia deidad robo,</rdg>
-                            <rdg type="error" wit="#H">del bello de la estigia deidad <subst>
+                    <l xml:id="v-1921" exclude="#Rm #Pr #O #Rl">del <app>
+                            <lem>bello</lem>
+                            <rdg type="error" wit="#N">
+                        <del rend="strikethrough">ca</del>bello</rdg>
+                            <rdg type="error" wit="#S">cabello</rdg>
+                        </app> de la estigia deidad <app>
+                            <lem>robo,</lem>
+                            <rdg type="error" wit="#H">
+                                <subst>
                                     <del rend="strikethrough">globo,</del>
                                     <add place="inline">robo,</add>
                                 </subst>
@@ -9378,15 +9470,17 @@
                     <l xml:id="v-1944" exclude="#Rm #Pr #O #Rl">caballo, que colérico mordía</l>
                     <l xml:id="v-1945" exclude="#Rm #Pr #O #Rl">
                   <app>
-                            <lem>el oro que süave lo enfrenaba, </lem>
-                            <rdg type="error" wit="#E #H #I #N #S">al oro que süave lo enfrenaba,</rdg>
-                            <rdg type="error" wit="#Ch #pe">el oro que süave le enfrenaba,</rdg>
-                            <rdg type="error" wit="#N">el oro que süave l<subst>
+                            <lem>el</lem>
+                            <rdg type="error" wit="#E #H #I #N #S">al</rdg>
+                        </app> oro que süave <app>
+                            <lem>lo</lem>
+                            <rdg type="error" wit="#Ch #pe">le</rdg>
+                            <rdg type="error" wit="#N">l<subst>
                                     <del rend="overwritten">o</del>
                                     <add place="inline">e</add>
-                                </subst> enfrenaba,</rdg>
-                        </app>
-               </l>
+                                </subst>
+                            </rdg>
+                        </app> enfrenaba,</l>
                     <l xml:id="v-1946" exclude="#Rm #Pr #O #Rl">
                         <app>
                             <lem>arrogante, y no ya por las que daba</lem>
@@ -9444,7 +9538,6 @@
                 <lg xml:id="g-83">
                     <l rend="indent" xml:id="v-1959" exclude="#Rm #Pr #O #Rl">Rebelde ninfa (humilde ahora caña)</l>
                     <l xml:id="v-1960" exclude="#Rm #Pr #O #Rl">los márgenes oculta</l>
-                    <note>En el testimonio C el copista unió este verso con el siguiente.</note>
                     <l xml:id="v-1961" exclude="#Rm #Pr #O #Rl #C">de una laguna breve,</l>
                     <l xml:id="v-1962" exclude="#Rm #Pr #O #Rl">a quien doral consulta</l>
                     <l n="835" xml:id="v-1963" exclude="#Rm #Pr #O #Rl">aun el copo más leve</l>
@@ -9482,27 +9575,30 @@
                     <l xml:id="v-1972" exclude="#Rm #Pr #vi #O #Rl">el doral. Despedida no saeta</l>
                     <l n="845" xml:id="v-1973" exclude="#Rm #Pr #vi #O #Rl">de nervios partos igualar presuma</l>
                     <l xml:id="v-1974" exclude="#Rm #Pr #vi #O #Rl">sus puntas desiguales,</l>
-                    <l xml:id="v-1975" exclude="#Rm #Pr #vi #O #Rl">que en vano podrá pluma</l>
+                    <l xml:id="v-1975" exclude="#Rm #Pr #vi #O #Rl">Que en vano podrá pluma</l>
                     <l xml:id="v-1976" exclude="#Rm #Pr #vi #O #Rl">vestir un leño como viste un ala.</l>
                     <l xml:id="v-1977" exclude="#Rm #Pr #vi #O #Rl">Puesto en tiempo, corona, si no escala,</l>
                     <l n="850" xml:id="v-1978" exclude="#Rm #Pr #vi #O #Rl">las nubes (desmintiendo</l>
                     <l xml:id="v-1979" exclude="#Rm #Pr #vi #O #Rl">su libertad el grillo torneado</l>
-                    <l xml:id="v-1980" exclude="#Rm #Pr #vi #O #Rl">
-                  <app>
-                            <lem>que en sonoro metal lo va siguiendo)</lem>
-                            <rdg type="error" wit="#I">que en canoro metal lo va siguiendo)</rdg>
-                            <rdg type="error" wit="#H">que en sonoro cristal lo va siguiendo)</rdg>
-                            <rdg type="error" wit="#Ch #pe">que en sonoro metal le va siguiendo)</rdg>
-                            <rdg type="error" wit="#D">que en sonoro metal lo va <subst>
+                    <l xml:id="v-1980" exclude="#Rm #Pr #vi #O #Rl">que en <app>
+                            <lem>sonoro metal lo</lem>
+                            <rdg type="error" wit="#I">canoro metal lo</rdg>
+                            <rdg type="error" wit="#H">sonoro cristal lo</rdg>
+                            <rdg type="error" wit="#Ch #pe">sonoro metal le</rdg>
+                            <rdg type="error" wit="#N">sonoro metal l<subst>
+                                    <del rend="overwritten">a</del>
+                                    <add place="inline">e</add>
+                                </subst>
+                            </rdg>
+                            <rdg type="error" wit="#S">sonoro metal la</rdg>
+                        </app> va <app>
+                            <lem>siguiendo)</lem>
+                            <rdg type="error" wit="#D">
+                                <subst>
                                     <del rend="annotation">gimiendo)</del>
                                     <add place="margin">siguiendo)</add>
                                 </subst>
                             </rdg>
-                            <rdg type="error" wit="#N">que en sonoro metal l<subst>
-                                    <del rend="overwritten">a</del>
-                                    <add place="inline">e</add>
-                                </subst> va siguiendo) </rdg>
-                            <rdg type="error" wit="#S">que en sonoro metal la va siguiendo)</rdg>
                         </app>
                </l>
                     <l xml:id="v-1981" exclude="#Rm #Pr #vi #O #Rl">
@@ -9628,9 +9724,9 @@
                         <add place="inline">s</add>forme</rdg>
                         </app> fiscal de Proserpina,</l>
                     <l xml:id="v-2021" exclude="#Rm #Pr #vi #O #Rl">que en <app>
-                            <lem>desatarse,</lem>
-                            <rdg type="error" wit="#S">desatarso,</rdg>
-                        </app> al polo ya vecina,</l>
+                            <lem>desatarse</lem>
+                            <rdg type="error" wit="#S">desatarso</rdg>
+                        </app>, al polo ya vecina,</l>
                     <l xml:id="v-2022" exclude="#Rm #Pr #vi #O #Rl">la disonante niebla de las aves:</l>
                     <l n="895" xml:id="v-2023" exclude="#Rm #Pr #vi #O #Rl">diez a diez se calaron, ciento a ciento,</l>
                     <l xml:id="v-2024" exclude="#Rm #Pr #vi #O #Rl">al oro intüitivo, envidïado</l>
@@ -9682,12 +9778,17 @@
                         </app> el aire luego</l>
                     <l xml:id="v-2039" exclude="#Rm #Pr #vi #O #Rl">
                   <app>
-                            <lem>un duro sacre, en globos no de fuego,</lem>
-                            <rdg type="error" wit="#ho54">undoso sacre, en globos no de fuego,</rdg>
-                            <rdg type="error" wit="#S">un duro sacro, en globos y no de fuego,</rdg>
-                            <rdg type="error" wit="#ho33">un duro sacre, en globos no no de fuego,</rdg>
+                            <lem>un duro</lem>
+                            <rdg type="error" wit="#ho54">undoso</rdg>
                         </app>
-               </l>
+                        <app>
+                            <lem>sacre,</lem>
+                            <rdg type="error" wit="#S">sacro,</rdg>
+                        </app> en globos <app>
+                            <lem/>
+                            <rdg type="error" wit="#S">y</rdg>
+                            <rdg type="error" wit="#ho33">no</rdg>
+                        </app> no de fuego,</l>
                     <l xml:id="v-2040" exclude="#Rm #Pr #vi #O #Rl">en oblicuos sí engaños</l>
                     <l xml:id="v-2041" exclude="#Rm #Pr #vi #O #Rl">
                   <app>
@@ -9868,7 +9969,7 @@
                             <rdg type="error" wit="#ho54"/>
                         </app> prolija</l>
                     <l xml:id="v-2105"
-                  exclude="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl">desconfïanza a la sicana diosa</l>
+                  exclude="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl">desconfïanzaa la sicana diosa</l>
                     <l xml:id="v-2106"
                   exclude="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl">dejó sin dulce hija,</l>
                     <l xml:id="v-2107"
