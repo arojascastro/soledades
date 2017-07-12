@@ -12,6 +12,10 @@
                 <funder>Ministerio de Economía y Competitividad. Todo Góngora II [I+D+I FFI2010-17349]</funder>
             </titleStmt>
 
+            <editionStmt>
+                <edition>Primera edición: <date when="2017-06">Junio de 2017</date></edition>
+            </editionStmt>
+
             <publicationStmt>
                 <publisher>Cologne Center for eHumanities (CCeH)</publisher>
                 <availability status="free">
@@ -656,20 +660,18 @@
             </editorialDecl>
 
             <refsDecl>
-                <p>Las tres partes del poema se han codificado con <gi>div</gi>; cada una de estas partes contiene un atributo <att>xml:id</att>, cuyo valor se forma
-                    añadiendo a una <val>p</val>, un guión y un número consecutivo a partir de 0: <val>p-0</val>. Estas partes también tienen un atributo <gi>n</gi> con el que se numeran
-                    y un atributo <att>type</att> con el que se clasifican; en este último caso solo hay un valor válido: <val>part</val>.</p>
-                <p>Los títulos y subtítulos se han codificado ambos con el elemento <gi>head</gi> y con un atributo <att>type</att>, cuyo valor solo puede ser <val>main</val>
-                    y <val>sub</val>.</p>
-                <p>Los grupos de versos se han codificado con el elemento <gi>lg</gi>; cada uno de ellos contiene un atributo <att>xml:id</att> cuyo valor se forma
-                    concatenando números consecutivos al código siguiente: <val>s-01</val>.</p>
-                <p>Los versos se han codificado con <gi>l</gi> y todos llevan un atributo <att>xml:id</att> cuyo valor se forma concatenando números consecutivos al código
-                        <val>v-0001</val>. Cada cinco versos se añade un atributo <att>n</att> con el número de verso; la numeración no se reinicia al empezar una nueva parte del
-                    texto.</p>
-                <p>Algunos versos codificados en el <gi>app</gi> pueden contener la desinencia (<val>-p</val>) para indicar que se trata de un verso de la versión primitiva que desaparece
-                    en la versión definitiva.</p>
-                <p>Los testimonios que no transmiten determinado verso (por omisión o bien porque transmiten un texto <hi rend="italics">in fieri</hi>) se han identificado con el atributo <att
-                       >exclude</att>; este atributo aparece en el elemento <gi>l</gi>.</p>
+                <p>Las tres partes del poema se han codificado con <gi>div</gi>; cada una de estas partes contiene un atributo <att>xml:id</att>, cuyo valor se forma añadiendo a una <val>p</val>, un
+                    guión y un número consecutivo a partir de 0: <val>p-0</val>. Estas partes también tienen un atributo <gi>n</gi> con el que se numeran y un atributo <att>type</att> con el que se
+                    clasifican; en este último caso solo hay un valor válido: <val>part</val>.</p>
+                <p>Los títulos y subtítulos se han codificado ambos con el elemento <gi>head</gi> y con un atributo <att>type</att>, cuyo valor solo puede ser <val>main</val> y <val>sub</val>.</p>
+                <p>Los grupos de versos se han codificado con el elemento <gi>lg</gi>; cada uno de ellos contiene un atributo <att>xml:id</att> cuyo valor se forma concatenando números consecutivos al
+                    código siguiente: <val>s-01</val>.</p>
+                <p>Los versos se han codificado con <gi>l</gi> y todos llevan un atributo <att>xml:id</att> cuyo valor se forma concatenando números consecutivos al código <val>v-0001</val>. Cada
+                    cinco versos se añade un atributo <att>n</att> con el número de verso; la numeración no se reinicia al empezar una nueva parte del texto.</p>
+                <p>Algunos versos codificados en el <gi>app</gi> pueden contener la desinencia (<val>-p</val>) para indicar que se trata de un verso de la versión primitiva que desaparece en la
+                    versión definitiva.</p>
+                <p>Los testimonios que no transmiten determinado verso (por omisión o bien porque transmiten un texto <hi rend="italics">in fieri</hi>) se han identificado con el atributo
+                        <att>exclude</att>; este atributo aparece en el elemento <gi>l</gi>.</p>
             </refsDecl>
 
             <variantEncoding location="internal" method="parallel-segmentation"/>
