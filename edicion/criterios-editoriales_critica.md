@@ -320,173 +320,71 @@ En este verso tres testimonios transmiten un error de copia; sin embargo, para s
 
 ### Variantes de autor
 
-Las variantes de autor han sido codificadas utilizando un atributo `@type` con tres valores posibles: *prim*, *interm* y *intervention*. De esta manera, además de los errores de copia, es posible representar, por un lado, el proceso genético del autor, y, por el otro, cómo los copistas realizan intervenciones editoriales en el manuscrito.  
+Las variantes de autor han sido codificadas utilizando un atributo `@type` y el valor *variante*. De esta manera, de distinguir los errores de copia, es posible representar el proceso genético.
 
-El caso más sencillo de codificación se produce cuando la variación atañe al verso entero. Ya se ha dicho que el modelo conceptual actual de la TEI no permite que los elementos `<app>`, `<lem>` y `<rdg>` contengan un elemento `<l>` o `<lg>`. Así, pues, la única solución que he encontrado es anidar dentro de `<l>` estos elementos de tal modo que el verso de la versión definitiva sea el contenido del elemento `<lem>` y el verso de la versión definitiva sea el contenido del elemento `<rdg>`. Veamos un ejemplo:
+El caso más sencillo de codificación se produce cuando la variación atañe al verso entero. Una manera posible de representar este fenómeno es anidar dentro de `<l>` el aparato de variantes de tal manera que el verso de la versión definitiva sea el contenido del elemento `<lem>` y el verso de la versión primitiva o intermedia sea el contenido del elemento `<rdg>`. Veamos un ejemplo:
 
-    <l xml:id="v-1392">
-                            <app>
-                                <lem><choice>
-                                        <orig>Les</orig>
-                                        <reg>les</reg>
-                                    </choice> ofrece el que<choice>
-                                        <orig/>
-                                        <reg>,</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>jouen</orig>
-                                        <reg>joven</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>ia</orig>
-                                        <reg>ya</reg>
-                                    </choice> gallardo</lem>
-                                <rdg type="prim" wit="#Pr">bien que de mimbres preso en garvín pardo</rdg>
-                                <rdg wit="#Rm #Rl"/>
-                            </app>
-                        </l>
+```xml
+<l xml:id="v-1392" exclude="#Rm #Rl">
+                        <app>
+                            <lem>les ofrece el que, joven ya gallardo</lem>
+                            <rdg type="variante" wit="#Pr">bien que de mimbres preso en garvín pardo</rdg>
+                        </app>
+                    </l>
+```
 
-En este ejemplo la entrada del aparato no incluye una palabra aislada sino todo el verso: por un lado, se representa en el elemento `<lem>` el verso *les ofrece el que, joven ya gallardo*;  por el otro, se representa en el elemento `<rdg>` el verso *bien que de mimbres preso en garvín pardo*; en este caso el único testimonio que transmite la versión primitiva es el manuscrito Pérez de Ribas por lo que solo es necesario un elemento `<rdg>` con los atributos `@type` y `@wit`. El resto de testimonios transmiten el verso de la versión definitiva que coincide con el lema; ahora bien, puesto que la extensión de dos testimonios (Rl y Rm) no llega hasta este verso he debido dejar vacío un elemento `<rdg>` para representar esta omisión.
+   
+En este ejemplo la entrada del aparato no incluye una palabra aislada sino todo el verso: por un lado, se representa en el elemento `<lem>` el verso *les ofrece el que, joven ya gallardo*;  por el otro, se representa en el elemento `<rdg>` el verso *bien que de mimbres preso en garvín pardo*; en este caso el único testimonio que transmite la versión primitiva es el manuscrito Pérez de Ribas por lo que solo es necesario un elemento `<rdg>` con los atributos `@type` y `@wit`. El resto de testimonios transmiten el verso de la versión definitiva que coincide con el lema.
  
-En la mayoría de casos la situación no es tan sencilla porque los copistas actúan como editores y actualizan la versión del poema. El copista del testimonio Pr tachó *luciente* y añadió en el margen *mentido*; en el caso del copista del testimonio O la sustitución se llevó a cabo de modo menos evidente pues no hay tachón sino únicamente una adición encima. La codificación de estas variantes es la siguiente: 
+En la mayoría de casos la situación no es tan sencilla porque los copistas actúan como editores y actualizan la versión del poema. El copista del testimonio Pr tachó *luciente* y añadió en el margen *mentido*; en el caso del copista del testimonio O la sustitución se llevó a cabo de modo menos evidente, pues no hay tachón sino únicamente una adición encima. La codificación de estas variantes es la siguiente: 
 
-    <l xml:id="v-0039">
-                            <choice>
-                                <orig>En</orig>
-                                <reg>en</reg>
-                            </choice> que <app>
-                                <lem>el</lem>
-                                <rdg type="error" wit="#Rm">en</rdg>
-                            </app>
-                            <app>
-                                <lem>mentido</lem>
-                                <rdg type="prim" wit="#Rm">luciente</rdg>
-                                <rdg type="intervention" wit="#Pr"><subst>
-                                        <del rend="strikethrough">luciente</del>
-                                        <add place="margin">mentido</add>
-                                    </subst></rdg>
-                                <rdg type="intervention" wit="#O"><subst>
-                                        <del rend="unmarked">luciente</del>
-                                        <add place="above">mentido</add>
-                                    </subst></rdg>
-                            </app> robador de <persName>Europa</persName><choice>
-                                <orig>,</orig>
-                                <reg/>
-                            </choice></l>
+```xml
+<l xml:id="v-0039">
+                        <app>
+                            <lem>en que el mentido robador de Europa</lem>
+                            <rdg type="variante" wit="#Rm">en luciente robador de Europa</rdg>
+                            <rdg type="variante" wit="#Pr">
+                                <subst>
+                                    <del rend="strikethrough">luciente</del>
+                                    <add place="margin">mentido</add>
+                                </subst> robador de Europa</rdg>
+                            <rdg type="variante" wit="#O">
+                                <subst>
+                                    <del rend="unmarked">luciente</del>
+                                    <add place="above">mentido</add>
+                                </subst> robador de Europa</rdg>
+                        </app>
+                    </l>
+```
 
-En este verso la variante de autor atañe a una sola palabra. En la versión primitiva Góngora había escrito *luciente robador de Europa* mientras que en la definitiva se lee *mentido robador de Europa*. De todos los testimonios que he cotejado, tres transmiten la versión primitiva; de estos tres, en realidad, solo el testimonio Rm transmite *luciente* porque en los otros dos los copistas actualizaron el poema sustituyendo una versión por otra: por un lado, el copista de Pr tachó y añadió en el margen; por el otro, aunque el copista de O no tachó ni subrayó *luciente* sino que añadió encima *mentido*, se puede *deducir* que su intención era sustituir las palabras. Asimismo, en la codificación de este verso se observa cómo la misma combinación de elementos se puede utilizar para representar distintos fenómenos pues el testimonio Rm transmite un error que ha sido codificado con `<app>`, `<lem>` y `<rdg>`. La diferencia entre la primera y la segunda lección se representa mediante los valores del atributo `@type`.
-  
-Ahora bien, aunque la variación afecte únicamente a una palabra, en ocasiones conviene codificar el verso entero en el aparato de variantes; esto ocurre porque los copistas a menudo sustituyen grupos de palabras o versos enteros:
-
-    <l xml:id="v-0041"><app>
-                                <lem>
-                                    <choice>
-                                        <orig>Y</orig>
-                                        <reg>y</reg>
-                                    </choice> el <choice>
-                                        <orig>Sol</orig>
-                                        <reg>sol</reg>
-                                    </choice>
-                                    <app>
-                                        <lem>todo</lem>
-                                        <rdg type="error" wit="#A #Br #Ch #D #Ml #N #S #pe #ho33 #Rl">todos</rdg>
-                                    </app> los rayos de su pelo)<choice>
-                                        <orig/>
-                                        <reg>,</reg>
-                                    </choice></lem>
-                                <rdg type="prim" wit="#Rm">y el sol todo en su pelo</rdg>
-                                <rdg type="intervention" wit="#Pr">y el sol todo <subst>
-                                        <del rend="strikethrough">en su pelo</del>
-                                        <add place="margin">los rayos de su pelo</add>
-                                    </subst></rdg>
-                                <rdg type="intervention" wit="#O">y el sol todo<subst>
-                                        <del rend="underlined">en</del>
-                                        <add place="above">los rayos de</add>
-                                    </subst> su pelo</rdg>
-                            </app></l>
-
-En este ejemplo la entrada del aparato contiene el verso entero: por un lado, el elemento `<lem>` da la versión definitiva; por el otro, los elementos `<rdg>` dan la versión primitiva. Ahora bien, la sustitución llevada a cabo por los copista de Pr y O difiere: el primero tachó *en su pelo* y añadió en el margen *los rayos de su pelo*; el segundo, en cambio, subrayó la preposición *en* y añadió encima *los rayos de*. Si se quieren captar con fidelidad cómo intervienen los copistas, es necesario incluir en el elemento *<rdg>* no solo las variantes en sí sino también las palabras que no varían y que están en el entorno. La alternativa sería crear una entrada de aparato por cada una de las palabras que variasen; pero esta estrategia, sin duda, complicaría el procesamiento del etiquetado y haría mucho más difícil la lectura en pantalla. Por lo demás, debo advertir que la TEI permite anidar elementos `<app>` en otros elementos `<app>` de tal manera que es posible representar variantes contenidas en el lema; esto es lo que ocurre con la variante *todos* transmitida por diez testimonios (incluido Chacón) e identificada como error de copia mediante el atributo `@type`.
+En la versión primitiva, Góngora había escrito *luciente robador de Europa* mientras que en la definitiva se lee *mentido robador de Europa*. De todos los testimonios que he cotejado, tres transmiten la versión primitiva; de estos tres, en realidad, solo el testimonio Rm transmite *luciente* (o, mejor dicho, *en luciente*) porque en los otros dos los copistas actualizaron el poema sustituyendo una versión por otra: por un lado, el copista de Pr tachó y añadió en el margen; por el otro, aunque el copista de O no tachó ni subrayó *luciente* sino que añadió encima *mentido*, se puede *deducir* que su intención era sustituir las palabras. 
 
 Cuando el paso de la versión primitiva a la versión definitiva supuso la eliminación de un verso, el elemento `<lem>` debe dejarse vacío: 
 
-    <l xml:id="v-0183-p">
-                            <app>
-                                <lem/>
-                                <rdg type="prim" wit="#Rm #O">por absolverle escrúpulos al
-                                        vaso),</rdg>
-                                <rdg type="intervention" wit="#Pr">
-                                    <del rend="strikethrough">por absolverle escrúpulos al
-                                            vaso),</del>
-                                </rdg>
-                            </app>
-                        </l>
+```xml
+<l xml:id="v-0183-p">
+                        <app>
+                            <lem/>
+                            <rdg type="variante" wit="#Rm #O">por absolverle escrúpulos al vaso),</rdg>
+                            <rdg type="variante" wit="#Pr">
+                                <del rend="strikethrough">por absolverle escrúpulos al vaso),</del>
+                            </rdg>
+                        </app>
+                    </l>
+```
 
-En este ejemplo se ve cómo en el lema no hay ningún verso mientras que dos testimonios (Rm y O) transmiten el verso que sí había en la versión primitiva. Por su parte, en Pr la segunda mano tachó el verso *por absolverle escrúpulos al vaso)* con el fin de actualizar el poema por eso hay un elemento `<del>`. Aunque la TEI define un atributo `@hand` con el que identificar quién es el responsable de la intervención editorial, en esta propuesta de codificación no me ha parecido oportuno utilizarlo porque mi objetivo principal es que el usuario filtre las variantes por testimonio y tipología, y no por manos pues la mayoría de manuscritos fueron trasladados por un solo amanuense.
+En este ejemplo se ve cómo en el lema no hay ningún verso mientras que dos testimonios (Rm y O) transmiten el verso que sí había en la versión primitiva. Por su parte, en Pr la segunda mano tachó el verso *por absolverle escrúpulos al vaso)* con el fin de actualizar el poema por eso hay un elemento `<del>`.
 
-Por último, la distinción entre la versión primitiva y las variantes de autor producidas en una fase intermedia se lleva a cabo mediante el atributo `@type`. Veamos un ejemplo: 
-
-    <l xml:id="v-0735"><choice>
-                                <orig>Papel</orig>
-                                <reg>papel</reg>
-                            </choice> fue de pastores, <app>
-                                <lem>aunque rudo,</lem>
-                                <rdg type="prim" wit="#Rm #O">y no rudo,</rdg>
-                                <rdg type="interm" wit="#Br #Rl">si bien rudo,</rdg>
-                                <rdg type="intervention" wit="#Pr"><subst>
-                                        <del rend="strikethrough">y no rudo,</del>
-                                        <add place="margin">aunque rudo,</add>
-                                    </subst></rdg>
-                            </app></l>
-
-En este verso se pueden distinguir tres estadios en la parte final: en primer lugar, *y no rudo*; en segundo lugar, *si bien rudo*; por último, *aunque rudo*. El procedimiento es idéntico al que ya ha sido explicado: la versión definitiva se codifica en el elemento `<lem>` mientras que las otras dos aparecen en el elemento `<rdg>`; lo que diferencia a la versión primitiva de la intermedia es únicamente el valor del atributo `@type. 
 
 ## Extensión
 
-Los testimonios cotejados tienen una extensión variable que nos permite conocer las fases de la escritura de las *Soledades*. Para representar la variación estructural con el método de segmentación paralela es necesario dejar vacíos algunos elementos `<rdg>`; esto ocurre en la codificación de todos los versos que componen la Dedicatoria: 
+Los testimonios cotejados tienen una extensión variable que nos permite conocer las fases de la escritura de las *Soledades*. Para representar la variación estructural se ha utilizado el atributo `@exclude` contenido en el elemento `<l>`:
 
-    <l xml:id="v-0021">
-                            <app>
-                                <lem>
-                                    <choice>
-                                        <orig>La</orig>
-                                        <reg>la</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>hasta</orig>
-                                        <reg>asta</reg>
-                                    </choice> de tu luciente <choice>
-                                        <orig>jaualina</orig>
-                                        <reg>jabalina</reg>
-                                    </choice><choice>
-                                        <orig>;</orig>
-                                        <reg>,</reg>
-                                    </choice></lem>
-                                <rdg wit="#Pr #Rm"/>
-                            </app>
-                        </l>
+```xml
+ <l xml:id="v-2107" exclude="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl">y a la estigia deidad con bella esposa.</l>
+```
 
-Los testimonios Pr y Rm no transmiten la Dedicatoria. Ahora bien, no se trata de un error por omisión por lo que no se debe poner un atributo `@type` con valor *error*. Esta estrategia ha sido llevada a cabo a lo largo del poema de tal modo que en el último verso el valor del atributo `@wit` contiene 17 siglas con las que se identifican los testimonios que no lo transmiten: 
-
-    <l xml:id="v-2107">
-                            <app>
-                                <lem><choice>
-                                        <orig>I</orig>
-                                        <reg>y</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>á</orig>
-                                        <reg>a</reg>
-                                    </choice> la <choice>
-                                        <orig>stygia</orig>
-                                        <reg>estigia</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>Deidad</orig>
-                                        <reg>deidad</reg>
-                                    </choice> con bella esposa.</lem>
-                                <rdg wit="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl"/>
-
-Por supuesto, el incremento de siglas identificadas en el atributo `@wit` es progresivo pero no por ello deja de ser un proceso complejo: el editor debe representar una ausencia mediante una elemento presente que se repite verso tras verso.  
+Tal y como se puede apreciar, en el último verso el valor del atributo `@exclude` contiene las 17 siglas con las que se identifican los testimonios. Esto quiere decir que esos 17 testimonios no transmiten el verso. El editor, pues, debe representar una ausencia mediante una elemento que sí está presente.  
 
 
 
