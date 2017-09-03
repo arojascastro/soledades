@@ -269,108 +269,54 @@ A continuación, conviene ver una serie de casos concretos y comentar las princi
 
 ### Errores o variantes de copista
 
-Según la crítica textual, se pueden distinguir errores por adición, omisión, sustitución o inversión; por lo general, estos son fáciles de distinguir porque no tienen sentido, se transmiten en un solo o en unos pocos testimonios y no respetan la métrica del poema. Los errores, sin embargo, pueden tener una dimensión variable: desde una simple palabra, pasando por una expresión más larga, hasta un verso entero.
+Según la crítica textual, se pueden distinguir errores por adición, omisión, sustitución o inversión; por lo general, estos son fáciles de distinguir porque no tienen sentido, se transmiten en un solo o en unos pocos testimonios y, en el caso de los poemas, no siguen la métrica del poema. Los errores, sin embargo, pueden tener una dimensión variable: desde una simple palabra, pasando por una expresión más larga, hasta un verso entero.
 
 Así, el caso más fácil de codificar se da cuando el error atañe únicamente una palabra: 
 
-    <l rend="indent" xml:id="v-0038">
-                            <choice>
-                                <orig><hi rend="initial">E</hi>RA</orig>
-                                <reg>Era</reg>
-                            </choice>
-                            <choice>
-                                <orig>de el</orig>
-                                <reg>del</reg>
-                            </choice> año la <choice>
-                                <orig>estacion</orig>
-                                <reg>estación</reg>
-                            </choice>
-                            <app>
-                                <lem>florida</lem>
-                                <rdg type="error" wit="#I">floria</rdg>
-                                <rdg type="error" wit="#Rl">primera</rdg>
-                            </app><choice>
-                                <orig>,</orig>
-                                <reg/>
-                            </choice></l>
+```xml
+<l rend="indent" xml:id="v-0038">Era del año la estación <app>
+                            <lem>florida</lem>
+                            <rdg type="error" wit="#I">floria</rdg>
+                            <rdg type="error" wit="#Rl">primera</rdg>
+                        </app>
+                    </l>
+```
+
 
 En este caso la variante se ha codificado en una sola entrada del aparato que contiene la lección auténtica (*florida*) y las dos variantes: por un lado, el testimonio I transmite *floria*, es decir, el copista omitió una *d*; por el otro, el testimonio Rl lee un error por sustitución (*primera*). Puesto que son errores de copia evidentes, en ambos casos he utilizado un atributo `@type` con valor *error* para clasificar el contenido del elemento `<rdg>`. Como ya se dijo un poco más arriba, se trata de un aparato negativo y, por tanto, en el elemento `<lem>` no hace falta declarar qué testimonios transmiten florida porque se entiende que, de los 21 testimonios que he cotejado con el texto de Chacón, solo dos (I y Rl) transmiten una variante en este verso.
 
 Ahora bien, en otras ocasiones el error atañe a más de una palabra; en tal caso, la metodología que he seguido se puede ilustrar con el siguiente ejemplo:
 
-    <l xml:id="v-0451">
-                            <app>
-                                <lem>
-                                    <choice>
-                                        <orig>Violaron</orig>
-                                        <reg>violaron</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>à</orig>
-                                        <reg>a</reg>
-                                    </choice>
-                                </lem>
-                                <rdg type="error" wit="#Br #Rl">vio la arena</rdg>
-                            </app>
-                            <persName>Neptuno</persName>
-                            <choice>
-                                <orig/>
-                                <reg>,</reg>
-                            </choice>
-                        </l>
+```xml
+<l xml:id="v-0451">
+                        <app>
+                            <lem>violarona</lem>
+                            <rdg type="error" wit="#Br #Rl">vio la arena</rdg>
+                        </app> Neptuno,</l>
+```
 
 En esta ocasión la entrada de `<app>` se inserta el inicio del verso y el lema incluye más de una palabra (*Violaron a*) porque los testimonios Br y Rl leen *vio la arena*, es decir, un error de copia debido a la mala lectura (o retención) de dos palabras que tiene como resultado una variante de tres. En síntesis, en lugar de codificar este error en tres aparatos distintos, he codificado la variante en un solo elemento `<app>` porque creo que se corresponde mejor al fenómeno que intento captar y porque facilita la lectura al usuario ya que tiene más sentido leer todo junto *vio la arena* que el mismo grupo de palabras fragmentado en tres entradas distintas del aparato. 
 
 Pero los copistas no solo cometen errores; algunos también enmiendan pasajes o intentan enmendarlos consultando otros documentos o bien por adivinación. En tales circunstancias, el valor del atributo `@type` del elemento `<rdg>` sigue siendo error porque lo que me interesa es que el usuario pueda filtrar los pasajes en que se cometió un error de copia y no si los amanuenses lo corrigieron. Veamos un ejemplo para que se entienda mejor: 
 
-    <l xml:id="v-0418"><choice>
-                                <orig>Escollo</orig>
-                                <reg>escollo</reg>
-                            </choice>, <app>
-                                <lem>el</lem>
-                                <rdg type="error" wit="#Br"><add place="above">el</add></rdg>
-                                <rdg type="error" wit="#Ml"/>
-                            </app> metal ella <app>
-                                <lem>fulminante</lem>
-                                <rdg type="error" wit="#S">ful<subst>
-                                        <del rend="strikethrough">gente</del>
-                                        <add place="above">minante</add>
-                                    </subst></rdg>
-                            </app></l>
+```xml
+<l xml:id="v-0418">
+                        <app>
+                            <lem>escollo, el metal ella fulminante</lem>
+                            <rdg type="error" wit="#Br">escollo, <add place="above">el</add> metal ella fulminante</rdg>
+                            <rdg type="error" wit="#Ml">escollo, metal ella fulminante</rdg>
+                            <rdg type="error" wit="#S">escollo, el metal ella ful<subst>
+                                    <del rend="strikethrough">gente</del>
+                                    <add place="above">minante</add>
+                                </subst>
+                            </rdg>
+                        </app>
+                    </l>
+```
 
-En este verso tres testimonios transmiten un error de copia pero dos de ellos afectan a la misma palabra, por lo que he codificado las variantes en dos elementos `<app>`. En el primero de ellos el elemento `<lem>` incluye la palabra *el*; los copistas de los testimonios Br y Ml omitieron este artículo pero el de Br lo añadió encima para corregir la lección. En el segundo elemento `<app>` el lema es *fulgente* mientras que un elemento `<rdg>` da la variante encontrada en el testimonio S. En este manuscrito el copista transcribió *fulgente* y luego intervino como editor tachando la terminación -*gente* y añadiendo encima la terminación -*minante*. Es decir, llevó a cabo una sustitución; de ahí el uso del elemento `<subst>`.
 
-En algunas ocasiones los copistas también restituyen una lección. Es decir, la lección que transcribieron primero era la correcta pero luego, por alguna razón, la modificaron; finalmente, volvieron a la lección original. Este tipo de intervenciones editoriales han sido codificadas mediante el elemento `<restore>`:
-
-    <l n="35" xml:id="v-0035">
-                            <app>
-                                <lem><choice>
-                                        <orig>Que</orig>
-                                        <reg>que</reg>
-                                    </choice><choice>
-                                        <orig/>
-                                        <reg>,</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>à</orig>
-                                        <reg>a</reg>
-                                    </choice> tu piedad <app>
-                                        <lem><persName>Euterpe</persName></lem>
-                                        <rdg type="error" wit="#N"><restore type="addition">Euterpe</restore></rdg>
-                                        <rdg type="error" wit="#S">ya noble</rdg>
-                                    </app> agradecida<choice>
-                                        <orig>,</orig>
-                                        <reg/>
-                                    </choice></lem>
-                                <rdg wit="#Rm #Pr"/>
-                            </app>
-                        </l>
-
-En este ejemplo la palabra *Euterpe* ha sido codificada con el elemento `<restore>` porque era la lección que el copista transcribió originalmente; a continuación, debió de consultar otro documento (probablemente S) que contenía la variante *ya noble*; el copista de N tachó *Euterpe* y añadió encima *ya noble*. Por último, se dio cuenta de que al intervenir había corrompido la lección auténtica, así que tachó *ya noble* y añadió en el margen *Euterpe*. Todo este proceso, sin embargo, no se representa con lenguaje de marcado sino únicamente la palabra restituida y el modo en que se llevó a cabo la restitución mediante el atributo `@type`.     
-
-En resumen, para codificar un error por omisión como el cometido por el copista del testimonio Ml he dejado el elemento vacío; para codificar una enmienda por parte del copista, como en los casos de Br y S, he utilizado los elementos `<del>`, `<add>` y `<subst>` para codificar la intervención editorial; para codificar restituciones se ha utilizado el elemento `<restore>`. En todos estos casos el elemento `<rdg>` tiene un atributo `@type` con valor error porque con ello quiero que el usuario pueda acceder a los pasajes en los versos que contienen (o contenían) un error de copia. 
-
-Para acabar, conviene saber que la TEI define un atributo `@cause` para clasificar los errores desde un punto de vista causal; hasta el momento, en esta codificación XML/TEI de las *Soledades* no he utilizado este atributo porque creo que el usuario tiene suficiente con poder separar los errores de las variantes de autor. Sin embargo, en el futuro podría clasificar los errores según otra tipología como adición, omisión, sustitución o inversión.  
+En este verso tres testimonios transmiten un error de copia; sin embargo, para simplificar la codificación, se ha utilizado un solo aparato de variantes. Al inicio, pues, se halla el elemento `<lem>`, que incluye la lección correcta: *escollo, el metal ella fulminante*. Los copistas de los testimonios Br y Ml omitieron este artículo pero el de Br lo añadió encima para corregir la lección. A continuación, es posible apreciar que en el testimonio S figura una corrección: el copista transcribió *fulgente* y luego intervino como editor tachando la terminación -*gente* y añadiendo encima la terminación -*minante*. Es decir, llevó a cabo una sustitución; de ahí el uso del elemento `<subst>`.
+ 
 
 ### Variantes de autor
 
