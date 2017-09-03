@@ -18,6 +18,8 @@
 
             <publicationStmt>
                 <publisher>Cologne Center for eHumanities (CCeH)</publisher>
+                <pubPlace>Köln</pubPlace>
+                <date when="2017-06">2017</date>
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by-nc/3.0/deed.es">Publicado bajo una licencia Creative Commons Atribución-NoComercial 3.0</licence>
                 </availability>
@@ -646,6 +648,7 @@
         </fileDesc>
 
         <encodingDesc>
+
             <projectDesc>
                 <p>Esta edición ha sido realizada con fines académicos y didácticos siguiendo las recomendaciones de la TEI P5.</p>
             </projectDesc>
