@@ -92,7 +92,6 @@ En este elemento se etiqueta el país, la ciudad, la biblioteca o repositorio y 
 
 Los documentos que transmiten la poesía de Góngora suelen ser manuscritos unitarios que contienen muchos poemas del mismo autor por lo que conviene identificar con precisión cuál es el texto realmente utilizado. Para ello, he utilizado los elementos `<msContents>` y `<msItem>`. De esta manera, sería posible identificar cada uno de los textos que contiene un documento mediante su localización exacta tomando como unidad las páginas o folios que ocupa y, en caso de que tenga uno, el título. Puesto que para realizar esta edición crítica digital solo he cotejado el texto de las *Soledades*, me ha parecido suficiente codificar la posición que ocupa en el manuscrito.
 
-Para recapitular lo que se ha dicho sobre la primera parte del `<teiHeader>`, el elemento `<fileDesc>` contiene información bibliográfica sobre el archivo electrónico en el `<titleStmt>`, sobre el número de la edición en el `<editionStmt>`, sobre la publicación, distribución y disponibilidad del archivo electrónico en el `<publicationStmt>` y, por último, sobre las fuentes de las que deriva el texto en el `<sourceDesc>`. Este último elemento resulta de importancia capital en esta propuesta de codificación de las *Soledades* porque en él se describen los 22 testimonios cotejados —manuscritos e impresos— para crear el texto crítico. 
 
 ### Descripción de la codificación
 
