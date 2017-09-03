@@ -1,37 +1,12 @@
-# Intro
+# Criterios de codificación
 
 Toda representación XML/TEI de un texto debe tener un propósito: se codifican ciertos fenómenos textuales (no todos) para que el ordenador pueda procesarlos y el usuario interactúe con ellos en la interfaz web. Esta codificación de las *Soledades* ha sido concebida para que el usuario acceda a la transcripción paleográfica y al texto modernizado de Chacón, filtre las variantes de autor por testimonio y clase (error, variante de autor e intervención editorial) y navegue el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
 
-# Contenidos 
-
-
-- [encabezado](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#encabezado)
- - [descripción del archivo](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#descripci%C3%B3n-del-archivo)
- - [descripción de la codificación](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#descripci%C3%B3n-de-la-codificaci%C3%B3n)
- - [perfil del texto](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#perfil-del-texto)
- - [historial de revisión](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#historial-de-revisi%C3%B3n) 
-- [títulos, partes y subtítulos](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#t%C3%ADtulo-partes-y-subt%C3%ADtulos)
-- [grupos de versos y versos](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#grupos-de-versos-y-versos)
-- [saltos de página](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#saltos-de-p%C3%A1gina)
-- [fases de la cronología](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#fases-de-la-cronolog%C3%ADa)
-- [discursos y diálogos](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#discursos-y-di%C3%A1logos)
-- [transcripción paleográfica y texto modernizado](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#transcripci%C3%B3n-paleogr%C3%A1fica-y-texto-modernizado)
- -  [destacados](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#destacados)
- -  [abreviaturas y expansiones](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#abreviaturas-y-expansiones)
- -  [errores y correcciones](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#errores-y-correcciones) 
-- [aparato de variantes](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#aparato-de-variantes)
- - [errores](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#errores)
- - [variantes de autor](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#variantes-de-autor)
- - [extensión](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#extensi%C3%B3n) 
-- [fiabilidad y palabras suplidas](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#fiabilidad-y-palabras-suplidas) 
-- [anotación](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#anotación)
-- [nombres propios](https://github.com/arojascastro/soledades/blob/master/edicion/criterios-editoriales.md#nombres-propios)
-
-# Encabezado
+## Encabezado
 
 El encabezado TEI es el lugar del archivo XML en el que se recogen los metadatos, es decir, toda aquella información que permite identificar al documento y declarar cuál es la fuente de la que deriva el texto. En esta parte del archivo, además, se pueden registrar otro tipo de información suplementaria como los criterios editoriales, el tipo de texto u otros datos relativos a la creación de la obra desde un punto de vista intelectual. 
 
-## Descripción del archivo
+### Descripción del archivo
 
 El elemento `<fileDesc>` contiene una serie de elementos con información bibliográfica sobre el archivo electrónico necesaria para su citación y catalogación. En primer lugar, se halla el elemento `<titleStmt>` en donde se sitúa el título de la obra electrónica, el autor del texto codificado y quién es el responsable de la edición, entre otros datos. En mi caso he decidido utilizar el nombre del poema en el título principal y, a continuación, añadir un subtítulo que especifica, distingue del resto de ediciones y aclara cuál es su objetivo y finalidad. 
 
@@ -276,7 +251,7 @@ El elemento TEI que agrupa etiquetas relacionadas con la producción, distribuci
 
 Para recapitular lo que se ha dicho sobre la primera parte del `<teiHeader>`, el elemento `<fileDesc>` contiene información bibliográfica sobre el archivo electrónico en el `<titleStmt>`, sobre el número de la edición en el `<editionStmt>`, sobre la publicación, distribución y disponibilidad del archivo electrónico en el `<publicationStmt>` y, por último, sobre las fuentes de las que deriva el texto en el `<sourceDesc>`. Este último elemento resulta de importancia capital en esta propuesta de codificación de las *Soledades* porque en él se describen los 22 testimonios cotejados —manuscritos e impresos— para crear el texto crítico. 
 
-## Descripción de la codificación
+### Descripción de la codificación
 
 En el elemento `<encodingDesc>` se detallan los principios editoriales y el modo de codificar el texto electrónico. Aunque no se trata de un elemento obligatorio, la TEI lo recomienda porque con él se establece la relación entre las fuentes manuscritas e impresas y el texto electrónico. La información contenida en este elemento puede presentarse por medio de párrafos en prosa o bien utilizando otros elementos más específicos. En mi propuesta de codificación de las *Soledades* he preferido documentar de manera precisa la finalidad de la codificación con `<projectDesc>`, las prácticas editoriales (corrección, normalización y citación) en el elemento `<editorialDecl>`, y qué elementos, atributos y valores se han utilizado por medio de `<refsDecl>`. Puesto que los dos últimos aspectos de la codificación se analizarán y comentarán en profundidad en apartados posteriores, aquí me limitaré a mostrar el elemento `<projectDesc>`: 
 
@@ -290,7 +265,7 @@ Además de los elementos mencionados, el `<encodingDesc>` de esta propuesta de c
 
 Por último, no hay que olvidar que en el elemento `<encodingDesc>` también debe figurar el modo en que se codifican los glifos y caracteres especiales; para ello se utiliza la etiqueta `<charDecl>`. Daré más detalles sobre los caracteres no representados por UNICODE en el apartado dedicado a las abreviaturas.
 
-## Perfil del texto
+### Perfil del texto
 
 El elemento <profileDesc> agrupa varios elementos con los que se puede codificar información no bibliográfica. Se trata de un elemento opcional que en mi propuesta de codificación de las *Soledades* contiene un elemento importante para representar las fases de la cronología establecida en la tesis; me refiero al elemento `<creation>`. En el caso de las *Soledades* es posible identificar hasta nueve fases. Cada una de estas fases ha sido codificada usando el elemento `<change>` con tres atributos: por un lado, `@notAfter` y `@notBefore` sirven para identificar los términos *a quo* y *ad quem*; por el otro, `@xml:id` identifica con un valor único cada uno de estos elementos de tal modo que se puedan referenciar en el texto de las *Soledades*. Asimismo, en este elemento `<creation>` se puede documentar el lugar en el que tuvo lugar el proceso creativo mediante `<placeName>`:
 
@@ -323,7 +298,7 @@ En el `<profileDesc>` también se puede identificar la lengua en que está escri
 
 Finalmente, hay que tener en cuenta que el elemento `<profileDesc>` puede contener otros elementos que no aparecen en esta propuesta de codificación. Así, por ejemplo, si el texto fuera un artículo científico, se podría codificar un resumen del contenido en un elemento `<abstract>`, clasificar el texto siguiendo algún tipo de tesauro de amplia difusión gracias al elemento `<textclass>` o añadir palabras clave mediante el elemento `<keywords>` a fin de facilitar su recuperación por un gestor de contenidos. 
 
-## Historial de revisión
+### Historial de revisión
 
 La cuarta y última parte del encabezado TEI corresponde al `<revisionDesc>`. Se trata de un elemento opcional en el que se registran todos los cambios realizados en el texto. Cuando el proyecto es administrado mediante un control de versiones y en él intervienen varios investigadores, puede ser muy útil para gestionar de manera eficiente las modificaciones y deshacerlas en caso de necesidad. Los cambios se pueden anidar en un elemento `<listChange>` o bien, como en mi propuesta, directamente en elementos `<change>`; el atributo `@when` puede utilizarse para especificar el día exacto en que se produjo el cambio:
 
@@ -361,7 +336,7 @@ La cuarta y última parte del encabezado TEI corresponde al `<revisionDesc>`. Se
 
 En cuanto a la responsabilidad de los cambios, esta se puede describir mediante un atributo `@who` contenido en `<change>`. El valor de este atributo remite al atributo `@xml:id` contenido en el elemento `<respStmt>` del `<titleStmt>`. Tal y como se aprecia en el código insertado es posible referirse a un determinado elemento o atributo mediante las etiquetas `<gi>` y `<att>`.   
 
-# Título, partes y subtítulos 
+## Título, partes y subtítulos 
 
 Tras detallar cómo se ha codificado la información contenida en el `<teiHeader>`, hay que pasar a comentar la segunda parte que todo documento TEI debe tener: el elemento `<text>` en donde, como es lógico, debe situarse un texto. Este elemento `<text>` contiene un atributo `@xml:lang` con valor *spa* que sirve para definir la lengua en que está escrito el texto. El texto de las *Soledades* puede ponerse directamente en un elemento `<body>` porque en esta edición no se pretende dar acceso ni procesar preliminares ni apéndices; así, pues, no es necesario utilizar las etiquetas `<front>` y `<back>`.
 
@@ -413,7 +388,7 @@ La codificación del título de la Dedicatoria merece una aclaración. El manusc
                         </choice>
                     </head>
 
-# Grupos de versos y versos
+## Grupos de versos y versos
 
 Las *Soledades* es una larga silva en el que se combinan con cierta libertad endecasílabos y heptasílabos. Algunos editores modernos como Dámaso Alonso introdujeron cortes en el poema con el objetivo de facilitar la comprensión de la obra; pero John Beverley, Robert Jammes y Antonio Carreira prefirieron eliminar estos cortes, editar el texto como un todo y sugerir algunas pausas mediante el sangrado del primer verso. La fuente que utilizaron todos estos editores —el manuscrito Chacón— no introduce líneas en blanco para separar las estrofas pero esto no quiere decir que no haya grupos de versos de extensión variada. El inicio de estos grupos se visualiza en el manuscrito mediante el sangrado del primer verso hacia la izquierda, es decir, a la francesa. En otras palabras, estos grupos de versos no se distinguen por razones métricas sino por su disposición sobre la página.
 
@@ -451,7 +426,7 @@ A continuación, inserto un fragmento de XML que contiene los tres atributos men
 
 Además de estos elementos creados para codificar textos poéticos, la TEI ha establecido algunos procedimientos para codificar el patrón rítmico y métrico de cada verso gracias a los atributos `@rhyme` y `@met` y un elemento `<rhyme>` con el que es posible codificar las palabras que riman. Dado que mi objetivo es estudiar la transmisión del texto y ofrecer variantes significativas, en esta propuesta de codificación de las *Soledades* no se han representado estos fenómenos acerca de la musicalidad del poema.  
 
-# Saltos de página
+## Saltos de página
 
 Además del sistema de referencias basado en las partes del texto —Dedicatoria, *Soledad primera* y *Soledad segunda*— y en la estructuración por grupos de versos que acabamos de ver, esta propuesta incluye la paginación del manuscrito Chacón; para ello se ha utilizado el elemento `<pb/>`. Esta etiqueta es un *empty element* porque no tiene contenido textual y sirve para codificar estructuras no jerárquicas que dividen el texto en trozos. Al marcar los saltos de página es posible captar la estructura del documento y permitir al usuario navegar el texto de manera fragmentaria. 
 
@@ -473,7 +448,7 @@ Como se puede apreciar, el elemento `<pb/>` se sitúa siempre al inicio de cada 
 
 Para recapitular, gracias a la codificación de las partes lógicas del texto, los grupos de versos y la paginación del manuscrito Chacón es posible explorar y navegar el texto poético de distintas maneras. En consecuencia, la edición académica digital adquiere interactividad en la medida en que combina múltiples vistas: por un lado, la imagen facsimilar, que pone de manifiesto la materialidad del documento; por el otro, el texto (en doble presentación: transcripción paleográfica y modernización). El usuario, pues, es capaz de seleccionar una u otra vista, o bien, dividiendo la pantalla en dos partes, acceder simultáneamente a las dos y, así, poder apreciar la relación dialéctica entre el manuscrito Chacón y el texto establecido tras cotejar el resto de testimonios. 
 
-# Fases de la cronología
+## Fases de la cronología
 
 Las fases de la cronología establecida en la tesis se documentan en el encabezado TEI mediante el elemento `<creation>`. Ahora bien, también se puede representar el inicio de cada una de estas fases en el mismo texto. Para ello he utilizado otro elemento vacío con el fin de respetar la sintaxis arbórea del XML. El elemento vacío en cuestión es `<milestone/>`. Según la TEI, este elemento «marca un punto de frontera que separa cada tipo de sección de un texto, indicado por cambios en el sistema de referencia estándar, donde la sección no es representada por un elemento estructural». A diferencia de `<pb/>`, que se restringe para la representación de saltos de página, este elemento no tiene una carga semántica pues se puede utilizar para representar cualquier tipo de fenómeno. En el texto de las *Soledades*, pues, he marcado el inicio de cada fase justo antes de los elementos `<lg>` o `<l>`: 
 
@@ -499,7 +474,7 @@ En este caso el elemento `<milestone/>` aparece antes del elemento `<lg>` para i
  
 En la interfaz web se podría explotar la codificación de las fases de distintas maneras: por un lado, se puede crear otro menú de navegación en el que cuando el usuario clicase accediera a la parte del texto en el que se inicia una nueva fase; por el otro, sería posible señalar las fases de manera visual, por ejemplo, con un destacado (una barra horizontal de color distinto con el número de la fase y las fechas de la cronología) activado por el usuario interesado en conocer el proceso creativo y cómo se desarrolló la redacción del poema. 
     
-# Discursos y diálogos
+## Discursos y diálogos
 
 Las *Soledades* es una larga silva dividida en tres partes; en ella, además, pueden distinguirse con claridad varios discursos en los que la voz poética cede la palabra a alguno de los personajes. La TEI recomienda identificar estos discursos con un elemento llamado `<sp>` que forma parte del módulo *core* y que puede utilizarse tanto en texto teatrales como en textos poéticos o en prosa.
 
@@ -530,7 +505,7 @@ Como se puede ver, el elemento <milestone/> contiene dos atributos: `@type` y `@
 
 Por supuesto, estos discursos no son los únicos pasajes en los que la voz poética cede la palabra a los personajes. Aunque son pocos y breves, también se pueden encontrar algunos diálogos. Al iniciar la codificación XML/TEI de las *Soledades* quise representar estos intercambios mediante el elemento <said> pero, nuevamente, me encontré ante un tipo de fenómeno textual que se yuxtapone a la representación de los grupos de versos y de los versos porque la mayoría de diálogos ocupan más de un verso de tal modo que se produce un conflicto entre el cierre del elemento `<l>` y la continuidad del elemento `<said>`. La única solución que he encontrado consiste en anidar un elemento `<said>` dentro de `<l>` en cada uno de los versos. Ahora bien, esta estrategia supone falsear la verdadera naturaleza del diálogo; y, en consecuencia, me ha parecido más acertado renunciar a representar este fenómeno textual que, por lo demás, no resulta imprescindible para el usuario teniendo en cuenta que ya se codifican muchos aspectos del poema.
 
-# Transcripción paleográfica y texto modernizado
+## Transcripción paleográfica y texto modernizado
 
 Con la excepción de once lecciones procedentes de otros testimonios, el texto de las *Soledades* que he codificado es el que transmite el manuscrito Chacón. La particularidad de mi propuesta consiste en la doble presentación del texto: por un lado, la transcripción paleográfica, que conserva la mayoría de rasgos característicos de la ortotipografía del documento original; por el otro, una modernización de la ortografía, los signos de puntuación y otros aspectos tipográficos del texto contenido en Chacón. La primera dimensión, pues, es historicista y conservadora: transporta al lector al siglo XVII. La segunda, en cambio, es actualizadora en la medida en que adapta los aspectos accidentales del texto a la norma vigente de la lengua española y a las convenciones tipográficas contemporáneas. 
 
@@ -751,401 +726,8 @@ Por el otro lado, pueden apreciarse con claridad pasajes que omiten alguna graf�
 
 Esta metodología, ideada para generar dos vistas alternativas en el navegador del usuario —los errores y las correcciones—, únicamente ha sido empleada para establecer el texto base transmitido por el manuscrito Chacón. Como se verá en el apartado siguiente,  los errores contenidos en el aparato de variantes se codifican con otros elementos y atributos. 
  
-# Aparato de variantes
 
-A diferencia de los fenómenos textuales ya vistos, la representación del aparato de variantes plantea algunos problemas debido a dos razones principales: por un lado, aunque la TEI dedica el capítulo doceavo de las *Guidelines* a este tema, las explicaciones y ejemplos son escasos y, además, muchos de ellos se centran en cómo codificar aparatos ya existentes, impresos; por el otro, en la actualidad el modelo conceptual de la TEI presupone que la variación textual solo afecta porciones reducidas del texto, como palabras o frases, en lugar de párrafos, estrofas, títulos, secciones o incluso partes del texto. El debate sobre esta cuestión existe en el seno de la comunidad TEI pero en el momento en que escribo estas líneas el elemento `<app>` no puede contener los elementos `<l>`, `<p>`, `<head>` o `<div>` sino siempre a la inversa. Como se verá, esto condiciona el modo en que la codificación del aparato de variantes debe llevarse a cabo y plantea dificultades a la hora de codificar distintas versiones de una misma obra o la extensión de los testimonios cotejados. 
-
-De momento, sin embargo, conviene saber que la TEI define una metodología para representar los siguientes componentes de un aparato de variantes:
-
- - las entradas mediante el elemento `<app>`; 
- - las variantes mediante los elementos `<lem>` y `<rdg>`;
- - y los testimonios en donde se encuentran las variantes mediante el elemento `<wit>` o el atributo `@wit`.
-
-Tal y como se advierte en las *Guidelines*, el elemento `<app>` se parece al elemento `<choice>` en la medida en que ambos permiten codificar lecciones alternativas de un mismo pasaje; la diferencia entre ellos radica en que en `<app>` se pueden anidar más de dos alternativas mientras que con `<choice>` se suele presentar la grafía original del texto y la regularización propuesta por el editor. El elemento `<app>`, pues, contiene un elemento `<lem>` y uno o más de un elemento `<rdg>` con los que se identifican, respectivamente, la lección preferida (o lema) y las variantes. Asimismo, conviene saber que las variantes se pueden agrupar mediante el elemento `<rdgGroup>` si se desea diferenciar de manera estructurada entre variantes sustantivas y variantes accidentales gracias al atributo `@type`. El elemento `<app>` también puede anidar notas de carácter general mediante el elemento `<note>` y notas más específicas (por ejemplo, si se refieren a una variante en concreto) mediante el elemento `<witDetail>`. Por último, si el objetivo del proyecto es codificar un aparato de variantes ya publicado en formato impreso, se recomienda utilizar el elemento `<wit>` para conservar las siglas con que se identifican los testimonios en cada entrada del aparato.
-
-Además de definir una serie de elementos para representar la variación textual, la TEI ha establecido tres métodos para codificar aparatos. Los dos primeros permiten codificar las variantes tanto en el mismo texto base (*in-line*) como de manera separada (aparato externo), por ejemplo, en el apéndice del documento, en un elemento `<back>`; en cambio, si se sigue el tercer método las variantes deben aparecer insertadas en el texto base. Los nombres de los métodos son los siguientes:
-
- - método de localización referenciada; 
- - método de adjunción de doble
- - y método de segmentación paralela.
-
-El método de localización referenciada se recomienda para codificar aparatos de variantes ya existentes porque conserva la estructura original del impreso: si el aparato es externo debe identificarse el pasaje del lema y luego enlazar el aparato haciendo uso del atributo `@loc` en el elemento `<app>`; en cambio, si el aparato se inserta en el texto (`in-line`), el elemento `<app>` se puede situar tras la lección del texto base o bien al final del verso o de la frase que contiene la variante.
-
-El método de adjunción de doble destino se caracteriza porque el inicio y el fin del lema se señalan de manera explícita mediante etiquetas y atributos; así, es posible utilizar el atributo `@xml:id` en un elemento `<l>` para indicar el inicio del lema e identificar dónde termina gracias a un elemento `<anchor>` con un atributo `@xml:id`. Por su parte, el elemento `<app>` debe contener los atributos `@from` y `@to` para remitir a los valores definidos en los atributos `@xml:id` de `<l>` y de `<anchor>`. Este método se aconseja cuando el editor debe lidiar con variantes estructurales que resultan difíciles de encajar en la sintaxis arbórea del XML.
- 
-Por último, en el método de segmentación paralela las variantes se insertan únicamente en el texto base (*in-line*) de tal modo que cada lección se contrapone entre sí. Es el método elegido en esta propuesta de codificación XML/TEI por tres razones: en primer lugar, aunque no es el método más adecuado para procesar yuxtaposiciones y variación de tipo estructural, tiene la ventaja de ser mucho más fácil de realizar de manera manual que los otros dos métodos. En segundo lugar, la mayoría de herramientas que facilitan la creación de ediciones críticas (Versioning Machine, TEI Critical Edition Toolbox o Stemmaweb, entre otras) solo funcionan con este método de codificación. Por último, al menos desde un punto de vista teórico, el método de segmentación paralela está concebido para reconstruir todos los textos contenidos en los documentos cotejados, por ejemplo, en columnas paralelas o en ventanas enfrentadas.
- 
-Antes de ejemplificar cómo se han codificado las variantes, conviene señalar dos aspectos del aparato de las *Soledades*: por un lado, se trata de un aparato de variantes negativo en el que se combinan los elementos `<lem>` y `<rdg>` y en el que solo se identifican los testimonios que transmiten una lección que varía respecto al lema. La razón por la que he creado un aparato negativo es que para el ordenador es fácil deducir —consultando la lista de testimonios descritos en el encabezado TEI— qué documentos no han sido identificados con el atributo `@wit` en los elementos `<rdg>` porque no contienen variantes y, por tanto, dar los que coinciden con el lema. Por el otro lado, las variantes que he recogido en el aparato de variantes se pueden reducir a dos clases: errores de copia y variantes de autor. Para que el usuario pueda distinguir las variantes, he establecido una taxonomía de variantes gracias al atributo `@type` contenido en el elemento `<rdg>`; los valores que he definido son cuatro: 
-
- - *error*: sirve para identificar los pasajes en los que los amanuenses
-   cometieron un error de copia tanto si fue enmendado posteriormente
-   como si no lo fue;  
- - *prim*: sirve para identificar las variantes d autor pertenecientes a la versión primitiva; 
- - *interm*: sirve para identificar las variantes de autor intermedias, es decir, aquellas variantes posteriores a la versión primitiva y anteriores a la versión definitiva;
- - *intervention*: sirve para identificar las intervenciones de los copistas llevadas a cabo para actualizar (o refundir) las versiones del poema.
-
- 
-Por tanto, esta codificación de las *Soledades* está ideada para que el usuario pueda seleccionar, filtrar o visualizar las variantes en función de sus intereses a partir de dos criterios: el testimonio que transmite la variante y el tipo de variante. Así, por ejemplo, se puede imaginar una situación en la que un investigador está interesado en estudiar la filiación de los testimonios; en tal caso, es bastante probable que el usuario solo quiera visualizar las variantes identificadas como errores y una combinación concreta de testimonios. Con este método de codificación también es posible encontrar con facilidad qué lecciones del texto base (Chacón) aparecen en el aparato de variantes porque se consideran erróneas. Por último, ya que se han distinguido las variantes de autor, el usuario podría aislar el resto de variantes y acceder únicamente al texto reconstruido de la versión primitiva o bien a las variantes de autor identificadas como intermedias.
-
-Dicho esto, a continuación conviene ver una serie de casos concretos y comentar las principales dificultades que he tenido que afrontar. En adelante, el apartado se centrará en la codificación de la tipología de variantes y de la distinta extensión que presentan los testimonios cotejados.
-
-## Errores
-Según la crítitca textual, se pueden distinguir errores por adición, omisión, sustitución o inversión; por lo general, estos son fáciles de distinguir porque no tienen sentido, se transmiten en un solo o en unos pocos testimonios y no respetan la métrica del poema. Los errores, sin embargo, pueden tener una dimensión variable: desde una simple palabra, pasando por una expresión más larga, hasta un verso entero.
-
-Así, el caso más fácil de codificar se da cuando el error atañe únicamente una palabra: 
-
-    <l rend="indent" xml:id="v-0038">
-                            <choice>
-                                <orig><hi rend="initial">E</hi>RA</orig>
-                                <reg>Era</reg>
-                            </choice>
-                            <choice>
-                                <orig>de el</orig>
-                                <reg>del</reg>
-                            </choice> año la <choice>
-                                <orig>estacion</orig>
-                                <reg>estación</reg>
-                            </choice>
-                            <app>
-                                <lem>florida</lem>
-                                <rdg type="error" wit="#I">floria</rdg>
-                                <rdg type="error" wit="#Rl">primera</rdg>
-                            </app><choice>
-                                <orig>,</orig>
-                                <reg/>
-                            </choice></l>
-
-En este caso la variante se ha codificado en una sola entrada del aparato que contiene la lección auténtica (*florida*) y las dos variantes: por un lado, el testimonio I transmite *floria*, es decir, el copista omitió una *d*; por el otro, el testimonio Rl lee un error por sustitución (*primera*). Puesto que son errores de copia evidentes, en ambos casos he utilizado un atributo `@type` con valor *error* para clasificar el contenido del elemento `<rdg>`. Como ya se dijo un poco más arriba, se trata de un aparato negativo y, por tanto, en el elemento `<lem>` no hace falta declarar qué testimonios transmiten florida porque se entiende que, de los 21 testimonios que he cotejado con el texto de Chacón, solo dos (I y Rl) transmiten una variante en este verso.
-
-Ahora bien, en otras ocasiones el error atañe a más de una palabra; en tal caso, la metodología que he seguido se puede ilustrar con el siguiente ejemplo:
-
-    <l xml:id="v-0451">
-                            <app>
-                                <lem>
-                                    <choice>
-                                        <orig>Violaron</orig>
-                                        <reg>violaron</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>à</orig>
-                                        <reg>a</reg>
-                                    </choice>
-                                </lem>
-                                <rdg type="error" wit="#Br #Rl">vio la arena</rdg>
-                            </app>
-                            <persName>Neptuno</persName>
-                            <choice>
-                                <orig/>
-                                <reg>,</reg>
-                            </choice>
-                        </l>
-
-En esta ocasión la entrada de `<app>` se inserta el inicio del verso y el lema incluye más de una palabra (*Violaron a*) porque los testimonios Br y Rl leen *vio la arena*, es decir, un error de copia debido a la mala lectura (o retención) de dos palabras que tiene como resultado una variante de tres. En síntesis, en lugar de codificar este error en tres aparatos distintos, he codificado la variante en un solo elemento `<app>` porque creo que se corresponde mejor al fenómeno que intento captar y porque facilita la lectura al usuario ya que tiene más sentido leer todo junto *vio la arena* que el mismo grupo de palabras fragmentado en tres entradas distintas del aparato. 
-
-Pero los copistas no solo cometen errores; algunos también enmiendan pasajes o intentan enmendarlos consultando otros documentos o bien por adivinación. En tales circunstancias, el valor del atributo `@type` del elemento `<rdg>` sigue siendo error porque lo que me interesa es que el usuario pueda filtrar los pasajes en que se cometió un error de copia y no si los amanuenses lo corrigieron. Veamos un ejemplo para que se entienda mejor: 
-
-    <l xml:id="v-0418"><choice>
-                                <orig>Escollo</orig>
-                                <reg>escollo</reg>
-                            </choice>, <app>
-                                <lem>el</lem>
-                                <rdg type="error" wit="#Br"><add place="above">el</add></rdg>
-                                <rdg type="error" wit="#Ml"/>
-                            </app> metal ella <app>
-                                <lem>fulminante</lem>
-                                <rdg type="error" wit="#S">ful<subst>
-                                        <del rend="strikethrough">gente</del>
-                                        <add place="above">minante</add>
-                                    </subst></rdg>
-                            </app></l>
-
-En este verso tres testimonios transmiten un error de copia pero dos de ellos afectan a la misma palabra, por lo que he codificado las variantes en dos elementos `<app>`. En el primero de ellos el elemento `<lem>` incluye la palabra *el*; los copistas de los testimonios Br y Ml omitieron este artículo pero el de Br lo añadió encima para corregir la lección. En el segundo elemento `<app>` el lema es *fulgente* mientras que un elemento `<rdg>` da la variante encontrada en el testimonio S. En este manuscrito el copista transcribió *fulgente* y luego intervino como editor tachando la terminación -*gente* y añadiendo encima la terminación -*minante*. Es decir, llevó a cabo una sustitución; de ahí el uso del elemento `<subst>`.
-
-En algunas ocasiones los copistas también restituyen una lección. Es decir, la lección que transcribieron primero era la correcta pero luego, por alguna razón, la modificaron; finalmente, volvieron a la lección original. Este tipo de intervenciones editoriales han sido codificadas mediante el elemento `<restore>`:
-
-    <l n="35" xml:id="v-0035">
-                            <app>
-                                <lem><choice>
-                                        <orig>Que</orig>
-                                        <reg>que</reg>
-                                    </choice><choice>
-                                        <orig/>
-                                        <reg>,</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>à</orig>
-                                        <reg>a</reg>
-                                    </choice> tu piedad <app>
-                                        <lem><persName>Euterpe</persName></lem>
-                                        <rdg type="error" wit="#N"><restore type="addition">Euterpe</restore></rdg>
-                                        <rdg type="error" wit="#S">ya noble</rdg>
-                                    </app> agradecida<choice>
-                                        <orig>,</orig>
-                                        <reg/>
-                                    </choice></lem>
-                                <rdg wit="#Rm #Pr"/>
-                            </app>
-                        </l>
-
-En este ejemplo la palabra *Euterpe* ha sido codificada con el elemento `<restore>` porque era la lección que el copista transcribió originalmente; a continuación, debió de consultar otro documento (probablemente S) que contenía la variante *ya noble*; el copista de N tachó *Euterpe* y añadió encima *ya noble*. Por último, se dio cuenta de que al intervenir había corrompido la lección auténtica, así que tachó *ya noble* y añadió en el margen *Euterpe*. Todo este proceso, sin embargo, no se representa con lenguaje de marcado sino únicamente la palabra restituida y el modo en que se llevó a cabo la restitución mediante el atributo `@type`.     
-
-En resumen, para codificar un error por omisión como el cometido por el copista del testimonio Ml he dejado el elemento vacío; para codificar una enmienda por parte del copista, como en los casos de Br y S, he utilizado los elementos `<del>`, `<add>` y `<subst>` para codificar la intervención editorial; para codificar restituciones se ha utilizado el elemento `<restore>`. En todos estos casos el elemento `<rdg>` tiene un atributo `@type` con valor error porque con ello quiero que el usuario pueda acceder a los pasajes en los versos que contienen (o contenían) un error de copia. 
-
-Para acabar, conviene saber que la TEI define un atributo `@cause` para clasificar los errores desde un punto de vista causal; hasta el momento, en esta codificación XML/TEI de las *Soledades* no he utilizado este atributo porque creo que el usuario tiene suficiente con poder separar los errores de las variantes de autor. Sin embargo, en el futuro podría clasificar los errores según otra tipología como adición, omisión, sustitución o inversión.  
-
-## Variantes de autor
-
-Las variantes de autor han sido codificadas utilizando un atributo `@type` con tres valores posibles: *prim*, *interm* y *intervention*. De esta manera, además de los errores de copia, es posible representar, por un lado, el proceso genético del autor, y, por el otro, cómo los copistas realizan intervenciones editoriales en el manuscrito.  
-
-El caso más sencillo de codificación se produce cuando la variación atañe al verso entero. Ya se ha dicho que el modelo conceptual actual de la TEI no permite que los elementos `<app>`, `<lem>` y `<rdg>` contengan un elemento `<l>` o `<lg>`. Así, pues, la única solución que he encontrado es anidar dentro de `<l>` estos elementos de tal modo que el verso de la versión definitiva sea el contenido del elemento `<lem>` y el verso de la versión definitiva sea el contenido del elemento `<rdg>`. Veamos un ejemplo:
-
-    <l xml:id="v-1392">
-                            <app>
-                                <lem><choice>
-                                        <orig>Les</orig>
-                                        <reg>les</reg>
-                                    </choice> ofrece el que<choice>
-                                        <orig/>
-                                        <reg>,</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>jouen</orig>
-                                        <reg>joven</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>ia</orig>
-                                        <reg>ya</reg>
-                                    </choice> gallardo</lem>
-                                <rdg type="prim" wit="#Pr">bien que de mimbres preso en garvín pardo</rdg>
-                                <rdg wit="#Rm #Rl"/>
-                            </app>
-                        </l>
-
-En este ejemplo la entrada del aparato no incluye una palabra aislada sino todo el verso: por un lado, se representa en el elemento `<lem>` el verso *les ofrece el que, joven ya gallardo*;  por el otro, se representa en el elemento `<rdg>` el verso *bien que de mimbres preso en garvín pardo*; en este caso el único testimonio que transmite la versión primitiva es el manuscrito Pérez de Ribas por lo que solo es necesario un elemento `<rdg>` con los atributos `@type` y `@wit`. El resto de testimonios transmiten el verso de la versión definitiva que coincide con el lema; ahora bien, puesto que la extensión de dos testimonios (Rl y Rm) no llega hasta este verso he debido dejar vacío un elemento `<rdg>` para representar esta omisión.
- 
-En la mayoría de casos la situación no es tan sencilla porque los copistas actúan como editores y actualizan la versión del poema. El copista del testimonio Pr tachó *luciente* y añadió en el margen *mentido*; en el caso del copista del testimonio O la sustitución se llevó a cabo de modo menos evidente pues no hay tachón sino únicamente una adición encima. La codificación de estas variantes es la siguiente: 
-
-    <l xml:id="v-0039">
-                            <choice>
-                                <orig>En</orig>
-                                <reg>en</reg>
-                            </choice> que <app>
-                                <lem>el</lem>
-                                <rdg type="error" wit="#Rm">en</rdg>
-                            </app>
-                            <app>
-                                <lem>mentido</lem>
-                                <rdg type="prim" wit="#Rm">luciente</rdg>
-                                <rdg type="intervention" wit="#Pr"><subst>
-                                        <del rend="strikethrough">luciente</del>
-                                        <add place="margin">mentido</add>
-                                    </subst></rdg>
-                                <rdg type="intervention" wit="#O"><subst>
-                                        <del rend="unmarked">luciente</del>
-                                        <add place="above">mentido</add>
-                                    </subst></rdg>
-                            </app> robador de <persName>Europa</persName><choice>
-                                <orig>,</orig>
-                                <reg/>
-                            </choice></l>
-
-En este verso la variante de autor atañe a una sola palabra. En la versión primitiva Góngora había escrito *luciente robador de Europa* mientras que en la definitiva se lee *mentido robador de Europa*. De todos los testimonios que he cotejado, tres transmiten la versión primitiva; de estos tres, en realidad, solo el testimonio Rm transmite *luciente* porque en los otros dos los copistas actualizaron el poema sustituyendo una versión por otra: por un lado, el copista de Pr tachó y añadió en el margen; por el otro, aunque el copista de O no tachó ni subrayó *luciente* sino que añadió encima *mentido*, se puede *deducir* que su intención era sustituir las palabras. Asimismo, en la codificación de este verso se observa cómo la misma combinación de elementos se puede utilizar para representar distintos fenómenos pues el testimonio Rm transmite un error que ha sido codificado con `<app>`, `<lem>` y `<rdg>`. La diferencia entre la primera y la segunda lección se representa mediante los valores del atributo `@type`.
-  
-Ahora bien, aunque la variación afecte únicamente a una palabra, en ocasiones conviene codificar el verso entero en el aparato de variantes; esto ocurre porque los copistas a menudo sustituyen grupos de palabras o versos enteros:
-
-    <l xml:id="v-0041"><app>
-                                <lem>
-                                    <choice>
-                                        <orig>Y</orig>
-                                        <reg>y</reg>
-                                    </choice> el <choice>
-                                        <orig>Sol</orig>
-                                        <reg>sol</reg>
-                                    </choice>
-                                    <app>
-                                        <lem>todo</lem>
-                                        <rdg type="error" wit="#A #Br #Ch #D #Ml #N #S #pe #ho33 #Rl">todos</rdg>
-                                    </app> los rayos de su pelo)<choice>
-                                        <orig/>
-                                        <reg>,</reg>
-                                    </choice></lem>
-                                <rdg type="prim" wit="#Rm">y el sol todo en su pelo</rdg>
-                                <rdg type="intervention" wit="#Pr">y el sol todo <subst>
-                                        <del rend="strikethrough">en su pelo</del>
-                                        <add place="margin">los rayos de su pelo</add>
-                                    </subst></rdg>
-                                <rdg type="intervention" wit="#O">y el sol todo<subst>
-                                        <del rend="underlined">en</del>
-                                        <add place="above">los rayos de</add>
-                                    </subst> su pelo</rdg>
-                            </app></l>
-
-En este ejemplo la entrada del aparato contiene el verso entero: por un lado, el elemento `<lem>` da la versión definitiva; por el otro, los elementos `<rdg>` dan la versión primitiva. Ahora bien, la sustitución llevada a cabo por los copista de Pr y O difiere: el primero tachó *en su pelo* y añadió en el margen *los rayos de su pelo*; el segundo, en cambio, subrayó la preposición *en* y añadió encima *los rayos de*. Si se quieren captar con fidelidad cómo intervienen los copistas, es necesario incluir en el elemento *<rdg>* no solo las variantes en sí sino también las palabras que no varían y que están en el entorno. La alternativa sería crear una entrada de aparato por cada una de las palabras que variasen; pero esta estrategia, sin duda, complicaría el procesamiento del etiquetado y haría mucho más difícil la lectura en pantalla. Por lo demás, debo advertir que la TEI permite anidar elementos `<app>` en otros elementos `<app>` de tal manera que es posible representar variantes contenidas en el lema; esto es lo que ocurre con la variante *todos* transmitida por diez testimonios (incluido Chacón) e identificada como error de copia mediante el atributo `@type`.
-
-Cuando el paso de la versión primitiva a la versión definitiva supuso la eliminación de un verso, el elemento `<lem>` debe dejarse vacío: 
-
-    <l xml:id="v-0183-p">
-                            <app>
-                                <lem/>
-                                <rdg type="prim" wit="#Rm #O">por absolverle escrúpulos al
-                                        vaso),</rdg>
-                                <rdg type="intervention" wit="#Pr">
-                                    <del rend="strikethrough">por absolverle escrúpulos al
-                                            vaso),</del>
-                                </rdg>
-                            </app>
-                        </l>
-
-En este ejemplo se ve cómo en el lema no hay ningún verso mientras que dos testimonios (Rm y O) transmiten el verso que sí había en la versión primitiva. Por su parte, en Pr la segunda mano tachó el verso *por absolverle escrúpulos al vaso)* con el fin de actualizar el poema por eso hay un elemento `<del>`. Aunque la TEI define un atributo `@hand` con el que identificar quién es el responsable de la intervención editorial, en esta propuesta de codificación no me ha parecido oportuno utilizarlo porque mi objetivo principal es que el usuario filtre las variantes por testimonio y tipología, y no por manos pues la mayoría de manuscritos fueron trasladados por un solo amanuense.
-
-Por último, la distinción entre la versión primitiva y las variantes de autor producidas en una fase intermedia se lleva a cabo mediante el atributo `@type`. Veamos un ejemplo: 
-
-    <l xml:id="v-0735"><choice>
-                                <orig>Papel</orig>
-                                <reg>papel</reg>
-                            </choice> fue de pastores, <app>
-                                <lem>aunque rudo,</lem>
-                                <rdg type="prim" wit="#Rm #O">y no rudo,</rdg>
-                                <rdg type="interm" wit="#Br #Rl">si bien rudo,</rdg>
-                                <rdg type="intervention" wit="#Pr"><subst>
-                                        <del rend="strikethrough">y no rudo,</del>
-                                        <add place="margin">aunque rudo,</add>
-                                    </subst></rdg>
-                            </app></l>
-
-En este verso se pueden distinguir tres estadios en la parte final: en primer lugar, *y no rudo*; en segundo lugar, *si bien rudo*; por último, *aunque rudo*. El procedimiento es idéntico al que ya ha sido explicado: la versión definitiva se codifica en el elemento `<lem>` mientras que las otras dos aparecen en el elemento `<rdg>`; lo que diferencia a la versión primitiva de la intermedia es únicamente el valor del atributo `@type. 
-
-## Extensión
-
-Los testimonios cotejados tienen una extensión variable que nos permite conocer las fases de la escritura de las *Soledades*. Para representar la variación estructural con el método de segmentación paralela es necesario dejar vacíos algunos elementos `<rdg>`; esto ocurre en la codificación de todos los versos que componen la Dedicatoria: 
-
-    <l xml:id="v-0021">
-                            <app>
-                                <lem>
-                                    <choice>
-                                        <orig>La</orig>
-                                        <reg>la</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>hasta</orig>
-                                        <reg>asta</reg>
-                                    </choice> de tu luciente <choice>
-                                        <orig>jaualina</orig>
-                                        <reg>jabalina</reg>
-                                    </choice><choice>
-                                        <orig>;</orig>
-                                        <reg>,</reg>
-                                    </choice></lem>
-                                <rdg wit="#Pr #Rm"/>
-                            </app>
-                        </l>
-
-Los testimonios Pr y Rm no transmiten la Dedicatoria. Ahora bien, no se trata de un error por omisión por lo que no se debe poner un atributo `@type` con valor *error*. Esta estrategia ha sido llevada a cabo a lo largo del poema de tal modo que en el último verso el valor del atributo `@wit` contiene 17 siglas con las que se identifican los testimonios que no lo transmiten: 
-
-    <l xml:id="v-2107">
-                            <app>
-                                <lem><choice>
-                                        <orig>I</orig>
-                                        <reg>y</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>á</orig>
-                                        <reg>a</reg>
-                                    </choice> la <choice>
-                                        <orig>stygia</orig>
-                                        <reg>estigia</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>Deidad</orig>
-                                        <reg>deidad</reg>
-                                    </choice> con bella esposa.</lem>
-                                <rdg wit="#A #Br #C #D #I #J #Ml #N #Rm #Pr #S #vi #Q #O #Rl"/>
-
-Por supuesto, el incremento de siglas identificadas en el atributo `@wit` es progresivo pero no por ello deja de ser un proceso complejo: el editor debe representar una ausencia mediante una elemento presente que se repite verso tras verso.  
-
-# Fiabilidad y palabras suplidas
-
-Aunque el estado de los documentos cotejados es en general bueno, en ocasiones la grafía es poco clara y cuesta reconocer qué transcribió el copista, especialmente cuando hay una intervención editorial con tachón. Además, en tres ocasiones me he permitido conjeturar una lección de la versión primitiva.
-
-La representación del grado de fiabilidad y de las conjeturas se puede representar con lenguaje de marcado de distintas maneras. La TEI define varios elementos como `<certainty>` y `<unclear>` para codificar, respectivamente, el nivel de certeza asociado a un etiquetado y los pasajes difíciles de leer. Sin embargo, para economizar el número de elementos, en esta propuesta de codificación he utilizado el atributo `@cert` para indicar el grado de certeza de ciertas lecciones y el elemento `<supplied>` para codificar aquellas palabras que he suplido porque en el manuscrito no se pueden leer, es decir, lo que se podría identificar como una conjetura.
-
-En el primer caso, el atributo `@cert` aparece en el elemento `<rdg>`: 
-
-    <l xml:id="v-0063">(<app>
-                                <lem>
-                                    <choice>
-                                        <orig>Alga todo</orig>
-                                        <reg>alga todo</reg>
-                                    </choice></lem>
-                                <rdg cert="low" type="error" wit="#N">alga
-                                    <del rend="strikethrough">do</del> todo</rdg>
-                                <rdg type="error" wit="#S">algado</rdg>
-                            </app><choice>
-                                <orig>,</orig>
-                                <reg/>
-                            </choice>
-                            <choice>
-                                <orig>i</orig>
-                                <reg>y</reg>
-                            </choice>
-                            <app>
-                                <lem>espumas</lem>
-                                <rdg cert="low" type="error" wit="#S">espuma</rdg>
-                                <rdg type="error" wit="#Rl">espuma</rdg>
-                            </app>)</l>
-
-En la codificación de este verso se puede ver claramente el uso del atributo `@cert`. En la primera entrada del aparato el testimonio S transmite *algado*; el copista del testimonio N tachó la terminación de la lección original que resulta, por este motivo, poco legible; pero es bastante probable que N leyera originalmente *algado* porque estos dos manuscritos están emparentados. El atributo `@cert` con valor *low* ha sido utilizado para representar este tipo de lecciones en las que el grado de certeza es menor de lo habitual. Ahora bien, en ocasiones no es posible reconstruir la lección, por lo que es necesario dejar constancia de ello mediante un elemento `<gap/>`, es decir, un elemento vacío con el que se representa una omisión.
-
-Un ejemplo de cómo he representado palabras suplidas ya se vio más arriba al hablar de los títulos. Las palabras *Dedicatoria* y *Soledad*, que aparecen en los títulos de las dos primeras partes del poema, fueron codificadas con el elemento `<supplied>` porque no se encuentran en Chacón. En esta codificación el número total de elementos `<supplied>` utilizados asciende a 29: su uso, por tanto, es escaso. En la mayoría de ocasiones se encuentran en el aparato de variantes y se producen porque la intervención del copista (por lo general, la tachadura) impide leer con claridad la lección que se pretende enmendar. Sin embargo, en la versión primitiva de los versos 78 de la *Soledad primera* y 266 y 451 de la *Soledad segunda* he utilizado el elemento `<supplied>` porque la grafía no es legible. Así, la codificación del verso 266 tiene el aspecto siguiente:  
-
-    <l xml:id="v-1394">
-                            <app>
-                                <lem><choice>
-                                        <orig>Tosco</orig>
-                                        <reg>tosco</reg>
-                                    </choice> le <choice>
-                                        <orig>à</orig>
-                                        <reg>ha</reg>
-                                    </choice> encordonado, pero <app>
-                                        <lem>bello</lem>
-                                        <rdg type="error" wit="#N">b<subst>
-                                                <del rend="strikethrough"><gap reason="cancellation"/></del>
-                                                <add place="above">e</add>
-                                            </subst>llo</rdg>
-                                    </app>.</lem>
-                                <rdg wit="#Rm #Rl"/>
-                                <rdg type="prim" wit="#Pr">que desde el mar pudiera <supplied reason="illegible">negar</supplied> bello.</rdg>
-                            </app>
-                        </l>
-
-Además de ejemplificar el uso del elemento <gap/>, en este verso es perceptible la codificación de las palabras suplidas. Como ya se explicó en el apartado 4.2., las palabras razón, negar y cielo de los versos 78, 266 y 451 son tres hipótesis o conjeturas que propongo. He utilizado el elemento <supplied> y no el atributo @cert porque el primero se puede utilizar para marcar una sola palabra mientras que el atributo @cert atañe a todo el contenido del elemento. Es decir, el nivel de detalle del elemento <supplied> es mayor. Como en la tradición impresa, las palabras codificadas con este elemento se podrían presentar en la web entre corchetes cuadrados para indicar que la lección ha sido suplida.  
-
-# Anotación 
-
-Aunque el objetivo principal de esta edición de las *Soledades* ha sido establecer el texto de las dos versiones y representarlos con lenguaje de marco descriptivo, el resultado contiene algunas notas de carácter ecdótico. En primer lugar, como se sabe, el texto base contiene una nota en el verso 937 de la *Soledad segunda* en los que el escriba manifiesta, por un lado, que el poema está inacabado; y, por el otro, que los versos que siguen hasta el final de la página fueron escritos a petición de Chacón.
- 
-Para codificar esta nota que aparece en la fuente principal de la que deriva el texto he utilizado el elemento `<note>`; este elemento se sitúa inmediatamente antes de la etiqueta de cierre del elemento `<l>` del verso 937 y contiene dos atributos: `@place` con valor *bottom* para indicar que la nota aparece en el manuscrito al final de la página y `@type` con valor *scribal* para clasificarla.
-
-Además de la nota de Chacón, en esta propuesta se encuentran otras notas editoriales de las cuales soy responsable. Así, he utilizado el elemento `<note>` para ofrecer las variantes de autor que descubrió Alonso en el manuscrito 3959 de la BNE y que, hasta el momento, no he cotejado. En lugar de codificar dichas variantes en una entrada de aparato, me ha parecido más oportuno proporcionarlas mediante la anotación de tal modo que el lector pueda reconstruir la versión primitiva pero dejando claro que no he sido responsable del cotejo. El elemento `<note>` vuelve a insertarse antes de la etiqueta de cierre del elemento `<l>` y en este caso contiene dos atributos: 
-
-    <l rend="indent" xml:id="v-1740">[VERSO] <note resp="#ARC" type="editorial">En el texto de la versión primitiva reconstruido en 1936, Alonso imprimió <mentioned rend="italic">Invidia revocó, si no fue celo</mentioned> y señaló que esta variante se encuentra en el manuscrito 3959 de la Biblioteca Nacional de España; no se encuentra en ninguno de los testimonios cotejados para esta edición.</note></l>
-
-Por un lado, con el atributo @resp declaro quién es el responsable de la nota enlazando el valor del atributo @xml:id del elemento <respStmt> del encabezado TEI; por el otro, con el atributo @type clasifico la nota puesto que el valor editorial se contrapone al valor scribal de la nota de Chacón. 
-Aunque he intentado representar de manera estructurada todas las variantes que he encontrado, cuando los copistas transcriben por error un verso o parte de un verso de manera independiente, en lugar de codificarlo con un elemento <rdg> he preferido comentar este fenómeno en nota. En total esto sucede en 37 ocasiones. Ahora bien, no he utilizado el elemento <note> sino <witDetail> porque puede contener un atributo @wit con el que indicar en qué testimonio se transmite el error de copia. Veamos un ejemplo:
-                
-
-    <l xml:id="v-0054">
-                        <app>
-                            <lem/>
-                            <rdg type="error" wit="#Br">y</rdg>
-                        </app><choice>
-                            <orig>Piadoso</orig>
-                            <reg>piadoso</reg>
-                        </choice> miembro roto, <witDetail wit="#Pr">El testimonio Pr transmite debajo <mentioned rend="italic">delfín no fue pequeño</mentioned>; la primera mano debió de tacharlo al darse cuenta del error y siguió con la copia del verso íntegro.</witDetail></l>
-
-En este caso, tras el verso 17, la primera mano del testimonio Pr copió delfín no fue pequeño que es parte del verso 18; esta misma mano tachó y copió debajo el verso 18 íntegro. Codificar este error supondría incluir un nuevo elemento <l> que contendría un elemento <app> con un <lem> vacío y un <rdg> con la variante; por razones de economía, la alternativa que propongo es explicar el fenómeno con una nota en lugar de estructurar la información con elementos. 
-
-# Nombres propios
+## Nombres propios
 
 De la poesía de Góngora se ha destacado tradicionalmente como un rasgo característico la alusión y el uso de la perífrasis para evitar designar a los referentes por su nombre. Ahora bien, a lo largo de las *Soledades* se mencionan numerosas divinidades, héroes, astros y personajes mitológicos, históricos, ficticios y alegóricos. Los nombres de lugares también son frecuentes de tal modo que la designación de numerosos países, ciudades, regiones, continentes, ríos, montañas, fuentes y valles conforman la geografía de la obra. Todos estos nombres, por tanto, se pueden codificar con elementos TEI.
 
