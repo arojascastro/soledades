@@ -2,23 +2,32 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+
 		<fileDesc>
 
 			<titleStmt>
 				<title>Soledades. Edición digital con doble presentación y notas</title>
 				<author>Luis de Góngora</author>
 				<editor xml:id="ARC">Antonio Rojas Castro</editor>
-				<funder>Ministerio de Economía y Competitividad</funder>
+				<funder>Ministerio de Economía y Competitividad. Todo Góngora II [I+D+I FFI2010-17349]</funder>
 			</titleStmt>
+
+			<editionStmt>
+				<edition n="2"><date when="2017-09">Septiembre de 2017</date></edition>
+			</editionStmt>
 
 			<publicationStmt>
 				<distributor>Antonio Rojas Castro</distributor>
+				<pubPlace>Barcelona</pubPlace>
+				<date when="2016-06">2016</date>
 				<availability status="free">
 					<licence target="http://creativecommons.org/licenses/by/4.0/">Esta obra se publica con una licencia de Creative Commons Reconocimiento 4.0 Internacional</licence>
 				</availability>
 			</publicationStmt>
 
 			<sourceDesc xml:id="testimonios">
+
+				<bibl>El texto de esta edición ha sido establecido tras cotejar el manuscrito Chacón (Res/45, 1, Biblioteca Nacional de España) con 21 testimonios del siglo XVII.</bibl>
 				<listWit>
 					<witness xml:id="A">
 						<msDesc type="manuscript">
@@ -28,9 +37,9 @@
 								<repository>Biblioteca Nacional de España</repository>
 								<collection>Fondo antiguo</collection>
 								<idno type="cataloguenumber">Mss/4075</idno>
+								<msName>Varias poesías de Luis de Góngora</msName>
 								<msName>Manuscrito Alba</msName>
 							</msIdentifier>
-							<head>Varias poesías de Luis de Góngora</head>
 							<msContents>
 								<msItem>
 									<locus from="235r" to="275v">235r-275v</locus>
@@ -47,32 +56,13 @@
 								<repository>Biblioteca Nacional de España</repository>
 								<collection>Fondo antiguo</collection>
 								<idno type="cataloguenumber">Mss/17719</idno>
+								<msName>Libro de diversas poesías y curiosidades recopilado por Héctor Méndez de Brito</msName>
 								<msName>Manuscrito Méndez de Brito</msName>
 							</msIdentifier>
-							<head>Libro de diversas poesías y curiosidades recopilado por Héctor Méndez de Brito</head>
 							<msContents>
 								<msItem>
 									<locus from="76r" to="99r">76r-99r y 100r-118r</locus>
 									<locus from="100r" to="99r">100r-188r</locus>
-									<title level="m">Soledades</title>
-								</msItem>
-							</msContents>
-						</msDesc>
-					</witness>
-					<witness xml:id="C">
-						<msDesc type="manuscript">
-							<msIdentifier>
-								<country>España</country>
-								<settlement>Madrid</settlement>
-								<repository>Biblioteca Nacional de España</repository>
-								<collection>Fondo antiguo</collection>
-								<idno type="cataloguenumber">Mss/3906</idno>
-								<msName>Manuscrito Cuesta Saavedra</msName>
-							</msIdentifier>
-							<head>Papeles varios gongorinos</head>
-							<msContents>
-								<msItem>
-									<locus from="147r" to="182r">147r-182r</locus>
 									<title level="m">Soledades</title>
 								</msItem>
 							</msContents>
@@ -86,9 +76,9 @@
 								<repository>Biblioteca Nacional de España</repository>
 								<collection>Fondo reservado</collection>
 								<idno type="cataloguenumber">Res/45, 1</idno>
+								<msName>Obras de don Luis de Góngora reconocidas y comunicadas con él por don Antonio Chacón Ponce de León, señor de Polvoranca</msName>
 								<msName>Manuscrito Chacón</msName>
 							</msIdentifier>
-							<head>Obras de don Luis de Góngora reconocidas y comunicadas con él por don Antonio Chacón Ponce de León, señor de Polvoranca</head>
 							<msContents>
 								<msItem>
 									<locus from="193" to="260">193-260 páginas</locus>
@@ -105,9 +95,9 @@
 								<repository>Biblioteca Nacional de España</repository>
 								<collection>Fondo antiguo</collection>
 								<idno type="cataloguenumber">Mss/3726</idno>
+								<msName>Obras de Góngora y referentes a él</msName>
 								<msName>Manuscrito Díaz de Rivas</msName>
 							</msIdentifier>
-							<head>Obras de Góngora y referentes a él</head>
 							<msContents>
 								<msItem>
 									<locus from="32r" to="71v">32r-71v</locus>
@@ -129,10 +119,10 @@
 								<altIdentifier>
 									<idno>Ms. 404</idno>
 								</altIdentifier>
+								<msName>Contiene este volumen las obras que se han podido adquirir del gran don Luis de Góngora y Argote, príncipe y Homero de la poesía de España. Corregidas de los vicios que hasta
+									ahora padecen las impresiones todas, que de ellas han salido, por las noticias, que dejó su mismo autor.</msName>
 								<msName>Manuscrito Estrada</msName>
 							</msIdentifier>
-							<head>Contiene este volumen las obras que se han podido adquirir del gran don Luis de Góngora y Argote, príncipe y Homero de la poesía de España. Corregidas de los vicios que hasta ahora
-								padecen las impresiones todas, que de ellas han salido, por las noticias, que dejó su mismo autor.</head>
 							<msContents>
 								<msItem>
 									<locus from="407" to="476">407-476</locus>
@@ -148,8 +138,8 @@
 								<settlement>Nueva York</settlement>
 								<repository>Biblioteca de The Hispanic Society of America</repository>
 								<idno type="cataloguenumber">B 2362</idno>
+								<msName>Cuaderno de varias poesías de don Luis de Góngora</msName>
 							</msIdentifier>
-							<head>Cuaderno de varias poesías de don Luis de Góngora</head>
 							<msContents>
 								<msItem>
 									<locus from="373r" to="418v">373r-418v</locus>
@@ -171,9 +161,9 @@
 								<altIdentifier>
 									<idno>Ms. 330</idno>
 								</altIdentifier>
+								<msName>Obras de Luis de Góngora</msName>
 								<msName>Manuscrito Iriarte</msName>
 							</msIdentifier>
-							<head>Obras de Luis de Góngora</head>
 							<msContents>
 								<msItem>
 									<locus from="373r" to="417v">373r-417v</locus>
@@ -190,8 +180,8 @@
 								<repository>Biblioteca Nacional de España</repository>
 								<collection>Fondo antiguo</collection>
 								<idno type="cataloguenumber">Mss/4118</idno>
+								<msName>Obras varias poéticas de Luis de Góngora</msName>
 							</msIdentifier>
-							<head>Obras varias poéticas de Luis de Góngora</head>
 							<msContents>
 								<msItem>
 									<locus from="334r" to="378v">334r-378v</locus>
@@ -208,8 +198,8 @@
 								<repository>Biblioteca Nacional de España</repository>
 								<collection>Fondo antiguo</collection>
 								<idno type="cataloguenumber">Mss/22217</idno>
+								<msName>Obras de don Luis de Góngora</msName>
 							</msIdentifier>
-							<head>Obras de don Luis de Góngora</head>
 							<msContents>
 								<msItem>
 									<locus from="17r" to="71v">17r-71v</locus>
@@ -226,8 +216,8 @@
 								<repository>Biblioteca Nacional de España</repository>
 								<collection>Fondo antiguo</collection>
 								<idno type="cataloguenumber">Mss/19003</idno>
+								<msName>Poesías de don Luis de Góngora en todo género de versos castellanos</msName>
 							</msIdentifier>
-							<head>Poesías de don Luis de Góngora en todo género de versos castellanos</head>
 							<msContents>
 								<msItem>
 									<locus from="280r" to="32v">280r-321v</locus>
@@ -244,8 +234,8 @@
 								<repository>Bodleian Library</repository>
 								<collection>Richard Heber</collection>
 								<idno type="cataloguenumber">Arch. Seld. A. II 13</idno>
+								<msName>Papeles varios</msName>
 							</msIdentifier>
-							<head>Papeles varios</head>
 							<msContents>
 								<msItem>
 									<locus from="1r" to="28r">1r-28r</locus>
@@ -263,8 +253,8 @@
 								<collection>Fons Artur Sedó i Guichard</collection>
 								<idno type="cataloguenumber">Ms. 2056</idno>
 								<msName>Manuscrito Pérez de Ribas</msName>
+								<msName>Obra poética, con algunas correcciones autógrafas</msName>
 							</msIdentifier>
-							<head>Obra poética, con algunas correcciones autógrafas</head>
 							<msContents>
 								<msItem>
 									<locus from="6r" to="35r">6r-35r</locus>
@@ -284,8 +274,8 @@
 								<altIdentifier>
 									<idno>2-C-10</idno>
 								</altIdentifier>
+								<msName>Cuaderno de varias poesías de don Luis de Góngora</msName>
 							</msIdentifier>
-							<head>Cuaderno de varias poesías de don Luis de Góngora</head>
 							<msContents>
 								<msItem>
 									<locus from="262r" to="306v">262r-306v</locus>
@@ -302,8 +292,8 @@
 								<repository>Biblioteca Nacional de Portugal</repository>
 								<collection>Colección de códices</collection>
 								<idno type="cataloguenumber">COD. 3266</idno>
+								<msName>[Miscelánea]</msName>
 							</msIdentifier>
-							<head>[Miscelánea]</head>
 							<msContents>
 								<msItem>
 									<locus from="49r" to="72v">49r-72v</locus>
@@ -323,8 +313,8 @@
 								<altIdentifier>
 									<idno>E-39-6709</idno>
 								</altIdentifier>
+								<msName>Poesías de autores andaluces</msName>
 							</msIdentifier>
-							<head>Poesías de autores andaluces</head>
 							<msContents>
 								<msItem>
 									<locus from="859r" to="864v">859r-864v</locus>
@@ -341,8 +331,8 @@
 								<repository>Biblioteca Nacional de España</repository>
 								<collection>Fondo antiguo</collection>
 								<idno type="cataloguenumber">Mss/8645</idno>
+								<msName>Obras poéticas del insigne don Luis de Góngora, natural de Córdoba</msName>
 							</msIdentifier>
-							<head>Obras poéticas del insigne don Luis de Góngora, natural de Córdoba</head>
 							<msContents>
 								<msItem>
 									<locus from="325r" to="384r">325r-384r</locus>
@@ -369,12 +359,8 @@
 						</msDesc>
 						<biblStruct>
 							<monogr>
-								<author>
-									<persName ref="http://viaf.org/viaf/12309145" role="author">Luis de Góngora</persName>
-								</author>
-								<editor>
-									<persName ref="http://viaf.org/viaf/59488463" role="editor">Juan López de Vicuña</persName>
-								</editor>
+								<author>Luis de Góngora</author>
+								<editor>Juan López de Vicuña </editor>
 								<title type="short" level="m">Obras en verso del Homero español</title>
 								<imprint>
 									<pubPlace>
@@ -382,11 +368,11 @@
 									</pubPlace>
 									<respStmt>
 										<resp>Impreso por</resp>
-										<persName ref="http://viaf.org/viaf/34398749" role="impresor"> Ana de Carasa </persName>
+										<persName ref="http://viaf.org/viaf/34398749" role="impresor">Ana de Carasa</persName>
 									</respStmt>
 									<respStmt>
 										<resp>A costa de</resp>
-										<persName role="librero"> Alonso Pérez </persName>
+										<persName role="librero">Alonso Pérez</persName>
 									</respStmt>
 									<date when="1627">1627</date>
 								</imprint>
@@ -411,12 +397,8 @@
 						</msDesc>
 						<biblStruct>
 							<monogr>
-								<author>
-									<persName ref="http://viaf.org/viaf/17332224" role="comentarista">José de Pellicer</persName>
-								</author>
-								<author>
-									<persName ref="http://viaf.org/viaf/12309145" role="autor">Luis de Góngora</persName>
-								</author>
+								<author> José de Pellicer </author>
+								<author> Luis de Góngora </author>
 								<editor>Sin datos</editor>
 								<title type="short" level="m">Lecciones solemnes a las obras de don Luis de Góngora y Argote</title>
 								<imprint>
@@ -429,7 +411,7 @@
 									</respStmt>
 									<respStmt>
 										<resp>A costa de</resp>
-										<persName role="librero"> Pedro Coello </persName>
+										<persName role="librero">Pedro Coello</persName>
 									</respStmt>
 									<date when="1630">1630</date>
 								</imprint>
@@ -454,12 +436,8 @@
 						</msDesc>
 						<biblStruct>
 							<monogr>
-								<author>
-									<persName ref="http://viaf.org/viaf/12309145" role="author">Luis de Góngora</persName>
-								</author>
-								<editor>
-									<persName role="editor">Gonzalo de Hoces</persName>
-								</editor>
+								<author> Luis de Góngora </author>
+								<editor> Gonzalo de Hoces </editor>
 								<title type="short" level="m">Todas las obras de don Luis de Góngora en varios poemas</title>
 								<imprint>
 									<pubPlace>
@@ -496,15 +474,9 @@
 						</msDesc>
 						<biblStruct>
 							<monogr>
-								<author>
-									<persName role="comentarista">García de Salcedo Coronel</persName>
-								</author>
-								<author>
-									<persName ref="http://viaf.org/viaf/12309145" role="autor">Luis de Góngora</persName>
-								</author>
-								<editor>
-									<persName role="editor">García de Salcedo Coronel</persName>
-								</editor>
+								<author> García de Salcedo Coronel </author>
+								<author> Luis de Góngora </author>
+								<editor> García de Salcedo Coronel </editor>
 								<title type="short" level="m">Soledades de don Luis de Góngora comentadas</title>
 								<imprint>
 									<pubPlace>
@@ -541,13 +513,12 @@
 						</msDesc>
 						<biblStruct>
 							<monogr>
-								<author>
-									<persName ref="http://viaf.org/viaf/12309145" role="author">Luis de Góngora</persName>
-								</author>
-								<editor>
-									<persName role="editor">Gonzalo de Hoces</persName>
-								</editor>
-								<title type="short" level="m">Todas las obras de don Luis de Góngora en varios poemas</title>
+								<author>Luis de Góngora </author>
+								<respStmt>
+									<resp>Obras recogidas por</resp>
+									<persName>Gonzalo de Hoces</persName>
+								</respStmt>
+								<title level="m">Todas las obras de don Luis de Góngora en varios poemas</title>
 								<imprint>
 									<pubPlace>
 										<placeName>Madrid</placeName>
@@ -566,9 +537,11 @@
 						</biblStruct>
 					</witness>
 				</listWit>
+
 			</sourceDesc>
 
 		</fileDesc>
+
 		<profileDesc>
 
 			<particDesc>
