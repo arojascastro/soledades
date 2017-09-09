@@ -124,7 +124,9 @@ Como ocurre con el elemento utilizado para representar personas, aquí también 
 
 ## Texto
 
-Esta codificación de las *Soledades* contiene tres partes principales: los preliminares o ensayo introductorio, el poema en sí, y una bibliografía. Las tres partes están, representadas, respectivamente en en los elementos: `<front>`, `<body>` y `<back>`. 
+Tras detallar cómo se ha codificado la información contenida en el `<teiHeader>`, hay que pasar a comentar la segunda parte que todo documento TEI debe tener: el elemento `<text>` en donde, como es lógico, debe situarse un texto. Este elemento `<text>` contiene un atributo `@xml:lang` con valor *spa* que sirve para definir la lengua en que está escrito el texto. 
+
+Esta edición de las *Soledades* contiene tres partes principales: los preliminares o ensayo introductorio, el poema en sí, y una bibliografía. Las tres partes están, representadas, respectivamente en en los elementos: `<front>`, `<body>` y `<back>`. 
 
 ### Preliminares
 
@@ -139,9 +141,7 @@ Los párrafos de prosa suelen contener títulos, palabras mencionadas y referenc
 
 #### Título, partes y subtítulos del poema
 
-Tras detallar cómo se ha codificado la información contenida en el `<teiHeader>`, hay que pasar a comentar la segunda parte que todo documento TEI debe tener: el elemento `<text>` en donde, como es lógico, debe situarse un texto. Este elemento `<text>` contiene un atributo `@xml:lang` con valor *spa* que sirve para definir la lengua en que está escrito el texto. El texto de las *Soledades* puede ponerse directamente en un elemento `<body>` porque en esta edición no se pretende dar acceso ni procesar preliminares ni apéndices; así, pues, no es necesario utilizar las etiquetas `<front>` y `<back>`.
-
-El elemento `<body>` contiene el título de la obra, que se codifica con el elemento `<head>`, y el texto en sí. Aunque es un solo poema, este texto se divide en tres partes: Dedicatoria, *Soledad primera* y *Soledad segunda*. La TEI  recomienda tratar las partes lógicas del texto de manera neutra mediante un elemento `<div>`:
+El texto de las *Soledades* se sitúa en el elemento `<body>`, que contiene un elemento `<head>` (el título de la obra) y tres elementos `<div>` correspondientes a las tres partes del poema: Dedicatoria, *Soledad primera* y *Soledad segunda*:
 
 ```xml
     <body>
@@ -152,140 +152,97 @@ El elemento `<body>` contiene el título de la obra, que se codifica con el elem
     </body>
 ```
 
-Cada uno de estos elementos `<div>` contiene tres atributos: en primer lugar, con `@n` se enumeran las partes; en segundo lugar, con `@type` se clasifican; por último, con `@xml:id` se identifican de manera inequívoca con un código único. Los valores de este último atributo son *p-0*, *p-1* y *p-2*, respectivamente. De esta manera, es posible crear un sistema de referencias basado en las partes lógicas del texto, localizarlas con facilidad y crear un menú de navegación en la interfaz web que permita al usuario acceder de manera directa a la parte del texto que le interesa consultar o leer.
-
-Cada una de estas partes, a su vez, se inicia con un título que se ha representado con el elemento `<head>`. En los tres casos he puesto un atributo `@type` con valor *sub* para distinguirlos del título general de la obra. Los títulos o encabezamientos de cada una de estas partes son los del manuscrito Chacón. Con esto quiero decir que, aunque he cotejado los títulos y subtítulos de todos los testimonios mencionados en el `<teiHeader>`, en la codificación doy únicamente la lección que se halla en el texto base y no ofrezco las variantes en el aparato crítico porque me han parecido variantes accidentales condicionadas por la difusión y por la voluntad de los copistas, editores y compiladores. Además, actualmente la TEI no permite que un elemento `<app>` contenga un elemento `<head>` aunque sí a la inversa.    
+Cada uno de estos elementos `<div>` contiene un atributo `@xml:id` con el que se ha identificado de manera inequívoca con un código único cada una de las partes. Cada una de estas partes, a su vez, se inicia con un título que se ha representado con el elemento `<head>`. En los tres casos he puesto un atributo `@type` con valor *sub* para distinguirlos del título general de la obra. Los títulos o encabezamientos de cada una de estas partes pertenecen al manuscrito Chacón.  
  
-La codificación del título de la Dedicatoria merece una aclaración. El manuscrito Chacón lee simplemente *Al duque de Béjar* pero algunos editores modernos han añadido el término *Dedicatoria*, por lo general, entre corchetes. Por este motivo, ha sido codificado utilizando el elemento `<supplied>` con un atributo `@reason`, cuyo valor es *omitted-in-original*, para indicar que no se encuentra en el original sino que ha sido añadido por el editor. El etiquetado XML resultante es el siguiente:
-
-    <head type="sub">
-                        <choice>
-                            <orig>
-    <supplied reason="omitted-in-original">DEDICATORIA</supplied>
-                            </orig>
-                            <reg>
-                                <supplied reason="omitted-in-original">Dedicatoria</supplied>
-                            </reg>
-                        </choice>
-                        <choice>
-                            <orig>AL</orig>
-                            <reg>al</reg>
-                        </choice>
-                        <choice>
-                            <orig>DUQUE</orig>
-                            <reg>duque</reg>
-                        </choice>
-                        <choice>
-                            <orig>DE</orig>
-                            <reg>de</reg>
-                        </choice>
-                        <choice>
-                            <orig>BEJAR</orig>
-                            <reg>Béjar</reg>
-                        </choice>
-                        <choice>
-                            <orig>.</orig>
-                            <reg/>
-                        </choice>
-                    </head>
 
 #### Grupos de versos y versos
 
 Las *Soledades* es una larga silva en el que se combinan con cierta libertad endecasílabos y heptasílabos. Algunos editores modernos como Dámaso Alonso introdujeron cortes en el poema con el objetivo de facilitar la comprensión de la obra; pero John Beverley, Robert Jammes y Antonio Carreira prefirieron eliminar estos cortes, editar el texto como un todo y sugerir algunas pausas mediante el sangrado del primer verso. La fuente que utilizaron todos estos editores —el manuscrito Chacón— no introduce líneas en blanco para separar las estrofas pero esto no quiere decir que no haya grupos de versos de extensión variada. El inicio de estos grupos se visualiza en el manuscrito mediante el sangrado del primer verso hacia la izquierda, es decir, a la francesa. En otras palabras, estos grupos de versos no se distinguen por razones métricas sino por su disposición sobre la página.
 
-En esta propuesta de codificación he seguido la estructuración por grupos de versos que da el manuscrito Chacón. Para marcar estos grupos de versos he utilizado la etiqueta `<lg>`; la TEI define este elemento como un *group of lines* y su función consiste en agrupar más de un verso tanto si se trata de una estrofa como de un estribillo o de cualquier otra unidad. En total, he codificado 87 grupos de versos, que se distribuyen de la siguiente manera:
+En esta propuesta de codificación he seguido la estructuración por grupos de versos que da el manuscrito Chacón. Para marcar estos grupos de versos he utilizado no he utilizado la etiqueta `<lg>`, sino que he marcado el primer veso de cada grupo con un atributo `@rend` con valor `indent`. En total, hay 87 versos con dicho atributo. 
 
- - Dedicatoria: 1 grupo de versos; 
- - Soledad primera: 41 grupos de versos; 
- - Soledad segunda: 45 grupos de versos.
-
-Cada uno de estos elementos `<lg>` contiene un atributo `@xml:id` que sirve para identificarlo. El valor de este atributo ha sido definido mediante la combinación siguiente: *g* (*grupo*), guion y un número correlativo de dos cifras, de tal modo que se empieza con *g-01* y se termina con *g-87*. De esta manera se podría crear un menú de navegación en la interfaz web a partir del cual el usuario podría elegir ir al grupo de versos que le interesara consultar o leer. Ahora bien, debo señalar una pequeña diferencia entre mi codificación y el modo en que se estructuran los versos en el manuscrito Chacón. En el *codex optimus* de la tradición gongorina, en realidad, se hallan 88 grupos de versos pero, en mi opinión, el que empieza con «Víbora pisa tal el pensamiento» debe presentarse unido al grupo de versos anterior: en lugar de un punto y aparte, creo que es mejor utilizar un punto y seguido porque la relación entre las dos oraciones es muy estrecha. En consecuencia, en mi codificación no hay 88 grupos de versos sino 87 tanto en el transcripción paleográfica como en el texto modernizado. 
+Ahora bien, en el *codex optimus* de la tradición gongorina, en realidad, se hallan 88 grupos de versos pero, en mi opinión, el que empieza con «Víbora pisa tal el pensamiento» debe presentarse unido al grupo de versos anterior: en lugar de un punto y aparte, creo que es mejor utilizar un punto y seguido porque la relación entre las dos oraciones es muy estrecha. En consecuencia, en mi codificación no hay 88  versos indentados a la francesa, sino 87 tanto en el transcripción paleográfica como en el texto modernizado. 
  
-Los versos contenidos en cada uno de los elemento `<lg>` se codifican con la etiqueta `<l>`. La TEI define este elemento desde el punto de vista métrico y no tipográfico; en otras palabras, si por razones de espacio algún verso queda roto la TEI recomienda o bien ignorar este hecho o bien utilizar el elemento <lb> para marcarlo. En esta propuesta de las *Soledades* solo se han codificado versos teniendo en cuenta sus rasgos métricos. En total se han codificado 2.138 versos. Esta cifra seguramente sorprenda a los gongoristas porque se suele afirmar que el poema consta de 2.107 versos. El incremento se debe a que en mi propuesta de codificación los versos de la versión primitiva, que fueron eliminados en la versión final, no se sitúan en un aparato a pie de página sino que forman parte del cuerpo del texto; volveré sobre la codificación de las variantes en el apartado.
+Los versos se codifican con la etiqueta `<l>`. La TEI define este elemento desde el punto de vista métrico y no tipográfico; en otras palabras, si por razones de espacio algún verso queda roto la TEI recomienda o bien ignorar este hecho o bien utilizar el elemento <lb> para marcarlo. En esta propuesta de las *Soledades* solo se han codificado versos teniendo en cuenta sus rasgos métricos. En total se han codificado 2.107 versos.
 
-A su vez los elementos `<l>` pueden contener hasta tres atributos: en primer lugar, un `@xml:id` con el que se identifica cada uno de los versos cuyo valor ha sido definido de la siguiente manera: *v* (*verso*), guion y número correlativo de cuatro cifras (por ejemplo, *v-0001*); este atributo es obligatorio en mi propuesta de codificación. En segundo lugar, encontramos el atributo `@n` que sirve para numerar los versos. No todos los versos contienen este atributo porque, siguiendo la tradición impresa, me ha parecido suficiente numerar cada cinco versos; la numeración, por lo demás, sigue el texto de la versión final. Por último, hay que mencionar el uso del atributo `@rend` con valor *indent* para codificar los 87 versos que Chacón sangró hacia la izquierda y que, por tanto, marcan el inicio de un nuevo grupo.
+Los elementos `<l>` pueden contener hasta tres atributos: en primer lugar, un `@xml:id` con el que se identifica cada uno de los versos cuyo valor ha sido definido de la siguiente manera: *v* (*verso*), guion y número correlativo de cuatro cifras (por ejemplo, *v-0001*); este atributo es obligatorio en mi propuesta de codificación. En segundo lugar, encontramos el atributo `@n` que sirve para numerar los versos. No todos los versos contienen este atributo porque, siguiendo la tradición impresa, me ha parecido suficiente numerar cada cinco versos; la numeración, por lo demás, sigue el texto de la versión final. Por último, como ya se ha dicho, el atributo `@rend` con valor *indent* para codificar los 87 versos que Chacón sangró hacia la izquierda.
   
-A continuación, inserto un fragmento de XML que contiene los tres atributos mencionados del elemento `<l>`; insisto en que, en esta propuesta de codificación, solo `@xml:id` es obligatorio en todos los versos: 
+A continuación, inserto un fragmento de XML que contiene los tres atributos mencionados del elemento `<l>`:
 
-    <l n="90" rend="indent" xml:id="v-0127"><app>
-                                <lem><choice>
-                                        <orig>Llegò</orig>
-                                        <reg>Llegó</reg>
-                                    </choice></lem>
-                                <rdg type="error" wit="#O">Llega</rdg>
-                            </app> pues <app>
-                                <lem>el</lem>
-                                <rdg type="error" wit="#Br">al</rdg>
-                            </app> mancebo, <choice>
-                                <orig>i</orig>
-                                <reg>y</reg>
-                            </choice>
-                            <app>
-                                <lem>saludado</lem>
-                                <rdg type="error" wit="#D">saludando</rdg>
-                            </app></l>
-
-Además de estos elementos creados para codificar textos poéticos, la TEI ha establecido algunos procedimientos para codificar el patrón rítmico y métrico de cada verso gracias a los atributos `@rhyme` y `@met` y un elemento `<rhyme>` con el que es posible codificar las palabras que riman. Dado que mi objetivo es estudiar la transmisión del texto y ofrecer variantes significativas, en esta propuesta de codificación de las *Soledades* no se han representado estos fenómenos acerca de la musicalidad del poema.  
+```xml
+<l n="90" rend="indent" xml:id="v-0127">
+					<choice>
+						<orig>Llegò</orig>
+						<reg>Llegó</reg>
+					</choice> pues el mancebo, <choice>
+						<orig>i</orig>
+						<reg>y</reg>
+					</choice> saludado</l>
+```
 
 #### Saltos de página
 
-Además del sistema de referencias basado en las partes del texto —Dedicatoria, *Soledad primera* y *Soledad segunda*— y en la estructuración por grupos de versos que acabamos de ver, esta propuesta incluye la paginación del manuscrito Chacón; para ello se ha utilizado el elemento `<pb/>`. Esta etiqueta es un *empty element* porque no tiene contenido textual y sirve para codificar estructuras no jerárquicas que dividen el texto en trozos. Al marcar los saltos de página es posible captar la estructura del documento y permitir al usuario navegar el texto de manera fragmentaria. 
+Además del sistema de referencias basado en las partes del texto —Dedicatoria, *Soledad primera* y *Soledad segunda*— , esta codificación incluye la paginación del manuscrito Chacón; para ello se ha utilizado el elemento `<pb/>`; sirve para codificar estructuras no jerárquicas que dividen el texto en trozos. Al marcar los saltos de página es posible captar la estructura del documento y permitir al usuario navegar el texto de manera fragmentaria. 
 
-Con `<pb/>` es posible representar cuándo se inician las páginas o folios de todos los testimonios cotejados gracias al atributo `@ed` pues su valor se define en el atributo `@xml:id` del elemento `<witness>`. Ahora bien, en esta propuesta de codificación solo se han marcado los saltos de página del manuscrito base porque se pretende atraer la atención del usuario hacia el *codex optimus* de la tradición gongorina. Veamos un ejemplo:
+Con `<pb/>` es posible representar cuándo se inician las páginas o folios de todos los testimonios cotejados gracias al atributo `@ed` pues su valor se define en el atributo `@xml:id` del elemento `<witness>`. Ahora bien, en esta codificación solo he marcado los saltos de página del manuscrito base porque se pretende atraer la atención del usuario hacia el *codex optimus* de la tradición gongorina. Veamos un ejemplo:
 
-    <pb ed="#Ch" facs="193.jpg" n="193"/>
-                <head type="main">
-                    <choice>
-                        <orig>SOLEDADES</orig>
-                        <reg>Soledades</reg>
-                    </choice>
-                    <choice>
-                        <orig>.</orig>
-                        <reg/>
-                    </choice>
-                </head>
+```xml
+<pb ed="#Ch" facs="193.jpg" n="193"/>
+				<l rend="indent" xml:id="v-0001">
+					<choice>
+						<orig>
+							<hi rend="initial">P</hi>ASOS</orig>
+						<reg>Pasos</reg>
+					</choice> de <choice>
+						<orig>vn</orig>
+						<reg>un</reg>
+					</choice> peregrino son errante<note type="editorial"><p>El texto que Luis de Góngora envió a Pedro de Valencia no estaba dedicado al duque de Béjar ni, probablemente, lo estuvo el que
+							Almansa difundió por la corte en 1613 (o, según la cronología tardía, en 1614), pues solo se citan versos de la <hi rend="italic">Soledad primera</hi>. En cambio, sabemos que el abad de
+							Rute y Jáuregui sí leyeron la Dedicatoria ya que aluden a ella, la comentan o bien citan algún verso. Si aceptamos la datación del segundo parecer solicitado por Góngora, debemos admitir
+							que la Dedicatoria debió de escribirse antes de 1614.</p>
+						<p>Las variantes que he encontrado en esta parte del poema son únicamente errores de copia o variantes de copista. No hay vestigios de la versión primitiva por lo que se puede deducir que
+							el texto no fue revisado o corregido por el poeta a lo largo de los años. Desde el momento de su creación, por tanto, el texto quedó establecido para Góngora.</p></note>
+				</l>
+```
 
-Como se puede apreciar, el elemento `<pb/>` se sitúa siempre al inicio de cada página de tal modo que el resto de elementos se sitúan tras él. Además del atributo `@ed`, con el que se identifica al testimonio, he utilizado otros dos: los atributos `@n` y `@facs`. El primero sirve para describir el número tal y como aparece en la fuente mientras que el segundo remite a un archivo .jpg con el objetivo de que en la interfaz web se pueda visualizar el facsímil de cada página del manuscrito Chacón. 
-
-Para recapitular, gracias a la codificación de las partes lógicas del texto, los grupos de versos y la paginación del manuscrito Chacón es posible explorar y navegar el texto poético de distintas maneras. En consecuencia, la edición académica digital adquiere interactividad en la medida en que combina múltiples vistas: por un lado, la imagen facsimilar, que pone de manifiesto la materialidad del documento; por el otro, el texto (en doble presentación: transcripción paleográfica y modernización). El usuario, pues, es capaz de seleccionar una u otra vista, o bien, dividiendo la pantalla en dos partes, acceder simultáneamente a las dos y, así, poder apreciar la relación dialéctica entre el manuscrito Chacón y el texto establecido tras cotejar el resto de testimonios. 
+Como se puede apreciar, el elemento `<pb/>` se sitúa siempre al inicio de tal modo que el resto de elementos se sitúan tras él. Además del atributo `@ed`, con el que se identifica al testimonio, he utilizado otros dos: los atributos `@n` y `@facs`. El primero sirve para describir el número tal y como aparece en la fuente mientras que el segundo remite a un archivo .jpg a fin de que la web visualice el facsímil de cada página del manuscrito Chacón. 
 
 
 #### Transcripción paleográfica y texto modernizado
 
-Con la excepción de once lecciones procedentes de otros testimonios, el texto de las *Soledades* que he codificado es el que transmite el manuscrito Chacón. La particularidad de mi propuesta consiste en la doble presentación del texto: por un lado, la transcripción paleográfica, que conserva la mayoría de rasgos característicos de la ortotipografía del documento original; por el otro, una modernización de la ortografía, los signos de puntuación y otros aspectos tipográficos del texto contenido en Chacón. La primera dimensión, pues, es historicista y conservadora: transporta al lector al siglo XVII. La segunda, en cambio, es actualizadora en la medida en que adapta los aspectos accidentales del texto a la norma vigente de la lengua española y a las convenciones tipográficas contemporáneas. 
+Con la excepción de once lecciones procedentes de otros testimonios, el texto de las *Soledades* que he codificado coincide con el transmitido por el manuscrito Chacón. La particularidad de esta codificación consiste en la doble presentación del texto: por un lado, la transcripción paleográfica, que conserva la mayoría de rasgos característicos de la ortotipografía del manuscrito Chacón; por el otro, una modernización de la ortografía, los signos de puntuación y otros aspectos tipográficos del texto del siglo XVII. La primera dimensión, pues, es historicista y conservadora: transporta al lector al siglo XVII. La segunda, en cambio, es actualizadora en la medida en que adapta los aspectos accidentales del texto a la norma vigente de la lengua española y a las convenciones tipográficas contemporáneas. 
 
 El elemento definido por la TEI para agrupar codificaciones alternativas se llama `<choice>`. Esta etiqueta contiene una pareja de elementos con los que se representan las intervenciones editoriales. Para ilustrar cómo he procedido creo que es mejor analizar directamente un caso concreto, por ejemplo, el verso 26 (*Ô DVQVE esclarecido!*) de la Dedicatoria, tal y como aparece en Chacón. El etiquetado XML/TEI es el siguiente: 
 
-    <l xml:id="v-0026">
-                            <app>
-                                <lem>
-                                    <choice>
-                                        <orig/>
-                                        <reg>¡</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>Ô</orig>
-                                        <reg>oh</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>DVQVE</orig>
-                                        <reg>duque</reg>
-                                    </choice> esclarecido!<choice>
-                                        <orig/>
-                                        <reg>,</reg>
-                                    </choice></lem>
-                                <rdg wit="#Pr #Rm"/>
-                            </app>
-                        </l>
+```xml
+<l xml:id="v-0026">
+					<choice>
+						<orig/>
+						<reg>¡</reg>
+					</choice><choice>
+						<orig>Ô</orig>
+						<reg>oh</reg>
+					</choice>
+					<choice>
+						<orig>DVQVE</orig>
+						<reg>duque</reg>
+					</choice> esclarecido!<choice>
+						<orig/>
+						<reg>,</reg>
+					</choice>					
+</l>
+```
 
-Si obviamos por un momento que este verso está incluido en los elementos `<app>` y `<lem>` —volveré sobre ello en el apartado dedicado al aparato crítico— y centramos nuestra atención en los elementos `<choice>` se puede ver con facilidad que estos se han utilizado para presentar al mismo tiempo la forma original y la forma regularizada de tres aspectos del texto: la tipografía, el uso de mayúscula/minúscula y la puntuación. En todos los casos la combinación de etiquetas es la misma: un elemento `<choice>` contiene, en primer lugar, un elemento `<orig>` con la forma original; y, en segundo lugar, un elemento `<reg>` con la regularización. 
+Con este ejemplo se puede ver con facilidad que el par de elementos `<orig>` y  `<reg>`se ha utilizado para presentar al mismo tiempo la forma original y la forma regularizada de tres aspectos del texto: la tipografía, el uso de mayúscula/minúscula y la puntuación.
 
 El primer uso del elemento `<choice>` ejemplifica cómo es posible presentar vistas alternativas en relación con la tipografía. En este caso, y desde nuestra perspectiva contemporánea, al texto contenido por el manuscrito Chacón le falta un signo exclamativo de apertura pues solo presenta el de cierre. Para representar este fenómeno he dejado vacío el elemento `<orig>`; en el elemento `<reg>`, en cambio, he introducido un signo exclamativo de apertura:
 
-    <choice>
-                                        <orig/>
-                                        <reg>¡</reg>
-                                    </choice>
+```xml
+<choice>
+	<orig/>
+ 	<reg>¡</reg>
+</choice>
+```
 
 En el segundo caso la misma combinación de elementos sirve para codificar cómo Chacón utiliza la mayúscula y para regularizar el texto respetando las convenciones actuales. En el elemento `<orig>` se sitúa la forma *Ô*, en mayúscula y con un acento circunflejo, mientras que en el elemento `<reg>` he regularizado la interjección `oh` poniéndola en minúscula, pues no antecede ningún punto, y con la letra `h`, tal y como se escribe actualmente:
 
