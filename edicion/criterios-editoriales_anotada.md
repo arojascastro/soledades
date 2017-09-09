@@ -4,6 +4,10 @@ Este documento tiene por objetivo exponer los criterios de codificación emplead
 
 Esta codificación de las *Soledades* ha sido concebida para que el usuario acceda a la transcripción paleográfica y al texto modernizado de Chacón. El texto viene acompañado de dos tipos de notas (editorial y explicativa). 
 
+## Encabezado
+
+El encabezado TEI es el lugar del archivo XML en el que se recogen los metadatos, es decir, toda aquella información que permite identificar un documento digital y declarar cuál es la fuente de la que deriva el texto. En esta parte del archivo, además, se pueden registrar otro tipo de información suplementaria como los criterios editoriales, el tipo de texto o datos relativos a la creación de la obra desde un punto de vista intelectual.
+
 
 ### Descripción del archivo
 
@@ -117,22 +121,25 @@ Por el otro lado, tenemos los lugares mencionados de manera explícita; estos se
 ```
 
 Como ocurre con el elemento utilizado para representar personas, aquí también es obligatorio el uso del atributo `@xml:id` porque los nombres de lugares etiquetados en el poema deben remitir a una entidad contenida en el encabezado.
+
+## Estructura 
+
  
 
-## Título, partes y subtítulos 
+## Título, partes y subtítulos del poema
 
 Tras detallar cómo se ha codificado la información contenida en el `<teiHeader>`, hay que pasar a comentar la segunda parte que todo documento TEI debe tener: el elemento `<text>` en donde, como es lógico, debe situarse un texto. Este elemento `<text>` contiene un atributo `@xml:lang` con valor *spa* que sirve para definir la lengua en que está escrito el texto. El texto de las *Soledades* puede ponerse directamente en un elemento `<body>` porque en esta edición no se pretende dar acceso ni procesar preliminares ni apéndices; así, pues, no es necesario utilizar las etiquetas `<front>` y `<back>`.
 
 El elemento `<body>` contiene el título de la obra, que se codifica con el elemento `<head>`, y el texto en sí. Aunque es un solo poema, este texto se divide en tres partes: Dedicatoria, *Soledad primera* y *Soledad segunda*. La TEI  recomienda tratar las partes lógicas del texto de manera neutra mediante un elemento `<div>`:
 
-    <text xml:lang="spa">
+```xml
     <body>
     <head type="main">
     <div n="0" type="part" xml:id="p-0">
     <div n="1" type="part" xml:id="p-1">
     <div n="2" type="part" xml:id="p-2">
     </body>
-    </text>
+```
 
 Cada uno de estos elementos `<div>` contiene tres atributos: en primer lugar, con `@n` se enumeran las partes; en segundo lugar, con `@type` se clasifican; por último, con `@xml:id` se identifican de manera inequívoca con un código único. Los valores de este último atributo son *p-0*, *p-1* y *p-2*, respectivamente. De esta manera, es posible crear un sistema de referencias basado en las partes lógicas del texto, localizarlas con facilidad y crear un menú de navegación en la interfaz web que permita al usuario acceder de manera directa a la parte del texto que le interesa consultar o leer.
 
@@ -231,62 +238,6 @@ Como se puede apreciar, el elemento `<pb/>` se sitúa siempre al inicio de cada 
 
 Para recapitular, gracias a la codificación de las partes lógicas del texto, los grupos de versos y la paginación del manuscrito Chacón es posible explorar y navegar el texto poético de distintas maneras. En consecuencia, la edición académica digital adquiere interactividad en la medida en que combina múltiples vistas: por un lado, la imagen facsimilar, que pone de manifiesto la materialidad del documento; por el otro, el texto (en doble presentación: transcripción paleográfica y modernización). El usuario, pues, es capaz de seleccionar una u otra vista, o bien, dividiendo la pantalla en dos partes, acceder simultáneamente a las dos y, así, poder apreciar la relación dialéctica entre el manuscrito Chacón y el texto establecido tras cotejar el resto de testimonios. 
 
-## Fases de la cronología
-
-Las fases de la cronología establecida en la tesis se documentan en el encabezado TEI mediante el elemento `<creation>`. Ahora bien, también se puede representar el inicio de cada una de estas fases en el mismo texto. Para ello he utilizado otro elemento vacío con el fin de respetar la sintaxis arbórea del XML. El elemento vacío en cuestión es `<milestone/>`. Según la TEI, este elemento «marca un punto de frontera que separa cada tipo de sección de un texto, indicado por cambios en el sistema de referencia estándar, donde la sección no es representada por un elemento estructural». A diferencia de `<pb/>`, que se restringe para la representación de saltos de página, este elemento no tiene una carga semántica pues se puede utilizar para representar cualquier tipo de fenómeno. En el texto de las *Soledades*, pues, he marcado el inicio de cada fase justo antes de los elementos `<lg>` o `<l>`: 
-
-    <milestone type="stage" change="#THIRD"/>
-                    <lg xml:id="g-36">
-                        <l rend="indent" xml:id="v-0920">
-                            <app>
-                                <lem><choice>
-                                        <orig>Leuantadas</orig>
-                                        <reg>Levantadas</reg>
-                                    </choice> las <app>
-                                        <lem>mesas</lem>
-                                        <rdg type="error" wit="#ho33">musas</rdg>
-                                    </app>, <app>
-                                        <lem>al</lem>
-                                        <rdg type="error" wit="#O">el</rdg>
-                                    </app> canoro</lem>
-                                <rdg wit="#Rm"/>
-                            </app>
-                        </l>
-
-En este caso el elemento `<milestone/>` aparece antes del elemento `<lg>` para indicar que los versos que van desde este punto hasta el siguiente elemento `<milestone/>` fueron redactados entre principios de mayo de 1613 y el 11 de mayo de 1613. Esta información, en realidad, no está presente en el elemento `<milestone/>` sino que se recupera mediante el atributo `@change` cuyo valor apunta hacia el atributo `@xml:id` del elemento `<change>` definido en el encabezado TEI. Además de este atributo `@change`, he utilizado `@type` para clasificar los elementos; de esta manera, puedo distinguir este uso del elemento `<milestone/>` del que se explicará en el apartado siguiente.
- 
-En la interfaz web se podría explotar la codificación de las fases de distintas maneras: por un lado, se puede crear otro menú de navegación en el que cuando el usuario clicase accediera a la parte del texto en el que se inicia una nueva fase; por el otro, sería posible señalar las fases de manera visual, por ejemplo, con un destacado (una barra horizontal de color distinto con el número de la fase y las fechas de la cronología) activado por el usuario interesado en conocer el proceso creativo y cómo se desarrolló la redacción del poema. 
-    
-## Discursos y diálogos
-
-Las *Soledades* es una larga silva dividida en tres partes; en ella, además, pueden distinguirse con claridad varios discursos en los que la voz poética cede la palabra a alguno de los personajes. La TEI recomienda identificar estos discursos con un elemento llamado `<sp>` que forma parte del módulo *core* y que puede utilizarse tanto en texto teatrales como en textos poéticos o en prosa.
-
-Ahora bien, la codificación de los grupos de versos y la de los discursos se yuxtapone por lo que he debido privilegiar la primera y buscar una alternativa para la segunda. Así, me ha parecido adecuado utilizar el elemento `<milestone/>` para representar el inicio de los discursos; por ejemplo, el primer discurso corresponde al apóstrofe que el peregrino dirige a los cabreros que lo acogen y que en el manuscrito Chacón, por cierto, se introduce sin comillas. En mi propuesta de codificación XML/TEI, pues, se ha indicado el inicio del discurso de la siguiente manera:
-
-    <milestone type="speech" xml:id="d-1-peregrino"/>
-                    <lg xml:id="g-06">
-                        <l rend="indent" xml:id="v-0131">
-                            <choice>
-                                <orig/>
-                                <reg>«</reg>
-                            </choice>
-                            <choice>
-                                <orig/>
-                                <reg>¡</reg>
-                            </choice>
-                            <choice>
-                                <orig>O</orig>
-                                <reg>Oh</reg>
-                            </choice>
-                            <choice>
-                                <orig>bienauenturado</orig>
-                                <reg>bienaventurado</reg>
-                            </choice>
-                        </l>
-
-Como se puede ver, el elemento <milestone/> contiene dos atributos: `@type` y `@xml:id`. El valor del primero es *speech* en oposición a *stage*; el valor del segundo se define de la siguiente manera: *d* (*discurso*), guion, número de discurso, guion y personaje. En total pueden distinguirse siete discursos a lo largo de las *Soledades*: el apóstrofe del peregrino al bienaventurado albergue, el discurso contra las navegaciones proferido por cabrero, el célebre epitalamio en el que se convoca al dios Himeneo por parte de un coro de jóvenes, el canto de la bárbara musa, el métrico llanto del peregrino, el relato sobre la caza marina del isleño y el canto amebeo de los pescadores Lícidas y Micón. 
-
-Por supuesto, estos discursos no son los únicos pasajes en los que la voz poética cede la palabra a los personajes. Aunque son pocos y breves, también se pueden encontrar algunos diálogos. Al iniciar la codificación XML/TEI de las *Soledades* quise representar estos intercambios mediante el elemento <said> pero, nuevamente, me encontré ante un tipo de fenómeno textual que se yuxtapone a la representación de los grupos de versos y de los versos porque la mayoría de diálogos ocupan más de un verso de tal modo que se produce un conflicto entre el cierre del elemento `<l>` y la continuidad del elemento `<said>`. La única solución que he encontrado consiste en anidar un elemento `<said>` dentro de `<l>` en cada uno de los versos. Ahora bien, esta estrategia supone falsear la verdadera naturaleza del diálogo; y, en consecuencia, me ha parecido más acertado renunciar a representar este fenómeno textual que, por lo demás, no resulta imprescindible para el usuario teniendo en cuenta que ya se codifican muchos aspectos del poema.
 
 ## Transcripción paleográfica y texto modernizado
 
@@ -436,41 +387,6 @@ También se pueden encontrar otros casos en que la abreviatura afecta a los nomb
                                 </choice>
                             </persName></label>
 
-Un comentario más extenso merece la codificación de caracteres con tilde abreviativa que no son contemplados por Unicode; me refiero, por un lado, a la *y* con virgulilla que aparece en Chacón en la Soledad primera tras el canto de la bárbara musa; y, por el otro, a una *q*, también con virgulilla, que se encuentra en la nota final del manuscrito Chacón. En esta nota el copista señala los versos que Góngora compuso a su petición mediante un párrafo en prosa que contiene seis abreviaturas. Estas han sido codificadas bien como en los ejemplos precedentes, bien añadiendo el elemento `<g>` para marcar los glifos:
-
-   
-
-     <choice>
-                                    <orig><abbr><g ref="#q1">q</g></abbr></orig>
-                                    <reg><expan>que</expan></reg>
-                                </choice> pasase adelante con las <title>Soledades</title><choice>
-                                    <orig>;</orig>
-                                    <reg>,</reg>
-                                </choice>
-                                <choice>
-                                    <orig><abbr>aun<g ref="#q1">q</g></abbr></orig>
-                                    <reg><expan>aunque</expan></reg>
-                                </choice> determinado <choice>
-                                    <orig>ia</orig>
-                                    <reg>ya</reg>
-                                </choice>
-
-Además de utilizar el elemento `<g>` en el cuerpo del texto, es necesario describir los glifos en el elemento `<encodingDesc>` del encabezado; más específicamente este tipo de información se documenta en el elemento `<charDecl>`:
-
-    <charDecl>
-                    <glyph xml:id="y1">
-                        <glyphName>LATIN SMALL LETTER Y WITH TILDE</glyphName>
-                        <mapping type="paleographic">y</mapping>
-                        <mapping type="modernized">y</mapping>
-                    </glyph>
-                    <glyph xml:id="q1">
-                        <glyphName>LATIN SMALL LETTER Q WITH TILDE</glyphName>
-                        <mapping type="paleographic">q</mapping>
-                        <mapping type="modernized">q</mapping>
-                    </glyph>
-                </charDecl>
-
-La conexión entre los elementos `<g>` y `<glyph>` se lleva a cabo mediante los valores de los atributos `@ref` y `@xml:id`. Por lo demás, debo advertir que en el elemento `<glyph>` se debe describir el glifo según las convenciones Unicode y que en el elemento `<mapping>` se identifica el carácter estándar que sustituye al glifo. 
 
 Además de estos glifos, la nota contiene una abreviatura que merece ser explicada: el nombre propio del compilador y amigo de Góngora aparece con una o volada seguida de punto. La estrategia adoptada ha consistido en utilizar un elemento `<hi>` con un atributo `@rend` para codificar la posición de dicha letra: 
 
