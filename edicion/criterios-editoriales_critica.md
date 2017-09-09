@@ -52,7 +52,7 @@ A continuación, se sitúa el elemento `<publicationStmt>`. Con esta etiqueta, o
 
 En mi propuesta de codificación XML/TEI de las *Soledades* he identificado como `<publisher>` al Cologne Cenger for eHumanities (CCeH), porque los servidores donde se aloja la edición pertenecen a la Universidad de Colonia. Por lo demás, el elemento `<pubPlace>` contiene el nombre del lugar de publicación y `<date>`, la fecha de publicación.
 
-Más detalles precisa el elemento `<availability>` con el que se da información sobre la disponibilidad del texto. Es posible indicar la licencia de publicación y uso de dos maneras distintas: mediante un párrafo en prosa contenido en un elemento `<p>` o bien mediante el elemento `<license>`. Tal y como he realizado en esta propuesta de codificación, en el segundo caso se puede utilizar un atributo `@target` que apunte hacia una URL en donde se explican los términos de la licencia.
+Menos detalles precisa el elemento `<availability>` con el que se da información sobre la disponibilidad del texto. Es posible indicar la licencia de publicación y uso de dos maneras distintas: mediante un párrafo en prosa contenido en un elemento `<p>` o bien mediante el elemento `<license>`. Tal y como he realizado en esta propuesta de codificación, en el segundo caso se puede utilizar un atributo `@target` que apunte hacia una URL en donde se explican los términos de la licencia.
 
 
 #### Descripción de las fuentes
