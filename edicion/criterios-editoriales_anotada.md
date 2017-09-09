@@ -1,341 +1,123 @@
-# Criterios de codificación
+# *Soledades*. Edición anotada. Criterios de codificación 
 
-Toda representación XML/TEI de un texto debe tener un propósito: se codifican ciertos fenómenos textuales (no todos) para que el ordenador pueda procesarlos y el usuario interactúe con ellos en la interfaz web. Esta codificación de las *Soledades* ha sido concebida para que el usuario acceda a la transcripción paleográfica y al texto modernizado de Chacón, filtre las variantes de autor por testimonio y clase (error, variante de autor e intervención editorial) y navegue el texto de distintas maneras (partes, versos, discursos o cronología); con todo ello se pretende poner de relieve la dialéctica entre obra, texto y documento.
+Este documento tiene por objetivo exponer los criterios de codificación empleados en el archivo `soledades_anotada.xml`.
 
+Esta codificación de las *Soledades* ha sido concebida para que el usuario acceda a la transcripción paleográfica y al texto modernizado de Chacón. El texto viene acompañado de dos tipos de notas (editorial y explicativa). 
 
-## Encabezado
-
-El encabezado TEI es el lugar del archivo XML en el que se recogen los metadatos, es decir, toda aquella información que permite identificar al documento y declarar cuál es la fuente de la que deriva el texto. En esta parte del archivo, además, se pueden registrar otro tipo de información suplementaria como los criterios editoriales, el tipo de texto u otros datos relativos a la creación de la obra desde un punto de vista intelectual. 
 
 ### Descripción del archivo
 
-El elemento `<fileDesc>` contiene una serie de elementos con información bibliográfica sobre el archivo electrónico necesaria para su citación y catalogación. En primer lugar, se halla el elemento `<titleStmt>` en donde se sitúa el título de la obra electrónica, el autor del texto codificado y quién es el responsable de la edición, entre otros datos. En mi caso he decidido utilizar el nombre del poema en el título principal y, a continuación, añadir un subtítulo que especifica, distingue del resto de ediciones y aclara cuál es su objetivo y finalidad. 
+#### Título
 
-    <titleStmt>
-                    <title type="main">Soledades</title>
-                    <title type="sub">Una edición crítica digital</title>
-                    <author>
-                        <name>
-                            <forename>Luis</forename>
-                            <nameLink>de</nameLink>
-                            <surname>Góngora</surname>
-                        </name>
-                    </author>
-                    <respStmt xml:id="ARC">
-                        <resp>Edición y codificación de</resp>
-                        <name>
-                            <forename>Antonio</forename>
-                            <surname>Rojas</surname>
-                            <surname>Castro</surname>
-                        </name>
-                    </respStmt>
-                    <funder>Ministerio de Economía y Competitividad. Todo Góngora II [I+D+I
-                        FFI2010-17349]</funder>
-                </titleStmt>
+El elemento `<fileDesc>` contiene una serie de elementos con información bibliográfica sobre el archivo electrónico necesaria para su citación y catalogación. Se inicia con el elemento `<titleStmt>` en donde se sitúa el título de la edición digital, el autor del texto codificado, el editor y la agencia que financia el proyecto: 
 
-Tras el título sigue el elemento `<author>`, el elemento `<respStmt>` y el elemento `<funder>`. El primero de estos contiene el nombre del autor. Seguidamente se puede hallar el elemento `<editor>`, en donde se identifica al creador del archivo electrónico. También es posible utilizar la etiqueta `<respStmt>` para detallar este tipo de información. En mi propuesta de codificación he preferido esta segunda opción para así poder declarar que soy responsable tanto de la edición del texto como de la codificación. Este elemento contiene un atributo `@xml:id` con valor `ARC`: de esta manera, es posible identificar y referenciar mis intervenciones en el resto del archivo XML. Por último, he creído oportuno utilizar la etiqueta `<funder>` para declarar que tanto la tesis como la codificación XML/TEI de las *Soledades* han sido financiadas por el Ministerio de Economía y Competitividad como miembro del proyecto Todo Góngora II.
+```xml
+<titleStmt>
+                <title type="main">«Soledades» de Luis de Góngora. Edición crítica digital</title>
+                <author>Luis de Góngora</author>
+                <editor xml:id="ARC">Antonio Rojas Castro</editor>
+                <funder>Ministerio de Economía y Competitividad. Todo Góngora II [I+D+I FFI2010-17349]</funder>
+            </titleStmt>
+```
 
-Dentro del elemento `<fileDesc>`, se localiza toda una serie de elementos que aportan información complementaria sobre el número de edición, la extensión del archivo y quién es el responsable de la publicación: por un lado, con el elemento `<edition>`, contenido en `<editionStmt>`, doy el número de la edición. En este caso se trata de una primera edición; si en el futuro se publicara este archivo en internet y otro investigador lo modificara o lo reutilizara con otros fines, sería posible identificar el número de edición y añadir un elemento `<respStmt>` en el que se especificaría cuál ha sido la aportación del nuevo editor, así como su nombre y apellidos. El elemento `<editionStmt>` no es obligatorio pero la TEI lo recomienda. Por el otro, el elemento `<extent>` sirve para declarar el tamaño de archivo en alguna medida estándar. En el caso de las *Soledades* el archivo sobrepasa ligeramente los 1,94 megabytes. La TEI no establece una unidad de medida y, en consecuencia, es posible expresar un mismo tamaño de distintas maneras, incluso con el número de palabras; este elemento también es opcional:
+#### Edición
 
-    <editionStmt>
-                    <edition n="1">Primera edición</edition>
-                </editionStmt>
-    <extent>1,94 Mb</extent>
+Dentro del elemento `<fileDesc>`, se localiza toda una serie de elementos que aportan información complementaria sobre el número de edición. Con el elemento `<edition>`, contenido en `<editionStmt>`, doy el número de la edición:
+ 
+```xml
+<editionStmt>
+				<edition n="2"><date when="2017-09">Septiembre de 2017</date></edition>
+			</editionStmt>
+```
+
+En este caso se trata de una segunda edición; si en el futuro se publicara este archivo en internet y otro investigador lo modificara o lo reutilizara con otros fines, sería posible identificar el número de edición y añadir un elemento `<respStmt>` en el que se especificaría cuál ha sido la aportación del nuevo editor, así como su nombre y apellidos. El elemento `<editionStmt>` no es obligatorio, pero la TEI lo recomienda. 
+
+#### Publicación 
 
 A continuación, se sitúa el elemento `<publicationStmt>`. Con esta etiqueta, obligatoria, se proporciona información sobre qué sujeto, institución o grupo publica el archivo electrónico y bajo qué licencia se puede acceder a él y utilizar:
 
-    <publicationStmt>
-                    <publisher>Universitat Pompeu Fabra</publisher>
-                    <distributor>Todo Góngora II</distributor>
-                    <pubPlace>
-                        <address>
-                         <orgName>Universitat Pompeu Fabra</orgName>
-                         <street>Ramon Trias Fargas, 25-27</street>
-                         <settlement>Barcelona</settlement>
-                         <postCode>08005</postCode>
-                         <country>España</country>
-                     </address>
-                    </pubPlace>
-                    <availability status="free">
-                        <licence target="[http://creativecommons.org/licenses/by-nc/3.0/deed.es](http://creativecommons.org/licenses/by-nc/3.0/deed.es)">Publicado bajo una licencia Creative Commons Atribución-NoComercial 3.0</licence>
-                    </availability>
-                </publicationStmt>
+```xml
+ <publicationStmt>
+				<distributor>Antonio Rojas Castro</distributor>
+				<pubPlace>Barcelona</pubPlace>
+				<date when="2016-06">2016</date>
+				<availability status="free">
+					<licence target="http://creativecommons.org/licenses/by/4.0/">Esta obra se publica con una licencia de Creative Commons Reconocimiento 4.0 Internacional</licence>
+				</availability>
+			</publicationStmt>
+```
 
-En mi propuesta de codificación XML/TEI de las *Soledades* he identificado como `<publisher>` a la Universitat Pompeu Fabra ya que la codificación se llevó a cabo como parte de una investigación vinculada al Departament d’Humanitats. En cuanto al elemento `<distributor>` he identificado al grupo de investigación Todo Góngora II, que sería quien validara el texto editado. Dicho en otras palabras, con el primer elemento se hace referencia a quien publica el ítem desde un punto de vista bibliográfico; con el segundo, al responsable de la distribución del texto. Con todo, hay que reconocer que la distinción entre `<publisher>` y `<distributor>` no me parece del todo clara tal y como aparece actualmente en las *Guidelines* de la TEI. 
+En mi propuesta de codificación XML/TEI de las *Soledades* me he identificado como `<publisher>` porque utilizo un servidor personal para publicar esta edición. Por lo demás, el elemento `<pubPlace>` contiene el nombre del lugar de publicación y `<date>`, la fecha de publicación.
 
-El elemento `<pubPlace>` contiene el nombre del lugar de publicación. Como el `<publisher>` sería la Universitat Pompeu Fabra, he decidido describir la dirección postal en donde se encuentra el campus de Ciutadella mediante una serie de etiquetas creadas para ello; no me detendré en ellas porque el uso es evidente. 
+Menos detalles precisa el elemento `<availability>` con el que se da información sobre la disponibilidad del texto. Es posible indicar la licencia de publicación y uso de dos maneras distintas: mediante un párrafo en prosa contenido en un elemento `<p>` o bien mediante el elemento `<license>`. Tal y como he realizado en esta propuesta de codificación, en el segundo caso se puede utilizar un atributo `@target` que apunte hacia una URL en donde se explican los términos de la licencia.
 
-Más detalles precisa el elemento `<availability>` con el que se da información sobre la disponibilidad del texto. Es posible indicar la licencia de publicación y uso de dos maneras distintas: mediante un párrafo en prosa contenido en un elemento `<p>` o bien mediante el elemento `<license>`. Tal y como he realizado en esta propuesta de codificación, en el segundo caso se puede utilizar un atributo `@target` que apunte hacia una URL en donde se explican los términos de la licencia.
 
-Dentro de `<publicationStmt>` pueden hallarse otras etiquetas relevantes como `<date>`. En mi propuesta de codificación, puesto que de momento permanecerá inédita, he preferido no utilizar este elemento porque su uso se restringe a la fecha de publicación.
+#### Descripción de las fuentes
 
 El último elemento que contiene el `<fileDesc>` corresponde al `<sourceDesc>`. Se trata de un elemento obligatorio y en el caso de una edición crítica digital es el más importante porque se utiliza para registrar las fuentes de las que deriva el archivo electrónico. Si el texto no deriva de ningún documento, es necesario declarar esto con una frase como *Documento nacido digital* dentro de un elemento `<p>`. 
 
-Si el texto codificado es una digitalización de un solo documento (por ejemplo, una edición impresa publicada en época moderna) el elemento `<sourceDesc>` puede contener simplemente un elemento `<bibl>` o bien, si queremos estructurar la información, un elemento *<biblStruct>*. En ambos elementos se indicaría el autor, el título, el lugar de publicación, la casa editorial y el año de publicación. 
+Si el texto codificado es una digitalización de un solo documento (por ejemplo, una edición impresa publicada en época moderna) el elemento `<sourceDesc>` puede contener simplemente un elemento `<bibl>` o bien, si queremos estructurar la información, un elemento `<biblStruct>`. En ambos elementos se indicaría el autor, el título, el lugar de publicación, la casa editorial y el año de publicación. 
 
-Para establecer el texto de las *Soledades* he utilizado 22 documentos: 17 manuscritos y 5 impresos. La relación de estos documentos se encuentra en el encabezado TEI en el elemento `<listWit>` que, a su vez, contiene cada uno de los elementos `<witness>` en donde se identifican y describen los testimonios utilizados. Este elemento contiene un atributo `@xml:id` que permite identificar cada documento mediante un valor único —en este caso, las siglas del testimonio—. Además, para describir los testimonios en detalle, he incorporado en el esquema el módulo *msdescription* correspondiente al capítulo décimo de las *Guidelines* de la TEI. De esta manera se puede utilizar el elemento `<msDesc>` para identificar con precisión el documento y su contenido intelectual, describir su aspecto físico desde un punto de vista codicológico y, por último, incluir datos sobre la historia y procedencia del manuscrito. Asimismo, he utilizado un atributo `@type` dentro del elemento `<msDesc>` para distinguir entre manuscritos e impresos mediante los valores *manuscript* y *print*. En el caso del manuscrito Chacón, además, he utilizado el atributo *@subtype* para indicar que se trata del manuscrito base —el valor que he definido es *basetext*—; en otras palabras, aquel documento que, en principio, contiene las lecciones preferidas y que por ello ha sido utilizado para cotejar el resto de testimonios. 
+Para establecer el texto de las *Soledades* he utilizado 22 documentos: 17 manuscritos y 5 impresos. La relación de estos documentos se encuentra en el encabezado TEI en el elemento `<listWit>` que, a su vez, contiene cada uno de los elementos `<witness>` en donde se identifican y describen los testimonios utilizados. 
+
+Este elemento contiene un atributo `@xml:id` que permite identificar cada documento mediante un valor único —en este caso, las siglas del testimonio—. Para describir los testimonios en detalle, he incorporado en el esquema el módulo *msdescription* correspondiente al capítulo décimo de las *Guidelines* de la TEI. De esta manera se puede utilizar el elemento `<msDesc>` para identificar con precisión el documento y su contenido intelectual. Asimismo, he utilizado un atributo `@type` dentro del elemento `<msDesc>` para distinguir entre manuscritos e impresos mediante los valores *manuscript* y *print*. En el caso del manuscrito Chacón, además, he utilizado el atributo *@subtype* para indicar que se trata del manuscrito base —el valor que he definido es *basetext*—; en otras palabras, aquel documento que, en principio, contiene las lecciones preferidas y que por ello ha sido utilizado para cotejar el resto de testimonios. 
 
 La identificación del manuscrito se lleva a cabo con el elemento `<msIdentifier>`: 
 
-    <msIdentifier>
-                                    <country>España</country>
-                                    <settlement>Madrid</settlement>
-                                    <repository>Biblioteca Nacional de España</repository>
-                                    <collection>Fondo reservado</collection>
-                                    <idno type="cataloguenumber">Res/45, 1</idno>
-                                    <msName>Manuscrito Chacón</msName>
-    </msIdentifier>
+```xml
+<msDesc type="manuscript">
+                            <msIdentifier>
+                                <country>España</country>
+                                <settlement>Madrid</settlement>
+                                <repository>Biblioteca Nacional de España</repository>
+                                <collection>Fondo antiguo</collection>
+                                <idno type="cataloguenumber">Mss/4075</idno>
+                                <msName>Varias poesías de Luis de Góngora</msName>
+                                <msName>Manuscrito Alba</msName>
+                            </msIdentifier>
+                            <msContents>
+                                <msItem>
+                                    <locus from="235r" to="275v">235r-275v</locus>
+                                    <title level="m">Soledades</title>
+                                </msItem>
+                            </msContents>
+                        </msDesc>
+```
 
-En este elemento se etiqueta el país, la ciudad, la biblioteca o repositorio y la colección en donde se encuentra el manuscrito que se pretende describir. Con el elemento `<idno>` se codifica la signatura. En este caso se trata del primer volumen del documento Res/45. Si existe otra forma de identificar el manuscrito —por ejemplo, una signatura distinta en el pasado— es posible codificarla con el elemento `<altIdentifier>`. Por último, en el elemento `<msName>` se halla el  nombre o sobrenombre con el que se conoce el manuscrito.
+En este elemento se etiqueta el país, la ciudad, la biblioteca o repositorio y la colección en donde se encuentra el manuscrito que se pretende describir. Con el elemento `<idno>` se codifica la signatura.  Si existe otra forma de identificar el manuscrito —por ejemplo, una signatura distinta en el pasado— es posible codificarla con el elemento `<altIdentifier>`. Por último, en el elemento `<msName>` se halla el  nombre o sobrenombre con el que se conoce el manuscrito.
 
-A continuación, se sitúa el elemento `<head>` que contiene el título del manuscrito. Los documentos que transmiten la poesía de Góngora suelen ser manuscritos unitarios que contienen muchos poemas del mismo autor por lo que conviene identificar con precisión cuál es el texto realmente utilizado. Para ello, he utilizado los elementos `<msContents>` y `<msItem>`:
-
-    <head>Obras de don Luis de Góngora reconocidas y comunicadas con él por
-                                    don Antonio Chacón Ponce de León, señor de Polvoranca</head>
-                                <msContents>
-                                    <msItem>
-                                        <locus from="193" to="260">193-260 páginas</locus>
-                                        <title>Soledades</title>
-                                    </msItem>
-                                </msContents>
-
-De esta manera sería posible identificar cada uno de los textos que contiene un documento mediante su localización exacta tomando como unidad las páginas o folios que ocupa y, en caso de que tenga uno, el título. Puesto que para realizar esta edición crítica digital solo he cotejado el texto de las *Soledades*, me ha parecido suficiente codificar la posición que ocupa en el manuscrito; no obstante, sería posible seguir añadiendo, uno tras otro, cada uno de los poemas contenidos en el manuscrito Chacón utilizando elementos `<msItem>`. Si el manuscrito codificado fuera un cancionero colectivo también se podrían identificar distintos autores y otros fenómenos como incipits, colofón, citas, notas, etc., así como la lengua de cada uno de los textos, si varía. 
-
-La descripción física del documento está contenida en el elemento `<physDesc>`. Esta etiqueta puede contener una descripción en prosa, dentro de un elemento `<p>`, sobre la forma, el soporte, el material del documento, el estilo de la escritura, el diseño de la página, la encuadernación, etc. O bien otros elementos mucho más precisos que presentan la misma información de manera estructurada y, por tanto, procesable por el ordenador.
- 
-El primer elemento que se anida dentro de `<phyDesc>` es `<objectDesc>`. Este elemento agrupa etiquetas que se pueden dividir en dos grandes conjuntos: por un lado, la descripción del soporte físico; por el otro, la descripción del diseño de la página. Veamos, a continuación, qué elementos contienen estos datos:
-
-    <objectDesc>
-                                        <supportDesc material="parch">
-                                            <support>
-                                                <p>Soporte en <material>papel de vitela</material>.</p>
-                                            </support>
-                                            <extent>9 hojas, 324 páginas, 6 hojas<dimensions scope="all" type="leaf" unit="cm">
-                                                    <dim type="format">4º</dim>
-                                                    <height>26 cm</height>
-                                                    <width>18 cm</width>
-                                                </dimensions></extent>
-                                            <foliation>
-                                                <p>Paginación original en el margen superior.</p>
-                                            </foliation>
-                                            <condition>Excelente estado de conservación.</condition>
-                                        </supportDesc>
-                                        <layoutDesc>
-                                            <layout columns="1">
-                                                <p>Escrito en una columna dentro de una caja.</p>
-                                            </layout>
-                                        </layoutDesc>
-                                    </objectDesc>
-
-En esta propuesta de codificación he utilizado un atributo `@material` en el elemento `<supportDesc>` para indicar el material del documento. El valor, en el caso del manuscrito Chacón, es *parch* porque se trata de papel de vitela utilizada en manuscritos de lujo. Se trata de una excepción: en el resto de documentos, tanto manuscritos como impresos, el valor de este atributo siempre es paper. Pero el material del documento también se puede codificar de otra manera: dentro del elemento `<support>` el codificador puede poner una frase en prosa y etiquetar el material con la etiqueta `<material>`. 
-
-A continuación, siguen los elementos `<extent>`, en donde se codifica el número folios o páginas del manuscrito y las dimensiones (formato, altura y ancho), y `<foliation>`, en donde se detalla la información sobre la foliación como en qué parte del folio aparece el número, qué esquema o qué aspecto tiene, incluso quién es el responsable de la numeración. 
-
-El último de los elementos contenidos por `<supportDesc>` corresponde a `<condition>`. En este elemento se puede declarar la condición en que se encuentra el documento. Por lo general, se recomienda utilizar una descripción en prosa contenida en un elemento `<p>` como *Excelente estado de conservación* o *Buen estado*; pero también es posible indicar si hay folios rotos o manchas.
-
-La descripción del diseño de la página se detalla en el elemento `<layoutDesc>`. Este elemento contiene, a su vez, un elemento `<layout>` que sirve para explicitar el número de columnas mediante un atributo `@column`. En esta propuesta de codificación de las *Soledades* todos los manuscritos cotejados fueron escritos en una columna por lo que el valor de este atributo es 1, con la excepción del manuscrito Rm-6709, que fue escrito en dos. En este elemento se pueden describir otros aspectos del diseño de la página como el número de líneas o el interlineado pero este tipo de datos no son imprescindibles para la finalidad de la edición. También puede utilizarse más de un elemento `<layout>` si el diseño de la página varía a lo largo del manuscrito.
-
-Hasta aquí, pues, llega la descripción física del documento contenida en el elemento `<objectDesc>`. Tras este siguen varios elementos incluidos también en el elemento `<physDesc>` que dan cuenta del tipo de letra, las decoraciones y la encuadernación: 
-
-    <handDesc hands="1">
-                                        <p>Una sola mano. Bella escritura.</p>
-                                    </handDesc>
-                                    <decoDesc>
-                                        <p>Con epígrafes ornamentales, finales de capitales y otros
-                                            adornos a pluma, sobrios y de gran gusto.</p>
-                                    </decoDesc>
-                                    <bindingDesc>
-                                        <p>Encuadernación del siglo XIX en marroquín verde con hierros y corte dorados.</p>
-                                    </bindingDesc>
-
-La descripción de estos aspectos del manuscrito Chacón no plantea ningún problema al tratarse de un objeto de lujo. Así, se puede utilizar el elemento `<handDesc>` para declarar que solo un copista fue el responsable del traslado del texto. Algo parecido ocurre con la decoración, que es bastante uniforme. La descripción física de otros manuscritos, sin embargo, requiere utilizar otros elementos más precisos: por un lado, si la copia fue realizada por más de un escribano, resulta muy recomendable utilizar el elemento `<handNote>` con los atributos `@xml:id` y `@scope` para identificar respectivamente la mano y la extensión de cada una de las intervenciones. Asimismo, existe un elemento `<decoNote>` ideado para describir de manera aislada y en detalle los distintos tipos de decoraciones que presenta el manuscrito; incluso sería posible listar las decoraciones en un elemento `<list>` compuesto por varios elementos `<item>` y `<locus>`.
-
-Finalmente, el elemento `<bindingDesc>` contiene información sobre el tipo de encuadernación del documento. En mi propuesta de codificación he utilizado únicamente un elemento `<p>` para contener una frase descriptiva pero la TEI permite el uso de otros elementos como `<decoNote>` o `<condition>` si queremos ser más específicos y dar detalles sobre la decoración o el estado de conservación. También es posible codificar los textos inscritos en el lomo o en el tejuelo de la encuadernación con el elemento `<quote>`. Aunque existen más elementos TEI, en esta propuesta de codificación el elemento `<bindingDesc>` pone punto y final a la descripción del manuscrito en tanto que documento u objeto físico.
-
-Hasta ahora se ha visto cómo identificar correctamente el manuscrito y cómo describir su contenido intelectual y algunos rasgos materiales del documento. La TEI también permite etiquetar información sobre la historia del testimonio: 
-
-    <history>
-                                    <origin>
-                                        <p>Manuscrito creado en <origPlace>España</origPlace> por
-                                            Antonio Chacón. La dedicatoria está fechada en <origDate when="1628-12-12">12 de diciembre de
-                                            1628</origDate>.</p>
-                                    </origin>
-                                    <provenance>
-                                        <p>Antonio Chacón se lo regaló al conde-duque de Olivares.</p>
-                                    </provenance>
-                                    <provenance>
-                                        <p>En el siglo XIX perteneció a Pascual de Gayangos.</p>
-                                    </provenance>
-                                    <acquisition>
-                                        <p>Adquirido por la Biblioteca Nacional de España en el siglo
-                                            XIX.</p>
-                                    </acquisition>
-                                </history>
-
-Tal y como se puede apreciar el elemento `<history>` agrupa información diversa sobre la historia del manuscrito: en primer lugar se sitúa el elemento `<origin>` en donde se puede mencionar el lugar de creación, con la etiqueta `<origPlace>`, y la fecha de creación, con `<origDate>`; esta segunda etiqueta puede contener atributos como `@when` si se conoce la fecha exacta o `@notBefore` y `@notAfter` para dar los términos *a quo* y *ad quem*. En segundo lugar, tenemos el elemento `<provenance>` que la TEI recomienda utilizar para identificar al propietario del manuscrito después de su creación y antes de que fuera adquirido por el repositorio actual en donde se encuentra. Por último, el elemento `<acquisition>` contiene información sobre el proceso de adquisición del manuscrito por parte de la biblioteca o repositorio en donde actualmente se encuentra; si no dispongo de datos sobre cómo se produjo la adquisición, he utilizado igualmente dicho elemento para dejar constancia de ello.
-
-El último elemento que he utilizado para describir los manuscritos es `<additional>`. Con él se puede detallar información administrativa, algunos datos adicionales sobre la fuente y su disponibilidad, o bien, tal y como he preferido, establecer, por un lado, una conexión entre el manuscrito original y alguna reproducción electrónica accesible en internet; y, por el otro, incluir referencias bibliográficas en las que se estudia el documento en cuestión. Puesto que no todos los manuscritos han sido publicados en formato facsímil o han sido estudiados con detenimiento, este elemento no es obligatorio:
-
-    <surrogates>
-                                        <p>Facsímil disponible en la <bibl><ref target="http://bdh-rd.bne.es/viewer.vm?id=0000015414amppage=204"/><relatedItem type="original">
-                                                    <ref target="#Ch">Biblioteca Digital Hispánica</ref>
-                                                </relatedItem></bibl> y en la <bibl><ref target="http://www.cervantesvirtual.com/obra-visor/obras-de-d-luis-de-gongora-tomo-i-manuscrito--0/html/"/><relatedItem type="original">
-                                                    <ref target="#Ch">Biblioteca Virtual Miguel de Cervantes</ref>
-                                                </relatedItem></bibl>.</p>
-                                    </surrogates>
-
-En el caso del manuscrito Chacón, el facsímil se puede encontrar en dos portales electrónicos: por un lado, en la *Biblioteca Digital Hispánica*; por el otro, en la *Biblioteca Virtual Miguel de Cervantes*. Para codificar esta información he utilizado varios elementos siguiendo el modelo de codificación empleado en las *Bibliothèques Virtuelles Humanistes*: en primer lugar, el elemento que agrupa al resto, `<surrogates>`, que contiene información sobre cualquier tipo de representación del original; seguidamente, el elemento `<bibl>`, que utilizo para indicar que tanto la *Biblioteca Digital Hispánica* como la *Biblioteca Virtual Cervantes* son portales que publican contenido digitalizado; en tercer lugar, tenemos la etiqueta `<ref>` con la que, gracias al atributo `@target`, se puede apuntar hacia una URL o bien hacia el original, representado por la sigla del manuscrito; por último, `<relatedItem>` sirve para establecer la conexión entre la representación digital y el original.
-
-En cuanto a las referencias bibliográficas, he utilizado el elemento `<listBibl>` para codificar un listado de publicaciones estructuradas mediante el elemento `<bibl>`. El procedimiento es bastante sencillo por lo que no hace falta detenerse en ello: 
-
-    <bibl type="article">
-                                            <author>
-                                                <name>
-                                                    <surname>Foulché-Delbosc</surname>,
-                                                      <forename>Raymond</forename></name>
-                                            </author>. <title level="a">Note sur trois manuscrits des
-                                                oeuvres poétiques de Góngora</title>. <bibl type="monogr">
-                                                <title level="j">Revue Hispanique</title>
-                                                <biblScope unit="volume">7</biblScope> (<date when="1900">1900</date>): <biblScope from="454" to="504" unit="page">454-504</biblScope>.</bibl>
-                                        </bibl>
-
-La descripción de los impresos puede considerarse menos compleja en comparación con la que acabamos de ver. La estructura es similar es bastante similar: la codificación de los impresos se lleva a cabo utilizando un elemento `<witness>` con un atributo `@xml:id`, cuyo valor corresponde a la sigla con que he identificado el testimonio. El elemento `<msDesc>` con un atributo `@type`, cuyo valor es *print*, sirve para agrupar varias etiquetas: en primer lugar encontramos el elemento `<msIdentifier>`, que, como ya se vio, identifica el país, la ciudad, el repositorio y la signatura del documento. En los impresos no se utiliza el elemento `<head>` porque para identificar el título de la publicación se prefiere el elemento `<title>`, que se encuentra dentro del elemento `<imprint>`, del que daré más detalles más abajo. Seguidamente, pues, se sitúa el elemento `<msContents>` con el que se codifica el contenido intelectual del documento; para identificar con exactitud qué texto he utilizado y dónde se encuentra dentro del volumen, he utilizado el elemento `<msItem>`; en él se anidan `<locus>` y `<title>`. 
-Tras esto viene la descripción de las cuatro dimensiones del documento físico: el soporte, el diseño de la página, la decoración y la encuadernación. Los elementos utilizados vuelven a ser `<physDesc>` y `<objectDesc>`.
-
-La información relativa al tipo de fuente, a la decoración o a la encuadernación ha sido codificada en el caso de los testimonios impresos utilizando los elementos `<typeDesc>`, `<decoDesc>` y `<bindingDesc>` respectivamente. Por último, cuando las hubiere, se han etiquetado las representaciones electrónicas en forma de facsímiles publicadas por bibliotecas virtuales mediante el elemento `<additional>` tal y como se expuso con los manuscritos.
-
-Hasta aquí las similitudes. A diferencia del manuscrito, en la codificación de impresos he utilizado el elemento `<biblStruct>` para identificar con precisión el lugar y la fecha de publicación, el impresor y el librero. De esta manera es posible estructurar los elementos bibliográficos necesarios para citar al documento de manera ordenada. Los datos contenidos por estos elementos corresponden a nombres de personas o de lugares por lo que he utilizado las etiquetas `<persName>` y `<placeName>` respectivamente. Veamos cómo se anidan todos estos elementos tomando el caso de la imprenta de la edición de Vicuña:
-
-    <biblStruct>
-                                <monogr>
-                                    <author>
-                                        <persName ref="http://viaf.org/viaf/12309145" role="author">
-                                            <forename>Luis</forename>
-                                            <nameLink>de</nameLink>
-                                            <forename>Góngora</forename>
-                                        </persName>
-                                    </author>
-                                    <editor>
-                                        <persName ref="http://viaf.org/viaf/59488463" role="editor">
-                                            <forename>Juan</forename>
-                                            <surname>López</surname>
-                                            <nameLink>de</nameLink>
-                                            <surname>Vicuña</surname>
-                                        </persName>
-                                    </editor>
-                                    <title type="short">Obras en verso del Homero español</title>
-                                    <imprint>
-                                        <pubPlace>
-                                            <placeName type="settlement">Madrid</placeName>
-                                        </pubPlace>
-                                        <respStmt>
-                                            <resp>Impreso por</resp>
-                                            <persName ref="http://viaf.org/viaf/34398749" role="impresor">
-                                                <forename>Ana</forename>
-                                                <nameLink>de</nameLink>
-                                                <surname>Carasa</surname>
-                                            </persName>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>A costa de</resp>
-                                            <persName role="librero">
-                                                <forename>Alonso</forename>
-                                                <surname>Pérez</surname>
-                                            </persName>
-                                        </respStmt>
-                                        <date when="1627">1627</date>
-                                    </imprint>
-                                </monogr>
-                            </biblStruct>
-
-El elemento TEI que agrupa etiquetas relacionadas con la producción, distribución y —en el caso del Siglo de Oro— venta del libro es `<imprint>`. Con `<pubPlace>` se identifica el lugar de publicación: Madrid. Como se trata del nombre de un lugar, he decidido añadir el elemento `<placeName>` y clasificarlo como ciudad por medio de un atributo `@type`. Acto seguido aparecen los nombres de los responsables de la publicación que, en principio, debieran etiquetarse con el elemento `<publisher>`. Ahora bien, en lugar de una empresa u organización como ocurre actualmente, en el siglo XVII aún se podían distinguir dos figuras: el impresor y el librero. En este caso la TEI recomienda utilizar los elementos `<respStmt>` y `<resp>` en lugar de `<publisher>`. En mi propuesta de codificación he descrito la responsabilidad en prosa tal y como se encuentra en los libros del siglo XVII y seguidamente he puesto los nombres del impresor y del librero dentro de las etiquetas `<persName>`. Estas pueden contener dos atributos: `@role` para definir el rol —librero o impresor— y `@ref` para incluir algún enlace permanente, por ejemplo, al *Fichero de Autoridades Virtual Internacional* (VIAF). En el caso de la edición de Vicuña, Ana de Carasa, la viuda de Luis Sánchez, sí ha sido identificada por VIAF; por el contrario y hasta la fecha, el librero Alonso Pérez no ha sido localizado en esta base de datos. En cualquier caso, tras la declaración de responsabilidad sigue la fecha de publicación contenida en un elemento `<date>`. 
-
-Para recapitular lo que se ha dicho sobre la primera parte del `<teiHeader>`, el elemento `<fileDesc>` contiene información bibliográfica sobre el archivo electrónico en el `<titleStmt>`, sobre el número de la edición en el `<editionStmt>`, sobre la publicación, distribución y disponibilidad del archivo electrónico en el `<publicationStmt>` y, por último, sobre las fuentes de las que deriva el texto en el `<sourceDesc>`. Este último elemento resulta de importancia capital en esta propuesta de codificación de las *Soledades* porque en él se describen los 22 testimonios cotejados —manuscritos e impresos— para crear el texto crítico. 
-
-### Descripción de la codificación
-
-En el elemento `<encodingDesc>` se detallan los principios editoriales y el modo de codificar el texto electrónico. Aunque no se trata de un elemento obligatorio, la TEI lo recomienda porque con él se establece la relación entre las fuentes manuscritas e impresas y el texto electrónico. La información contenida en este elemento puede presentarse por medio de párrafos en prosa o bien utilizando otros elementos más específicos. En mi propuesta de codificación de las *Soledades* he preferido documentar de manera precisa la finalidad de la codificación con `<projectDesc>`, las prácticas editoriales (corrección, normalización y citación) en el elemento `<editorialDecl>`, y qué elementos, atributos y valores se han utilizado por medio de `<refsDecl>`. Puesto que los dos últimos aspectos de la codificación se analizarán y comentarán en profundidad en apartados posteriores, aquí me limitaré a mostrar el elemento `<projectDesc>`: 
-
-    <projectDesc>
-                    <p>Esta edición ha sido realizada con fines académicos y didácticos siguiendo las recomendaciones de la TEI P5.</p>
-                </projectDesc>
-
-Además de los elementos mencionados, el `<encodingDesc>` de esta propuesta de codificación de las *Soledades* contiene un tipo de información específica de las ediciones críticas: el elemento `<variantEncoding>`. Con este elemento se declara en el encabezado TEI el método seguido para codificar variantes:
-
-    <variantEncoding location="internal" method="parallel-segmentation"/>
-
-Por último, no hay que olvidar que en el elemento `<encodingDesc>` también debe figurar el modo en que se codifican los glifos y caracteres especiales; para ello se utiliza la etiqueta `<charDecl>`. Daré más detalles sobre los caracteres no representados por UNICODE en el apartado dedicado a las abreviaturas.
+Los documentos que transmiten la poesía de Góngora suelen ser manuscritos unitarios que contienen muchos poemas del mismo autor por lo que conviene identificar con precisión cuál es el texto realmente utilizado. Para ello, he utilizado los elementos `<msContents>` y `<msItem>`. De esta manera, sería posible identificar cada uno de los textos que contiene un documento mediante su localización exacta tomando como unidad las páginas o folios que ocupa y, en caso de que tenga uno, el título. Puesto que para realizar esta edición crítica digital solo he cotejado el texto de las *Soledades*, me ha parecido suficiente codificar la posición que ocupa en el manuscrito.
 
 ### Perfil del texto
 
-El elemento <profileDesc> agrupa varios elementos con los que se puede codificar información no bibliográfica. Se trata de un elemento opcional que en mi propuesta de codificación de las *Soledades* contiene un elemento importante para representar las fases de la cronología establecida en la tesis; me refiero al elemento `<creation>`. En el caso de las *Soledades* es posible identificar hasta nueve fases. Cada una de estas fases ha sido codificada usando el elemento `<change>` con tres atributos: por un lado, `@notAfter` y `@notBefore` sirven para identificar los términos *a quo* y *ad quem*; por el otro, `@xml:id` identifica con un valor único cada uno de estos elementos de tal modo que se puedan referenciar en el texto de las *Soledades*. Asimismo, en este elemento `<creation>` se puede documentar el lugar en el que tuvo lugar el proceso creativo mediante `<placeName>`:
+El elemento <profileDesc> agrupa varios elementos con los que se puede codificar información no bibliográfica. En esta codificación TEI he recogido en el encabezado una lista de entidades mencionadas en el texto.
 
-    <creation>
-                    <placeName type="settlement">Córdoba</placeName>
-                    <listChange>
-                        <change notAfter="1613-05" notBefore="1612-06" xml:id="FIRST">Primera
-                            fase</change>
-                        <change notAfter="1613-05" notBefore="1612-06" xml:id="SECOND">Segunda
-                            fase</change>
-                        <change notAfter="1613-05-11" notBefore="1613-05" xml:id="THIRD">Tercera
-                            fase</change>
-                        <change notAfter="1614-02" notBefore="1613-09" xml:id="FOURTH">Cuarta
-                            fase</change>
-                        <change notAfter="1614-12" notBefore="1614-02" xml:id="FIFTH">Quinta
-                            fase</change>
-                        <change notAfter="1616-05" notBefore="1615-01" xml:id="SIXTH">Sexta
-                            fase</change>
-                        <change notAfter="1617-04" notBefore="1616-05" xml:id="SEVENTH">Séptima
-                            fase</change>
-                    </listChange>
-                    <placeName type="settlement">Madrid</placeName>
-                    <listChange>
-                        <change notAfter="1617-10" notBefore="1617-04" xml:id="EIGHTH">Octava fase</change>
-                        <change notAfter="1626" notBefore="1617-10" xml:id="NINTH">Novena fase</change>
-                    </listChange>
-                </creation>
+#### Personas
 
-En el `<profileDesc>` también se puede identificar la lengua en que está escrito el texto. En este caso el único idioma utilizado es el castellano pero sería posible utilizar más de un elemento `<language>` dentro de `<langUsage>` si el archivo electrónico contuviera un conjunto de textos escritos en varios idiomas. La etiqueta `<language>` tiene un atributo `@ident` con el que se identifica la lengua en cuestión mediante un código Internet Engineering Task Force (IET); en el caso del castellano los códigos son *spa* o bien *es*. 
+Por un lado, tenemos una lista de personas o seres animados (en su  mayoría personajes mitológicos) referidos de manera explicita a lo largo del poema. Estas entidades se han codificado en la lista `<listPerson xml:id="onomastico">`. Dicha lista contiene una serie de elementos `<person>` en los que doy información sobre el nombre y la ocupación de la entidad:
 
-Finalmente, hay que tener en cuenta que el elemento `<profileDesc>` puede contener otros elementos que no aparecen en esta propuesta de codificación. Así, por ejemplo, si el texto fuera un artículo científico, se podría codificar un resumen del contenido en un elemento `<abstract>`, clasificar el texto siguiendo algún tipo de tesauro de amplia difusión gracias al elemento `<textclass>` o añadir palabras clave mediante el elemento `<keywords>` a fin de facilitar su recuperación por un gestor de contenidos. 
+```xml 
+<person xml:id="act01">
+						<persName>Acteón</persName>
+						<occupation>Era un célebre cazador iniciado en este arte por el centauro Quirón, también maestro de Aquiles. Hijo de Autónoe y nieto de Cadmo, sufrió la ira de Diana tras verla desnuda
+							bañándose en un lago; la diosa lo convirtió en ciervo y sus propios perros le dieron caza.</occupation>
+					</person>
+```
 
-### Historial de revisión
+Es importante remarcar que cada elemento `<person>` debe tener un atributo `@xml:id` al que remiten las menciones codificadas en el poema.
 
-La cuarta y última parte del encabezado TEI corresponde al `<revisionDesc>`. Se trata de un elemento opcional en el que se registran todos los cambios realizados en el texto. Cuando el proyecto es administrado mediante un control de versiones y en él intervienen varios investigadores, puede ser muy útil para gestionar de manera eficiente las modificaciones y deshacerlas en caso de necesidad. Los cambios se pueden anidar en un elemento `<listChange>` o bien, como en mi propuesta, directamente en elementos `<change>`; el atributo `@when` puede utilizarse para especificar el día exacto en que se produjo el cambio:
+#### Lugares
 
-    <revisionDesc>
-                <change when="2015-02-12" who="#ARC">Se empezó a codificar fases de escritura con
-                        <gi>milestone</gi></change>
-                <change when="2014-08-18" who="#ARC">Se empezó a codificar el <att>type</att> de los
-                    elementos <gi>rdg</gi>.</change>
-                <change when="2014-08-11" who="#ARC">Se empezó a codificar con <gi>persName</gi>,
-                        <gi>placeName</gi> y <gi>geogName</gi> nombres de personas, lugares y accidentes
-                    geográficos, respectivamente.</change>
-                <change when="2014-08-07" who="#ARC">Se mejoró la descripción de los testimonios
-                    contenidos en <gi>listWit</gi>.</change>
-                <change when="2014-07-17" who="#ARC">Se empezó a codificar el aparato negativo de
-                    variantes <gi>app</gi>.</change>
-                <change when="2014-05-16" who="#ARC">Se empezó a codificar con <gi>choice</gi>
-                    transcripción paleográfica y texto modernizado.</change>
-                <change when="2014-05-15" who="#ARC">Se modificó los valores de los atributos
-                        <att>xml:id</att> de los versos.</change>
-                <change when="2014-05-30" who="#ARC">Se añadió los elementos <gi>choice</gi>, modificó
-                    las etiquetas <gi>sic</gi>, <gi>abbr</gi> y <gi>expan</gi> y empezó a codificar los
-                    destacados con <gi>hi</gi>.</change>
-                <change when="2014-05-07" who="#ARC">Se corrigió la transcripción.</change>
-                <change when="2013-11-02" who="#ARC">Se identificó con atributos <att>xml:id</att> los
-                    versos.</change>
-                <change when="2013-10-28" who="#ARC">Se identificó con atributos dos estructuras del
-                    texto: páginación del manuscrito y división.</change>
-                <change when="2013-10-26" who="#ARC">Se mejoró el encabezamiento.</change>
-                <change when="2013-10-16" who="#ARC">Se revisó los <gi>lg</gi> y la transcripción
-                    paleográfica.</change>
-                <change when="2013-10-12" who="#ARC">Se mejoró el encabezamiento.</change>
-                <change when="2013-10-07" who="#ARC">Se empezó a codificar la transcripción
-                    paleográfica.</change>
-            </revisionDesc>
+Por el otro lado, tenemos los lugares mencionados de manera explícita; estos se han codificado en el elemento `<settingDesc>`. Se compone de una lista de elementos `<place>` que, en este caso, solo contienen el elemento `<geogName>`:
 
-En cuanto a la responsabilidad de los cambios, esta se puede describir mediante un atributo `@who` contenido en `<change>`. El valor de este atributo remite al atributo `@xml:id` contenido en el elemento `<respStmt>` del `<titleStmt>`. Tal y como se aprecia en el código insertado es posible referirse a un determinado elemento o atributo mediante las etiquetas `<gi>` y `<att>`.   
+```xml
+<place xml:id="aga101">
+						<geogName>Aganipe</geogName>
+					</place>
+```
+
+Como ocurre con el elemento utilizado para representar personas, aquí también es obligatorio el uso del atributo `@xml:id` porque los nombres de lugares etiquetados en el poema deben remitir a una entidad contenida en el encabezado.
+ 
 
 ## Título, partes y subtítulos 
 
