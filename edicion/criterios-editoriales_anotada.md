@@ -196,12 +196,8 @@ Con `<pb/>` es posible representar cuándo se inician las páginas o folios de t
 					</choice> de <choice>
 						<orig>vn</orig>
 						<reg>un</reg>
-					</choice> peregrino son errante<note type="editorial"><p>El texto que Luis de Góngora envió a Pedro de Valencia no estaba dedicado al duque de Béjar ni, probablemente, lo estuvo el que
-							Almansa difundió por la corte en 1613 (o, según la cronología tardía, en 1614), pues solo se citan versos de la <hi rend="italic">Soledad primera</hi>. En cambio, sabemos que el abad de
-							Rute y Jáuregui sí leyeron la Dedicatoria ya que aluden a ella, la comentan o bien citan algún verso. Si aceptamos la datación del segundo parecer solicitado por Góngora, debemos admitir
-							que la Dedicatoria debió de escribirse antes de 1614.</p>
-						<p>Las variantes que he encontrado en esta parte del poema son únicamente errores de copia o variantes de copista. No hay vestigios de la versión primitiva por lo que se puede deducir que
-							el texto no fue revisado o corregido por el poeta a lo largo de los años. Desde el momento de su creación, por tanto, el texto quedó establecido para Góngora.</p></note>
+					</choice> peregrino son errante
+					[...]
 				</l>
 ```
 
@@ -246,60 +242,56 @@ El primer uso del elemento `<choice>` ejemplifica cómo es posible presentar vis
 
 En el segundo caso la misma combinación de elementos sirve para codificar cómo Chacón utiliza la mayúscula y para regularizar el texto respetando las convenciones actuales. En el elemento `<orig>` se sitúa la forma *Ô*, en mayúscula y con un acento circunflejo, mientras que en el elemento `<reg>` he regularizado la interjección `oh` poniéndola en minúscula, pues no antecede ningún punto, y con la letra `h`, tal y como se escribe actualmente:
 
+```xml
     <choice>
-                                        <orig>Ô</orig>
-                                        <reg>oh</reg>
-                                    </choice>
+        <orig>Ô</orig>
+        <reg>oh</reg>
+  </choice>
+ ```
 
-El tercer y último caso se parece al primero ya comentado. Chacón no puntúa el verso de ninguna manera pero en mi propuesta de codificación de las *Soledades*, y siguiendo la costumbre de los editores modernos, he considerado conveniente poner una coma pues se trata de un vocativo. El elemento `<orig>`, por tanto, está vacío, no contiene texto alguno mientras que la modernización contiene una coma:
+El tercer y último caso se parece al primero ya comentado. Chacón no puntúa el verso de ninguna manera, pero en mi propuesta de codificación de las *Soledades*, y siguiendo la costumbre de los editores modernos, he considerado conveniente añadir una coma, pues se trata de un vocativo. El elemento `<orig>`, por tanto, está vacío, no contiene texto alguno mientras que la modernización contiene una coma:
 
+```xml
     <choice>
-                                        <orig/>
-                                        <reg>,</reg>
-                                    </choice>
+        <orig/>
+        <reg>,</reg>
+  	</choice>
+```
 
 La misma combinación de etiquetas ha sido utilizada para codificar la forma original y modernizada de las palabras. Así, en el ejemplo siguiente se percibe cómo la ortografía con que Chacón escribe `estranjero` se conserva gracias al elemento `<orig>` y, al mismo tiempo, se moderniza:  
 
-    <l xml:id="v-0083">
-                            <choice>
-                                <orig>Quando</orig>
-                                <reg>cuando</reg>
-                            </choice><choice>
-                                <orig/>
-                                <reg>,</reg>
-                            </choice> entregado <app>
-                                <lem>el</lem>
-                                <rdg type="error" wit="#S">al</rdg>
-                            </app>
-                            <choice>
-                                <orig>misero</orig>
-                                <reg>mísero</reg>
-                            </choice>
-                            <choice>
-                                <orig>estrangero</orig>
-                                <reg>extranjero</reg>
-                            </choice></l>
+```xml
+   <l xml:id="v-0083">
+					<choice>
+						<orig>Quando</orig>
+						<reg>cuando</reg>
+					</choice><choice>
+						<orig/>
+						<reg>,</reg>
+					</choice> entregado el <choice>
+						<orig>misero</orig>
+						<reg>mísero</reg>
+					</choice>
+					<choice>
+						<orig>estrangero</orig>
+						<reg>extranjero</reg>
+					</choice>
+				</l>
+```
 
-Aunque la TEI no se pronuncia sobre si este grupo de elementos debieran contener palabras o grafías, en las *Guidelines* solo se recogen ejemplos de codificación de palabras por lo que he seguido esta metodología. Por regla general, pues, he codificado las palabras una por una con la excepción de los casos estudiados en la tesis y de las contracciones o uniones fonético-sintácticas en las que es inevitable codificar el grupo léxico. Así, por ejemplo, aunque los casos son muchos y variados, la contracción de la preposición de y del artículo determinante masculino el en sus múltiples manifestaciones:
+Aunque la TEI no se pronuncia sobre si este grupo de elementos debieran contener palabras o grafías, en las *Guidelines* solo se recogen ejemplos de codificación de palabras por lo que he seguido esta metodología. Por regla general, pues, he codificado las palabras una por una con la excepción de las contracciones o uniones fonético-sintácticas en las que es inevitable codificar el grupo léxico. Así, por ejemplo, aunque los casos son muchos y variados, la contracción de la preposición *de* y del artículo determinante masculino *el* en sus múltiples manifestaciones:
 
-    <l n="15" xml:id="v-0052">
-                            <choice>
-                                <orig>De el</orig>
-                                <reg>Del</reg>
-                            </choice> siempre en la montaña <app>
-                                <lem><choice>
-                                        <orig>oppuesto</orig>
-                                        <reg>opuesto</reg>
-                                    </choice></lem>
-                                <rdg type="error" wit="#D"><subst>
-                                        <del rend="annotation">opreso</del>
-                                        <add place="margin">opuesto</add>
-                                    </subst></rdg>
-                            </app>pino</l>
+```xml
+<l n="15" xml:id="v-0052">
+					<choice>
+						<orig>De el</orig>
+						<reg>Del</reg>
+					</choice> siempre en la montaña <choice>
+						<orig>oppuesto</orig>
+						<reg>opuesto</reg>
+					</choice> pino</l>
+```
 
-Para codificar la separación de las palabras tal y como aparecen en Chacón he seguido la metodología de la *Guía para editar textos CHARTA según el estándar TEI* coordinada por Carmen Isasi y Paul Spence (2014) en donde se propone el uso del elemento `<choice>`. Se trata, en mi opinión, del elemento más acertado pero también creo que es conveniente plantear un cambio en las *Guidelines* para que se haga explícito este uso y se muestren algunos ejemplos. 
-
-Desde un punto de vista conceptual y para recapitular lo dicho al respecto, podría afirmarse que las codificaciones alternativas que agrupa el elemento `<choice>` constituyen dos capas de un mismo texto que se deberían procesar como vistas en la interfaz web. El beneficio de este tipo de codificación es evidente: el lector puede acceder al texto original y a la modernización propuesta por el editor y, en consecuencia, compararlas eligiendo una u otra vista. Este tipo de codificación, pues, deviene una especie de instrumento que el editor otorga al lector para que pueda examinar su hipótesis de trabajo y valorar la calidad del resultado final. La mayor dificultad reside en el número de etiquetas necesario para llevarla a cabo: como mínimo tres etiquetas por —casi— cada palabra en textos anteriores al siglo XVIII. Por eso, antes de empezar conviene tener en cuenta que la tarea requiere muchísima paciencia y sobre todo tiempo.
 
 #### Destacados
 
@@ -307,131 +299,149 @@ Aunque en el modelo de codificación TEI prima la estructura lógica por encima 
  
 En efecto, en el primer verso de la *Soledad primera* la palabra *Era* aparece en mayúsculas y con la *E* inicial en un cuerpo de letra mayor. Para poder conservar este rasgo característico del manuscrito Chacón y a la vez ofrecer el pasaje normalizado según los hábitos de escritura actuales, he anidado el elemento `<hi>` en la combinación de etiquetas `<choice>` + `<orig>` / `<reg>` con un atributo `@rend` cuyo valor es `initial`:
 
-    <l rend="indent" xml:id="v-0038">
-                            <choice>
-                                <orig><hi rend="initial">E</hi>RA</orig>
-                                <reg>Era</reg>
-                            </choice>
-                            <choice>
-                                <orig>de el</orig>
-                                <reg>del</reg>
-                            </choice> año la <choice>
-                                <orig>estacion</orig>
-                                <reg>estación</reg>
-                            </choice>
-                            <app>
-                                <lem>florida</lem>
-                                <rdg type="error" wit="#I">floria</rdg>
-                                <rdg type="error" wit="#Rl">primera</rdg>
-                            </app><choice>
-                                <orig>,</orig>
-                                <reg/>
-                            </choice></l>
+```xml
+<choice>
+	<orig><hi rend="initial">E</hi>RA</orig>
+	<reg>Era</reg>
+</choice>
+```
 
 En el manuscrito Chacón hay otros casos en los que se podría haber utilizado el elemento `<hi>`: los títulos, subtítulos, la primera palabra con que se inicia cada una de las tres partes del poema, las palabras *duque* y *pasos* de la Dedicatoria y los nombres propios de los personajes (*Lícidas*, *Micón*, *Leucipe* y *Cloris*) que aparecen en la *Soledad segunda* se diferencian del resto porque van en mayúsculas. Ahora bien, no me parece necesario utilizar lenguaje de marcado para representar este fenómeno porque en la interfaz web basta con que aparezcan en mayúsculas.
 
-En síntesis, en esta propuesta de codificación de las *Soledades* solo se utiliza el elemento `<hi>` de manera restringida: por un lado, para identificar aquellas letras que tienen un tamaño mayor al inicio de cada una de las tres partes del poema; por el otro, como se verá en el siguiente apartado, para representar las grafías en posición volada. Por el contrario, las palabras que en el cuerpo del texto van en mayúscula no han sido representadas con lenguaje de marcado.
 
 #### Abreviaturas y expansiones
 
-La misma combinación de elementos también puede utilizarse para codificar la forma abreviada y la forma expandida de una palabra. El manuscrito Chacón contiene pocas abreviaturas pero, precisamente por eso, creo que vale la pena conservarlas en la transcripción paleográfica y desarrollarlas en el texto modernizado. Para llevar a cabo esto he añadido dentro de los elementos `<orig>` y `<reg>` las etiquetas `<abbr>` y `<expan>` respectivamente. Así, por ejemplo, en el verso 159 de la *Soledad segunda* (*o filos pongan de homicida hierro*) Chacón abrevia la *n* final de la forma verbal *pongan* mediante una virgulilla situada encima de la *a*. La combinación de elementos que propongo para este tipo de fenómenos textuales es la siguiente: 
+La misma combinación de elementos también puede utilizarse para codificar la forma abreviada y la forma expandida de una palabra. El manuscrito Chacón contiene pocas abreviaturas pero, precisamente por eso, creo que vale la pena conservarlas en la transcripción paleográfica y desarrollarlas en el texto modernizado. 
 
-    <choice>
-                                                <orig><abbr>pongã</abbr></orig>
-                                                <reg><expan>pongan</expan></reg>
-                                            </choice>
+Para llevar a cabo esto he sustituidolos elementos `<orig>` y `<reg>` por las etiquetas `<abbr>` y `<expan>` respectivamente. Así, por ejemplo, en el verso 159 de la *Soledad segunda* (*o filos pongan de homicida hierro*) Chacón abrevia la *n* final de la forma verbal *pongan* mediante una virgulilla situada encima de la *a*. La combinación de elementos que propongo para este tipo de fenómenos textuales es la siguiente: 
 
-También se pueden encontrar otros casos en que la abreviatura afecta a los nombres propios de los personajes como ocurre con los pescadores de la *Soledad segunda*. La primera mención en el canto amebeo no presenta ningún problema pero en adelante Chacón abrevia los nombres, tanto de Micón como de Lícidas.  Si queremos visualizar la forma abreviada y la expansión es necesario recurrir al elemento `<choice>` y añadir ambas formas en los elementos `<orig>` y `<reg>` tal y como se muestra a continuación: 
+```xml
+<l xml:id="v-1287">
+					<choice>
+						<orig>O</orig>
+						<reg>o</reg>
+					</choice> filos <choice>
+						<abbr>pongã</abbr>
+						<expan>pongan</expan>
+					</choice> de homicida hierro</l>
+```
 
-    <label>
-                            <persName>
-                                <choice>
-                                    <orig>
-                                        <abbr>Lici.</abbr>
-                                    </orig>
-                                    <reg>
-                                        <expan>Lícidas</expan>
-                                    </reg>
-                                </choice>
-                            </persName></label>
+También se pueden encontrar otros casos en que la abreviatura afecta a los nombres propios de los personajes como ocurre con los pescadores de la *Soledad segunda*. La primera mención en el canto amebeo no presenta ningún problema pero en adelante Chacón abrevia los nombres, tanto de Micón como de Lícidas. Si queremos visualizar la forma abreviada y la expansión es necesario recurrir al elemento `<choice>`: 
 
-
-Además de estos glifos, la nota contiene una abreviatura que merece ser explicada: el nombre propio del compilador y amigo de Góngora aparece con una o volada seguida de punto. La estrategia adoptada ha consistido en utilizar un elemento `<hi>` con un atributo `@rend` para codificar la posición de dicha letra: 
-
-    <choice>
-                                    <orig><abbr>Ant<hi rend="superscript">o</hi>.</abbr></orig>
-                                    <reg><expan>Antonio</expan></reg>
-                                </choice>
-
-Por último, conviene tener en cuenta que la TEI define otros dos elementos que se podrían utilizar para marcar la secuencia de letras añadidas en la expansión o bien las grafías presentes en la abreviatura que han sido suprimidas en la forma desarrollada. Son respectivamente los elementos `<ex>` y `<am>`. En esta propuesta de codificación, sin embargo, no se ha considerado necesario el uso de estas etiquetas porque el lector puede comparar ambas formas y distinguir con claridad cuál es la intervención del editor sin añadir un nuevo elemento; sin embargo, no se descarta que en el futuro se incorporen siguiendo el consejo de la red CHARTA (Isasi *et al*., 2014). 
+```xml
+<choice>
+						<abbr>Lici</abbr>
+						<expan>
+							<persName ref="#lic057">Lícidas</persName>
+						</expan>
+					</choice><choice>
+						<orig>.</orig>
+						<reg/>
+					</choice>
+```
 
 #### Errores y correcciones
 
-El texto que contiene el manuscrito Chacón y que sirve de base para esta codificación contiene algunos errores evidentes. Las etiquetas definidas por la TEI para marcar los errores y las formas correctas propuestas por el editor son dos: `<sic>` y `<corr>`. En esta propuesta de codificación, ambos elementos se anidan en `<orig>` y `<reg>` de la misma manera que lo hacen las abreviaturas y expansiones. 
+El texto que contiene el manuscrito Chacón y que sirve de base para esta codificación contiene algunos errores evidentes. Las etiquetas definidas por la TEI para marcar los errores y las formas correctas propuestas por el editor son dos: `<sic>` y `<corr>`. En esta propuesta de codificación, ambos elementos se anidan en el elemento `<choice>` de la misma manera que lo hacen las abreviaturas y expansiones. 
 
 Por un lado, tenemos errores ortotipográficos como la omisión de un signo de puntuación o bien el uso anómalo, al menos desde nuestra perspectiva contemporánea, de alguna coma, punto, dos puntos o paréntesis. Así, por ejemplo, en el verso 499 de la *Soledad primera* (*Quédese, amigo, en tan inciertos mares*), Chacón utiliza un paréntesis de apertura en lugar de una coma para introducir el vocativo. Como en los casos anteriores en los que se han codificado formas alternativas la combinación de elementos debe ser la siguiente:
 
-    <choice>
-                                <orig><sic> (</sic></orig>
-                                <reg><corr>, </corr></reg>
-                            </choice>amigo, en tan inciertos
+```xml
+<choice>
+						<sic> (</sic>
+						<corr>, </corr>
+					</choice>amigo, 
+```
 
-Por el otro lado, pueden apreciarse con claridad pasajes que omiten alguna grafía, añaden alguna de más o simplemente la confunden con otra. Esta última posibilidad se ejemplifica con el verso 580 (*de musculosos jóvenes desnudos*) de la *Soledad segunda*; Chacón lee *muscolosos* pero es evidente que el poeta quiso decir *musculosos* y que por tanto estamos ante un error de copia. He aquí nuevamente los elementos utilizados en esta propuesta de codificación XML/TEI: 
+Por el otro lado, pueden apreciarse con claridad pasajes que omiten alguna grafía, añaden alguna de más o simplemente la confunden con otra. Esta última posibilidad se ejemplifica con el verso 580 (*de musculosos jóvenes desnudos*) de la *Soledad segunda*; Chacón lee *muscolosos*, pero es evidente que el poeta quiso decir *musculosos*. He aquí nuevamente los elementos utilizados en esta propuesta de codificación XML/TEI: 
 
-    <choice>
-                                        <orig>De</orig>
-                                        <reg>de</reg>
-                                    </choice>
-                                    <choice>
-                                        <orig><sic>muscolosos</sic></orig>
-                                        <reg><corr>musculosos</corr></reg>
-                                    </choice>
-                                    <choice>
-                                        <orig>jouenes</orig>
-                                        <reg>jóvenes</reg>
-                                    </choice> desnudos.
+```xml
+<l n="580" xml:id="v-1708">
+					<choice>
+						<orig>De</orig>
+						<reg>de</reg>
+					</choice>
+					<choice>
+						<sic>muscolosos</sic>
+						<corr>musculosos</corr>
+					</choice>
+					<choice>
+						<orig>jouenes</orig>
+						<reg>jóvenes</reg>
+					</choice> desnudos.</l>
+```
 
-Esta metodología, ideada para generar dos vistas alternativas en el navegador del usuario —los errores y las correcciones—, únicamente ha sido empleada para establecer el texto base transmitido por el manuscrito Chacón. Como se verá en el apartado siguiente,  los errores contenidos en el aparato de variantes se codifican con otros elementos y atributos. 
+Esta metodología, ideada para generar dos vistas alternativas en el navegador del usuario —los errores y las correcciones—, únicamente ha sido empleada para establecer el texto base transmitido por el manuscrito Chacón. 
  
 
 #### Nombres propios
 
 De la poesía de Góngora se ha destacado tradicionalmente como un rasgo característico la alusión y el uso de la perífrasis para evitar designar a los referentes por su nombre. Ahora bien, a lo largo de las *Soledades* se mencionan numerosas divinidades, héroes, astros y personajes mitológicos, históricos, ficticios y alegóricos. Los nombres de lugares también son frecuentes de tal modo que la designación de numerosos países, ciudades, regiones, continentes, ríos, montañas, fuentes y valles conforman la geografía de la obra. Todos estos nombres, por tanto, se pueden codificar con elementos TEI.
 
-El objetivo de la codificación de los nombres propios (antropónimos y topónimos) es automatizar la creación de índices de tal modo que el usuario pueda leer el texto de las *Soledades* de manera no lineal. Para ello, la TEI define dos elementos generales: `<name>` (para representar cualquier tipo de nombre propio) y `<rs>` para representar frases que equivalen a nombres (por ejemplo, una perífrasis). Sin embargo, en esta propuesta de codificación he utilizado tres elementos más específicos: `<persName>`, `<placeName>` y `<geogName>`. Estos elementos permiten identificar nombres propios de personas, lugares y accidentes geográficos. El proceso de codificación es sencillo:
+El objetivo de la codificación de los nombres propios (antropónimos y topónimos) es automatizar la creación de índices de tal modo que el usuario pueda leer el texto de las *Soledades* de manera no lineal. Para ello, TEI define dos elementos generales: `<name>` (para representar cualquier tipo de nombre propio) y `<rs>` para representar frases que equivalen a nombres (por ejemplo, una perífrasis). Sin embargo, en esta codificación he utilizado tres elementos más específicos: `<persName>`, `<placeName>` y `<geogName>`. Estos elementos permiten identificar nombres propios de personas, lugares y accidentes geográficos. El proceso de codificación es sencillo:
 
-    <l n="490" xml:id="v-0527"><choice>
-                                <orig>Que</orig>
-                                <reg>que</reg>
-                            </choice> pudo bien <app>
-                                <lem><persName ref="#act01"><choice>
-                                            <orig>Acteon</orig>
-                                            <reg>Acteón</reg>
-                                        </choice></persName></lem>
-                                <rdg type="error" wit="#Br #Rl">antes</rdg>
-                                <rdg cert="low" type="error" wit="#S">Action</rdg>
-                                <rdg cert="low" type="error" wit="#O #Pr #Rm">Anteón</rdg>
-                            </app> perderse en ellos.</l>
+```xml
+<l n="490" xml:id="v-0527">
+					<choice>
+						<orig>Que</orig>
+						<reg>que</reg>
+					</choice> pudo bien <choice>
+						<orig><persName ref="#act01">Acteon</persName></orig>
+						<reg><persName ref="#act01">Acteón</persName></reg>
+					</choice> perderse en ellos.<note type="editorial"><p>La palabra <mentioned rend="italic">Acteón</mentioned> fue difícil de leer para varios copistas: por un lado, los testimonios Br y Rl
+							leen, por error, <mentioned rend="italic">antes</mentioned>; por el otro, los testimonios O, Pr y Rm leen <mentioned rend="italic">Anteón</mentioned> (¿quizás una corrupción de Anteo, el
+							gigante al que se enfrentó Hércules?). Teniendo en cuenta que los testimonios tempranos no leen <mentioned rend="italic">Acteón</mentioned> creo que no es arriesgado afirmar que la
+							versión primitiva transmitía otra palabra; es posible que Góngora quisiera decir <mentioned rend="italic">Acteón</mentioned> pero escribiera erróneamente <mentioned rend="italic"
+								>Anteón</mentioned>. Ni Alonso ni Jammes recogen esta variante.</p></note></l>
+```
 
-Como se puede observar en el ejemplo, el elemento `<persName>` engloba en este caso a la combinación de elementos `<choice>`, `<orig>` y `<reg>` para identificar que *Acteón* es un nombre propio. Ahora bien, hay que advertir que la codificación de nombres propios solo se ha llevado a cabo en el texto base porque lo que me interesa es crear un índice a partir de las lecciones de la versión definitiva que considero auténticas. Por eso, la lección *Anteón*, que transmiten los testimonios O, Pr y Rm, no ha sido codificada con un elemento `<persName>`.
+Como se puede observar en el ejemplo, el elemento `<persName>` está incluido dentro de los elementos `<orig>` y `<reg>`, y contiene un atributo `@ref` con un valor que corresponde al `@xml:id` del elemento `<person>` situado en el encabezado:
 
-Puesto que la metodología desarrollada para codificar nombres de lugares y de accidentes geográficos es la misma no es necesario detenerse con otro ejemplo. Lo que sí vale la pena señalar es que en esta propuesta de codificación los nombres propios de personas, lugares y accidentes geográficos se documentan en el encabezado TEI para automatizar la creación de índices mediante transformaciones XSLT. Para ello es necesario utilizar el atributo `@ref` en los elementos `<persName>`, `<placeName>` y `<geogName>`. El valor de este atributo apunta hacia el valor definido en el atributo `@xml:id` del elemento `<person>` situado en el encabezado TEI: 
+```xml
+<person xml:id="act01">
+						<persName>Acteón</persName>
+						<occupation>Era un célebre cazador iniciado en este arte por el centauro Quirón, también maestro de Aquiles. Hijo de Autónoe y nieto de Cadmo, sufrió la ira de Diana tras verla desnuda
+							bañándose en un lago; la diosa lo convirtió en ciervo y sus propios perros le dieron caza.</occupation>
+					</person>
+```
 
-    <particDesc>
-                    <listPerson>
-                        <person xml:id="act01">
-                            <persName>Acteón</persName>
-                        </person>
-                        <person xml:id="acu002">
-                            <persName>Acuario</persName>
-                        </person>
-                           [...]
-                    </listPerson>
-                </particDesc>
+Por lo demás, solo hay que mencionar que los lugares han sido codificados con `<placeName>` y los accidentes geográficos con `<geogName>`. 
 
-En este fragmento de XML se puede apreciar que un elemento `<particDesc>` con el que se describen los participantes del texto contiene un elemento `<listPerson>`. Esta lista de personas está formada por una serie de elementos `<person>` con un atributo `@xml:id` y uno o varios elementos `<persName>` pues una persona puede llamarse de distintas maneras y su nombre puede variar en función del idioma. La metodología empleada para conectar los nombres de lugares y de accidentes geográficos es idéntica; solo cambian los nombres de los elementos: por un lado, tenemos el elemento `<settingDesc>`, que describe los lugares mencionados en un texto; por el otro, el elemento `<listPlace>` que contiene una serie de elementos `<place>` con atributos `@xml:id`. En estos elementos `<place>` se anidan uno o varios elementos `<placeName>` o `<geogName`. Por último, debo señalar que tanto el elemento `<particDesc>` como el elemento `<settingDesc>` se sitúan en el `<teiHeader>`; en concreto, en el elemento `<profileDesc>`.
+#### Notas
+
+Esta codificación contiene 260 notas codificadas con el elemento `<note>`. Cada elemento `<note>` debe tener un atributo `@type` para distingur entre notas editoriales o explicativas, se inserta siempre dentro de un elemento `<l>` y, a su vez, contiene uno o varios elementos `<p>`:
+ 
+```xml
+<l xml:id="v-0136">
+					<choice>
+						<orig>Al</orig>
+						<reg>al</reg>
+					</choice>
+					<choice>
+						<orig>concauo</orig>
+						<reg>cóncavo</reg>
+					</choice> ajustando de los cielos<note type="editorial">
+						<p>La versión primitiva de este pasaje era:</p>
+						<lg>
+							<l>al pespuntar de los cielos</l>
+							<l>las agujas que ilustran tu edificio:</l>
+						</lg>
+						<p>Los testimonios que la transmiten son Rm y O. El manuscrito Pérez de Ribas también contiene esta versión pero tachada y sustituida por la definitiva. En el segundo verso el manuscrito O
+							transmite un pequeño error de copia: <mentioned rend="italic">su edificio</mentioned>. Puesto que no están en ninguno de los manuscritos cotejados por Alonso, estos versos no se
+							imprimieron en 1936; Jammes, en cambio, sí los imprimió.</p></note></l>
+```
+
+Además, de párrafos, como se puede percibir en el ejemplo, las notas pueden incluir grupos de versos codificados con `<lg>`, pues el objetivo es comentar fragmentos de texto.
 
 ### Anexo
 
+El elemento `<back>` contiene las referencias bibliográficas citadas en esta edición. Cada referencia bibliográfica ha sido representada por medio del elemento `<bibl>`, y contiene un atributo `@xml:id` necesario para enlazar la cita en el texto y la referencia completa:
+
+```xml
+<bibl xml:id="gon2016"><author>Góngora, Luis de</author>. «Obra poética»<title><ref target="http://obvil-dev.paris-sorbonne.fr/corpus/gongora/gongora_obra-poetica/">Edición digital y estudio
+								de la polémica gongorina</ref></title>. Ed. Antonio Carreira. Dir. Mercedes Blanco. París: OBVIL, 2016. Web.</bibl>
+```
+
+Anidado en el elemento `<bibl>` solo he etiquetado información referente al autor con el elemento `<author>`, al título principal de la obra con el elemento `<title>` y los enlaces a documentos publicados en internet con `<ref>`.  
 
 
