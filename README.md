@@ -10,8 +10,10 @@
 ## Edición
 
 - `soledades_anotada.xml`
-- criterios de codificación de `soledades_anotada.xml` (pendiente)
+- `soledades_anotada_schematron.sch`
+- criterios de codificación de `soledades_anotada.xml`
 - `soledades_critica.xml`
+- `soledades_critica_schematron.sch`
 - criterios de codificación de `soledades_critica.xml`
 
 
