@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="soledades_critica_schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
@@ -17,7 +18,7 @@
             </editionStmt>
 
             <publicationStmt>
-                <publisher>Cologne Center for eHumanities (CCeH)</publisher>
+                <distributor>Cologne Center for eHumanities (CCeH)</distributor>
                 <pubPlace>Köln</pubPlace>
                 <date when="2017-06">2017</date>
                 <availability status="free">
@@ -673,7 +674,7 @@
                     cinco versos se añade un atributo <att>n</att> con el número de verso; la numeración no se reinicia al empezar una nueva parte del texto.</p>
                 <p>Algunos versos codificados en el <gi>app</gi> pueden contener la desinencia (<val>-p</val>) para indicar que se trata de un verso de la versión primitiva que desaparece en la
                     versión definitiva.</p>
-                <p>Los testimonios que no transmiten determinado verso (por omisión o bien porque transmiten un texto <hi rend="italics">in fieri</hi>) se han identificado con el atributo
+                <p>Los testimonios que no transmiten determinado verso (por omisión o bien porque transmiten un texto <hi rend="italic">in fieri</hi>) se han identificado con el atributo
                         <att>exclude</att>; este atributo aparece en el elemento <gi>l</gi>.</p>
             </refsDecl>
 
