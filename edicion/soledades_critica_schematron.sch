@@ -11,11 +11,17 @@
 
             <assert test="tei:fileDesc">A &lt;teiHeader&gt; element must contain a &lt;fileDesc&gt; element.</assert>
 
+            <assert test="tei:encodingDesc">A &lt;teiHeader&gt; element must contain a &lt;encodingDesc&gt; element.</assert>
+
             <assert test="tei:profileDesc">A &lt;teiHeader&gt; element must contain a &lt;profileDesc&gt; element.</assert>
 
         </rule>
 
-        <!-- elements allowed in the fileDesc -->
+    </pattern>
+
+    <!-- elements allowed in the fileDesc -->
+
+    <pattern id="fileDesc">
 
         <rule context="tei:fileDesc">
 
@@ -158,139 +164,75 @@
 
         </rule>
 
-        <!-- elements allowed in the profileDesc -->
+    </pattern>
+
+    <!-- elements allowed in the encodingDesc -->
+
+    <pattern id="encodingDesc">
+
+        <rule context="tei:encodingDesc">
+            <!-- to be completed -->
+        </rule>
+
+    </pattern>
+
+
+
+    <!-- elements allowed in the profileDesc -->
+
+    <pattern id="profileDesc">
 
         <rule context="tei:profileDesc">
 
-            <assert test="tei:particDesc">A &lt;profileDesc&gt; element must contain a &lt;particDesc&gt; element.</assert>
+            <assert test="tei:creation">A &lt;profileDesc&gt; element must contain a &lt;creation&gt; element.</assert>
 
-            <assert test="tei:settingDesc">A &lt;profileDesc&gt; element must contain a &lt;settindDesc&gt; element.</assert>
-
-        </rule>
-
-        <rule context="tei:particDesc">
-
-            <assert test="tei:listPerson">A &lt;particDesc&gt; element must contain a &lt;listPerson&gt; element.</assert>
-
-        </rule>
-
-        <rule context="tei:settingDesc">
-
-            <assert test="tei:listPlace">A &lt;settingDesc&gt; element must contain a &lt;listPlace&gt; element.</assert>
-
-        </rule>
-
-        <rule context="tei:listPlace">
-
-            <assert test="tei:head">A &lt;listPlace&gt; element must contain a &lt;head&gt; element.</assert>
-
-            <assert test="tei:place">A &lt;listPlace&gt; element must contain a &lt;place&gt; element.</assert>
-
-        </rule>
-
-        <rule context="tei:listPerson">
-
-            <assert test="tei:head">A &lt;listPerson&gt; element must contain a &lt;head&gt; element.</assert>
-
-            <assert test="tei:person">A &lt;listPerson&gt; element must contain a &lt;person&gt; element.</assert>
-
-        </rule>
-
-        <rule context="tei:person">
-
-            <assert test="tei:persName">A &lt;person&gt; element must contain a &lt;perName&gt; element.</assert>
-
-            <assert test="tei:occupation">A &lt;occupation&gt; element must contain a &lt;occupation&gt; element.</assert>
-
-            <assert test="matches(@xml:id, '\w\d{3}')">A &lt;person&gt; element must contain a '@xml:id' atribute.</assert>
-
-        </rule>
-
-        <rule context="tei:text/tei:body//tei:persName">
-
-            <assert test="matches(@ref, '#\w+\d{3}')">A &lt;persName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
-
+            <assert test="tei:langUsage">A &lt;profileDesc&gt; element must contain a &lt;langUsage&gt; element.</assert>
         </rule>
 
     </pattern>
 
-    <!-- rules for elements within text -->
+    <!-- rules for elements in general -->
 
-    <pattern id="text">
+    <pattern id="general">
 
-        <rule context="tei:text//tei:div">
-            <assert test="@xml:id">A &lt;div&gt; element must contain a '@xml:id' with a word.</assert>
+        <rule context="tei:mentioned">
+            <assert test="@rend = 'italic'">A &lt;mentioned&gt; element must contain a '@rend' whose value is 'italic'.</assert>
         </rule>
 
-        <rule context="tei:text//tei:head">
+        <rule context="tei:hi">
+            <assert test="@rend = 'italic'">A &lt;hi&gt; element must contain a '@rend' whose value is 'italic'.</assert>
+        </rule>
+
+    </pattern>
+
+    <!-- rules for elements within body -->
+
+    <pattern id="body">
+
+        <rule context="tei:text/tei:body/tei:div">
+            <assert test="@xml:id">A &lt;div&gt; element must contain a '@xml:id'.</assert>
+        </rule>
+
+        <rule context="tei:text/tei:body/tei:div/tei:head">
             <assert test="@type">A &lt;head&gt; element must contain a '@type'.</assert>
         </rule>
 
-        <rule context="tei:text//tei:ref">
-            <assert test="matches(@target, '#\w+\d{4}') or contains(@target, 'http://')">A &lt;ref&gt; element must contain a '@target' wose value is #\w+\{4} or a URL.</assert>
+        <rule context="tei:text/tei:body/tei:div/tei:lg">
+            <assert test="matches(@xml:id, 'g-\d{2}')">A &lt;lg&gt; element must contain a '@xml:id' atribute whose value is 'g-\d{2}'.</assert>
         </rule>
 
-    </pattern>
-
-
-    <!-- rules for elements within front  -->
-
-    <pattern id="front">
-
-        <rule context="tei:text/tei:front//tei:hi">
-            <assert test="@rend = 'italic'">A &lt;hi&gt; element must contain a '@rend' whose value is 'italic'.</assert>
-        </rule>
-
-        <rule context="tei:text/tei:front//tei:mentioned">
-            <assert test="@rend = 'italic'">A &lt;hi&gt; element must contain a '@rend' whose value is 'italic'.</assert>
-        </rule>
-
-    </pattern>
-    <!-- elements allowed in notes -->
-
-    <pattern id="notes">
-
-        <rule context="tei:text/tei:body//tei:note">
-            <assert test="tei:p">A &lt;note&gt; element must contain at least one &lt;p&gt; element.</assert>
-            <assert test="matches(@type, 'editorial') or matches(@type, 'explicativa')">A &lt;note&gt; element must contain a '@type' attribute whose values are 'editorial' or 'explicativa'.</assert>
-        </rule>
-
-        <rule context="tei:text/tei:body//tei:note/tei:p/tei:hi">
-            <assert test="matches(@rend, 'italic')">A &lt;hi&gt; element must contain a '@rend' whose value is 'italic'.</assert>
-        </rule>
-
-    </pattern>
-
-
-    <!-- elements allowed in the poem -->
-
-    <pattern id="poem">
-
-        <rule context="tei:text/tei:body/tei:div/tei:l">
+        <rule context="tei:text/tei:body/tei:div/tei:lg/tei:l">
             <assert test="matches(@xml:id, 'v-\d{4}')">A &lt;l&gt; element must contain a '@xml:id' atribute whose value is 'v-\d{4}'.</assert>
         </rule>
 
-        <rule context="tei:text/tei:body/tei:div/tei:l/choice">
-            <assert test="tei:orig">A &lt;choice&gt; element must contain a &lt;orig&gt; element.</assert>
-            <assert test="tei:reg">A &lt;choice&gt; element must contain a &lt;reg&gt; element.</assert>
-        </rule>
+    </pattern>
 
-        <rule context="tei:text/tei:body//tei:orig/tei:hi">
-            <assert test="matches(@rend, 'initial')">A &lt;hi&gt; element must contain a '@rend' whose value is 'initial'.</assert>
-        </rule>
 
-        <rule context="tei:place">
-            <assert test="tei:placeName or tei:geogName">A &lt;place&gt; element must contain a &lt;placeName&gt; or a &lt;geogName&gt; element.</assert>
-            <assert test="matches(@xml:id, '\w+\d{3}')">A &lt;place&gt; element must contain a '@xml:id' atribute.</assert>
-        </rule>
+    <!-- rules for the apparatus -->
 
-        <rule context="tei:text/tei:body//tei:placeName">
-            <assert test="matches(@ref, '#\w+\d{3}')">A &lt;placeName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
-        </rule>
+    <pattern id="apparatus">
 
-        <rule context="tei:text/tei:body//tei:geogName">
-            <assert test="matches(@ref, '#\w+\d{3}')">A &lt;geogName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
-        </rule>
+        <!-- to be completed -->
 
     </pattern>
 
