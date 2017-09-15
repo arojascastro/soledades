@@ -171,8 +171,17 @@
     <pattern id="encodingDesc">
 
         <rule context="tei:encodingDesc">
-            <!-- to be completed -->
+
+            <assert test="tei:projectDesc">A &lt;encodingDesc&gt; element must contain an &lt;projectDesc&gt; element.</assert>
+
+            <assert test="tei:editorialDecl">A &lt;encodingDesc&gt; element must contain an &lt;editorialDecl&gt; element.</assert>
+
+            <assert test="tei:refsDecl">A &lt;encodingDesc&gt; element must contain a &lt;refsDecl&gt; element.</assert>
+
+            <assert test="tei:variantEncoding">A &lt;encodingDesc&gt; element must contain an &lt;variantEncoding&gt; element.</assert>
+
         </rule>
+
 
     </pattern>
 
