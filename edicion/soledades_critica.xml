@@ -1123,7 +1123,7 @@
                                     <add place="inline">e</add>
                                 </subst> embiste, y con süave estilo</rdg>
                             <rdg type="variante" wit="#Rm #Rl #O">no sin süave estilo</rdg>
-                            <rdg type="variante" wit="Br">
+                            <rdg type="variante" wit="#Br">
                                 <add place="above">lento lo embiste</add> no sin süave estilo</rdg>
                             <rdg type="variante" wit="#Pr">
                                 <subst>
@@ -2872,7 +2872,7 @@
                         <app>
                             <lem>no el torcido taladro de la tierra,</lem>
                             <rdg type="error" wit="#Br">no el trocido taladro de la tierra,</rdg>
-                            <rdg cert="medium" type="error" wit="#Pr">no el torcido taladro de la sierra,</rdg>
+                            <rdg cert="low" type="error" wit="#Pr">no el torcido taladro de la sierra,</rdg>
                         </app>
                     </l>
                     <l n="305" xml:id="v-0342">privilegió en la sierra</l>
@@ -3339,7 +3339,7 @@
                     <l n="395" xml:id="v-0432">
                         <app>
                             <lem>no hay tormentoso cabo que no doble,</lem>
-                            <rdg type="error" wit="#N">no hay tormento<add rend="above">so</add> cabo que no doble,</rdg>
+                            <rdg type="error" wit="#N">no hay tormento<add place="above">so</add> cabo que no doble,</rdg>
                             <rdg type="error" wit="#O">que no hay tormenta o cabo que no doble,</rdg>
                         </app>
                     </l>
@@ -3545,7 +3545,7 @@
                         <app>
                             <lem>mas los que lograr bien no supo Midas</lem>
                             <rdg type="error" wit="#sa #ho54">pero los que lograr bien no supo Midas</rdg>
-                            <rdg type="error" wit="#Br">mas lo que <del rend="strikethrough">bien</del> lograr <add rend="above">bien</add> no supo Midas</rdg>
+                            <rdg type="error" wit="#Br">mas lo que <del rend="strikethrough">bien</del> lograr <add place="above">bien</add> no supo Midas</rdg>
                             <rdg wit="#pe" type="error">pero los que lobrar no supo Midas</rdg>
                         </app>
                     </l>
@@ -3679,7 +3679,7 @@
                     <l xml:id="v-0505">
                         <app>
                             <lem>émulo vago del ardiente coche</lem>
-                            <rdg type="error" wit="Ml" cert="low">émulo bajo del ardiente coche</rdg>
+                            <rdg type="error" wit="#Ml" cert="low">émulo bajo del ardiente coche</rdg>
                             <rdg type="variante" wit="#Rm #O">(émulo vago si del sol no, de su coche)</rdg>
                             <rdg type="variante" wit="#Pr">
                                 <subst>
@@ -4293,7 +4293,7 @@
                             <lem>hacía, bien de pobos, bien de alisos,</lem>
                             <rdg type="variante" wit="#Br #Rm">hacía, ya de pobos, ya de alisos,</rdg>
                             <rdg type="variante" wit="#Rl">ya hacía de pobos, ya de alisos,</rdg>
-                            <rdg type="variante" wit="O">hacía ya de chopos, y de alisos,</rdg>
+                            <rdg type="variante" wit="#O">hacía ya de chopos, y de alisos,</rdg>
                             <rdg type="variante" wit="#Pr">hacía, <subst>
                                     <del rend="strikethrough">ya</del>
                                     <add place="above">bien</add>
@@ -4997,7 +4997,7 @@
                         <app>
                             <lem>tejió de verdes hojas la arboleda,</lem>
                             <rdg type="error" wit="#A">tejió de verdes hojas de arboleda,</rdg>
-                            <rdg wit="#Br #Rm #Pr #Rl #O">tejió, sino la rústica arboleda,</rdg>
+                            <rdg type="variant" wit="#Br #Rm #Pr #Rl #O">tejió, sino la rústica arboleda,</rdg>
                         </app>
                     </l>
                     <l xml:id="v-0755">y <app>
@@ -5449,7 +5449,7 @@
                     <l n="820" xml:id="v-0857">
                         <app>
                             <lem>de copia tal a estrellas deba amigas</lem>
-                            <rdg wit="#Br #Rl">de copia tal estrellas deba amigas</rdg>
+                            <rdg type="error" wit="#Br #Rl">de copia tal estrellas deba amigas</rdg>
                             <rdg type="variante" wit="#Rm">deba a los que a tus leyes hoy obligas</rdg>
                         </app>
                     </l>
@@ -5688,7 +5688,7 @@
                     <l xml:id="v-0894" exclude="#Rm">
                         <app>
                             <lem>que sin rumor previno en mesas grandes.</lem>
-                            <rdg>que sin rumor previno en </rdg>
+                            <rdg type="error" wit="#S">que sin rumor previno en</rdg>
                             <rdg type="variante" wit="#Br #Rl">que en mesas prevenido les ha grandes.</rdg>
                             <rdg cert="low" type="variante" wit="#O">que sin primor previno en mesas grandes.</rdg>
                             <rdg type="variante" wit="#Pr">
@@ -7939,7 +7939,7 @@
                         <app>
                             <lem>Sentados pues sin ceremonias, ellas</lem>
                             <rdg wit="#Ml" type="error">Sentados pues sin ceremonia, ellas</rdg>
-                            <rdg wit="#Pr">Sentados pues <subst>
+                            <rdg wit="#Pr" type="variant">Sentados pues <subst>
                                     <del rend="strikethrough">los cuatros en corchos</del>
                                     <add place="above">sin ceremonias,</add>
                                 </subst> ellas</rdg>
@@ -9429,7 +9429,7 @@
                             <lem>arrogante, y no ya por las que daba</lem>
                             <rdg type="error" wit="#D">arogane, y no ya perlas quedaba</rdg>
                             <rdg type="error" wit="#S">arrogante, ignora por las que daba</rdg>
-                            <rdg type="error" wit="A">arrogante, y no ya por la<subst>
+                            <rdg type="error" wit="#A">arrogante, y no ya por la<subst>
                                     <del rend="strikethrough">[...]</del>
                                     <add place="margin">s</add>
                                 </subst> que daba</rdg>
