@@ -225,6 +225,15 @@
             <assert test="matches(@xml:id, 'v-\d{4}')">A &lt;l&gt; element must contain a '@xml:id' atribute whose value is 'v-\d{4}'.</assert>
         </rule>
 
+        <rule context="tei:text/tei:body/tei:div/tei:lg/tei:l[@exclude]">
+            <assert
+                test="
+                    matches(@exclude, '#A') or matches(@exclude, '#Br') or matches(@exclude, '#C') or matches(@exclude, '#Ch') or matches(@exclude, '#D') or matches(@exclude, '#E') or matches(@exclude, '#H') or
+                    matches(@exclude, '#I') or matches(@exclude, '#J') or matches(@exclude, '#Ml') or matches(@exclude, '#N') or matches(@exclude, '#O') or matches(@exclude, '#Pr') or matches(@exclude, '#Q') or matches(@exclude, '#Rl')
+                    or matches(@exclude, '#Rm') or matches(@exclude, '#S') or matches(@exclude, '#vi') or matches(@exclude, '#pe') or matches(@exclude, '#ho33') or matches(@exclude, '#ho54') or matches(@exclude, '#sa')"
+                >A &lt;l&gt; element with a '@exclude' attribute must match a witness sigla.</assert>
+        </rule>
+
     </pattern>
 
 
@@ -232,7 +241,45 @@
 
     <pattern id="apparatus">
 
-        <!-- to be completed -->
+        <rule context="tei:app">
+
+            <assert test="tei:lem">A &lt;app&gt; element must contain a &lt;lem&gt; element.</assert>
+
+            <assert test="tei:rdg">A &lt;app&gt; element must contain a &lt;rdg&gt; element.</assert>
+
+        </rule>
+
+        <rule context="tei:rdg">
+
+            <assert test="matches(@type, 'error') or matches(@type, 'variant')">A &lt;rdg&gt; element must have a @type attribute whose values are 'error' or 'variant'.</assert>
+
+            <assert
+                test="
+                    matches(@wit, '#A') or matches(@wit, '#Br') or matches(@wit, '#C') or matches(@wit, '#Ch') or matches(@wit, '#D') or matches(@wit, '#E') or matches(@wit, '#H') or
+                    matches(@wit, '#I') or matches(@wit, '#J') or matches(@wit, '#Ml') or matches(@wit, '#N') or matches(@wit, '#O') or matches(@wit, '#Pr') or matches(@wit, '#Q') or matches(@wit, '#Rl')
+                    or matches(@wit, '#Rm') or matches(@wit, '#S') or matches(@wit, '#vi') or matches(@wit, '#pe') or matches(@wit, '#ho33') or matches(@wit, '#ho54') or matches(@wit, '#sa')"
+                >A &lt;rdg&gt; must contain an attribute '@wit', whose value must match witness 'sigla'.</assert>
+
+        </rule>
+
+        <rule context="tei:rdg[@cert]">
+            <assert test="matches(@cert, 'low')">A &lt;rdg&gt; element may have a @cert attribute whose only value is 'low'.</assert>
+        </rule>
+
+        <rule context="tei:del">
+            <assert
+                test="
+                    matches(@rend, 'wrapped') or matches(@rend, 'strikethrough') or matches(@rend, 'overwritten') or matches(@rend, 'unmarked') or matches(@rend, 'underlined') or matches(@rend,
+                    'annotation')"
+                >A &lt;del&gt; element must have a @rend attribute with value: 'wrapped', 'strikethrough', 'overwritten', 'unmarked', 'underlined' or 'annotation'.</assert>
+        </rule>
+
+
+        <rule context="tei:add">
+            <assert test="matches(@place, 'above') or matches(@place, 'inline') or matches(@place, 'margin') or matches(@place, 'below')">An &lt;add&gt; element must have a @place attribute with
+                value: 'above', 'inline', 'margin' or 'below'.</assert>
+        </rule>
+
 
     </pattern>
 
