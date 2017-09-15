@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="soledades_anotada_schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
+
 	<teiHeader>
 
 		<fileDesc>
@@ -547,7 +549,7 @@
 			<particDesc>
 				<listPerson xml:id="onomastico">
 					<head type="sub">Onomástico</head>
-					<person xml:id="act01">
+					<person xml:id="act001">
 						<persName>Acteón</persName>
 						<occupation>Era un célebre cazador iniciado en este arte por el centauro Quirón, también maestro de Aquiles. Hijo de Autónoe y nieto de Cadmo, sufrió la ira de Diana tras verla desnuda
 							bañándose en un lago; la diosa lo convirtió en ciervo y sus propios perros le dieron caza.</occupation>
@@ -1288,7 +1290,7 @@
 					<p>Mayor acuerdo existe sobre las causas del trasvase de la silva desde Italia a España. Dos son los hechos comúnmente admitidos como relevantes: por un lado, el comentario a la obra de
 						Poliziano por parte de El Brocense en la Universidad de Salamanca, durante los años en que Góngora fue alumno de Cánones; por el otro, la traducción del <hi rend="italic">Aminta</hi> de
 						Tasso realizada por Juan de Jáuregui en 1605 <ref target="#rui1991">(Ruiz Pérez y Montero, 1991: 26-27)</ref>. Aurora Egido, por lo demás, añade que el papel de fray Luis de León pudo ser
-						determinante porque ofreció un modelo para la silva métrica en sus traducciones del latín en versos endecasílabos y heptasílabos <ref target="egi1989">(Egido, 1989: 26)</ref>.</p>
+						determinante porque ofreció un modelo para la silva métrica en sus traducciones del latín en versos endecasílabos y heptasílabos <ref target="#egi1989">(Egido, 1989: 26)</ref>.</p>
 					<p>La silva se inserta en el sistema genérico español en un momento en que el petrarquismo está siendo desplazado por los modelos neoclásicos <ref target="#rui1991">(Ruiz Pérez y Montero,
 							1991: 22)</ref>. En este sentido la irrupción de la silva puede ser interpretada como una respuesta a la herencia recibida de las primeras promociones italianizantes que, a decir verdad,
 						ya habían intentado desde dentro del petrarquismo modificar sus formas canónicas (la canción) o anexas (el madrigal, limitado a veinte versos por Caramuel para diferenciarlo de la
@@ -1313,7 +1315,7 @@
 							rend="italic">Primer sueño</hi>, por Polo de Medina en los <hi rend="italic">Ocios de la soledad</hi>, por Ginovés en las <hi rend="italic">Silvas de todo el año</hi> o por Agustín
 						Salazar Torres en <hi rend="italic">Las cuatro estaciones del día</hi>
 						<ref target="#ly1985">(Ly, 1985: 50-51)</ref>. Sin embargo, esta hipótesis, aunque muy atractiva, debe tomarse con mucha precaución, o al menos matizarse, porque el modelo estaciano siguió
-						vigente incluso después de 1613 como demuestra el proyecto poético de Quevedo <ref>(Alatorre, 1988: 23)</ref>.</p>
+						vigente incluso después de 1613 como demuestra el proyecto poético de Quevedo <ref target="#ala1988">(Alatorre, 1988: 23)</ref>.</p>
 					<p>Tras la difusión de las <hi rend="italic">Soledades</hi> es cierto que la silva métrica entró en su «fase imperialista» <ref target="#ase1983">(Asensio, 1983: 31)</ref> pero a costa de
 						perder su especificidad hasta el punto que, a falta de una preceptiva sólida, se convirtió en un «metro comodín» <ref target="#rui1991">(Ruiz Pérez y Montero, 1991: 45)</ref>. Por eso,
 						junto al poema extenso como alternativa épica, es posible encontrar silvas más cortas y de estilo llano que remiten a la égloga garcilasiana (Soto de rojas, Góngora); silvas descriptivas
@@ -1367,7 +1369,7 @@
 						lectores tomaron como líricas las acciones mientras que el estilo les parecía heroico o sublime; tal disonancia era, para ellos, condenable <ref target="#ros1994">(Roses, 1994: 126)</ref>.
 						El autor anónimo de la <hi rend="italic">Respuesta a la Carta de Luis de Góngora</hi> y Jáuregui reprocharon al poeta cordobés que siendo su natural satírico hubiera intentado escribir una
 						obra épica; el autor del <hi rend="italic">Orfeo</hi>, además, condena la mezcla de estilos derivada de la introducción de elementos burlescos, tal y como hiciera tres años antes Pedro de
-						Valencia, pues el estilo debía ser homogéneo y no decaer en lo burlesco <ref>(Roses, 1994: 130)</ref>.</p>
+						Valencia, pues el estilo debía ser homogéneo y no decaer en lo burlesco <ref target="#ros1994">(Roses, 1994: 130)</ref>.</p>
 					<p>En su segunda intervención, Francisco Fernández de Córdoba reiteró que el género de las <hi rend="italic">Soledades</hi> era lírico aunque reconoció que tanto la extensión como la
 						variedad de acciones iban en contra de su punto de vista y que el estilo del poema era sublime <ref target="#ros1994">(Roses, 1994: 130)</ref>. Por último, Díaz de Rivas y Vázquez Siruela
 						coincidieron en que las <hi rend="italic">Soledades</hi> eran una obra grave heroica: el primero lo creía así tanto por el estilo como por la materia mientras que el segundo aludió a la
@@ -7447,8 +7449,8 @@
 						<orig>Que</orig>
 						<reg>que</reg>
 					</choice> pudo bien <choice>
-						<orig><persName ref="#act01">Acteon</persName></orig>
-						<reg><persName ref="#act01">Acteón</persName></reg>
+						<orig><persName ref="#act001">Acteon</persName></orig>
+						<reg><persName ref="#act001">Acteón</persName></reg>
 					</choice> perderse en ellos.<note type="editorial"><p>La palabra <mentioned rend="italic">Acteón</mentioned> fue difícil de leer para varios copistas: por un lado, los testimonios Br y Rl
 							leen, por error, <mentioned rend="italic">antes</mentioned>; por el otro, los testimonios O, Pr y Rm leen <mentioned rend="italic">Anteón</mentioned> (¿quizás una corrupción de Anteo, el
 							gigante al que se enfrentó Hércules?). Teniendo en cuenta que los testimonios tempranos no leen <mentioned rend="italic">Acteón</mentioned> creo que no es arriesgado afirmar que la
@@ -13431,7 +13433,7 @@
 						<orig>i</orig>
 						<reg>y</reg>
 					</choice>
-					<persName ref="aus015">Austros</persName> de la sierra<choice>
+					<persName ref="#aus015">Austros</persName> de la sierra<choice>
 						<orig/>
 						<reg>,</reg>
 					</choice>
@@ -20515,7 +20517,7 @@
 						<orig>à</orig>
 						<reg>a</reg>
 					</choice> su <choice>
-						<orig><persName ref="#leu56">Licote</persName></orig>
+						<orig><persName ref="#leu056">Licote</persName></orig>
 						<reg><persName ref="#leu056">Leucote</persName></reg>
 					</choice> bella<note type="editorial"><p>Dieciséis testimonios (A, C, Ch, D, E, H, I, J, Ml, N, Q, S, vi, ho33, pe y ho54) transmiten <mentioned rend="italic">Licote</mentioned>. Dos
 							testimonios transmiten una lección distinta: por un lado, como ya señalaron Alonso y Jammes, el texto que comenta Salcedo (sa) lee <mentioned rend="italic">Licori</mentioned> (o, como
