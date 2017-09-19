@@ -560,7 +560,7 @@
 							la línea materna. Recibió al nacer el nombre de Alceo o Alcides, en honor a su abuelo Alceo, si bien esta misma palabra evoca la idea de fortaleza. Fue en su edad adulta cuando recibió
 							el nombre con que se lo conoce, impuesto por Apolo, para indicar su condición de servidor de la diosa Hera.</occupation>
 					</person>
-					<person xml:id="acl005">
+					<person xml:id="alc005">
 						<persName>Alcimedón</persName>
 						<occupation>En la mitología griega se conocen varios héroes con este nombre; sin embargo, lo más probable es que Góngora se refiera al personaje de Virgilio (<hi rend="italic"
 							>Églogas</hi>, III) famoso por sus vasos y cuencos.</occupation>
@@ -1047,7 +1047,7 @@
 						<placeName>Grecia</placeName>
 					</place>
 					<place xml:id="gua116">
-						<placeName>Guadalete</placeName>
+						<geogName>Guadalete</geogName>
 					</place>
 					<place xml:id="ida117">
 						<geogName>Ida</geogName>
@@ -1065,7 +1065,7 @@
 						<geogName>Meandro</geogName>
 					</place>
 					<place xml:id="mel122">
-						<placeName>Meliona</placeName>
+						<geogName>Meliona</geogName>
 					</place>
 					<place xml:id="nil123">
 						<geogName>Nilo</geogName>
@@ -3727,8 +3727,8 @@
 						<orig>De'l</orig>
 						<reg>del</reg>
 					</choice> viejo <choice>
-						<orig><persName ref="#alc004">Alcimedon</persName></orig>
-						<reg><persName ref="#alc004">Alcimedón</persName></reg>
+						<orig><persName ref="#alc005">Alcimedon</persName></orig>
+						<reg><persName ref="#alc005">Alcimedón</persName></reg>
 					</choice>
 					<choice>
 						<orig>inuencion</orig>
@@ -8668,7 +8668,7 @@
 						<orig>de el</orig>
 						<reg>del</reg>
 					</choice>
-					<placeName ref="#pon128">Ponto</placeName><choice>
+					<geogName ref="#pon128">Ponto</geogName><choice>
 						<orig/>
 						<reg>,</reg>
 					</choice>
@@ -10720,8 +10720,8 @@
 						<orig>I</orig>
 						<reg>y</reg>
 					</choice> blanca la <choice>
-						<orig><placeName ref="#lib119">Etyopia</placeName></orig>
-						<reg><placeName ref="#lib119">Etïopia</placeName></reg>
+						<orig><placeName ref="#eti109">Etyopia</placeName></orig>
+						<reg><placeName ref="#eti109">Etïopia</placeName></reg>
 					</choice> con dos manos.</l>
 				<l xml:id="v-0823">
 					<choice>
@@ -19805,8 +19805,8 @@
 						<orig>oiò</orig>
 						<reg>oyó</reg>
 					</choice> el <choice>
-						<orig><geogName ref="#let118">Caistro</geogName></orig>
-						<reg><geogName ref="#let118">Caístro</geogName></reg>
+						<orig><geogName ref="#cai104">Caistro</geogName></orig>
+						<reg><geogName ref="#cai104">Caístro</geogName></reg>
 					</choice> en su arboleda,</l>
 				<l xml:id="v-1654">
 					<choice>
