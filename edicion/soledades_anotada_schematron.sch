@@ -273,17 +273,17 @@
             <assert test="matches(@rend, 'initial')">A &lt;hi&gt; element must contain a '@rend' whose value is 'initial'.</assert>
         </rule>
 
-        <rule context="tei:text/tei:body//tei:persName">
-            <assert test="matches(@ref, '#\w+\d{3}')">A &lt;persName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
-        </rule>
-
         <rule context="tei:text/tei:body//tei:place">
             <assert test="tei:placeName or tei:geogName">A &lt;place&gt; element must contain a &lt;placeName&gt; or a &lt;geogName&gt; element.</assert>
             <assert test="matches(@xml:id, '\w+\d{3}')">A &lt;place&gt; element must contain a '@xml:id' atribute.</assert>
         </rule>
 
+        <rule context="tei:text/tei:body//tei:persName">
+            <assert test="matches(@ref, '#\w+\d{3}')">A &lt;persName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
+        </rule>
+
         <rule context="tei:text/tei:body//tei:placeName">
-            <assert test="matches(@ref, '#\w+\d{3}')">A &lt;placeName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
+           <assert test="matches(@ref, '#\w+\d{3}')">A &lt;placeName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
         </rule>
 
         <rule context="tei:text/tei:body//tei:geogName">
