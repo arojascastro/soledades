@@ -1112,6 +1112,13 @@
 				<p>Esta edición da acceso al manuscrito Chacón en tres presentaciones: facsímil, transcripción y modernización. Además de un estudio preliminar y otros materiales de apoyo como una lista de
 					nombres propios y un mapa con los lugares mencionados en el poema, se incluye una nueva anotación con la que se pretende alcanzar dos objetivos: por un lado, explicar brevemente el contenido
 					arugumental; por el otro, justificar el establecimiento del texto tras cotejar 21 testimonios con el manuscrito Chacón y difundir las variantes de autor que se conocen en la actualidad.</p>
+				<p>Con el fin de facilitar la lectura y el análisis textual, se puede descargar las <hi rend="italic">Soledades</hi> en distintos formatos:</p>
+				<list>
+					<item>Para leer el texto en la mayoría de dispositivos electrónicos: ePub</item>
+					<item>Para leer el texto en Kindle: Mobi</item>
+					<item>Para procesar el texto de manera estructurada: XML/TEI</item>
+					<item>Para analizar cuantitativamente el texto: TXT</item>
+				</list>
 			</div>
 			<div xml:id="estudio">
 				<head type="main">Estudio</head>
@@ -24814,7 +24821,7 @@
 					<bibl xml:id="car1998"><author>Carreira, Antonio</author>. <title>Gongoremas</title>. Barcelona: Península, 1998. Impreso.</bibl>
 					<bibl xml:id="egi1989"><author>Egido, Aurora</author>. <ref target="http://cvc.cervantes.es/literatura/criticon/PDF/046/046_007.pdf">«La silva en la poesía andaluza del Barroco (con un
 							excurso sobre Estacio y las "Obrecillas" de Fray Luis)»</ref>. <title>Criticón</title> 46 (1989): 5-30. Web.</bibl>
-					<bibl xml:id="gon2016"><author>Góngora, Luis de</author>. «Obra poética»<title><ref target="http://obvil-dev.paris-sorbonne.fr/corpus/gongora/gongora_obra-poetica/">Edición digital y estudio
+					<bibl xml:id="gon2016"><author>Góngora, Luis de</author>. «Obra poética». <title><ref target="http://obvil-dev.paris-sorbonne.fr/corpus/gongora/gongora_obra-poetica/">Edición digital y estudio
 								de la polémica gongorina</ref></title>. Ed. Antonio Carreira. Dir. Mercedes Blanco. París: OBVIL, 2016. Web.</bibl>
 					<bibl xml:id="gon2000"><author>Góngora, Luis de</author>. <title>Obras completas</title>. Ed. Antonio Carreira. 2 vols. Madrid: Fundación José Antonio de Castro, 2000. Impreso.</bibl>
 					<bibl xml:id="gon1994"><author>Góngora, Luis de</author>. <title>Soledades</title>. Ed. Robert Jammes. Madrid: Castalia, 1994. Impreso.</bibl>
