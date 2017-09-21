@@ -17,11 +17,14 @@ El elemento `<fileDesc>` contiene una serie de elementos con información biblio
 
 ```xml
 <titleStmt>
-                <title type="main">«Soledades» de Luis de Góngora. Edición crítica digital</title>
-                <author>Luis de Góngora</author>
-                <editor xml:id="ARC">Antonio Rojas Castro</editor>
-                <funder>Ministerio de Economía y Competitividad. Todo Góngora II [I+D+I FFI2010-17349]</funder>
-            </titleStmt>
+				<title>Soledades. Edición digital anotada</title>
+				<author>Luis de Góngora</author>
+				<respStmt>
+					<resp>Edición, codificación y diseño gráfico de </resp>
+					<persName ref="http://antoniorojascastro.com">Antonio Rojas Castro</persName>
+				</respStmt>
+				<funder>Ministerio de Economía y Competitividad. Todo Góngora II [I+D+I FFI2010-17349]</funder>
+			</titleStmt>
 ```
 
 #### Edición
@@ -43,8 +46,8 @@ A continuación, se sitúa el elemento `<publicationStmt>`. Con esta etiqueta, o
 ```xml
  <publicationStmt>
 				<distributor>Antonio Rojas Castro</distributor>
-				<pubPlace>Barcelona</pubPlace>
-				<date when="2016-06">2016</date>
+				<pubPlace>Colonia</pubPlace>
+				<date when="2017-09">2017</date>
 				<availability status="free">
 					<licence target="http://creativecommons.org/licenses/by/4.0/">Esta obra se publica con una licencia de Creative Commons Reconocimiento 4.0 Internacional</licence>
 				</availability>
