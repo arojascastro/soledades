@@ -1108,19 +1108,22 @@
 
 		<front>
 			<div xml:id="inicio">
+				<head type="main">Inicio</head>
 				<p>Las <hi rend="italic">Soledades</hi> de Luis de Góngora es una silva dividida en tres partes (Dedicatoria, <hi rend="italic">Soledad primera</hi> y <hi rend="italic">Soledad segunda</hi>)
 					sobre la belleza del mundo. Todo en este poema —desde los astros, pasando por el ser humano, los animales y los frutos, hasta la utilería de cocina de unos cabreros— merece ser contemplado
 					como un milagro estético. La obra solo podía emerger desde el profundo conocimiento de la tradición grecolatina pero, al mismo tiempo, rompía con los preceptos clasicistas sobre la
 					adecuación entre <hi rend="italic">res</hi> y <hi rend="italic">verba</hi>. De ahí que los contemporáneos de Góngora consideraran el asunto y la expresión tanto heroicos como líricos.</p>
-				<p>Esta edición da acceso al manuscrito Chacón en tres presentaciones: facsímil, transcripción y modernización. Además de un estudio preliminar y otros materiales de apoyo como una lista de
-					nombres propios y un mapa con los lugares mencionados en el poema, se incluye una nueva anotación con la que se pretende alcanzar dos objetivos: por un lado, explicar brevemente el contenido
-					arugumental; por el otro, justificar el establecimiento del texto tras cotejar 21 testimonios con el manuscrito Chacón y difundir las variantes de autor que se conocen en la actualidad.</p>
-				<p>Con el fin de facilitar la lectura y el análisis textual, se puede descargar las <hi rend="italic">Soledades</hi> en distintos formatos:</p>
+				<p>Esta edición da acceso al manuscrito Chacón en tres presentaciones: facsímil, transcripción y modernización. Además de un estudio preliminar y otros materiales de apoyo como un índice
+					onomástico, se incluye una nueva anotación con la que se pretende alcanzar dos objetivos: por un lado, explicar brevemente el contenido arugumental; por el otro, justificar el
+					establecimiento del texto tras cotejar 21 testimonios con el manuscrito Chacón y difundir las variantes de autor que se conocen en la actualidad.</p>
+				<p>El proceso de edición ha sido documentado en GitHub. Todos los materiales utilizados en esta edición se pueden descargar desde <ref target="https://github.com/arojascastro/soledades"
+						>GitHub</ref>. Si encuentras una errata, por favor, abre un <hi rend="italic">issue</hi> en GitHub e intentaré responderte lo antes posible. También puede descargarte la edición en los
+					siguientes formatos:</p>
 				<list>
-					<item>Para leer el texto en la mayoría de dispositivos electrónicos: ePub</item>
-					<item>Para leer el texto en Kindle: Mobi</item>
-					<item>Para procesar el texto de manera estructurada: XML/TEI</item>
-					<item>Para analizar cuantitativamente el texto: TXT</item>
+					<item>Para leer el texto en la mayoría de dispositivos electrónicos: <ref target="soledades.epub.zip">ePub</ref></item>
+					<item>Para leer el texto en Kindle: <ref target="soledades.mobi.zip">Mobi</ref></item>
+					<item>Para procesar el texto de manera estructurada: <ref target="soledades.xml.zip">XML/TEI</ref></item>
+					<item>Para analizar cuantitativamente el texto: <ref target="soledades.txt.zip">TXT</ref></item>
 				</list>
 			</div>
 			<div xml:id="estudio">
@@ -1144,7 +1147,7 @@
 						acontecer (como pinta el poeta en la <hi rend="italic">primera Soledad</hi>) que se junte de esta gente un gran concurso en algún sitio, eso es acaso, y no quita que el tal sitio se llame
 						soledad. Y así los poetas que alabaron la vida solitaria no entendieron de aquélla en que vive un hombre tan solo que ni él puede ver gente, ni ésta puede penetrar allá, sino en la que
 						vive apartado del tumulto popular. Con estas razones del <hi rend="italic">Antídoto</hi>, que calumnia esta inscripción de las <hi rend="italic">Soledades</hi>, porque introduce el poeta
-						en ellas concurso de pastores, bodas, epitalamios, juegos, etc. y soledad es lo mismo que falta de compañía<ref target="#gon1994">(Góngora, 1994: 61)</ref>.</q>
+						en ellas concurso de pastores, bodas, epitalamios, juegos, etc. y soledad es lo mismo que falta de compañía <ref target="#gon1994">(Góngora, 1994: 61)</ref>.</q>
 					<p>En realidad, tanto Jáuregui como Díaz de Rivas, cada uno a su manera, tenían parte de razón porque lo más probable es que Góngora se refiriera tanto al lugar transitado como a la noción
 						de «saudade», esto, es nostaliga o añoranza. De entre todos los comentaristas, partidarios y antigongorinos, únicamente Francisco Fernández de Córdoba, el abad de Rute, fue capaz de
 						basarse en la etimología de la palabra <hi rend="italic">solitudo</hi> para hallar el doble sentido del título:</p>
