@@ -33,7 +33,7 @@
 
             <assert test="tei:title">A &lt;titleStmt&gt; element must contain a &lt;title&gt; element.</assert>
 
-            <assert test="tei:respStmt">A &lt;fileDesc&gt; element must contain a &lt;author&gt; element.</assert>
+            <assert test="tei:respStmt">A &lt;fileDesc&gt; element must contain a &lt;respStmt&gt; element.</assert>
 
             <assert test="tei:funder">A &lt;fileDesc&gt; element must contain a &lt;funder&gt; element.</assert>
 
