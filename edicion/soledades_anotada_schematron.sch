@@ -219,7 +219,7 @@
         </rule>
 
         <rule context="tei:text//tei:ref">
-            <assert test="matches(@target, '#\w+\d{4}') or contains(@target, 'http://')">A &lt;ref&gt; element must contain a '@target' wose value is #\w+\{4} or a URL.</assert>
+            <assert test="matches(@target, '#\w+\d{4}') or contains(@target, 'http://') or starts-with(@target, 'https:') or starts-with(@target, 'soledades.')">A &lt;ref&gt; element must contain a '@target' wose value is #\w+\{4} or a URL.</assert>
         </rule>
 
     </pattern>
