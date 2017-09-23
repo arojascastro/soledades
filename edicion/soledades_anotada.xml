@@ -1336,7 +1336,7 @@
 						Medina, Antonio de Solís, Lope de Vega). La silva métrica, en fin, triunfó en España pero al hacerlo se disgregó y pasó a cumplir cualquiera de las funciones del sistema genérico que la
 						precedía.</p>
 				</div>
-				<div xml:id="situacion" type="section" n="1.6">
+				<div xml:id="situacion_enunciativa" type="section" n="1.6">
 					<head type="sub">Situación enunciativa</head>
 					<p>En las <hi rend="italic">Soledades</hi> predomina el narrador épico sobre el diálogo propio del drama y de la novela moderna. El silencio del peregrino, como se recordará, fue, de hecho,
 						uno de los principales defectos que encontró Jáuregui en el poema.</p>
@@ -1366,7 +1366,7 @@
 						alejarse de la poesía confesional de la época y una deliberada negación de la fábula aristotélica. En resumen, al restar importancia al dialogismo, Góngora desplazó el acento desde lo
 						dramático y lo lírico hacia lo épico y lo narrativo.</p>
 				</div>
-				<div xml:id="genero" type="section" n="1.7">
+				<div xml:id="genero_literario" type="section" n="1.7">
 					<head type="sub">Género literario</head>
 					<p>La adscripción genérica de las <hi rend="italic">Soledades</hi> ha sido uno de los aspectos más problemáticos desde el siglo XVII. El poema representa una variedad de objetos, acciones y
 						estilos que difícilmente pueden homologarse a una sola categoría unificadora. El mismo Góngora, si damos crédito a la <hi rend="italic">Carta en respuesta</hi>, parece referirse a las <hi
@@ -1445,9 +1445,9 @@
 						contemplación, y, sobre todo, porque su genio le permitió expresarlo con la intensidad de una epifanía que transfigura todo lo insignificante en algo extraordinario.</p>
 				</div>
 			</div>
-			<div xml:id="criterios">
+			<div xml:id="criterios_editoriales">
 				<head type="main">Criterios editoriales</head>
-				<p>Para establecer el texto de las <mentioned rend="italic">Soledades</mentioned> se ha seguido a Chacón como manuscrito base. El texto que contiene este testimonio, pues, transmite la versión
+				<p>Para establecer el texto de las <hi rend="italic">Soledades</hi> se ha seguido a Chacón como manuscrito base. El texto que contiene este testimonio, pues, transmite la versión
 					definitiva y, frente a otros manuscritos, muy pocos errores de copia.</p>
 				<p>Puesto que el objetivo es crear una edición académica digital que permita al usuario acceder a distintas vistas, me he servido del manuscrito Chacón para presentar simultáneamente una
 					transcripción paleográfica y una modernización. Como es obvio, he tenido muy en cuenta las ediciones de Dámaso Alonso <ref target="#gon1927">(Góngora, 1927</ref> y <ref target="#gon1936"
@@ -1455,13 +1455,10 @@
 						2016)</ref>, así como alguna reseña del texto fijado por Jammes <ref target="#ala1996">(Alatorre, 1996)</ref>.</p>
 				<p>La primera cuestión que debo tratar corresponde a la división del texto. En su edición de 1927 Dámaso Alonso introdujo numerosos cortes en sus ediciones para facilitar la comprensión del
 					poema. Esta práctica no es aceptada por los gongoristas desde hace mucho tiempo porque atenta contra la idea de continuidad de la silva, un metro que se caracteriza, precisamente, por su
-					carácter antiestrófico. Robert Jammes imprimió en 1994 todo el texto seguido pero para marcar algunas transiciones sangró hacia la izquierda algunos versos. En esta edición de las <mentioned
-						rend="italic">Soledades</mentioned>, tanto en la transcripción paleográfica como en el texto modernizado, he conservado la disposición del manuscrito Chacón.</p>
+					carácter antiestrófico. Robert Jammes imprimió en 1994 todo el texto seguido pero para marcar algunas transiciones sangró hacia la izquierda algunos versos. En esta edición de las <hi
+						rend="italic">Soledades</hi>, tanto en la transcripción paleográfica como en el texto modernizado, he conservado la disposición del manuscrito Chacón.</p>
 				<p>La separación de palabras en el manuscrito Chacón es regular, claramente perceptible y próxima al uso actual; sin embargo, en algunas ocasiones el copista tiende a juntar algunas palabras
-					por razones fonéticas o prosódicas. He introducido un espacio para separar las palbras en los siguientes versos: I: 220, I: 307, I: 733, I: 840, I: 936, I: 1012, I: 1064, I: 1069, II: 8, II:
-					140, II: 187, II: 190, II: 191, II: 219, II: 245, II: 296, II: 362, II: 392, II: 424, II: 428, II: 436, II: 612, II: 662, II: 670, II: 732, II: 796, II: 849, II: 870, II: 935, II: 948 y II:
-					966.</p>
-				<p>Los casos corresponden a los grupos que combinan preposición <mentioned rend="italic">a</mentioned> + artículo determinante y conjunción <mentioned rend="italic">si</mentioned> + adverbio
+					por razones fonéticas o prosódicas. Para solucionar esto he introducido un espacio para separar las palbras en los siguientes versos. En general, los casos corresponden a los grupos que combinan preposición <mentioned rend="italic">a</mentioned> + artículo determinante y conjunción <mentioned rend="italic">si</mentioned> + adverbio
 						<mentioned rend="italic">no</mentioned>; la mayoría se sitúa en la segunda parte del poema. A los casos señalados hay que sumar algunas contracciones como <mentioned rend="italic"
 						>deste</mentioned>, <mentioned rend="italic">dellos</mentioned>, <mentioned rend="italic">desta</mentioned>, <mentioned rend="italic">destos</mentioned>, etc. Cuando la separación y
 					modernización suponía incrementar el número de sílabas del verso (por ejemplo, al romper una sinalefa), se ha mantenido la unión tanto en la transcripción paleográfica como en la
@@ -1475,7 +1472,7 @@
 				<p>El uso de signos de exclamación e interrogación se ha mantenido en la presentación paleográfica —solo aparecen signos de cierre— y se ha unificado a la norma actual en la presentación
 					modernizada; lo mismo ocurre con el uso de las comillas en los discursos citados: en la transcripción paleográfica no hay, en el texto modernizado se han debido introducir. Por lo que se
 					refiere al uso del paréntesis, se ha seguido el original en la presentación paleográfica y, en la medida de lo posible, en la modernización. En el texto modernizado en una ocasión se ha
-					sustituido el paréntesis por una raya o guion largo, para introducir un verbo <mentioned rend="italic">dicendi</mentioned>; en otras cinco ocasiones se han suprimido los paréntesis que, a mi
+					sustituido el paréntesis por una raya o guion largo, para introducir un verbo <hi rend="italic">dicendi</hi>; en otras cinco ocasiones se han suprimido los paréntesis que, a mi
 					parecer, son erróneos. Pero en general se ha preferido seguir a Chacón a utilizar rayas (Alonso) o comas (Jammes).</p>
 				<p>La acentuación de la transcripción paleográfica corresponde a la del original; por el contrario, se ha acentuado a la norma actual en el texto modernizado. Así, por ejemplo, no he puesto
 					tilde diacrítica en el adverbio <mentioned rend="italic">solo</mentioned>, en los pronombres demostrativos <mentioned rend="italic">este</mentioned> y <mentioned rend="italic"
@@ -1500,8 +1497,8 @@
 						>Ocëáno</mentioned>). En esta edición no he puesto diéresis sobre la <mentioned rend="italic">e</mentioned> en ningún caso: cuando la palabra debe pronunciarse como esdrújulo he puesto la
 					tilde donde corresponde (<mentioned rend="italic">Océano</mentioned> u <mentioned rend="italic">océano</mentioned>: I: 22, 35, 425, 474, 529; II: 75, 163, 376, 494, 760); en cambio, cuando
 					la palabra es llana no he puesto tilde (ni diéresis) sobre ninguna letra (<mentioned rend="italic">Oceano</mentioned> u <mentioned rend="italic">oceano</mentioned>: I: 405; II: 10, 701). </p>
-				<p>La sinéresis, es decir, la unión de dos sílabas que por lo común debieran pronunciarse de manera separada como un hiato, no es tan frecuente en las <mentioned rend="italic"
-						>Soledades</mentioned>; únicamente se da en once casos: <mentioned rend="italic">podía</mentioned> (I: 7), <mentioned rend="italic">alquería</mentioned> (I: 96), <mentioned rend="italic"
+				<p>La sinéresis, es decir, la unión de dos sílabas que por lo común debieran pronunciarse de manera separada como un hiato, no es tan frecuente en las <hi rend="italic"
+						>Soledades</hi>; únicamente se da en once casos: <mentioned rend="italic">podía</mentioned> (I: 7), <mentioned rend="italic">alquería</mentioned> (I: 96), <mentioned rend="italic"
 						>perdían</mentioned> (I: 48), <mentioned rend="italic">había</mentioned> (I: 470),<mentioned rend="italic"> rubíes</mentioned> (I: 786), <mentioned rend="italic">habían</mentioned> (I:
 					958), <mentioned rend="italic">mía</mentioned> (II: 131), pías (II: 510), <mentioned rend="italic">sabía</mentioned> (II: 563), <mentioned rend="italic">escondía</mentioned> (II: 878) y
 						<mentioned rend="italic">fía</mentioned> (II: 882). Para contraponer diéresis y sinéresis, Jammes puso crema en el caso de la diéresis y quitó el acento a las palabras mencionadas. Tras
@@ -1576,7 +1573,7 @@
 						rend="italic">sol</mentioned>, <mentioned rend="italic">océano</mentioned>, <mentioned rend="italic">aurora</mentioned> (y otras palabras semejantes) tanto con mayúscula inicial como con
 					minúscula, en función de si el referente es una divinidad o personificación, o bien el fenómeno natural, aunque debo confesar que en muchas ocasiones me parece que la ambigüedad es
 					intencionada. </p>
-				<p>En resumen, a la hora de establecer el texto las <mentioned rend="italic">Soledades</mentioned> he tenido en cuenta la posibilidad de presentar las particularidades gráfica del manuscrito
+				<p>En resumen, a la hora de establecer el texto las <hi rend="italic">Soledades</hi> he tenido en cuenta la posibilidad de presentar las particularidades gráfica del manuscrito
 					Chacón y, simultáneamente, ofrecer una propuesta modernizada, regularizada, puntuada según las convenciones actuales y sin errores evidentes. De esta manera, el lector de la edición puede
 					acceder al texto del documento y al texto de la obra, comparar ambos y, por tanto, valorar las intervenciones editoriales. La principal novedad de esta metodología radica en que la
 					separación entre transcripción paleográfica y modernización es más clara y nítida. Si en el pasado algunos editores decidieron modernizar el texto pero conservar algunas particularidades
@@ -24424,7 +24421,7 @@
 						<orig>Destos</orig>
 						<reg>De estos</reg>
 					</choice> pendientes agradables casos<note type="editorial"><p>En el manuscrito Chacón aparece aquí llamada en forma de vegetal que remite a una nota situada al final de la página. La nota
-							dice lo siguiente: <q type="notequote">No pudo la instancia de don Antonio Chacón hacer que pasase adelante con las <mentioned rend="italic">Soledades</mentioned>, aunque determinado ya
+							dice lo siguiente: <q type="notequote">No pudo la instancia de don Antonio Chacón hacer que pasase adelante con las <hi rend="italic">Soledades</hi>, aunque determinado ya
 								a ello las prosiguió con los versos que hay que dice: <mentioned rend="italic"> De estos pendientes agradables casos</mentioned>, etc. hasta el último de esta plana, si bien hay pocos
 								[manuscritos] que los tengan.</q> En concreto, solo siete testimonios de los que he cotejado, a saber: E, H, pe, ho33, sa y ho54.</p></note>
 				</l>
