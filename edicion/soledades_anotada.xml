@@ -1117,13 +1117,13 @@
 					onomástico, se incluye una nueva anotación con la que se pretende alcanzar dos objetivos: por un lado, explicar brevemente el contenido arugumental; por el otro, justificar el
 					establecimiento del texto tras cotejar 21 testimonios con el manuscrito Chacón y difundir las variantes de autor que se conocen en la actualidad.</p>
 				<p>El proceso de edición ha sido documentado en GitHub. Todos los materiales utilizados en esta edición se pueden descargar desde <ref target="https://github.com/arojascastro/soledades"
-						>GitHub</ref>. Si encuentras una errata, por favor, abre un <hi rend="italic">issue</hi> en GitHub e intentaré responderte lo antes posible. También puede descargarte la edición en los
-					siguientes formatos:</p>
+						xml:id="ref_0">GitHub</ref>. Si encuentras una errata, por favor, abre un <hi rend="italic">issue</hi> en GitHub e intentaré responderte lo antes posible. También puede descargarte la
+					edición en los siguientes formatos:</p>
 				<list>
-					<item>Para leer el texto en la mayoría de dispositivos electrónicos: <ref target="soledades.epub.zip">ePub</ref></item>
-					<item>Para leer el texto en Kindle: <ref target="soledades.mobi.zip">Mobi</ref></item>
-					<item>Para procesar el texto de manera estructurada: <ref target="soledades.xml.zip">XML/TEI</ref></item>
-					<item>Para analizar cuantitativamente el texto: <ref target="soledades.txt.zip">TXT</ref></item>
+					<item>Para leer el texto en la mayoría de dispositivos electrónicos: <ref target="soledades.epub.zip" xml:id="ref_1">ePub</ref></item>
+					<item>Para leer el texto en Kindle: <ref target="soledades.mobi.zip" xml:id="ref_2">Mobi</ref></item>
+					<item>Para procesar el texto de manera estructurada: <ref target="soledades.xml.zip" xml:id="ref_3">XML/TEI</ref></item>
+					<item>Para analizar cuantitativamente el texto: <ref target="soledades.txt.zip" xml:id="ref_4">TXT</ref></item>
 				</list>
 			</div>
 			<div xml:id="estudio">
@@ -1132,36 +1132,36 @@
 					<head type="sub">Título</head>
 					<p>El título del poema puede interpretarse de tres maneras distintas: en primer lugar, como «aislamiento» o «abandono»; en segundo lugar, como «lugar despoblado»; por último, en sentido
 						metapoético, como concepto ingenioso de «selva-silva». Las dos primeras interpretaciones son generalmente admitidas y conforman la ortodoxia de la crítica gongorina; en cambio, la tercera
-						interpretación <ref target="#mol1960">(Molho, 1960)</ref>, que se fundamenta en un juicio de Salcedo Coronel, sigue suscitando dudas y recelos <ref target="#gon1994">(Góngora,
-						1994)</ref>.</p>
+						interpretación <ref target="#mol1960" xml:id="ref_5">(Molho, 1960)</ref>, que se fundamenta en un juicio de Salcedo Coronel, sigue suscitando dudas y recelos <ref target="#gon1994"
+							xml:id="ref_6">(Góngora, 1994)</ref>.</p>
 					<p>Ya en el siglo XVII el título fue motivo de una larga controversia iniciada por Juan de Jáuregui; para el poeta sevillano el título resultaba poco adecuado al contenido del poema, pues el
 						protagonista transita diversos parajes en compañía de cabreros y villanos:</p>
 					<q>Y por seguir algún orden, comenzaremos por su mismo título o inscripción, que hasta en eso erró V.m. llamando a esta obra impropísimamente <hi rend="italic">Soledades</hi>, porque soledad
 						es tanto como falta de compañía, y no podrá llamarse solo al que tuviere a otro consigo. V.m. introduce legiones de serranas y pastores entre los cuales nunca sale aquel pobre mozo
 						naufragante; y así lo demuestran los versos en cien ocasiones […] Donde había tanta vecindad de pueblos y toda aquella caterva que baila, juega, canta y zapatea hasta caer, ¿cómo diablos
-						pudo llamarse soledad? <ref target="#jau2002">(Jáuregui, 2002: 6-7)</ref>.</q>
-					<p>El término «Soledades», que tanto pudo referirse a la <hi rend="italic">Soledad primera</hi> como a las cuatro proyectadas por Góngora <ref target="#jam1987">(Jammes, 1987: 490. Nota a
-							pie de página)</ref>, fue interpretado por Jáuregui en clave subjetiva, es decir, como «falta de compañía»; por el contrario, el humanista Pedro Díaz de Rivas defendió la propiedad del
-						término en su réplica al poeta sevillano siguiendo la segunda acepción del término, es decir, la objetiva:</p>
+						pudo llamarse soledad? <ref target="#jau2002" xml:id="ref_7">(Jáuregui, 2002: 6-7)</ref>.</q>
+					<p>El término «Soledades», que tanto pudo referirse a la <hi rend="italic">Soledad primera</hi> como a las cuatro proyectadas por Góngora <ref target="#jam1987" xml:id="ref_8">(Jammes, 1987:
+							490. Nota a pie de página)</ref>, fue interpretado por Jáuregui en clave subjetiva, es decir, como «falta de compañía»; por el contrario, el humanista Pedro Díaz de Rivas defendió la
+						propiedad del término en su réplica al poeta sevillano siguiendo la segunda acepción del término, es decir, la objetiva:</p>
 					<q>Y, ¿quién duda se digan bien estos sitios soledades, donde, si viven algunos hombres, viven entre sí distantes, sin gobierno político ni orden que hagan ciudad o pueblo? Y bien que pueda
 						acontecer (como pinta el poeta en la <hi rend="italic">primera Soledad</hi>) que se junte de esta gente un gran concurso en algún sitio, eso es acaso, y no quita que el tal sitio se llame
 						soledad. Y así los poetas que alabaron la vida solitaria no entendieron de aquélla en que vive un hombre tan solo que ni él puede ver gente, ni ésta puede penetrar allá, sino en la que
 						vive apartado del tumulto popular. Con estas razones del <hi rend="italic">Antídoto</hi>, que calumnia esta inscripción de las <hi rend="italic">Soledades</hi>, porque introduce el poeta
-						en ellas concurso de pastores, bodas, epitalamios, juegos, etc. y soledad es lo mismo que falta de compañía <ref target="#gon1994">(Góngora, 1994: 61)</ref>.</q>
+						en ellas concurso de pastores, bodas, epitalamios, juegos, etc. y soledad es lo mismo que falta de compañía <ref target="#gon1994" xml:id="ref_9">(Góngora, 1994: 61)</ref>.</q>
 					<p>En realidad, tanto Jáuregui como Díaz de Rivas, cada uno a su manera, tenían parte de razón porque lo más probable es que Góngora se refiriera tanto al lugar transitado como a la noción
 						de «saudade», esto, es nostaliga o añoranza. De entre todos los comentaristas, partidarios y antigongorinos, únicamente Francisco Fernández de Córdoba, el abad de Rute, fue capaz de
 						basarse en la etimología de la palabra <hi rend="italic">solitudo</hi> para hallar el doble sentido del título:</p>
 					<q>Conforme a esto, bien podrá y aun deberá intitularse <hi rend="italic">Soledades</hi> poema cuyo sujeto principal es un pobre mancebo náufrago, ausente de su patria, de sus deudos, de sus
 						amigos, de lo que tiernamente amaba. Pues si se considera lo segundo, quiero decir el lugar, cierto es que los distantes del tráfago y negociación de las ciudades han tenido siempre
-						nombre, y han pasado plaza de soledades, por más que los frecuente y habite gente <ref target="#gon1994">(Góngora, 1994: 62)</ref>.</q>
+						nombre, y han pasado plaza de soledades, por más que los frecuente y habite gente <ref target="#gon1994" xml:id="ref_10">(Góngora, 1994: 62)</ref>.</q>
 					<p>En efecto, mediante una anfibología, Góngora poetizó, en palabras de Antonio Vilanova, tanto la «Soledad espiritual, nacida del sufrimiento amoroso de un amante solitario» como la
-						«Soledad de la Naturaleza contemplada por el peregrino solitario en un anhelo de evasión y fuga del mundo» <ref target="#vil1951">(Vilanova, 1951: 424)</ref>. La cuestión no es baladí
-						porque dependiendo de donde pongamos el acento, bien en el peregrino, bien en el escenario, nuestra percepción del tema dominante cambia: ¿el sentimiento de desamparo amoroso o la vida
-						lejos de la ciudad? Es más, olvidar la primera acepción, supondría olvidarnos del protagonista, al cabo, del nexo entre el mundo poetizado y el lector, pues todo se filtra a partir de su
-						mirada y la errancia que dibujan sus pasos.</p>
+						«Soledad de la Naturaleza contemplada por el peregrino solitario en un anhelo de evasión y fuga del mundo» <ref target="#vil1951" xml:id="ref_11">(Vilanova, 1951: 424)</ref>. La cuestión
+						no es baladí porque dependiendo de donde pongamos el acento, bien en el peregrino, bien en el escenario, nuestra percepción del tema dominante cambia: ¿el sentimiento de desamparo amoroso
+						o la vida lejos de la ciudad? Es más, olvidar la primera acepción, supondría olvidarnos del protagonista, al cabo, del nexo entre el mundo poetizado y el lector, pues todo se filtra a
+						partir de su mirada y la errancia que dibujan sus pasos.</p>
 					<p>Por último, si tenemos en cuenta el plan que según los comentaristas Góngora tenía entre manos, que hacía desfilar al peregrino por el campo, la ribera, el bosques y el yermo, en un <hi
-							rend="italic">crescendo</hi> de menor a mayor soledad, todo apunta que el sentido subjetivo hubiera de predominado sobre el topográfico <ref target="#gon1994">(Góngora, 1994:
-						64)</ref>.</p>
+							rend="italic">crescendo</hi> de menor a mayor soledad, todo apunta que el sentido subjetivo hubiera de predominado sobre el topográfico <ref target="#gon1994" xml:id="ref_12">(Góngora,
+							1994: 64)</ref>.</p>
 				</div>
 				<div xml:id="plan" type="section" n="1.2">
 					<head type="sub">Plan</head>
@@ -1171,34 +1171,35 @@
 						hermenéutica, su sentido, y en la opinión de los primeros lectores una fuente de autoridad casi equiparable a la del mismo Góngora.</p>
 					<p>La interpretación más difundida propone leer el poema como un poema inacabado que idealmente habría constado de cuatro partes dedicadas a los campos, las riberas, las selvas y el yermo;
 						según esta lectura solo quedó escrito, por razones poco claras, la Dedicatoria al duque de Béjar (37 versos), la <hi rend="italic">Soledad primera</hi> (1.091 versos) y gran parte de la
-							<hi rend="italic">Soledad segunda</hi> (979) (Orozco, 1984: 139). Aunque a los comentaristas les interesaba más la búsqueda de fuentes <ref target="#vil1951">(Vilanova, 1951: 428)</ref>
-						y la justificación del estilo <ref target="#lid1975">(Lida de Malkiel, 1975: 249)</ref>, afortunadamente, algunos amigos de nuestro poeta, como Díaz de Rivas, el abad de Rute, Angulo y
-						Pulgar, y Pellicer se ocuparon momentáneamente del plan o arquitectura del poema.</p>
+							<hi rend="italic">Soledad segunda</hi> (979) (Orozco, 1984: 139). Aunque a los comentaristas les interesaba más la búsqueda de fuentes <ref target="#vil1951" xml:id="ref_13">(Vilanova,
+							1951: 428)</ref> y la justificación del estilo <ref target="#lid1975" xml:id="ref_14">(Lida de Malkiel, 1975: 249)</ref>, afortunadamente, algunos amigos de nuestro poeta, como Díaz de
+						Rivas, el abad de Rute, Angulo y Pulgar, y Pellicer se ocuparon momentáneamente del plan o arquitectura del poema.</p>
 					<p>Así, el primer comentarista que se pronunció al respecto fue Pedro Díaz de Rivas, cuyas palabras referidas a los primeros versos de la Dedicatoria gozan de mucho crédito porque fue buen
 						amigo de Góngora y escribió sus <hi rend="italic">Anotaciones y defensas…</hi> en vida del poeta:</p>
 					<q>Dice que el argumento de su obra son los pasos de un peregrino en la soledad: éste pues el firme tronco de la fábula, en quien se apoyan las demás circunstancias de ella, a quien intituló
 							<hi rend="italic">Soledades</hi> por el lugar donde sucedieron. La primera se intitula <hi rend="italic">La soledad de los campos</hi>, y las personas que se introducen son pastores; la
 						segunda <hi rend="italic">La soledad de las riberas</hi>; la tercera, <hi rend="italic">La soledad de las selvas</hi>, y la cuarta <hi rend="italic">La soledad del yermo</hi>. Dio pues por
-						título el lugar donde sucedía el cuento, a imitación de gravísimos autores […] <ref target="#gon1994">(Góngora, 1994: 46)</ref>.</q>
+						título el lugar donde sucedía el cuento, a imitación de gravísimos autores […] <ref target="#gon1994" xml:id="ref_15">(Góngora, 1994: 46)</ref>.</q>
 					<p>El segundo en tomar la palabra fue el abad de Rute limitándose a señalar en su <hi rend="italic">Examen del Antídoto</hi> el carácter inconcluso del poema sin intentar añadir
 						trascendencia al asunto ni a la estructura de un poema que, como se recordará, había sido atacado por su aparente falta de sustancia. Sus escuetas palabras son las siguientes: «Estas <hi
-							rend="italic">Soledades</hi> constan de más de una parte, pues se dividen en cuatro» <ref target="#gon1994">(Góngora, 1994: 46)</ref>.</p>
+							rend="italic">Soledades</hi> constan de más de una parte, pues se dividen en cuatro» <ref target="#gon1994" xml:id="ref_16">(Góngora, 1994: 46)</ref>.</p>
 					<p>Doce o trece años más tarde, según Robert Jammes, Joseph Pellicer afirma en sus <hi rend="italic">Lecciones Solemnes</hi> (1630) que Góngora se propuso compendiar las cuatro etapas de la
 						vida humana en cuatro cantos; es decir, Pellicer retoma la división cuatripartita que se hallaba tanto en Díaz de Rivas como en el abad de Rute y amplifica sus resonancias simbólicas:</p>
 					<q>[...] su principal intención fue en cuatro <hi rend="italic">Soledades</hi> describir las cuatro edades del hombre. En la primera, la Juventud, con amores, prados, juegos, bodas y
 						alegrías. En la segunda, la Adolescencia, con pescas, cetrería, navegaciones. En la tercera, la Virilidad, con monterías, cazas, prudencia y económica. En la cuarta, la Senectud, y allí la
-						Política y Gobierno. Sacó a la luz las dos primeras solamente <ref target="#gon1994">(Góngora, 1994: 46)</ref>.</q>
+						Política y Gobierno. Sacó a la luz las dos primeras solamente <ref target="#gon1994" xml:id="ref_17">(Góngora, 1994: 46)</ref>.</q>
 					<p>Conviene advertir que las palabras de Pellicer suelen tomarse con mucha precaución y prudencia, pues el crédito que los gongoristas le atribuyen es menor en comparación con Díaz de Rivas
 						o el abad de Rute. Pero su testimonio no debe dejarse de lado pues no fue el único comentarista que creyó desentrañar el misterio tras la corteza de la que hablaba Góngora en su <hi
 							rend="italic">Carta</hi>. En efecto, también Angulo y Pulgar vincula, en sus <hi rend="italic">Epístolas satisfactorias</hi>, el desplazamiento topográfico con las edades del hombre de
 						modo que la narración de las <hi rend="italic">Soledades</hi> adquiere una gradación simbólica.</p>
-					<p>Esa división cuatripartita correspondiente a las edades del hombre remite a una cosmovisión cíclica derivada de las estaciones del año <ref target="#vil1951">(Vilanova, 1951: 429)</ref>.
-						Esta tradición fue iniciada por Pitágoras y recogida más tarde por Diógenes Laercio; también influyó de manera decisiva en el siglo XVII en obras como el <hi rend="italic">Criticón</hi> de
-						Gracián o en la composición de la <hi rend="italic">Poética silva</hi> del grupo antequerano-granadino.</p>
+					<p>Esa división cuatripartita correspondiente a las edades del hombre remite a una cosmovisión cíclica derivada de las estaciones del año <ref target="#vil1951" xml:id="ref_18">(Vilanova,
+							1951: 429)</ref>. Esta tradición fue iniciada por Pitágoras y recogida más tarde por Diógenes Laercio; también influyó de manera decisiva en el siglo XVII en obras como el <hi
+							rend="italic">Criticón</hi> de Gracián o en la composición de la <hi rend="italic">Poética silva</hi> del grupo antequerano-granadino.</p>
 					<p>La interpretación más difundida, la que recoge Robert Jammes en su edición de las <hi rend="italic">Soledades</hi> de 1994, se ciñe a las palabras de Díaz de Rivas y el abad de Rute, es
 						decir, se limita a una interpretación topográfica del poema y evita entrar en disquisiciones simbólicas o alegóricas, sean relativas a la edad del hombre, a las estaciones o simplemente de
-						carácter moral <ref target="#car1998">(Carreira, 1998: 227</ref>; <ref target="#pon2001">Ponce Cárdenas, 2001: 77-78)</ref>. Pese a que existen buenas razones para creer en la hipótesis
-						más sencilla y menos simbólica de todas, el debate en torno al plan y al inacabamiento de las <hi rend="italic">Soledades</hi> está lejos de agotarse.</p>
+						carácter moral <ref target="#car1998" xml:id="ref_19">(Carreira, 1998: 227</ref>; <ref target="#pon2001" xml:id="ref_20">Ponce Cárdenas, 2001: 77-78)</ref>. Pese a que existen buenas
+						razones para creer en la hipótesis más sencilla y menos simbólica de todas, el debate en torno al plan y al inacabamiento de las <hi rend="italic">Soledades</hi> está lejos de
+						agotarse.</p>
 				</div>
 
 				<div xml:id="asunto" type="section" n="1.3">
@@ -1211,47 +1212,47 @@
 							>Soledad segunda</hi> que retoma y expande la significación de muchos de los motivos ya aparecidos o añade al conjunto una nueva coloratura como ocurre, por ejemplo, con el canto métrico
 						del peregrino y con el relato de las hijas del viejo pescador.</p>
 					<p>La principal razón es que los comentaristas y lectores contemporáneos de Góngora se ocuparon de la <hi rend="italic">Soledad primera</hi>, bien porque no conocían la segunda parte —en
-						fase de redacción—, bien porque, tras leída, les interesó menos y apenas intentaron buscar fuentes o citas <ref target="#jam2002">(Jammes, 2002: 23)</ref>; y puesto que la crítica
-						literaria del siglo XX suele acceder al poema a través de su recepción original la tendencia no se ha corregido hasta hace muy pocos años.</p>
+						fase de redacción—, bien porque, tras leída, les interesó menos y apenas intentaron buscar fuentes o citas <ref target="#jam2002" xml:id="ref_21">(Jammes, 2002: 23)</ref>; y puesto que la
+						crítica literaria del siglo XX suele acceder al poema a través de su recepción original la tendencia no se ha corregido hasta hace muy pocos años.</p>
 					<p>Dicho esto, y volviendo al asunto del poema, conviene espigar unos pocos puntos de vista que quizá arrojen algo de luz: Dámaso Alonso defendía que la fábula era un pretexto lírico porque
 						el verdadero tema del poema era la naturaleza; pese a que era posible distinguir discursos, canciones y coros, las descripciones eran lo más relevante y por eso el símbolo del poema no
-						podía ser sino el cuerno de la abundancia y la fertilidad, la cornucopia <ref target="#alo1982">(Alonso, 1982: 84)</ref>. En esto, como en muchas otra cosas, Emilio Orozco coincidió con
-						Alonso y en su <hi rend="italic">Introducción a Góngora</hi> definió las <hi rend="italic">Soledades</hi> como «una obra lírica con la extensión y levantado estilo del poema épico y
-						centrado su asunto en lo que hasta ahora sólo se había valorado como fondo o complemento: la naturaleza» <ref target="#oro1984">(Orozco, 1984: 139)</ref>.</p>
+						podía ser sino el cuerno de la abundancia y la fertilidad, la cornucopia <ref target="#alo1982" xml:id="ref_22">(Alonso, 1982: 84)</ref>. En esto, como en muchas otra cosas, Emilio Orozco
+						coincidió con Alonso y en su <hi rend="italic">Introducción a Góngora</hi> definió las <hi rend="italic">Soledades</hi> como «una obra lírica con la extensión y levantado estilo del poema
+						épico y centrado su asunto en lo que hasta ahora sólo se había valorado como fondo o complemento: la naturaleza» <ref target="#oro1984" xml:id="ref_23">(Orozco, 1984: 139)</ref>.</p>
 					<p>En cambio, para R. O. Jones, que buscó la unidad de las dos partes desde un ángulo neoplatónico, las <hi rend="italic">Soledades</hi> eran una <hi rend="italic">anticommercial
 							pastoral</hi> porque representaban una sociedad ideal en que cada individuo era capaz de asegurar su subsistencia sin mantener contacto con las ciudades corruptas <ref target="#jon1954"
-							>(Jones, 1954: 201)</ref>. Algo parecido quiso decir Robert Jammes en 1967 cuando cifró el ideal ético y estético del poema en la célebre fórmula de la «alabanza de aldea y el
-						menosprecio de corte» <ref target="#jam1987">(Jammes, 1987: 497)</ref>. Sin embargo, no está de más aclarar que este punto de vista se fundamenta en unos pocos pasajes de la obra: la
-						canción que el náufrago entona cuando llega al albergue de pastores en la <hi rend="italic">Soledad primera</hi>, el elogio de la cabaña del pescador en la <hi rend="italic">Soledad
-							segunda</hi> y quizá, también, la invectiva contra las navegaciones.</p>
+							xml:id="ref_24">(Jones, 1954: 201)</ref>. Algo parecido quiso decir Robert Jammes en 1967 cuando cifró el ideal ético y estético del poema en la célebre fórmula de la «alabanza de aldea
+						y el menosprecio de corte» <ref target="#jam1987" xml:id="ref_25">(Jammes, 1987: 497)</ref>. Sin embargo, no está de más aclarar que este punto de vista se fundamenta en unos pocos pasajes
+						de la obra: la canción que el náufrago entona cuando llega al albergue de pastores en la <hi rend="italic">Soledad primera</hi>, el elogio de la cabaña del pescador en la <hi rend="italic"
+							>Soledad segunda</hi> y quizá, también, la invectiva contra las navegaciones.</p>
 					<p>La tesis de Robert Jammes, que pareció irrefutable durante muchos años, hoy parece menos sólida porque a menudo en las <hi rend="italic">Soledades</hi> lo natural se representa desde el
 						prisma del artificio y la cultura. Además, porque —si acudimos a la biografía del autor— resulta cuanto menos contradictorio con el pretendido menosprecio de corte que, tras acabar la <hi
 							rend="italic">Soledad primera</hi>, Góngora hiciera llegar copias a Madrid, sin duda porque los lectores del poema residían allí.</p>
 					<p>Es posible que este dato, junto al regreso del poeta a la capital para desempeñar un cargo sacerdotal durante sus últimos años de vida, haya hecho cambiar de opinión al mismo Robert
 						Jammes, en una vuelta hacia la interpretación de Dámaso Alonso y Emilio Orozco. Así, actualmente, la definición más adecuada del poema para el gongorista francés no sería la «alabanza de
 						aldea y el menosprecio de corte» sino simplemente «himno a la belleza del mundo» y por esto debe entenderse «el Cielo, la Tierra, el Mar, las mujeres y los hombres, los animales, los
-						frutos y las cosas, hasta los sujetos más menudos y más ordinarios» <ref target="#jam2002">(Jammes, 2002: 27)</ref>.</p>
+						frutos y las cosas, hasta los sujetos más menudos y más ordinarios» <ref target="#jam2002" xml:id="ref_26">(Jammes, 2002: 27)</ref>.</p>
 				</div>
 				<div xml:id="protagonista" type="section" n="1.4">
 					<head type="sub">Protagonista</head>
 					<p>Tampoco la figura del protagonista está exenta de controversias. Los rasgos que tradicionalmente se destacan del peregrino son su belleza, su juventud y su origen noble. La lectura más
-						ortodoxa, además, considera al peregrino como el hilo conductor de la fábula, sin voluntad ni poder de decisión, una «caja de resonancia» <ref target="#car1998">(Carreira, 1998:
-						228)</ref>, porque se limita a observar mientras camina por parajes desconocidos. En este sentido, la visión más difundida concuerda en gran parte con la opinión de Jáuregui:</p>
+						ortodoxa, además, considera al peregrino como el hilo conductor de la fábula, sin voluntad ni poder de decisión, una «caja de resonancia» <ref target="#car1998" xml:id="ref_27">(Carreira,
+							1998: 228)</ref>, porque se limita a observar mientras camina por parajes desconocidos. En este sentido, la visión más difundida concuerda en gran parte con la opinión de Jáuregui:</p>
 					<q>Pasemos luego a la traza desta fábula o cuento, o qué se es. Allí sale un mancebo, la principal figura que V.m. nos representa, y no le da nombre. Este fue al mar y vino del mar, sin que
 						sepáis cómo ni para qué; él no sirve sino de mirón, y no dice cosa buena ni mala, ni despega la boca. Sólo hace una descortesía muy tacaña y un despropósito: que se olvida de su dama
 						ausente, que tantas querellas le costó al salir del mar y se enamora de esotra labradora desposada en casa de su mismo padre, donde lo hospedaron cortésmente, sin que sirva aquello de nada
 						al cuento, sino para echarlo más a perder y rematarlo sin artificio ni concierto alguno. Y, juntamente, todo el proceso del poemilla, me digan si puede ser más friático y pazguato <ref
-							target="#jau2002">(Jáuregui, 2002: 7-8)</ref>.</q>
+							target="#jau2002" xml:id="ref_28">(Jáuregui, 2002: 7-8)</ref>.</q>
 					<p>La figura del peregrino suele situarse en la doble tradición de la <hi rend="italic">peregrinatio amoris</hi> y el <hi rend="italic">homo viator</hi>
-						<ref target="#pon2001">(Ponce Cárdenas, 2001: 79)</ref>. Antonio Vilanova fue el primero en señalar que el peregrino era el enclave entre la soledad espiritual y la soledad de la
-						naturaleza, y se encargó de rastrear los precedentes literarios de este personaje que simbolizaba la errante condición humana <ref target="#vil1951">(Vilanova, 1951: 431-432)</ref>: la
-						epopeya grecolatina —<hi rend="italic">Odisea</hi> y <hi rend="italic">Eneida</hi>—, de donde Góngora rescata al personaje épico; la novela bizantina y la novela amorosa de aventuras, que
-						unen la idea bíblica de la vida como peregrinación y la noción platónica del amor en una narrativa ascética, tan presente en <hi rend="italic">El peregrino en su patria</hi> de Lope, en el
-							<hi rend="italic">Persiles y Segismunda</hi> de Cervantes o en <hi rend="italic">El Criticón</hi> de Gracián; y, por último, la poesía trovadoresca medieval y su renovación italiana
-						—Dante en la <hi rend="italic">Vita Nuova</hi>, Petrarca en el <hi rend="italic">Canzoniere</hi> y Torquato Tasso en la <hi rend="italic">Gerusalemme liberata</hi>—. Como se sabe, el
-						tópico del peregrino de amor fue introducido en la península ibérica por el poeta portugués Camões y incorporó a la poesía castellana gracias al genio de Fernando de Herrera; éste que
-						fundió el motivo de la soledad con el de la peregrinación amorosa. Asimismo, no hay que olvidar que fue utilizado en 1594 por el mismo Góngora en su soneto «Descaminado, enfermo,
-						peregrino».</p>
+						<ref target="#pon2001" xml:id="ref_29">(Ponce Cárdenas, 2001: 79)</ref>. Antonio Vilanova fue el primero en señalar que el peregrino era el enclave entre la soledad espiritual y la soledad
+						de la naturaleza, y se encargó de rastrear los precedentes literarios de este personaje que simbolizaba la errante condición humana <ref target="#vil1951" xml:id="ref_30">(Vilanova, 1951:
+							431-432)</ref>: la epopeya grecolatina —<hi rend="italic">Odisea</hi> y <hi rend="italic">Eneida</hi>—, de donde Góngora rescata al personaje épico; la novela bizantina y la novela
+						amorosa de aventuras, que unen la idea bíblica de la vida como peregrinación y la noción platónica del amor en una narrativa ascética, tan presente en <hi rend="italic">El peregrino en su
+							patria</hi> de Lope, en el <hi rend="italic">Persiles y Segismunda</hi> de Cervantes o en <hi rend="italic">El Criticón</hi> de Gracián; y, por último, la poesía trovadoresca medieval y
+						su renovación italiana —Dante en la <hi rend="italic">Vita Nuova</hi>, Petrarca en el <hi rend="italic">Canzoniere</hi> y Torquato Tasso en la <hi rend="italic">Gerusalemme liberata</hi>—.
+						Como se sabe, el tópico del peregrino de amor fue introducido en la península ibérica por el poeta portugués Camões y incorporó a la poesía castellana gracias al genio de Fernando de
+						Herrera; éste que fundió el motivo de la soledad con el de la peregrinación amorosa. Asimismo, no hay que olvidar que fue utilizado en 1594 por el mismo Góngora en su soneto «Descaminado,
+						enfermo, peregrino».</p>
 					<p>En los últimos años algunos críticos han señalado que la importancia de esta tradición fue exagerada por Antonio Vilanova y se han encargado de revisarla para precisar su verdadero peso.
 						Para Nadine Ly el peregrino de amor «no es más que medio tópico» porque Góngora se propuso subvertir el modelo renacentista reduciendo el espacio dedicado a la dama, incluso cuando se
 						supone que es el tema central de la composición como ocurre en el «métrico llanto» de la <hi rend="italic">Soledad segunda</hi> (vv. 722-754):</p>
@@ -1259,32 +1260,32 @@
 						la describe (mientras que, por ejemplo, don Quijote hace el retrato tópico de la inventada Dulcinea), y si acaso se evoca fugazmente su hermosura, surge la alusión a propósito de la
 						belleza de la novia labradora, en la que se deleita el peregrino durante doce extáticos versos (v. 722 a 733 de la <hi rend="italic">Soledad primera</hi>) […]. La ausencia «temática» de la
 						dama se ha convertido, en el poema de Góngora, en casi total ausencia textual, lo cual no pocas consecuencias acarrea en lo que atañe al carácter tópico, tantas veces proclamado, del
-						peregrino <ref target="#ly1985">(Ly, 1985: 357-358)</ref>.</q>
+						peregrino <ref target="#ly1985" xml:id="ref_31">(Ly, 1985: 357-358)</ref>.</q>
 					<p>En efecto, al limitar la presencia de la amada, Góngora da la espalda a la tradición trovadoresca de las cuitas de amor, y en su lugar prefiere desarrollar la temática del amor
-						correspondido, con sus bodas o promesas de casamiento a fin de promocionar poéticamente «una modalidad nueva de la expresión del amor» <ref target="#ly1985">(Ly, 1985: 359)</ref>. Por esta
-						razón es posible afirmar que el edificio textual de las <hi rend="italic">Soledades</hi> reposa sobre tópicos perceptibles «pero zapados, vacíos» <ref target="#ly1985">(Ly, 1985:
-							359)</ref>. Este rasgo tiene implicaciones hermenéuticas de alcance global, pues el recorrido del peregrino puede considerarse como un ejercicio de olvido, un <hi rend="italic">ars
-							oblivionalis</hi>
-						<ref target="#ros2007">(Roses, 2007: 42)</ref>.</p>
+						correspondido, con sus bodas o promesas de casamiento a fin de promocionar poéticamente «una modalidad nueva de la expresión del amor» <ref target="#ly1985" xml:id="ref_32">(Ly, 1985:
+							359)</ref>. Por esta razón es posible afirmar que el edificio textual de las <hi rend="italic">Soledades</hi> reposa sobre tópicos perceptibles «pero zapados, vacíos» <ref
+							target="#ly1985" xml:id="ref_33">(Ly, 1985: 359)</ref>. Este rasgo tiene implicaciones hermenéuticas de alcance global, pues el recorrido del peregrino puede considerarse como un
+						ejercicio de olvido, un <hi rend="italic">ars oblivionalis</hi>
+						<ref target="#ros2007" xml:id="ref_34">(Roses, 2007: 42)</ref>.</p>
 					<p>La segunda de las críticas contra la visión tradicional que se tiene del protagonista de las <hi rend="italic">Soledades</hi> se fundamenta en la forma en que la voz poética se refiere al
-						personaje <ref target="#lar2003">(Lara Garrido, 2003)</ref>. El proceso de aprendizaje que experimenta el peregrino en la segunda parte del poema se manifiesta porque la voz poética no
-						utiliza términos del campo léxico de la juventud para aludirlo. Además, la condición de peregrino debe relativizarse. Desde este punto de vista, su condición de extranjero resulta igual de
-						relevante —aunque pertenece a la misma comunidad de hablantes porque entiende y habla la lengua del lugar—; por último, no hay que olvidar que el protagonista se integra poco a poco en la
-						comunidad y que, por ende, es tratado como un huésped.</p>
+						personaje <ref target="#lar2003" xml:id="ref_35">(Lara Garrido, 2003)</ref>. El proceso de aprendizaje que experimenta el peregrino en la segunda parte del poema se manifiesta porque la
+						voz poética no utiliza términos del campo léxico de la juventud para aludirlo. Además, la condición de peregrino debe relativizarse. Desde este punto de vista, su condición de extranjero
+						resulta igual de relevante —aunque pertenece a la misma comunidad de hablantes porque entiende y habla la lengua del lugar—; por último, no hay que olvidar que el protagonista se integra
+						poco a poco en la comunidad y que, por ende, es tratado como un huésped.</p>
 					<p>La actividad del peregrino, como ya se dijo, suele reducirse a la mera observación. Pero lo cierto es que durante la <hi rend="italic">Soledad primera</hi> el protagonista mira, escucha,
-						come, bebe y duerme <ref target="#ly1985">(Ly, 1985: 66)</ref>. No destaca por su elocuencia, está claro, lo cual no significa que no se exprese mediante otro tipo de signos: el físico y
-						la ropa, por ejemplo, comunican su extracción social, y ante las muestras de cortesía dirigidas por los aldeanos responde con igual conducta, pues oye con gusto y atención los parlamentos
-							<ref target="#lar2003">(Lara Garrido, 2003: 19)</ref>. El cambio de rol, sin embargo, sucede tras oír el canto amebeo de los pescadores en la <hi rend="italic">Soledad segunda</hi>,
-						momento en que «de testigo privilegiado de la boda campesina pasa a convertirse en propiciador —y de algún modo oficiante— de la consentida unión futura de las dos hijas del pescador» <ref
-							target="#lar2003">(Lara Garrido, 2003: 24)</ref>. De esta manera el peregrino-huésped descubre la mutualidad del amor en la pareja de novios y aprende cómo la felicidad toma cuerpo
-						mediante el matrimonio.</p>
+						come, bebe y duerme <ref target="#ly1985" xml:id="ref_36">(Ly, 1985: 66)</ref>. No destaca por su elocuencia, está claro, lo cual no significa que no se exprese mediante otro tipo de
+						signos: el físico y la ropa, por ejemplo, comunican su extracción social, y ante las muestras de cortesía dirigidas por los aldeanos responde con igual conducta, pues oye con gusto y
+						atención los parlamentos <ref target="#lar2003" xml:id="ref_37">(Lara Garrido, 2003: 19)</ref>. El cambio de rol, sin embargo, sucede tras oír el canto amebeo de los pescadores en la <hi
+							rend="italic">Soledad segunda</hi>, momento en que «de testigo privilegiado de la boda campesina pasa a convertirse en propiciador —y de algún modo oficiante— de la consentida unión
+						futura de las dos hijas del pescador» <ref target="#lar2003" xml:id="ref_38">(Lara Garrido, 2003: 24)</ref>. De esta manera el peregrino-huésped descubre la mutualidad del amor en la
+						pareja de novios y aprende cómo la felicidad toma cuerpo mediante el matrimonio.</p>
 					<p>¿Pero qué se deduce de todos estos detalles y cambios apenas perceptibles? Dos conclusiones: la primera es que Góngora retarda el desvelamiento de la identidad del protagonista porque
 						sitúa la mayor fuente de datos biográficos en la segunda parte del poema, en el métrico llanto, una canción alirada que recupera el género piscatorio cultivado por Sannazaro y tiñe el
-						conjunto de un tono elegíaco. La segunda conclusión es que, como ya señaló Robert Jammes <ref target="#gon1994">(Góngora, 1994: 50)</ref>, el retrato del peregrino-huésped está
-						desparramado a lo largo de las dos <hi rend="italic">Soledades</hi>: lleva cinco años exiliado por los desdenes de su amada, se alistó al ejército y salió de España, cruzó el mar hacia
-						América, también ha estado en la India oriental, y ahora busca un segundo naufragio o muerte. La identidad del peregrino-huésped, en definitiva, no solo se revela de manera progresiva —si
-						en la <hi rend="italic">Soledad primera</hi> el peregrino apenas habla en la segunda parte, en cambio, se confiesa en el «métrico llanto»— sino también de forma retrógrada, pues es
-						necesario haber leído ambas <hi rend="italic">Soledades</hi> para recomponer el retrato y percibir las significaciones biográficas de cada uno de sus pasos.</p>
+						conjunto de un tono elegíaco. La segunda conclusión es que, como ya señaló Robert Jammes <ref target="#gon1994" xml:id="ref_39">(Góngora, 1994: 50)</ref>, el retrato del peregrino-huésped
+						está desparramado a lo largo de las dos <hi rend="italic">Soledades</hi>: lleva cinco años exiliado por los desdenes de su amada, se alistó al ejército y salió de España, cruzó el mar
+						hacia América, también ha estado en la India oriental, y ahora busca un segundo naufragio o muerte. La identidad del peregrino-huésped, en definitiva, no solo se revela de manera
+						progresiva —si en la <hi rend="italic">Soledad primera</hi> el peregrino apenas habla en la segunda parte, en cambio, se confiesa en el «métrico llanto»— sino también de forma retrógrada,
+						pues es necesario haber leído ambas <hi rend="italic">Soledades</hi> para recomponer el retrato y percibir las significaciones biográficas de cada uno de sus pasos.</p>
 				</div>
 				<div xml:id="metrica" type="section" n="1.5">
 					<head type="sub">Métrica</head>
@@ -1294,56 +1295,57 @@
 						Jáuregui; en cambio, la silva métrica se caracteriza por ser una forma aestrófica de más de veinte versos aconsonantados que combinan libremente endecasílabos y heptasílabos.</p>
 					<p>Resulta difícil decidir cuál fue la primera silva métrica porque durante los años que van de 1604 a 1613 convivió con al modelo estaciano tal y como demuestra su ausencia en la <hi
 							rend="italic">Poética silva</hi>. Los ingenios y los poemas candidatos son varios: en primer lugar, la «boscarecha» de Pedro Espinosa, fechada en 1603 aunque publicada en las <hi
-							rend="italic">Flores de poetas ilustres</hi> dos años más tarde, puede considerarse una «proto-silva» <ref target="#ala1988">(Alatorre, 1988: 21)</ref>; en segundo lugar, también hay que
-						tener en cuenta las cinco silvas métricas que Quevedo escribió por las mismas fechas y que fueron recogidas en 1611 por Juan Antonio Alarcón en la <hi rend="italic">Segunda parte de las
-							Flores de poetas ilustres</hi>
-						<ref target="#ase1983">(Asensio, 1983: 16)</ref>; en tercer lugar, no hay que olvidar, por un lado, las once silvas de Francisco de Rioja recogidas en un manuscrito de 1614 (pero
-						compuestas con anterioridad) <ref target="#ase1983">(Asensio, 1983: 25)</ref>; por último, conviene recordar el papel de Lope de Vega ya que en 1602 o 1603 escribió un diálogo satírico en
-						endecasílabos y heptasílabos recogido en la <hi rend="italic">Segunda parte de las rimas</hi>.</p>
+							rend="italic">Flores de poetas ilustres</hi> dos años más tarde, puede considerarse una «proto-silva» <ref target="#ala1988" xml:id="ref_40">(Alatorre, 1988: 21)</ref>; en segundo lugar,
+						también hay que tener en cuenta las cinco silvas métricas que Quevedo escribió por las mismas fechas y que fueron recogidas en 1611 por Juan Antonio Alarcón en la <hi rend="italic">Segunda
+							parte de las Flores de poetas ilustres</hi>
+						<ref target="#ase1983" xml:id="ref_41">(Asensio, 1983: 16)</ref>; en tercer lugar, no hay que olvidar, por un lado, las once silvas de Francisco de Rioja recogidas en un manuscrito de 1614
+						(pero compuestas con anterioridad) <ref target="#ase1983" xml:id="ref_42">(Asensio, 1983: 25)</ref>; por último, conviene recordar el papel de Lope de Vega ya que en 1602 o 1603 escribió
+						un diálogo satírico en endecasílabos y heptasílabos recogido en la <hi rend="italic">Segunda parte de las rimas</hi>.</p>
 					<p>Mayor acuerdo existe sobre las causas del trasvase de la silva desde Italia a España. Dos son los hechos comúnmente admitidos como relevantes: por un lado, el comentario a la obra de
 						Poliziano por parte de El Brocense en la Universidad de Salamanca, durante los años en que Góngora fue alumno de Cánones; por el otro, la traducción del <hi rend="italic">Aminta</hi> de
-						Tasso realizada por Juan de Jáuregui en 1605 <ref target="#rui1991">(Ruiz Pérez y Montero, 1991: 26-27)</ref>. Aurora Egido, por lo demás, añade que el papel de fray Luis de León pudo ser
-						determinante porque ofreció un modelo para la silva métrica en sus traducciones del latín en versos endecasílabos y heptasílabos <ref target="#egi1989">(Egido, 1989: 26)</ref>.</p>
-					<p>La silva se inserta en el sistema genérico español en un momento en que el petrarquismo está siendo desplazado por los modelos neoclásicos <ref target="#rui1991">(Ruiz Pérez y Montero,
-							1991: 22)</ref>. En este sentido la irrupción de la silva puede ser interpretada como una respuesta a la herencia recibida de las primeras promociones italianizantes que, a decir verdad,
-						ya habían intentado desde dentro del petrarquismo modificar sus formas canónicas (la canción) o anexas (el madrigal, limitado a veinte versos por Caramuel para diferenciarlo de la
-						silva).</p>
+						Tasso realizada por Juan de Jáuregui en 1605 <ref target="#rui1991" xml:id="ref_43">(Ruiz Pérez y Montero, 1991: 26-27)</ref>. Aurora Egido, por lo demás, añade que el papel de fray Luis
+						de León pudo ser determinante porque ofreció un modelo para la silva métrica en sus traducciones del latín en versos endecasílabos y heptasílabos <ref target="#egi1989" xml:id="ref_44"
+							>(Egido, 1989: 26)</ref>.</p>
+					<p>La silva se inserta en el sistema genérico español en un momento en que el petrarquismo está siendo desplazado por los modelos neoclásicos <ref target="#rui1991" xml:id="ref_45">(Ruiz
+							Pérez y Montero, 1991: 22)</ref>. En este sentido la irrupción de la silva puede ser interpretada como una respuesta a la herencia recibida de las primeras promociones italianizantes
+						que, a decir verdad, ya habían intentado desde dentro del petrarquismo modificar sus formas canónicas (la canción) o anexas (el madrigal, limitado a veinte versos por Caramuel para
+						diferenciarlo de la silva).</p>
 					<p>En efecto, como ya señaló Eugenio Asensio, el valor de la silva reside en oponerse a la rigidez del soneto, la canción y la octava real; en hacer posible que el poema acoja un «movimiento
-						ondulatorio hecho de ascensiones y caídas, alternando libremente el endecasílabo pleno y pausado con el heptasílabo rápido, variando el tono y el estilo» <ref target="#ase1983">(Asensio,
-							1983: 30)</ref>. La variedad temática y estilística de la silva no es más que el resultado de todos estos procesos de desplazamiento y sustitución: selvas/silvas como los poemas
-						descriptivos de la <hi rend="italic">Poética silva</hi> compuestos en octavas o en tercetos; selvas/idilios en que cobra mayor relevancia la expresión lírica del sujeto; silvas/salmos como
-						los del <hi rend="italic">Heráclito cristiano</hi> de Quevedo; y silvas meta-artísticas, que pretenden elaborar una reflexión sobre las relaciones entre arte y naturaleza, recogiendo la
-						herencia de la tradición epistolar renacentista. La silva anterior a 1613, pues, es el resultado de varias tradiciones (moral y religiosa, pastoril, epístola/sátira, poema descriptivo);
-						las <hi rend="italic">Soledades</hi> de Góngora participan de todas ellas y, al mismo tiempo, suponen su superación.</p>
+						ondulatorio hecho de ascensiones y caídas, alternando libremente el endecasílabo pleno y pausado con el heptasílabo rápido, variando el tono y el estilo» <ref target="#ase1983"
+							xml:id="ref_46">(Asensio, 1983: 30)</ref>. La variedad temática y estilística de la silva no es más que el resultado de todos estos procesos de desplazamiento y sustitución:
+						selvas/silvas como los poemas descriptivos de la <hi rend="italic">Poética silva</hi> compuestos en octavas o en tercetos; selvas/idilios en que cobra mayor relevancia la expresión lírica
+						del sujeto; silvas/salmos como los del <hi rend="italic">Heráclito cristiano</hi> de Quevedo; y silvas meta-artísticas, que pretenden elaborar una reflexión sobre las relaciones entre arte
+						y naturaleza, recogiendo la herencia de la tradición epistolar renacentista. La silva anterior a 1613, pues, es el resultado de varias tradiciones (moral y religiosa, pastoril,
+						epístola/sátira, poema descriptivo); las <hi rend="italic">Soledades</hi> de Góngora participan de todas ellas y, al mismo tiempo, suponen su superación.</p>
 					<p>La inaudita extensión de la silva gongorina, la lejanía de las rimas, el desplazamiento de lo lírico hacia lo épico, el gusto por la descripción, el registro estilístico sublime, el paso
-						de la primera a la tercera persona y la ausencia de un narratario expreso <ref target="#rui1991">(Ruiz Pérez y Montero, 1991: 36)</ref> han hecho pensar a varios críticos que las <hi
-							rend="italic">Soledades</hi>, más que continuar con un tradición métrica clásica, la sobrepasan, e inauguran un género nuevo, la «silva-soledad»:</p>
+						de la primera a la tercera persona y la ausencia de un narratario expreso <ref target="#rui1991" xml:id="ref_47">(Ruiz Pérez y Montero, 1991: 36)</ref> han hecho pensar a varios críticos
+						que las <hi rend="italic">Soledades</hi>, más que continuar con un tradición métrica clásica, la sobrepasan, e inauguran un género nuevo, la «silva-soledad»:</p>
 					<q>Resulta pues que las <hi rend="italic">Soledades</hi> son, más que una <hi rend="italic">silva</hi>/<hi rend="italic">selva</hi>, una <hi rend="italic">soledad</hi>, es decir un tipo
 						nuevo de poema, cuya estructura formal y temática recuerda, rebasándola, la de las silvas: poema narrativo sin fábula; mitológico y contemporáneo; lírico sin intriga amorosa; épico sin
 						hazañas; bucólico y piscatorio con héroes; panegírico sin referente explícito; doble y ambiguo; poema cuyo protagonista resulta del desdoblamiento y de la síntesis de los dos términos de
 						una relación que, iniciada en la <hi rend="italic">Dedicatoria</hi>, sigue presente en el doble poema: el Yo-poeta y el Tú-destinatario: poema, en fin, conceptuoso y culto, pero cuyo
 						sentido está también en las raíces folklóricas y simbólicas profundas. Este poema, que no encaja en ningún molde preexistente, es, a mi parecer, el primer poema «moderno» o sea el primero
-						que no se pueda definir sino como poema <ref target="#ly1985">(Ly, 1985: 41)</ref>.</q>
+						que no se pueda definir sino como poema <ref target="#ly1985" xml:id="ref_48">(Ly, 1985: 41)</ref>.</q>
 					<p>En el siglo XVII, el influjo de las <hi rend="italic">Soledades</hi> fue recibido por Soto de Rojas en el <hi rend="italic">Paraíso cerrado</hi>, por Sor Juana Inés de la Cruz en el <hi
 							rend="italic">Primer sueño</hi>, por Polo de Medina en los <hi rend="italic">Ocios de la soledad</hi>, por Ginovés en las <hi rend="italic">Silvas de todo el año</hi> o por Agustín
 						Salazar Torres en <hi rend="italic">Las cuatro estaciones del día</hi>
-						<ref target="#ly1985">(Ly, 1985: 50-51)</ref>. Sin embargo, esta hipótesis, aunque muy atractiva, debe tomarse con mucha precaución, o al menos matizarse, porque el modelo estaciano siguió
-						vigente incluso después de 1613 como demuestra el proyecto poético de Quevedo <ref target="#ala1988">(Alatorre, 1988: 23)</ref>.</p>
-					<p>Tras la difusión de las <hi rend="italic">Soledades</hi> es cierto que la silva métrica entró en su «fase imperialista» <ref target="#ase1983">(Asensio, 1983: 31)</ref> pero a costa de
-						perder su especificidad hasta el punto que, a falta de una preceptiva sólida, se convirtió en un «metro comodín» <ref target="#rui1991">(Ruiz Pérez y Montero, 1991: 45)</ref>. Por eso,
-						junto al poema extenso como alternativa épica, es posible encontrar silvas más cortas y de estilo llano que remiten a la égloga garcilasiana (Soto de rojas, Góngora); silvas descriptivas
-						(Soto de Rojas, Góngora, Sor Juana, Polo de Medina); silvas panegíricas (Lope de Vega, Trillo y Figueroa); silvas mitológicas (Villamediana, Soto de Rojas) o silvas paródicas (Polo de
-						Medina, Antonio de Solís, Lope de Vega). La silva métrica, en fin, triunfó en España pero al hacerlo se disgregó y pasó a cumplir cualquiera de las funciones del sistema genérico que la
-						precedía.</p>
+						<ref target="#ly1985" xml:id="ref_49">(Ly, 1985: 50-51)</ref>. Sin embargo, esta hipótesis, aunque muy atractiva, debe tomarse con mucha precaución, o al menos matizarse, porque el modelo
+						estaciano siguió vigente incluso después de 1613 como demuestra el proyecto poético de Quevedo <ref target="#ala1988" xml:id="ref_50">(Alatorre, 1988: 23)</ref>.</p>
+					<p>Tras la difusión de las <hi rend="italic">Soledades</hi> es cierto que la silva métrica entró en su «fase imperialista» <ref target="#ase1983" xml:id="ref_51">(Asensio, 1983: 31)</ref>
+						pero a costa de perder su especificidad hasta el punto que, a falta de una preceptiva sólida, se convirtió en un «metro comodín» <ref target="#rui1991" xml:id="ref_52">(Ruiz Pérez y
+							Montero, 1991: 45)</ref>. Por eso, junto al poema extenso como alternativa épica, es posible encontrar silvas más cortas y de estilo llano que remiten a la égloga garcilasiana (Soto de
+						rojas, Góngora); silvas descriptivas (Soto de Rojas, Góngora, Sor Juana, Polo de Medina); silvas panegíricas (Lope de Vega, Trillo y Figueroa); silvas mitológicas (Villamediana, Soto de
+						Rojas) o silvas paródicas (Polo de Medina, Antonio de Solís, Lope de Vega). La silva métrica, en fin, triunfó en España pero al hacerlo se disgregó y pasó a cumplir cualquiera de las
+						funciones del sistema genérico que la precedía.</p>
 				</div>
 				<div xml:id="situacion_enunciativa" type="section" n="1.6">
 					<head type="sub">Situación enunciativa</head>
 					<p>En las <hi rend="italic">Soledades</hi> predomina el narrador épico sobre el diálogo propio del drama y de la novela moderna. El silencio del peregrino, como se recordará, fue, de hecho,
 						uno de los principales defectos que encontró Jáuregui en el poema.</p>
-					<p>Si dejamos de lado algunos motivos, como el del cortesano disfrazado de rústico o el de las bodas, que proceden del comedia <ref target="#ros2007">(Roses, 2007: 73)</ref>, se debe admitir
-						que el poeta sevillano llevaba parte de razón y que el drama constituye la frontera más distante de un poema que suele caracterizarse como un híbrido genérico. Además, el estilo del
-						narrador y el estilo del peregrino o del resto de personajes no se diferencian —en ambos casos se puede hallar la construcción <hi rend="italic">A si no B</hi>— porque Góngora prefiere la
-						intensidad de la poesía y de los recursos retóricos a resultar verosímil, prosaico o realista <ref target="#zim1995">(Zimmermann, 1995: 56)</ref>.</p>
+					<p>Si dejamos de lado algunos motivos, como el del cortesano disfrazado de rústico o el de las bodas, que proceden del comedia <ref target="#ros2007" xml:id="ref_53">(Roses, 2007: 73)</ref>,
+						se debe admitir que el poeta sevillano llevaba parte de razón y que el drama constituye la frontera más distante de un poema que suele caracterizarse como un híbrido genérico. Además, el
+						estilo del narrador y el estilo del peregrino o del resto de personajes no se diferencian —en ambos casos se puede hallar la construcción <hi rend="italic">A si no B</hi>— porque Góngora
+						prefiere la intensidad de la poesía y de los recursos retóricos a resultar verosímil, prosaico o realista <ref target="#zim1995" xml:id="ref_54">(Zimmermann, 1995: 56)</ref>.</p>
 					<p>Tras la dedicatoria, se alternan el modo narrativo y el modo directo, es decir, la narración y el diálogo. Es posible afirmar, por tanto, que las <hi rend="italic">Soledades</hi>
 						ejemplifican el modo de enunciación mixto propio de la épica. Además, tanto en uno como en otro modo se hallan actualizadores de la situación comunicativa en que se percibe la presencia de
 						un emisor y un destinatario del mensaje poético.</p>
@@ -1362,48 +1364,49 @@
 						116-171) a cargo del peregrino; varios momentos en que el isleño toma la palabra (II, vv. 363-387 y 388-511); y el canto amebeo de Lícidas y Micón (II, vv. 542-611).</p>
 					<p>Los personajes a menudo hacen amago de hablar pero la acción les interrumpe y son llevados por la corriente de acontecimientos y, sobre todo, por la contemplación de la belleza. Por
 						ejemplo, en la <hi rend="italic">Soledad primera</hi>, cuando el peregrino conoce a la novia campesina tiene una reminiscencia de su amada e intenta dar señas de su interioridad a través
-						de la palabra, pero la música se lo impide <ref target="#zim1995">(Zimmermann, 1995: 57)</ref>. La imposibilidad de hablar por parte del peregrino constituye una estrategia del autor para
-						alejarse de la poesía confesional de la época y una deliberada negación de la fábula aristotélica. En resumen, al restar importancia al dialogismo, Góngora desplazó el acento desde lo
-						dramático y lo lírico hacia lo épico y lo narrativo.</p>
+						de la palabra, pero la música se lo impide <ref target="#zim1995" xml:id="ref_55">(Zimmermann, 1995: 57)</ref>. La imposibilidad de hablar por parte del peregrino constituye una estrategia
+						del autor para alejarse de la poesía confesional de la época y una deliberada negación de la fábula aristotélica. En resumen, al restar importancia al dialogismo, Góngora desplazó el
+						acento desde lo dramático y lo lírico hacia lo épico y lo narrativo.</p>
 				</div>
 				<div xml:id="genero_literario" type="section" n="1.7">
 					<head type="sub">Género literario</head>
 					<p>La adscripción genérica de las <hi rend="italic">Soledades</hi> ha sido uno de los aspectos más problemáticos desde el siglo XVII. El poema representa una variedad de objetos, acciones y
 						estilos que difícilmente pueden homologarse a una sola categoría unificadora. El mismo Góngora, si damos crédito a la <hi rend="italic">Carta en respuesta</hi>, parece referirse a las <hi
-							rend="italic">Soledades</hi> de manera contradictoria como obra lírica escrita con lenguaje heroico <ref target="#ros1994">(Roses, 1994: 127)</ref>; en el otro extremo de la disputa,
-						Cascales le niega toda inscripción genérica y por tanto condena al poema a la inutilidad <ref target="#ros1994">(Roses, 1994: 136)</ref>.</p>
+							rend="italic">Soledades</hi> de manera contradictoria como obra lírica escrita con lenguaje heroico <ref target="#ros1994" xml:id="ref_56">(Roses, 1994: 127)</ref>; en el otro extremo de
+						la disputa, Cascales le niega toda inscripción genérica y por tanto condena al poema a la inutilidad <ref target="#ros1994" xml:id="ref_57">(Roses, 1994: 136)</ref>.</p>
 					<p>Los primeros lectores de Góngora no llegaron a un acuerdo sobre el género de las <hi rend="italic">Soledades</hi> en parte porque siguieron aplicando el precepto clasicista que distingue
 						entre <hi rend="italic">res</hi> y <hi rend="italic">verba</hi> a una obra que supera cualquier dicotomía.</p>
 					<p>Así, Pedro de Valencia reconoció el carácter elevado y sublime del poema; aunque para el humanista de Zafra lo grave y lo lírico no entran en contradicción, la inclusión de pasajes
-						burlescos le parecía censurable porque atentaba contra la grandiosidad del estilo sublime <ref target="#ros1994">(Roses, 1994: 122)</ref>. Francisco Fernández de Córdoba, en cambio, creyó
-						que el género de las <hi rend="italic">Soledades</hi> era lírico o bucólico porque su materia era humilde aunque reconoció la gravedad del estilo <ref target="#ros1994">(Roses, 1994:
-							123-124)</ref>. Las opiniones recogidas por Andrés Almansa y Mendoza indican que los detractores del poema percibieron los personajes y el cauce estrófico como cercanos a lo épico
-						mientras que el lenguaje fue considerado lírico <ref target="#ros1994">(Roses, 1994: 125)</ref>. Manuel Ponce tampoco emitió un juicio personal sobre esta cuestión pero documentó que otros
-						lectores tomaron como líricas las acciones mientras que el estilo les parecía heroico o sublime; tal disonancia era, para ellos, condenable <ref target="#ros1994">(Roses, 1994: 126)</ref>.
-						El autor anónimo de la <hi rend="italic">Respuesta a la Carta de Luis de Góngora</hi> y Jáuregui reprocharon al poeta cordobés que siendo su natural satírico hubiera intentado escribir una
-						obra épica; el autor del <hi rend="italic">Orfeo</hi>, además, condena la mezcla de estilos derivada de la introducción de elementos burlescos, tal y como hiciera tres años antes Pedro de
-						Valencia, pues el estilo debía ser homogéneo y no decaer en lo burlesco <ref target="#ros1994">(Roses, 1994: 130)</ref>.</p>
+						burlescos le parecía censurable porque atentaba contra la grandiosidad del estilo sublime <ref target="#ros1994" xml:id="ref_58">(Roses, 1994: 122)</ref>. Francisco Fernández de Córdoba,
+						en cambio, creyó que el género de las <hi rend="italic">Soledades</hi> era lírico o bucólico porque su materia era humilde aunque reconoció la gravedad del estilo <ref target="#ros1994"
+							xml:id="ref_59">(Roses, 1994: 123-124)</ref>. Las opiniones recogidas por Andrés Almansa y Mendoza indican que los detractores del poema percibieron los personajes y el cauce estrófico
+						como cercanos a lo épico mientras que el lenguaje fue considerado lírico <ref target="#ros1994" xml:id="ref_60">(Roses, 1994: 125)</ref>. Manuel Ponce tampoco emitió un juicio personal
+						sobre esta cuestión pero documentó que otros lectores tomaron como líricas las acciones mientras que el estilo les parecía heroico o sublime; tal disonancia era, para ellos, condenable
+							<ref target="#ros1994" xml:id="ref_61">(Roses, 1994: 126)</ref>. El autor anónimo de la <hi rend="italic">Respuesta a la Carta de Luis de Góngora</hi> y Jáuregui reprocharon al poeta
+						cordobés que siendo su natural satírico hubiera intentado escribir una obra épica; el autor del <hi rend="italic">Orfeo</hi>, además, condena la mezcla de estilos derivada de la
+						introducción de elementos burlescos, tal y como hiciera tres años antes Pedro de Valencia, pues el estilo debía ser homogéneo y no decaer en lo burlesco <ref target="#ros1994"
+							xml:id="ref_62">(Roses, 1994: 130)</ref>.</p>
 					<p>En su segunda intervención, Francisco Fernández de Córdoba reiteró que el género de las <hi rend="italic">Soledades</hi> era lírico aunque reconoció que tanto la extensión como la
-						variedad de acciones iban en contra de su punto de vista y que el estilo del poema era sublime <ref target="#ros1994">(Roses, 1994: 130)</ref>. Por último, Díaz de Rivas y Vázquez Siruela
-						coincidieron en que las <hi rend="italic">Soledades</hi> eran una obra grave heroica: el primero lo creía así tanto por el estilo como por la materia mientras que el segundo aludió a la
-						especificidad y autonomía del lenguaje poético frente a la prosa <ref target="#ros1994">(Roses, 1994: 141)</ref>.</p>
+						variedad de acciones iban en contra de su punto de vista y que el estilo del poema era sublime <ref target="#ros1994" xml:id="ref_63">(Roses, 1994: 130)</ref>. Por último, Díaz de Rivas y
+						Vázquez Siruela coincidieron en que las <hi rend="italic">Soledades</hi> eran una obra grave heroica: el primero lo creía así tanto por el estilo como por la materia mientras que el
+						segundo aludió a la especificidad y autonomía del lenguaje poético frente a la prosa <ref target="#ros1994" xml:id="ref_64">(Roses, 1994: 141)</ref>.</p>
 					<p>En nuestra época parece que los rasgos épicos del poema son subrayados por las mayores autoridades del gongorismo. El primer poema escrito por Góngora —«De <hi rend="italic">Las
 							Lusíadas</hi> de Luis de Camoes que tradujo Luis de Tapia»— ya planteaba la posibilidad de hacer <hi rend="italic">sonar la trompa bélica</hi>
-						<ref target="#bla2012">(Blanco, 2012)</ref>; por eso, resulta apropiado leer las <hi rend="italic">Soledades</hi> como una solución ingeniosa a la demanda del poema bélico y una reacción
-						contraria a la estética dominante tanto en Italia como en España:</p>
+						<ref target="#bla2012" xml:id="ref_65">(Blanco, 2012)</ref>; por eso, resulta apropiado leer las <hi rend="italic">Soledades</hi> como una solución ingeniosa a la demanda del poema bélico
+						y una reacción contraria a la estética dominante tanto en Italia como en España:</p>
 					<q>Lo que proponen las <hi rend="italic">Soledades</hi> es una alternativa a la demanda del poema épico y a la propuesta de Tasso: si no un poema heroico, expresión con la que llama Tasso a
 						la epopeya, otra cosa que valga como su sucedáneo o sustituto. Por un lado, pretende Góngora satisfacer algunas de las expectativas que entraña la «demanda» del poema épico, y, por otro,
 						levantar acta de un hecho que nadie tiene claro entonces, aunque pueda parecer evidente de modo retrospectivo: la épica de corte clásico apenas tiene futuro y no puede arraigar sólidamente
-						en la Europa moderna <ref target="#bla2012">(Blanco, 2012: 12)</ref>.</q>
+						en la Europa moderna <ref target="#bla2012" xml:id="ref_66">(Blanco, 2012: 12)</ref>.</q>
 					<p>La epopeya debía expresar una visión política acorde con los tiempos; Góngora realizó esta empresa en poemas como la <hi rend="italic">Canción a la toma de Larache</hi> o <hi
 							rend="italic">De la armada que fue a Inglaterra</hi>; por el contrario, en las <hi rend="italic">Soledades</hi> se representa un alternativa al poema heroico que expresa la voluntad de
 						hombres como el duque de Lerma que apostaba por la <hi rend="italic">Pax Hispanica</hi>, por la paz con Inglaterra, Francia y los holandeses; de ahí, argumenta Blanco, que en el poema se
-						encomien la política de la negociación y la búsqueda del equilibro <ref target="#bla2012">(Blanco, 2012: 15)</ref>.</p>
+						encomien la política de la negociación y la búsqueda del equilibro <ref target="#bla2012" xml:id="ref_67">(Blanco, 2012: 15)</ref>.</p>
 					<p>Junto al contexto histórico desfavorable, se pueden encontrar en el campo literario más razones que explican la imposibilidad de escribir una obra épica en tiempos de Góngora. A
 						principios del siglo XVI Ariosto había conseguido aunar un arte docto con una intriga placentera pero la Contrarreforma impuso un eficaz sistema de represión que transformó la obra épica
-						en un relato ejemplar <ref target="#bla2012">(Blanco, 2012: 22)</ref>. Tasso se propuso emular a Ariosto pero si acertó con su <hi rend="italic">Gerusalemme liberata</hi>, la versión
-						reformada, la <hi rend="italic">Gerusalemme conquistata</hi>, en cambio, resultó un fracaso que debió disuadir a poetas como Góngora, que aspiraban a ocupar un lugar central en el
-						canon.</p>
+						en un relato ejemplar <ref target="#bla2012" xml:id="ref_68">(Blanco, 2012: 22)</ref>. Tasso se propuso emular a Ariosto pero si acertó con su <hi rend="italic">Gerusalemme liberata</hi>,
+						la versión reformada, la <hi rend="italic">Gerusalemme conquistata</hi>, en cambio, resultó un fracaso que debió disuadir a poetas como Góngora, que aspiraban a ocupar un lugar central en
+						el canon.</p>
 					<p>El ejemplo de Tasso, pues, hizo patente la dificultad de conciliar los dos motivos que incitaban a los poetas a intentar renovar el género del <hi rend="italic">epos</hi> griego y latino,
 						a saber: la invención de un mito que deleitase y la necesidad de obedecer al precepto de la utilidad de Horacio y de la verosimilitud de Aristóteles. La alternativa de Góngora se fragua
 						principalmente mediante tres estrategias literarias que contradicen y afirman simultáneamente el modelo épico:</p>
@@ -1411,30 +1414,31 @@
 					<list>
 						<item>la negación de la fábula;</item>
 						<item>la inclusión de marcas formales o temáticas originalmente épicas;</item>
-						<item>y el «desplazamiento de lo heroico desde la acción hacia las operaciones de escritura y lectura» <ref target="#bla2012">(Blanco, 2012: 31)</ref>.</item>
+						<item>y el «desplazamiento de lo heroico desde la acción hacia las operaciones de escritura y lectura» <ref target="#bla2012" xml:id="ref_69">(Blanco, 2012: 31)</ref>.</item>
 					</list>
 
 					<p>La primera de las estrategias consiste, por una parte, en evitar las historias intercaladas y, por otra, en privar al peregrino de todo proyecto y al resto de personajes de rasgos
 						individuales. En las <hi rend="italic">Soledades</hi> cada vez que el peligro o la aventura acechan al peregrino, la narración se ve interrumpida, por ejemplo, cuando el cabrero evoca su
 						pasado militar tras contemplar las ruinas, o cuando el peregrino escucha el canto amebeo de los pescadores. Esto es así porque Góngora prefiere la sucesión de presentes a la construcción
 						de una fábula aristotélica dominada por la verosimilitud y la necesidad. Los personajes, carentes de nombre en la <hi rend="italic">Soledad primera</hi>, se distinguen por su edad, sexo y
-						profesión, pero no se establecen relaciones antagónicas entre ellos <ref target="#bla2012">(Blanco, 2012: 151)</ref>. Los antropónimos que aparecen en la <hi rend="italic">Soledad
-							segunda</hi>, lejos de individualizar a los personajes, los convierten en iconos o figuras que remiten a la tradición literaria culta. Así, los nombres de Lícidas y Micón permiten al
-						lector identificar las obras imitadas con el objetivo de oponer a las cuitas medievalizantes del peregrino un tipo de amor sancionado por los dioses grecolatinos.</p>
+						profesión, pero no se establecen relaciones antagónicas entre ellos <ref target="#bla2012" xml:id="ref_70">(Blanco, 2012: 151)</ref>. Los antropónimos que aparecen en la <hi rend="italic"
+							>Soledad segunda</hi>, lejos de individualizar a los personajes, los convierten en iconos o figuras que remiten a la tradición literaria culta. Así, los nombres de Lícidas y Micón
+						permiten al lector identificar las obras imitadas con el objetivo de oponer a las cuitas medievalizantes del peregrino un tipo de amor sancionado por los dioses grecolatinos.</p>
 					<p>La intertextualidad épica de las <hi rend="italic">Soledades</hi> ya fue un rasgo destacado por todos los comentaristas del siglo XVII: en primer lugar, la cronografía inicial entronca
 						con la tradición homérica y Camoes; en segundo lugar, la perífrasis «el que ministrar podia la copa / a Júpiter mejor que el garzón de Ida, / náufrago y desdeñado, sobre ausente,» con la
 						que el poeta designa al peregrino, remite a la invocación inicial de la <hi rend="italic">Odisea</hi> y a la <hi rend="italic">propositio</hi> que abre la <hi rend="italic">Eneida</hi>.
 						Góngora utiliza el imperfecto «podía» para intensificar la virtualidad de la semejanza; esta perífrasis a su vez contiene otra, pues Ganimedes no se refiere por su nombre sino por su
 						función y su destino según el mito. En tercer lugar, la expresión «Libia de ondas» es un recuerdo de Virgilio y Lucano que Tasso reelaboró al comparar el mar con un desierto <ref
-							target="#bla2012">(Blanco, 2012: 186)</ref>. A estos tres rasgos, por último, hay que sumar el tema de la hospitalidad rústica que atraviesa toda la obra.</p>
+							target="#bla2012" xml:id="ref_71">(Blanco, 2012: 186)</ref>. A estos tres rasgos, por último, hay que sumar el tema de la hospitalidad rústica que atraviesa toda la obra.</p>
 					<p>El desplazamiento de lo heroico desde la acción hacia la escritura y la lectura converge con una idea que Pontano había utilizado hacia 1500: que la sublimidad del estilo pertenece a la
 						poesía como tal, no solo de la poesía heroica, es decir, que lo poético no depende de los temas tratados.</p>
 					<p>Como se recordará, Pedro Díaz de Rivas, al defender las <hi rend="italic">Soledades</hi> durante la polémica, afirmó que eran graves y que su género era heroico, aunque eso no quería
 						decir —afirmaba en una nota aclaratoria— que el poema fuese una obra épica. Pero la distinción entre heroico y épico en el sistema doctrinal de Tasso era inexistente, y en la España de la
 						segunda mitad del XVI se consideraba como heroica «toda composición en verso que celebrase nobles virtudes y que tratase grandes personajes y hechos memorables, aunque fuera más breve, más
-						discursiva que narrativa, y desprovista de fábula» <ref target="#bla2012">(Blanco, 2012: 76)</ref>; que el estilo de las <hi rend="italic">Soledades</hi> era heroico lo demuestra el juicio
-						de Jáuregui, que veía una disonancia entre la <hi rend="italic">res</hi> y la <hi rend="italic">verba</hi>. La estrategia de Góngora —y la de su defensor Díaz de Rivas— consistió en
-						remontarse a un estadio anterior al aristotelicismo cuando la poesía se definía por la <hi rend="italic">elocutio</hi>, por la excelencia del verbo, y no por la imitación o la ficción.</p>
+						discursiva que narrativa, y desprovista de fábula» <ref target="#bla2012" xml:id="ref_72">(Blanco, 2012: 76)</ref>; que el estilo de las <hi rend="italic">Soledades</hi> era heroico lo
+						demuestra el juicio de Jáuregui, que veía una disonancia entre la <hi rend="italic">res</hi> y la <hi rend="italic">verba</hi>. La estrategia de Góngora —y la de su defensor Díaz de Rivas—
+						consistió en remontarse a un estadio anterior al aristotelicismo cuando la poesía se definía por la <hi rend="italic">elocutio</hi>, por la excelencia del verbo, y no por la imitación o la
+						ficción.</p>
 					<p>Esta definición de la poesía heroica o, mejor dicho, de la poesía en general desde una perspectiva neoplatónica, puede ilustrarse mediante numerosos pasajes en que Góngora representa lo
 						pequeño —animales o alimentos son los ejemplos más claros— con la misma fastuosidad verbal que los fenómenos astronómicos. Acaso el exponente más llamativo de esta disonancia entre el
 						estilo heroico y las acciones antiheroicas se dé en lo que se conoce como la invectiva contra las navegaciones. En este discurso el poeta pone en boca de un anciano un alegato a favor de
@@ -1447,33 +1451,34 @@
 			</div>
 			<div xml:id="criterios_editoriales">
 				<head type="main">Criterios editoriales</head>
-				<p>Para establecer el texto de las <hi rend="italic">Soledades</hi> se ha seguido a Chacón como manuscrito base. El texto que contiene este testimonio, pues, transmite la versión
-					definitiva y, frente a otros manuscritos, muy pocos errores de copia.</p>
+				<p>Para establecer el texto de las <hi rend="italic">Soledades</hi> se ha seguido a Chacón como manuscrito base. El texto que contiene este testimonio, pues, transmite la versión definitiva y,
+					frente a otros manuscritos, muy pocos errores de copia.</p>
 				<p>Puesto que el objetivo es crear una edición académica digital que permita al usuario acceder a distintas vistas, me he servido del manuscrito Chacón para presentar simultáneamente una
-					transcripción paleográfica y una modernización. Como es obvio, he tenido muy en cuenta las ediciones de Dámaso Alonso <ref target="#gon1927">(Góngora, 1927</ref> y <ref target="#gon1936"
-						>Góngora, 1936)</ref>, Robert Jammes <ref target="#gon1994">(Góngora, 1994)</ref> y Antonio Carreira <ref target="#gon2000">(Góngora, 2000)</ref> y <ref target="#gon2016">(Góngora,
-						2016)</ref>, así como alguna reseña del texto fijado por Jammes <ref target="#ala1996">(Alatorre, 1996)</ref>.</p>
+					transcripción paleográfica y una modernización. Como es obvio, he tenido muy en cuenta las ediciones de Dámaso Alonso <ref target="#gon1927" xml:id="ref_73">(Góngora, 1927</ref> y <ref
+						target="#gon1936" xml:id="ref_74">Góngora, 1936)</ref>, Robert Jammes <ref target="#gon1994" xml:id="ref_75">(Góngora, 1994)</ref> y Antonio Carreira <ref target="#gon2000" xml:id="ref_76"
+						>(Góngora, 2000)</ref> y <ref target="#gon2016" xml:id="ref_77">(Góngora, 2016)</ref>, así como alguna reseña del texto fijado por Jammes <ref target="#ala1996" xml:id="ref_78">(Alatorre,
+						1996)</ref>.</p>
 				<p>La primera cuestión que debo tratar corresponde a la división del texto. En su edición de 1927 Dámaso Alonso introdujo numerosos cortes en sus ediciones para facilitar la comprensión del
 					poema. Esta práctica no es aceptada por los gongoristas desde hace mucho tiempo porque atenta contra la idea de continuidad de la silva, un metro que se caracteriza, precisamente, por su
 					carácter antiestrófico. Robert Jammes imprimió en 1994 todo el texto seguido pero para marcar algunas transiciones sangró hacia la izquierda algunos versos. En esta edición de las <hi
 						rend="italic">Soledades</hi>, tanto en la transcripción paleográfica como en el texto modernizado, he conservado la disposición del manuscrito Chacón.</p>
 				<p>La separación de palabras en el manuscrito Chacón es regular, claramente perceptible y próxima al uso actual; sin embargo, en algunas ocasiones el copista tiende a juntar algunas palabras
-					por razones fonéticas o prosódicas. Para solucionar esto he introducido un espacio para separar las palbras en los siguientes versos. En general, los casos corresponden a los grupos que combinan preposición <mentioned rend="italic">a</mentioned> + artículo determinante y conjunción <mentioned rend="italic">si</mentioned> + adverbio
-						<mentioned rend="italic">no</mentioned>; la mayoría se sitúa en la segunda parte del poema. A los casos señalados hay que sumar algunas contracciones como <mentioned rend="italic"
-						>deste</mentioned>, <mentioned rend="italic">dellos</mentioned>, <mentioned rend="italic">desta</mentioned>, <mentioned rend="italic">destos</mentioned>, etc. Cuando la separación y
-					modernización suponía incrementar el número de sílabas del verso (por ejemplo, al romper una sinalefa), se ha mantenido la unión tanto en la transcripción paleográfica como en la
-					modernización.</p>
+					por razones fonéticas o prosódicas. Para solucionar esto he introducido un espacio para separar las palbras en los siguientes versos. En general, los casos corresponden a los grupos que
+					combinan preposición <mentioned rend="italic">a</mentioned> + artículo determinante y conjunción <mentioned rend="italic">si</mentioned> + adverbio <mentioned rend="italic">no</mentioned>;
+					la mayoría se sitúa en la segunda parte del poema. A los casos señalados hay que sumar algunas contracciones como <mentioned rend="italic">deste</mentioned>, <mentioned rend="italic"
+						>dellos</mentioned>, <mentioned rend="italic">desta</mentioned>, <mentioned rend="italic">destos</mentioned>, etc. Cuando la separación y modernización suponía incrementar el número de
+					sílabas del verso (por ejemplo, al romper una sinalefa), se ha mantenido la unión tanto en la transcripción paleográfica como en la modernización.</p>
 				<p>En el tratamiento de la puntuación y de la ortotipografía también se he logrado la doble presentación: por un lado, se ha conservado la puntuación del manuscrito Chacón; por el otro, se ha
 					propuesto una alternativa editorial allí donde se ha creído conveniente para facilitar la comprensión de la frase y para cumplir con las reglas gramaticales modernas. A diferencia de Jammes,
 					he decidido mantener la coma de Chacón en el tercer verso de la Dedicatoria para leer <mentioned rend="italic">en soledad confusa,</mentioned> de tal modo que el complemento circunstancial
 					se aplique tanto a los <mentioned rend="italic">pasos</mentioned> del peregrino como a la inspiración de los <mentioned rend="italic">versos</mentioned>. Por último, no se ha perseguido
 					eliminar ambigüedades sintácticas gracias a la puntuación: la construcción de los hipérbatos se podría aclarar introduciendo comas, tal y como hizo Antonio Carreira <ref target="#gon2000"
-						>(Góngora, 2000)</ref>, pero me ha parecido que la duda que acecha al lector que intenta reconstruir la frase es intencionada. </p>
+						xml:id="ref_79">(Góngora, 2000)</ref>, pero me ha parecido que la duda que acecha al lector que intenta reconstruir la frase es intencionada. </p>
 				<p>El uso de signos de exclamación e interrogación se ha mantenido en la presentación paleográfica —solo aparecen signos de cierre— y se ha unificado a la norma actual en la presentación
 					modernizada; lo mismo ocurre con el uso de las comillas en los discursos citados: en la transcripción paleográfica no hay, en el texto modernizado se han debido introducir. Por lo que se
 					refiere al uso del paréntesis, se ha seguido el original en la presentación paleográfica y, en la medida de lo posible, en la modernización. En el texto modernizado en una ocasión se ha
-					sustituido el paréntesis por una raya o guion largo, para introducir un verbo <hi rend="italic">dicendi</hi>; en otras cinco ocasiones se han suprimido los paréntesis que, a mi
-					parecer, son erróneos. Pero en general se ha preferido seguir a Chacón a utilizar rayas (Alonso) o comas (Jammes).</p>
+					sustituido el paréntesis por una raya o guion largo, para introducir un verbo <hi rend="italic">dicendi</hi>; en otras cinco ocasiones se han suprimido los paréntesis que, a mi parecer, son
+					erróneos. Pero en general se ha preferido seguir a Chacón a utilizar rayas (Alonso) o comas (Jammes).</p>
 				<p>La acentuación de la transcripción paleográfica corresponde a la del original; por el contrario, se ha acentuado a la norma actual en el texto modernizado. Así, por ejemplo, no he puesto
 					tilde diacrítica en el adverbio <mentioned rend="italic">solo</mentioned>, en los pronombres demostrativos <mentioned rend="italic">este</mentioned> y <mentioned rend="italic"
 						>aquel</mentioned> (ni en sus derivados) ni en monosílabos como el imperativo (por ejemplo, <mentioned rend="italic">di</mentioned>, del verbo <mentioned rend="italic">decir</mentioned>) o
@@ -1497,13 +1502,13 @@
 						>Ocëáno</mentioned>). En esta edición no he puesto diéresis sobre la <mentioned rend="italic">e</mentioned> en ningún caso: cuando la palabra debe pronunciarse como esdrújulo he puesto la
 					tilde donde corresponde (<mentioned rend="italic">Océano</mentioned> u <mentioned rend="italic">océano</mentioned>: I: 22, 35, 425, 474, 529; II: 75, 163, 376, 494, 760); en cambio, cuando
 					la palabra es llana no he puesto tilde (ni diéresis) sobre ninguna letra (<mentioned rend="italic">Oceano</mentioned> u <mentioned rend="italic">oceano</mentioned>: I: 405; II: 10, 701). </p>
-				<p>La sinéresis, es decir, la unión de dos sílabas que por lo común debieran pronunciarse de manera separada como un hiato, no es tan frecuente en las <hi rend="italic"
-						>Soledades</hi>; únicamente se da en once casos: <mentioned rend="italic">podía</mentioned> (I: 7), <mentioned rend="italic">alquería</mentioned> (I: 96), <mentioned rend="italic"
-						>perdían</mentioned> (I: 48), <mentioned rend="italic">había</mentioned> (I: 470),<mentioned rend="italic"> rubíes</mentioned> (I: 786), <mentioned rend="italic">habían</mentioned> (I:
-					958), <mentioned rend="italic">mía</mentioned> (II: 131), pías (II: 510), <mentioned rend="italic">sabía</mentioned> (II: 563), <mentioned rend="italic">escondía</mentioned> (II: 878) y
-						<mentioned rend="italic">fía</mentioned> (II: 882). Para contraponer diéresis y sinéresis, Jammes puso crema en el caso de la diéresis y quitó el acento a las palabras mencionadas. Tras
-					muchas dudas, he seguido el criterio de Alonso, que también defendió Antonio Alatorre (1996): en la transcripción paleográfica he seguido la ortografía de Chacón, que no pone acento (con la
-					excepción de <mentioned rend="italic">sabìa</mentioned>); en el texto modernizado, en cambio, he acentuado con arreglo a la norma actual.</p>
+				<p>La sinéresis, es decir, la unión de dos sílabas que por lo común debieran pronunciarse de manera separada como un hiato, no es tan frecuente en las <hi rend="italic">Soledades</hi>;
+					únicamente se da en once casos: <mentioned rend="italic">podía</mentioned> (I: 7), <mentioned rend="italic">alquería</mentioned> (I: 96), <mentioned rend="italic">perdían</mentioned> (I:
+					48), <mentioned rend="italic">había</mentioned> (I: 470),<mentioned rend="italic"> rubíes</mentioned> (I: 786), <mentioned rend="italic">habían</mentioned> (I: 958), <mentioned rend="italic"
+						>mía</mentioned> (II: 131), pías (II: 510), <mentioned rend="italic">sabía</mentioned> (II: 563), <mentioned rend="italic">escondía</mentioned> (II: 878) y <mentioned rend="italic"
+						>fía</mentioned> (II: 882). Para contraponer diéresis y sinéresis, Jammes puso crema en el caso de la diéresis y quitó el acento a las palabras mencionadas. Tras muchas dudas, he seguido
+					el criterio de Alonso, que también defendió Antonio Alatorre (1996): en la transcripción paleográfica he seguido la ortografía de Chacón, que no pone acento (con la excepción de <mentioned
+						rend="italic">sabìa</mentioned>); en el texto modernizado, en cambio, he acentuado con arreglo a la norma actual.</p>
 				<p>El texto de Chacón también contiene algunas formas abreviadas. Estas se han conservado en la transcripción paleográfica y se han desarrollado en la modernización: <mentioned rend="italic"
 						>pongã</mentioned> (I: 159), <mentioned rend="italic">fragãtes</mentioned> (II: 335), <mentioned rend="italic">Lici.</mentioned> (II: 556, 570, 584, 598), <mentioned rend="italic"
 						>Mic.</mentioned> (II: 563, 577, 591), <mentioned rend="italic">Qe</mentioned> (II: 847, 934), <mentioned rend="italic">sũma</mentioned> (II: 873), <mentioned rend="italic">D</mentioned>.
@@ -1573,11 +1578,11 @@
 						rend="italic">sol</mentioned>, <mentioned rend="italic">océano</mentioned>, <mentioned rend="italic">aurora</mentioned> (y otras palabras semejantes) tanto con mayúscula inicial como con
 					minúscula, en función de si el referente es una divinidad o personificación, o bien el fenómeno natural, aunque debo confesar que en muchas ocasiones me parece que la ambigüedad es
 					intencionada. </p>
-				<p>En resumen, a la hora de establecer el texto las <hi rend="italic">Soledades</hi> he tenido en cuenta la posibilidad de presentar las particularidades gráfica del manuscrito
-					Chacón y, simultáneamente, ofrecer una propuesta modernizada, regularizada, puntuada según las convenciones actuales y sin errores evidentes. De esta manera, el lector de la edición puede
-					acceder al texto del documento y al texto de la obra, comparar ambos y, por tanto, valorar las intervenciones editoriales. La principal novedad de esta metodología radica en que la
-					separación entre transcripción paleográfica y modernización es más clara y nítida. Si en el pasado algunos editores decidieron modernizar el texto pero conservar algunas particularidades
-					ortográficas del manuscrito Chacón, como la grafía de ciertas palabras cultas y el uso de la mayúscula, en una edición académica digital no es necesario mezclar ambas perspectivas.</p>
+				<p>En resumen, a la hora de establecer el texto las <hi rend="italic">Soledades</hi> he tenido en cuenta la posibilidad de presentar las particularidades gráfica del manuscrito Chacón y,
+					simultáneamente, ofrecer una propuesta modernizada, regularizada, puntuada según las convenciones actuales y sin errores evidentes. De esta manera, el lector de la edición puede acceder al
+					texto del documento y al texto de la obra, comparar ambos y, por tanto, valorar las intervenciones editoriales. La principal novedad de esta metodología radica en que la separación entre
+					transcripción paleográfica y modernización es más clara y nítida. Si en el pasado algunos editores decidieron modernizar el texto pero conservar algunas particularidades ortográficas del
+					manuscrito Chacón, como la grafía de ciertas palabras cultas y el uso de la mayúscula, en una edición académica digital no es necesario mezclar ambas perspectivas.</p>
 			</div>
 
 		</front>
@@ -24421,8 +24426,8 @@
 						<orig>Destos</orig>
 						<reg>De estos</reg>
 					</choice> pendientes agradables casos<note type="editorial"><p>En el manuscrito Chacón aparece aquí llamada en forma de vegetal que remite a una nota situada al final de la página. La nota
-							dice lo siguiente: <q type="notequote">No pudo la instancia de don Antonio Chacón hacer que pasase adelante con las <hi rend="italic">Soledades</hi>, aunque determinado ya
-								a ello las prosiguió con los versos que hay que dice: <mentioned rend="italic"> De estos pendientes agradables casos</mentioned>, etc. hasta el último de esta plana, si bien hay pocos
+							dice lo siguiente: <q type="notequote">No pudo la instancia de don Antonio Chacón hacer que pasase adelante con las <hi rend="italic">Soledades</hi>, aunque determinado ya a ello las
+								prosiguió con los versos que hay que dice: <mentioned rend="italic"> De estos pendientes agradables casos</mentioned>, etc. hasta el último de esta plana, si bien hay pocos
 								[manuscritos] que los tengan.</q> En concreto, solo siete testimonios de los que he cotejado, a saber: E, H, pe, ho33, sa y ho54.</p></note>
 				</l>
 				<l xml:id="v-2066">
