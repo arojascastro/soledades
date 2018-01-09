@@ -260,7 +260,7 @@
 
         <rule context="tei:rdg">
 
-            <assert test="matches(@type, 'error') or matches(@type, 'variant')">A &lt;rdg&gt; element must have a @type attribute whose values are 'error' or 'variant'.</assert>
+            <assert test="matches(@type, 'error') or matches(@type, 'variante')">A &lt;rdg&gt; element must have a @type attribute whose values are 'error' or 'variante'.</assert>
 
             <assert
                 test="
