@@ -4997,7 +4997,7 @@
                         <app>
                             <lem>tejió de verdes hojas la arboleda,</lem>
                             <rdg type="error" wit="#A">tejió de verdes hojas de arboleda,</rdg>
-                            <rdg type="variant" wit="#Br #Rm #Pr #Rl #O">tejió, sino la rústica arboleda,</rdg>
+                            <rdg type="variante" wit="#Br #Rm #Pr #Rl #O">tejió, sino la rústica arboleda,</rdg>
                         </app>
                     </l>
                     <l xml:id="v-0755">y <app>
@@ -7939,7 +7939,7 @@
                         <app>
                             <lem>Sentados pues sin ceremonias, ellas</lem>
                             <rdg wit="#Ml" type="error">Sentados pues sin ceremonia, ellas</rdg>
-                            <rdg wit="#Pr" type="variant">Sentados pues <subst>
+                            <rdg wit="#Pr" type="variante">Sentados pues <subst>
                                     <del rend="strikethrough">los cuatros en corchos</del>
                                     <add place="above">sin ceremonias,</add>
                                 </subst> ellas</rdg>
