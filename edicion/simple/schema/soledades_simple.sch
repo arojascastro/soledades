@@ -111,7 +111,7 @@
 
             <assert test="tei:persName">A &lt;person&gt; element must contain a &lt;perName&gt; element.</assert>
 
-            <assert test="tei:p">A &lt;personn&gt; element must contain a &lt;p&gt; element.</assert>
+            <assert test="tei:note">A &lt;person&gt; element must contain a &lt;p&gt; element.</assert>
 
             <assert test="matches(@xml:id, '\w\d{3}')">A &lt;person&gt; element must contain a '@xml:id' atribute.</assert>
 
@@ -121,8 +121,6 @@
             
             <assert test="tei:placeName or tei:geogName">A &lt;place&gt; element must contain a &lt;placeName&gt; or &lt;geogName&gt;  element.</assert>
 
-            <assert test="tei:p">A &lt;placen&gt; element must contain a &lt;p&gt; element.</assert>
-             
             <assert test="matches(@xml:id, '\w\d{3}')">A &lt;person&gt; element must contain a '@xml:id' atribute.</assert>
             
         </rule>
