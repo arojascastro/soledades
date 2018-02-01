@@ -554,449 +554,449 @@
 					<head type="sub">Onomástico</head>
 					<person xml:id="act001">
 						<persName>Acteón</persName>
-						<occupation>Era un célebre cazador iniciado en este arte por el centauro Quirón, también maestro de Aquiles. Hijo de Autónoe y nieto de Cadmo, sufrió la ira de Diana tras verla desnuda
-							bañándose en un lago; la diosa lo convirtió en ciervo y sus propios perros le dieron caza.</occupation>
+						<note type="bio">Era un célebre cazador iniciado en este arte por el centauro Quirón, también maestro de Aquiles. Hijo de Autónoe y nieto de Cadmo, sufrió la ira de Diana tras verla
+							desnuda bañándose en un lago; la diosa lo convirtió en ciervo y sus propios perros le dieron caza.</note>
 					</person>
 					<person xml:id="alc004">
 						<persName>Alcides</persName>
-						<occupation>Es apodo de Heracles o Hércules. Era un héroe de la mitología griega considerado hijo de Zeus y Alcmena, una reina mortal, hijo adoptivo de Anfitrión y bisnieto de Perseo por
-							la línea materna. Recibió al nacer el nombre de Alceo o Alcides, en honor a su abuelo Alceo, si bien esta misma palabra evoca la idea de fortaleza. Fue en su edad adulta cuando recibió
-							el nombre con que se lo conoce, impuesto por Apolo, para indicar su condición de servidor de la diosa Hera.</occupation>
+						<note type="bio">Es apodo de Heracles o Hércules. Era un héroe de la mitología griega considerado hijo de Zeus y Alcmena, una reina mortal, hijo adoptivo de Anfitrión y bisnieto de Perseo
+							por la línea materna. Recibió al nacer el nombre de Alceo o Alcides, en honor a su abuelo Alceo, si bien esta misma palabra evoca la idea de fortaleza. Fue en su edad adulta cuando
+							recibió el nombre con que se lo conoce, impuesto por Apolo, para indicar su condición de servidor de la diosa Hera.</note>
 					</person>
 					<person xml:id="alc005">
 						<persName>Alcimedón</persName>
-						<occupation>En la mitología griega se conocen varios héroes con este nombre; sin embargo, lo más probable es que Góngora se refiera al personaje de Virgilio (<hi rend="italic"
-							>Églogas</hi>, III) famoso por sus vasos y cuencos.</occupation>
+						<note type="bio">En la mitología griega se conocen varios héroes con este nombre; sin embargo, lo más probable es que Góngora se refiera al personaje de Virgilio (<hi rend="italic"
+								>Églogas</hi>, III) famoso por sus vasos y cuencos.</note>
 					</person>
 					<person xml:id="ama006">
 						<persName>Amaltea</persName>
-						<occupation>Es, en la mitología griega, la nodriza de Zeus. A veces se la representa como la cabra que amamantó al dios infante en una cueva de Creta, y otras veces como una náyade hija de
-							Hemonio, quien lo crió con la leche de una cabra en el monte Ida.</occupation>
+						<note type="bio">Es, en la mitología griega, la nodriza de Zeus. A veces se la representa como la cabra que amamantó al dios infante en una cueva de Creta, y otras veces como una náyade
+							hija de Hemonio, quien lo crió con la leche de una cabra en el monte Ida.</note>
 					</person>
 					<person xml:id="apo009">
 						<persName>Apolo</persName>
-						<occupation>En la mitología griega, era hijo de Zeus y Leto, y hermano mellizo de Artemisa. Se identificaba con la luz de la verdad y hacía a los hombres conscientes de sus faltas;
+						<note type="bio">En la mitología griega, era hijo de Zeus y Leto, y hermano mellizo de Artemisa. Se identificaba con la luz de la verdad y hacía a los hombres conscientes de sus faltas;
 							presidía las leyes de la religión y las constituciones de las ciudades, era símbolo de inspiración profética y artística, siendo el patrono del más famoso oráculo de la Antigüedad, el
 							oráculo de Delfos, y líder de las musas. Fue representado generalmente como un hombre joven, desnudo y sin barba, en la plenitud de su vigor, a veces con un manto, un arco y un carcaj de
-							flechas, o una lira, creada para él por Hermes, y con algunos de sus animales simbólicos como la serpiente, el cuervo o el grifo.</occupation>
+							flechas, o una lira, creada para él por Hermes, y con algunos de sus animales simbólicos como la serpiente, el cuervo o el grifo.</note>
 					</person>
 					<person xml:id="ara010">
 						<persName>Aracne</persName>
-						<occupation>Fue una gran tejedora que alardeó de ser más habilidosa que la diosa Atenea (Minerva, en la mitología romana). Ofendida, la diosa entró en competición con Aracne, pero, según
-							cuenta Ovidio, no pudo superarla. Además, el tema elegido por Aracne para su tapiz (los amores de los dioses) fue ofensivo, y la diosa la transformó en una araña.</occupation>
+						<note type="bio">Fue una gran tejedora que alardeó de ser más habilidosa que la diosa Atenea (Minerva, en la mitología romana). Ofendida, la diosa entró en competición con Aracne, pero,
+							según cuenta Ovidio, no pudo superarla. Además, el tema elegido por Aracne para su tapiz (los amores de los dioses) fue ofensivo, y la diosa la transformó en una araña.</note>
 					</person>
 					<person xml:id="ari011">
 						<persName>Arión</persName>
-						<occupation>Arión de Lesbos o de Metimna fue un tañedor de lira o cítara, considerado el mejor de su tiempo (siglo VII a. C.). Gracias a su talento se granjeó la amistad del tirano de
+						<note type="bio">Arión de Lesbos o de Metimna fue un tañedor de lira o cítara, considerado el mejor de su tiempo (siglo VII a. C.). Gracias a su talento se granjeó la amistad del tirano de
 							Corinto, Periandro, que lo honraba con los máximos honores. Sin embargo, Arión marchó hacia Italia, haciendo una gira que incluía Sicilia donde obtuvo un éxito rotundo. En su camino de
 							regreso alquiló una nave corintia cuya tripulación, codiciosa del dinero que había ganado, intentó matarle. Arión les ofreció astutamente que retrasaran su asesinato para así poder
 							cantarles durante la travesía. Arión entonó entonces una canción con una voz tan aguda que atrajo a los delfines, se arrojó al mar y logró alcanzar la costa de Laconia cabalgando a lomos
-							de uno de estos animales.</occupation>
+							de uno de estos animales.</note>
 					</person>
 					<person xml:id="asc012">
 						<persName>Ascálafo</persName>
-						<occupation>En la mitología griega, era hijo del oceánida Aqueronte, el río del Hades. Cuando Hades secuestró a Perséfone, Zeus le ordenó que le diese libertad para poder estar con su
+						<note type="bio">En la mitología griega, era hijo del oceánida Aqueronte, el río del Hades. Cuando Hades secuestró a Perséfone, Zeus le ordenó que le diese libertad para poder estar con su
 							madre, Deméter. Hades aceptó siempre y cuando Perséfone no hubiera comido nada en su estancia en el Hades, pues quien probaba la comida de los muertos no podía volver a la vida. Ya se
 							preparaba la joven para regresar junto a su madre cuando Ascálafo declaró haberla visto comer un gajo de una granada, por lo que Perséfone tuvo que quedarse junto a su marido. Al final,
 							Zeus sentenció que Perséfone permanecería en el Hades un tercio del año (el invierno), y con su madre el resto. En castigo por su declaración, Deméter lo transformó en una lechuza
-							campestre. Según Ovidio, fue la misma Perséfone la que transformó a Ascálafo en ave nocturna rociándolo con agua del río Flegetonte.</occupation>
+							campestre. Según Ovidio, fue la misma Perséfone la que transformó a Ascálafo en ave nocturna rociándolo con agua del río Flegetonte.</note>
 					</person>
 					<person xml:id="ata100">
 						<persName>Atalanta</persName>
-						<occupation>Es una heroína vinculada al ciclo arcaico de la mitología griega, consagrada a Artemisa y reconocida por sus inmejorables habilidades para la caza. Debía mantenerse siempre
-							virgen porque estaba consagrada a la diosa y porque un oráculo le predijo que el día en que se casara sería convertida en animal. Para evitar cualquier pretendiente, anunció que su
-							esposo sería sólo aquel que lograra vencerla en una carrera; por el contrario, si ella triunfaba, debía matar a su oponente. Fue derrotada por Hipómenes gracias a un ardid: llevaba con
-							él unas manzanas de oro que le había regalado Afrodita y que procedían del jardín de las Hespérides. Cada vez que la joven iba a darle alcance en la carrera, Hipómenes dejaba caer una de
-							las manzanas, que Atalanta se detenía a recogerlas. Distraída de este modo, el joven logró llegar antes a la meta.</occupation>
+						<note type="bio">Es una heroína vinculada al ciclo arcaico de la mitología griega, consagrada a Artemisa y reconocida por sus inmejorables habilidades para la caza. Debía mantenerse
+							siempre virgen porque estaba consagrada a la diosa y porque un oráculo le predijo que el día en que se casara sería convertida en animal. Para evitar cualquier pretendiente, anunció que
+							su esposo sería sólo aquel que lograra vencerla en una carrera; por el contrario, si ella triunfaba, debía matar a su oponente. Fue derrotada por Hipómenes gracias a un ardid: llevaba
+							con él unas manzanas de oro que le había regalado Afrodita y que procedían del jardín de las Hespérides. Cada vez que la joven iba a darle alcance en la carrera, Hipómenes dejaba caer
+							una de las manzanas, que Atalanta se detenía a recogerlas. Distraída de este modo, el joven logró llegar antes a la meta.</note>
 					</person>
 					<person xml:id="aur013">
 						<persName>Aura</persName>
-						<occupation>En la mitología griega y romana, Aura es la personificación divina de la brisa. Era hija de una frigia, Peribea, y del titán Lelanto. Veloz como el viento, Aura cazaba con las
-							compañeras de Artemisa. Se enamoró de ella Dioniso, tratando en vano de alcanzarla a la carrera; más ligera que él, siempre conseguía escapar, hasta que Afrodita, en respuesta a la
-							demanda del dios, la hizo enloquecer. De este modo se entregó a Dioniso, y tuvo con él dos hijos, que eran gemelos.</occupation>
+						<note type="bio">En la mitología griega y romana, Aura es la personificación divina de la brisa. Era hija de una frigia, Peribea, y del titán Lelanto. Veloz como el viento, Aura cazaba con
+							las compañeras de Artemisa. Se enamoró de ella Dioniso, tratando en vano de alcanzarla a la carrera; más ligera que él, siempre conseguía escapar, hasta que Afrodita, en respuesta a la
+							demanda del dios, la hizo enloquecer. De este modo se entregó a Dioniso, y tuvo con él dos hijos, que eran gemelos.</note>
 					</person>
 					<person xml:id="aur014">
 						<persName>Aurora</persName>
-						<occupation>En la mitología romana, Aurora es la deidad que personifica el amanecer, equivalente a la griega Eos. Es una mujer que vuela por el cielo para anunciar la llegada del sol. Sus
-							hermanos son el Sol y la Luna. Tuvo varios hijos: cuatro de sus hijos son los cuatro vientos. Según el mito, las lágrimas que derrama mientras vuela por el asesinato de uno de sus hijos
-							son el rocío de la mañana.</occupation>
+						<note type="bio">En la mitología romana, Aurora es la deidad que personifica el amanecer, equivalente a la griega Eos. Es una mujer que vuela por el cielo para anunciar la llegada del sol.
+							Sus hermanos son el Sol y la Luna. Tuvo varios hijos: cuatro de sus hijos son los cuatro vientos. Según el mito, las lágrimas que derrama mientras vuela por el asesinato de uno de sus
+							hijos son el rocío de la mañana.</note>
 					</person>
 					<person xml:id="aus015">
 						<persName>Austro</persName>
-						<occupation>Austro, Austros o Auster, en la mitología romana, es el dios de los vientos del Sur, o más exactamente, del mediodía. Su equivalente en la mitología griega era Noto. Vientos
-							calientes, desecadores, espesos, considerados a veces como adversos porque podían corromper el aire por su humedad contenida. Se asocia con el final del verano y traía las tormentas de
-							viento y la lluvia, por lo que era temido como destructor de las cosechas.</occupation>
+						<note type="bio">Austro, Austros o Auster, en la mitología romana, es el dios de los vientos del Sur, o más exactamente, del mediodía. Su equivalente en la mitología griega era Noto.
+							Vientos calientes, desecadores, espesos, considerados a veces como adversos porque podían corromper el aire por su humedad contenida. Se asocia con el final del verano y traía las
+							tormentas de viento y la lluvia, por lo que era temido como destructor de las cosechas.</note>
 					</person>
 					<person xml:id="bac016">
 						<persName>Baco</persName>
-						<occupation>En la mitología clásica, Dioniso significa «hijo de dios». Es el dios de la vendimia y el vino, inspirador de la locura ritual y el éxtasis, y un personaje importante de la
-							mitología griega, como hijo del dios principal Zeus. Aunque los orígenes geográficos de su culto son desconocidos, casi todas las tragedias lo presentan como «extranjero». Fue también
+						<note type="bio">En la mitología clásica, Dioniso significa «hijo de dios». Es el dios de la vendimia y el vino, inspirador de la locura ritual y el éxtasis, y un personaje importante de
+							la mitología griega, como hijo del dios principal Zeus. Aunque los orígenes geográficos de su culto son desconocidos, casi todas las tragedias lo presentan como «extranjero». Fue también
 							conocido por los romanos como Baco y el frenesí que inducía. Es el dios patrón de la agricultura y el teatro. También es conocido con el epíteto «Líeo», que significa «el que
-							relaja».</occupation>
+							relaja».</note>
 					</person>
 					<person xml:id="cat017">
 						<persName>Catón</persName>
-						<occupation>Marco Porcio Catón (Roma, 95 a. C. – Útica, 12 de abril de 46 a. C.) fue un político romano. También se le llama Catón el Joven o Catón de Útica para distinguirlo de su
+						<note type="bio">Marco Porcio Catón (Roma, 95 a. C. – Útica, 12 de abril de 46 a. C.) fue un político romano. También se le llama Catón el Joven o Catón de Útica para distinguirlo de su
 							bisabuelo Catón el Viejo o Catón el Censor (234-149 a. C.). Célebre por su determinación, ayudó a Cicerón en la lucha contra la conspiracion de Catilina y opositor de César. Tras la
 							derrota de su bando en la batalla de Farsalia, se suicidó. De acuerdo a la crónica de Plutarco, Catón trató de suicidarse arrojándose sobre su propia espada. Es recordado como un
-							filósofo estoico y como uno de los más activos defensores de la república romana.</occupation>
+							filósofo estoico y como uno de los más activos defensores de la república romana.</note>
 					</person>
 					<person xml:id="cef018">
 						<persName>Cefeo</persName>
-						<occupation>En la mitología griega, era hijo de Belo (quien a su vez era hijo de Poseidón) y de Anquínoe. Era el padre de Andrómeda y esposo de Casiopea. Juntos gobernaban sobre los
+						<note type="bio">En la mitología griega, era hijo de Belo (quien a su vez era hijo de Poseidón) y de Anquínoe. Era el padre de Andrómeda y esposo de Casiopea. Juntos gobernaban sobre los
 							cefenos, pueblo que a veces se situaba en Etiopía, a veces a orillas del río Éufrates y a veces en Jopa, en Palestina. A su muerte el trono pasó a manos de Perses, hijo de Perseo y
-							Andrómeda. Cefeo da su nombre a una constelación del hemisferio boreal.</occupation>
+							Andrómeda. Cefeo da su nombre a una constelación del hemisferio boreal.</note>
 					</person>
 					<person xml:id="cef019">
 						<persName>Céfiro</persName>
-						<occupation>En la mitología griega, era el dios del viento del oeste, hijo de Astreo y de Eos. Céfiro era el más suave de todos y se le conocía como el viento fructificador, mensajero de
-							la primavera. Se creía que vivía en una cueva de Tracia.</occupation>
+						<note type="bio">En la mitología griega, era el dios del viento del oeste, hijo de Astreo y de Eos. Céfiro era el más suave de todos y se le conocía como el viento fructificador, mensajero
+							de la primavera. Se creía que vivía en una cueva de Tracia.</note>
 					</person>
 					<person xml:id="cer020">
 						<persName>Ceres</persName>
-						<occupation>En la mitología romana Ceres era la diosa de la agricultura, las cosechas y la fecundidad. Su equivalente en la mitología griega era Deméter. Fue esposa de Júpiter y madre de
-							Proserpina.</occupation>
+						<note type="bio">En la mitología romana Ceres era la diosa de la agricultura, las cosechas y la fecundidad. Su equivalente en la mitología griega era Deméter. Fue esposa de Júpiter y madre
+							de Proserpina.</note>
 					</person>
 					<person xml:id="cie021">
 						<persName>Cierzo</persName>
-						<occupation>Es un viento septentrional más o menos inclinado a levante o a poniente, según la situación geográfica de la región en que sopla. En la mitología clásica, además de otros
+						<note type="bio">Es un viento septentrional más o menos inclinado a levante o a poniente, según la situación geográfica de la región en que sopla. En la mitología clásica, además de otros
 							dioses-vientos menores, existen cuatro vientos principales: del Norte (Bóreas), del Sur (Noto o Austro), del Este (Euro) y del Oeste (Céfiro). Góngora parece equiparar el cierzo a estas
-							divinidades mitológicas.</occupation>
+							divinidades mitológicas.</note>
 					</person>
 					<person xml:id="cli022">
 						<persName>Clicie</persName>
-						<occupation>En la mitología griega, este nombre aparece en distintos contextos y se refiere a múltiples personajes. Cloris es una ninfa asociada con la primavera, las flores y la
+						<note type="bio">En la mitología griega, este nombre aparece en distintos contextos y se refiere a múltiples personajes. Cloris es una ninfa asociada con la primavera, las flores y la
 							fertilidad. Los autores latinos la equipararon a la diosa Flora. Dependiendo de las tradiciones, fue raptada por el viento Bóreas (en Ovidio, el viento Céfiro), a quien dio numerosos
-							hijos.</occupation>
+							hijos.</note>
 					</person>
 					<person xml:id="clo023">
 						<persName>Cloris</persName>
-						<occupation>Era ninfa hija de Areturo que fue raptada por el dios-viento del Norte (Bóreas) y transportada hasta el monte Nifates, en el Caúcaso. De esta relación nació una hija llamada
-							Hirpace. Cloris fue pronto abandonada por Bóreas, que prefirió a Oritía, hija del rey de Atenas. Ahora bien, según Ovidio, Cloris era una ninfa que se casó con el dios-viento Céfiro, al
-							que dio muchos hijos. Recibió de su marido el imperio de las flores. Los romanos la veneraban con el nombre de Flora. Recibió culto en el mundo griego y especialmente en el romano, donde
-							se celebraban multitud de fiestas en su honor, con mujeres jóvenes danzando por las calles.</occupation>
+						<note type="bio">Era ninfa hija de Areturo que fue raptada por el dios-viento del Norte (Bóreas) y transportada hasta el monte Nifates, en el Caúcaso. De esta relación nació una hija
+							llamada Hirpace. Cloris fue pronto abandonada por Bóreas, que prefirió a Oritía, hija del rey de Atenas. Ahora bien, según Ovidio, Cloris era una ninfa que se casó con el dios-viento
+							Céfiro, al que dio muchos hijos. Recibió de su marido el imperio de las flores. Los romanos la veneraban con el nombre de Flora. Recibió culto en el mundo griego y especialmente en el
+							romano, donde se celebraban multitud de fiestas en su honor, con mujeres jóvenes danzando por las calles.</note>
 					</person>
 					<person xml:id="clo024">
 						<persName>Cloto</persName>
-						<occupation>En la mitología griega, Cloto es la más joven de las tres moiras, hijas de Zeus y Temis que presidían el destino del hombre, pero una de las diosas griegas más antiguas. Su
-							posición era la primera de los Tres Destinos, pues era Cloto quien hilaba las hebras de la vida con su rueca. Su equivalente en la mitología romana era Nona.</occupation>
+						<note type="bio">En la mitología griega, Cloto es la más joven de las tres moiras, hijas de Zeus y Temis que presidían el destino del hombre, pero una de las diosas griegas más antiguas.
+							Su posición era la primera de los Tres Destinos, pues era Cloto quien hilaba las hebras de la vida con su rueca. Su equivalente en la mitología romana era Nona.</note>
 					</person>
 					<person xml:id="cup026">
 						<persName>Cupido</persName>
-						<occupation>Cupido (llamado también Amor en la poesía latina) es, en la mitología romana, el dios del deseo amoroso. Según la versión más difundida, es hijo de Venus, la diosa del amor, la
-							belleza y la fertilidad, y de Marte, el dios de la guerra. Se le representa generalmente como un niño alado, con los ojos vendados y armado de arco, flechas y aljaba. Su equivalente en
-							la mitología griega es Eros.</occupation>
+						<note type="bio">Cupido (llamado también Amor en la poesía latina) es, en la mitología romana, el dios del deseo amoroso. Según la versión más difundida, es hijo de Venus, la diosa del
+							amor, la belleza y la fertilidad, y de Marte, el dios de la guerra. Se le representa generalmente como un niño alado, con los ojos vendados y armado de arco, flechas y aljaba. Su
+							equivalente en la mitología griega es Eros.</note>
 					</person>
 					<person xml:id="ded027">
 						<persName>Dédalo</persName>
-						<occupation>En la mitología griega, Dédalo, hijo de Eupálamo, era un arquitecto y artesano muy hábil, famoso por haber construido el laberinto de Creta en donde se encerró al Minotauro y
-							del que consiguió escapar Teseo. Dédalo tuvo dos hijos: Ícaro y Yápige.</occupation>
+						<note type="bio">En la mitología griega, Dédalo, hijo de Eupálamo, era un arquitecto y artesano muy hábil, famoso por haber construido el laberinto de Creta en donde se encerró al
+							Minotauro y del que consiguió escapar Teseo. Dédalo tuvo dos hijos: Ícaro y Yápige.</note>
 					</person>
 					<person xml:id="dia028">
 						<persName>Diana</persName>
-						<occupation>En la mitología romana, Diana era la diosa virgen de la caza, protectora de la naturaleza y la Luna. Su diosa griega equivalente en la literatura es Artemisa. Nacida poco antes
-							que su hermano mellizo Apolo en Delos, Diana era hija de Júpiter y Latona. Siendo testigo de los dolores del parto de su madre, concibió tal aversión hacia el matrimonio que pidió y
-							obtuvo de su padre la gracia de guardar perpetua virginidad, como su hermana Minerva (Atenea para los griegos).</occupation>
+						<note type="bio">En la mitología romana, Diana era la diosa virgen de la caza, protectora de la naturaleza y la Luna. Su diosa griega equivalente en la literatura es Artemisa. Nacida poco
+							antes que su hermano mellizo Apolo en Delos, Diana era hija de Júpiter y Latona. Siendo testigo de los dolores del parto de su madre, concibió tal aversión hacia el matrimonio que pidió
+							y obtuvo de su padre la gracia de guardar perpetua virginidad, como su hermana Minerva (Atenea para los griegos).</note>
 					</person>
 					<person xml:id="did029">
 						<persName>Dido</persName>
-						<occupation>En fuentes griegas y romanas, también fue conocida como Elisa de Tiro; aparece como la fundadora y primera reina de Cartago, en el actual Túnez. Su fama se debe principalmente
-							al relato incluido en la <hi rend="italic">Eneida</hi> del poeta romano Virgilio. Era hija del rey de Tiro, Matán I, también llamado Belo. Dido tenía dos hermanos: Pigmalión, que heredó
-							el trono de Tiro, y la pequeña Anna Perenna.</occupation>
+						<note type="bio">En fuentes griegas y romanas, también fue conocida como Elisa de Tiro; aparece como la fundadora y primera reina de Cartago, en el actual Túnez. Su fama se debe
+							principalmente al relato incluido en la <hi rend="italic">Eneida</hi> del poeta romano Virgilio. Era hija del rey de Tiro, Matán I, también llamado Belo. Dido tenía dos hermanos:
+							Pigmalión, que heredó el trono de Tiro, y la pequeña Anna Perenna.</note>
 					</person>
 					<person xml:id="eco030">
 						<persName>Eco</persName>
-						<occupation>En la mitología griega, es una ninfa del monte Helicón que amaba su propia voz. Fue criada por ninfas y educada por las Musas. Fue condenada por Hera (Juno para los romanos) a
-							repetir la última palabra que decía la persona con la que mantenía una conversación. Eco se enamoró del hermoso pastor Narciso, hijo de la ninfa Liríope y del dios-río
-							Cefiso.</occupation>
+						<note type="bio">En la mitología griega, es una ninfa del monte Helicón que amaba su propia voz. Fue criada por ninfas y educada por las Musas. Fue condenada por Hera (Juno para los
+							romanos) a repetir la última palabra que decía la persona con la que mantenía una conversación. Eco se enamoró del hermoso pastor Narciso, hijo de la ninfa Liríope y del dios-río
+							Cefiso.</note>
 					</person>
 					<person xml:id="efi030">
 						<persName>Éfire</persName>
-						<occupation>Homero y Virgilio se refieren con este nombre a la ciudad de Corinto en el Peloponeso. Góngora, sin embargo, lo utiliza para nombrar a una de las hijas del anciano pescador en
-							la <hi rend="italic">Soledad segunda</hi>.</occupation>
+						<note type="bio">Homero y Virgilio se refieren con este nombre a la ciudad de Corinto en el Peloponeso. Góngora, sin embargo, lo utiliza para nombrar a una de las hijas del anciano
+							pescador en la <hi rend="italic">Soledad segunda</hi>.</note>
 					</person>
 					<person xml:id="eol033">
 						<persName>Eolo</persName>
-						<occupation>Con este nombre se refieren distintos personajes pero parece que Góngora remite a la tradición homérica. Según la <hi rend="italic">Odisea</hi>, Eolo era el Señor de los
+						<note type="bio">Con este nombre se refieren distintos personajes pero parece que Góngora remite a la tradición homérica. Según la <hi rend="italic">Odisea</hi>, Eolo era el Señor de los
 							Vientos, vivía en la isla flotante de Eolia, con sus seis hijos y sus seis hijas, que se habían casado entre sí. Zeus le había dado el poder de controlar los vientos; trató de ayudar a
-							Ulises, que lo visitó al retornar a Ítaca. También aparece en la <hi rend="italic">Eneida</hi> de Virgilio.</occupation>
+							Ulises, que lo visitó al retornar a Ítaca. También aparece en la <hi rend="italic">Eneida</hi> de Virgilio.</note>
 					</person>
 					<person xml:id="esp034">
 						<persName>Espío</persName>
-						<occupation>Es una nereida, hija de Nereo y de Doris, mencionada por Apolodoro, Hesíodo y Homero (<hi rend="italic">Ilíada</hi>, Libro XVIII); en español también se conoce como
-							Espeo.</occupation>
+						<note type="bio">Es una nereida, hija de Nereo y de Doris, mencionada por Apolodoro, Hesíodo y Homero (<hi rend="italic">Ilíada</hi>, Libro XVIII); en español también se conoce como
+							Espeo.</note>
 					</person>
 					<person xml:id="eur035">
 						<persName>Euro</persName>
-						<occupation>Era la deidad que representaba al viento del Este. Se creía que traía calor y lluvia, y su símbolo era una vasija invertida derramando agua. Su equivalente en la mitología
-							romana era Vulturno, un dios-río tribal que más tarde pasaría a ser la deidad romana del río Tíber.</occupation>
+						<note type="bio">Era la deidad que representaba al viento del Este. Se creía que traía calor y lluvia, y su símbolo era una vasija invertida derramando agua. Su equivalente en la mitología
+							romana era Vulturno, un dios-río tribal que más tarde pasaría a ser la deidad romana del río Tíber.</note>
 					</person>
 					<person xml:id="eur036">
 						<persName>Europa</persName>
-						<occupation>En la mitología griega, era una mujer fenicia de Tiro, que terminaría dando su nombre al continente europeo. Fue seducida por el dios Zeus transformado en toro blanco. Europa
-							se montó en él y Zeus aprovechó la portunidad para correr hasta el mar y nadar hasta Creta con la joven en el lomo. En la isla le reveló su identidad y Europa se conviertió en la primera
-							reina del lugar.</occupation>
+						<note type="bio">En la mitología griega, era una mujer fenicia de Tiro, que terminaría dando su nombre al continente europeo. Fue seducida por el dios Zeus transformado en toro blanco.
+							Europa se montó en él y Zeus aprovechó la portunidad para correr hasta el mar y nadar hasta Creta con la joven en el lomo. En la isla le reveló su identidad y Europa se conviertió en la
+							primera reina del lugar.</note>
 					</person>
 					<person xml:id="eut037">
 						<persName>Euterpe</persName>
-						<occupation>En la mitología griega, Euterpe es la Musa de la música, especialmente protectora del arte de tocar la flauta. Como las demás Musas era hija de Mnemósine y de Zeus. Por lo
-							general se la representa coronada de flores y llevando entre sus manos el doble-flautín. A finales de la época clásica se la denominaba musa de la poesía lírica.</occupation>
+						<note type="bio">En la mitología griega, Euterpe es la Musa de la música, especialmente protectora del arte de tocar la flauta. Como las demás Musas era hija de Mnemósine y de Zeus. Por lo
+							general se la representa coronada de flores y llevando entre sus manos el doble-flautín. A finales de la época clásica se la denominaba musa de la poesía lírica.</note>
 					</person>
 					<person xml:id="fae038">
 						<persName>Faetón</persName>
-						<occupation>En la mitología griega, Faetón o Faetonte era hijo de Helios (Febo), y de Clímene, esposa de Mérope. Faetón alardeaba con sus amigos de que su padre era el dios Sol. Para
+						<note type="bio">En la mitología griega, Faetón o Faetonte era hijo de Helios (Febo), y de Clímene, esposa de Mérope. Faetón alardeaba con sus amigos de que su padre era el dios Sol. Para
 							demostrarlo, acudió a su padre para pedirle que le dejara conducir su carruaje durante un día; Faetón perdió el control de los caballos que tiraban del carro y Zeus tuvo que intervenir
-							golpeando el carro desbocado con un rayo para pararlo.</occupation>
+							golpeando el carro desbocado con un rayo para pararlo.</note>
 					</person>
 					<person xml:id="fam039">
 						<persName>Fama</persName>
-						<occupation>En la mitología romana Fama era la personificación de los rumores, los cotilleos y la fama. Se encargaba de extender los rumores y los hechos de los hombres, sin importarle si
-							éstos eran ciertos o no, o eran justos o negativos. En cierto sentido se la consideraba una mensajera de Zeus. Era hija de Gea y se la representaba con una trompeta.</occupation>
+						<note type="bio">En la mitología romana Fama era la personificación de los rumores, los cotilleos y la fama. Se encargaba de extender los rumores y los hechos de los hombres, sin
+							importarle si éstos eran ciertos o no, o eran justos o negativos. En cierto sentido se la consideraba una mensajera de Zeus. Era hija de Gea y se la representaba con una trompeta.</note>
 					</person>
 					<person xml:id="feb040">
 						<persName>Febo</persName>
-						<occupation>En la mitología clásica, es la personificación del Sol, hijo de los titanes Hiperión y Tea, y padre de Faetón. Se representaba con una brillante aureola de rayos solares y
-							conduciendo su carro por el cielo. Con el paso del tiempo se identificó con Apolo.</occupation>
+						<note type="bio">En la mitología clásica, es la personificación del Sol, hijo de los titanes Hiperión y Tea, y padre de Faetón. Se representaba con una brillante aureola de rayos solares y
+							conduciendo su carro por el cielo. Con el paso del tiempo se identificó con Apolo.</note>
 					</person>
 					<person xml:id="fen041">
 						<persName>Fénix</persName>
-						<occupation>El Fénix es un ave mitológica del tamaño de un águila, de plumaje rojo, anaranjado y amarillo incandescente, de pico y garras fuertes. Se trataba de un ave fabulosa que se
+						<note type="bio">El Fénix es un ave mitológica del tamaño de un águila, de plumaje rojo, anaranjado y amarillo incandescente, de pico y garras fuertes. Se trataba de un ave fabulosa que se
 							consumía por acción del fuego cada 500 años, para luego resurgir de sus cenizas. Según algunos mitos, vivía en una región que comprendía la zona del Oriente Medio y la India, llegando
-							hasta Egipto. En la literatura clásica es mencionado por Heródoto, Plinio el Viejo, Luciano, Séneca y Ovidio, entre otros.</occupation>
+							hasta Egipto. En la literatura clásica es mencionado por Heródoto, Plinio el Viejo, Luciano, Séneca y Ovidio, entre otros.</note>
 					</person>
 					<person xml:id="fil042">
 						<persName>Filódoces</persName>
-						<occupation>Es una nereida mencionada por Virgilio en las <hi rend="italic">Geórgicas</hi> (Libro IV) y por Higinio en las <hi rend="italic">Fábulas mitológicas</hi>.</occupation>
+						<note type="bio">Es una nereida mencionada por Virgilio en las <hi rend="italic">Geórgicas</hi> (Libro IV) y por Higinio en las <hi rend="italic">Fábulas mitológicas</hi>.</note>
 					</person>
 					<person xml:id="for044">
 						<persName>Fortuna</persName>
-						<occupation>En la mitología romana, era la diosa de la suerte, buena o mala, aunque siempre se tendió a asociarla con lo próspero y la fertilidad. Se la representaba con una rueda que
-							simbolizaba el azar.</occupation>
+						<note type="bio">En la mitología romana, era la diosa de la suerte, buena o mala, aunque siempre se tendió a asociarla con lo próspero y la fertilidad. Se la representaba con una rueda que
+							simbolizaba el azar.</note>
 					</person>
 					<person xml:id="gan045">
 						<persName>Ganimedes</persName>
-						<occupation>En la mitología griega, era un héroe divino originario de la Tróade. Siendo un hermoso príncipe troyano, hijo del mismo epónimo Tros (o de Laomedonte, según otras fuentes), fue
-							secuestrado por Zeus en el monte Ida; se convirtió en el amante de Zeus y en el copero de los dioses.</occupation>
+						<note type="bio">En la mitología griega, era un héroe divino originario de la Tróade. Siendo un hermoso príncipe troyano, hijo del mismo epónimo Tros (o de Laomedonte, según otras
+							fuentes), fue secuestrado por Zeus en el monte Ida; se convirtió en el amante de Zeus y en el copero de los dioses.</note>
 					</person>
 					<person xml:id="gla046">
 						<persName>Glauco</persName>
-						<occupation>En mitología griega, era una divinidad y monstruo del mar, hijo de Poseidón y de la náyade Nais, o de Nereo y de la oceánide Doris. La figura de Glauco aparece en las <hi
-								rend="italic">Argonáuticas</hi>, de Apolonio de Rodas, y en el Libro XIII de <hi rend="italic">Las metamorfosis</hi>, del poeta latino Ovidio.</occupation>
+						<note type="bio">En mitología griega, era una divinidad y monstruo del mar, hijo de Poseidón y de la náyade Nais, o de Nereo y de la oceánide Doris. La figura de Glauco aparece en las <hi
+								rend="italic">Argonáuticas</hi>, de Apolonio de Rodas, y en el Libro XIII de <hi rend="italic">Las metamorfosis</hi>, del poeta latino Ovidio.</note>
 					</person>
 					<person xml:id="gra047">
 						<persName>Gracias</persName>
-						<occupation>En la mitología griega, las Cárites o Gracias eran las diosas del encanto, la belleza, la naturaleza, la creatividad humana y la fertilidad. Habitualmente se consideran tres,
-							de la menor a la mayor: Aglaya (Belleza), Eufrósine (Júbilo) y Talia (Floreciente). Las Cárites solían ser consideradas hijas de Zeus y Eurínome, aunque se le atribuyen otros
-							parentescos. El río Cefiso, cerca de Delfos, estaba consagrado a ellas.</occupation>
+						<note type="bio">En la mitología griega, las Cárites o Gracias eran las diosas del encanto, la belleza, la naturaleza, la creatividad humana y la fertilidad. Habitualmente se consideran
+							tres, de la menor a la mayor: Aglaya (Belleza), Eufrósine (Júbilo) y Talia (Floreciente). Las Cárites solían ser consideradas hijas de Zeus y Eurínome, aunque se le atribuyen otros
+							parentescos. El río Cefiso, cerca de Delfos, estaba consagrado a ellas.</note>
 					</person>
 					<person xml:id="him048">
 						<persName>Himeneo</persName>
-						<occupation>En la mitología griega Himeneo, también llamado Himen, era un dios de las ceremonias de matrimonio, inspirador de las fiestas y las canciones. Era el hijo de Baco y Venus o, en
-							algunas tradiciones, de Apolo y una de las Musas. Es mencionado por Homero (<hi rend="italic">Ilíada</hi>), Virgilio (<hi rend="italic">Eneida</hi>), Ovidio (<hi rend="italic"
-								>Heroidas</hi>) y Catulo (poema LXII), entre otros autores.</occupation>
+						<note type="bio">En la mitología griega Himeneo, también llamado Himen, era un dios de las ceremonias de matrimonio, inspirador de las fiestas y las canciones. Era el hijo de Baco y Venus
+							o, en algunas tradiciones, de Apolo y una de las Musas. Es mencionado por Homero (<hi rend="italic">Ilíada</hi>), Virgilio (<hi rend="italic">Eneida</hi>), Ovidio (<hi rend="italic"
+								>Heroidas</hi>) y Catulo (poema LXII), entre otros autores.</note>
 					</person>
 					<person xml:id="hor049">
 						<persName>Horas</persName>
-						<occupation>En la mitología griega, las Horas eran originalmente las personificaciones o diosas del orden de la naturaleza y de las estaciones, si bien posteriormente fueron consideradas
-							como diosas del orden en general y de la justicia. Si bien Homero no menciona su padre ni su número, Hesíodo afirma que son hijas de Zeus y de Temis y que son tres (Eunomia, Dice e
-							Irene).</occupation>
+						<note type="bio">En la mitología griega, las Horas eran originalmente las personificaciones o diosas del orden de la naturaleza y de las estaciones, si bien posteriormente fueron
+							consideradas como diosas del orden en general y de la justicia. Si bien Homero no menciona su padre ni su número, Hesíodo afirma que son hijas de Zeus y de Temis y que son tres (Eunomia,
+							Dice e Irene).</note>
 					</person>
 					<person xml:id="ic050">
 						<persName>Ícaro</persName>
-						<occupation>En la mitología griega, Ícaro es hijo del arquitecto Dédalo, constructor del laberinto de Creta. Estaba retenido junto a su padre en la isla de Creta por el rey de la isla,
-							llamado Minos. Dédalo decidió escapar de la isla, pero dado que Minos controlaba la tierra y el mar, fabricó unas alas para él y su joven hijo Ícaro hechas de plumas y cera. Ícaro voló
-							demasiado alto y el calor del sol derritió la cera que unía las plumas provocando la caída del joven.</occupation>
+						<note type="bio">En la mitología griega, Ícaro es hijo del arquitecto Dédalo, constructor del laberinto de Creta. Estaba retenido junto a su padre en la isla de Creta por el rey de la
+							isla, llamado Minos. Dédalo decidió escapar de la isla, pero dado que Minos controlaba la tierra y el mar, fabricó unas alas para él y su joven hijo Ícaro hechas de plumas y cera. Ícaro
+							voló demasiado alto y el calor del sol derritió la cera que unía las plumas provocando la caída del joven.</note>
 					</person>
 					<person xml:id="jun051">
 						<persName>Juno</persName>
-						<occupation>En la mitología romana, era equivalente a la diosa griega Hera. Juno era diosa del matrimonio y reina de los dioses. Hija de Saturno y Ops, hermana y esposa de Júpiter, con el
-							que tuvo dos hijos, Marte y Vulcano y una hija, Lucina. Juno fue una deidad mayor de la religión romana y formó parte, junto a Júpiter y Minerva, de la Tríada Capitolina, un importante
-							culto romano.</occupation>
+						<note type="bio">En la mitología romana, era equivalente a la diosa griega Hera. Juno era diosa del matrimonio y reina de los dioses. Hija de Saturno y Ops, hermana y esposa de Júpiter,
+							con el que tuvo dos hijos, Marte y Vulcano y una hija, Lucina. Juno fue una deidad mayor de la religión romana y formó parte, junto a Júpiter y Minerva, de la Tríada Capitolina, un
+							importante culto romano.</note>
 					</person>
 					<person xml:id="jup052">
 						<persName>Júpiter</persName>
-						<occupation>Júpiter, también llamado Jove, es el principal dios de la mitología romana. Su equivalente griego es Zeus. Hijo de Saturno y Ops, fue la deidad suprema de la tríada capitolina,
-							integrada además por su hermana y esposa, Juno, y por su hija, Minerva. Los atributos de Júpiter son el águila, el rayo, y el cetro.</occupation>
+						<note type="bio">Júpiter, también llamado Jove, es el principal dios de la mitología romana. Su equivalente griego es Zeus. Hijo de Saturno y Ops, fue la deidad suprema de la tríada
+							capitolina, integrada además por su hermana y esposa, Juno, y por su hija, Minerva. Los atributos de Júpiter son el águila, el rayo, y el cetro.</note>
 					</person>
 					<person xml:id="laq053">
 						<persName>Láquesis</persName>
-						<occupation>En la mitología griega, es la segunda de las tres moiras, hijas de Zeus y Temis. Determina el futuro de las personas, pues decide la longitud del hilo de cada una de las vidas
-							humanas. En la mitología romana corresponde a Décima.</occupation>
+						<note type="bio">En la mitología griega, es la segunda de las tres moiras, hijas de Zeus y Temis. Determina el futuro de las personas, pues decide la longitud del hilo de cada una de las
+							vidas humanas. En la mitología romana corresponde a Décima.</note>
 					</person>
 					<person xml:id="led054">
 						<persName>Leda</persName>
-						<occupation>En la mitología griega es hija de Testio y esposa del rey Tindáreo de Esparta. Fue seducida por Zeus cuando caminaba junto al río Eurotas. El dios se le presentó transformado
-							en cisne y se posó en ella. Esa misma noche, Leda yació con Tindáreo. Se dice que Leda puso después dos huevos, de los cuales nacieron cuatro hijos: Helena y Pólux (inmortales, presuntos
-							hijos de Zeus) y Clitemnestra y Cástor (mortales, supuestos hijos de Tindáreo).</occupation>
+						<note type="bio">En la mitología griega es hija de Testio y esposa del rey Tindáreo de Esparta. Fue seducida por Zeus cuando caminaba junto al río Eurotas. El dios se le presentó
+							transformado en cisne y se posó en ella. Esa misma noche, Leda yació con Tindáreo. Se dice que Leda puso después dos huevos, de los cuales nacieron cuatro hijos: Helena y Pólux
+							(inmortales, presuntos hijos de Zeus) y Clitemnestra y Cástor (mortales, supuestos hijos de Tindáreo).</note>
 					</person>
 					<person xml:id="leu055">
 						<persName>Leucipe</persName>
-						<occupation>En la mitología griega y romana, es una oceánide, hija de Océano y Tetis.</occupation>
+						<note type="bio">En la mitología griega y romana, es una oceánide, hija de Océano y Tetis.</note>
 					</person>
 					<person xml:id="leu056">
 						<persName>Leucótea</persName>
-						<occupation>En la mitología griega Leucótea era una ninfa transformada. Hermana de Sémele y esposa del rey Atamante, Ino se convirtió en diosa después de que Hera la volviese loca como
-							castigo por cuidar del recién nacido Dioniso. Ino saltó al mar con su hijo Melicertes en sus brazos. Por pena, Neptuno convirtió a ambos en dioses del mar, transformando a Melicertes en
-							Palemón, patrón de los Juegos Ístmicos, y a Ino en Leucótea.</occupation>
+						<note type="bio">En la mitología griega Leucótea era una ninfa transformada. Hermana de Sémele y esposa del rey Atamante, Ino se convirtió en diosa después de que Hera la volviese loca
+							como castigo por cuidar del recién nacido Dioniso. Ino saltó al mar con su hijo Melicertes en sus brazos. Por pena, Neptuno convirtió a ambos en dioses del mar, transformando a
+							Melicertes en Palemón, patrón de los Juegos Ístmicos, y a Ino en Leucótea.</note>
 					</person>
 					<person xml:id="lic057">
 						<persName>Lícidas</persName>
-						<occupation>Con este nombre se conocen, al menos, dos personajes: en las Bucólicas de Virgilio es un pastor que aparece en la <hi rend="italic">Égloga</hi> IX; en las Metamorfosis de
-							Ovidio, en cambio, es uno de los centauros que tomó parte en la batalla contra los Lápitas.</occupation>
+						<note type="bio">Con este nombre se conocen, al menos, dos personajes: en las Bucólicas de Virgilio es un pastor que aparece en la <hi rend="italic">Égloga</hi> IX; en las Metamorfosis de
+							Ovidio, en cambio, es uno de los centauros que tomó parte en la batalla contra los Lápitas.</note>
 					</person>
 					<person xml:id="luc059">
 						<persName>Lucina</persName>
-						<occupation>En la mitología romana, era la diosa de los partos y los nacimientos, identificada con Juno y con Diana. Se la representa como una matrona con una copa en la mano derecha y una
-							lanza en la izquierda; o bien, sentada con un niño recién nacido en el regazo y una flor en la mano derecha.</occupation>
+						<note type="bio">En la mitología romana, era la diosa de los partos y los nacimientos, identificada con Juno y con Diana. Se la representa como una matrona con una copa en la mano derecha
+							y una lanza en la izquierda; o bien, sentada con un niño recién nacido en el regazo y una flor en la mano derecha.</note>
 					</person>
 					<person xml:id="luc060">
 						<persName>Lucrecia</persName>
-						<occupation>Lucrecia es un personaje perteneciente a la historia de la Antigua Roma, coetánea del último rey romano, Lucio Tarquinio el Soberbio (534-510 a. C.). Hija del ilustre romano
-							Espurio Lucrecio Tricipitino, contrajo matrimonio con Colatino. Fue víctima de una violación perpetrada por Sexto Tarquinio, hijo de Lucio Tarquinio. Este ultraje y el posterior suicidio
-							de Lucrecia influyeron en la caída de la monarquía y en el establecimiento de la República.</occupation>
+						<note type="bio">Lucrecia es un personaje perteneciente a la historia de la Antigua Roma, coetánea del último rey romano, Lucio Tarquinio el Soberbio (534-510 a. C.). Hija del ilustre
+							romano Espurio Lucrecio Tricipitino, contrajo matrimonio con Colatino. Fue víctima de una violación perpetrada por Sexto Tarquinio, hijo de Lucio Tarquinio. Este ultraje y el posterior
+							suicidio de Lucrecia influyeron en la caída de la monarquía y en el establecimiento de la República.</note>
 					</person>
 					<person xml:id="mar061">
 						<persName>Marte</persName>
-						<occupation>En la mitología romana, Marte era el dios de la guerra, hijo de Júpiter y de Juno. Se le representaba como a un guerrero con armadura y con un yelmo encrestado. Fue amante de
-							Venus.</occupation>
+						<note type="bio">En la mitología romana, Marte era el dios de la guerra, hijo de Júpiter y de Juno. Se le representaba como a un guerrero con armadura y con un yelmo encrestado. Fue amante
+							de Venus.</note>
 					</person>
 					<person xml:id="mer063">
 						<persName>Mercurio</persName>
-						<occupation>En la mitología romana, Mercurio era el dios del comercio, hijo de Júpiter y de Maya, y mensajero de los dioses.</occupation>
+						<note type="bio">En la mitología romana, Mercurio era el dios del comercio, hijo de Júpiter y de Maya, y mensajero de los dioses.</note>
 					</person>
 					<person xml:id="mic064">
 						<persName>Micón</persName>
-						<occupation>Con este nombre se concoce a un pintor y escultor de la Antigua Grecia de mediados del siglo V a. C. Es mencioando en la obra de Apolodoro, Pausanias, Plinio el Viejo, entre
-							otros.</occupation>
+						<note type="bio">Con este nombre se concoce a un pintor y escultor de la Antigua Grecia de mediados del siglo V a. C. Es mencioando en la obra de Apolodoro, Pausanias, Plinio el Viejo,
+							entre otros.</note>
 					</person>
 					<person xml:id="mid065">
 						<persName>Midas</persName>
-						<occupation>Midas fue un rey de Frigia que gobernó en el período entre el 740 a. C. y el 696 a. C., aproximadamente. Por su hospitalidad con Sileno, Dioniso le otorgó el poder de convertir
-							en oro todo cuanto tocara. Viendo que no podía comer los alimentos que a su contacto quedaban transformados en dicho metal, pidió al dios que le liberara de su don, para lo cual tuvo que
-							bañarse en el río Pactolo, que desde entonces contuvo arenas auríferas.</occupation>
+						<note type="bio">Midas fue un rey de Frigia que gobernó en el período entre el 740 a. C. y el 696 a. C., aproximadamente. Por su hospitalidad con Sileno, Dioniso le otorgó el poder de
+							convertir en oro todo cuanto tocara. Viendo que no podía comer los alimentos que a su contacto quedaban transformados en dicho metal, pidió al dios que le liberara de su don, para lo
+							cual tuvo que bañarse en el río Pactolo, que desde entonces contuvo arenas auríferas.</note>
 					</person>
 					<person xml:id="min066">
 						<persName>Minerva</persName>
-						<occupation>En la mitología romana Minerva es la diosa de la sabiduría, las artes, las técnicas de la guerra, además de la protectora de Roma y la patrona de los artesanos. Es hermana de
-							Júpiter y se corresponde con Atenea en la mitología griega. También recibe el epíteto de Palas.</occupation>
+						<note type="bio">En la mitología romana Minerva es la diosa de la sabiduría, las artes, las técnicas de la guerra, además de la protectora de Roma y la patrona de los artesanos. Es hermana
+							de Júpiter y se corresponde con Atenea en la mitología griega. También recibe el epíteto de Palas.</note>
 					</person>
 					<person xml:id="nar067">
 						<persName>Narciso</persName>
-						<occupation>Hijo del dios-río Cefiso y de la ninfa Liríope. Fue transformado en flor al ver su imagen reflejada en un lago y enamorarse de su propia belleza.</occupation>
+						<note type="bio">Hijo del dios-río Cefiso y de la ninfa Liríope. Fue transformado en flor al ver su imagen reflejada en un lago y enamorarse de su propia belleza.</note>
 					</person>
 					<person xml:id="nep068">
 						<persName>Neptuno</persName>
-						<occupation>Dios del mar, es el hijo mayor de los dioses Saturno y Ops, y hermano de Júpiter y Plutón. Neptuno gobierna todas las aguas y mares. Cabalga las olas sobre caballos blancos.
-							Todos los habitantes de las aguas deben obedecerlo y se le conoce como Poseidón en la mitología griega.</occupation>
+						<note type="bio">Dios del mar, es el hijo mayor de los dioses Saturno y Ops, y hermano de Júpiter y Plutón. Neptuno gobierna todas las aguas y mares. Cabalga las olas sobre caballos
+							blancos. Todos los habitantes de las aguas deben obedecerlo y se le conoce como Poseidón en la mitología griega.</note>
 					</person>
 					<person xml:id="ner069">
 						<persName>Nereo</persName>
-						<occupation>Dios del mar, hijo de Ponto y Gea, esposo de Doris, y padre de cincuenta nereidas, entre las cuales destacan Tetis y Galatea.</occupation>
+						<note type="bio">Dios del mar, hijo de Ponto y Gea, esposo de Doris, y padre de cincuenta nereidas, entre las cuales destacan Tetis y Galatea.</note>
 					</person>
 					<person xml:id="nes070">
 						<persName>Nesea</persName>
-						<occupation>Es una nereida de las islas. Aparece junto con Espío en la <hi rend="italic">Ilíada</hi> de Homero, en la <hi rend="italic">Teogonía</hi> de Hesíodo, y en la <hi rend="italic"
-								>Eneida</hi> de Virgilio.</occupation>
+						<note type="bio">Es una nereida de las islas. Aparece junto con Espío en la <hi rend="italic">Ilíada</hi> de Homero, en la <hi rend="italic">Teogonía</hi> de Hesíodo, y en la <hi
+								rend="italic">Eneida</hi> de Virgilio.</note>
 					</person>
 					<person xml:id="nio071">
 						<persName>Níobe</persName>
-						<occupation>Hija de Tántalo, esposa de Anfíon, rey de Tebas, y madre de siete hijos y siete hijas, orgullosa de su fecundidad, se declaró superior a la diosa Leto, madre solo de un hijo y
-							una hija; estos, Apolo y Ártemis, vengaron a su madre dando muerte a todos los hijos de Níobe, que, apenada, se transformó en roca.</occupation>
+						<note type="bio">Hija de Tántalo, esposa de Anfíon, rey de Tebas, y madre de siete hijos y siete hijas, orgullosa de su fecundidad, se declaró superior a la diosa Leto, madre solo de un
+							hijo y una hija; estos, Apolo y Ártemis, vengaron a su madre dando muerte a todos los hijos de Níobe, que, apenada, se transformó en roca.</note>
 					</person>
 					<person xml:id="oce074">
 						<persName>Océano</persName>
-						<occupation>Deidad marina, hijo de Urano y Gea, y anciano esposo de Tetis. De la unión de Océano y Tetis, nacieron las tres mil oceánides.</occupation>
+						<note type="bio">Deidad marina, hijo de Urano y Gea, y anciano esposo de Tetis. De la unión de Océano y Tetis, nacieron las tres mil oceánides.</note>
 					</person>
 					<person xml:id="pal077">
 						<persName>Palemón</persName>
-						<occupation>Hijo de Atamante e Ino-Leucótea, convertido en dios marino por los dioses cuando su madre se arrojó al mar. También conocido como Melicertes en su forma humana.</occupation>
+						<note type="bio">Hijo de Atamante e Ino-Leucótea, convertido en dios marino por los dioses cuando su madre se arrojó al mar. También conocido como Melicertes en su forma humana.</note>
 					</person>
 					<person xml:id="pal078">
 						<persName>Pales</persName>
-						<occupation>Pales era una divinidad del campo en la mitología romana, protectora de la tierra y del ganado doméstico; por extensión, también es la divinidad protectora de los
-							pastores.</occupation>
+						<note type="bio">Pales era una divinidad del campo en la mitología romana, protectora de la tierra y del ganado doméstico; por extensión, también es la divinidad protectora de los
+							pastores.</note>
 					</person>
 					<person xml:id="pal079">
 						<persName>Palinuro</persName>
-						<occupation>Palinuro fue el piloto de la nave de Eneas desde su salida de Troya tras la destrucción de la ciudad. Durante la travesía, según Virgilio, Palinuro se durmió y cayó al mar; al
-							llegar a la playa unos bandidos lo asesinaron.</occupation>
+						<note type="bio">Palinuro fue el piloto de la nave de Eneas desde su salida de Troya tras la destrucción de la ciudad. Durante la travesía, según Virgilio, Palinuro se durmió y cayó al
+							mar; al llegar a la playa unos bandidos lo asesinaron.</note>
 					</person>
 					<person xml:id="pan080">
 						<persName>Pan</persName>
-						<occupation>Dios de los bosques y del ganado, y de la fertilidad masculina. En la mitología romana se identifica a este dios como un Fauno.</occupation>
+						<note type="bio">Dios de los bosques y del ganado, y de la fertilidad masculina. En la mitología romana se identifica a este dios como un Fauno.</note>
 					</person>
 					<person xml:id="par081">
 						<persName>Parcas</persName>
-						<occupation>Las tres diosas del destino. En la mitología romana sea llamaban Nona, Décima y Morta. En la mitolgía griega equivalían a las Moiras y se llamaban Cloto, Láquesis y Átropos.
-							Controlaban elhilo de la vida de cada mortal desde el nacimiento hasta la muerte.</occupation>
+						<note type="bio">Las tres diosas del destino. En la mitología romana sea llamaban Nona, Décima y Morta. En la mitolgía griega equivalían a las Moiras y se llamaban Cloto, Láquesis y
+							Átropos. Controlaban elhilo de la vida de cada mortal desde el nacimiento hasta la muerte.</note>
 					</person>
 					<person xml:id="pom082">
 						<persName>Pomona</persName>
-						<occupation>Pomona era, en la mitología romana, la diosa de la fruta, y por extensión de los árboles frutales, los jardines y las huertas. Era una diosa únicamente romana, y se asocia
-							generalmente con la abundancia, particularmente con la floración de los árboles y además de las frutas.</occupation>
+						<note type="bio">Pomona era, en la mitología romana, la diosa de la fruta, y por extensión de los árboles frutales, los jardines y las huertas. Era una diosa únicamente romana, y se asocia
+							generalmente con la abundancia, particularmente con la floración de los árboles y además de las frutas.</note>
 					</person>
 					<person xml:id="pro083">
 						<persName>Proserpina</persName>
-						<occupation>Hija de Ceres y Júpiter, esposa de Plutón. En la mitología griega, se la conoce como Perséfone. Su historia es el fundamento de la primavera.</occupation>
+						<note type="bio">Hija de Ceres y Júpiter, esposa de Plutón. En la mitología griega, se la conoce como Perséfone. Su historia es el fundamento de la primavera.</note>
 					</person>
 					<person xml:id="pro084">
 						<persName>Proteo</persName>
-						<occupation>Dios del mar que podía metamorfosearse en múltiples formas; podía, además, predecir el futuro pero solo lo revelaba a quien fuera capaz de capturarlo. Fue, también, pastor de
-							las focas de Poseidón.</occupation>
+						<note type="bio">Dios del mar que podía metamorfosearse en múltiples formas; podía, además, predecir el futuro pero solo lo revelaba a quien fuera capaz de capturarlo. Fue, también, pastor
+							de las focas de Poseidón.</note>
 					</person>
 					<person xml:id="psi085">
 						<persName>Psique</persName>
-						<occupation>En la mitología griega, es la personificación del alma. Psique era la menor y más hermosa de tres hermanas, hijas de un rey de Anatolia. Afrodita, celosa de su belleza, envió a
-							su hijo Eros (Cupido) para que le lanzara una flecha que la haría enamorarse del hombre más horrible y ruin que encontrase. Sin embargo, Eros se enamoró de ella y lanzó la flecha al mar;
-							cuando Psique se durmió, se la llevó volando hasta su palacio.</occupation>
+						<note type="bio">En la mitología griega, es la personificación del alma. Psique era la menor y más hermosa de tres hermanas, hijas de un rey de Anatolia. Afrodita, celosa de su belleza,
+							envió a su hijo Eros (Cupido) para que le lanzara una flecha que la haría enamorarse del hombre más horrible y ruin que encontrase. Sin embargo, Eros se enamoró de ella y lanzó la flecha
+							al mar; cuando Psique se durmió, se la llevó volando hasta su palacio.</note>
 					</person>
 					<person xml:id="pto086">
 						<persName>Ptolomeo</persName>
-						<occupation>Dinastía de gobernantes egipcios. El fundador fue Ptolomeo I Sóter rey de Egipto entre 305 a. C. y 285 a. C.</occupation>
+						<note type="bio">Dinastía de gobernantes egipcios. El fundador fue Ptolomeo I Sóter rey de Egipto entre 305 a. C. y 285 a. C.</note>
 					</person>
 					<person xml:id="sil087">
 						<persName>Sileno</persName>
-						<occupation>Era un viejo sátiro, dios menor de la embriaguez, y padre adoptivo de Dioniso. Su equivalente en la mitología romana era Silvano. </occupation>
+						<note type="bio">Era un viejo sátiro, dios menor de la embriaguez, y padre adoptivo de Dioniso. Su equivalente en la mitología romana era Silvano. </note>
 					</person>
 					<person xml:id="sis089">
 						<persName>Sísifo</persName>
-						<occupation>Hijo de Eolo, famoso por su castigo: empujar eternamente una piedra hasta lo alto de una colina, desde la que volcía a roda boca abajo, y vuelta a empezar.</occupation>
+						<note type="bio">Hijo de Eolo, famoso por su castigo: empujar eternamente una piedra hasta lo alto de una colina, desde la que volcía a roda boca abajo, y vuelta a empezar.</note>
 					</person>
 					<person xml:id="tet092">
 						<persName>Tetis</persName>
-						<occupation>Diosa del mar, hija de Urano y Gea, y esposa de Océano; asimismo, fue madre los ríos y de las oceánides.</occupation>
+						<note type="bio">Diosa del mar, hija de Urano y Gea, y esposa de Océano; asimismo, fue madre los ríos y de las oceánides.</note>
 					</person>
 					<person xml:id="tif093">
 						<persName>Tifis</persName>
-						<occupation>En la mitología griega Tifis era el timonel del Argo, la nave en la que se embarcaron los argonautas en busca del vellocino de oro.</occupation>
+						<note type="bio">En la mitología griega Tifis era el timonel del Argo, la nave en la que se embarcaron los argonautas en busca del vellocino de oro.</note>
 					</person>
 					<person xml:id="tit094">
 						<persName>Titón</persName>
-						<occupation>En la mitología griega, Titón era un mortal hijo de Laomedonte, rey de Troya, y hermano de Príamo. Como su hermano Ganímedes, era de una belleza deslumbrante y la diosa Eos
-							(Aurora en la mitología romana) se enamoró de él. Esta misma le pidió a Zeus que concediera la inmortalidad a su amado. Pero a la diosa se le olvidó pedir también la juventud eterna, de
-							modo que Titón fue envejeciendo sin fin hasta convertirse en grillo.</occupation>
+						<note type="bio">En la mitología griega, Titón era un mortal hijo de Laomedonte, rey de Troya, y hermano de Príamo. Como su hermano Ganímedes, era de una belleza deslumbrante y la diosa
+							Eos (Aurora en la mitología romana) se enamoró de él. Esta misma le pidió a Zeus que concediera la inmortalidad a su amado. Pero a la diosa se le olvidó pedir también la juventud eterna,
+							de modo que Titón fue envejeciendo sin fin hasta convertirse en grillo.</note>
 					</person>
 					<person xml:id="tri095">
 						<persName>Tritón</persName>
-						<occupation>Dios del mar, hijo y trompetero de Neptuno, genio del lago de Tritonis en Libia y padre de Palas, la compañera de juegos de Atenea.</occupation>
+						<note type="bio">Dios del mar, hijo y trompetero de Neptuno, genio del lago de Tritonis en Libia y padre de Palas, la compañera de juegos de Atenea.</note>
 					</person>
 					<person xml:id="ven096">
 						<persName>Venus</persName>
-						<occupation>Diosa del amor conocida como Afrodita en la mitología griega. Era madre de Cupido y Eneas, y esposa de Vulcano.</occupation>
+						<note type="bio">Diosa del amor conocida como Afrodita en la mitología griega. Era madre de Cupido y Eneas, y esposa de Vulcano.</note>
 					</person>
 					<person xml:id="ver097">
 						<persName>Vertumno</persName>
-						<occupation>Divinidad itálica de las estaciones; se representa junto a su amada Pomona, diosa de los árboles y frutas.</occupation>
+						<note type="bio">Divinidad itálica de las estaciones; se representa junto a su amada Pomona, diosa de los árboles y frutas.</note>
 					</person>
 					<person xml:id="vic098">
 						<persName>Victoria</persName>
-						<occupation>En mitología romana, es la diosa que personifica el triunfo. Es hija de Estigia y hermana de Potestas, Vis e Invidia. Se la representaba como una mujer alada, habitualmente en
-							actitud de ceñir una corona de laurel a los vencedores y césares. Corresponde a la diosa griega Niké.</occupation>
+						<note type="bio">En mitología romana, es la diosa que personifica el triunfo. Es hija de Estigia y hermana de Potestas, Vis e Invidia. Se la representaba como una mujer alada,
+							habitualmente en actitud de ceñir una corona de laurel a los vencedores y césares. Corresponde a la diosa griega Niké.</note>
 					</person>
 					<person xml:id="vul099">
 						<persName>Vulcano</persName>
-						<occupation>Era el dios del fuego y los volcanes en la mitología romana, hijo de Júpiter y Juno, y esposo de Venus. Forjador del hierro y creador de armas y armaduras para dioses y héroes,
-							corresponde con Hefesto en la mitología griega.</occupation>
+						<note type="bio">Era el dios del fuego y los volcanes en la mitología romana, hijo de Júpiter y Juno, y esposo de Venus. Forjador del hierro y creador de armas y armaduras para dioses y
+							héroes, corresponde con Hefesto en la mitología griega.</note>
 					</person>
 				</listPerson>
 			</particDesc>
