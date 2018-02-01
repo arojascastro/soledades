@@ -1,3 +1,4 @@
+<?xml-model href="../schema/soledades_simple.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
@@ -11,8 +12,8 @@
 				<funder>Ministerio de Economía y Competitividad. Todo Góngora II [I+D+I FFI2010-17349]</funder>
 			</titleStmt>
 			<editionStmt>
-				<edition n="2">
-					<date when="2017-09">Septiembre de 2017</date>
+				<edition>
+					<date>Enero de 2018</date>
 				</edition>
 			</editionStmt>
 			<publicationStmt>
