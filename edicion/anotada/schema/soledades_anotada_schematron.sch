@@ -198,13 +198,22 @@
 
             <assert test="tei:persName">A &lt;person&gt; element must contain a &lt;perName&gt; element.</assert>
 
-            <assert test="tei:occupation">A &lt;occupation&gt; element must contain a &lt;occupation&gt; element.</assert>
+            <assert test="tei:note[@type = 'bio']">A &lt;person&gt; element must contain a &lt;note&gt; element.</assert>
 
             <assert test="matches(@xml:id, '\w\d{3}')">A &lt;person&gt; element must contain a '@xml:id' atribute.</assert>
 
         </rule>
 
+        <rule context="tei:text/tei:body//tei:place">
+
+            <assert test="tei:placeName or tei:geogName">A &lt;place&gt; element must contain a &lt;placeName&gt; or a &lt;geogName&gt; element.</assert>
+
+            <assert test="matches(@xml:id, '\w+\d{3}')">A &lt;place&gt; element must contain a '@xml:id' atribute.</assert>
+
+        </rule>
+
     </pattern>
+
 
     <!-- rules for elements within text -->
 
@@ -219,7 +228,8 @@
         </rule>
 
         <rule context="tei:text//tei:ref">
-            <assert test="matches(@target, '#\w+\d{4}') or contains(@target, 'http://') or starts-with(@target, 'https:') or starts-with(@target, 'soledades.')">A &lt;ref&gt; element must contain a '@target' wose value is #\w+\{4} or a URL.</assert>
+            <assert test="matches(@target, '#\w+\d{4}') or contains(@target, 'http://') or starts-with(@target, 'https:') or starts-with(@target, 'soledades.')">A &lt;ref&gt; element must contain a
+                '@target' wose value is #\w+\{4} or a URL.</assert>
         </rule>
 
     </pattern>
@@ -271,17 +281,12 @@
             <assert test="matches(@rend, 'initial')">A &lt;hi&gt; element must contain a '@rend' whose value is 'initial'.</assert>
         </rule>
 
-        <rule context="tei:text/tei:body//tei:place">
-            <assert test="tei:placeName or tei:geogName">A &lt;place&gt; element must contain a &lt;placeName&gt; or a &lt;geogName&gt; element.</assert>
-            <assert test="matches(@xml:id, '\w+\d{3}')">A &lt;place&gt; element must contain a '@xml:id' atribute.</assert>
-        </rule>
-
         <rule context="tei:text/tei:body//tei:persName">
             <assert test="matches(@ref, '#\w+\d{3}')">A &lt;persName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
         </rule>
 
         <rule context="tei:text/tei:body//tei:placeName">
-           <assert test="matches(@ref, '#\w+\d{3}')">A &lt;placeName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
+            <assert test="matches(@ref, '#\w+\d{3}')">A &lt;placeName&gt; element must contain a '@xml:id' with three letters and three digits.</assert>
         </rule>
 
         <rule context="tei:text/tei:body//tei:geogName">
