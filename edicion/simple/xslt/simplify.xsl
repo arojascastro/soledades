@@ -9,7 +9,13 @@
       <xsl:element name="teiHeader" namespace="http://www.tei-c.org/ns/1.0">
         <xsl:element name="fileDesc" namespace="http://www.tei-c.org/ns/1.0">
           <xsl:copy-of select="//tei:titleStmt"/>
-          <xsl:copy-of select="//tei:editionStmt"/>
+          <xsl:element name="editionStmt" namespace="http://www.tei-c.org/ns/1.0">
+            <xsl:element name="edition" namespace="http://www.tei-c.org/ns/1.0">
+              <xsl:element name="date" namespace="http://www.tei-c.org/ns/1.0">
+                <xsl:text>Enero de 2018</xsl:text>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
           <xsl:copy-of select="//tei:publicationStmt"/>
           <xsl:element name="sourceDesc" namespace="http://www.tei-c.org/ns/1.0">
             <xsl:copy-of select="//tei:sourceDesc/tei:bibl"/>
