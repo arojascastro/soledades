@@ -79,10 +79,14 @@
     <xsl:copy-of select="."/>
   </xsl:template>
 
-  <xsl:template match="tei:geogName">
-    <xsl:copy-of select="."/>
+  <xsl:template match="tei:text//tei:geogName">
+    <xsl:element name="placeName" namespace="http://www.tei-c.org/ns/1.0">
+      <xsl:attribute name="ref">
+        <xsl:value-of select="./@ref"/>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </xsl:element>
   </xsl:template>
-
 
   <xsl:template match="tei:note"/>
 
