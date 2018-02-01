@@ -99,15 +99,15 @@
         </p:input>
     </p:xslt>-->
 
-<!-- question 2: where the association with the schema takes place? -->
+    <!-- question 2: where the association with the schema takes place? -->
 
-  <!--  <p:documentation>Chop data to atomic files</p:documentation>
+    <!--  <p:documentation>Chop data to atomic files</p:documentation>
     <hal:storeFiles>
         <p:with-option name="schema_tei" select="$schema"/>
         <p:with-option name="schematron" select="$schematron"/>
     </hal:storeFiles>-->
 
-   <!-- <p:documentation>Store essential information away for lookup from other conversions.</p:documentation>-->
+    <!-- <p:documentation>Store essential information away for lookup from other conversions.</p:documentation>-->
 
     <!-- prepend xml-model (schema, schematron) -->
     <!--<p:xslt>
