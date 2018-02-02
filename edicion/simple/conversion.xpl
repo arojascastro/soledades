@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<p:declare-step xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:hal="http://www.haller.unibe.ch/ns/1.0" version="1.0">
-
-    <!-- question 1: why we need this xmlns:hal="http://www.haller.unibe.ch/ns/1.0" -->
-
-    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                            USER OPTIONS (START)
-         ________________________________________________________________ -->
-
-    <!-- Indicate schema files relative to this file: -->
-    <p:option name="schematron" select="'schema/soledades_simple.sch'"/>
-    <p:option name="schema_tei" select="'http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng'"/>
-
-    <!--________________________________________________________________
-                            USER OPTIONS (END) 
-        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->
-
-    <!-- input and output file names should be specified more appropriately -->
-    <p:option name="result-url" select="'output/soledades_simple.xml'"/>
-    <!-- input and output file names should be specified more appropriately -->
+<p:declare-step xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" version="1.0">
 
     <p:input port="source">
         <!--<p:document href="input/soledades_anotada.xml"/>-->
@@ -71,12 +53,45 @@
         </p:input>
     </p:identity>
 
+    <p:documentation>This step adds a link to the right schema.</p:documentation>
+    <p:xslt name="add_schema">
+        <p:input port="stylesheet">
+            <p:document href="xslt/schema.xsl"/>
+        </p:input>
+    </p:xslt>
+
+    <!-- TEMP: output testing; may be put in front of any step to see what input the step receives -->
+    <!--<p:identity name="TEMP_1"/>
+    <p:store>
+        <p:with-option name="href" select="'TEMP_1.xml'"/>
+        <p:with-option name="indent" select="'true'"/>
+    </p:store>
+    <p:identity>
+        <p:input port="source">
+            <p:pipe port="result" step="TEMP_1"/>
+        </p:input>
+    </p:identity>-->
+    <!-- END TEMP -->
+
     <p:documentation>This step removes a number of elements and creates a simpler encoding with a normalized text and without notes.</p:documentation>
     <p:xslt name="simplify">
         <p:input port="stylesheet">
             <p:document href="xslt/simplify.xsl"/>
         </p:input>
     </p:xslt>
+
+    <!-- TEMP: output testing; may be put in front of any step to see what input the step receives -->
+    <!--<p:identity name="TEMP_2"/>
+    <p:store>
+        <p:with-option name="href" select="'TEMP_2.xml'"/>
+        <p:with-option name="indent" select="'true'"/>
+    </p:store>
+    <p:identity>
+        <p:input port="source">
+            <p:pipe port="result" step="TEMP_2"/>
+        </p:input>
+    </p:identity>-->
+    <!-- END TEMP -->
 
     <p:documentation>This step removes whitespaces before punctuation marks.</p:documentation>
     <p:xslt name="ending_whitespaces">
@@ -85,6 +100,19 @@
         </p:input>
     </p:xslt>
 
+    <!-- TEMP: output testing; may be put in front of any step to see what input the step receives -->
+    <!--<p:identity name="TEMP_3"/>
+    <p:store>
+        <p:with-option name="href" select="'TEMP_3.xml'"/>
+        <p:with-option name="indent" select="'true'"/>
+    </p:store>
+    <p:identity>
+        <p:input port="source">
+            <p:pipe port="result" step="TEMP_3"/>
+        </p:input>
+    </p:identity>-->
+    <!-- END TEMP -->
+
     <p:documentation>This step removes whitespaces after punctuation marks.</p:documentation>
     <p:xslt name="starting_whitespaces">
         <p:input port="stylesheet">
@@ -92,35 +120,8 @@
         </p:input>
     </p:xslt>
 
-    <!-- <p:documentation>This step normalizes the spacing.</p:documentation>
-    <p:xslt name="normalize">
-        <p:input port="stylesheet">
-            <p:document href="xslt/normalize_space.xsl"/>
-        </p:input>
-    </p:xslt>-->
-
-    <!-- question 2: where the association with the schema takes place? -->
-
-    <!--  <p:documentation>Chop data to atomic files</p:documentation>
-    <hal:storeFiles>
-        <p:with-option name="schema_tei" select="$schema"/>
-        <p:with-option name="schematron" select="$schematron"/>
-    </hal:storeFiles>-->
-
-    <!-- <p:documentation>Store essential information away for lookup from other conversions.</p:documentation>-->
-
-    <!-- prepend xml-model (schema, schematron) -->
-    <!--<p:xslt>
-        <p:with-param name="schema" select="$schema"/>
-        <p:with-param name="schema-relative-location" select="'./'"/>
-        <p:with-param name="schematron" select="$schematron"/>
-        <p:input port="stylesheet">
-            <p:document href="conversion/xml-model/prepend-xml-model.xsl"/>
-        </p:input>
-    </p:xslt>-->
-
     <p:store>
-        <p:with-option name="href" select="$result-url"/>
+        <p:with-option name="href" select="'output/soledades_simple.xml'"/>
         <p:with-option name="indent" select="'true'"/>
     </p:store>
 
