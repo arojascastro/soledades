@@ -3,8 +3,14 @@
 
   <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
 
-  <xsl:template match="tei:TEI">
+  <xsl:template match="@* | node()">
+    <xsl:copy>
+      <xsl:apply-templates select="@* | node()"/>
+    </xsl:copy>
+  </xsl:template>
 
+  <xsl:template match="/">
+    <xsl:copy-of select="//processing-instruction()"/>
     <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
       <xsl:element name="teiHeader" namespace="http://www.tei-c.org/ns/1.0">
         <xsl:element name="fileDesc" namespace="http://www.tei-c.org/ns/1.0">
@@ -43,7 +49,6 @@
       <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
         <xsl:apply-templates/>
       </xsl:element>
-
     </xsl:for-each>
   </xsl:template>
 
@@ -64,6 +69,24 @@
   </xsl:template>
 
   <xsl:template match="tei:choice">
+    <xsl:for-each select=".">
+      <xsl:apply-templates/>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:reg">
+    <xsl:for-each select=".">
+      <xsl:apply-templates/>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:expan">
+    <xsl:for-each select=".">
+      <xsl:apply-templates/>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:corr">
     <xsl:for-each select=".">
       <xsl:apply-templates/>
     </xsl:for-each>
