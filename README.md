@@ -1,3 +1,28 @@
+
+
+# Soledades
+
+## Edición digital
+
+### Crítica
+- `soledades_critica.xml`
+- `soledades_critica_schematron.sch`
+- criterios de codificación de `soledades_critica.xml` 
+
+### Anotada
+- `soledades_anotada.xml`
+- `soledades_anotada_schematron.sch`
+- criterios de codificación de `soledades_anotada.xml`
+- varias hojas XSLT para generar páginas HTML
+- img
+
+### Simple
+- `soledades_simple.xml`
+- `soledades_simple.sch`
+- `conversion pipeline`
+- varias hojas XSLT que modifican `soledades_anotada.xml` para generar el `soledades_simple.xml`
+- una lista *sin limpiar ni arreglar* de entidades nombradas (parecida a la de `datos/nombres-personales-soledades-lema.xslx`)
+
 ## Datos
 
 - `bio-gongora.xslx`: contiene eventos biográficos de Góngora 
@@ -5,16 +30,6 @@
 - `lista-manuscritos-gongorinos.xslx`: contiene la localización de los repositorios con manuscritos del siglo XVII con poesía de Góngora utilizados en este [mapa](http://www.antoniorojascastro.com/tesis/mapa/) 
 - `nombres-personales-soledades-lema.xslx`: contiene los nombres propios codificados con las etiquetas TEI `<persName>` y `<placeName>` en el archivo `soledades_anotada.xml`. 
 - testimonios-soledades.xslx: contiene la lista de [testimonios cotejados](http://www.antoniorojascastro.com/tesis/testimonios/) para establecer el texto de las *Soledades*  
-
-
-## Edición
-
-- `soledades_anotada.xml`
-- `soledades_anotada_schematron.sch`
-- criterios de codificación de `soledades_anotada.xml`
-- `soledades_critica.xml`
-- `soledades_critica_schematron.sch`
-- criterios de codificación de `soledades_critica.xml`
 
 
 ## Contacto
