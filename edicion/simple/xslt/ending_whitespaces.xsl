@@ -9,6 +9,7 @@
     </xsl:copy>
   </xsl:template>
 
+
   <xsl:template match="tei:l/text()">
 
     <xsl:analyze-string regex="(\s+)(,|!|\.|\?|&#187;|;|—|:|\))" select=".">
@@ -25,21 +26,6 @@
 
   </xsl:template>
 
-  <!-- <xsl:template match="tei:l/text()">
-    
-    <xsl:analyze-string regex="(¡|\(|¿|&#171;|\()(\s+)" select=".">
-      
-      <xsl:matching-substring>
-        <xsl:value-of select="regex-group(1)"/>
-      </xsl:matching-substring>
-      
-      <xsl:non-matching-substring>
-        <xsl:value-of select="."/>
-      </xsl:non-matching-substring>
-      
-    </xsl:analyze-string>
-    
-  </xsl:template>-->
 
 
 </xsl:stylesheet>
