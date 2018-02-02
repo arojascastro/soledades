@@ -31,11 +31,10 @@
 - `nombres-personales-soledades-lema.xslx`: contiene los nombres propios codificados con las etiquetas TEI `<persName>` y `<placeName>` en el archivo `soledades_anotada.xml`. 
 - testimonios-soledades.xslx: contiene la lista de [testimonios cotejados](http://www.antoniorojascastro.com/tesis/testimonios/) para establecer el texto de las *Soledades*  
 
+## Publicaciones relacionadas
 
-## Contacto
-
-- Twitter: [@RojasCastroA](https://twitter.com/RojasCastroA)
-- E-mail: rojas.castro.antonio at gmail dot com
+- Rojas Castro, Antonio. “La edición crítica digital y la codificación TEI. Preliminares para una nueva edición de las Soledades de Luis de Góngora“. Revista de Humanidades Digitales 1 (2017): 4-19.
+- Rojas Castro, Antonio. “Las Soledades de Luis de Góngora en el manuscrito 2056 de la Biblioteca de Catalunya: estudio bibliográfico y nuevas variantes de autor“. RILCE. Revista de Filología Hispánica 34.11 (2018): 69-99. Web.
 
 ## Derechos
 
