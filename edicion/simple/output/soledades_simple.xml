@@ -583,7 +583,9 @@
 	<text>
 		<body>
 
-			<head> Soledades </head>
+			<head>
+				<hi rend="italic">Soledades</hi>
+			</head>
 
 			<div>
 				<head> Al duque de Béjar </head>
@@ -1243,7 +1245,6 @@
 				<l> donde la primavera, </l>
 				<l> calzada abriles y vestida mayos,</l>
 				<l> centellas saca de cristal undoso </l>
-
 				<l> a un pedernal orlado de narcisos.</l>
 				<l> Este pues centro era</l>
 				<l> meta umbrosa al vaquero convecino,</l>
@@ -1376,7 +1377,6 @@
 				<l> agricultura urbana.</l>
 				<l> Recordó al sol, no, de su espuma cana,</l>
 				<l> la dulce de las aves armonía,</l>
-
 				<l> sino los dos topacios que batía,</l>
 				<l> orientales aldabas, <persName ref="#him048">Himeneo</persName>.</l>
 				<l> Del carro pues febeo </l>
@@ -1409,8 +1409,6 @@
 				<l> lo condenó a su olvido.</l>
 				<l>Este pues sol que a olvido lo condena,</l>
 				<l> cenizas hizo las que su memoria</l>
-
-
 				<l> negras plumas vistió, que infelizmente</l>
 				<l> sordo engendran gusano, cuyo diente,</l>
 				<l> minador antes lento de su gloria,</l>
@@ -2365,7 +2363,15 @@
 				<l> de <persName ref="#clo023">Cloris</persName> el segundo,</l>
 				<l> escollo de cristal, meta del mundo.</l>
 				<label>
+
+
+
 					<persName ref="#lic057">Lícidas</persName>
+
+
+
+
+
 				</label>
 				<l> «¿A qué piensas, barquilla, </l>
 				<l> pobre ya cuna de mi edad primera, </l>
@@ -2375,7 +2381,15 @@
 				<l> que mis huesos vinculan, en su orilla</l>
 				<l> tumba te bese el mar, vuelta la quilla».</l>
 				<label>
+
+
+
 					<persName ref="#mic064">Micón</persName>
+
+
+
+
+
 				</label>
 				<l> «Cansado leño mío,</l>
 				<l> hijo del bosque y padre de mi vida,</l>
@@ -2385,7 +2399,15 @@
 				<l> curso del llanto métrico te fío,</l>
 				<l> nadante urna de canoro río».</l>
 				<label>
+
+
+
 					<persName ref="#lic057">Lícidas</persName>
+
+
+
+
+
 				</label>
 				<l> «Las rugosas veneras,</l>
 				<l> fecundas no de aljófar blanco el seno,</l>
@@ -2395,7 +2417,15 @@
 				<l> fulminado ya, señas no ligeras</l>
 				<l> de mis cenizas dieron tus riberas».</l>
 				<label>
+
+
+
 					<persName ref="#mic064">Micón</persName>
+
+
+
+
+
 				</label>
 				<l> «Distinguir sabía apenas</l>
 				<l> el menor leño de la mayor urca </l>
@@ -2405,7 +2435,15 @@
 				<l> lee cuanto han impreso en tus arenas</l>
 				<l>(a pesar de los vientos) mis cadenas».</l>
 				<label>
+
+
+
 					<persName ref="#lic057">Lícidas</persName>
+
+
+
+
+
 				</label>
 				<l> «Las que el cielo mercedes</l>
 
@@ -2416,7 +2454,15 @@
 				<l> privilegios, el mar, a quien di redes </l>
 				<l> más que a la selva lazos <persName ref="#gan045">Ganimedes</persName>».</l>
 				<label>
+
+
+
 					<persName ref="#mic064">Micón</persName>
+
+
+
+
+
 				</label>
 				<l> «No ondas, no luciente</l>
 				<l> Cristal (agua al fin dulcemente dura), </l>
@@ -2426,7 +2472,15 @@
 				<l> que yo al mar, el que a un dios hizo valiente</l>
 				<l> mentir cerdas, celoso espumar diente».</l>
 				<label>
+
+
+
 					<persName ref="#mic064">Lícidas</persName>
+
+
+
+
+
 				</label>
 				<l> «Cuantos pedernal duro</l>
 				<l> bruñe nácares boto, agudo raya </l>
@@ -2436,7 +2490,15 @@
 				<l> al flaco da, que me construyen muro, </l>
 				<l> junco frágil, carrizo mal seguro».</l>
 				<label>
+
+
+
 					<persName ref="#mic064">Micón</persName>
+
+
+
+
+
 				</label>
 				<l> «Las siempre desiguales</l>
 				<l> blancas primero ramas, después rojas, </l>
@@ -2446,7 +2508,15 @@
 				<l> ninfa por quien lucientes son corales</l>
 				<l> los rudos troncos hoy de mis umbrales».</l>
 				<label>
+
+
+
 					<persName ref="#lic057">Lícidas</persName>
+
+
+
+
+
 				</label>
 				<l> «Esta en plantas no escrita, </l>
 				<l> en piedras sí, firmeza honre <persName ref="#him048">Himeneo</persName>,</l>
@@ -2457,7 +2527,15 @@
 				<l> que al tramontar del sol mal solicita </l>
 				<l> abeja aun negligente flor marchita».</l>
 				<label>
+
+
+
 					<persName ref="#mic064">Micón</persName>
+
+
+
+
+
 				</label>
 				<l> «Si fe tanta no en vano</l>
 				<l> desafía las rocas donde impresa </l>
