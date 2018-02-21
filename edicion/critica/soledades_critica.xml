@@ -4697,8 +4697,8 @@
                     <l xml:id="v-0701">
                         <app>
                             <lem>tanta ofrecen los álamos zagala,</lem>
-                            <rdg type="error" wit="#Rl">tanta oferecen los árboles zagala,</rdg>
-                            <rdg cert="low" type="error" wit="#I">tanta ofrecen los árboles zagala,</rdg>
+                            <rdg type="error" wit="#Rl">tanta oferecen los álamos zagala,</rdg>
+                            <rdg cert="low" type="error" wit="#I #Rm">tanta ofrecen los árboles zagala,</rdg>
                         </app>
                     </l>
                     <l n="665" xml:id="v-0702">
