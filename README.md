@@ -8,6 +8,7 @@
 - `soledades_critica.xml`
 - `soledades_critica_schematron.sch`
 - criterios de codificación de `soledades_critica.xml` 
+- citación sugerida: Góngora, Luis de. 2017. «Soledades» de Luis de Góngora. Edición crítica digital. Ed. de Antonio Rojas Castro. Cologne Center for eHumanities (CCeH). <http://soledades.uni-koeln.de/#/critical?d=doc_1&e=critical>
 
 ### Anotada
 - `soledades_anotada.xml`
@@ -15,6 +16,7 @@
 - criterios de codificación de `soledades_anotada.xml`
 - varias hojas XSLT para generar páginas HTML
 - img
+- citación sugerida: no accesible en estos momentos
 
 ### Simple
 - `soledades_simple.xml`
@@ -22,14 +24,15 @@
 - `conversion pipeline`
 - varias hojas XSLT que modifican `soledades_anotada.xml` para generar el `soledades_simple.xml`
 - una lista *sin limpiar ni arreglar* de entidades nombradas (parecida a la de `datos/nombres-personales-soledades-lema.xslx`)
+- citación sugerida: esta edición no ha sido publicada como tal
 
 ## Datos
 
 - `bio-gongora.xslx`: contiene eventos biográficos de Góngora 
 - `encuesta-gongora.xslx`: contiene las preguntas y respuestas de una encuesta realizada a expertos en Góngora
-- `lista-manuscritos-gongorinos.xslx`: contiene la localización de los repositorios con manuscritos del siglo XVII con poesía de Góngora utilizados en este [mapa](http://www.antoniorojascastro.com/tesis/mapa/) 
+- `lista-manuscritos-gongorinos.xslx`: contiene la localización de los repositorios con manuscritos del siglo XVII con poesía de Góngora
 - `nombres-personales-soledades-lema.xslx`: contiene los nombres propios codificados con las etiquetas TEI `<persName>` y `<placeName>` en el archivo `soledades_anotada.xml`. 
-- testimonios-soledades.xslx: contiene la lista de [testimonios cotejados](http://www.antoniorojascastro.com/tesis/testimonios/) para establecer el texto de las *Soledades*  
+- testimonios-soledades.xslx: contiene la lista de testimonios cotejados para establecer el texto de las *Soledades*  
 
 ## Publicaciones relacionadas
 
