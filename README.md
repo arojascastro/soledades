@@ -8,7 +8,7 @@
 - `soledades_critica.xml`
 - `soledades_critica_schematron.sch`
 - criterios de codificación de `soledades_critica.xml` 
-- citación sugerida: Góngora, Luis de. 2017. «Soledades» de Luis de Góngora. Edición crítica digital. Ed. de Antonio Rojas Castro. Cologne Center for eHumanities (CCeH). <http://soledades.uni-koeln.de/#/critical?d=doc_1&e=critical>
+- citación sugerida: Góngora, Luis de. 2017. «Soledades» de Luis de Góngora. Edición crítica digital. Ed. de Antonio Rojas Castro. Cologne Center for eHumanities (CCeH)-Universität zu Köln. 2a edición. <http://soledades.uni-koeln.de/#/critical?d=doc_1&e=critical>
 
 ### Anotada
 - `soledades_anotada.xml`
