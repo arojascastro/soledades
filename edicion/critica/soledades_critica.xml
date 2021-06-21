@@ -847,8 +847,8 @@
                     <l xml:id="v-0039">
                         <app>
                             <lem>en que el mentido robador de Europa</lem>
-                            <rdg type="variante" wit="#Rm">en luciente robador de Europa</rdg>
-                            <rdg type="variante" wit="#Pr"><!-- falta "en" ? -->
+                            <rdg type="variante" wit="#Rm">en que en luciente robador de Europa</rdg>
+                            <rdg type="variante" wit="#Pr">en que el
                                 <subst>
                                     <del rend="strikethrough">luciente</del>
                                     <add place="margin">mentido</add>
