@@ -3705,10 +3705,7 @@
 					<choice>
 						<orig>Los</orig>
 						<reg>los</reg>
-					</choice> blancos <choice>
-						<orig>lilios</orig>
-						<reg>lirios</reg>
-					</choice> de su frente bella,</l>
+					</choice> blancos lilios de su frente bella,</l>
 				<l n="150" xml:id="v-0187">
 					<choice>
 						<orig>Gruessa</orig>
@@ -4799,10 +4796,7 @@
 						<orig>i</orig>
 						<reg>y</reg>
 					</choice>
-					<choice>
-						<orig>lilios</orig>
-						<reg>lirios</reg>
-					</choice> al cabello,</l>
+					lilios al cabello,</l>
 				<l xml:id="v-0286">
 					<choice>
 						<orig>O</orig>
@@ -11397,10 +11391,7 @@
 					<choice>
 						<orig>De</orig>
 						<reg>de</reg>
-					</choice> errantes <choice>
-						<orig>lilios</orig>
-						<reg>lirios</reg>
-					</choice><choice>
+					</choice> errantes lilios<choice>
 						<orig>,</orig>
 						<reg/>
 					</choice>
@@ -16402,10 +16393,7 @@
 					<choice>
 						<orig>purpura</orig>
 						<reg>púrpura</reg>
-					</choice> la rosa, el <choice>
-						<orig>lilio</orig>
-						<reg>lirio</reg>
-					</choice>
+					</choice> la rosa, el lilio
 					<choice>
 						<orig>nieue</orig>
 						<reg>nieve</reg>
@@ -17635,10 +17623,7 @@
 					<choice>
 						<orig>Suelo</orig>
 						<reg>suelo</reg>
-					</choice> de <choice>
-						<orig>lilios</orig>
-						<reg>lirios</reg>
-					</choice>, que en <choice>
+					</choice> de lilios, que en <choice>
 						<abbr>fragãtes</abbr>
 						<expan>fragantes</expan>
 					</choice> copos</l>
@@ -20719,10 +20704,7 @@
 						<orig>Los</orig>
 						<reg>los</reg>
 					</choice>
-					<choice>
-						<orig>lilios</orig>
-						<reg>lirios</reg>
-					</choice> de tu <choice>
+					lilios de tu <choice>
 						<orig>Aurora</orig>
 						<reg>aurora</reg>
 					</choice><choice>

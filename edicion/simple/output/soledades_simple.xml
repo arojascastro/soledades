@@ -29,7 +29,9 @@
 			</sourceDesc>
 		</fileDesc>
 		<profileDesc>
-			<creation><date from="1612" to="1626" cert="low">1612-1626</date></creation>
+			<creation>
+				<date from="1612" to="1626" cert="low">1612-1626</date>
+			</creation>
 			<particDesc>
 				<listPerson xml:id="onomastico">
 					<head type="sub">Onomástico</head>
@@ -681,7 +683,7 @@
 				<l>forma elegante dio sin culto adorno,</l>
 				<l>leche que exprimir vio la alba aquel día,</l>
 				<l>mientras perdían con ella</l>
-				<l>los blancos lirios de su frente bella,</l>
+				<l>los blancos lilios de su frente bella,</l>
 				<l>gruesa le dan y fría,</l>
 				<l>impenetrable casi a la cuchara,</l>
 				<l>del viejo <persName ref="#alc005">Alcimedón</persName> invención rara.</l>
@@ -787,7 +789,7 @@
 				<l>por el arcaduz bello de una mano</l>
 				<l>que al uno menosprecia, al otro iguala.</l>
 				<l>Del verde margen otra las mejores</l>
-				<l>rosas traslada y lirios al cabello,</l>
+				<l>rosas traslada y lilios al cabello,</l>
 				<l>o por lo matizado o por lo bello,</l>
 				<l>si <persName ref="#aur014">Aurora</persName> no con rayos, <persName ref="#feb040">Sol</persName> con flores.</l>
 				<l>Negras pizarras entre blancos dedos</l>
@@ -1407,7 +1409,7 @@
 				<l>cuantas a <persName ref="#min066">Palas</persName> dulces prendas esta,</l>
 				<l>apenas hija hoy, madre mañana.</l>
 
-				<l>de errantes lirios unas la floresta</l>
+				<l>de errantes lilios unas la floresta</l>
 				<l>cubran, corderos mil que los cristales</l>
 				<l>vistan del río en breve undosa lana;</l>
 				<l>de <persName ref="#ara010">Aracnes</persName> otras la arrogancia vana</l>
@@ -1909,7 +1911,7 @@
 
 				<l>que engaños construyendo están de hilo.</l>
 				<l>El huerto le da esotras, a quien debe,</l>
-				<l>si púrpura la rosa, el lirio nieve.</l>
+				<l>si púrpura la rosa, el lilio nieve.</l>
 				<l>De jardín culto así en fingida gruta</l>
 				<l>salteó al labrador lluvia improvisa</l>
 				<l>de cristales inciertos, a la seña,</l>
@@ -2029,7 +2031,7 @@
 				<l>y cual mancebos tejen anudados</l>
 				<l>festivos corros en alegre ejido,</l>
 				<l>coronan ellos el encanecido</l>
-				<l>suelo de lirios, que en fragantes copos</l>
+				<l>suelo de lilios, que en fragantes copos</l>
 				<l>nevó el mayo, a pesar de los seis chopos.</l>
 				<l>Este sitio las bellas seis hermanas</l>
 				<l>escogen, agraviando</l>
@@ -2341,7 +2343,7 @@
 				<l>en piedras sí, firmeza honre <persName ref="#him048">Himeneo</persName>,</l>
 				<l>calzándole talares mi deseo,</l>
 				<l>que el tiempo vuela. Goza pues ahora</l>
-				<l>los lirios de tu aurora,</l>
+				<l>los lilios de tu aurora,</l>
 
 				<l>que al tramontar del sol mal solicita</l>
 				<l>abeja aun negligente flor marchita».</l>

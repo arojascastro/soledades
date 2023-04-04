@@ -1718,7 +1718,7 @@
                     <l xml:id="v-0185">mientras perdían con ella</l>
                     <l xml:id="v-0186">
                         <app>
-                            <lem>los blancos lirios</lem>
+                            <lem>los blancos lilios</lem>
                             <rdg type="error" wit="#N">
                                 <del rend="strikethrough">con</del> los blancos lirios</rdg>
                         </app> de su frente bella,</l>
@@ -2421,7 +2421,7 @@
                         </app>
                     </l>
                     <l xml:id="v-0284">Del verde margen otra las mejores</l>
-                    <l xml:id="v-0285">rosas traslada y lirios al cabello,</l>
+                    <l xml:id="v-0285">rosas traslada y lilios al cabello,</l>
                     <l xml:id="v-0286">o por lo matizado o por lo bello,</l>
                     <l n="250" xml:id="v-0287">
                         <app>
@@ -5514,7 +5514,7 @@
                     <l xml:id="v-0871" exclude="#Rm">apenas hija hoy, madre mañana.</l>
                     <l n="835" xml:id="v-0872" exclude="#Rm">
                         <app>
-                            <lem>de errantes lirios unas la floresta</lem>
+                            <lem>de errantes lilios unas la floresta</lem>
                             <rdg type="variante" wit="#Br">Corderos guarden que de la floresta</rdg>
                             <rdg type="variante" wit="#Rl">Corderos que de la floresta</rdg>
                             <rdg type="variante" wit="#O">Corderos guarden de la floresta</rdg>
@@ -7447,7 +7447,7 @@
                         <app>
                             <lem>si</lem>
                             <rdg type="error" wit="#ho54 #O">su</rdg>
-                        </app> púrpura la rosa, el lirio nieve.</l>
+                        </app> púrpura la rosa, el lilio nieve.</l>
                     <l xml:id="v-1350" exclude="#Rm #Rl">
                         <app>
                             <lem>De jardín culto así en fingida gruta</lem>
@@ -7880,7 +7880,7 @@
                     </l>
                     <l n="335" xml:id="v-1463" exclude="#Rm #O #Rl">
                         <app>
-                            <lem>suelo de lirios, que en fragantes copos</lem>
+                            <lem>suelo de lilios, que en fragantes copos</lem>
                             <rdg type="error" wit="#N">suelo de lirios, que en fragantes <subst>
                                     <del rend="strikethrough">chopos</del>
                                     <add place="inline">copos</add>
@@ -8813,7 +8813,7 @@
                             <rdg type="error" wit="#D">calzándoles</rdg>
                         </app> talares mi deseo,</l>
                     <l xml:id="v-1729" exclude="#Rm #Pr #O #Rl">que el tiempo vuela. Goza pues ahora</l>
-                    <l xml:id="v-1730" exclude="#Rm #Pr #O #Rl">los lirios de tu aurora,</l>
+                    <l xml:id="v-1730" exclude="#Rm #Pr #O #Rl">los lilios de tu aurora,</l>
                     <l xml:id="v-1731" exclude="#Rm #Pr #O #Rl">que al tramontar del sol mal solicita</l>
                     <l xml:id="v-1732" exclude="#Rm #Pr #O #Rl">abeja aun negligente flor marchita».</l>
                 </lg>
